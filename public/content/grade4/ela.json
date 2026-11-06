@@ -1,0 +1,610 @@
+{
+  "id": "g4-ela",
+  "subject": "ela",
+  "grade": 4,
+  "title": "Grade 4 Language Arts",
+  "subtitle": "Reading Comprehension, Theme, Text Structure, Figurative Language & Grammar",
+  "credits": 1,
+  "color": "#9333ea",
+  "icon": "✒",
+  "units": [
+    {
+      "id": "g4-ela-u1",
+      "title": "Unit 1: Theme, Main Idea & Text Evidence",
+      "standards": [
+        "RL.4.1",
+        "RL.4.2",
+        "RI.4.2",
+        "RI.4.5"
+      ],
+      "lessons": [
+        {
+          "id": "g4-ela-u1-l1",
+          "unitId": "g4-ela-u1",
+          "title": "Lesson 1: Determining Theme & Supporting Details in Literature",
+          "kind": "lesson",
+          "estimatedMinutes": 20,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-4th-reading-vocab",
+          "videoTitle": "Khan Academy ELA: Finding the Theme of a Story",
+          "reading": "The theme of a story is its underlying message or life lesson about how the world works (for example, \"Perseverance through failure leads to growth\"). Unlike the plot (what happens) or the topic (one or two words like \"friendship\"), a theme is a complete statement supported by how characters respond to challenges.",
+          "principles": [
+            {
+              "id": "p-g4-ela-theme",
+              "title": "Identifying Theme vs. Plot and Using Text Evidence",
+              "standard": "RL.4.2",
+              "summary": "Theme is the universal life lesson revealed by how characters grow or overcome obstacles.",
+              "bank": [
+                {
+                  "id": "el1",
+                  "type": "mc",
+                  "passage": "Maya practiced her violin solo all week, but during rehearsal her strings squeaked and she forgot the second measure. Instead of quitting, she asked her music teacher for tips on bow pressure and practiced slowly each evening. On concert night, her melody rang clear across the auditorium.",
+                  "prompt": "What is the central theme of the passage about Maya?",
+                  "choices": [
+                    "Patient practice and seeking help can turn early setbacks into success.",
+                    "Violin strings always squeak during rehearsals.",
+                    "Concerts are held in large auditoriums.",
+                    "Only naturally talented musicians should perform solos."
+                  ],
+                  "answer": "Patient practice and seeking help can turn early setbacks into success.",
+                  "explanation": "Maya’s response to her mistake—asking for guidance and practicing steadily—demonstrates the lesson that persistence overcomes setbacks."
+                },
+                {
+                  "id": "el2",
+                  "type": "mc",
+                  "passage": "Leo found a wallet on the park bench containing twenty dollars—the exact price of the skateboard helmet he wanted. Looking inside, he saw a neighbor’s library card. Leo walked straight to Mrs. Alvarez’s porch and handed her the wallet. She smiled warmly and thanked him for his honesty.",
+                  "prompt": "Which statement best expresses the theme of this story?",
+                  "choices": [
+                    "Doing the right thing brings a deeper reward than keeping what is not yours.",
+                    "Skateboard helmets cost twenty dollars.",
+                    "Library cards should be kept in wallets.",
+                    "Parks are dangerous places to leave belongings."
+                  ],
+                  "answer": "Doing the right thing brings a deeper reward than keeping what is not yours.",
+                  "explanation": "Leo chooses integrity over temptation, illustrating a moral lesson about honesty."
+                },
+                {
+                  "id": "el3",
+                  "type": "mc",
+                  "prompt": "Which of the following is an example of a THEME rather than a topic or plot detail?",
+                  "choices": [
+                    "True friends stand by each other even when it is inconvenient.",
+                    "Two boys go camping in the mountains.",
+                    "Courage and bravery.",
+                    "A dog chases a squirrel up an oak tree."
+                  ],
+                  "answer": "True friends stand by each other even when it is inconvenient.",
+                  "explanation": "A theme is a universal message stated as a full thought, not a single-word topic or a specific plot event."
+                },
+                {
+                  "id": "el4",
+                  "type": "mc",
+                  "passage": "When the class garden wilted in the July heat, Noah wanted to blame Sam for forgetting the watering can. Instead, Elena organized a daily watering schedule where every student took a five-minute turn. Within two weeks, bright red tomatoes ripened on the vines.",
+                  "prompt": "What detail from the passage best supports the theme that teamwork solves problems better than blame?",
+                  "choices": [
+                    "Elena organized a shared watering schedule and the garden recovered.",
+                    "The weather in July was very hot.",
+                    "Tomatoes are red when ripe.",
+                    "Noah noticed the watering can was empty."
+                  ],
+                  "answer": "Elena organized a shared watering schedule and the garden recovered.",
+                  "explanation": "Elena’s cooperative action directly contrasts with blame and produces the positive outcome."
+                },
+                {
+                  "id": "el5",
+                  "type": "mc",
+                  "passage": "Crow boasted that his glossy black feathers made him the finest singer in the forest. Fox flattered Crow, asking to hear a song. The moment Crow opened his beak to caw, the piece of cheese he was holding dropped straight into Fox’s waiting jaws.",
+                  "prompt": "What lesson (theme) does this classic fable teach?",
+                  "choices": [
+                    "Beware of flatterers who praise you only to take advantage of your pride.",
+                    "Crows enjoy eating cheese in trees.",
+                    "Foxes cannot climb tall trees.",
+                    "Singing loudly improves your voice."
+                  ],
+                  "answer": "Beware of flatterers who praise you only to take advantage of your pride.",
+                  "explanation": "Crow’s vanity blinds him to Fox’s trick, teaching readers to be cautious of insincere flattery."
+                },
+                {
+                  "id": "el6",
+                  "type": "mc",
+                  "prompt": "When making an inference while reading a story, a reader combines:",
+                  "choices": [
+                    "Clues from the text with their own background knowledge",
+                    "Only the title and the page numbers",
+                    "Random guesses unrelated to the passage",
+                    "Only the dictionary definition of the last word"
+                  ],
+                  "answer": "Clues from the text with their own background knowledge",
+                  "explanation": "An inference is an evidence-based conclusion drawn from explicit text clues plus prior knowledge."
+                },
+                {
+                  "id": "el7",
+                  "type": "mc",
+                  "passage": "As the ferry pulled away from the dock, Sofia gripped the railing, her knuckles white. She stared at the shrinking shoreline and swallowed hard, barely hearing her brother’s excited chatter about the island ahead.",
+                  "prompt": "What can you infer about how Sofia feels?",
+                  "choices": [
+                    "She is nervous or anxious about leaving the shore.",
+                    "She is bored and falling asleep.",
+                    "She is angry at the ferry captain.",
+                    "She has visited the island every day for years."
+                  ],
+                  "answer": "She is nervous or anxious about leaving the shore.",
+                  "explanation": "White knuckles, staring back at the shore, and swallowing hard are physical clues showing nervousness."
+                },
+                {
+                  "id": "el8",
+                  "type": "mc",
+                  "prompt": "In an informational article, how does the MAIN IDEA differ from supporting details?",
+                  "choices": [
+                    "The main idea is the overarching point the author makes; supporting details are facts and examples that prove it.",
+                    "Supporting details always appear in the title.",
+                    "The main idea is always a fictional moral.",
+                    "There is no difference between them."
+                  ],
+                  "answer": "The main idea is the overarching point the author makes; supporting details are facts and examples that prove it.",
+                  "explanation": "Supporting details provide specific facts, statistics, and examples that back up the central main idea."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g4-ela-u1-l2",
+          "unitId": "g4-ela-u1",
+          "title": "Lesson 2: Informational Text Structures (Cause/Effect, Compare/Contrast, Chronology)",
+          "kind": "lesson",
+          "estimatedMinutes": 20,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-4th-reading-vocab",
+          "videoTitle": "Khan Academy ELA: Informational Text Structures",
+          "reading": "Authors organize informational texts using deliberate structures: Chronological/Sequence (steps or events in time order using signal words like first, next, finally, in 1903), Cause and Effect (why something happens and its result: because, consequently, therefore), Compare and Contrast (similarities and differences: both, however, unlike), and Problem and Solution.",
+          "principles": [
+            {
+              "id": "p-g4-ela-structure",
+              "title": "Recognizing Informational Text Structures & Signal Words",
+              "standard": "RI.4.5",
+              "summary": "Identify chronology, cause/effect, compare/contrast, and problem/solution from organization and signal words.",
+              "bank": [
+                {
+                  "id": "ts1",
+                  "type": "mc",
+                  "passage": "Both butterflies and moths belong to the insect order Lepidoptera and have wings covered in tiny scales. However, butterflies usually fly during the day and rest with their wings folded upright, whereas most moths are active at night and rest with their wings flat.",
+                  "prompt": "Which text structure does the author use in this passage?",
+                  "choices": [
+                    "Compare and Contrast",
+                    "Chronological Order",
+                    "Problem and Solution",
+                    "First-Person Narrative"
+                  ],
+                  "answer": "Compare and Contrast",
+                  "explanation": "Signal words like \"Both,\" \"However,\" and \"whereas\" show similarities and differences between butterflies and moths."
+                },
+                {
+                  "id": "ts2",
+                  "type": "mc",
+                  "passage": "Because warm ocean water evaporated rapidly during late summer, humid air rose into the atmosphere. As a result, towering storm clouds formed and heavy rain fell along the coastline.",
+                  "prompt": "How is this passage organized?",
+                  "choices": [
+                    "Cause and Effect",
+                    "Compare and Contrast",
+                    "Alphabetical Order",
+                    "Dialogue"
+                  ],
+                  "answer": "Cause and Effect",
+                  "explanation": "\"Because\" and \"As a result\" explain why the storm formed (cause) and what happened next (effect)."
+                },
+                {
+                  "id": "ts3",
+                  "type": "mc",
+                  "passage": "To build a backyard compost bin, first choose a shady, level spot. Next, layer dry brown leaves with green kitchen scraps. Then, sprinkle water to keep the pile damp, and finally turn the pile with a pitchfork every week.",
+                  "prompt": "Which text structure is used in these instructions?",
+                  "choices": [
+                    "Sequence / Chronological Order",
+                    "Compare and Contrast",
+                    "Cause and Effect",
+                    "Character Description"
+                  ],
+                  "answer": "Sequence / Chronological Order",
+                  "explanation": "Step-by-step signal words (\"first,\" \"Next,\" \"Then,\" \"finally\") indicate sequence order."
+                },
+                {
+                  "id": "ts4",
+                  "type": "mc",
+                  "passage": "Sea turtles Mistakenly swallow plastic bags floating in the ocean because they look like jellyfish. To solve this threat, coastal towns have banned single-use plastic bags and organized weekly beach cleanups.",
+                  "prompt": "Which text structure best describes this paragraph?",
+                  "choices": [
+                    "Problem and Solution",
+                    "Chronological Biography",
+                    "Compare and Contrast",
+                    "Poetry"
+                  ],
+                  "answer": "Problem and Solution",
+                  "explanation": "The first sentence states a serious environmental problem, and the second sentence describes actions taken to solve it."
+                },
+                {
+                  "id": "ts5",
+                  "type": "mc",
+                  "prompt": "Which group of signal words most strongly points to a CAUSE AND EFFECT text structure?",
+                  "choices": [
+                    "because, consequently, therefore, as a result",
+                    "first, second, next, finally",
+                    "similarly, alike, on the other hand, both",
+                    "once upon a time, happily ever after"
+                  ],
+                  "answer": "because, consequently, therefore, as a result",
+                  "explanation": "These transition words link reasons (causes) directly to outcomes (effects)."
+                },
+                {
+                  "id": "ts6",
+                  "type": "mc",
+                  "prompt": "An article tracing the life of Wright brothers from childhood in the 1870s to their 1903 flight at Kitty Hawk uses:",
+                  "choices": [
+                    "Chronological Order",
+                    "Compare and Contrast",
+                    "Problem and Solution",
+                    "Spatial Order"
+                  ],
+                  "answer": "Chronological Order",
+                  "explanation": "Events arranged by dates and time progression follow chronological order."
+                },
+                {
+                  "id": "ts7",
+                  "type": "mc",
+                  "prompt": "Which signal words help a reader spot a COMPARE AND CONTRAST paragraph?",
+                  "choices": [
+                    "both, alike, however, in contrast",
+                    "therefore, since, due to",
+                    "first, after that, last",
+                    "problem, answer, remedy"
+                  ],
+                  "answer": "both, alike, however, in contrast",
+                  "explanation": "Words like \"both\" and \"alike\" compare, while \"however\" and \"in contrast\" show differences."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g4-ela-u2",
+      "title": "Unit 2: Figurative Language, Vocabulary & Sentence Conventions",
+      "standards": [
+        "L.4.1",
+        "L.4.4",
+        "L.4.5"
+      ],
+      "lessons": [
+        {
+          "id": "g4-ela-u2-l1",
+          "unitId": "g4-ela-u2",
+          "title": "Lesson 1: Similes, Metaphors, Idioms & Context Clues",
+          "kind": "lesson",
+          "estimatedMinutes": 20,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-4th-reading-vocab",
+          "videoTitle": "Figurative Language: Similes, Metaphors & Idioms",
+          "reading": "Figurative language goes beyond literal word meanings. A simile compares two unlike things using \"like\" or \"as\" (\"her voice was as smooth as honey\"). A metaphor directly states that one thing IS another (\"the snow was a white blanket over the town\"). An idiom is a common expression whose figurative meaning differs from its literal words (\"piece of cake\" = very easy).",
+          "principles": [
+            {
+              "id": "p-g4-ela-fig",
+              "title": "Similes, Metaphors, Idioms & Context Clues",
+              "standard": "L.4.5",
+              "summary": "Distinguish similes (uses like/as), metaphors (direct comparison), and idioms, and use context clues for unfamiliar words.",
+              "bank": [
+                {
+                  "id": "fg1",
+                  "type": "mc",
+                  "prompt": "Which sentence contains a METAPHOR?",
+                  "choices": [
+                    "The classroom was a buzzing beehive of activity before the science fair.",
+                    "The runner sprinted as fast as a cheetah.",
+                    "The kitten’s fur felt like soft velvet.",
+                    "He ate his lunch quickly at noon."
+                  ],
+                  "answer": "The classroom was a buzzing beehive of activity before the science fair.",
+                  "explanation": "Calling the classroom \"a buzzing beehive\" directly compares two things without using \"like\" or \"as\"—that is a metaphor."
+                },
+                {
+                  "id": "fg2",
+                  "type": "mc",
+                  "prompt": "Which sentence contains a SIMILE?",
+                  "choices": [
+                    "After the ice storm, the driveway was as slick as glass.",
+                    "Time is a thief that steals our summers.",
+                    "The library was a quiet sanctuary.",
+                    "She finished her math homework before dinner."
+                  ],
+                  "answer": "After the ice storm, the driveway was as slick as glass.",
+                  "explanation": "Comparing the driveway to glass using \"as ... as\" is a simile."
+                },
+                {
+                  "id": "fg3",
+                  "type": "mc",
+                  "prompt": "Before the spelling bee, Grandpa told Caleb, \"Don’t worry—you know these words inside and out. It’ll be a piece of cake!\" What does the idiom \"a piece of cake\" mean?",
+                  "choices": [
+                    "Something that is very easy to accomplish",
+                    "A dessert served after the contest",
+                    "Something that is impossible to finish",
+                    "A recipe that requires flour and sugar"
+                  ],
+                  "answer": "Something that is very easy to accomplish",
+                  "explanation": "The idiom \"a piece of cake\" means a task is simple and easy."
+                },
+                {
+                  "id": "fg4",
+                  "type": "mc",
+                  "passage": "The ancient pottery was so FRAGILE that museum workers wore padded gloves and carried it in a foam-lined crate so it would not shatter.",
+                  "prompt": "Using context clues in the sentence, what does the word FRAGILE mean?",
+                  "choices": [
+                    "Delicate and easily broken",
+                    "Heavy and made of iron",
+                    "Brand new and flexible",
+                    "Waterproof and sturdy"
+                  ],
+                  "answer": "Delicate and easily broken",
+                  "explanation": "Clues like \"padded gloves,\" \"foam-lined crate,\" and \"so it would not shatter\" show that fragile means easily broken."
+                },
+                {
+                  "id": "fg5",
+                  "type": "mc",
+                  "prompt": "What does the proverb \"Actions speak louder than words\" mean?",
+                  "choices": [
+                    "What you actually do matters more than what you merely promise to do.",
+                    "Shouting is better than whispering.",
+                    "Actors in plays must use microphones.",
+                    "Writing a letter takes longer than speaking."
+                  ],
+                  "answer": "What you actually do matters more than what you merely promise to do.",
+                  "explanation": "A person’s behavior shows their true character more reliably than empty promises."
+                },
+                {
+                  "id": "fg6",
+                  "type": "mc",
+                  "passage": "After hiking ten miles up the steep trail, the scouts were FAMISHED and eagerly ate every sandwich in their packs.",
+                  "prompt": "Based on the context clues, what does FAMISHED mean?",
+                  "choices": [
+                    "Extremely hungry",
+                    "Very cold",
+                    "Completely lost",
+                    "Wide awake"
+                  ],
+                  "answer": "Extremely hungry",
+                  "explanation": "Hiking ten miles and eagerly eating every sandwich shows that \"famished\" means starving or very hungry."
+                },
+                {
+                  "id": "fg7",
+                  "type": "mc",
+                  "prompt": "When Sophia accidentally told her brother about the surprise party, she \"let the cat out of the bag.\" This idiom means she:",
+                  "choices": [
+                    "Revealed a secret by mistake",
+                    "Adopted a new pet kitten",
+                    "Lost her backpack at school",
+                    "Cleaned her bedroom"
+                  ],
+                  "answer": "Revealed a secret by mistake",
+                  "explanation": "\"Letting the cat out of the bag\" is an idiom meaning to disclose a secret."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g4-ela-u2-l2",
+          "unitId": "g4-ela-u2",
+          "title": "Lesson 2: Complete Sentences, Fragments, Run-Ons & Homophones",
+          "kind": "lesson",
+          "estimatedMinutes": 20,
+          "videoUrl": "https://www.khanacademy.org/humanities/grammar/syntax-sentences-and-clauses",
+          "videoTitle": "Khan Academy Grammar: Fragments, Run-Ons & Compound Sentences",
+          "reading": "A complete sentence requires a subject, a predicate (verb), and a complete thought. A fragment is missing one of these pieces (\"Because the rain started.\"). A run-on joins two independent clauses without proper punctuation or a coordinating conjunction (FANBOYS: for, and, nor, but, or, yet, so). Also watch common homophones: their (possessive), there (place), and they’re (they are).",
+          "principles": [
+            {
+              "id": "p-g4-ela-grammar",
+              "title": "Correcting Fragments, Run-Ons & Homophone Errors",
+              "standard": "L.4.1",
+              "summary": "Join independent clauses with a comma + coordinating conjunction, fix fragments, and choose correct homophones.",
+              "bank": [
+                {
+                  "id": "gr1",
+                  "type": "mc",
+                  "prompt": "Which of the following is a COMPLETE sentence rather than a fragment?",
+                  "choices": [
+                    "The peregrine falcon dove swiftly toward the river.",
+                    "Because the library closed at five o’clock.",
+                    "Running across the wet soccer field after school.",
+                    "Underneath the old wooden bridge by the creek."
+                  ],
+                  "answer": "The peregrine falcon dove swiftly toward the river.",
+                  "explanation": "It has a complete subject (\"The peregrine falcon\"), a verb (\"dove\"), and expresses a complete thought."
+                },
+                {
+                  "id": "gr2",
+                  "type": "mc",
+                  "prompt": "How should you fix this run-on sentence? \"The storm knocked out the power we lit candles in the living room.\"",
+                  "choices": [
+                    "The storm knocked out the power, so we lit candles in the living room.",
+                    "The storm knocked out the power we, lit candles in the living room.",
+                    "Because the storm knocked out the power, lighting candles.",
+                    "The storm knocking out the power and we lit candles."
+                  ],
+                  "answer": "The storm knocked out the power, so we lit candles in the living room.",
+                  "explanation": "Two independent clauses can be joined with a comma followed by the coordinating conjunction \"so\"."
+                },
+                {
+                  "id": "gr3",
+                  "type": "mc",
+                  "prompt": "Choose the sentence that uses \"their,\" \"there,\" and \"they’re\" correctly:",
+                  "choices": [
+                    "They’re parking their bikes over there by the gym.",
+                    "Their parking they’re bikes over there by the gym.",
+                    "There parking their bikes over they’re by the gym.",
+                    "They’re parking there bikes over their by the gym."
+                  ],
+                  "answer": "They’re parking their bikes over there by the gym.",
+                  "explanation": "\"They’re\" = They are; \"their\" = belonging to them; \"there\" = at that place."
+                },
+                {
+                  "id": "gr4",
+                  "type": "mc",
+                  "prompt": "Which sentence uses the correct relative pronoun?",
+                  "choices": [
+                    "The scientist who discovered the fossil spoke at our school.",
+                    "The scientist which discovered the fossil spoke at our school.",
+                    "The book who I borrowed is on the desk.",
+                    "The dog whom barked all night is asleep."
+                  ],
+                  "answer": "The scientist who discovered the fossil spoke at our school.",
+                  "explanation": "Use the relative pronoun \"who\" as the subject referring to a person (\"The scientist\")."
+                },
+                {
+                  "id": "gr5",
+                  "type": "mc",
+                  "prompt": "Choose the sentence that uses \"its\" and \"it’s\" correctly:",
+                  "choices": [
+                    "It’s amazing how a chameleon changes its color.",
+                    "Its amazing how a chameleon changes it’s color.",
+                    "It’s amazing how a chameleon changes it’s color.",
+                    "Its amazing how a chameleon changes its color."
+                  ],
+                  "answer": "It’s amazing how a chameleon changes its color.",
+                  "explanation": "\"It’s\" is the contraction for \"It is,\" while \"its\" (no apostrophe) is the possessive pronoun."
+                },
+                {
+                  "id": "gr6",
+                  "type": "mc",
+                  "prompt": "Which sentence uses the progressive verb tense to show an action happening right now?",
+                  "choices": [
+                    "The fourth graders are building a model solar system.",
+                    "The fourth graders built a model solar system yesterday.",
+                    "The fourth graders will build a model next month.",
+                    "The fourth graders build models every year."
+                  ],
+                  "answer": "The fourth graders are building a model solar system.",
+                  "explanation": "\"Are building\" is the present progressive tense (am/is/are + verb-ing)."
+                },
+                {
+                  "id": "gr7",
+                  "type": "mc",
+                  "prompt": "In which sentence are adjectives ordered correctly according to standard English conventions?",
+                  "choices": [
+                    "She adopted a small brown puppy.",
+                    "She adopted a brown small puppy.",
+                    "He found three round tiny coins.",
+                    "They drove a metal old red truck."
+                  ],
+                  "answer": "She adopted a small brown puppy.",
+                  "explanation": "In English, size adjectives (\"small\") come before color adjectives (\"brown\") before the noun."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g4-ela-u2-test",
+          "unitId": "g4-ela-u2",
+          "title": "Unit 2 Exam: Reading & Language Mastery",
+          "kind": "unit_test",
+          "estimatedMinutes": 25,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-4th-reading-vocab",
+          "videoTitle": "Grade 4 ELA Comprehensive Review",
+          "reading": "Demonstrate mastery of theme, text structure, figurative language, and sentence conventions.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g4-ela-fig",
+              "title": "Similes, Metaphors, Idioms & Context Clues",
+              "standard": "L.4.5",
+              "summary": "Interpret figurative comparisons and vocabulary in context.",
+              "bank": [
+                {
+                  "id": "eut1",
+                  "type": "mc",
+                  "prompt": "\"The calm lake was a mirror reflecting the snow-capped peaks.\" What figure of speech is used?",
+                  "choices": [
+                    "Metaphor",
+                    "Simile",
+                    "Onomatopoeia",
+                    "Hyperbole"
+                  ],
+                  "answer": "Metaphor",
+                  "explanation": "The lake is directly called \"a mirror\" without using \"like\" or \"as.\""
+                },
+                {
+                  "id": "eut2",
+                  "type": "mc",
+                  "prompt": "In the sentence \"The owl was as silent as a shadow gliding through the pines,\" the phrase \"as silent as a shadow\" is a:",
+                  "choices": [
+                    "Simile",
+                    "Metaphor",
+                    "Idiom",
+                    "Alliteration"
+                  ],
+                  "answer": "Simile",
+                  "explanation": "It compares the owl’s silence to a shadow using \"as ... as.\""
+                },
+                {
+                  "id": "eut3",
+                  "type": "mc",
+                  "prompt": "The beaver was INDUSTRIOUS, working from dawn until dusk to repair the dam before winter. What does INDUSTRIOUS mean?",
+                  "choices": [
+                    "Hard-working and diligent",
+                    "Lazy and sleepy",
+                    "Frightened and shy",
+                    "Noisy and careless"
+                  ],
+                  "answer": "Hard-working and diligent",
+                  "explanation": "\"Working from dawn until dusk\" provides context showing industrious means hard-working."
+                }
+              ]
+            },
+            {
+              "id": "p-g4-ela-grammar",
+              "title": "Correcting Fragments, Run-Ons & Homophone Errors",
+              "standard": "L.4.1",
+              "summary": "Identify complete sentences and proper conventions.",
+              "bank": [
+                {
+                  "id": "eut4",
+                  "type": "mc",
+                  "prompt": "Which sentence is punctuated correctly as a compound sentence?",
+                  "choices": [
+                    "We wanted to stargaze tonight, but thick clouds covered the sky.",
+                    "We wanted to stargaze tonight but, thick clouds covered the sky.",
+                    "We wanted to stargaze tonight, thick clouds covered the sky.",
+                    "Although we wanted to stargaze tonight, but clouds covered the sky."
+                  ],
+                  "answer": "We wanted to stargaze tonight, but thick clouds covered the sky.",
+                  "explanation": "A comma goes before the coordinating conjunction \"but\" when joining two complete sentences."
+                },
+                {
+                  "id": "eut5",
+                  "type": "mc",
+                  "prompt": "Identify the sentence fragment below:",
+                  "choices": [
+                    "Whenever the campfire crackles under the starry sky.",
+                    "Sparks floated upward into the night air.",
+                    "Dad roasted marshmallows on a wooden stick.",
+                    "The tent stayed warm all night."
+                  ],
+                  "answer": "Whenever the campfire crackles under the starry sky.",
+                  "explanation": "Starting with the subordinating conjunction \"Whenever\" makes this a dependent clause that needs a main clause to be complete."
+                },
+                {
+                  "id": "eut6",
+                  "type": "mc",
+                  "prompt": "Choose the sentence with correct homophone usage:",
+                  "choices": [
+                    "Are you going to bring your two cousins, too?",
+                    "Are you going too bring your two cousins, to?",
+                    "Are you going to bring you’re two cousins, two?",
+                    "Are you going two bring your to cousins, too?"
+                  ],
+                  "answer": "Are you going to bring your two cousins, too?",
+                  "explanation": "\"to\" (infinitive/preposition), \"your\" (possessive), \"two\" (number 2), and \"too\" (also)."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

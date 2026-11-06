@@ -1,0 +1,461 @@
+{
+  "id": "g6-science",
+  "subject": "science",
+  "grade": 6,
+  "title": "Grade 6 Science",
+  "subtitle": "Cell Biology, Organ Systems, Plate Tectonics, Weather/Climate & Thermal Energy",
+  "credits": 1,
+  "color": "#059669",
+  "icon": "⚛",
+  "units": [
+    {
+      "id": "g6-sci-u1",
+      "title": "Unit 1: Cells, Organelles & Human Body Systems",
+      "standards": [
+        "MS-LS1-1",
+        "MS-LS1-2",
+        "MS-LS1-3"
+      ],
+      "lessons": [
+        {
+          "id": "g6-sci-u1-l1",
+          "unitId": "g6-sci-u1",
+          "title": "Lesson 1: Cell Theory, Organelles & Plant vs. Animal Cells",
+          "kind": "lesson",
+          "estimatedMinutes": 22,
+          "videoUrl": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms",
+          "videoTitle": "Khan Academy Middle School Biology: Cells and Organelles",
+          "reading": "All living things are composed of one or more cells—the basic unit of life. Inside eukaryotic cells, specialized organelles carry out vital functions: the nucleus stores DNA and directs cell activities; mitochondria perform cellular respiration to release ATP energy; the cell membrane regulates what enters and leaves; and plant cells additionally possess a rigid cell wall and chloroplasts for photosynthesis.",
+          "principles": [
+            {
+              "id": "p-g6-sci-cells",
+              "title": "Cell Organelles and Plant vs. Animal Cell Differences",
+              "standard": "MS-LS1-2",
+              "summary": "Identify functions of the nucleus, mitochondria, chloroplasts, cell wall, and cell membrane.",
+              "bank": [
+                {
+                  "id": "c1",
+                  "type": "mc",
+                  "prompt": "Which organelle is known as the \"powerhouse of the cell\" because it converts glucose into usable cellular energy (ATP)?",
+                  "choices": [
+                    "Mitochondria",
+                    "Ribosome",
+                    "Golgi apparatus",
+                    "Cell wall"
+                  ],
+                  "answer": "Mitochondria",
+                  "explanation": "Mitochondria carry out cellular respiration, breaking down sugar molecules to release energy for the cell."
+                },
+                {
+                  "id": "c2",
+                  "type": "mc",
+                  "prompt": "Which two structures are present in PLANT cells but NOT in animal cells?",
+                  "choices": [
+                    "Chloroplasts and a rigid cell wall",
+                    "Nucleus and mitochondria",
+                    "Cell membrane and cytoplasm",
+                    "Ribosomes and DNA"
+                  ],
+                  "answer": "Chloroplasts and a rigid cell wall",
+                  "explanation": "Plant cells have chloroplasts to capture sunlight for photosynthesis and a cellulose cell wall for structural support."
+                },
+                {
+                  "id": "c3",
+                  "type": "mc",
+                  "prompt": "What is the main role of the selectively permeable cell membrane?",
+                  "choices": [
+                    "Controlling which substances enter and exit the cell to maintain homeostasis",
+                    "Manufacturing sunlight inside the cell",
+                    "Storing all genetic chromosomes",
+                    "Giving oak trees rigid woody bark"
+                  ],
+                  "answer": "Controlling which substances enter and exit the cell to maintain homeostasis",
+                  "explanation": "The cell membrane acts as a selective gatekeeper, letting nutrients and water in while exporting wastes."
+                },
+                {
+                  "id": "c4",
+                  "type": "mc",
+                  "prompt": "Where is the hereditary genetic material (DNA) housed in a eukaryotic cell?",
+                  "choices": [
+                    "Inside the nucleus",
+                    "Outside the cell wall",
+                    "Inside the vacuole",
+                    "In the lipid bilayer"
+                  ],
+                  "answer": "Inside the nucleus",
+                  "explanation": "In eukaryotic cells, chromosomes made of DNA are enclosed inside the membrane-bound nucleus."
+                },
+                {
+                  "id": "c5",
+                  "type": "mc",
+                  "prompt": "Which statement is a fundamental part of modern Cell Theory?",
+                  "choices": [
+                    "All living organisms are made of one or more cells, and all cells come from pre-existing cells.",
+                    "Only animals are made of cells; plants are made of minerals.",
+                    "Cells spontaneously generate from nonliving dust every day.",
+                    "All cells are large enough to see without a microscope."
+                  ],
+                  "answer": "All living organisms are made of one or more cells, and all cells come from pre-existing cells.",
+                  "explanation": "Cell theory states that cells are the basic unit of life, all organisms consist of cells, and cells arise from existing cells."
+                },
+                {
+                  "id": "c6",
+                  "type": "mc",
+                  "prompt": "In what order is biological organization arranged from SIMPLEST to MOST COMPLEX in multicellular organisms?",
+                  "choices": [
+                    "Cell → Tissue → Organ → Organ System → Organism",
+                    "Organ → Cell → Tissue → Organism → Organ System",
+                    "Tissue → Cell → Organ System → Organ → Organism",
+                    "Organism → Organ System → Organ → Tissue → Cell"
+                  ],
+                  "answer": "Cell → Tissue → Organ → Organ System → Organism",
+                  "explanation": "Similar cells form tissues, tissues combine into organs, organs work together in organ systems, making up the organism."
+                },
+                {
+                  "id": "c7",
+                  "type": "mc",
+                  "prompt": "Why do plant cells have a single large central vacuole?",
+                  "choices": [
+                    "To store water and maintain turgor pressure so the plant stays upright",
+                    "To pump blood through the stem",
+                    "To digest insects",
+                    "To help the plant walk toward light"
+                  ],
+                  "answer": "To store water and maintain turgor pressure so the plant stays upright",
+                  "explanation": "When full of water, the central vacuole presses outward against the cell wall (turgor pressure), keeping stems crisp."
+                },
+                {
+                  "id": "c8",
+                  "type": "mc",
+                  "prompt": "How do the respiratory and circulatory systems work together in the human body?",
+                  "choices": [
+                    "The lungs take in oxygen and transfer it to the blood, which the heart pumps to body cells.",
+                    "The lungs pump blood while the heart digests food.",
+                    "The circulatory system only carries carbon dioxide and never oxygen.",
+                    "They operate completely independently without interacting."
+                  ],
+                  "answer": "The lungs take in oxygen and transfer it to the blood, which the heart pumps to body cells.",
+                  "explanation": "Alveoli in the lungs diffuse oxygen into capillaries, and the cardiovascular system delivers that oxygen to every cell."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g6-sci-u2",
+      "title": "Unit 2: Plate Tectonics, Water Cycle & Thermal Energy Transfer",
+      "standards": [
+        "MS-ESS2-2",
+        "MS-ESS2-4",
+        "MS-PS3-3"
+      ],
+      "lessons": [
+        {
+          "id": "g6-sci-u2-l1",
+          "unitId": "g6-sci-u2",
+          "title": "Lesson 1: Plate Tectonics, Convection Currents & Earth’s Interior",
+          "kind": "lesson",
+          "estimatedMinutes": 22,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:plate-tectonics",
+          "videoTitle": "Khan Academy Earth Science: Plate Tectonics & Mantle Convection",
+          "reading": "Earth’s rigid outer shell (the lithosphere) is broken into tectonic plates that float atop the hot, slowly flowing asthenosphere (upper mantle). Convection currents driven by heat from Earth’s core move these plates. Plates pull apart at divergent boundaries (creating mid-ocean ridges), collide at convergent boundaries (forming mountain ranges and subduction trenches), and slide past each other at transform boundaries (causing frequent earthquakes).",
+          "principles": [
+            {
+              "id": "p-g6-sci-plates",
+              "title": "Tectonic Plate Boundaries and Mantle Convection",
+              "standard": "MS-ESS2-2",
+              "summary": "Distinguish convergent, divergent, and transform boundaries and the role of mantle convection.",
+              "bank": [
+                {
+                  "id": "pt1",
+                  "type": "mc",
+                  "prompt": "What is the primary driving force that causes Earth’s tectonic plates to move slowly over millions of years?",
+                  "choices": [
+                    "Convection currents of heated rock rising and cooler rock sinking in the mantle",
+                    "Ocean tides pulling on beaches",
+                    "Wind blowing against mountain peaks",
+                    "Solar flares striking the North Pole"
+                  ],
+                  "answer": "Convection currents of heated rock rising and cooler rock sinking in the mantle",
+                  "explanation": "Heat from Earth’s core drives slow thermal convection currents in the mantle that drag tectonic plates along."
+                },
+                {
+                  "id": "pt2",
+                  "type": "mc",
+                  "prompt": "At a DIVERGENT plate boundary on the ocean floor, two tectonic plates move apart and magma rises to form a:",
+                  "choices": [
+                    "Mid-ocean ridge and new oceanic crust",
+                    "Deep desert canyon",
+                    "Glacier",
+                    "Hurricane"
+                  ],
+                  "answer": "Mid-ocean ridge and new oceanic crust",
+                  "explanation": "Seafloor spreading at divergent boundaries creates underwater mountain chains called mid-ocean ridges."
+                },
+                {
+                  "id": "pt3",
+                  "type": "mc",
+                  "prompt": "The Himalayan Mountains (including Mount Everest) formed when the Indian Plate collided head-on with the Eurasian Plate. What kind of boundary is this?",
+                  "choices": [
+                    "Convergent boundary",
+                    "Divergent boundary",
+                    "Transform boundary",
+                    "Atmospheric boundary"
+                  ],
+                  "answer": "Convergent boundary",
+                  "explanation": "When two continental plates collide at a convergent boundary, the crust buckles upward into towering mountain ranges."
+                },
+                {
+                  "id": "pt4",
+                  "type": "mc",
+                  "prompt": "At the San Andreas Fault in California, two plates grind horizontally past each other in opposite directions, causing frequent earthquakes. This is a:",
+                  "choices": [
+                    "Transform boundary",
+                    "Divergent boundary",
+                    "Subduction zone",
+                    "Hotspot island"
+                  ],
+                  "answer": "Transform boundary",
+                  "explanation": "Plates sliding laterally past one another form a transform fault boundary."
+                },
+                {
+                  "id": "pt5",
+                  "type": "mc",
+                  "prompt": "Which pieces of evidence did Alfred Wegener use to support his hypothesis of Continental Drift?",
+                  "choices": [
+                    "Matching continental coastlines, identical fossils on separate continents, and matching rock formations",
+                    "Satellite GPS measurements taken in 1850",
+                    "Ocean temperatures at the equator",
+                    "Phases of the Moon"
+                  ],
+                  "answer": "Matching continental coastlines, identical fossils on separate continents, and matching rock formations",
+                  "explanation": "Wegener pointed to puzzle-like continent shapes (South America and Africa), Mesosaurus/Glossopteris fossils, and matching rock belts."
+                },
+                {
+                  "id": "pt6",
+                  "type": "mc",
+                  "prompt": "When a dense oceanic plate collides with a less dense continental plate, the oceanic plate sinks beneath it into the mantle in a process called:",
+                  "choices": [
+                    "Subduction",
+                    "Evaporation",
+                    "Deposition",
+                    "Condensation"
+                  ],
+                  "answer": "Subduction",
+                  "explanation": "Denser oceanic lithosphere subducts beneath continental lithosphere, forming deep ocean trenches and volcanic arcs."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g6-sci-u2-l2",
+          "unitId": "g6-sci-u2",
+          "title": "Lesson 2: Thermal Energy Transfer (Conduction, Convection, Radiation) & Water Cycle",
+          "kind": "lesson",
+          "estimatedMinutes": 22,
+          "videoUrl": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy",
+          "videoTitle": "Thermal Energy Transfer & The Global Water Cycle",
+          "reading": "Thermal energy always flows spontaneously from warmer objects to cooler objects by three mechanisms: Conduction (direct particle-to-particle contact, such as a metal spoon in hot soup), Convection (circulation of warm, less-dense fluids rising and cooler, denser fluids sinking in liquids and gases), and Radiation (electromagnetic waves traveling through space, such as sunlight warming Earth). Solar radiation and gravity together drive the global water cycle.",
+          "principles": [
+            {
+              "id": "p-g6-sci-thermal",
+              "title": "Conduction, Convection, Radiation & Water Cycle Drivers",
+              "standard": "MS-PS3-3",
+              "summary": "Identify conduction, convection, and radiation, and explain how solar energy and gravity power the water cycle.",
+              "bank": [
+                {
+                  "id": "th1",
+                  "type": "mc",
+                  "prompt": "A metal spoon left resting in a pot of boiling soup quickly becomes hot at the handle. How did heat travel up the solid spoon?",
+                  "choices": [
+                    "Conduction",
+                    "Convection",
+                    "Radiation",
+                    "Transpiration"
+                  ],
+                  "answer": "Conduction",
+                  "explanation": "Conduction transfers thermal energy through direct collisions between vibrating atoms in a solid."
+                },
+                {
+                  "id": "th2",
+                  "type": "mc",
+                  "prompt": "How does thermal energy from the Sun travel through the vacuum of outer space to warm Earth?",
+                  "choices": [
+                    "Radiation (electromagnetic waves)",
+                    "Conduction through air",
+                    "Convection of ocean water",
+                    "Friction"
+                  ],
+                  "answer": "Radiation (electromagnetic waves)",
+                  "explanation": "Only electromagnetic radiation can transfer energy across empty space without a matter medium."
+                },
+                {
+                  "id": "th3",
+                  "type": "mc",
+                  "prompt": "In a heated room or a pot of water on a stove, warm fluid becomes less dense and rises while cooler, denser fluid sinks. This circular transfer is:",
+                  "choices": [
+                    "Convection",
+                    "Conduction",
+                    "Radiation",
+                    "Sublimation"
+                  ],
+                  "answer": "Convection",
+                  "explanation": "Convection is heat transfer by the bulk movement of fluids (liquids or gases) due to density differences."
+                },
+                {
+                  "id": "th4",
+                  "type": "mc",
+                  "prompt": "Which two fundamental forces/energy sources drive the continuous movement of water through Earth’s water cycle?",
+                  "choices": [
+                    "Energy from the Sun (driving evaporation) and gravity (pulling precipitation and runoff down)",
+                    "Magnetism and lunar eclipses",
+                    "Geothermal geysers and earthquakes",
+                    "Tectonic subduction and friction"
+                  ],
+                  "answer": "Energy from the Sun (driving evaporation) and gravity (pulling precipitation and runoff down)",
+                  "explanation": "Solar radiation evaporates water into vapor, and gravity pulls condensed rain/snow back to Earth and down rivers."
+                },
+                {
+                  "id": "th5",
+                  "type": "mc",
+                  "prompt": "In which direction does thermal energy naturally flow when two objects at different temperatures touch?",
+                  "choices": [
+                    "From the warmer object to the cooler object until they reach thermal equilibrium",
+                    "From the colder object into the hotter object",
+                    "Only upward against gravity",
+                    "Thermal energy never moves between objects"
+                  ],
+                  "answer": "From the warmer object to the cooler object until they reach thermal equilibrium",
+                  "explanation": "By the Second Law of Thermodynamics, heat flows spontaneously from higher temperature to lower temperature."
+                },
+                {
+                  "id": "th6",
+                  "type": "mc",
+                  "prompt": "Why do insulated thermoses and winter jackets use trapped air pockets or foam?",
+                  "choices": [
+                    "Because trapped air is a thermal insulator that slows down heat transfer by conduction and convection",
+                    "Because foam creates new heat out of nothing",
+                    "Because metal conducts heat too slowly",
+                    "To make the jacket heavier"
+                  ],
+                  "answer": "Because trapped air is a thermal insulator that slows down heat transfer by conduction and convection",
+                  "explanation": "Insulators resist thermal energy flow, keeping hot drinks hot and body heat inside."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g6-sci-u2-test",
+          "unitId": "g6-sci-u2",
+          "title": "Unit 2 Exam: Earth Systems & Thermal Energy",
+          "kind": "unit_test",
+          "estimatedMinutes": 25,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-earth-and-space-science",
+          "videoTitle": "Grade 6 Science Comprehensive Review",
+          "reading": "Review plate tectonics, thermal transfer, and the water cycle for the Unit 2 Exam.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g6-sci-plates",
+              "title": "Tectonic Plate Boundaries and Mantle Convection",
+              "standard": "MS-ESS2-2",
+              "summary": "Analyze geological features formed at plate boundaries.",
+              "bank": [
+                {
+                  "id": "s6ut1",
+                  "type": "mc",
+                  "prompt": "New oceanic crust is continuously created by rising magma at which tectonic feature?",
+                  "choices": [
+                    "Mid-ocean ridges (divergent boundaries)",
+                    "Transform faults",
+                    "Deep-sea subduction trenches",
+                    "Continental interiors"
+                  ],
+                  "answer": "Mid-ocean ridges (divergent boundaries)",
+                  "explanation": "At divergent boundaries underwater, plates pull apart and magma solidifies into new oceanic crust."
+                },
+                {
+                  "id": "s6ut2",
+                  "type": "mc",
+                  "prompt": "Why are most of the world’s active volcanoes and earthquakes concentrated along the \"Ring of Fire\" around the Pacific Ocean?",
+                  "choices": [
+                    "It traces the boundaries where the Pacific Plate converges and subducts beneath surrounding plates.",
+                    "The equator runs in a circle around the Pacific.",
+                    "Meteorites strike the Pacific shoreline more often.",
+                    "Ocean water is warmer near volcanoes."
+                  ],
+                  "answer": "It traces the boundaries where the Pacific Plate converges and subducts beneath surrounding plates.",
+                  "explanation": "Active subduction zones around the Pacific Rim generate intense seismic and volcanic activity."
+                },
+                {
+                  "id": "s6ut3",
+                  "type": "mc",
+                  "prompt": "Which layer of Earth is composed of hot, semi-solid rock that flows slowly by convection?",
+                  "choices": [
+                    "The mantle (asthenosphere)",
+                    "The outer atmosphere",
+                    "The continental crust",
+                    "The ocean floor"
+                  ],
+                  "answer": "The mantle (asthenosphere)",
+                  "explanation": "The mantle lies beneath the crust and convects slowly over geologic time."
+                }
+              ]
+            },
+            {
+              "id": "p-g6-sci-thermal",
+              "title": "Conduction, Convection, Radiation & Water Cycle Drivers",
+              "standard": "MS-PS3-3",
+              "summary": "Apply thermal transfer concepts and water cycle mechanics.",
+              "bank": [
+                {
+                  "id": "s6ut4",
+                  "type": "mc",
+                  "prompt": "As water vapor rises high into the cooler troposphere, it cools and changes from a gas into tiny liquid cloud droplets. This process is:",
+                  "choices": [
+                    "Condensation",
+                    "Evaporation",
+                    "Precipitation",
+                    "Runoff"
+                  ],
+                  "answer": "Condensation",
+                  "explanation": "Cooling water vapor loses thermal energy and condenses into liquid droplets that form clouds."
+                },
+                {
+                  "id": "s6ut5",
+                  "type": "mc",
+                  "prompt": "A sea breeze blows from the cool ocean toward the warm land during a sunny afternoon primarily because of:",
+                  "choices": [
+                    "Convection: air over the warm land heats up, becomes less dense, and rises, drawing cooler ocean air inward",
+                    "Conduction through solid granite",
+                    "Gravity pulling air sideways",
+                    "Ocean waves pushing the wind"
+                  ],
+                  "answer": "Convection: air over the warm land heats up, becomes less dense, and rises, drawing cooler ocean air inward",
+                  "explanation": "Unequal heating of land and water creates a convection cell known as a sea breeze."
+                },
+                {
+                  "id": "s6ut6",
+                  "type": "mc",
+                  "prompt": "Which material is the BEST thermal conductor for cooking food quickly on a stove?",
+                  "choices": [
+                    "Copper or aluminum metal",
+                    "Styrofoam",
+                    "Dry wood",
+                    "Wool fabric"
+                  ],
+                  "answer": "Copper or aluminum metal",
+                  "explanation": "Metals have free-moving electrons that transfer thermal energy rapidly by conduction."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

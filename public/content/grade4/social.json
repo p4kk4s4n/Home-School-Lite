@@ -1,0 +1,459 @@
+{
+  "id": "g4-social",
+  "subject": "social",
+  "grade": 4,
+  "title": "Grade 4 Social Studies",
+  "subtitle": "U.S. Geography & Regions, Branches of Government, Civics & Economics",
+  "credits": 1,
+  "color": "#d97706",
+  "icon": "🌐",
+  "units": [
+    {
+      "id": "g4-soc-u1",
+      "title": "Unit 1: Map Skills & Regions of the United States",
+      "standards": [
+        "C3.D2.Geo.1.3-5",
+        "C3.D2.Geo.2.3-5"
+      ],
+      "lessons": [
+        {
+          "id": "g4-soc-u1-l1",
+          "unitId": "g4-soc-u1",
+          "title": "Lesson 1: Latitude, Longitude, Map Tools & U.S. Regions",
+          "kind": "lesson",
+          "estimatedMinutes": 20,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-history",
+          "videoTitle": "Geography Skills: Latitude, Longitude & Regions of the United States",
+          "reading": "Geographers use a grid of imaginary lines to locate places on Earth. Lines of latitude (parallels) run east–west and measure distance north or south of the Equator (0° latitude). Lines of longitude (meridians) run north–south from pole to pole and measure distance east or west of the Prime Meridian. The United States is commonly grouped into five major regions: Northeast, Southeast, Midwest, Southwest, and West.",
+          "principles": [
+            {
+              "id": "p-g4-soc-geo",
+              "title": "Map Coordinates & Physical/Cultural Regions of the U.S.",
+              "standard": "C3.D2.Geo.2.3-5",
+              "summary": "Use latitude, longitude, compass rose, and map scales, and identify major landforms and U.S. regions.",
+              "bank": [
+                {
+                  "id": "sg1",
+                  "type": "mc",
+                  "prompt": "What is the imaginary line at 0° latitude that divides Earth into the Northern and Southern Hemispheres?",
+                  "choices": [
+                    "The Equator",
+                    "The Prime Meridian",
+                    "The Tropic of Cancer",
+                    "The Continental Divide"
+                  ],
+                  "answer": "The Equator",
+                  "explanation": "The Equator is 0° latitude, circling Earth halfway between the North and South Poles."
+                },
+                {
+                  "id": "sg2",
+                  "type": "mc",
+                  "prompt": "Which tool on a map helps you convert inches or centimeters on the page into actual miles or kilometers on the ground?",
+                  "choices": [
+                    "Map scale",
+                    "Compass rose",
+                    "Map title",
+                    "Grid index"
+                  ],
+                  "answer": "Map scale",
+                  "explanation": "A map scale shows the ratio between distance on a map and real-world distance on Earth."
+                },
+                {
+                  "id": "sg3",
+                  "type": "mc",
+                  "prompt": "Which U.S. region is famous for its fertile prairies and is often called \"America’s Breadbasket\" because of its corn and wheat farms?",
+                  "choices": [
+                    "The Midwest",
+                    "The Northeast",
+                    "The Southwest",
+                    "The Pacific Northwest"
+                  ],
+                  "answer": "The Midwest",
+                  "explanation": "The flat, fertile plains of the Midwest make it one of the world’s most productive agricultural regions."
+                },
+                {
+                  "id": "sg4",
+                  "type": "mc",
+                  "prompt": "Which major mountain range runs along the eastern United States from Maine to Georgia?",
+                  "choices": [
+                    "The Appalachian Mountains",
+                    "The Rocky Mountains",
+                    "The Sierra Nevada",
+                    "The Andes Mountains"
+                  ],
+                  "answer": "The Appalachian Mountains",
+                  "explanation": "The Appalachian Mountains are the ancient mountain chain in eastern North America."
+                },
+                {
+                  "id": "sg5",
+                  "type": "mc",
+                  "prompt": "Lines of longitude run from the North Pole to the South Pole and measure distance east or west of the:",
+                  "choices": [
+                    "Prime Meridian",
+                    "Equator",
+                    "Mississippi River",
+                    "Arctic Circle"
+                  ],
+                  "answer": "Prime Meridian",
+                  "explanation": "The Prime Meridian (0° longitude) is the starting reference line for measuring east and west longitude."
+                },
+                {
+                  "id": "sg6",
+                  "type": "mc",
+                  "prompt": "The Grand Canyon, Sonoran Desert, and Colorado Plateau are signature physical features of which U.S. region?",
+                  "choices": [
+                    "The Southwest",
+                    "The Northeast",
+                    "The Southeast",
+                    "New England"
+                  ],
+                  "answer": "The Southwest",
+                  "explanation": "Arid deserts, canyons, and mesas characterize the American Southwest (including Arizona and New Mexico)."
+                },
+                {
+                  "id": "sg7",
+                  "type": "mc",
+                  "prompt": "Which river system forms a massive north-to-south waterway through the center of the United States emptying into the Gulf of Mexico?",
+                  "choices": [
+                    "The Mississippi River",
+                    "The Hudson River",
+                    "The Columbia River",
+                    "The Potomac River"
+                  ],
+                  "answer": "The Mississippi River",
+                  "explanation": "The Mississippi River and its tributaries drain the interior of the United States into the Gulf of Mexico."
+                },
+                {
+                  "id": "sg8",
+                  "type": "mc",
+                  "prompt": "What is the purpose of a map legend (or key)?",
+                  "choices": [
+                    "To explain the meaning of symbols, colors, and lines used on the map",
+                    "To show which direction is north",
+                    "To list the authors of the atlas",
+                    "To tell the temperature tomorrow"
+                  ],
+                  "answer": "To explain the meaning of symbols, colors, and lines used on the map",
+                  "explanation": "A map legend decodes what the symbols and colors represent (e.g., capitals, highways, elevation)."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g4-soc-u2",
+      "title": "Unit 2: U.S. Constitution, Branches of Government & Economics",
+      "standards": [
+        "C3.D2.Civ.1.3-5",
+        "C3.D2.Eco.1.3-5"
+      ],
+      "lessons": [
+        {
+          "id": "g4-soc-u2-l1",
+          "unitId": "g4-soc-u2",
+          "title": "Lesson 1: Three Branches of Government & Checks and Balances",
+          "kind": "lesson",
+          "estimatedMinutes": 20,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-government-and-civics",
+          "videoTitle": "The U.S. Constitution & Three Branches of Government",
+          "reading": "The U.S. Constitution divides federal power among three branches so no single leader or group gains total control (Separation of Powers and Checks and Balances): 1) Legislative Branch (Congress: Senate and House of Representatives) makes laws; 2) Executive Branch (President, Vice President, Cabinet) carries out and enforces laws; 3) Judicial Branch (Supreme Court and federal courts) interprets laws under the Constitution.",
+          "principles": [
+            {
+              "id": "p-g4-soc-civics",
+              "title": "Legislative, Executive & Judicial Branches and Citizens’ Rights",
+              "standard": "C3.D2.Civ.1.3-5",
+              "summary": "Congress makes laws, the President enforces laws, and the Supreme Court interprets laws under Checks and Balances.",
+              "bank": [
+                {
+                  "id": "sc1",
+                  "type": "mc",
+                  "prompt": "Which branch of the U.S. government is responsible for MAKING federal laws?",
+                  "choices": [
+                    "The Legislative Branch (Congress)",
+                    "The Executive Branch (President)",
+                    "The Judicial Branch (Supreme Court)",
+                    "The State Police"
+                  ],
+                  "answer": "The Legislative Branch (Congress)",
+                  "explanation": "Congress—made up of the Senate and the House of Representatives—writes and votes on bills to make federal laws."
+                },
+                {
+                  "id": "sc2",
+                  "type": "mc",
+                  "prompt": "Why did the framers of the Constitution create a system of \"Checks and Balances\"?",
+                  "choices": [
+                    "To prevent any single branch of government from becoming too powerful",
+                    "To help banks print paper money faster",
+                    "To give the President complete power to write all laws alone",
+                    "To eliminate state governments"
+                  ],
+                  "answer": "To prevent any single branch of government from becoming too powerful",
+                  "explanation": "Checks and balances give each branch ways to limit the power of the other two branches."
+                },
+                {
+                  "id": "sc3",
+                  "type": "mc",
+                  "prompt": "Who leads the Executive Branch of the federal government and serves as Commander-in-Chief?",
+                  "choices": [
+                    "The President of the United States",
+                    "The Chief Justice",
+                    "The Speaker of the House",
+                    "The State Governor"
+                  ],
+                  "answer": "The President of the United States",
+                  "explanation": "The President heads the Executive Branch and sees that federal laws are faithfully executed."
+                },
+                {
+                  "id": "sc4",
+                  "type": "mc",
+                  "prompt": "What are the first ten amendments to the U.S. Constitution called?",
+                  "choices": [
+                    "The Bill of Rights",
+                    "The Declaration of Independence",
+                    "The Articles of Confederation",
+                    "The Emancipation Proclamation"
+                  ],
+                  "answer": "The Bill of Rights",
+                  "explanation": "Ratified in 1791, the Bill of Rights guarantees fundamental freedoms such as speech, religion, press, and fair trial."
+                },
+                {
+                  "id": "sc5",
+                  "type": "mc",
+                  "prompt": "Which branch of government includes the Supreme Court and decides whether laws follow the Constitution?",
+                  "choices": [
+                    "The Judicial Branch",
+                    "The Legislative Branch",
+                    "The Executive Branch",
+                    "The Treasury Department"
+                  ],
+                  "answer": "The Judicial Branch",
+                  "explanation": "The Judicial Branch interprets laws and can strike down laws that violate the Constitution."
+                },
+                {
+                  "id": "sc6",
+                  "type": "mc",
+                  "prompt": "When the President refuses to sign a bill passed by Congress, this action is called a:",
+                  "choices": [
+                    "Veto",
+                    "Pardon",
+                    "Filibuster",
+                    "Ratification"
+                  ],
+                  "answer": "Veto",
+                  "explanation": "A presidential veto is an executive check on the legislative branch (which Congress can override with a two-thirds vote)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g4-soc-u2-l2",
+          "unitId": "g4-soc-u2",
+          "title": "Lesson 2: Scarcity, Opportunity Cost, Supply & Demand",
+          "kind": "lesson",
+          "estimatedMinutes": 20,
+          "videoUrl": "https://www.khanacademy.org/economics-finance-domain/microeconomics/basic-economic-concepts-gen-micro",
+          "videoTitle": "Economics: Goods, Services, Opportunity Cost & Supply/Demand",
+          "reading": "Economics studies how people use limited resources to satisfy wants and needs. Scarcity means resources (time, money, raw materials) are limited. When you make a choice, your opportunity cost is the value of the NEXT BEST alternative you gave up. Supply is how much of a good producers offer for sale, and demand is how much consumers are willing and able to buy.",
+          "principles": [
+            {
+              "id": "p-g4-soc-econ",
+              "title": "Scarcity, Opportunity Cost, Goods/Services & Supply/Demand",
+              "standard": "C3.D2.Eco.1.3-5",
+              "summary": "Opportunity cost is the next best choice given up; high demand and low supply push prices up.",
+              "bank": [
+                {
+                  "id": "se1",
+                  "type": "mc",
+                  "prompt": "Liam has $15. He wants either a board game or a soccer ball, and he chooses the soccer ball. What is his OPPORTUNITY COST?",
+                  "choices": [
+                    "The board game he gave up",
+                    "The soccer ball he bought",
+                    "Both the board game and the soccer ball",
+                    "Zero dollars"
+                  ],
+                  "answer": "The board game he gave up",
+                  "explanation": "Opportunity cost is the next best alternative you give up when making a decision."
+                },
+                {
+                  "id": "se2",
+                  "type": "mc",
+                  "prompt": "Which of the following is an example of a SERVICE rather than a physical GOOD?",
+                  "choices": [
+                    "A dentist cleaning your teeth",
+                    "A loaf of fresh bread from a bakery",
+                    "A pair of running shoes",
+                    "A hardcover history book"
+                  ],
+                  "answer": "A dentist cleaning your teeth",
+                  "explanation": "A service is helpful work performed for others, whereas a good is a physical object you can touch."
+                },
+                {
+                  "id": "se3",
+                  "type": "mc",
+                  "prompt": "If a late spring freeze destroys most of the peach crop while many shoppers still want peaches, what usually happens to the price of peaches?",
+                  "choices": [
+                    "The price increases because supply is low and demand is high.",
+                    "The price drops to zero.",
+                    "The supply of peaches doubles overnight.",
+                    "Peaches become a free public service."
+                  ],
+                  "answer": "The price increases because supply is low and demand is high.",
+                  "explanation": "When supply decreases while demand remains strong, scarcity pushes the market price up."
+                },
+                {
+                  "id": "se4",
+                  "type": "mc",
+                  "prompt": "What does the economic term SCARCITY mean?",
+                  "choices": [
+                    "People have unlimited wants, but resources to fulfill them are limited.",
+                    "Stores have too many items on sale.",
+                    "Everyone has enough money to buy everything at once.",
+                    "Only gold and diamonds have value."
+                  ],
+                  "answer": "People have unlimited wants, but resources to fulfill them are limited.",
+                  "explanation": "Scarcity is the fundamental economic condition of limited resources relative to human wants."
+                },
+                {
+                  "id": "se5",
+                  "type": "mc",
+                  "prompt": "A bakery buys flour, ovens, and mixing bowls to make muffins. In economics, the ovens and mixing bowls are:",
+                  "choices": [
+                    "Capital resources (tools and equipment)",
+                    "Natural resources",
+                    "Consumers",
+                    "Opportunity costs"
+                  ],
+                  "answer": "Capital resources (tools and equipment)",
+                  "explanation": "Man-made tools, machines, and buildings used to produce other goods are capital resources."
+                },
+                {
+                  "id": "se6",
+                  "type": "mc",
+                  "prompt": "When a toy store has 200 winter sleds left over in April and very few customers want to buy them, the store will likely:",
+                  "choices": [
+                    "Lower the price (put them on sale) to encourage demand",
+                    "Triple the price of the sleds",
+                    "Order 500 more sleds immediately",
+                    "Stop selling summer items"
+                  ],
+                  "answer": "Lower the price (put them on sale) to encourage demand",
+                  "explanation": "High supply paired with low demand leads sellers to reduce prices to clear inventory."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g4-soc-u2-test",
+          "unitId": "g4-soc-u2",
+          "title": "Unit 2 Exam: Civics, Geography & Economics",
+          "kind": "unit_test",
+          "estimatedMinutes": 25,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-government-and-civics",
+          "videoTitle": "Grade 4 Social Studies Review",
+          "reading": "Review U.S. regions, the three branches of government, and economic principles for the Unit 2 Exam.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g4-soc-civics",
+              "title": "Legislative, Executive & Judicial Branches and Citizens’ Rights",
+              "standard": "C3.D2.Civ.1.3-5",
+              "summary": "Understand separation of powers and constitutional rights.",
+              "bank": [
+                {
+                  "id": "sut1",
+                  "type": "mc",
+                  "prompt": "How many U.S. Senators represent each state in Congress?",
+                  "choices": [
+                    "2 Senators per state (100 total)",
+                    "1 Senator per state",
+                    "10 Senators per state",
+                    "It depends on the state’s land area"
+                  ],
+                  "answer": "2 Senators per state (100 total)",
+                  "explanation": "Every state has equal representation in the U.S. Senate with 2 Senators."
+                },
+                {
+                  "id": "sut2",
+                  "type": "mc",
+                  "prompt": "Freedom of speech, freedom of the press, and freedom of religion are protected by which amendment?",
+                  "choices": [
+                    "The First Amendment",
+                    "The Nineteenth Amendment",
+                    "The Tenth Amendment",
+                    "The Twenty-Sixth Amendment"
+                  ],
+                  "answer": "The First Amendment",
+                  "explanation": "The First Amendment in the Bill of Rights protects religion, speech, press, assembly, and petition."
+                },
+                {
+                  "id": "sut3",
+                  "type": "mc",
+                  "prompt": "Which level of government is primarily responsible for local fire departments, city parks, and public libraries?",
+                  "choices": [
+                    "Local (city/county) government",
+                    "Foreign embassies",
+                    "The Supreme Court",
+                    "The United Nations"
+                  ],
+                  "answer": "Local (city/county) government",
+                  "explanation": "Local governments manage community services like fire protection, local roads, parks, and libraries."
+                }
+              ]
+            },
+            {
+              "id": "p-g4-soc-econ",
+              "title": "Scarcity, Opportunity Cost, Goods/Services & Supply/Demand",
+              "standard": "C3.D2.Eco.1.3-5",
+              "summary": "Apply opportunity cost and supply/demand reasoning.",
+              "bank": [
+                {
+                  "id": "sut4",
+                  "type": "mc",
+                  "prompt": "Maya spends Saturday afternoon studying for her science test instead of going to the movies. Going to the movies is her:",
+                  "choices": [
+                    "Opportunity cost",
+                    "Natural resource",
+                    "Supply curve",
+                    "Tax rate"
+                  ],
+                  "answer": "Opportunity cost",
+                  "explanation": "The activity she gave up (going to the movies) is the opportunity cost of her choice to study."
+                },
+                {
+                  "id": "sut5",
+                  "type": "mc",
+                  "prompt": "Trees, fresh water, fertile soil, and iron ore used to make products are examples of:",
+                  "choices": [
+                    "Natural resources",
+                    "Capital resources",
+                    "Human resources",
+                    "Services"
+                  ],
+                  "answer": "Natural resources",
+                  "explanation": "Materials that come directly from nature without being made by humans are natural resources."
+                },
+                {
+                  "id": "sut6",
+                  "type": "mc",
+                  "prompt": "A person who buys and uses goods and services is called a:",
+                  "choices": [
+                    "Consumer",
+                    "Producer",
+                    "Legislator",
+                    "Cartographer"
+                  ],
+                  "answer": "Consumer",
+                  "explanation": "Producers make goods or provide services; consumers purchase and use them."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

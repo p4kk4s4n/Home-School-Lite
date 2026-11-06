@@ -1,0 +1,257 @@
+{
+  "id": "g6-math",
+  "subject": "math",
+  "grade": 6,
+  "title": "Grade 6 Mathematics",
+  "subtitle": "Ratios & Unit Rates, Rational Numbers, Expressions/Equations, Geometry & Statistics",
+  "credits": 1,
+  "color": "#2563eb",
+  "icon": "∑",
+  "units": [
+    {
+      "id": "g6-math-u1",
+      "title": "Unit 1: Ratios, Unit Rates & Percentages",
+      "standards": [
+        "6.RP.A.1",
+        "6.RP.A.2",
+        "6.RP.A.3c"
+      ],
+      "lessons": [
+        {
+          "id": "g6-math-u1-l1",
+          "unitId": "g6-math-u1",
+          "title": "Lesson 1: Ratios & Unit Rates in Real-World Contexts",
+          "kind": "lesson",
+          "estimatedMinutes": 22,
+          "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic",
+          "videoTitle": "Khan Academy: Intro to Ratios & Solving Unit Rate Problems",
+          "reading": "A ratio compares two quantities. A rate compares two quantities with different units (such as miles and hours, or dollars and items). A unit rate has a denominator of 1 unit (for example, $6 per pound or 55 miles per 1 hour) and is found by dividing the first quantity by the second.",
+          "principles": [
+            {
+              "id": "p-g6-unit-rate",
+              "title": "Computing Unit Rates by Division",
+              "standard": "6.RP.A.2",
+              "summary": "Divide total cost or distance by quantity to find the rate per 1 unit.",
+              "generatorId": "g6.ratios-unit-rate"
+            }
+          ]
+        },
+        {
+          "id": "g6-math-u1-l2",
+          "unitId": "g6-math-u1",
+          "title": "Lesson 2: Finding a Percent of a Quantity",
+          "kind": "lesson",
+          "estimatedMinutes": 22,
+          "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages",
+          "videoTitle": "Khan Academy: Percents as Ratios Per 100",
+          "reading": "Percent means \"per hundred\" (p% = p/100). To find p% of a number, convert the percentage to a decimal by dividing by 100 (or write it as a fraction over 100) and multiply by the whole quantity.",
+          "principles": [
+            {
+              "id": "p-g6-percent",
+              "title": "Calculating Percent of a Number",
+              "standard": "6.RP.A.3c",
+              "summary": "Express p% as p/100 and multiply by the base quantity.",
+              "generatorId": "g6.percent-of-number"
+            }
+          ]
+        },
+        {
+          "id": "g6-math-u1-test",
+          "unitId": "g6-math-u1",
+          "title": "Unit 1 Exam: Ratios, Rates & Percentages",
+          "kind": "unit_test",
+          "estimatedMinutes": 25,
+          "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic",
+          "videoTitle": "Unit 1 Review: Proportional Reasoning",
+          "reading": "This exam assesses unit rates and percent calculations with freshly generated numbers.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g6-unit-rate",
+              "title": "Computing Unit Rates by Division",
+              "standard": "6.RP.A.2",
+              "summary": "Find the per-unit rate by division.",
+              "generatorId": "g6.ratios-unit-rate"
+            },
+            {
+              "id": "p-g6-percent",
+              "title": "Calculating Percent of a Number",
+              "standard": "6.RP.A.3c",
+              "summary": "Convert percent to decimal/fraction and multiply.",
+              "generatorId": "g6.percent-of-number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g6-math-u2",
+      "title": "Unit 2: Fraction Division, Integers & Algebraic Equations",
+      "standards": [
+        "6.NS.A.1",
+        "6.NS.C.5",
+        "6.EE.A.2",
+        "6.EE.B.7"
+      ],
+      "lessons": [
+        {
+          "id": "g6-math-u2-l1",
+          "unitId": "g6-math-u2",
+          "title": "Lesson 1: Dividing Fractions & Operating with Negative Integers",
+          "kind": "lesson",
+          "estimatedMinutes": 24,
+          "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations",
+          "videoTitle": "Khan Academy: Dividing Fractions by Fractions & Negative Numbers",
+          "reading": "To divide a fraction by another fraction, multiply the dividend by the reciprocal (multiplicative inverse) of the divisor: (a/b) ÷ (c/d) = (a/b) × (d/c), then simplify using the greatest common divisor. On the number line, negative integers lie to the left of 0; adding a positive integer moves right, while subtracting moves left.",
+          "principles": [
+            {
+              "id": "p-g6-frac-div",
+              "title": "Dividing Fractions by Multiplying by the Reciprocal",
+              "standard": "6.NS.A.1",
+              "summary": "Invert the second fraction (divisor) and multiply numerators and denominators, then simplify.",
+              "generatorId": "g6.fraction-division"
+            },
+            {
+              "id": "p-g6-integers",
+              "title": "Adding & Subtracting Signed Integers",
+              "standard": "6.NS.C.5",
+              "summary": "Use number-line direction and absolute value to evaluate signed integer expressions.",
+              "generatorId": "g6.integers-rational"
+            }
+          ]
+        },
+        {
+          "id": "g6-math-u2-l2",
+          "unitId": "g6-math-u2",
+          "title": "Lesson 2: Evaluating Expressions with Exponents & Solving Linear Equations",
+          "kind": "lesson",
+          "estimatedMinutes": 24,
+          "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables",
+          "videoTitle": "Khan Academy: Algebraic Expressions & Equations",
+          "reading": "When evaluating an algebraic expression like 4x² - 7 for a given value of x, substitute the number for x and follow the Order of Operations (PEMDAS: Parentheses, Exponents, Multiplication/Division, Addition/Subtraction). To solve an equation such as mx + b = c, apply inverse operations to both sides to isolate x.",
+          "principles": [
+            {
+              "id": "p-g6-eval-expr",
+              "title": "Evaluating Expressions with Exponents",
+              "standard": "6.EE.A.2",
+              "summary": "Substitute variable values and compute exponents before multiplication and subtraction.",
+              "generatorId": "g6.expressions-evaluate"
+            },
+            {
+              "id": "p-g6-solve-eq",
+              "title": "Solving Equations Using Inverse Operations",
+              "standard": "6.EE.B.7",
+              "summary": "Undo addition/subtraction first, then divide by the coefficient of x.",
+              "generatorId": "g6.one-step-equations"
+            }
+          ]
+        },
+        {
+          "id": "g6-math-u2-test",
+          "unitId": "g6-math-u2",
+          "title": "Unit 2 Exam: Rational Numbers & Algebra",
+          "kind": "unit_test",
+          "estimatedMinutes": 25,
+          "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables",
+          "videoTitle": "Unit 2 Review: Rational Numbers & Algebra",
+          "reading": "Demonstrate mastery of fraction division, signed integers, exponent expressions, and equation solving.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g6-frac-div",
+              "title": "Dividing Fractions by Multiplying by the Reciprocal",
+              "standard": "6.NS.A.1",
+              "summary": "Multiply by the reciprocal and reduce to lowest terms.",
+              "generatorId": "g6.fraction-division"
+            },
+            {
+              "id": "p-g6-integers",
+              "title": "Adding & Subtracting Signed Integers",
+              "standard": "6.NS.C.5",
+              "summary": "Operate with negative and positive integers.",
+              "generatorId": "g6.integers-rational"
+            },
+            {
+              "id": "p-g6-eval-expr",
+              "title": "Evaluating Expressions with Exponents",
+              "standard": "6.EE.A.2",
+              "summary": "Evaluate variable expressions with exponents.",
+              "generatorId": "g6.expressions-evaluate"
+            },
+            {
+              "id": "p-g6-solve-eq",
+              "title": "Solving Equations Using Inverse Operations",
+              "standard": "6.EE.B.7",
+              "summary": "Isolate the variable x using inverse operations.",
+              "generatorId": "g6.one-step-equations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g6-math-u3",
+      "title": "Unit 3: Geometry (Triangles & Prisms) and Data Statistics",
+      "standards": [
+        "6.G.A.1",
+        "6.G.A.2",
+        "6.SP.B.5c"
+      ],
+      "lessons": [
+        {
+          "id": "g6-math-u3-l1",
+          "unitId": "g6-math-u3",
+          "title": "Lesson 1: Area of Triangles, Volume of Prisms & Mean/Median",
+          "kind": "lesson",
+          "estimatedMinutes": 24,
+          "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic",
+          "videoTitle": "Khan Academy: Area of Triangles, Volume & Mean/Median",
+          "reading": "Every triangle is half of a parallelogram with the same base and height, so Area = ½ × b × h. The volume of a rectangular prism is Volume = length × width × height (cubic units). In statistics, the mean is the arithmetic average (sum of values divided by count) and the median is the middle value when data are ordered from least to greatest.",
+          "principles": [
+            {
+              "id": "p-g6-geom",
+              "title": "Area of Triangles and Volume of Rectangular Prisms",
+              "standard": "6.G.A.1",
+              "summary": "Use A = ½bh for triangles and V = lwh for rectangular prisms.",
+              "generatorId": "g6.geometry-triangle-prism"
+            },
+            {
+              "id": "p-g6-stats",
+              "title": "Measures of Center: Mean and Median",
+              "standard": "6.SP.B.5c",
+              "summary": "Compute the mean (sum ÷ count) and median (middle value of ordered list).",
+              "generatorId": "g6.stats-mean-median"
+            }
+          ]
+        },
+        {
+          "id": "g6-math-u3-test",
+          "unitId": "g6-math-u3",
+          "title": "Unit 3 Exam: Geometry & Statistical Measures",
+          "kind": "unit_test",
+          "estimatedMinutes": 25,
+          "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics",
+          "videoTitle": "Unit 3 Review: Geometry & Statistics",
+          "reading": "Complete this Unit Exam on triangle area, prism volume, mean, and median.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g6-geom",
+              "title": "Area of Triangles and Volume of Rectangular Prisms",
+              "standard": "6.G.A.1",
+              "summary": "Calculate triangle area and prism volume.",
+              "generatorId": "g6.geometry-triangle-prism"
+            },
+            {
+              "id": "p-g6-stats",
+              "title": "Measures of Center: Mean and Median",
+              "standard": "6.SP.B.5c",
+              "summary": "Calculate mean and median of numerical data sets.",
+              "generatorId": "g6.stats-mean-median"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

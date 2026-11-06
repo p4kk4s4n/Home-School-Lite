@@ -1,0 +1,458 @@
+{
+  "id": "g6-ela",
+  "subject": "ela",
+  "grade": 6,
+  "title": "Grade 6 Language Arts",
+  "subtitle": "Literary Analysis, Argument & Claims, Connotation/Tone, Greek/Latin Roots & Pronouns",
+  "credits": 1,
+  "color": "#9333ea",
+  "icon": "✒",
+  "units": [
+    {
+      "id": "g6-ela-u1",
+      "title": "Unit 1: Citing Textual Evidence, Point of View & Evaluating Arguments",
+      "standards": [
+        "RL.6.1",
+        "RL.6.6",
+        "RI.6.8"
+      ],
+      "lessons": [
+        {
+          "id": "g6-ela-u1-l1",
+          "unitId": "g6-ela-u1",
+          "title": "Lesson 1: Narrative Point of View, Tone & Citing Text Evidence",
+          "kind": "lesson",
+          "estimatedMinutes": 22,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-6th-reading-vocab",
+          "videoTitle": "Khan Academy Grade 6 ELA: Point of View, Tone & Textual Evidence",
+          "reading": "An author develops point of view through the narrator’s perspective: First-Person (\"I\", \"we\" — the narrator is a character inside the story), Third-Person Limited (outside narrator who knows the inner thoughts of one focal character), and Third-Person Omniscient (all-knowing narrator who reveals the thoughts of multiple characters). Tone is the author’s attitude toward the subject, conveyed through word choice (diction) and connotation.",
+          "principles": [
+            {
+              "id": "p-g6-ela-pov",
+              "title": "Narrative Point of View, Connotation & Tone",
+              "standard": "RL.6.6",
+              "summary": "Distinguish 1st-person, 3rd-person limited, and 3rd-person omniscient perspectives and analyze word connotation.",
+              "bank": [
+                {
+                  "id": "pov1",
+                  "type": "mc",
+                  "passage": "Marcus stared at the chessboard, certain that his knight move would trap Elena’s queen. Across the table, Elena hid a smile; she had anticipated the trap three turns ago and was ready to counterattack.",
+                  "prompt": "From which narrative point of view is this passage told?",
+                  "choices": [
+                    "Third-person omniscient (the narrator knows the private thoughts of both Marcus and Elena)",
+                    "First-person (told by Marcus using \"I\")",
+                    "Second-person (instructional \"you\")",
+                    "Third-person objective (no internal thoughts are shown)"
+                  ],
+                  "answer": "Third-person omniscient (the narrator knows the private thoughts of both Marcus and Elena)",
+                  "explanation": "The narrator reveals what both Marcus (\"certain that...\") and Elena (\"she had anticipated...\") are thinking."
+                },
+                {
+                  "id": "pov2",
+                  "type": "mc",
+                  "prompt": "The words \"thrifty\" and \"stingy\" both have a similar denotation (careful with spending money), but how do their CONNOTATIONS differ?",
+                  "choices": [
+                    "\"Thrifty\" has a positive connotation of wise saving, while \"stingy\" has a negative connotation of selfishness.",
+                    "Both words have a harsh negative connotation.",
+                    "\"Stingy\" is positive and \"thrifty\" is negative.",
+                    "Neither word carries any emotional shade of meaning."
+                  ],
+                  "answer": "\"Thrifty\" has a positive connotation of wise saving, while \"stingy\" has a negative connotation of selfishness.",
+                  "explanation": "Connotation is the emotional or cultural association a word carries beyond its literal dictionary definition."
+                },
+                {
+                  "id": "pov3",
+                  "type": "mc",
+                  "passage": "I adjusted my headlamp and stepped into the limestone cavern. Cool water dripped from the stalactites above me, echoing in the dark chamber.",
+                  "prompt": "Which point of view is used in this passage, and how does it affect the reader?",
+                  "choices": [
+                    "First-person (\"I\", \"my\"), letting the reader experience the cave directly through the narrator’s eyes",
+                    "Third-person omniscient, showing what everyone in town is doing",
+                    "Second-person, giving recipe instructions",
+                    "Third-person limited, following a bat"
+                  ],
+                  "answer": "First-person (\"I\", \"my\"), letting the reader experience the cave directly through the narrator’s eyes",
+                  "explanation": "First-person pronouns (\"I\", \"my\", \"me\") place the reader inside the narrator’s immediate sensory experience."
+                },
+                {
+                  "id": "pov4",
+                  "type": "mc",
+                  "passage": "Despite three days of relentless sleet and howling gales, the lighthouse keeper climbed the iron spiral stairs every four hours to keep the beacon burning for ships at sea.",
+                  "prompt": "Which word best describes the author’s TONE toward the lighthouse keeper?",
+                  "choices": [
+                    "Admiring and respectful",
+                    "Mocking and sarcastic",
+                    "Bored and indifferent",
+                    "Hostile and angry"
+                  ],
+                  "answer": "Admiring and respectful",
+                  "explanation": "Contrasting \"relentless sleet\" with the keeper’s faithful duty highlights heroism and creates an admiring tone."
+                },
+                {
+                  "id": "pov5",
+                  "type": "mc",
+                  "prompt": "Which of these words has the most POSITIVE connotation for describing someone who holds firm to their goals?",
+                  "choices": [
+                    "Persevering",
+                    "Stubborn",
+                    "Obstinate",
+                    "Pigheaded"
+                  ],
+                  "answer": "Persevering",
+                  "explanation": "\"Persevering\" conveys admirable determination, whereas \"stubborn\" and \"pigheaded\" carry negative connotations."
+                },
+                {
+                  "id": "pov6",
+                  "type": "mc",
+                  "prompt": "In Third-Person Limited point of view:",
+                  "choices": [
+                    "The narrator is outside the story and reveals the internal thoughts and feelings of only ONE character.",
+                    "The narrator uses \"I\" and \"me\" throughout.",
+                    "The narrator reveals the secret thoughts of every character in the chapter.",
+                    "The narrator addresses the reader as \"you.\""
+                  ],
+                  "answer": "The narrator is outside the story and reveals the internal thoughts and feelings of only ONE character.",
+                  "explanation": "Third-person limited stays closely tethered to a single character’s internal perspective using \"he/she/they\"."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g6-ela-u1-l2",
+          "unitId": "g6-ela-u1",
+          "title": "Lesson 2: Evaluating Claims, Evidence & Reasoning in Arguments",
+          "kind": "lesson",
+          "estimatedMinutes": 22,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-6th-reading-vocab",
+          "videoTitle": "Evaluating an Author’s Argument, Claims & Evidence",
+          "reading": "In argumentative writing, a claim is the author’s position on a debatable issue. Strong arguments back up claims with relevant, verifiable evidence (statistics, expert studies, historical facts) rather than unsupported opinions or logical fallacies (like bandwagon appeals: \"everyone is doing it\").",
+          "principles": [
+            {
+              "id": "p-g6-ela-arg",
+              "title": "Distinguishing Supported Claims from Unverified Opinions",
+              "standard": "RI.6.8",
+              "summary": "Trace and evaluate whether an author’s claim is supported by relevant facts and credible evidence.",
+              "bank": [
+                {
+                  "id": "ar1",
+                  "type": "mc",
+                  "prompt": "An author writes: \"Middle schools should start no earlier than 8:30 AM.\" Which piece of evidence below provides the STRONGEST, most credible support for this claim?",
+                  "choices": [
+                    "A peer-reviewed sleep study of 9,000 students showing attendance and test scores rose 11% after start times moved to 8:30 AM.",
+                    "My cousin says he dislikes waking up early on Mondays.",
+                    "Every cool school in the country is changing its bell schedule.",
+                    "Clocks were invented hundreds of years ago."
+                  ],
+                  "answer": "A peer-reviewed sleep study of 9,000 students showing attendance and test scores rose 11% after start times moved to 8:30 AM.",
+                  "explanation": "Empirical research data from a large study provides objective, verifiable evidence directly tied to the claim."
+                },
+                {
+                  "id": "ar2",
+                  "type": "mc",
+                  "prompt": "Which statement is a DEBATABLE CLAIM suitable for an argumentative essay, rather than a simple statement of fact?",
+                  "choices": [
+                    "Cities should expand protected bike lanes to reduce traffic congestion and air pollution.",
+                    "Bicycles have two wheels, pedals, and handlebars.",
+                    "The city of Chicago is located in the state of Illinois.",
+                    "Water freezes at 0 degrees Celsius."
+                  ],
+                  "answer": "Cities should expand protected bike lanes to reduce traffic congestion and air pollution.",
+                  "explanation": "A claim proposes a position (\"Cities should...\") that requires evidence and reasoning to prove."
+                },
+                {
+                  "id": "ar3",
+                  "type": "mc",
+                  "prompt": "\"You should buy SolarMax sneakers because millions of fans already wear them!\" Which reasoning flaw does this advertisement use?",
+                  "choices": [
+                    "Bandwagon appeal (arguing something is best simply because it is popular)",
+                    "Citing scientific laboratory data",
+                    "Comparing durability ratings",
+                    "Quoting an orthopedic doctor"
+                  ],
+                  "answer": "Bandwagon appeal (arguing something is best simply because it is popular)",
+                  "explanation": "Bandwagon urges people to agree simply because \"everyone else is doing it,\" without evidence of quality."
+                },
+                {
+                  "id": "ar4",
+                  "type": "mc",
+                  "prompt": "Why do effective argumentative writers address a COUNTERCLAIM in their essay?",
+                  "choices": [
+                    "To show they have considered opposing viewpoints and can refute them with stronger evidence",
+                    "To confuse the reader about which side the author is on",
+                    "To prove that their own thesis is completely wrong",
+                    "To make the essay shorter"
+                  ],
+                  "answer": "To show they have considered opposing viewpoints and can refute them with stronger evidence",
+                  "explanation": "Acknowledging and refuting a counterclaim strengthens credibility and shows fair-minded reasoning."
+                },
+                {
+                  "id": "ar5",
+                  "type": "mc",
+                  "prompt": "Which source is MOST credible when researching the effects of volcanic ash on jet engines?",
+                  "choices": [
+                    "A technical report published by NASA and the U.S. Geological Survey",
+                    "An anonymous comment on a gaming forum",
+                    "A fictional adventure novel set on a volcano",
+                    "A comic strip from 1995"
+                  ],
+                  "answer": "A technical report published by NASA and the U.S. Geological Survey",
+                  "explanation": "Scientific agencies with domain expertise (NASA, USGS) provide authoritative, peer-reviewed data."
+                },
+                {
+                  "id": "ar6",
+                  "type": "mc",
+                  "prompt": "What makes a piece of evidence RELEVANT to an argument?",
+                  "choices": [
+                    "It directly connects to and helps prove the specific claim being made.",
+                    "It contains long vocabulary words.",
+                    "It is about a vaguely related topic that sounds interesting.",
+                    "It is repeated three times in the conclusion."
+                  ],
+                  "answer": "It directly connects to and helps prove the specific claim being made.",
+                  "explanation": "Relevant evidence directly supports the logical link between the premise and the claim."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g6-ela-u2",
+      "title": "Unit 2: Greek & Latin Roots and Pronoun Conventions",
+      "standards": [
+        "L.6.1",
+        "L.6.4b"
+      ],
+      "lessons": [
+        {
+          "id": "g6-ela-u2-l1",
+          "unitId": "g6-ela-u2",
+          "title": "Lesson 1: Greek/Latin Roots & Subjective, Objective, Intensive Pronouns",
+          "kind": "lesson",
+          "estimatedMinutes": 22,
+          "videoUrl": "https://www.khanacademy.org/humanities/grammar/parts-of-speech-the-pronoun",
+          "videoTitle": "Greek/Latin Roots & Pronoun Case (Subjective, Objective, Intensive)",
+          "reading": "Many academic English words are built from Greek and Latin roots: \"chrono\" (time), \"bio\" (life), \"geo\" (earth), \"tele\" (far), \"spect\" (look/see), \"dict\" (say/speak), \"port\" (carry). In grammar, use subjective pronouns (I, we, he, she, they) as subjects, objective pronouns (me, us, him, her, them) as objects of verbs or prepositions, and intensive pronouns (myself, himself, herself, themselves) to add emphasis to a noun right before or after it.",
+          "principles": [
+            {
+              "id": "p-g6-ela-roots-pronouns",
+              "title": "Greek/Latin Roots and Pronoun Case & Intensive Pronouns",
+              "standard": "L.6.1",
+              "summary": "Decode words using Greek/Latin roots and apply subjective, objective, and intensive pronouns accurately.",
+              "bank": [
+                {
+                  "id": "rp1",
+                  "type": "mc",
+                  "prompt": "The Greek root \"chron\" means \"time.\" Based on this root, what does it mean to arrange historical events in CHRONOLOGICAL order?",
+                  "choices": [
+                    "In the order in which they occurred in time",
+                    "In alphabetical order by city name",
+                    "From most expensive to least expensive",
+                    "By the color of the map"
+                  ],
+                  "answer": "In the order in which they occurred in time",
+                  "explanation": "\"Chrono-\" means time, so chronological order arranges events from earliest to latest in time."
+                },
+                {
+                  "id": "rp2",
+                  "type": "mc",
+                  "prompt": "The Latin root \"spect\" means \"to look or see\" (as in inspect, spectator). What does a SPECTROSCOPE allow an astronomer to do?",
+                  "choices": [
+                    "Observe and analyze the spectrum of light from stars",
+                    "Listen to underground earthquakes",
+                    "Weigh heavy rocks in a lab",
+                    "Pump water out of a well"
+                  ],
+                  "answer": "Observe and analyze the spectrum of light from stars",
+                  "explanation": "Both \"spect\" and \"-scope\" relate to viewing/observing light spectra."
+                },
+                {
+                  "id": "rp3",
+                  "type": "mc",
+                  "prompt": "Choose the sentence that uses pronoun case (subjective vs. objective) CORRECTLY:",
+                  "choices": [
+                    "The robotics coach gave Priya and me the blueprint.",
+                    "The robotics coach gave Priya and I the blueprint.",
+                    "Her and me built the sensor array.",
+                    "Between you and I, the competition was tough."
+                  ],
+                  "answer": "The robotics coach gave Priya and me the blueprint.",
+                  "explanation": "As the indirect object of the verb \"gave\", the objective pronoun \"me\" is required (test by removing \"Priya and\": \"gave me the blueprint\")."
+                },
+                {
+                  "id": "rp4",
+                  "type": "mc",
+                  "prompt": "Which sentence contains an INTENSIVE pronoun used for emphasis?",
+                  "choices": [
+                    "The principal herself welded the frame for the school stage.",
+                    "He accidentally cut himself while slicing bread.",
+                    "They bought tickets for our family.",
+                    "She handed the microphone to him."
+                  ],
+                  "answer": "The principal herself welded the frame for the school stage.",
+                  "explanation": "\"Herself\" emphasizes \"The principal\" and can be removed without changing the sentence’s basic grammar."
+                },
+                {
+                  "id": "rp5",
+                  "type": "mc",
+                  "prompt": "The Latin root \"port\" means \"to carry.\" Which word means \"able to be carried easily from place to place\"?",
+                  "choices": [
+                    "Portable",
+                    "Chronicle",
+                    "Predict",
+                    "Biography"
+                  ],
+                  "answer": "Portable",
+                  "explanation": "\"Port\" (carry) + \"-able\" (capable of) = portable."
+                },
+                {
+                  "id": "rp6",
+                  "type": "mc",
+                  "prompt": "How should you revise the vague pronoun in this sentence? \"When Leo handed Sam his notebook, he smiled.\"",
+                  "choices": [
+                    "When Leo handed Sam his notebook, Sam smiled.",
+                    "When he handed him it, he smiled.",
+                    "Handing his notebook to him, he smiled.",
+                    "They smiled at his notebook."
+                  ],
+                  "answer": "When Leo handed Sam his notebook, Sam smiled.",
+                  "explanation": "Replacing the ambiguous pronoun \"he\" with \"Sam\" clarifies who smiled."
+                },
+                {
+                  "id": "rp7",
+                  "type": "mc",
+                  "prompt": "The Latin root \"dict\" means \"to say or speak.\" What does it mean to PREDICT an outcome?",
+                  "choices": [
+                    "To say or declare what will happen beforehand (\"pre-\" = before)",
+                    "To carry a heavy box across a room",
+                    "To measure the heat of a liquid",
+                    "To write a story about the Earth"
+                  ],
+                  "answer": "To say or declare what will happen beforehand (\"pre-\" = before)",
+                  "explanation": "\"Pre-\" (before) + \"dict\" (say) = to state beforehand."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g6-ela-u2-test",
+          "unitId": "g6-ela-u2",
+          "title": "Unit 2 Exam: Grade 6 Reading & Language Mastery",
+          "kind": "unit_test",
+          "estimatedMinutes": 25,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-6th-reading-vocab",
+          "videoTitle": "Grade 6 ELA Mastery Review",
+          "reading": "Review point of view, argument evaluation, Greek/Latin roots, and pronoun conventions.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g6-ela-pov",
+              "title": "Narrative Point of View, Connotation & Tone",
+              "standard": "RL.6.6",
+              "summary": "Analyze point of view and connotation.",
+              "bank": [
+                {
+                  "id": "g6eut1",
+                  "type": "mc",
+                  "prompt": "Which word has the most respectful, positive connotation for someone who asks many questions in science class?",
+                  "choices": [
+                    "Inquisitive",
+                    "Nosy",
+                    "Prying",
+                    "Meddling"
+                  ],
+                  "answer": "Inquisitive",
+                  "explanation": "\"Inquisitive\" praises intellectual curiosity, whereas \"nosy\" and \"prying\" are negative."
+                },
+                {
+                  "id": "g6eut2",
+                  "type": "mc",
+                  "prompt": "A narrator who uses \"he\" and \"she\" and knows ONLY what the main character, Jonah, thinks and feels is using:",
+                  "choices": [
+                    "Third-person limited point of view",
+                    "First-person point of view",
+                    "Third-person omniscient point of view",
+                    "Stage directions"
+                  ],
+                  "answer": "Third-person limited point of view",
+                  "explanation": "Third-person limited restricts inner access to a single focal character."
+                }
+              ]
+            },
+            {
+              "id": "p-g6-ela-arg",
+              "title": "Distinguishing Supported Claims from Unverified Opinions",
+              "standard": "RI.6.8",
+              "summary": "Evaluate claims and evidence.",
+              "bank": [
+                {
+                  "id": "g6eut3",
+                  "type": "mc",
+                  "prompt": "Which statement provides verifiable FACTUAL EVIDENCE rather than personal opinion?",
+                  "choices": [
+                    "Recycling one ton of aluminum saves approximately 14,000 kilowatt-hours of electricity according to EPA data.",
+                    "Aluminum cans are the prettiest containers in the grocery store.",
+                    "Everyone should love sorting recycling bins on Saturdays.",
+                    "Plastic is much more boring than glass."
+                  ],
+                  "answer": "Recycling one ton of aluminum saves approximately 14,000 kilowatt-hours of electricity according to EPA data.",
+                  "explanation": "Measurable data from a named source can be checked and verified."
+                },
+                {
+                  "id": "g6eut4",
+                  "type": "mc",
+                  "prompt": "Attacking an opponent’s personality instead of addressing their evidence or reasoning is a logical fallacy known as:",
+                  "choices": [
+                    "Ad hominem (personal attack)",
+                    "Cause and effect",
+                    "Statistical sampling",
+                    "Chronological order"
+                  ],
+                  "answer": "Ad hominem (personal attack)",
+                  "explanation": "An ad hominem fallacy attacks the person rather than refuting the argument itself."
+                }
+              ]
+            },
+            {
+              "id": "p-g6-ela-roots-pronouns",
+              "title": "Greek/Latin Roots and Pronoun Case & Intensive Pronouns",
+              "standard": "L.6.1",
+              "summary": "Use roots and pronoun cases accurately.",
+              "bank": [
+                {
+                  "id": "g6eut5",
+                  "type": "mc",
+                  "prompt": "Choose the sentence with correct pronoun case:",
+                  "choices": [
+                    "Ava and I presented our history project to the class.",
+                    "Ava and me presented our history project to the class.",
+                    "Him and I researched ancient Egypt.",
+                    "The teacher praised Ava and I."
+                  ],
+                  "answer": "Ava and I presented our history project to the class.",
+                  "explanation": "\"Ava and I\" is the compound subject of the verb \"presented,\" requiring the subjective pronoun \"I\"."
+                },
+                {
+                  "id": "g6eut6",
+                  "type": "mc",
+                  "prompt": "Based on the Greek roots \"bio\" (life) and \"graph\" (write), what is a BIOGRAPHY?",
+                  "choices": [
+                    "A written account of someone’s life",
+                    "A map of ocean depths",
+                    "A tool for measuring wind speed",
+                    "A list of chemical elements"
+                  ],
+                  "answer": "A written account of someone’s life",
+                  "explanation": "\"Bio\" (life) + \"graph\" (write) = the written story of a person’s life."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "id": "g6-social",
+  "subject": "social",
+  "grade": 6,
+  "title": "Grade 6 Social Studies",
+  "subtitle": "Ancient Civilizations (Mesopotamia, Egypt, Greece, Rome), World Geography & Trade",
+  "credits": 1,
+  "color": "#d97706",
+  "icon": "🌐",
+  "units": [
+    {
+      "id": "g6-soc-u1",
+      "title": "Unit 1: Early River Valley Civilizations (Mesopotamia & Ancient Egypt)",
+      "standards": [
+        "C3.D2.His.1.6-8",
+        "C3.D2.His.14.6-8",
+        "C3.D2.Geo.4.6-8"
+      ],
+      "lessons": [
+        {
+          "id": "g6-soc-u1-l1",
+          "unitId": "g6-soc-u1",
+          "title": "Lesson 1: The Agricultural Revolution, Mesopotamia & Ancient Egypt",
+          "kind": "lesson",
+          "estimatedMinutes": 22,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/world-history-beginnings",
+          "videoTitle": "Khan Academy World History: Neolithic Revolution, Mesopotamia & Egypt",
+          "reading": "During the Neolithic (Agricultural) Revolution, humans transitioned from nomadic hunting and gathering to domesticating plants and animals. Reliable food surpluses enabled permanent settlements, job specialization, and the rise of river valley civilizations: Mesopotamia in the Fertile Crescent between the Tigris and Euphrates Rivers (known for cuneiform writing, ziggurats, and Hammurabi’s Code) and Ancient Egypt along the Nile River (known for annual fertile silt floods, hieroglyphics, papyrus, and pharaohs).",
+          "principles": [
+            {
+              "id": "p-g6-soc-river-valleys",
+              "title": "Mesopotamia, Ancient Egypt & River Valley Geography",
+              "standard": "C3.D2.His.14.6-8",
+              "summary": "Explain how river valleys supported food surpluses, writing systems (cuneiform, hieroglyphics), and early written law (Hammurabi’s Code).",
+              "bank": [
+                {
+                  "id": "rv1",
+                  "type": "mc",
+                  "prompt": "Why did the earliest civilizations (Mesopotamia, Egypt, Indus Valley, Yellow River) all develop along major river valleys?",
+                  "choices": [
+                    "Rivers provided fresh water, transportation, and fertile silt from seasonal flooding for farming surpluses.",
+                    "River valleys had no weather or seasons.",
+                    "Mountains prevented people from building houses.",
+                    "Rivers were the only places with iron ore."
+                  ],
+                  "answer": "Rivers provided fresh water, transportation, and fertile silt from seasonal flooding for farming surpluses.",
+                  "explanation": "Freshwater irrigation and nutrient-rich alluvial soil allowed farmers to grow food surpluses that sustained cities."
+                },
+                {
+                  "id": "rv2",
+                  "type": "mc",
+                  "prompt": "Mesopotamia—whose name means \"land between the rivers\"—developed between which two rivers?",
+                  "choices": [
+                    "The Tigris and Euphrates Rivers",
+                    "The Nile and Amazon Rivers",
+                    "The Danube and Rhine Rivers",
+                    "The Ganges and Mekong Rivers"
+                  ],
+                  "answer": "The Tigris and Euphrates Rivers",
+                  "explanation": "Mesopotamia lay in the Fertile Crescent between the Tigris and Euphrates Rivers in modern-day Iraq."
+                },
+                {
+                  "id": "rv3",
+                  "type": "mc",
+                  "prompt": "What is the historical significance of the Code of Hammurabi from ancient Babylon?",
+                  "choices": [
+                    "It was one of the earliest comprehensive written law codes displayed publicly for citizens to see.",
+                    "It was the first map of the Atlantic Ocean.",
+                    "It abolished all taxes in Egypt.",
+                    "It invented the printing press."
+                  ],
+                  "answer": "It was one of the earliest comprehensive written law codes displayed publicly for citizens to see.",
+                  "explanation": "Carved onto a stone stele around 1750 BCE, Hammurabi’s Code established written legal standards and consequences."
+                },
+                {
+                  "id": "rv4",
+                  "type": "mc",
+                  "prompt": "What wedge-shaped writing system did the Sumerians of Mesopotamia press into wet clay tablets using a reed stylus?",
+                  "choices": [
+                    "Cuneiform",
+                    "Hieroglyphics",
+                    "Sanskrit",
+                    "Latin alphabet"
+                  ],
+                  "answer": "Cuneiform",
+                  "explanation": "Sumerians developed cuneiform—the world’s earliest known writing system—originally to track grain and trade records."
+                },
+                {
+                  "id": "rv5",
+                  "type": "mc",
+                  "prompt": "How did the Neolithic (Agricultural) Revolution lead to the specialization of labor (potters, weavers, scribes, metalworkers)?",
+                  "choices": [
+                    "Farming produced a food surplus, so not everyone had to spend all day finding food.",
+                    "Hunting wild herds required clay pots.",
+                    "Kings outlawed farming.",
+                    "People stopped eating grain."
+                  ],
+                  "answer": "Farming produced a food surplus, so not everyone had to spend all day finding food.",
+                  "explanation": "When farmers grew more food than their families needed, other community members could specialize in crafts, trade, and writing."
+                },
+                {
+                  "id": "rv6",
+                  "type": "mc",
+                  "prompt": "Which artifact, discovered in 1799 with the same decree inscribed in Greek, Demotic, and Egyptian hieroglyphics, unlocked the translation of hieroglyphics?",
+                  "choices": [
+                    "The Rosetta Stone",
+                    "The Dead Sea Scrolls",
+                    "The Magna Carta",
+                    "The Parthenon frieze"
+                  ],
+                  "answer": "The Rosetta Stone",
+                  "explanation": "Because scholars could read ancient Greek, Jean-François Champollion used the Rosetta Stone to decipher Egyptian hieroglyphics."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g6-soc-u2",
+      "title": "Unit 2: Classical Greece, Rome & Silk Road Trade Networks",
+      "standards": [
+        "C3.D2.Civ.2.6-8",
+        "C3.D2.His.2.6-8",
+        "C3.D2.Eco.14.6-8"
+      ],
+      "lessons": [
+        {
+          "id": "g6-soc-u2-l1",
+          "unitId": "g6-soc-u2",
+          "title": "Lesson 1: Classical Greece (Athenian Democracy) & The Roman Republic",
+          "kind": "lesson",
+          "estimatedMinutes": 22,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/ancient-medieval",
+          "videoTitle": "Classical Greece, Athenian Democracy & The Roman Republic",
+          "reading": "Greece’s mountainous peninsula and island geography led to independent city-states (poleis) such as Athens and Sparta. Athens pioneered direct democracy, in which eligible citizens debated and voted directly on laws in the Assembly. Ancient Rome established a republic (representative government) where citizens elected representatives, balanced power among the Senate, Consuls, and Assemblies, and codified laws on the Twelve Tables.",
+          "principles": [
+            {
+              "id": "p-g6-soc-greece-rome",
+              "title": "Athenian Direct Democracy vs. Roman Representative Republic",
+              "standard": "C3.D2.Civ.2.6-8",
+              "summary": "Compare Greek geography, Athenian direct democracy, Roman republican institutions, and Silk Road cultural diffusion.",
+              "bank": [
+                {
+                  "id": "grc1",
+                  "type": "mc",
+                  "prompt": "How did the rugged mountains and islands of ancient Greece shape its early political development?",
+                  "choices": [
+                    "Geographic barriers isolated communities, leading to independent city-states (poleis) like Athens and Sparta.",
+                    "Flat plains united all Greeks into a single empire from the very beginning.",
+                    "Lack of coastline prevented Greeks from ever sailing or trading by sea.",
+                    "Dense rainforests covered the Greek peninsula."
+                  ],
+                  "answer": "Geographic barriers isolated communities, leading to independent city-states (poleis) like Athens and Sparta.",
+                  "explanation": "Mountain ranges separated valleys and encouraged self-governing city-states connected by Mediterranean sea trade."
+                },
+                {
+                  "id": "grc2",
+                  "type": "mc",
+                  "prompt": "What is the key difference between the DIRECT DEMOCRACY of ancient Athens and the REPUBLIC of ancient Rome (and the modern United States)?",
+                  "choices": [
+                    "In direct democracy citizens vote on every law themselves; in a republic citizens elect representatives to vote on laws.",
+                    "In a republic a hereditary king makes all laws alone.",
+                    "In direct democracy no citizen is allowed to vote.",
+                    "There is no difference between the two systems."
+                  ],
+                  "answer": "In direct democracy citizens vote on every law themselves; in a republic citizens elect representatives to vote on laws.",
+                  "explanation": "Athenian citizens voted directly in the Assembly, whereas a republic uses elected representatives."
+                },
+                {
+                  "id": "grc3",
+                  "type": "mc",
+                  "prompt": "How did Roman engineering projects like stone aqueducts and paved roads strengthen the Roman Empire?",
+                  "choices": [
+                    "Aqueducts supplied fresh water to cities, while paved roads connected provinces for trade and rapid communication.",
+                    "Aqueducts were used only as defensive walls against ships.",
+                    "Roads were built only inside the Colosseum.",
+                    "They prevented merchants from traveling between cities."
+                  ],
+                  "answer": "Aqueducts supplied fresh water to cities, while paved roads connected provinces for trade and rapid communication.",
+                  "explanation": "Gravity-fed aqueducts sustained urban populations and 50,000+ miles of paved roads integrated trade and governance."
+                },
+                {
+                  "id": "grc4",
+                  "type": "mc",
+                  "prompt": "What was the Silk Road in the ancient and classical world?",
+                  "choices": [
+                    "An overland network of trade routes linking China, Central Asia, India, and the Mediterranean world",
+                    "A single paved highway built entirely of silk fabric",
+                    "A sea route around South America",
+                    "A wall separating Greece from Sparta"
+                  ],
+                  "answer": "An overland network of trade routes linking China, Central Asia, India, and the Mediterranean world",
+                  "explanation": "The Silk Road was a web of caravan routes carrying silk, spices, glassware, paper-making technology, and ideas across Eurasia."
+                },
+                {
+                  "id": "grc5",
+                  "type": "mc",
+                  "prompt": "In historical research, which of the following is a PRIMARY SOURCE from ancient Rome?",
+                  "choices": [
+                    "A silver coin minted during the reign of Augustus and a letter written by Cicero in 50 BCE",
+                    "A 2024 middle school history textbook chapter about Rome",
+                    "A modern encyclopedia article on gladiators",
+                    "A documentary film made last year"
+                  ],
+                  "answer": "A silver coin minted during the reign of Augustus and a letter written by Cicero in 50 BCE",
+                  "explanation": "Primary sources are original artifacts, documents, or eyewitness records created during the historical period under study."
+                },
+                {
+                  "id": "grc6",
+                  "type": "mc",
+                  "prompt": "Besides physical goods like silk and porcelain, what else spread along the Silk Road trade routes?",
+                  "choices": [
+                    "Cultural diffusion: scientific knowledge, technologies (like papermaking), and world religions (like Buddhism)",
+                    "Only Roman chariots",
+                    "Modern electricity",
+                    "Nothing except gold coins"
+                  ],
+                  "answer": "Cultural diffusion: scientific knowledge, technologies (like papermaking), and world religions (like Buddhism)",
+                  "explanation": "Trade networks fostered cultural diffusion—the exchange of inventions, languages, art styles, and religious beliefs."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g6-soc-u2-test",
+          "unitId": "g6-soc-u2",
+          "title": "Unit 2 Exam: Ancient & Classical Civilizations",
+          "kind": "unit_test",
+          "estimatedMinutes": 25,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/ancient-medieval",
+          "videoTitle": "Grade 6 Social Studies Mastery Review",
+          "reading": "Review river valley civilizations, Classical Greece and Rome, primary vs. secondary sources, and the Silk Road.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g6-soc-river-valleys",
+              "title": "Mesopotamia, Ancient Egypt & River Valley Geography",
+              "standard": "C3.D2.His.14.6-8",
+              "summary": "Analyze early river valley civilizations.",
+              "bank": [
+                {
+                  "id": "g6sut1",
+                  "type": "mc",
+                  "prompt": "Why did the Greek historian Herodotus call Egypt \"the Gift of the Nile\"?",
+                  "choices": [
+                    "Without the Nile’s predictable annual floods depositing rich black silt, Egypt would have been barren desert.",
+                    "The Nile River flowed backward up mountains.",
+                    "Greece gave the Nile River to Egypt as a treaty gift.",
+                    "The Nile was made of salt water."
+                  ],
+                  "answer": "Without the Nile’s predictable annual floods depositing rich black silt, Egypt would have been barren desert.",
+                  "explanation": "The Nile provided life-giving water and fertile soil across an otherwise arid Sahara landscape."
+                },
+                {
+                  "id": "g6sut2",
+                  "type": "mc",
+                  "prompt": "Stepped pyramid temples built at the center of Mesopotamian city-states were called:",
+                  "choices": [
+                    "Ziggurats",
+                    "Aqueducts",
+                    "Acropolises",
+                    "Colosseums"
+                  ],
+                  "answer": "Ziggurats",
+                  "explanation": "Mesopotamian cities built monumental mud-brick stepped temples called ziggurats."
+                }
+              ]
+            },
+            {
+              "id": "p-g6-soc-greece-rome",
+              "title": "Athenian Direct Democracy vs. Roman Representative Republic",
+              "standard": "C3.D2.Civ.2.6-8",
+              "summary": "Compare classical civic traditions and historical sources.",
+              "bank": [
+                {
+                  "id": "g6sut3",
+                  "type": "mc",
+                  "prompt": " Rome’s first written law code, posted in the Forum so all citizens could know their legal rights, was the:",
+                  "choices": [
+                    "Twelve Tables",
+                    "Bill of Rights",
+                    "Rosetta Stone",
+                    "Mayflower Compact"
+                  ],
+                  "answer": "Twelve Tables",
+                  "explanation": "Around 450 BCE, Rome inscribed the Law of the Twelve Tables on bronze tablets in the Roman Forum."
+                },
+                {
+                  "id": "g6sut4",
+                  "type": "mc",
+                  "prompt": "A modern historian’s biography written in 2022 about Alexander the Great is classified as a:",
+                  "choices": [
+                    "Secondary source",
+                    "Primary source",
+                    "Fossil artifact",
+                    "Constitutional amendment"
+                  ],
+                  "answer": "Secondary source",
+                  "explanation": "A work created long after the historical period by someone who did not witness the events firsthand is a secondary source."
+                },
+                {
+                  "id": "g6sut5",
+                  "type": "mc",
+                  "prompt": "Which Greek philosopher taught by asking probing questions (the Socratic Method) to examine beliefs and logic?",
+                  "choices": [
+                    "Socrates",
+                    "Julius Caesar",
+                    "Hammurabi",
+                    "Ramses II"
+                  ],
+                  "answer": "Socrates",
+                  "explanation": "Socrates encouraged critical thinking through cooperative dialogue and questioning."
+                },
+                {
+                  "id": "g6sut6",
+                  "type": "mc",
+                  "prompt": "When merchants from different empires traded along the Silk Road, few traveled the entire 4,000-mile route. Instead, goods moved:",
+                  "choices": [
+                    "In stages through relay trade across oasis cities and trading posts",
+                    "By steam locomotives",
+                    "Only by submarine",
+                    "In a single afternoon"
+                  ],
+                  "answer": "In stages through relay trade across oasis cities and trading posts",
+                  "explanation": "Caravans traded goods from one oasis city (like Samarkand or Dunhuang) to the next in a relay network."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "id": "g4-math",
+  "subject": "math",
+  "grade": 4,
+  "title": "Grade 4 Mathematics",
+  "subtitle": "Place Value, Multi-Digit Operations, Fractions, Decimals & Geometry",
+  "credits": 1,
+  "color": "#2563eb",
+  "icon": "∑",
+  "units": [
+    {
+      "id": "g4-math-u1",
+      "title": "Unit 1: Place Value, Rounding & Multi-Digit Arithmetic",
+      "standards": [
+        "4.NBT.A.1",
+        "4.NBT.A.3",
+        "4.NBT.B.4"
+      ],
+      "lessons": [
+        {
+          "id": "g4-math-u1-l1",
+          "unitId": "g4-math-u1",
+          "title": "Lesson 1: Place Value & Rounding Multi-Digit Numbers",
+          "kind": "lesson",
+          "estimatedMinutes": 20,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2",
+          "videoTitle": "Khan Academy: Place Value & Rounding to Nearest 100 and 1,000",
+          "reading": "In the base-ten system, each place value represents 10 times the value to its right. To round a multi-digit number to a target place (such as the nearest hundred or thousand), inspect the digit immediately to the right: if it is 5 or greater, round up; if it is 4 or less, round down and replace all digits to the right with zeros.",
+          "principles": [
+            {
+              "id": "p-g4-round",
+              "title": "Rounding to Nearest Hundred and Thousand",
+              "standard": "4.NBT.A.3",
+              "summary": "Look one place to the right of the rounding place: 5 or more rounds up; 4 or less stays the same.",
+              "generatorId": "g4.place-value-round"
+            }
+          ]
+        },
+        {
+          "id": "g4-math-u1-l2",
+          "unitId": "g4-math-u1",
+          "title": "Lesson 2: Multi-Digit Addition & Subtraction with Regrouping",
+          "kind": "lesson",
+          "estimatedMinutes": 20,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2",
+          "videoTitle": "Khan Academy: Adding & Subtracting Multi-Digit Whole Numbers",
+          "reading": "When adding or subtracting multi-digit numbers using the standard algorithm, align digits by place value (ones, tens, hundreds, thousands). Regroup 10 of a smaller unit into 1 of the next larger unit when adding, or decompose 1 larger unit into 10 smaller units when subtracting.",
+          "principles": [
+            {
+              "id": "p-g4-addsub",
+              "title": "Standard Algorithm for Multi-Digit Addition & Subtraction",
+              "standard": "4.NBT.B.4",
+              "summary": "Align place values vertically and regroup across tens, hundreds, and thousands.",
+              "generatorId": "g4.multi-digit-add-sub"
+            }
+          ]
+        },
+        {
+          "id": "g4-math-u1-test",
+          "unitId": "g4-math-u1",
+          "title": "Unit 1 Exam: Place Value & Multi-Digit Fluency",
+          "kind": "unit_test",
+          "estimatedMinutes": 25,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2",
+          "videoTitle": "Unit 1 Review: Place Value & Regrouping",
+          "reading": "This Unit Exam assesses both rounding multi-digit numbers and fluent multi-digit addition and subtraction.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g4-round",
+              "title": "Rounding to Nearest Hundred and Thousand",
+              "standard": "4.NBT.A.3",
+              "summary": "Inspect the digit to the right of the target place to round accurately.",
+              "generatorId": "g4.place-value-round"
+            },
+            {
+              "id": "p-g4-addsub",
+              "title": "Standard Algorithm for Multi-Digit Addition & Subtraction",
+              "standard": "4.NBT.B.4",
+              "summary": "Fluently add and subtract multi-digit whole numbers.",
+              "generatorId": "g4.multi-digit-add-sub"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g4-math-u2",
+      "title": "Unit 2: Multiplication & Division of Whole Numbers",
+      "standards": [
+        "4.NBT.B.5",
+        "4.NBT.B.6",
+        "4.OA.A.3"
+      ],
+      "lessons": [
+        {
+          "id": "g4-math-u2-l1",
+          "unitId": "g4-math-u2",
+          "title": "Lesson 1: Multiplying 2-Digit Numbers by Area Model & Partial Products",
+          "kind": "lesson",
+          "estimatedMinutes": 22,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2",
+          "videoTitle": "Khan Academy: Multiplying 2-Digit by 2-Digit Numbers",
+          "reading": "To multiply two 2-digit numbers such as 24 × 16, decompose each factor into tens and ones: (20 + 4) × (10 + 6). Multiply each part to find the four partial products, then add them together.",
+          "principles": [
+            {
+              "id": "p-g4-mult2",
+              "title": "Two-Digit Multiplication via Partial Products",
+              "standard": "4.NBT.B.5",
+              "summary": "Decompose factors by place value, multiply partial products, and sum the results.",
+              "generatorId": "g4.mult-2digit"
+            }
+          ]
+        },
+        {
+          "id": "g4-math-u2-l2",
+          "unitId": "g4-math-u2",
+          "title": "Lesson 2: Division with Remainders & Partial Quotients",
+          "kind": "lesson",
+          "estimatedMinutes": 22,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2",
+          "videoTitle": "Khan Academy: Division with Remainders",
+          "reading": "Division finds how many equal groups fit into a dividend. When a dividend is not a multiple of the divisor, the leftover amount is the remainder (R), which must always be strictly less than the divisor: Dividend = (Divisor × Quotient) + Remainder.",
+          "principles": [
+            {
+              "id": "p-g4-divrem",
+              "title": "Quotients and Remainders",
+              "standard": "4.NBT.B.6",
+              "summary": "Verify division using Dividend = Divisor × Quotient + Remainder, with Remainder < Divisor.",
+              "generatorId": "g4.div-remainders"
+            }
+          ]
+        },
+        {
+          "id": "g4-math-u2-test",
+          "unitId": "g4-math-u2",
+          "title": "Unit 2 Exam: Multiplication & Division Mastery",
+          "kind": "unit_test",
+          "estimatedMinutes": 25,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2",
+          "videoTitle": "Unit 2 Review: Multi-Digit Multiplication & Division",
+          "reading": "Demonstrate mastery of two-digit multiplication and division with remainders.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g4-mult2",
+              "title": "Two-Digit Multiplication via Partial Products",
+              "standard": "4.NBT.B.5",
+              "summary": "Decompose factors by place value and add partial products.",
+              "generatorId": "g4.mult-2digit"
+            },
+            {
+              "id": "p-g4-divrem",
+              "title": "Quotients and Remainders",
+              "standard": "4.NBT.B.6",
+              "summary": "Divide whole numbers and interpret remainders.",
+              "generatorId": "g4.div-remainders"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g4-math-u3",
+      "title": "Unit 3: Equivalent Fractions, Decimals & Geometric Measurement",
+      "standards": [
+        "4.NF.A.1",
+        "4.NF.B.3",
+        "4.NF.C.6",
+        "4.MD.A.3"
+      ],
+      "lessons": [
+        {
+          "id": "g4-math-u3-l1",
+          "unitId": "g4-math-u3",
+          "title": "Lesson 1: Equivalent Fractions & Adding Like Fractions",
+          "kind": "lesson",
+          "estimatedMinutes": 20,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2",
+          "videoTitle": "Khan Academy: Equivalent Fractions & Adding Fractions",
+          "reading": "Multiplying both the numerator and denominator of a fraction by the same nonzero whole number creates an equivalent fraction (a/b = (n×a)/(n×b)). To add fractions with the same denominator, add the numerators and keep the common denominator.",
+          "principles": [
+            {
+              "id": "p-g4-equiv-frac",
+              "title": "Generating Equivalent Fractions",
+              "standard": "4.NF.A.1",
+              "summary": "Multiply or divide numerator and denominator by the same nonzero number.",
+              "generatorId": "g4.equiv-fractions"
+            },
+            {
+              "id": "p-g4-add-frac",
+              "title": "Adding Fractions with Like Denominators",
+              "standard": "4.NF.B.3",
+              "summary": "Add numerators while keeping the like denominator unchanged.",
+              "generatorId": "g4.fraction-add-like"
+            }
+          ]
+        },
+        {
+          "id": "g4-math-u3-l2",
+          "unitId": "g4-math-u3",
+          "title": "Lesson 2: Decimal Notation & Area/Perimeter of Rectangles",
+          "kind": "lesson",
+          "estimatedMinutes": 22,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-decimals",
+          "videoTitle": "Khan Academy: Decimals as Fractions & Area/Perimeter",
+          "reading": "Decimals with two digits after the decimal point represent hundredths (0.47 = 47/100). In geometry, the perimeter of a rectangle is the distance around its boundary (P = 2L + 2W), while its area is the number of square units inside (A = L × W).",
+          "principles": [
+            {
+              "id": "p-g4-decimals",
+              "title": "Decimals and Fractions in Tenths & Hundredths",
+              "standard": "4.NF.C.6",
+              "summary": "Convert between decimal notation and fractions with denominators of 10 or 100.",
+              "generatorId": "g4.decimals-tenths-hundredths"
+            },
+            {
+              "id": "p-g4-area-perim",
+              "title": "Area and Perimeter Formulas for Rectangles",
+              "standard": "4.MD.A.3",
+              "summary": "Use Area = L × W and Perimeter = 2(L + W) to solve measurement problems.",
+              "generatorId": "g4.geometry-area-perim"
+            }
+          ]
+        },
+        {
+          "id": "g4-math-u3-test",
+          "unitId": "g4-math-u3",
+          "title": "Unit 3 Exam: Fractions, Decimals & Geometry",
+          "kind": "unit_test",
+          "estimatedMinutes": 25,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2",
+          "videoTitle": "Unit 3 Comprehensive Review",
+          "reading": "Comprehensive assessment of equivalent fractions, like-denominator addition, decimals, and rectangle area/perimeter.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g4-equiv-frac",
+              "title": "Generating Equivalent Fractions",
+              "standard": "4.NF.A.1",
+              "summary": "Scale numerator and denominator equally.",
+              "generatorId": "g4.equiv-fractions"
+            },
+            {
+              "id": "p-g4-add-frac",
+              "title": "Adding Fractions with Like Denominators",
+              "standard": "4.NF.B.3",
+              "summary": "Combine numerators over a shared denominator.",
+              "generatorId": "g4.fraction-add-like"
+            },
+            {
+              "id": "p-g4-decimals",
+              "title": "Decimals and Fractions in Tenths & Hundredths",
+              "standard": "4.NF.C.6",
+              "summary": "Relate hundredths decimals to fractions.",
+              "generatorId": "g4.decimals-tenths-hundredths"
+            },
+            {
+              "id": "p-g4-area-perim",
+              "title": "Area and Perimeter Formulas for Rectangles",
+              "standard": "4.MD.A.3",
+              "summary": "Distinguish square units of area from linear units of perimeter.",
+              "generatorId": "g4.geometry-area-perim"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
