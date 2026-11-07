@@ -1,8 +1,12 @@
 import { BackupPayload, Student } from '../types'
-import { exportBackupData, getSettings, mergeFamilyPayload, saveSettings } from './db'
+import {
+  exportBackupData,
+  getSettings,
+  mergeFamilyPayload,
+  resetFamilySyncSettings,
+  saveSettings,
+} from './db'
 import { APP_ID } from './storage'
-
-const DEFAULT_RELAY_BASE = 'https://jsonblob.com/api/jsonBlob'
 
 export interface SyncStatusResult {
   ok: boolean
@@ -13,103 +17,171 @@ export interface SyncStatusResult {
   error?: string
 }
 
-/**
- * Resolves a Family Code or custom URL into a concrete HTTPS endpoint URL.
- * - If customEndpointUrl is provided (e.g., Firebase Realtime DB `https://my-proj.firebaseio.com/hsl.json`), uses it.
- * - If familyCode is `HSL-<blobId>`, resolves to `${DEFAULT_RELAY_BASE}/<blobId>`.
- */
-export function resolveSyncEndpoint(familyCode: string, customEndpointUrl?: string): string {
-  const trimmedCustom = (customEndpointUrl || '').trim()
-  if (trimmedCustom) {
-    return trimmedCustom
-  }
-  const cleanCode = familyCode.trim().replace(/^HSL-/i, '')
-  if (!cleanCode) {
-    throw new Error('Missing Family Join Code.')
-  }
-  return `${DEFAULT_RELAY_BASE}/${cleanCode}`
+export interface ConnectionTestResult {
+  ok: boolean
+  status: number
+  message: string
 }
 
 /**
- * Creates a brand-new Family Circle in the cloud with zero account setup required,
- * returning the shareable Family Join Code (e.g. "HSL-129481029...").
+ * Normalizes user-entered Family Code into a standard format (e.g. "HSL-P4KK4").
  */
-export async function createCloudFamilyCircle(
-  customEndpointUrl?: string,
+export function normalizeFamilyCode(rawCode: string): string {
+  const clean = rawCode
+    .trim()
+    .toUpperCase()
+    .replace(/[^A-Z0-9_-]/g, '')
+  if (!clean) return ''
+  return clean.startsWith('HSL-') ? clean : `HSL-${clean}`
+}
+
+/**
+ * Resolves a Family Code and base URL into a concrete HTTPS REST endpoint URL.
+ * Supports:
+ * 1. Firebase Realtime DB: `https://<proj>-default-rtdb.firebaseio.com` -> `${url}/families/<code\>.json`
+ * 2. URL template with `{familyCode}`: `https://example.com/api/{familyCode}` -> replaced
+ * 3. Direct JSON endpoint ending in `.json`
+ * 4. Generic REST base: `${url.replace(/\/$/, '')}/families/${code}.json`
+ */
+export function resolveSyncEndpoint(familyCode: string, customEndpointUrl?: string): string {
+  const code = normalizeFamilyCode(familyCode)
+  if (!code) {
+    throw new Error('Family Code is required.')
+  }
+
+  const rawUrl = (customEndpointUrl || '').trim()
+  if (!rawUrl) {
+    throw new Error(
+      'Missing Cloud Database URL. Please provide your Firebase Realtime Database URL (e.g. https://your-proj-default-rtdb.firebaseio.com) or custom REST URL.'
+    )
+  }
+
+  // Handle URL templates like https://api.mycloud.com/store/{familyCode}
+  if (rawUrl.includes('{familyCode}')) {
+    return rawUrl.replace('{familyCode}', encodeURIComponent(code))
+  }
+
+  // Handle Firebase Realtime Database
+  if (rawUrl.includes('firebaseio.com')) {
+    const base = rawUrl.replace(/\/families.*$/, '').replace(/\/$/, '')
+    return `${base}/families/${encodeURIComponent(code)}.json`
+  }
+
+  // If already ends in .json with familyCode
+  if (rawUrl.endsWith('.json') && rawUrl.includes(code)) {
+    return rawUrl
+  }
+
+  // Standard generic REST endpoint
+  const base = rawUrl.replace(/\/$/, '')
+  return `${base}/families/${encodeURIComponent(code)}.json`
+}
+
+/**
+ * Tests reading and writing to the cloud endpoint to verify connectivity and rules.
+ */
+export async function testSyncConnection(
+  familyCode: string,
+  customEndpointUrl: string,
   fetchImpl: typeof fetch = fetch
-): Promise<{ familyCode: string; endpointUrl: string }> {
-  const payload = await exportBackupData()
-  const trimmedCustom = (customEndpointUrl || '').trim()
-
-  if (trimmedCustom) {
-    const familyCode = `HSL-CUSTOM-${Math.random().toString(36).slice(2, 6).toUpperCase()}`
-    const body: BackupPayload = { ...payload, familyCode }
-    const res = await fetchImpl(trimmedCustom, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: JSON.stringify(body),
+): Promise<ConnectionTestResult> {
+  try {
+    const url = resolveSyncEndpoint(familyCode, customEndpointUrl)
+    const res = await fetchImpl(url, {
+      method: 'GET',
+      cache: 'no-store',
+      headers: { Accept: 'application/json' },
     })
-    if (!res.ok) {
-      throw new Error(`Cloud endpoint returned HTTP ${res.status}`)
+
+    if (res.status === 401 || res.status === 403) {
+      return {
+        ok: false,
+        status: res.status,
+        message:
+          'Access Denied (HTTP 401/403). Check that your Firebase Realtime Database security rules allow read/write.',
+      }
     }
-    await saveSettings({
-      familySync: {
-        enabled: true,
-        familyCode,
-        syncEndpointUrl: trimmedCustom,
-        deviceRole: 'parent',
-        boundStudentId: undefined,
-        autoSyncIntervalMin: 5,
-        lastSyncedAt: new Date().toISOString(),
-      },
-    })
-    return { familyCode, endpointUrl: trimmedCustom }
+
+    if (res.status === 404) {
+      return {
+        ok: true,
+        status: 404,
+        message:
+          'Connected! Database is reachable. This Family Circle does not exist yet (click "Create / Initialize Circle" below to create it).',
+      }
+    }
+
+    if (!res.ok) {
+      return {
+        ok: false,
+        status: res.status,
+        message: `Cloud server returned HTTP ${res.status}.`,
+      }
+    }
+
+    return {
+      ok: true,
+      status: 200,
+      message: 'Connection successful! Cloud database is online and reachable.',
+    }
+  } catch (err) {
+    return {
+      ok: false,
+      status: 0,
+      message:
+        err instanceof Error
+          ? err.message
+          : 'Unable to connect to cloud database (network or CORS error).',
+    }
+  }
+}
+
+/**
+ * Creates or initializes a Family Circle under the user's chosen Family Code (e.g. "HSL-P4KK4").
+ * Issues a PUT request to the cloud endpoint so the document exists immediately.
+ */
+export async function createCloudFamilyCircle(options: {
+  familyCode: string
+  endpointUrl: string
+  fetchImpl?: typeof fetch
+}): Promise<{ familyCode: string; endpointUrl: string }> {
+  const { familyCode: rawCode, endpointUrl: rawUrl, fetchImpl = fetch } = options
+  const familyCode = normalizeFamilyCode(rawCode)
+  if (!familyCode) {
+    throw new Error('Please enter a valid Family Code (e.g. HSL-P4KK4).')
   }
 
-  // Zero-setup instant cloud relay via JSONBlob POST
-  const response = await fetchImpl(DEFAULT_RELAY_BASE, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    },
-    body: JSON.stringify(payload),
-  })
-
-  if (!response.ok) {
-    throw new Error(`Unable to provision cloud relay (HTTP ${response.status}).`)
+  const endpointUrl = resolveSyncEndpoint(familyCode, rawUrl)
+  const payload = await exportBackupData()
+  const body: BackupPayload = {
+    ...payload,
+    familyCode,
+    exportedAt: new Date().toISOString(),
   }
 
-  const locationHeader =
-    response.headers.get('Location') || response.headers.get('location') || ''
-  const parts = locationHeader.split('/').filter(Boolean)
-  const blobId = parts[parts.length - 1]
-  if (!blobId) {
-    throw new Error('Cloud relay did not return a document ID.')
-  }
-
-  const familyCode = `HSL-${blobId}`
-  const endpointUrl = `${DEFAULT_RELAY_BASE}/${blobId}`
-
-  // Update the remote document so it includes its own familyCode
-  const updatedPayload: BackupPayload = { ...payload, familyCode }
-  await fetchImpl(endpointUrl, {
+  const res = await fetchImpl(endpointUrl, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/json',
     },
-    body: JSON.stringify(updatedPayload),
-  }).catch(() => {})
+    body: JSON.stringify(body),
+  })
+
+  if (!res.ok) {
+    if (res.status === 401 || res.status === 403) {
+      throw new Error(
+        'Permission denied (HTTP 401/403). Ensure your Firebase Realtime Database rules allow read and write.'
+      )
+    }
+    throw new Error(`Cloud database returned HTTP ${res.status} when creating Family Circle.`)
+  }
 
   await saveSettings({
     familySync: {
       enabled: true,
       familyCode,
-      syncEndpointUrl: endpointUrl,
+      syncEndpointUrl: rawUrl.trim(),
       deviceRole: 'parent',
       boundStudentId: undefined,
       autoSyncIntervalMin: 5,
@@ -121,12 +193,12 @@ export async function createCloudFamilyCircle(
 }
 
 /**
- * Fetches the remote Family Circle payload without modifying local state yet
- * (used when a Student device enters a Family Code to pick their student profile and verify their PIN).
+ * Fetches the remote Family Circle preview without modifying local state.
+ * Used on Student devices to load the roster and select their profile.
  */
 export async function fetchRemoteFamilyPreview(
   familyCode: string,
-  customEndpointUrl?: string,
+  customEndpointUrl: string,
   fetchImpl: typeof fetch = fetch
 ): Promise<BackupPayload> {
   const url = resolveSyncEndpoint(familyCode, customEndpointUrl)
@@ -135,13 +207,30 @@ export async function fetchRemoteFamilyPreview(
     cache: 'no-store',
     headers: { Accept: 'application/json' },
   })
-  if (!res.ok) {
-    throw new Error(`Could not find Family Circle "${familyCode}" (HTTP ${res.status}).`)
+
+  if (res.status === 404) {
+    throw new Error(
+      `Family Circle "${familyCode}" was not found (HTTP 404). Ensure the parent device has clicked "Create / Initialize Circle" first.`
+    )
   }
+
+  if (res.status === 401 || res.status === 403) {
+    throw new Error(
+      'Access Denied (HTTP 401/403). Check your Firebase Realtime Database rules.'
+    )
+  }
+
+  if (!res.ok) {
+    throw new Error(`Cloud database returned HTTP ${res.status}.`)
+  }
+
   const data = (await res.json()) as BackupPayload
   if (!data || data.app !== APP_ID) {
-    throw new Error('Remote document is not a valid Home-School-Lite Family Circle.')
+    throw new Error(
+      'Remote document is not a valid Home-School-Lite Family Circle.'
+    )
   }
+
   return data
 }
 
@@ -153,21 +242,22 @@ export async function joinFamilyAsStudent(options: {
   familyCode: string
   studentId: string
   studentPin: string
-  customEndpointUrl?: string
+  customEndpointUrl: string
   fetchImpl?: typeof fetch
 }): Promise<{ student: Student; familyCode: string }> {
   const {
-    familyCode,
+    familyCode: rawCode,
     studentId,
     studentPin,
     customEndpointUrl,
     fetchImpl = fetch,
   } = options
 
+  const familyCode = normalizeFamilyCode(rawCode)
   const remote = await fetchRemoteFamilyPreview(familyCode, customEndpointUrl, fetchImpl)
   const targetStudent = remote.students.find((s) => s.id === studentId)
   if (!targetStudent) {
-    throw new Error('Selected student was not found in this Family Circle.')
+    throw new Error('Selected student profile was not found in this Family Circle.')
   }
 
   const expectedPin = (targetStudent.studentPin || '1111').trim()
@@ -175,19 +265,14 @@ export async function joinFamilyAsStudent(options: {
     throw new Error('Incorrect Student PIN for this student profile.')
   }
 
-  // Merge the remote family data into this student device
+  // Merge the remote family roster and parent settings into this student device
   await mergeFamilyPayload(remote)
-
-  const endpointUrl = resolveSyncEndpoint(familyCode, customEndpointUrl)
-  const normalizedCode = familyCode.trim().startsWith('HSL-')
-    ? familyCode.trim()
-    : `HSL-${familyCode.trim()}`
 
   await saveSettings({
     familySync: {
       enabled: true,
-      familyCode: normalizedCode,
-      syncEndpointUrl: endpointUrl,
+      familyCode,
+      syncEndpointUrl: customEndpointUrl.trim(),
       deviceRole: 'student',
       boundStudentId: targetStudent.id,
       autoSyncIntervalMin: 5,
@@ -195,19 +280,20 @@ export async function joinFamilyAsStudent(options: {
     },
   })
 
-  return { student: targetStudent, familyCode: normalizedCode }
+  return { student: targetStudent, familyCode }
 }
 
 /**
- * Joins an existing Family Circle as a Parent device (requires the Family's Parent PIN).
+ * Links a Parent device to an existing Family Circle using the Family Code and Parent PIN.
  */
 export async function joinFamilyAsParent(options: {
   familyCode: string
   parentPin: string
-  customEndpointUrl?: string
+  customEndpointUrl: string
   fetchImpl?: typeof fetch
 }): Promise<{ familyCode: string; studentsCount: number }> {
-  const { familyCode, parentPin, customEndpointUrl, fetchImpl = fetch } = options
+  const { familyCode: rawCode, parentPin, customEndpointUrl, fetchImpl = fetch } = options
+  const familyCode = normalizeFamilyCode(rawCode)
   const remote = await fetchRemoteFamilyPreview(familyCode, customEndpointUrl, fetchImpl)
 
   const expectedParentPin = (remote.settings?.parentPin || '1234').trim()
@@ -217,15 +303,12 @@ export async function joinFamilyAsParent(options: {
 
   const merged = await mergeFamilyPayload(remote)
   const endpointUrl = resolveSyncEndpoint(familyCode, customEndpointUrl)
-  const normalizedCode = familyCode.trim().startsWith('HSL-')
-    ? familyCode.trim()
-    : `HSL-${familyCode.trim()}`
 
   await saveSettings({
     familySync: {
       enabled: true,
-      familyCode: normalizedCode,
-      syncEndpointUrl: endpointUrl,
+      familyCode,
+      syncEndpointUrl: customEndpointUrl.trim(),
       deviceRole: 'parent',
       boundStudentId: undefined,
       autoSyncIntervalMin: 5,
@@ -233,7 +316,7 @@ export async function joinFamilyAsParent(options: {
     },
   })
 
-  // Push merged state back so any local students/attempts on this parent device are included
+  // Push back any local student attempts from this parent device
   const updatedPayload = await exportBackupData()
   await fetchImpl(endpointUrl, {
     method: 'PUT',
@@ -245,16 +328,13 @@ export async function joinFamilyAsParent(options: {
   }).catch(() => {})
 
   return {
-    familyCode: normalizedCode,
+    familyCode,
     studentsCount: merged.mergedStudents,
   }
 }
 
 /**
- * Performs a two-way conflict-free sync with the configured Family Circle endpoint:
- * 1. GET remote payload
- * 2. Union-merge attempts & last-writer-wins merge students/settings locally
- * 3. PUT the combined payload back to the cloud so all student & parent devices stay in sync.
+ * Performs a two-way sync with the cloud database.
  */
 export async function syncFamilyCircle(
   fetchImpl: typeof fetch = fetch
@@ -263,12 +343,12 @@ export async function syncFamilyCircle(
   const syncCfg = settings.familySync
   const nowIso = new Date().toISOString()
 
-  if (!syncCfg || !syncCfg.enabled || !syncCfg.familyCode) {
+  if (!syncCfg || !syncCfg.enabled || !syncCfg.familyCode || !syncCfg.syncEndpointUrl) {
     return {
       ok: false,
       syncedAt: nowIso,
       familyCode: '',
-      error: 'Family Sync is not enabled on this device.',
+      error: 'Family Sync is not configured on this device.',
     }
   }
 
@@ -328,4 +408,11 @@ export async function syncFamilyCircle(
       error: err instanceof Error ? err.message : 'Sync network error',
     }
   }
+}
+
+/**
+ * Disconnects and resets Family Sync on this device without erasing local student records.
+ */
+export async function disconnectFamilySync(): Promise<void> {
+  await resetFamilySyncSettings()
 }

@@ -39,7 +39,14 @@ import {
   STORAGE_KEYS,
   STORAGE_PREFIX,
 } from '../lib/storage'
-import { joinFamilyAsStudent } from '../lib/sync'
+import {
+  createCloudFamilyCircle,
+  disconnectFamilySync,
+  joinFamilyAsStudent,
+  normalizeFamilyCode,
+  resolveSyncEndpoint,
+  testSyncConnection,
+} from '../lib/sync'
 import {
   checkForAppUpdate,
   cleanAppCachesOnly,
@@ -542,6 +549,56 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
     ])
   })
 
+  it('normalizes custom Family Codes and resolves Firebase Realtime DB endpoints', () => {
+    expect(normalizeFamilyCode('p4kk4')).toBe('HSL-P4KK4')
+    expect(normalizeFamilyCode('hsl-p4kk4')).toBe('HSL-P4KK4')
+    expect(normalizeFamilyCode('HSL-SMITH-2026')).toBe('HSL-SMITH-2026')
+
+    const rtdbUrl = 'https://my-homeschool-default-rtdb.firebaseio.com'
+    const endpoint = resolveSyncEndpoint('HSL-P4KK4', rtdbUrl)
+    expect(endpoint).toBe(
+      'https://my-homeschool-default-rtdb.firebaseio.com/families/HSL-P4KK4.json'
+    )
+  })
+
+  it('allows initializing custom Family Code via PUT and tests connectivity', async () => {
+    await createStudent({ name: 'Sam', avatar: '🚀', grade: 4 })
+    let lastUrl = ''
+    let lastMethod = ''
+    const mockFetch = vi.fn().mockImplementation((url: string, init?: RequestInit) => {
+      lastUrl = url
+      lastMethod = init?.method || 'GET'
+      return Promise.resolve({
+        ok: true,
+        status: 200,
+        json: async () => ({ app: 'home-school-lite', ok: true }),
+      })
+    })
+
+    const created = await createCloudFamilyCircle({
+      familyCode: 'p4kk4',
+      endpointUrl: 'https://my-test-rtdb.firebaseio.com',
+      fetchImpl: mockFetch as unknown as typeof fetch,
+    })
+    expect(created.familyCode).toBe('HSL-P4KK4')
+    expect(lastMethod).toBe('PUT')
+    expect(lastUrl).toBe('https://my-test-rtdb.firebaseio.com/families/HSL-P4KK4.json')
+
+    const testRes = await testSyncConnection(
+      'HSL-P4KK4',
+      'https://my-test-rtdb.firebaseio.com',
+      mockFetch as unknown as typeof fetch
+    )
+    expect(testRes.ok).toBe(true)
+
+    // Test clean reset / disconnect
+    await disconnectFamilySync()
+    const settings = await getSettings()
+    expect(settings.familySync?.enabled).toBe(false)
+    expect(settings.familySync?.familyCode).toBe('')
+    expect((await getStudents()).length).toBeGreaterThanOrEqual(1)
+  })
+
   it('allows a student device to join via Family Code + Student PIN and union-merges multi-device attempts', async () => {
     // Device A (Parent) creates two students
     const s1 = await createStudent({
@@ -576,6 +633,7 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
         familyCode: 'HSL-DEMO123',
         studentId: s1.id,
         studentPin: '9999',
+        customEndpointUrl: 'https://test-rtdb.firebaseio.com',
         fetchImpl: mockFetch as unknown as typeof fetch,
       })
     ).rejects.toThrow(/Incorrect Student PIN/)
@@ -585,6 +643,7 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
       familyCode: 'HSL-DEMO123',
       studentId: s1.id,
       studentPin: '2468',
+      customEndpointUrl: 'https://test-rtdb.firebaseio.com',
       fetchImpl: mockFetch as unknown as typeof fetch,
     })
     expect(joined.student.name).toBe('Alice')

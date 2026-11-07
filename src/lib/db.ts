@@ -89,6 +89,26 @@ export function getDb(): Promise<IDBPDatabase<HomeSchoolDB>> {
   return dbPromise
 }
 
+export async function resetFamilySyncSettings(): Promise<AppSettings> {
+  const current = await getSettings()
+  const updated: AppSettings = {
+    ...current,
+    familySync: {
+      enabled: false,
+      familyCode: '',
+      syncEndpointUrl: '',
+      deviceRole: 'parent',
+      boundStudentId: undefined,
+      autoSyncIntervalMin: 5,
+      lastSyncedAt: undefined,
+    },
+    updatedAt: new Date().toISOString(),
+  }
+  const db = await getDb()
+  await db.put('settings', updated)
+  return updated
+}
+
 export async function resetDbConnectionForTests(): Promise<void> {
   const db = await getDb()
   const tx = db.transaction(['students', 'enrollments', 'attempts', 'settings'], 'readwrite')
