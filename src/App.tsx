@@ -4,6 +4,7 @@ import { Layout } from './components/Layout'
 import { AppProvider, useApp } from './context/AppContext'
 import { CoursePage } from './pages/CoursePage'
 import { DashboardPage } from './pages/DashboardPage'
+import { FamilyPage } from './pages/FamilyPage'
 import { GradesPage } from './pages/GradesPage'
 import { LessonPage } from './pages/LessonPage'
 import { SettingsPage } from './pages/SettingsPage'
@@ -29,6 +30,7 @@ const AppRoutes: React.FC = () => {
         <Route path="/course/:courseId/lesson/:lessonId" element={<LessonPage />} />
         <Route path="/tracker" element={<TrackerPage />} />
         <Route path="/grades" element={<GradesPage />} />
+        <Route path="/family" element={<FamilyPage />} />
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

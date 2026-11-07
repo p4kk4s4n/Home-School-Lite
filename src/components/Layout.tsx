@@ -54,6 +54,12 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
               GPA &amp; Report Card
             </NavLink>
             <NavLink
+              to="/family"
+              className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+            >
+              Family Sync
+            </NavLink>
+            <NavLink
               to="/settings"
               className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
             >

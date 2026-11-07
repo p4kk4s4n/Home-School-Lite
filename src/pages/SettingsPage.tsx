@@ -380,6 +380,24 @@ export const SettingsPage: React.FC = () => {
                     Default 0% keeps randomized retries low-pressure until mastery is achieved.
                   </span>
                 </label>
+
+                <label className="toggle-row" style={{ marginTop: '1rem' }}>
+                  <input
+                    type="checkbox"
+                    checked={settings.requireAssignmentChecklist}
+                    onChange={(e) =>
+                      void updateAppSettings({
+                        requireAssignmentChecklist: e.target.checked,
+                      })
+                    }
+                  />
+                  <div>
+                    <strong>Require Lesson Scope Checklist before Mastery Quiz</strong>
+                    <p className="muted-sm">
+                      Locks the Mastery Check until the student ticks all assigned video/reading steps for that lesson.
+                    </p>
+                  </div>
+                </label>
               </div>
 
               <div className="settings-panel">

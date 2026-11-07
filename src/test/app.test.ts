@@ -1,7 +1,12 @@
 import { describe, expect, it, beforeEach, vi } from 'vitest'
 import manifestRaw from '../../public/manifest.webmanifest?raw'
 import contentIndex from '../../public/content/index.json'
-import { ALL_COURSES, getCourseById, getCoursesForGrade } from '../lib/curriculum'
+import {
+  ALL_COURSES,
+  getCourseById,
+  getCoursesForGrade,
+  getLessonAssignment,
+} from '../lib/curriculum'
 import {
   computeCourseGrade,
   computeGpaReport,
@@ -14,9 +19,12 @@ import {
   createStudent,
   DEFAULT_SETTINGS,
   exportBackupData,
+  getSettings,
   getStudentAttempts,
   getStudentEnrollments,
+  getStudents,
   importBackupData,
+  mergeFamilyPayload,
   recordQuizAttempt,
   resetDbConnectionForTests,
   updateStudent,
@@ -26,9 +34,12 @@ import {
   APP_SCOPE,
   assertNamespacedKey,
   CACHE_PREFIX,
+  getLessonChecklistProgress,
+  saveLessonChecklistProgress,
   STORAGE_KEYS,
   STORAGE_PREFIX,
 } from '../lib/storage'
+import { joinFamilyAsStudent } from '../lib/sync'
 import {
   checkForAppUpdate,
   cleanAppCachesOnly,
@@ -455,5 +466,181 @@ describe('Unique Mobile PWA Identity, Same-Origin Isolation & Auto-Update Checke
     )
     expect(res.updateAvailable).toBe(true)
     expect(res.remote?.version).toBe('2.0.0')
+  })
+})
+
+describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Sync', () => {
+  beforeEach(async () => {
+    await resetDbConnectionForTests()
+  })
+
+  it('preserves frozen question reviewItems on attempt submission so answers never show as (No answer)', async () => {
+    const student = await createStudent({ name: 'Maya', avatar: '🌟', grade: 4 })
+    const course = getCourseById('g4-math')!
+    const lesson = course.units[0].lessons[0]
+
+    // Snapshot quiz before submission
+    const frozenQuiz = buildQuizAttempt({
+      lesson,
+      seed: 777,
+      priorAttempts: [],
+      questionCount: 5,
+    })
+
+    const answersMap: Record<string, string> = {}
+    for (const q of frozenQuiz) {
+      answersMap[q.fingerprint] = q.answer
+    }
+
+    const reviewItems = frozenQuiz.map((q) => ({
+      fingerprint: q.fingerprint,
+      principleId: q.principleId,
+      principleTitle: q.principleTitle,
+      prompt: q.prompt,
+      studentAnswer: answersMap[q.fingerprint],
+      correctAnswer: q.answer,
+      isCorrect: true,
+      explanation: q.explanation,
+    }))
+
+    const savedAttempt = await recordQuizAttempt({
+      studentId: student.id,
+      courseId: course.id,
+      unitId: lesson.unitId,
+      lessonId: lesson.id,
+      kind: 'lesson',
+      seed: 777,
+      scorePercent: 100,
+      correctCount: 5,
+      totalCount: 5,
+      passed: true,
+      questionFingerprints: frozenQuiz.map((q) => q.fingerprint),
+      missedPrincipleIds: [],
+      reviewItems,
+    })
+
+    expect(savedAttempt.scorePercent).toBe(100)
+    expect(savedAttempt.reviewItems).toHaveLength(5)
+    for (const item of savedAttempt.reviewItems!) {
+      expect(item.studentAnswer).not.toBe('(No answer)')
+      expect(item.studentAnswer).toBe(item.correctAnswer)
+      expect(item.isCorrect).toBe(true)
+    }
+  })
+
+  it('provides explicit lesson scope steps and persists student checklist progress', () => {
+    const course = getCourseById('g6-science')!
+    const lesson = course.units[0].lessons[0]
+    const assignment = getLessonAssignment(lesson)
+
+    expect(assignment.steps.length).toBeGreaterThanOrEqual(2)
+    expect(assignment.scopeSummary).toContain('Lesson Scope')
+
+    saveLessonChecklistProgress('stu-1', lesson.id, [assignment.steps[0].id])
+    expect(getLessonChecklistProgress('stu-1', lesson.id)).toEqual([
+      assignment.steps[0].id,
+    ])
+  })
+
+  it('allows a student device to join via Family Code + Student PIN and union-merges multi-device attempts', async () => {
+    // Device A (Parent) creates two students
+    const s1 = await createStudent({
+      id: 'stu-alice',
+      name: 'Alice',
+      avatar: '🦉',
+      grade: 4,
+      studentPin: '2468',
+    })
+    const s2 = await createStudent({
+      id: 'stu-bob',
+      name: 'Bob',
+      avatar: '🦊',
+      grade: 6,
+      studentPin: '1357',
+    })
+
+    const parentCloudSnapshot = await exportBackupData()
+    parentCloudSnapshot.settings.masteryThreshold = 85
+    parentCloudSnapshot.settings.updatedAt = '2026-11-06T22:00:00.000Z'
+
+    // Simulate Student Device B joining with Family Code + Alice's Student PIN (2468)
+    await resetDbConnectionForTests()
+    const mockFetch = vi.fn().mockResolvedValue({
+      ok: true,
+      json: async () => parentCloudSnapshot,
+    })
+
+    // Wrong PIN must be rejected
+    await expect(
+      joinFamilyAsStudent({
+        familyCode: 'HSL-DEMO123',
+        studentId: s1.id,
+        studentPin: '9999',
+        fetchImpl: mockFetch as unknown as typeof fetch,
+      })
+    ).rejects.toThrow(/Incorrect Student PIN/)
+
+    // Correct PIN succeeds and binds device to Alice
+    const joined = await joinFamilyAsStudent({
+      familyCode: 'HSL-DEMO123',
+      studentId: s1.id,
+      studentPin: '2468',
+      fetchImpl: mockFetch as unknown as typeof fetch,
+    })
+    expect(joined.student.name).toBe('Alice')
+
+    const localSettings = await getSettings()
+    expect(localSettings.masteryThreshold).toBe(85)
+    expect(localSettings.familySync?.deviceRole).toBe('student')
+    expect(localSettings.familySync?.boundStudentId).toBe(s1.id)
+
+    // Simulate concurrent quiz attempts from Alice and Bob across devices
+    const remoteWithBobAttempt = {
+      ...parentCloudSnapshot,
+      attempts: [
+        {
+          id: 'att-bob-1',
+          studentId: s2.id,
+          courseId: 'g6-math',
+          unitId: 'g6-math-u1',
+          lessonId: 'g6-math-u1-l1',
+          kind: 'lesson' as const,
+          attemptNumber: 1,
+          seed: 99,
+          scorePercent: 90,
+          correctCount: 5,
+          totalCount: 5,
+          passed: true,
+          questionFingerprints: ['fp-b1'],
+          missedPrincipleIds: [],
+          completedAt: '2026-11-06T22:05:00.000Z',
+        },
+      ],
+    }
+
+    await recordQuizAttempt({
+      studentId: s1.id,
+      courseId: 'g4-math',
+      unitId: 'g4-math-u1',
+      lessonId: 'g4-math-u1-l1',
+      kind: 'lesson',
+      seed: 55,
+      scorePercent: 100,
+      correctCount: 5,
+      totalCount: 5,
+      passed: true,
+      questionFingerprints: ['fp-a1'],
+      missedPrincipleIds: [],
+    })
+
+    const mergeResult = await mergeFamilyPayload(remoteWithBobAttempt)
+    expect(mergeResult.mergedStudents).toBeGreaterThanOrEqual(2)
+    expect(mergeResult.mergedAttempts).toBe(2)
+
+    const aliceAttempts = await getStudentAttempts(s1.id)
+    const bobAttempts = await getStudentAttempts(s2.id)
+    expect(aliceAttempts).toHaveLength(1)
+    expect(bobAttempts).toHaveLength(1)
+    expect((await getStudents()).map((s) => s.name)).toContain('Bob')
   })
 })

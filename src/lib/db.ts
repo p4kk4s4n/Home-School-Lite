@@ -48,9 +48,18 @@ export const DEFAULT_SETTINGS: AppSettings = {
   retryPenaltyPercent: 0,
   lessonWeight: 60,
   unitTestWeight: 40,
+  requireAssignmentChecklist: true,
   autoCheckUpdates: true,
   updateCheckIntervalMin: 15,
   autoApplyUpdates: false,
+  updatedAt: '2026-01-01T00:00:00.000Z',
+  familySync: {
+    enabled: false,
+    familyCode: '',
+    syncEndpointUrl: '',
+    deviceRole: 'parent',
+    autoSyncIntervalMin: 5,
+  },
 }
 
 let dbPromise: Promise<IDBPDatabase<HomeSchoolDB>> | null = null
@@ -81,18 +90,31 @@ export function getDb(): Promise<IDBPDatabase<HomeSchoolDB>> {
 }
 
 export async function resetDbConnectionForTests(): Promise<void> {
-  if (dbPromise) {
-    const db = await dbPromise
-    db.close()
-    dbPromise = null
-  }
+  const db = await getDb()
+  const tx = db.transaction(['students', 'enrollments', 'attempts', 'settings'], 'readwrite')
+  await Promise.all([
+    tx.objectStore('students').clear(),
+    tx.objectStore('enrollments').clear(),
+    tx.objectStore('attempts').clear(),
+    tx.objectStore('settings').clear(),
+  ])
+  await tx.done
 }
 
 export async function getSettings(): Promise<AppSettings> {
   const db = await getDb()
   const existing = await db.get('settings', 'global')
   if (existing) {
-    return { ...DEFAULT_SETTINGS, ...existing, id: 'global', appId: APP_ID }
+    return {
+      ...DEFAULT_SETTINGS,
+      ...existing,
+      familySync: {
+        ...DEFAULT_SETTINGS.familySync!,
+        ...(existing.familySync ?? {}),
+      },
+      id: 'global',
+      appId: APP_ID,
+    }
   }
   await db.put('settings', DEFAULT_SETTINGS)
   return DEFAULT_SETTINGS
@@ -103,6 +125,10 @@ export async function saveSettings(patch: Partial<AppSettings>): Promise<AppSett
   const updated: AppSettings = {
     ...current,
     ...patch,
+    familySync: patch.familySync
+      ? { ...current.familySync!, ...patch.familySync }
+      : current.familySync,
+    updatedAt: patch.updatedAt ?? new Date().toISOString(),
     id: 'global',
     appId: APP_ID,
   }
@@ -114,7 +140,13 @@ export async function saveSettings(patch: Partial<AppSettings>): Promise<AppSett
 export async function getStudents(): Promise<Student[]> {
   const db = await getDb()
   const all = await db.getAll('students')
-  return all.sort((a, b) => a.createdAt.localeCompare(b.createdAt))
+  return all
+    .map((s) => ({
+      ...s,
+      studentPin: s.studentPin || '1111',
+      updatedAt: s.updatedAt || s.createdAt,
+    }))
+    .sort((a, b) => a.createdAt.localeCompare(b.createdAt))
 }
 
 export async function ensureEnrollmentsForGrade(
@@ -143,23 +175,28 @@ export async function ensureEnrollmentsForGrade(
 }
 
 export async function createStudent(input: {
+  id?: string
   name: string
   avatar: string
   grade: GradeLevel
+  studentPin?: string
   targetEndDate?: string
 }): Promise<Student> {
   const db = await getDb()
   const now = new Date()
+  const nowIso = now.toISOString()
   const defaultTarget = new Date(now.getTime() + 180 * 86400000).toISOString().slice(0, 10)
   const student: Student = {
-    id: `stu-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+    id: input.id || `stu-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
     name: input.name.trim(),
     avatar: input.avatar,
     grade: input.grade,
-    createdAt: now.toISOString(),
+    studentPin: (input.studentPin || '1111').trim(),
+    createdAt: nowIso,
+    updatedAt: nowIso,
     targetEndDate: input.targetEndDate || defaultTarget,
     streakDays: 1,
-    lastActiveDate: now.toISOString().slice(0, 10),
+    lastActiveDate: nowIso.slice(0, 10),
   }
   await db.put('students', student)
   await ensureEnrollmentsForGrade(student.id, student.grade)
@@ -168,7 +205,7 @@ export async function createStudent(input: {
 
 export async function updateStudent(
   studentId: string,
-  patch: Partial<Pick<Student, 'name' | 'avatar' | 'grade' | 'targetEndDate'>>
+  patch: Partial<Pick<Student, 'name' | 'avatar' | 'grade' | 'studentPin' | 'targetEndDate'>>
 ): Promise<Student> {
   const db = await getDb()
   const existing = await db.get('students', studentId)
@@ -178,10 +215,11 @@ export async function updateStudent(
   const updated: Student = {
     ...existing,
     ...patch,
+    studentPin: patch.studentPin ?? existing.studentPin ?? '1111',
+    updatedAt: new Date().toISOString(),
     id: existing.id,
   }
   await db.put('students', updated)
-  // Always ensure all 4 courses for the active grade are enrolled while preserving prior grade history
   await ensureEnrollmentsForGrade(updated.id, updated.grade)
   return updated
 }
@@ -207,6 +245,12 @@ export async function getStudentEnrollments(studentId: string): Promise<Enrollme
 export async function getStudentAttempts(studentId: string): Promise<AttemptRecord[]> {
   const db = await getDb()
   const list = await db.getAllFromIndex('attempts', 'by-student', studentId)
+  return list.sort((a, b) => a.completedAt.localeCompare(b.completedAt))
+}
+
+export async function getAllAttempts(): Promise<AttemptRecord[]> {
+  const db = await getDb()
+  const list = await db.getAll('attempts')
   return list.sort((a, b) => a.completedAt.localeCompare(b.completedAt))
 }
 
@@ -253,7 +297,7 @@ export async function recordQuizAttempt(
 export async function exportBackupData(): Promise<BackupPayload> {
   const db = await getDb()
   const [students, enrollments, attempts, settings] = await Promise.all([
-    db.getAll('students'),
+    getStudents(),
     db.getAll('enrollments'),
     db.getAll('attempts'),
     getSettings(),
@@ -261,6 +305,7 @@ export async function exportBackupData(): Promise<BackupPayload> {
   return {
     app: APP_ID,
     schemaVersion: 1,
+    familyCode: settings.familySync?.familyCode || undefined,
     exportedAt: new Date().toISOString(),
     students,
     enrollments,
@@ -297,7 +342,12 @@ export async function importBackupData(rawPayload: unknown): Promise<{
 
   for (const s of payload.students) {
     const normalizedGrade: GradeLevel = s.grade === 6 ? 6 : 4
-    await tx.objectStore('students').put({ ...s, grade: normalizedGrade })
+    await tx.objectStore('students').put({
+      ...s,
+      grade: normalizedGrade,
+      studentPin: s.studentPin || '1111',
+      updatedAt: s.updatedAt || s.createdAt,
+    })
   }
   for (const e of payload.enrollments ?? []) {
     await tx.objectStore('enrollments').put(e)
@@ -323,5 +373,160 @@ export async function importBackupData(rawPayload: unknown): Promise<{
   return {
     studentsCount: payload.students.length,
     attemptsCount: payload.attempts.length,
+  }
+}
+
+/**
+ * Conflict-free union & last-writer-wins merge for multi-device Family Sync.
+ * - Attempts are immutable events merged by union (no student attempt is ever lost).
+ * - Students are merged by id using updatedAt last-writer-wins for profile/grade, while keeping max streak and latest activity date.
+ * - Settings take parent-controlled policy fields from whichever copy has the newer updatedAt, while preserving this device's local deviceRole and boundStudentId.
+ */
+export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
+  mergedStudents: number
+  mergedAttempts: number
+}> {
+  if (!rawRemote || typeof rawRemote !== 'object') {
+    throw new Error('Invalid remote sync payload.')
+  }
+  const remote = rawRemote as Partial<BackupPayload>
+  if (remote.app !== APP_ID) {
+    throw new Error(`Rejected remote payload: foreign app "${String(remote.app)}".`)
+  }
+
+  const db = await getDb()
+  const [localStudents, localEnrollments, localAttempts, localSettings] = await Promise.all([
+    getStudents(),
+    db.getAll('enrollments'),
+    db.getAll('attempts'),
+    getSettings(),
+  ])
+
+  // 1. Merge Students (by id, last-writer-wins on updatedAt, max streakDays)
+  const studentMap = new Map<string, Student>()
+  for (const s of localStudents) {
+    studentMap.set(s.id, s)
+  }
+  for (const r of remote.students ?? []) {
+    const normalizedGrade: GradeLevel = r.grade === 6 ? 6 : 4
+    const incoming: Student = {
+      ...r,
+      grade: normalizedGrade,
+      studentPin: r.studentPin || '1111',
+      updatedAt: r.updatedAt || r.createdAt,
+    }
+    const existing = studentMap.get(incoming.id)
+    if (!existing) {
+      studentMap.set(incoming.id, incoming)
+    } else {
+      const existingTime = Date.parse(existing.updatedAt || existing.createdAt || '0')
+      const incomingTime = Date.parse(incoming.updatedAt || incoming.createdAt || '0')
+      const winner = incomingTime >= existingTime ? incoming : existing
+      const lastActive =
+        (incoming.lastActiveDate || '') >= (existing.lastActiveDate || '')
+          ? incoming.lastActiveDate
+          : existing.lastActiveDate
+      studentMap.set(incoming.id, {
+        ...winner,
+        streakDays: Math.max(existing.streakDays || 1, incoming.streakDays || 1),
+        lastActiveDate: lastActive,
+      })
+    }
+  }
+
+  // 2. Merge Attempts (immutable union by id)
+  const attemptMap = new Map<string, AttemptRecord>()
+  for (const a of localAttempts) {
+    attemptMap.set(a.id, a)
+  }
+  for (const a of remote.attempts ?? []) {
+    const prev = attemptMap.get(a.id)
+    if (!prev || (!prev.reviewItems && a.reviewItems)) {
+      attemptMap.set(a.id, a)
+    }
+  }
+
+  // Normalize attemptNumbers per (studentId, courseId, lessonId) in chronological order
+  const groupedAttempts = new Map<string, AttemptRecord[]>()
+  for (const att of attemptMap.values()) {
+    const key = `${att.studentId}::${att.courseId}::${att.lessonId}`
+    const bucket = groupedAttempts.get(key) ?? []
+    bucket.push(att)
+    groupedAttempts.set(key, bucket)
+  }
+  const normalizedAttempts: AttemptRecord[] = []
+  for (const bucket of groupedAttempts.values()) {
+    bucket.sort((a, b) => a.completedAt.localeCompare(b.completedAt))
+    bucket.forEach((item, idx) => {
+      normalizedAttempts.push({
+        ...item,
+        attemptNumber: idx + 1,
+      })
+    })
+  }
+
+  // 3. Merge Enrollments (union by id)
+  const enrollmentMap = new Map<string, Enrollment>()
+  for (const e of localEnrollments) {
+    enrollmentMap.set(e.id, e)
+  }
+  for (const e of remote.enrollments ?? []) {
+    enrollmentMap.set(e.id, e)
+  }
+
+  // 4. Merge Settings (newer updatedAt wins for academic/parent settings; preserve device-local sync role)
+  let mergedSettings = localSettings
+  if (remote.settings) {
+    const localTime = Date.parse(localSettings.updatedAt || '0')
+    const remoteTime = Date.parse(remote.settings.updatedAt || '0')
+    if (remoteTime >= localTime) {
+      mergedSettings = {
+        ...localSettings,
+        parentPin: remote.settings.parentPin ?? localSettings.parentPin,
+        masteryThreshold: remote.settings.masteryThreshold ?? localSettings.masteryThreshold,
+        retryPenaltyPercent:
+          remote.settings.retryPenaltyPercent ?? localSettings.retryPenaltyPercent,
+        lessonWeight: remote.settings.lessonWeight ?? localSettings.lessonWeight,
+        unitTestWeight: remote.settings.unitTestWeight ?? localSettings.unitTestWeight,
+        requireAssignmentChecklist:
+          remote.settings.requireAssignmentChecklist ??
+          localSettings.requireAssignmentChecklist,
+        updatedAt: remote.settings.updatedAt,
+        familySync: {
+          ...localSettings.familySync!,
+          lastSyncedAt: new Date().toISOString(),
+        },
+      }
+    } else {
+      mergedSettings = {
+        ...localSettings,
+        familySync: {
+          ...localSettings.familySync!,
+          lastSyncedAt: new Date().toISOString(),
+        },
+      }
+    }
+  }
+
+  const tx = db.transaction(['students', 'enrollments', 'attempts', 'settings'], 'readwrite')
+  for (const s of studentMap.values()) {
+    await tx.objectStore('students').put(s)
+  }
+  for (const e of enrollmentMap.values()) {
+    await tx.objectStore('enrollments').put(e)
+  }
+  for (const a of normalizedAttempts) {
+    await tx.objectStore('attempts').put(a)
+  }
+  await tx.objectStore('settings').put(mergedSettings)
+  await tx.done
+
+  for (const s of studentMap.values()) {
+    await ensureEnrollmentsForGrade(s.id, s.grade)
+  }
+
+  return {
+    mergedStudents: studentMap.size,
+    mergedAttempts: normalizedAttempts.length,
   }
 }

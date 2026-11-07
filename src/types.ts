@@ -18,6 +18,32 @@ export interface GeneratedQuestion extends QuestionBankItem {
   principleTitle: string
 }
 
+export interface QuestionReviewItem {
+  fingerprint: string
+  principleId: string
+  principleTitle: string
+  prompt: string
+  passage?: string
+  studentAnswer: string
+  correctAnswer: string
+  isCorrect: boolean
+  explanation: string
+}
+
+export interface AssignmentStep {
+  id: string
+  type: 'video' | 'reading' | 'practice'
+  title: string
+  description: string
+  estimatedMinutes: number
+  url?: string
+}
+
+export interface LessonAssignment {
+  scopeSummary: string
+  steps: AssignmentStep[]
+}
+
 export interface Principle {
   id: string
   title: string
@@ -38,6 +64,7 @@ export interface Lesson {
   reading: string
   principles: Principle[]
   questionCount?: number
+  assignment?: LessonAssignment
 }
 
 export interface Unit {
@@ -64,7 +91,9 @@ export interface Student {
   name: string
   avatar: string
   grade: GradeLevel
+  studentPin: string
   createdAt: string
+  updatedAt?: string
   targetEndDate: string
   streakDays: number
   lastActiveDate?: string
@@ -93,7 +122,20 @@ export interface AttemptRecord {
   passed: boolean
   questionFingerprints: string[]
   missedPrincipleIds: string[]
+  reviewItems?: QuestionReviewItem[]
   completedAt: string
+}
+
+export type DeviceRole = 'parent' | 'student'
+
+export interface FamilySyncConfig {
+  enabled: boolean
+  familyCode: string
+  syncEndpointUrl: string
+  deviceRole: DeviceRole
+  boundStudentId?: string
+  autoSyncIntervalMin: 0 | 5 | 15
+  lastSyncedAt?: string
 }
 
 export interface AppSettings {
@@ -104,15 +146,19 @@ export interface AppSettings {
   retryPenaltyPercent: number
   lessonWeight: number
   unitTestWeight: number
+  requireAssignmentChecklist: boolean
   autoCheckUpdates: boolean
   updateCheckIntervalMin: 0 | 15 | 60
   autoApplyUpdates: boolean
   lastUpdateCheck?: string
+  updatedAt?: string
+  familySync?: FamilySyncConfig
 }
 
 export interface BackupPayload {
   app: 'home-school-lite'
   schemaVersion: 1
+  familyCode?: string
   exportedAt: string
   students: Student[]
   enrollments: Enrollment[]

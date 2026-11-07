@@ -1,11 +1,23 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useApp } from '../context/AppContext'
-import { findLessonInCourse, getCourseById } from '../lib/curriculum'
+import {
+  findLessonInCourse,
+  getCourseById,
+  getLessonAssignment,
+} from '../lib/curriculum'
 import { computeCourseProgress } from '../lib/progress'
 import { buildQuizAttempt } from '../lib/quizBuilder'
 import { hashString } from '../lib/random'
-import { AttemptRecord, GeneratedQuestion } from '../types'
+import {
+  getLessonChecklistProgress,
+  saveLessonChecklistProgress,
+} from '../lib/storage'
+import {
+  AttemptRecord,
+  GeneratedQuestion,
+  QuestionReviewItem,
+} from '../types'
 
 type PlayerMode = 'study' | 'quiz' | 'results'
 
@@ -20,7 +32,10 @@ export const LessonPage: React.FC = () => {
     setIsQuizInProgress,
   } = useApp()
 
-  const course = useMemo(() => (courseId ? getCourseById(courseId) : undefined), [courseId])
+  const course = useMemo(
+    () => (courseId ? getCourseById(courseId) : undefined),
+    [courseId]
+  )
   const found = useMemo(
     () => (course && lessonId ? findLessonInCourse(course, lessonId) : null),
     [course, lessonId]
@@ -33,39 +48,47 @@ export const LessonPage: React.FC = () => {
       .sort((a, b) => a.attemptNumber - b.attemptNumber)
   }, [attempts, course, lessonId])
 
-  const lastAttempt = priorAttempts.length > 0 ? priorAttempts[priorAttempts.length - 1] : null
+  const lastAttempt =
+    priorAttempts.length > 0 ? priorAttempts[priorAttempts.length - 1] : null
+
+  const assignment = useMemo(
+    () => (found ? getLessonAssignment(found.lesson) : null),
+    [found]
+  )
 
   const [mode, setMode] = useState<PlayerMode>('study')
-  const [seed, setSeed] = useState<number>(() => Date.now() ^ hashString(lessonId || 'l'))
+  const [seed, setSeed] = useState<number>(
+    () => Date.now() ^ hashString(lessonId || 'l')
+  )
   const [focusPrincipleIds, setFocusPrincipleIds] = useState<string[]>([])
+  // Frozen snapshot of the active quiz questions so saving an attempt never mutates the quiz mid-review
+  const [quizQuestions, setQuizQuestions] = useState<GeneratedQuestion[]>([])
   const [answers, setAnswers] = useState<Record<string, string>>({})
   const [latestResult, setLatestResult] = useState<AttemptRecord | null>(null)
   const [submitting, setSubmitting] = useState(false)
+  const [completedStepIds, setCompletedStepIds] = useState<string[]>([])
 
-  // Reset state when navigating between lessons
+  // Load checklist state & reset view when navigating to a different lesson or student
   useEffect(() => {
     setMode('study')
-    setSeed(Date.now() ^ hashString(`${lessonId}-${priorAttempts.length}`))
-    setFocusPrincipleIds(lastAttempt && !lastAttempt.passed ? lastAttempt.missedPrincipleIds : [])
+    setFocusPrincipleIds(
+      lastAttempt && !lastAttempt.passed ? lastAttempt.missedPrincipleIds : []
+    )
+    setQuizQuestions([])
     setAnswers({})
     setLatestResult(null)
-  }, [lessonId]) // eslint-disable-line react-hooks/exhaustive-deps
+    if (activeStudent && lessonId) {
+      setCompletedStepIds(getLessonChecklistProgress(activeStudent.id, lessonId))
+    } else {
+      setCompletedStepIds([])
+    }
+  }, [lessonId, activeStudent?.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Track quiz-in-progress so auto-updates never interrupt a student mid-quiz
+  // Track quiz-in-progress so background auto-updates or syncs never interrupt a student mid-quiz
   useEffect(() => {
     setIsQuizInProgress(mode === 'quiz')
     return () => setIsQuizInProgress(false)
   }, [mode, setIsQuizInProgress])
-
-  const questions: GeneratedQuestion[] = useMemo(() => {
-    if (!found) return []
-    return buildQuizAttempt({
-      lesson: found.lesson,
-      seed,
-      priorAttempts,
-      focusPrincipleIds,
-    })
-  }, [found, seed, priorAttempts, focusPrincipleIds])
 
   const progressSummary = useMemo(() => {
     if (!course) return null
@@ -81,7 +104,7 @@ export const LessonPage: React.FC = () => {
     return null
   }, [progressSummary, lessonId])
 
-  if (!course || !found || !activeStudent) {
+  if (!course || !found || !activeStudent || !assignment) {
     return (
       <div className="card">
         <h2>Lesson not found</h2>
@@ -94,34 +117,96 @@ export const LessonPage: React.FC = () => {
 
   const { unit, lesson } = found
 
+  const toggleChecklistStep = (stepId: string) => {
+    setCompletedStepIds((prev) => {
+      const exists = prev.includes(stepId)
+      const next = exists ? prev.filter((id) => id !== stepId) : [...prev, stepId]
+      saveLessonChecklistProgress(activeStudent.id, lesson.id, next)
+      return next
+    })
+  }
+
+  const markAllStepsComplete = () => {
+    const allIds = assignment.steps.map((s) => s.id)
+    setCompletedStepIds(allIds)
+    saveLessonChecklistProgress(activeStudent.id, lesson.id, allIds)
+  }
+
+  const allChecklistDone = assignment.steps.every((s) =>
+    completedStepIds.includes(s.id)
+  )
+  const canStartQuiz =
+    !settings.requireAssignmentChecklist ||
+    allChecklistDone ||
+    priorAttempts.length > 0
+
   const startFreshQuiz = (missedFocus: string[] = []) => {
-    // Generate a guaranteed new seed so every retry produces fresh numbers/questions
+    if (!canStartQuiz) return
     const nextSeed =
-      (Date.now() + (priorAttempts.length + 1) * 7919) ^
-      hashString(`${lesson.id}-attempt-${priorAttempts.length + 1}-${Math.random()}`)
-    setSeed(nextSeed >>> 0)
+      ((Date.now() + (priorAttempts.length + 1) * 7919) ^
+        hashString(
+          `${lesson.id}-attempt-${priorAttempts.length + 1}-${Math.random()}`
+        )) >>>
+      0
+    const built = buildQuizAttempt({
+      lesson,
+      seed: nextSeed,
+      priorAttempts,
+      focusPrincipleIds: missedFocus,
+    })
+    setSeed(nextSeed)
     setFocusPrincipleIds(missedFocus)
+    setQuizQuestions(built)
     setAnswers({})
     setLatestResult(null)
     setMode('quiz')
   }
 
+  const openOrResumeQuizTab = () => {
+    if (!canStartQuiz) return
+    // If a quiz is already active and unsubmitted, resume it without wiping answers
+    if (quizQuestions.length > 0 && !latestResult) {
+      setMode('quiz')
+      return
+    }
+    startFreshQuiz(focusPrincipleIds)
+  }
+
+  const allAnswered =
+    quizQuestions.length > 0 &&
+    quizQuestions.every((q) => Boolean((answers[q.fingerprint] ?? '').trim()))
+
   const handleSubmitQuiz = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (submitting || questions.length === 0) return
+    if (submitting || quizQuestions.length === 0 || !allAnswered) return
     setSubmitting(true)
     try {
       let correctCount = 0
       const missedPrinciples = new Set<string>()
-      for (const q of questions) {
+      const reviewItems: QuestionReviewItem[] = []
+
+      for (const q of quizQuestions) {
         const chosen = (answers[q.fingerprint] ?? '').trim()
-        if (chosen === q.answer.trim()) {
+        const isCorrect = chosen === q.answer.trim()
+        if (isCorrect) {
           correctCount++
         } else {
           missedPrinciples.add(q.principleId)
         }
+        reviewItems.push({
+          fingerprint: q.fingerprint,
+          principleId: q.principleId,
+          principleTitle: q.principleTitle,
+          prompt: q.prompt,
+          passage: q.passage,
+          studentAnswer: chosen || '(No answer)',
+          correctAnswer: q.answer,
+          isCorrect,
+          explanation: q.explanation,
+        })
       }
-      const totalCount = questions.length
+
+      const totalCount = quizQuestions.length
       const scorePercent = Math.round((correctCount / totalCount) * 100)
       const passed = scorePercent >= settings.masteryThreshold
 
@@ -136,8 +221,9 @@ export const LessonPage: React.FC = () => {
         correctCount,
         totalCount,
         passed,
-        questionFingerprints: questions.map((q) => q.fingerprint),
+        questionFingerprints: quizQuestions.map((q) => q.fingerprint),
         missedPrincipleIds: Array.from(missedPrinciples),
+        reviewItems,
       })
       setLatestResult(record)
       setMode('results')
@@ -146,8 +232,8 @@ export const LessonPage: React.FC = () => {
     }
   }
 
-  const allAnswered =
-    questions.length > 0 && questions.every((q) => Boolean(answers[q.fingerprint]))
+  const expectedQuestionCount =
+    lesson.questionCount ?? (lesson.kind === 'unit_test' ? 8 : 5)
 
   return (
     <div className="page-stack">
@@ -174,14 +260,21 @@ export const LessonPage: React.FC = () => {
               className={`mode-tab ${mode === 'study' ? 'active' : ''}`}
               onClick={() => setMode('study')}
             >
-              1. Video &amp; Concept Lesson
+              1. Lesson Scope &amp; Study
             </button>
             <button
               type="button"
               className={`mode-tab ${mode === 'quiz' ? 'active' : ''}`}
-              onClick={() => startFreshQuiz(focusPrincipleIds)}
+              disabled={!canStartQuiz}
+              title={
+                !canStartQuiz
+                  ? 'Complete the Lesson Assignment Checklist below to unlock the Mastery Check'
+                  : 'Open Randomized Mastery Check'
+              }
+              onClick={openOrResumeQuizTab}
             >
-              2. Randomized Mastery Check ({questions.length} Qs)
+              {!canStartQuiz ? '🔒 ' : ''}2. Randomized Mastery Check (
+              {quizQuestions.length || expectedQuestionCount} Qs)
             </button>
             {latestResult && (
               <button
@@ -189,7 +282,8 @@ export const LessonPage: React.FC = () => {
                 className={`mode-tab ${mode === 'results' ? 'active' : ''}`}
                 onClick={() => setMode('results')}
               >
-                3. Attempt #{latestResult.attemptNumber} Results ({latestResult.scorePercent}%)
+                3. Attempt #{latestResult.attemptNumber} Results (
+                {latestResult.scorePercent}%)
               </button>
             )}
           </div>
@@ -200,26 +294,105 @@ export const LessonPage: React.FC = () => {
         <section className="card study-card">
           {lastAttempt && !lastAttempt.passed && (
             <div className="alert alert-warning">
-              <strong>Targeted Concept Review before Next Attempt:</strong> On Attempt #
-              {lastAttempt.attemptNumber}, you scored {lastAttempt.scorePercent}% (goal:{' '}
-              {settings.masteryThreshold}%). Review the highlighted principle notes below, then launch a fresh randomized practice set!
+              <strong>Targeted Concept Review before Next Attempt:</strong> On
+              Attempt #{lastAttempt.attemptNumber}, you scored{' '}
+              {lastAttempt.scorePercent}% (goal: {settings.masteryThreshold}%).
+              Review the highlighted principle notes below, then launch a fresh
+              randomized practice set!
             </div>
           )}
+
+          {/* EXPLICIT LESSON SCOPE & ASSIGNMENT CHECKLIST */}
+          <div className="scope-checklist-box">
+            <div className="scope-header">
+              <div>
+                <span className="course-subject-tag">
+                  ASSIGNED LESSON SCOPE &amp; COMPLETION CHECKLIST
+                </span>
+                <h3>What to Complete Before Starting the Mastery Quiz</h3>
+                <p className="muted-sm">{assignment.scopeSummary}</p>
+              </div>
+              {!allChecklistDone && (
+                <button
+                  type="button"
+                  className="btn btn-secondary btn-sm"
+                  onClick={markAllStepsComplete}
+                >
+                  ✓ Mark All Steps Complete
+                </button>
+              )}
+            </div>
+
+            <div className="checklist-steps">
+              {assignment.steps.map((step) => {
+                const checked = completedStepIds.includes(step.id)
+                return (
+                  <div
+                    key={step.id}
+                    className={`checklist-item ${checked ? 'checked' : ''}`}
+                  >
+                    <label className="checklist-label">
+                      <input
+                        type="checkbox"
+                        checked={checked}
+                        onChange={() => toggleChecklistStep(step.id)}
+                      />
+                      <div className="checklist-text">
+                        <div className="checklist-title-row">
+                          <strong>{step.title}</strong>
+                          <span className="badge badge-neutral">
+                            ~{step.estimatedMinutes} min
+                          </span>
+                        </div>
+                        <p className="muted-sm">{step.description}</p>
+                      </div>
+                    </label>
+                    {step.url && (
+                      <a
+                        href={step.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-accent btn-sm"
+                        onClick={() => {
+                          if (!checked) toggleChecklistStep(step.id)
+                        }}
+                      >
+                        Open Activity ↗
+                      </a>
+                    )}
+                  </div>
+                )
+              })}
+            </div>
+          </div>
 
           <div className="video-stage">
             <div className="video-stage-visual">
               <div className="video-play-badge">▶</div>
               <div className="video-stage-text">
-                <span className="badge badge-glass">Instructional Video Resource</span>
+                <span className="badge badge-glass">
+                  Targeted External Video / Activity (1 Lesson Only)
+                </span>
                 <h3>{lesson.videoTitle}</h3>
                 <p>
-                  Watch the video lesson on Khan Academy, then review the key principles and examples below before starting your mastery check.
+                  Scope Rule: Watch only the single video/article for{' '}
+                  <strong>
+                    {lesson.principles.map((p) => p.title).join(' & ')}
+                  </strong>{' '}
+                  (do not complete the entire external unit), then return here
+                  for your graded Mastery Check.
                 </p>
                 <a
                   href={lesson.videoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-accent"
+                  onClick={() => {
+                    const firstStep = assignment.steps[0]
+                    if (firstStep && !completedStepIds.includes(firstStep.id)) {
+                      toggleChecklistStep(firstStep.id)
+                    }
+                  }}
                 >
                   Open Video Lesson in New Tab ↗
                 </a>
@@ -240,12 +413,16 @@ export const LessonPage: React.FC = () => {
                 return (
                   <div
                     key={p.id}
-                    className={`principle-card ${needsFocus ? 'principle-focus' : ''}`}
+                    className={`principle-card ${
+                      needsFocus ? 'principle-focus' : ''
+                    }`}
                   >
                     <div className="principle-top">
                       <span className="std-tag">Standard {p.standard}</span>
                       {needsFocus && (
-                        <span className="badge badge-warning">Review Recommended</span>
+                        <span className="badge badge-warning">
+                          Review Recommended
+                        </span>
                       )}
                     </div>
                     <h4>{p.title}</h4>
@@ -258,18 +435,28 @@ export const LessonPage: React.FC = () => {
 
           <div className="study-footer">
             <div>
-              <strong>Ready to demonstrate mastery?</strong>
+              <strong>
+                {canStartQuiz
+                  ? 'Ready to demonstrate mastery!'
+                  : `Check off all ${assignment.steps.length} Lesson Scope steps above to unlock the Mastery Quiz`}
+              </strong>
               <p className="muted-sm">
-                Each attempt generates fresh questions for these principles. Score{' '}
-                {settings.masteryThreshold}% or higher to unlock the next lesson.
+                Each attempt generates fresh questions for these principles.
+                Score {settings.masteryThreshold}% or higher to unlock the next
+                lesson.
               </p>
             </div>
             <button
               type="button"
               className="btn btn-primary btn-lg"
-              onClick={() => startFreshQuiz(focusPrincipleIds)}
+              disabled={!canStartQuiz}
+              onClick={openOrResumeQuizTab}
             >
-              Start Randomized Mastery Check ({questions.length} Questions) →
+              {!canStartQuiz
+                ? `🔒 Complete Scope Checklist (${completedStepIds.length}/${assignment.steps.length})`
+                : quizQuestions.length > 0 && !latestResult
+                ? 'Resume Active Mastery Check →'
+                : `Start Randomized Mastery Check (${expectedQuestionCount} Questions) →`}
             </button>
           </div>
         </section>
@@ -280,10 +467,13 @@ export const LessonPage: React.FC = () => {
           <div className="quiz-banner">
             <div>
               <strong>
-                Attempt #{priorAttempts.length + 1} • Seed #{seed.toString(16).toUpperCase()}
+                Attempt #{priorAttempts.length + 1} • Seed #
+                {seed.toString(16).toUpperCase()}
               </strong>
               <p className="muted-sm">
-                Questions are freshly randomized for the taught principles and exclude previously seen problems.
+                Questions are frozen for this attempt and exclude previously
+                seen problems. You can review notes and return without losing
+                your answers.
               </p>
             </div>
             <button
@@ -296,17 +486,21 @@ export const LessonPage: React.FC = () => {
           </div>
 
           <div className="questions-stack">
-            {questions.map((q, idx) => {
+            {quizQuestions.map((q, idx) => {
               const selected = answers[q.fingerprint] ?? ''
               return (
                 <div key={q.fingerprint} className="question-box">
                   <div className="question-meta">
-                    <span className="question-number">Question {idx + 1} of {questions.length}</span>
+                    <span className="question-number">
+                      Question {idx + 1} of {quizQuestions.length}
+                    </span>
                     <span className="std-tag">{q.principleTitle}</span>
                   </div>
 
                   {q.passage && (
-                    <blockquote className="question-passage">{q.passage}</blockquote>
+                    <blockquote className="question-passage">
+                      {q.passage}
+                    </blockquote>
                   )}
 
                   <p className="question-prompt">{q.prompt}</p>
@@ -317,7 +511,9 @@ export const LessonPage: React.FC = () => {
                       return (
                         <label
                           key={choice}
-                          className={`choice-option ${isChecked ? 'selected' : ''}`}
+                          className={`choice-option ${
+                            isChecked ? 'selected' : ''
+                          }`}
                         >
                           <input
                             type="radio"
@@ -345,7 +541,12 @@ export const LessonPage: React.FC = () => {
             <span>
               Answered{' '}
               <strong>
-                {Object.keys(answers).length} / {questions.length}
+                {
+                  quizQuestions.filter((q) =>
+                    Boolean((answers[q.fingerprint] ?? '').trim())
+                  ).length
+                }{' '}
+                / {quizQuestions.length}
               </strong>{' '}
               questions
             </span>
@@ -381,7 +582,8 @@ export const LessonPage: React.FC = () => {
                   <p>
                     You scored {latestResult.scorePercent}%, meeting the{' '}
                     {settings.masteryThreshold}% mastery threshold on Attempt #
-                    {latestResult.attemptNumber}. The next step in {course.title} is now unlocked!
+                    {latestResult.attemptNumber}. The next step in{' '}
+                    {course.title} is now unlocked!
                   </p>
                 </>
               ) : (
@@ -392,7 +594,9 @@ export const LessonPage: React.FC = () => {
                   <h2>Let’s Review &amp; Try Fresh Questions</h2>
                   <p>
                     You scored {latestResult.scorePercent}% on Attempt #
-                    {latestResult.attemptNumber}. Review the explanation for each question below, then launch a new randomized set covering the same principles.
+                    {latestResult.attemptNumber}. Review the explanation for
+                    each question below, then launch a new randomized set
+                    covering the same principles.
                   </p>
                 </>
               )}
@@ -418,7 +622,10 @@ export const LessonPage: React.FC = () => {
                   }`}
                   onClick={() => startFreshQuiz(latestResult.missedPrincipleIds)}
                 >
-                  🔄 {latestResult.passed ? 'Practice Again (New Questions)' : 'Retry with Fresh Randomized Questions'}
+                  🔄{' '}
+                  {latestResult.passed
+                    ? 'Practice Again (New Questions)'
+                    : 'Retry with Fresh Randomized Questions'}
                 </button>
                 <button
                   type="button"
@@ -434,56 +641,66 @@ export const LessonPage: React.FC = () => {
             </div>
           </div>
 
-          {!latestResult.passed && latestResult.missedPrincipleIds.length > 0 && (
-            <div className="missed-principles-review">
-              <h3>Targeted Concept Re-Teach for Missed Principles</h3>
-              <div className="principles-grid">
-                {lesson.principles
-                  .filter((p) => latestResult.missedPrincipleIds.includes(p.id))
-                  .map((p) => (
-                    <div key={p.id} className="principle-card principle-focus">
-                      <span className="std-tag">Standard {p.standard}</span>
-                      <h4>{p.title}</h4>
-                      <p>{p.summary}</p>
-                    </div>
-                  ))}
+          {!latestResult.passed &&
+            latestResult.missedPrincipleIds.length > 0 && (
+              <div className="missed-principles-review">
+                <h3>Targeted Concept Re-Teach for Missed Principles</h3>
+                <div className="principles-grid">
+                  {lesson.principles
+                    .filter((p) =>
+                      latestResult.missedPrincipleIds.includes(p.id)
+                    )
+                    .map((p) => (
+                      <div
+                        key={p.id}
+                        className="principle-card principle-focus"
+                      >
+                        <span className="std-tag">Standard {p.standard}</span>
+                        <h4>{p.title}</h4>
+                        <p>{p.summary}</p>
+                      </div>
+                    ))}
+                </div>
               </div>
-            </div>
-          )}
+            )}
 
           <h3>Question-by-Question Worked Review</h3>
           <div className="questions-stack">
-            {questions.map((q, idx) => {
-              const studentAnswer = answers[q.fingerprint] ?? '(No answer)'
-              const isCorrect = studentAnswer.trim() === q.answer.trim()
-              return (
-                <div
-                  key={q.fingerprint}
-                  className={`review-item ${isCorrect ? 'review-correct' : 'review-wrong'}`}
-                >
-                  <div className="question-meta">
-                    <strong>
-                      {isCorrect ? '✅ Correct' : '❌ Needs Review'} — Question {idx + 1}
-                    </strong>
-                    <span className="std-tag">{q.principleTitle}</span>
-                  </div>
-                  <p className="question-prompt">{q.prompt}</p>
-                  <div className="review-answers">
-                    <span>
-                      Your Answer: <strong>{studentAnswer}</strong>
-                    </span>
-                    {!isCorrect && (
-                      <span>
-                        Correct Answer: <strong>{q.answer}</strong>
-                      </span>
-                    )}
-                  </div>
-                  <div className="review-explanation">
-                    <strong>Explanation:</strong> {q.explanation}
-                  </div>
+            {(latestResult.reviewItems ?? []).map((item, idx) => (
+              <div
+                key={item.fingerprint}
+                className={`review-item ${
+                  item.isCorrect ? 'review-correct' : 'review-wrong'
+                }`}
+              >
+                <div className="question-meta">
+                  <strong>
+                    {item.isCorrect ? '✅ Correct' : '❌ Needs Review'} —
+                    Question {idx + 1}
+                  </strong>
+                  <span className="std-tag">{item.principleTitle}</span>
                 </div>
-              )
-            })}
+                {item.passage && (
+                  <blockquote className="question-passage">
+                    {item.passage}
+                  </blockquote>
+                )}
+                <p className="question-prompt">{item.prompt}</p>
+                <div className="review-answers">
+                  <span>
+                    Your Answer: <strong>{item.studentAnswer}</strong>
+                  </span>
+                  {!item.isCorrect && (
+                    <span>
+                      Correct Answer: <strong>{item.correctAnswer}</strong>
+                    </span>
+                  )}
+                </div>
+                <div className="review-explanation">
+                  <strong>Explanation:</strong> {item.explanation}
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       )}

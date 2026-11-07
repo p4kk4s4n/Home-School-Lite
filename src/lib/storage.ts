@@ -7,6 +7,7 @@ export const STORAGE_KEYS = {
   ACTIVE_STUDENT_ID: 'hsl:activeStudentId',
   PARENT_UNLOCKED_UNTIL: 'hsl:parentUnlockedUntil',
   DISMISSED_VERSION: 'hsl:dismissedVersion',
+  CHECKLIST_PREFIX: 'hsl:checklist:',
 } as const
 
 export function assertNamespacedKey(key: string): void {
@@ -40,4 +41,25 @@ export function removeLocalItem(key: string): void {
   } catch {
     // Ignore
   }
+}
+
+export function getLessonChecklistProgress(studentId: string, lessonId: string): string[] {
+  const key = `${STORAGE_KEYS.CHECKLIST_PREFIX}${studentId}:${lessonId}`
+  const raw = getLocalItem(key)
+  if (!raw) return []
+  try {
+    const parsed = JSON.parse(raw)
+    return Array.isArray(parsed) ? parsed : []
+  } catch {
+    return []
+  }
+}
+
+export function saveLessonChecklistProgress(
+  studentId: string,
+  lessonId: string,
+  completedStepIds: string[]
+): void {
+  const key = `${STORAGE_KEYS.CHECKLIST_PREFIX}${studentId}:${lessonId}`
+  setLocalItem(key, JSON.stringify(Array.from(new Set(completedStepIds))))
 }
