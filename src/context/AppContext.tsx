@@ -22,7 +22,7 @@ import {
   updateStudent,
 } from '../lib/db'
 import { getLocalItem, removeLocalItem, setLocalItem, STORAGE_KEYS } from '../lib/storage'
-import { syncFamilyCircle, SyncStatusResult } from '../lib/sync'
+import { pushFamilyCircleToCloud, syncFamilyCircle, SyncStatusResult } from '../lib/sync'
 import {
   applyAppUpdate,
   checkForAppUpdate,
@@ -258,12 +258,19 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const removeStudent = useCallback(
     async (studentId: string) => {
       await deleteStudent(studentId)
+      if (getLocalItem(STORAGE_KEYS.ACTIVE_STUDENT_ID) === studentId) {
+        removeLocalItem(STORAGE_KEYS.ACTIVE_STUDENT_ID)
+      }
       await refreshStateFromDb()
       if (settings.familySync?.enabled) {
-        void triggerFamilySync()
+        try {
+          await pushFamilyCircleToCloud()
+        } catch {
+          // background sync push
+        }
       }
     },
-    [refreshStateFromDb, settings.familySync?.enabled, triggerFamilySync]
+    [refreshStateFromDb, settings.familySync?.enabled]
   )
 
   const submitAttempt = useCallback(

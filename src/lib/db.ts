@@ -53,6 +53,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   updateCheckIntervalMin: 15,
   autoApplyUpdates: false,
   updatedAt: '2026-01-01T00:00:00.000Z',
+  deletedStudentIds: [],
   familySync: {
     enabled: false,
     familyCode: '',
@@ -128,6 +129,7 @@ export async function getSettings(): Promise<AppSettings> {
     return {
       ...DEFAULT_SETTINGS,
       ...existing,
+      deletedStudentIds: existing.deletedStudentIds ?? [],
       familySync: {
         ...DEFAULT_SETTINGS.familySync!,
         ...(existing.familySync ?? {}),
@@ -145,6 +147,7 @@ export async function saveSettings(patch: Partial<AppSettings>): Promise<AppSett
   const updated: AppSettings = {
     ...current,
     ...patch,
+    deletedStudentIds: patch.deletedStudentIds ?? current.deletedStudentIds ?? [],
     familySync: patch.familySync
       ? { ...current.familySync!, ...patch.familySync }
       : current.familySync,
@@ -255,6 +258,15 @@ export async function deleteStudent(studentId: string): Promise<void> {
   for (const a of attempts) {
     await db.delete('attempts', a.id)
   }
+
+  // Tombstone studentId in settings to prevent resurrection during cloud sync
+  const settings = await getSettings()
+  const deletedSet = new Set(settings.deletedStudentIds || [])
+  deletedSet.add(studentId)
+  await saveSettings({
+    deletedStudentIds: Array.from(deletedSet),
+    updatedAt: new Date().toISOString(),
+  })
 }
 
 export async function getStudentEnrollments(studentId: string): Promise<Enrollment[]> {
@@ -327,6 +339,7 @@ export async function exportBackupData(): Promise<BackupPayload> {
     schemaVersion: 1,
     familyCode: settings.familySync?.familyCode || undefined,
     exportedAt: new Date().toISOString(),
+    deletedStudentIds: settings.deletedStudentIds || [],
     students,
     enrollments,
     attempts,
@@ -422,12 +435,24 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
     getSettings(),
   ])
 
-  // 1. Merge Students (by id, last-writer-wins on updatedAt, max streakDays)
+  // Collect all tombstoned (deleted) student IDs to prevent resurrection
+  const allDeletedIds = new Set<string>([
+    ...(localSettings.deletedStudentIds || []),
+    ...(remote.deletedStudentIds || []),
+    ...(remote.settings?.deletedStudentIds || []),
+  ])
+
+  // 1. Merge Students (by id, last-writer-wins on updatedAt, max streakDays, excluding deleted)
   const studentMap = new Map<string, Student>()
   for (const s of localStudents) {
-    studentMap.set(s.id, s)
+    if (!allDeletedIds.has(s.id)) {
+      studentMap.set(s.id, s)
+    }
   }
   for (const r of remote.students ?? []) {
+    if (allDeletedIds.has(r.id)) {
+      continue
+    }
     const normalizedGrade: GradeLevel = r.grade === 6 ? 6 : 4
     const incoming: Student = {
       ...r,
@@ -454,12 +479,17 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
     }
   }
 
-  // 2. Merge Attempts (immutable union by id)
+  // 2. Merge Attempts (immutable union by id, excluding deleted students)
   const attemptMap = new Map<string, AttemptRecord>()
   for (const a of localAttempts) {
-    attemptMap.set(a.id, a)
+    if (!allDeletedIds.has(a.studentId)) {
+      attemptMap.set(a.id, a)
+    }
   }
   for (const a of remote.attempts ?? []) {
+    if (allDeletedIds.has(a.studentId)) {
+      continue
+    }
     const prev = attemptMap.get(a.id)
     if (!prev || (!prev.reviewItems && a.reviewItems)) {
       attemptMap.set(a.id, a)
@@ -485,17 +515,25 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
     })
   }
 
-  // 3. Merge Enrollments (union by id)
+  // 3. Merge Enrollments (union by id, excluding deleted students)
   const enrollmentMap = new Map<string, Enrollment>()
   for (const e of localEnrollments) {
-    enrollmentMap.set(e.id, e)
+    if (!allDeletedIds.has(e.studentId)) {
+      enrollmentMap.set(e.id, e)
+    }
   }
   for (const e of remote.enrollments ?? []) {
+    if (allDeletedIds.has(e.studentId)) {
+      continue
+    }
     enrollmentMap.set(e.id, e)
   }
 
   // 4. Merge Settings (newer updatedAt wins for academic/parent settings; preserve device-local sync role)
-  let mergedSettings = localSettings
+  let mergedSettings: AppSettings = {
+    ...localSettings,
+    deletedStudentIds: Array.from(allDeletedIds),
+  }
   if (remote.settings) {
     const localTime = Date.parse(localSettings.updatedAt || '0')
     const remoteTime = Date.parse(remote.settings.updatedAt || '0')
@@ -511,6 +549,7 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
         requireAssignmentChecklist:
           remote.settings.requireAssignmentChecklist ??
           localSettings.requireAssignmentChecklist,
+        deletedStudentIds: Array.from(allDeletedIds),
         updatedAt: remote.settings.updatedAt,
         familySync: {
           ...localSettings.familySync!,
@@ -520,6 +559,7 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
     } else {
       mergedSettings = {
         ...localSettings,
+        deletedStudentIds: Array.from(allDeletedIds),
         familySync: {
           ...localSettings.familySync!,
           lastSyncedAt: new Date().toISOString(),
@@ -529,6 +569,10 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
   }
 
   const tx = db.transaction(['students', 'enrollments', 'attempts', 'settings'], 'readwrite')
+  // Explicitly purge any deleted student IDs from local object stores
+  for (const delId of allDeletedIds) {
+    await tx.objectStore('students').delete(delId)
+  }
   for (const s of studentMap.values()) {
     await tx.objectStore('students').put(s)
   }

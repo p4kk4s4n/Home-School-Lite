@@ -24,7 +24,15 @@ export interface ConnectionTestResult {
 }
 
 /**
- * Normalizes user-entered Family Code into a standard format (e.g. "HSL-P4KK4").
+ * Generates a random 5-digit Family Code, e.g. "HSL-78421".
+ */
+export function generateRandomFamilyCode(): string {
+  const num = Math.floor(10000 + Math.random() * 90000)
+  return `HSL-${num}`
+}
+
+/**
+ * Normalizes user-entered Family Code into a standard format (e.g. "HSL-#####").
  */
 export function normalizeFamilyCode(rawCode: string): string {
   const clean = rawCode
@@ -137,7 +145,7 @@ export async function testSyncConnection(
 }
 
 /**
- * Creates or initializes a Family Circle under the user's chosen Family Code (e.g. "HSL-P4KK4").
+ * Creates or initializes a Family Circle under the user's chosen Family Code (e.g. "HSL-#####").
  * Issues a PUT request to the cloud endpoint so the document exists immediately.
  */
 export async function createCloudFamilyCircle(options: {
@@ -148,7 +156,7 @@ export async function createCloudFamilyCircle(options: {
   const { familyCode: rawCode, endpointUrl: rawUrl, fetchImpl = fetch } = options
   const familyCode = normalizeFamilyCode(rawCode)
   if (!familyCode) {
-    throw new Error('Please enter a valid Family Code (e.g. HSL-P4KK4).')
+    throw new Error('Please enter a valid Family Code (e.g. HSL-78421).')
   }
 
   const endpointUrl = resolveSyncEndpoint(familyCode, rawUrl)
@@ -408,6 +416,54 @@ export async function syncFamilyCircle(
       error: err instanceof Error ? err.message : 'Sync network error',
     }
   }
+}
+
+/**
+ * Pushes the current local state directly to the cloud endpoint via PUT.
+ * Unlike two-way sync, this does NOT pull first, ensuring local deletions and
+ * tombstones immediately overwrite the cloud document without resurrection.
+ */
+export async function pushFamilyCircleToCloud(
+  customEndpointUrl?: string,
+  fetchImpl: typeof fetch = fetch
+): Promise<void> {
+  const settings = await getSettings()
+  const syncCfg = settings.familySync
+  if (!syncCfg || !syncCfg.enabled || !syncCfg.familyCode || !syncCfg.syncEndpointUrl) {
+    return
+  }
+
+  const endpointUrl = resolveSyncEndpoint(
+    syncCfg.familyCode,
+    customEndpointUrl || syncCfg.syncEndpointUrl
+  )
+  const payload = await exportBackupData()
+  const nowIso = new Date().toISOString()
+  const body: BackupPayload = {
+    ...payload,
+    familyCode: syncCfg.familyCode,
+    exportedAt: nowIso,
+  }
+
+  const res = await fetchImpl(endpointUrl, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body: JSON.stringify(body),
+  })
+
+  if (!res.ok) {
+    throw new Error(`Cloud push failed with HTTP ${res.status}`)
+  }
+
+  await saveSettings({
+    familySync: {
+      ...syncCfg,
+      lastSyncedAt: nowIso,
+    },
+  })
 }
 
 /**

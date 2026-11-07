@@ -18,6 +18,7 @@ import { buildQuizAttempt } from '../lib/quizBuilder'
 import {
   createStudent,
   DEFAULT_SETTINGS,
+  deleteStudent,
   exportBackupData,
   getSettings,
   getStudentAttempts,
@@ -27,6 +28,7 @@ import {
   mergeFamilyPayload,
   recordQuizAttempt,
   resetDbConnectionForTests,
+  saveSettings,
   updateStudent,
 } from '../lib/db'
 import {
@@ -42,11 +44,14 @@ import {
 import {
   createCloudFamilyCircle,
   disconnectFamilySync,
+  generateRandomFamilyCode,
   joinFamilyAsStudent,
   normalizeFamilyCode,
+  pushFamilyCircleToCloud,
   resolveSyncEndpoint,
   testSyncConnection,
 } from '../lib/sync'
+import { BackupPayload } from '../types'
 import {
   checkForAppUpdate,
   cleanAppCachesOnly,
@@ -597,6 +602,78 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
     expect(settings.familySync?.enabled).toBe(false)
     expect(settings.familySync?.familyCode).toBe('')
     expect((await getStudents()).length).toBeGreaterThanOrEqual(1)
+  })
+
+  it('generates a randomized 5-digit Family Code matching HSL-##### format', () => {
+    const code = generateRandomFamilyCode()
+    expect(code).toMatch(/^HSL-\d{5}$/)
+    const code2 = generateRandomFamilyCode()
+    expect(code2).toMatch(/^HSL-\d{5}$/)
+    expect(code).not.toBe(code2)
+  })
+
+  it('records tombstone when deleting student and prevents resurrection during sync', async () => {
+    const stu1 = await createStudent({ name: 'Alice', avatar: '🚀', grade: 4 })
+    const stu2 = await createStudent({ name: 'Bob', avatar: '🦊', grade: 6 })
+    let students = await getStudents()
+    expect(students.map((s) => s.id)).toContain(stu2.id)
+
+    // Delete stu2
+    await deleteStudent(stu2.id)
+    students = await getStudents()
+    expect(students.map((s) => s.id)).not.toContain(stu2.id)
+    const settings = await getSettings()
+    expect(settings.deletedStudentIds).toContain(stu2.id)
+
+    // Simulate remote payload still having stu2
+    const remotePayload: BackupPayload = {
+      app: 'home-school-lite',
+      schemaVersion: 1,
+      exportedAt: new Date().toISOString(),
+      deletedStudentIds: [],
+      students: [stu1, stu2],
+      enrollments: [],
+      attempts: [],
+      settings: { ...DEFAULT_SETTINGS, updatedAt: new Date().toISOString() },
+    }
+
+    // Merge remote: stu2 should NOT be resurrected because stu2 is tombstoned
+    await mergeFamilyPayload(remotePayload)
+    const afterMerge = await getStudents()
+    expect(afterMerge.map((s) => s.id)).not.toContain(stu2.id)
+    expect(afterMerge.map((s) => s.id)).toContain(stu1.id)
+  })
+
+  it('pushes local state directly to cloud via PUT without pulling', async () => {
+    await saveSettings({
+      familySync: {
+        enabled: true,
+        familyCode: 'HSL-99999',
+        syncEndpointUrl: 'https://test-rtdb.firebaseio.com',
+        deviceRole: 'parent',
+        autoSyncIntervalMin: 5,
+      },
+    })
+
+    let putMethod = ''
+    let putUrl = ''
+    let putBody: any = null
+    const mockFetch = vi.fn().mockImplementation((url: string, init?: RequestInit) => {
+      putUrl = url
+      putMethod = init?.method || 'GET'
+      putBody = JSON.parse((init?.body as string) || '{}')
+      return Promise.resolve({
+        ok: true,
+        status: 200,
+        json: async () => ({ ok: true }),
+      })
+    })
+
+    await pushFamilyCircleToCloud(undefined, mockFetch as unknown as typeof fetch)
+    expect(putMethod).toBe('PUT')
+    expect(putUrl).toBe('https://test-rtdb.firebaseio.com/families/HSL-99999.json')
+    expect(putBody.app).toBe('home-school-lite')
+    expect(putBody.familyCode).toBe('HSL-99999')
   })
 
   it('allows a student device to join via Family Code + Student PIN and union-merges multi-device attempts', async () => {

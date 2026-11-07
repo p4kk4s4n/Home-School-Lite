@@ -8,6 +8,7 @@ import {
   createCloudFamilyCircle,
   disconnectFamilySync,
   fetchRemoteFamilyPreview,
+  generateRandomFamilyCode,
   joinFamilyAsParent,
   joinFamilyAsStudent,
   normalizeFamilyCode,
@@ -29,6 +30,7 @@ export const FamilyPage: React.FC = () => {
     unlockParent,
     editStudent,
     addStudent,
+    removeStudent,
     reloadAllData,
     syncingFamily,
     triggerFamilySync,
@@ -47,7 +49,7 @@ export const FamilyPage: React.FC = () => {
 
   // Inputs
   const [familyCodeInput, setFamilyCodeInput] = useState(() => {
-    return searchParams.get('code') || syncCfg?.familyCode || 'HSL-P4KK4'
+    return searchParams.get('code') || syncCfg?.familyCode || generateRandomFamilyCode()
   })
 
   const [dbUrlInput, setDbUrlInput] = useState(() => {
@@ -170,7 +172,7 @@ export const FamilyPage: React.FC = () => {
   const handleInitializeFamilyCircle = async () => {
     const cleanCode = normalizeFamilyCode(familyCodeInput)
     if (!cleanCode) {
-      setErrorMsg('Please enter a valid Family Code (e.g. HSL-P4KK4).')
+      setErrorMsg('Please enter a valid Family Code (e.g. HSL-78421).')
       return
     }
     if (!dbUrlInput.trim()) {
@@ -430,14 +432,25 @@ export const FamilyPage: React.FC = () => {
             <div className="settings-grid-2">
               <div className="settings-panel">
                 <label className="field-label">
-                  1. Your Family Code (Choose any code, e.g. HSL-P4KK4)
-                  <input
-                    type="text"
-                    className="input"
-                    placeholder="e.g., HSL-P4KK4"
-                    value={familyCodeInput}
-                    onChange={(e) => setFamilyCodeInput(e.target.value)}
-                  />
+                  1. Your Family Code (Randomized 5-Digit Code e.g. HSL-#####)
+                  <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.25rem' }}>
+                    <input
+                      type="text"
+                      className="input"
+                      placeholder="e.g., HSL-78421"
+                      value={familyCodeInput}
+                      onChange={(e) => setFamilyCodeInput(e.target.value)}
+                    />
+                    <button
+                      type="button"
+                      className="btn btn-secondary btn-sm"
+                      style={{ whiteSpace: 'nowrap' }}
+                      onClick={() => setFamilyCodeInput(generateRandomFamilyCode())}
+                      title="Generate new random 5-digit Family Code"
+                    >
+                      🎲 New Code
+                    </button>
+                  </div>
                   <span className="muted-sm">
                     This is the code your children will type into their devices to find your family circle.
                   </span>
@@ -616,6 +629,7 @@ export const FamilyPage: React.FC = () => {
                     <th>Total Attempts</th>
                     <th>Last Active</th>
                     <th>Inspect Work</th>
+                    {isParentUnlocked && <th>Actions</th>}
                   </tr>
                 </thead>
                 <tbody>
@@ -701,6 +715,30 @@ export const FamilyPage: React.FC = () => {
                             🔍 Inspect Quizzes
                           </button>
                         </td>
+                        {isParentUnlocked && (
+                          <td>
+                            <button
+                              type="button"
+                              className="btn btn-danger btn-sm"
+                              title={`Delete ${student.name} from roster`}
+                              onClick={async () => {
+                                const confirmed = window.confirm(
+                                  `Are you sure you want to delete ${student.name}?\n\nThis will remove their profile, enrolled courses, and quiz attempts from this family circle.`
+                                )
+                                if (!confirmed) return
+                                await removeStudent(student.id)
+                                if (inspectStudentId === student.id) {
+                                  const remaining = students.filter((s) => s.id !== student.id)
+                                  setInspectStudentId(remaining[0]?.id || '')
+                                  setInspectAttemptId(null)
+                                }
+                                setStatusMsg(`Student "${student.name}" was removed from the family circle.`)
+                              }}
+                            >
+                              🗑 Delete
+                            </button>
+                          </td>
+                        )}
                       </tr>
                     )
                   )}
@@ -940,7 +978,7 @@ export const FamilyPage: React.FC = () => {
                       type="text"
                       className="input"
                       style={{ flex: 1, textTransform: 'uppercase', fontWeight: 'bold' }}
-                      placeholder="e.g. HSL-P4KK4"
+                      placeholder="e.g. HSL-78421"
                       value={familyCodeInput}
                       onChange={(e) => setFamilyCodeInput(e.target.value)}
                     />
@@ -1027,13 +1065,13 @@ export const FamilyPage: React.FC = () => {
               <h3 style={{ marginTop: 0 }}>1. The Correct Order of Steps</h3>
               <ol style={{ paddingLeft: '1.25rem', lineHeight: '1.8' }}>
                 <li>
-                  <strong>On the Parent Device:</strong> Open Family Sync &rarr; Parent Device. Choose your Family Code (e.g. <code>HSL-P4KK4</code>), paste your Firebase Realtime DB URL, and click <strong>Create / Initialize Circle</strong>.
+                  <strong>On the Parent Device:</strong> Open Family Sync &rarr; Parent Device. Choose your Family Code (e.g. <code>HSL-78421</code>), paste your Firebase Realtime DB URL, and click <strong>Create / Initialize Circle</strong>.
                 </li>
                 <li>
                   <strong>Set Student PINs:</strong> In the Family Roster table, ensure each child has their Grade Level (4 or 6) and 4-digit PIN (default is <code>1111</code>, or customize it).
                 </li>
                 <li>
-                  <strong>On the Student Device:</strong> Open Family Sync &rarr; Student Device (or click the Share Link). Enter <code>HSL-P4KK4</code>, click <strong>Find Family</strong>, pick their name, and enter their Student PIN.
+                  <strong>On the Student Device:</strong> Open Family Sync &rarr; Student Device (or click the Share Link). Enter <code>HSL-78421</code>, click <strong>Find Family</strong>, pick their name, and enter their Student PIN.
                 </li>
                 <li>
                   <strong>Done!</strong> Quizzes completed by the student automatically sync to the parent oversight dashboard.
@@ -1044,7 +1082,7 @@ export const FamilyPage: React.FC = () => {
             <div className="settings-panel">
               <h3 style={{ marginTop: 0 }}>2. Why did the "HTTP 404" error happen?</h3>
               <p className="muted-sm">
-                In the earlier version, typing a code like <code>HSL-P4KK4</code> attempted to fetch a cloud document that had not been initialized yet. Because no document existed at that key, the server returned <strong>HTTP 404 (Not Found)</strong>.
+                In the earlier version, typing a code like <code>HSL-78421</code> attempted to fetch a cloud document that had not been initialized yet. Because no document existed at that key, the server returned <strong>HTTP 404 (Not Found)</strong>.
               </p>
               <p className="muted-sm">
                 <strong>The solution:</strong> On the Parent device, clicking <strong>"Create / Initialize Circle"</strong> now writes the document immediately via HTTP PUT so it is guaranteed to exist when the student connects!

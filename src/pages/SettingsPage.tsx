@@ -329,7 +329,15 @@ export const SettingsPage: React.FC = () => {
                       type="button"
                       className="btn btn-danger btn-sm"
                       style={{ marginTop: '0.75rem' }}
-                      onClick={() => void removeStudent(activeStudent.id)}
+                      onClick={async () => {
+                        const targetName = activeStudent.name
+                        const confirmed = window.confirm(
+                          `Are you sure you want to delete ${targetName}?\n\nThis will remove their profile, enrolled courses, and quiz attempts.`
+                        )
+                        if (!confirmed) return
+                        await removeStudent(activeStudent.id)
+                        setStatusMsg(`Student "${targetName}" was deleted.`)
+                      }}
                     >
                       Delete Profile ({activeStudent.name})
                     </button>

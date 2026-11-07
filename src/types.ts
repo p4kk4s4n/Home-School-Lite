@@ -152,6 +152,7 @@ export interface AppSettings {
   autoApplyUpdates: boolean
   lastUpdateCheck?: string
   updatedAt?: string
+  deletedStudentIds?: string[]
   familySync?: FamilySyncConfig
 }
 
@@ -160,6 +161,7 @@ export interface BackupPayload {
   schemaVersion: 1
   familyCode?: string
   exportedAt: string
+  deletedStudentIds?: string[]
   students: Student[]
   enrollments: Enrollment[]
   attempts: AttemptRecord[]
