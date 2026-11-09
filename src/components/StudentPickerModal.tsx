@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useApp } from '../context/AppContext'
-import { GradeLevel } from '../types'
+import { GradeLevel, SUPPORTED_GRADES } from '../types'
 
 const AVATARS = ['🚀', '🦉', '🦊', '🐬', '🌟', '🔬', '🎨', '⚡']
 
@@ -106,22 +106,17 @@ export const StudentPickerModal: React.FC<Props> = ({ open, onClose }) => {
           <div className="field-label">
             Starting Curriculum Grade Level
             <div className="grade-toggle-group">
-              <button
-                type="button"
-                className={`grade-toggle-btn ${grade === 4 ? 'selected' : ''}`}
-                onClick={() => setGrade(4)}
-              >
-                <strong>Grade 4</strong>
-                <span>4th Grade Core (4 Subjects)</span>
-              </button>
-              <button
-                type="button"
-                className={`grade-toggle-btn ${grade === 6 ? 'selected' : ''}`}
-                onClick={() => setGrade(6)}
-              >
-                <strong>Grade 6</strong>
-                <span>6th Grade Core (4 Subjects)</span>
-              </button>
+              {SUPPORTED_GRADES.map((g) => (
+                <button
+                  key={g}
+                  type="button"
+                  className={`grade-toggle-btn ${grade === g ? 'selected' : ''}`}
+                  onClick={() => setGrade(g)}
+                >
+                  <strong>Grade {g}</strong>
+                  <span>{g}th Grade Core (4 Subjects)</span>
+                </button>
+              ))}
             </div>
           </div>
 

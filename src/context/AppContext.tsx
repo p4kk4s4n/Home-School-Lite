@@ -186,10 +186,12 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     [students, activeStudentId]
   )
 
-  const activeCourses = useMemo(
-    () => (activeStudent ? getCoursesForGrade(activeStudent.grade) : getCoursesForGrade(4)),
-    [activeStudent]
-  )
+  const activeCourses = useMemo(() => {
+    const includeOhio = settings.includeOhioAdjustments ?? true
+    return activeStudent
+      ? getCoursesForGrade(activeStudent.grade, includeOhio)
+      : getCoursesForGrade(4, includeOhio)
+  }, [activeStudent, settings.includeOhioAdjustments])
 
   const selectStudent = useCallback(
     async (studentId: string) => {

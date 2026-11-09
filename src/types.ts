@@ -1,4 +1,5 @@
-export type GradeLevel = 4 | 6
+export const SUPPORTED_GRADES = [4, 5, 6, 7, 8] as const
+export type GradeLevel = (typeof SUPPORTED_GRADES)[number]
 
 export type SubjectId = 'math' | 'science' | 'ela' | 'social'
 
@@ -44,6 +45,20 @@ export interface LessonAssignment {
   steps: AssignmentStep[]
 }
 
+export interface RemediationLink {
+  label: string
+  url: string
+  kind: 'video' | 'article' | 'practice'
+  provider: string
+  requiresParentPin?: boolean
+}
+
+export interface Remediation {
+  simpleSteps: string[]
+  workedExample?: string
+  links: RemediationLink[]
+}
+
 export interface Principle {
   id: string
   title: string
@@ -53,11 +68,15 @@ export interface Principle {
   bank?: QuestionBankItem[]
 }
 
+export type LessonKind = 'lesson' | 'lesson_review' | 'unit_test'
+
 export interface Lesson {
   id: string
   unitId: string
   title: string
-  kind?: 'lesson' | 'unit_test'
+  kind?: LessonKind
+  partOf?: string
+  isOhioExtension?: boolean
   estimatedMinutes: number
   videoUrl: string
   videoTitle: string
@@ -65,12 +84,14 @@ export interface Lesson {
   principles: Principle[]
   questionCount?: number
   assignment?: LessonAssignment
+  remediation?: Remediation
 }
 
 export interface Unit {
   id: string
   title: string
   standards: string[]
+  isOhioExtension?: boolean
   lessons: Lesson[]
 }
 
@@ -113,7 +134,7 @@ export interface AttemptRecord {
   courseId: string
   unitId: string
   lessonId: string
-  kind: 'lesson' | 'unit_test'
+  kind: LessonKind
   attemptNumber: number
   seed: number
   scorePercent: number
@@ -147,6 +168,7 @@ export interface AppSettings {
   lessonWeight: number
   unitTestWeight: number
   requireAssignmentChecklist: boolean
+  includeOhioAdjustments?: boolean
   autoCheckUpdates: boolean
   updateCheckIntervalMin: 0 | 15 | 60
   autoApplyUpdates: boolean

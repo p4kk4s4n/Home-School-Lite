@@ -15,6 +15,14 @@ export const DB_VERSION = 1
 
 export const ALL_SUBJECTS: SubjectId[] = ['math', 'science', 'ela', 'social']
 
+export function normalizeGrade(raw: unknown): GradeLevel {
+  const n = Number(raw)
+  if (n === 4 || n === 5 || n === 6 || n === 7 || n === 8) {
+    return n
+  }
+  return 4
+}
+
 export function getCourseIdsForGrade(grade: GradeLevel): string[] {
   return ALL_SUBJECTS.map((sub) => `g${grade}-${sub}`)
 }
@@ -49,6 +57,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   lessonWeight: 60,
   unitTestWeight: 40,
   requireAssignmentChecklist: true,
+  includeOhioAdjustments: true,
   autoCheckUpdates: true,
   updateCheckIntervalMin: 15,
   autoApplyUpdates: false,
@@ -166,6 +175,7 @@ export async function getStudents(): Promise<Student[]> {
   return all
     .map((s) => ({
       ...s,
+      grade: normalizeGrade(s.grade),
       studentPin: s.studentPin || '1111',
       updatedAt: s.updatedAt || s.createdAt,
     }))
@@ -374,7 +384,7 @@ export async function importBackupData(rawPayload: unknown): Promise<{
   ])
 
   for (const s of payload.students) {
-    const normalizedGrade: GradeLevel = s.grade === 6 ? 6 : 4
+    const normalizedGrade: GradeLevel = normalizeGrade(s.grade)
     await tx.objectStore('students').put({
       ...s,
       grade: normalizedGrade,
@@ -400,7 +410,7 @@ export async function importBackupData(rawPayload: unknown): Promise<{
   await tx.done
 
   for (const s of payload.students) {
-    await ensureEnrollmentsForGrade(s.id, s.grade === 6 ? 6 : 4)
+    await ensureEnrollmentsForGrade(s.id, normalizeGrade(s.grade))
   }
 
   return {
@@ -453,7 +463,7 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
     if (allDeletedIds.has(r.id)) {
       continue
     }
-    const normalizedGrade: GradeLevel = r.grade === 6 ? 6 : 4
+    const normalizedGrade: GradeLevel = normalizeGrade(r.grade)
     const incoming: Student = {
       ...r,
       grade: normalizedGrade,
@@ -549,6 +559,10 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
         requireAssignmentChecklist:
           remote.settings.requireAssignmentChecklist ??
           localSettings.requireAssignmentChecklist,
+        includeOhioAdjustments:
+          remote.settings.includeOhioAdjustments ??
+          localSettings.includeOhioAdjustments ??
+          true,
         deletedStudentIds: Array.from(allDeletedIds),
         updatedAt: remote.settings.updatedAt,
         familySync: {

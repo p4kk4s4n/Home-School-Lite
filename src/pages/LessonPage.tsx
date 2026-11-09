@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
+import { ParentPinModal } from '../components/ParentPinModal'
 import { useApp } from '../context/AppContext'
 import {
   findLessonInCourse,
@@ -9,6 +10,7 @@ import {
 import { computeCourseProgress } from '../lib/progress'
 import { buildQuizAttempt } from '../lib/quizBuilder'
 import { hashString } from '../lib/random'
+import { getLessonRemediation, getRemediationTier } from '../lib/remediation'
 import {
   getLessonChecklistProgress,
   saveLessonChecklistProgress,
@@ -17,6 +19,7 @@ import {
   AttemptRecord,
   GeneratedQuestion,
   QuestionReviewItem,
+  RemediationLink,
 } from '../types'
 
 type PlayerMode = 'study' | 'quiz' | 'results'
@@ -28,13 +31,16 @@ export const LessonPage: React.FC = () => {
     activeStudent,
     attempts,
     settings,
+    isParentUnlocked,
     submitAttempt,
     setIsQuizInProgress,
   } = useApp()
 
+  const includeOhio = settings.includeOhioAdjustments ?? true
+
   const course = useMemo(
-    () => (courseId ? getCourseById(courseId) : undefined),
-    [courseId]
+    () => (courseId ? getCourseById(courseId, includeOhio) : undefined),
+    [courseId, includeOhio]
   )
   const found = useMemo(
     () => (course && lessonId ? findLessonInCourse(course, lessonId) : null),
@@ -56,6 +62,19 @@ export const LessonPage: React.FC = () => {
     [found]
   )
 
+  const remediation = useMemo(
+    () =>
+      found && course
+        ? getLessonRemediation(found.lesson, course.subject, course.grade)
+        : null,
+    [found, course]
+  )
+
+  const remediationTier = useMemo(
+    () => getRemediationTier(priorAttempts, settings.masteryThreshold),
+    [priorAttempts, settings.masteryThreshold]
+  )
+
   const [mode, setMode] = useState<PlayerMode>('study')
   const [seed, setSeed] = useState<number>(
     () => Date.now() ^ hashString(lessonId || 'l')
@@ -67,6 +86,9 @@ export const LessonPage: React.FC = () => {
   const [latestResult, setLatestResult] = useState<AttemptRecord | null>(null)
   const [submitting, setSubmitting] = useState(false)
   const [completedStepIds, setCompletedStepIds] = useState<string[]>([])
+  const [pendingPinLink, setPendingPinLink] = useState<RemediationLink | null>(
+    null
+  )
 
   // Load checklist state & reset view when navigating to a different lesson or student
   useEffect(() => {
@@ -104,7 +126,7 @@ export const LessonPage: React.FC = () => {
     return null
   }, [progressSummary, lessonId])
 
-  if (!course || !found || !activeStudent || !assignment) {
+  if (!course || !found || !activeStudent || !assignment || !remediation) {
     return (
       <div className="card">
         <h2>Lesson not found</h2>
@@ -116,6 +138,14 @@ export const LessonPage: React.FC = () => {
   }
 
   const { unit, lesson } = found
+
+  const handleRemediationLinkClick = (link: RemediationLink) => {
+    if (link.requiresParentPin !== false && !isParentUnlocked) {
+      setPendingPinLink(link)
+      return
+    }
+    window.open(link.url, '_blank', 'noopener,noreferrer')
+  }
 
   const toggleChecklistStep = (stepId: string) => {
     setCompletedStepIds((prev) => {
@@ -164,7 +194,6 @@ export const LessonPage: React.FC = () => {
 
   const openOrResumeQuizTab = () => {
     if (!canStartQuiz) return
-    // If a quiz is already active and unsubmitted, resume it without wiping answers
     if (quizQuestions.length > 0 && !latestResult) {
       setMode('quiz')
       return
@@ -233,10 +262,105 @@ export const LessonPage: React.FC = () => {
   }
 
   const expectedQuestionCount =
-    lesson.questionCount ?? (lesson.kind === 'unit_test' ? 8 : 5)
+    lesson.questionCount ??
+    (lesson.kind === 'unit_test' ? 8 : lesson.kind === 'lesson_review' ? 6 : 5)
+
+  const renderRemediationSupport = (tier: 0 | 1 | 2 | 3) => {
+    if (tier === 0) return null
+    return (
+      <div
+        className="settings-panel"
+        style={{
+          marginTop: '1.25rem',
+          borderLeft: '4px solid #f59e0b',
+          background: '#fffbeb',
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '0.5rem',
+          }}
+        >
+          <div>
+            <span className="badge badge-warning">
+              Step-by-Step Support (Tier {tier} Remediation)
+            </span>
+            <h3 style={{ margin: '0.35rem 0 0.2rem' }}>
+              Let’s Break This Into Smaller Steps
+            </h3>
+            <p className="muted-sm">
+              Designed for focused, low-overwhelm mastery — one rule at a time.
+            </p>
+          </div>
+          {tier >= 3 && (
+            <span className="badge badge-exam">
+              👨‍👩‍👧 Parent Coaching Recommended (3+ Attempts)
+            </span>
+          )}
+        </div>
+
+        <ol style={{ marginTop: '0.75rem', paddingLeft: '1.25rem', lineHeight: 1.7 }}>
+          {remediation.simpleSteps.map((step, i) => (
+            <li key={i}>
+              <strong>Step {i + 1}:</strong> {step}
+            </li>
+          ))}
+        </ol>
+
+        {remediation.workedExample && (
+          <div
+            style={{
+              marginTop: '0.75rem',
+              padding: '0.65rem 0.85rem',
+              background: '#ffffff',
+              borderRadius: '8px',
+              border: '1px solid #fde68a',
+            }}
+          >
+            <strong>Worked Mini-Example:</strong> {remediation.workedExample}
+          </div>
+        )}
+
+        <div style={{ marginTop: '1rem' }}>
+          <h4 style={{ marginBottom: '0.35rem' }}>
+            Alternative Simplified Video &amp; Multisensory Sources (Parent PIN Protected)
+          </h4>
+          <p className="muted-sm" style={{ marginBottom: '0.6rem' }}>
+            Need a different way to see or hear this concept? Ask a parent to enter their PIN to open a simplified video search or visual guide:
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+            {remediation.links.map((link) => (
+              <button
+                key={link.url}
+                type="button"
+                className="btn btn-secondary btn-sm"
+                onClick={() => handleRemediationLinkClick(link)}
+              >
+                {!isParentUnlocked && link.requiresParentPin !== false ? '🔒 ' : '🎬 '}
+                {link.label} ↗
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="page-stack">
+      <ParentPinModal
+        link={pendingPinLink}
+        onClose={() => setPendingPinLink(null)}
+        onApproved={(approvedLink) => {
+          setPendingPinLink(null)
+          window.open(approvedLink.url, '_blank', 'noopener,noreferrer')
+        }}
+      />
+
       <div className="breadcrumb-row">
         <Link to={`/course/${course.id}`} className="breadcrumb-link">
           ← Back to {course.title}
@@ -249,10 +373,26 @@ export const LessonPage: React.FC = () => {
       <section className="card lesson-header-card">
         <div className="lesson-header-top">
           <div>
-            <span className="course-subject-tag">
-              GRADE {course.grade} • {course.subject.toUpperCase()}
-            </span>
-            <h1>{lesson.title}</h1>
+            <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+              <span className="course-subject-tag">
+                GRADE {course.grade} • {course.subject.toUpperCase()}
+              </span>
+              {lesson.partOf && (
+                <span className="badge badge-primary">
+                  Topic: {lesson.partOf}
+                </span>
+              )}
+              {lesson.kind === 'lesson_review' && (
+                <span className="badge badge-warning">Topic Mastery Review</span>
+              )}
+              {lesson.kind === 'unit_test' && (
+                <span className="badge badge-exam">Unit Exam</span>
+              )}
+              {lesson.isOhioExtension && (
+                <span className="badge badge-neutral">Ohio State Standard</span>
+              )}
+            </div>
+            <h1 style={{ marginTop: '0.35rem' }}>{lesson.title}</h1>
           </div>
           <div className="mode-tabs">
             <button
@@ -297,17 +437,19 @@ export const LessonPage: React.FC = () => {
               <strong>Targeted Concept Review before Next Attempt:</strong> On
               Attempt #{lastAttempt.attemptNumber}, you scored{' '}
               {lastAttempt.scorePercent}% (goal: {settings.masteryThreshold}%).
-              Review the highlighted principle notes below, then launch a fresh
-              randomized practice set!
+              Review the simplified steps and highlighted principle notes below,
+              then launch a fresh randomized practice set!
             </div>
           )}
 
+          {remediationTier >= 1 && renderRemediationSupport(remediationTier)}
+
           {/* EXPLICIT LESSON SCOPE & ASSIGNMENT CHECKLIST */}
-          <div className="scope-checklist-box">
+          <div className="scope-checklist-box" style={{ marginTop: remediationTier >= 1 ? '1.25rem' : undefined }}>
             <div className="scope-header">
               <div>
                 <span className="course-subject-tag">
-                  ASSIGNED LESSON SCOPE &amp; COMPLETION CHECKLIST
+                  ASSIGNED MICRO-LESSON SCOPE &amp; COMPLETION CHECKLIST
                 </span>
                 <h3>What to Complete Before Starting the Mastery Quiz</h3>
                 <p className="muted-sm">{assignment.scopeSummary}</p>
@@ -371,11 +513,11 @@ export const LessonPage: React.FC = () => {
               <div className="video-play-badge">▶</div>
               <div className="video-stage-text">
                 <span className="badge badge-glass">
-                  Targeted External Video / Activity (1 Lesson Only)
+                  Targeted External Video / Activity (1 Micro-Segment Only)
                 </span>
                 <h3>{lesson.videoTitle}</h3>
                 <p>
-                  Scope Rule: Watch only the single video/article for{' '}
+                  Scope Rule: Complete only the single segment for{' '}
                   <strong>
                     {lesson.principles.map((p) => p.title).join(' & ')}
                   </strong>{' '}
@@ -406,7 +548,7 @@ export const LessonPage: React.FC = () => {
           </div>
 
           <div className="principles-section">
-            <h3>Taught Principles &amp; Standards in This Lesson</h3>
+            <h3>Taught Principles &amp; Standards in This Segment</h3>
             <div className="principles-grid">
               {lesson.principles.map((p) => {
                 const needsFocus = focusPrincipleIds.includes(p.id)
@@ -441,9 +583,9 @@ export const LessonPage: React.FC = () => {
                   : `Check off all ${assignment.steps.length} Lesson Scope steps above to unlock the Mastery Quiz`}
               </strong>
               <p className="muted-sm">
-                Each attempt generates fresh questions for these principles.
-                Score {settings.masteryThreshold}% or higher to unlock the next
-                lesson.
+                Each attempt generates fresh plain-language questions for this
+                segment. Score {settings.masteryThreshold}% or higher to unlock
+                the next step.
               </p>
             </div>
             <button
@@ -594,9 +736,9 @@ export const LessonPage: React.FC = () => {
                   <h2>Let’s Review &amp; Try Fresh Questions</h2>
                   <p>
                     You scored {latestResult.scorePercent}% on Attempt #
-                    {latestResult.attemptNumber}. Review the explanation for
-                    each question below, then launch a new randomized set
-                    covering the same principles.
+                    {latestResult.attemptNumber}. Use the simplified breakdown
+                    or alternative video links below, then launch a fresh set of
+                    questions.
                   </p>
                 </>
               )}
@@ -640,6 +782,11 @@ export const LessonPage: React.FC = () => {
               </div>
             </div>
           </div>
+
+          {!latestResult.passed &&
+            renderRemediationSupport(
+              Math.max(1, remediationTier) as 1 | 2 | 3
+            )}
 
           {!latestResult.passed &&
             latestResult.missedPrincipleIds.length > 0 && (

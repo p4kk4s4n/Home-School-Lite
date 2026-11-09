@@ -15,7 +15,7 @@ import {
   syncFamilyCircle,
   testSyncConnection,
 } from '../lib/sync'
-import { AttemptRecord, Student } from '../types'
+import { AttemptRecord, GradeLevel, Student, SUPPORTED_GRADES } from '../types'
 
 type ActiveTab = 'parent' | 'student' | 'guide'
 
@@ -66,7 +66,7 @@ export const FamilyPage: React.FC = () => {
 
   // New student form
   const [newStuName, setNewStuName] = useState('')
-  const [newStuGrade, setNewStuGrade] = useState<4 | 6>(4)
+  const [newStuGrade, setNewStuGrade] = useState<GradeLevel>(4)
   const [newStuPin, setNewStuPin] = useState('1111')
 
   // Attempt review inspector
@@ -89,8 +89,9 @@ export const FamilyPage: React.FC = () => {
 
   // Summaries of all students for the Parent oversight view
   const rosterSummaries = useMemo(() => {
+    const includeOhio = settings.includeOhioAdjustments ?? true
     return students.map((stu) => {
-      const stuCourses = getCoursesForGrade(stu.grade)
+      const stuCourses = getCoursesForGrade(stu.grade, includeOhio)
       const stuAttempts = allAttempts.filter((a) => a.studentId === stu.id)
       const courseProgress = stuCourses.map((c) =>
         computeCourseProgress(c, stuAttempts, settings.masteryThreshold)
@@ -101,6 +102,15 @@ export const FamilyPage: React.FC = () => {
         totalSteps > 0 ? Math.round((masteredSteps / totalSteps) * 100) : 0
       const gpaReport = computeGpaReport(stuCourses, stuAttempts, settings)
 
+      let needsCoachingCount = 0
+      for (const cp of courseProgress) {
+        for (const item of cp.items) {
+          if (item.status !== 'mastered' && item.attempts.length >= 3) {
+            needsCoachingCount++
+          }
+        }
+      }
+
       return {
         student: stu,
         stuAttempts,
@@ -108,6 +118,7 @@ export const FamilyPage: React.FC = () => {
         totalSteps,
         pctComplete,
         gpaReport,
+        needsCoachingCount,
       }
     })
   }, [students, allAttempts, settings])
@@ -641,6 +652,7 @@ export const FamilyPage: React.FC = () => {
                       totalSteps,
                       pctComplete,
                       gpaReport,
+                      needsCoachingCount,
                     }) => (
                       <tr
                         key={student.id}
@@ -652,6 +664,15 @@ export const FamilyPage: React.FC = () => {
                           <strong>
                             {student.avatar} {student.name}
                           </strong>
+                          {needsCoachingCount > 0 && (
+                            <span
+                              className="badge badge-warning"
+                              style={{ marginLeft: '0.4rem' }}
+                              title="3+ non-mastery attempts on a lesson segment"
+                            >
+                              ⚠️ Needs Help ({needsCoachingCount})
+                            </span>
+                          )}
                         </td>
                         <td>
                           {isParentUnlocked ? (
@@ -660,12 +681,15 @@ export const FamilyPage: React.FC = () => {
                               value={student.grade}
                               onChange={(e) =>
                                 void editStudent(student.id, {
-                                  grade: Number(e.target.value) as 4 | 6,
+                                  grade: Number(e.target.value) as GradeLevel,
                                 })
                               }
                             >
-                              <option value={4}>Grade 4 (All 4 Subjects)</option>
-                              <option value={6}>Grade 6 (All 4 Subjects)</option>
+                              {SUPPORTED_GRADES.map((g) => (
+                                <option key={g} value={g}>
+                                  Grade {g} (All 4 Subjects)
+                                </option>
+                              ))}
                             </select>
                           ) : (
                             <span className="badge badge-primary">
@@ -785,10 +809,13 @@ export const FamilyPage: React.FC = () => {
                   <select
                     className="input input-sm"
                     value={newStuGrade}
-                    onChange={(e) => setNewStuGrade(Number(e.target.value) as 4 | 6)}
+                    onChange={(e) => setNewStuGrade(Number(e.target.value) as GradeLevel)}
                   >
-                    <option value={4}>Grade 4</option>
-                    <option value={6}>Grade 6</option>
+                    {SUPPORTED_GRADES.map((g) => (
+                      <option key={g} value={g}>
+                        Grade {g}
+                      </option>
+                    ))}
                   </select>
                 </label>
                 <label className="field-label">

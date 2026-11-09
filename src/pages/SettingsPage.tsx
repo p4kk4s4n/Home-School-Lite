@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useApp } from '../context/AppContext'
 import { exportBackupData, importBackupData } from '../lib/db'
 import { APP_ID, APP_SCOPE, CACHE_PREFIX, STORAGE_PREFIX } from '../lib/storage'
-import { GradeLevel } from '../types'
+import { GradeLevel, SUPPORTED_GRADES } from '../types'
 
 export const SettingsPage: React.FC = () => {
   const {
@@ -229,7 +229,7 @@ export const SettingsPage: React.FC = () => {
         <section className="card pin-gate-card">
           <h2>🔒 Parent / Teacher Controls (PIN Protected)</h2>
           <p className="muted">
-            Enter your Parent PIN to change {activeStudent?.name ?? 'the student'}’s Grade Level (Grade 4 or Grade 6), adjust the Mastery Threshold (default 80%), or modify GPA weights.{' '}
+            Enter your Parent PIN to change {activeStudent?.name ?? 'the student'}’s Grade Level (Grades 4–8), adjust the Mastery Threshold (default 80%), toggle Ohio State Curriculum extensions, or modify GPA weights.{' '}
             <strong>(Default PIN: 1234)</strong>
           </p>
           <form onSubmit={handleUnlock} className="pin-form">
@@ -257,7 +257,7 @@ export const SettingsPage: React.FC = () => {
                   Logged-In Student Grade Level: {activeStudent?.name} ({activeStudent?.avatar})
                 </h2>
                 <p className="muted">
-                  Selecting Grade 4 or Grade 6 sets all four subjects (Math, Science, Language Arts, and Social Studies) for {activeStudent?.name}. Switching grades preserves all prior grade progress and grades.
+                  Selecting a Grade Level (Grades 4–8) sets all four subjects (Math, Science, Language Arts, and Social Studies) for {activeStudent?.name}. Switching grades preserves all prior grade progress and grades.
                 </p>
               </div>
               <button
@@ -276,26 +276,19 @@ export const SettingsPage: React.FC = () => {
                     Active Curriculum Grade for {activeStudent.name}
                   </span>
                   <div className="grade-toggle-group">
-                    <button
-                      type="button"
-                      className={`grade-toggle-btn ${
-                        activeStudent.grade === 4 ? 'selected' : ''
-                      }`}
-                      onClick={() => void handleGradeChange(4)}
-                    >
-                      <strong>Grade 4 Curriculum</strong>
-                      <span>4th Grade Math, Science, ELA &amp; Social Studies</span>
-                    </button>
-                    <button
-                      type="button"
-                      className={`grade-toggle-btn ${
-                        activeStudent.grade === 6 ? 'selected' : ''
-                      }`}
-                      onClick={() => void handleGradeChange(6)}
-                    >
-                      <strong>Grade 6 Curriculum</strong>
-                      <span>6th Grade Math, Science, ELA &amp; Social Studies</span>
-                    </button>
+                    {SUPPORTED_GRADES.map((g) => (
+                      <button
+                        key={g}
+                        type="button"
+                        className={`grade-toggle-btn ${
+                          activeStudent.grade === g ? 'selected' : ''
+                        }`}
+                        onClick={() => void handleGradeChange(g)}
+                      >
+                        <strong>Grade {g} Curriculum</strong>
+                        <span>{g}th Grade Math, Science, ELA &amp; Social Studies</span>
+                      </button>
+                    ))}
                   </div>
                 </div>
 
@@ -403,6 +396,30 @@ export const SettingsPage: React.FC = () => {
                     <strong>Require Lesson Scope Checklist before Mastery Quiz</strong>
                     <p className="muted-sm">
                       Locks the Mastery Check until the student ticks all assigned video/reading steps for that lesson.
+                    </p>
+                  </div>
+                </label>
+
+                <label className="toggle-row" style={{ marginTop: '1rem' }}>
+                  <input
+                    type="checkbox"
+                    checked={settings.includeOhioAdjustments ?? true}
+                    onChange={(e) => {
+                      const nextVal = e.target.checked
+                      void updateAppSettings({
+                        includeOhioAdjustments: nextVal,
+                      })
+                      setStatusMsg(
+                        nextVal
+                          ? 'Ohio State Curriculum Alignment & Extensions enabled across Grades 4–8.'
+                          : 'Opted out of Ohio-specific curriculum extensions (showing core national standards only).'
+                      )
+                    }}
+                  />
+                  <div>
+                    <strong>Include Ohio State Curriculum Alignment &amp; Extensions</strong>
+                    <p className="muted-sm">
+                      Includes Ohio Learning Standards topics (Ohio history/civics, regional geology/ecosystems, and Ohio math/ELA adjustments). Uncheck to opt out.
                     </p>
                   </div>
                 </label>

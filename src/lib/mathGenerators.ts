@@ -30,7 +30,81 @@ function buildChoices(
 }
 
 export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
-  // ================= GRADE 4 MATH GENERATORS =================
+  // =========================================================================
+  // GRADE 4 MATH GENERATORS (Plain-Language Micro-Lesson Standard)
+  // =========================================================================
+  'g4.round-hundred': (rng, principleId, principleTitle) => {
+    const thousands = randInt(rng, 1, 9)
+    const hundreds = randInt(rng, 1, 8)
+    const tens = randInt(rng, 1, 9)
+    const ones = randInt(rng, 1, 9)
+    const n = thousands * 1000 + hundreds * 100 + tens * 10 + ones
+    const rounded = Math.round(n / 100) * 100
+    const down = Math.floor(n / 100) * 100
+    const up = Math.ceil(n / 100) * 100
+    const wrongThousand = Math.round(n / 1000) * 1000
+    const ans = rounded.toLocaleString('en-US')
+    const choices = buildChoices(
+      ans,
+      [
+        down.toLocaleString('en-US'),
+        up.toLocaleString('en-US'),
+        wrongThousand.toLocaleString('en-US'),
+        (rounded + 100).toLocaleString('en-US'),
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-${n}-100`,
+      fingerprint: `${principleId}:${n}:100`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Round ${n.toLocaleString('en-US')} to the nearest hundred.`,
+      choices,
+      answer: ans,
+      explanation: `Check the tens digit (${tens}). Since it is ${
+        tens >= 5 ? '5 or more, round up' : 'less than 5, round down'
+      } to ${ans}.`,
+    }
+  },
+
+  'g4.round-thousand': (rng, principleId, principleTitle) => {
+    const thousands = randInt(rng, 12, 98)
+    const hundreds = randInt(rng, 1, 9)
+    const tens = randInt(rng, 1, 9)
+    const ones = randInt(rng, 1, 9)
+    const n = thousands * 1000 + hundreds * 100 + tens * 10 + ones
+    const rounded = Math.round(n / 1000) * 1000
+    const down = Math.floor(n / 1000) * 1000
+    const up = Math.ceil(n / 1000) * 1000
+    const wrongHundred = Math.round(n / 100) * 100
+    const ans = rounded.toLocaleString('en-US')
+    const choices = buildChoices(
+      ans,
+      [
+        down.toLocaleString('en-US'),
+        up.toLocaleString('en-US'),
+        wrongHundred.toLocaleString('en-US'),
+        (rounded + 1000).toLocaleString('en-US'),
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-${n}-1000`,
+      fingerprint: `${principleId}:${n}:1000`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Round ${n.toLocaleString('en-US')} to the nearest thousand.`,
+      choices,
+      answer: ans,
+      explanation: `Check the hundreds digit (${hundreds}). Since it is ${
+        hundreds >= 5 ? '5 or more, round up' : 'less than 5, round down'
+      } to ${ans}.`,
+    }
+  },
+
   'g4.place-value-round': (rng, principleId, principleTitle) => {
     const thousands = randInt(rng, 12, 98)
     const hundreds = randInt(rng, 1, 9)
@@ -64,11 +138,69 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       prompt: `Round ${n.toLocaleString('en-US')} to the ${label}.`,
       choices,
       answer: ans,
-      explanation: `To round ${n.toLocaleString('en-US')} to the ${label}, look at the digit one place to the right (${
+      explanation: `Look one place to the right (${
         roundTo === 100 ? tens : hundreds
-      }). Because it is ${
-        (roundTo === 100 ? tens : hundreds) >= 5 ? '5 or greater, round up' : 'less than 5, round down'
-      } to ${ans}.`,
+      }). Round to ${ans}.`,
+    }
+  },
+
+  'g4.multi-digit-add': (rng, principleId, principleTitle) => {
+    const a = randInt(rng, 1450, 6850)
+    const b = randInt(rng, 1125, 2980)
+    const correct = a + b
+    const ans = correct.toLocaleString('en-US')
+    const choices = buildChoices(
+      ans,
+      [
+        (correct + 100).toLocaleString('en-US'),
+        (correct - 100).toLocaleString('en-US'),
+        (correct + 10).toLocaleString('en-US'),
+        (correct - 10).toLocaleString('en-US'),
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-${a}+${b}`,
+      fingerprint: `${principleId}:${a}+${b}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Add: ${a.toLocaleString('en-US')} + ${b.toLocaleString('en-US')} = ?`,
+      choices,
+      answer: ans,
+      explanation: `Line up place values and regroup tens and hundreds: ${a.toLocaleString(
+        'en-US'
+      )} + ${b.toLocaleString('en-US')} = ${ans}.`,
+    }
+  },
+
+  'g4.multi-digit-sub': (rng, principleId, principleTitle) => {
+    const a = randInt(rng, 3450, 8950)
+    const b = randInt(rng, 1125, a - 400)
+    const correct = a - b
+    const ans = correct.toLocaleString('en-US')
+    const choices = buildChoices(
+      ans,
+      [
+        (correct + 100).toLocaleString('en-US'),
+        (correct - 100).toLocaleString('en-US'),
+        (correct + 10).toLocaleString('en-US'),
+        (correct - 10).toLocaleString('en-US'),
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-${a}-${b}`,
+      fingerprint: `${principleId}:${a}-${b}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Subtract: ${a.toLocaleString('en-US')} - ${b.toLocaleString('en-US')} = ?`,
+      choices,
+      answer: ans,
+      explanation: `Line up place values and regroup where needed: ${a.toLocaleString(
+        'en-US'
+      )} - ${b.toLocaleString('en-US')} = ${ans}.`,
     }
   },
 
@@ -95,12 +227,36 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       principleId,
       principleTitle,
       type: 'mc',
-      prompt: `Compute: ${a.toLocaleString('en-US')} ${op} ${b.toLocaleString('en-US')}`,
+      prompt: `What is ${a.toLocaleString('en-US')} ${op} ${b.toLocaleString('en-US')}?`,
       choices,
       answer: ans,
-      explanation: `Line up the place values from ones to thousands and ${
-        isAdd ? 'add with regrouping' : 'subtract with borrowing'
-      }: ${a.toLocaleString('en-US')} ${op} ${b.toLocaleString('en-US')} = ${ans}.`,
+      explanation: `Align digits by place value: ${a.toLocaleString(
+        'en-US'
+      )} ${op} ${b.toLocaleString('en-US')} = ${ans}.`,
+    }
+  },
+
+  'g4.mult-1digit': (rng, principleId, principleTitle) => {
+    const a = randInt(rng, 24, 96)
+    const b = randInt(rng, 3, 9)
+    const correct = a * b
+    const tens = Math.floor(a / 10) * 10
+    const ones = a % 10
+    const choices = buildChoices(
+      String(correct),
+      [correct + b, correct - b, tens * b + ones, correct + 10],
+      rng
+    )
+    return {
+      id: `${principleId}-${a}x${b}`,
+      fingerprint: `${principleId}:${a}x${b}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Multiply: ${a} × ${b} = ?`,
+      choices,
+      answer: String(correct),
+      explanation: `Split ${a} into ${tens} + ${ones}. Multiply (${tens} × ${b}) + (${ones} × ${b}) = ${correct}.`,
     }
   },
 
@@ -112,12 +268,7 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
     const onesA = a % 10
     const choices = buildChoices(
       String(correct),
-      [
-        correct + a,
-        correct - b,
-        tensA * b + onesA, // common partial-product error
-        correct + 10,
-      ],
+      [correct + a, correct - b, tensA * b + onesA, correct + 10],
       rng
     )
     return {
@@ -126,14 +277,34 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       principleId,
       principleTitle,
       type: 'mc',
-      prompt: `Multiply ${a} × ${b} using partial products or the standard algorithm.`,
+      prompt: `What is ${a} × ${b}?`,
       choices,
       answer: String(correct),
-      explanation: `Break ${a} into ${tensA} + ${onesA}. Multiply (${tensA} × ${b}) = ${
-        tensA * b
-      } and (${onesA} × ${b}) = ${onesA * b}. Add the partial products: ${tensA * b} + ${
+      explanation: `Multiply (${tensA} × ${b} = ${tensA * b}) and (${onesA} × ${b} = ${
         onesA * b
-      } = ${correct}.`,
+      }). Add them: ${correct}.`,
+    }
+  },
+
+  'g4.div-exact': (rng, principleId, principleTitle) => {
+    const divisor = randInt(rng, 3, 9)
+    const quotient = randInt(rng, 12, 32)
+    const dividend = divisor * quotient
+    const choices = buildChoices(
+      String(quotient),
+      [quotient + 1, quotient - 1, quotient + 2, quotient - 2],
+      rng
+    )
+    return {
+      id: `${principleId}-${dividend}-div-${divisor}`,
+      fingerprint: `${principleId}:${dividend}/${divisor}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Divide: ${dividend} ÷ ${divisor} = ?`,
+      choices,
+      answer: String(quotient),
+      explanation: `Because ${divisor} × ${quotient} = ${dividend}, ${dividend} ÷ ${divisor} = ${quotient}.`,
     }
   },
 
@@ -159,12 +330,12 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       principleId,
       principleTitle,
       type: 'mc',
-      prompt: `Divide ${dividend} ÷ ${divisor}. Express your answer as a quotient and remainder.`,
+      prompt: `Find the quotient and remainder: ${dividend} ÷ ${divisor}`,
       choices,
       answer: ans,
-      explanation: `${divisor} × ${quotient} = ${divisor * quotient}, and ${dividend} - ${
+      explanation: `${divisor} × ${quotient} = ${
         divisor * quotient
-      } = ${remainder}. So ${dividend} ÷ ${divisor} = ${ans}.`,
+      } with ${remainder} left over. Answer: ${ans}.`,
     }
   },
 
@@ -186,10 +357,10 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       principleId,
       principleTitle,
       type: 'mc',
-      prompt: `Find the missing numerator to make an equivalent fraction: ${num}/${den} = ?/${newDen}`,
+      prompt: `Find the missing numerator: ${num}/${den} = ?/${newDen}`,
       choices,
       answer: String(newNum),
-      explanation: `The denominator ${den} was multiplied by ${mult} to get ${newDen}. Multiply the numerator ${num} by ${mult} as well: ${num} × ${mult} = ${newNum}.`,
+      explanation: `Multiply top and bottom by ${mult}: ${num} × ${mult} = ${newNum}.`,
     }
   },
 
@@ -201,12 +372,7 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
     const ans = `${sumNum}/${den}`
     const choices = buildChoices(
       ans,
-      [
-        `${sumNum}/${den * 2}`, // classic error: adding denominators
-        `${Math.abs(a - b)}/${den}`,
-        `${sumNum + 1}/${den}`,
-        `${a * b}/${den}`,
-      ],
+      [`${sumNum}/${den * 2}`, `${Math.abs(a - b)}/${den}`, `${sumNum + 1}/${den}`, `${a * b}/${den}`],
       rng
     )
     return {
@@ -215,10 +381,34 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       principleId,
       principleTitle,
       type: 'mc',
-      prompt: `Add the fractions with like denominators: ${a}/${den} + ${b}/${den}`,
+      prompt: `Add the fractions: ${a}/${den} + ${b}/${den} = ?`,
       choices,
       answer: ans,
-      explanation: `When denominators are the same (${den}), add the numerators (${a} + ${b} = ${sumNum}) and keep the denominator ${den}: ${ans}.`,
+      explanation: `Keep denominator ${den} and add numerators: ${a} + ${b} = ${sumNum}, giving ${ans}.`,
+    }
+  },
+
+  'g4.fraction-sub-like': (rng, principleId, principleTitle) => {
+    const den = randInt(rng, 5, 12)
+    const a = randInt(rng, 3, den - 1)
+    const b = randInt(rng, 1, a - 1)
+    const diffNum = a - b
+    const ans = `${diffNum}/${den}`
+    const choices = buildChoices(
+      ans,
+      [`${a + b}/${den}`, `${diffNum}/0`, `${diffNum + 1}/${den}`, `${diffNum}/${den * 2}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${a}-sub-${b}-d${den}`,
+      fingerprint: `${principleId}:${a}-${b}/${den}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Subtract the fractions: ${a}/${den} - ${b}/${den} = ?`,
+      choices,
+      answer: ans,
+      explanation: `Keep denominator ${den} and subtract numerators: ${a} - ${b} = ${diffNum}, giving ${ans}.`,
     }
   },
 
@@ -243,10 +433,58 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       principleId,
       principleTitle,
       type: 'mc',
-      prompt: `Which fraction or mixed number is equivalent to the decimal ${decStr}?`,
+      prompt: `Which fraction matches the decimal ${decStr}?`,
       choices,
       answer: ans,
-      explanation: `Two digits after the decimal point represent hundredths, so ${decStr} equals ${ans}.`,
+      explanation: `Two decimal places mean hundredths, so ${decStr} equals ${ans}.`,
+    }
+  },
+
+  'g4.geometry-area': (rng, principleId, principleTitle) => {
+    const w = randInt(rng, 5, 16)
+    const h = randInt(rng, 4, 14)
+    const area = w * h
+    const perim = 2 * (w + h)
+    const ans = `${area} sq units`
+    const choices = buildChoices(
+      ans,
+      [`${perim} sq units`, `${w + h} sq units`, `${area + w} sq units`, `${area - h} sq units`],
+      rng
+    )
+    return {
+      id: `${principleId}-area-${w}x${h}`,
+      fingerprint: `${principleId}:area:${w}x${h}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the area of a ${w} by ${h} rectangle.`,
+      choices,
+      answer: ans,
+      explanation: `Area = length × width = ${w} × ${h} = ${area} sq units.`,
+    }
+  },
+
+  'g4.geometry-perim': (rng, principleId, principleTitle) => {
+    const w = randInt(rng, 5, 18)
+    const h = randInt(rng, 4, 15)
+    const area = w * h
+    const perim = 2 * (w + h)
+    const ans = `${perim} units`
+    const choices = buildChoices(
+      ans,
+      [`${area} units`, `${w + h} units`, `${perim + 2} units`, `${2 * w + h} units`],
+      rng
+    )
+    return {
+      id: `${principleId}-perim-${w}x${h}`,
+      fingerprint: `${principleId}:perim:${w}x${h}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the perimeter of a ${w} by ${h} rectangle.`,
+      choices,
+      answer: ans,
+      explanation: `Perimeter = 2 × (${w} + ${h}) = ${perim} units.`,
     }
   },
 
@@ -270,28 +508,470 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       principleId,
       principleTitle,
       type: 'mc',
-      prompt: `A rectangle has a length of ${w} units and a width of ${h} units. What is its ${
-        askArea ? 'area' : 'perimeter'
-      }?`,
+      prompt: `Find the ${askArea ? 'area' : 'perimeter'} of a ${w} by ${h} rectangle.`,
       choices,
       answer: ans,
       explanation: askArea
-        ? `Area of a rectangle = length × width = ${w} × ${h} = ${area} sq units.`
-        : `Perimeter of a rectangle = 2 × (length + width) = 2 × (${w} + ${h}) = ${perim} units.`,
+        ? `Area = ${w} × ${h} = ${area} sq units.`
+        : `Perimeter = 2 × (${w} + ${h}) = ${perim} units.`,
     }
   },
 
-  // ================= GRADE 6 MATH GENERATORS =================
+  'g4.angles-measure': (rng, principleId, principleTitle) => {
+    const isRight = rng() < 0.5
+    const total = isRight ? 90 : 180
+    const part = isRight ? randInt(rng, 18, 74) : randInt(rng, 35, 145)
+    const missing = total - part
+    const ans = `${missing}°`
+    const choices = buildChoices(
+      ans,
+      [`${missing + 10}°`, `${missing - 10}°`, `${180 - part}°`, `${90 - (part % 90)}°`],
+      rng
+    )
+    return {
+      id: `${principleId}-${total}-${part}`,
+      fingerprint: `${principleId}:${total}-${part}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Two angles make ${total}°. One is ${part}°. Find the other.`,
+      choices,
+      answer: ans,
+      explanation: `Subtract ${part}° from ${total}°: ${total}° - ${part}° = ${missing}°.`,
+    }
+  },
+
+  // =========================================================================
+  // GRADE 5 MATH GENERATORS (Plain-Language Micro-Lesson Standard)
+  // =========================================================================
+  'g5.powers-of-ten': (rng, principleId, principleTitle) => {
+    const base = randInt(rng, 3, 45)
+    const exp = randInt(rng, 2, 4)
+    const factor = Math.pow(10, exp)
+    const correct = base * factor
+    const ans = correct.toLocaleString('en-US')
+    const choices = buildChoices(
+      ans,
+      [
+        (base * Math.pow(10, exp - 1)).toLocaleString('en-US'),
+        (base * Math.pow(10, exp + 1)).toLocaleString('en-US'),
+        (base + factor).toLocaleString('en-US'),
+        (base * exp * 10).toLocaleString('en-US'),
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-${base}-10e${exp}`,
+      fingerprint: `${principleId}:${base}*10^${exp}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Multiply: ${base} × 10^${exp} = ?`,
+      choices,
+      answer: ans,
+      explanation: `10^${exp} has ${exp} zeros (${factor.toLocaleString(
+        'en-US'
+      )}). So ${base} × 10^${exp} = ${ans}.`,
+    }
+  },
+
+  'g5.decimal-round': (rng, principleId, principleTitle) => {
+    const whole = randInt(rng, 2, 29)
+    const tenths = randInt(rng, 1, 8)
+    const hundredths = randInt(rng, 1, 9)
+    const n = Number(`${whole}.${tenths}${hundredths}`)
+    const rounded = (Math.round(n * 10) / 10).toFixed(1)
+    const down = `${whole}.${tenths}`
+    const up = `${whole}.${tenths + 1}`
+    const choices = buildChoices(
+      rounded,
+      [down, up, `${whole}.0`, `${whole}.${hundredths}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${n}`,
+      fingerprint: `${principleId}:${n}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Round ${n.toFixed(2)} to the nearest tenth.`,
+      choices,
+      answer: rounded,
+      explanation: `Look at the hundredths digit (${hundredths}). Round ${n.toFixed(
+        2
+      )} to ${rounded}.`,
+    }
+  },
+
+  'g5.decimal-add-sub': (rng, principleId, principleTitle) => {
+    const isAdd = rng() < 0.5
+    const a = randInt(rng, 35, 195) / 10
+    const b = randInt(rng, 12, 32) / 10
+    const correct = isAdd ? (a + b).toFixed(1) : (a - b).toFixed(1)
+    const op = isAdd ? '+' : '-'
+    const choices = buildChoices(
+      correct,
+      [
+        (Number(correct) + 1).toFixed(1),
+        (Number(correct) - 0.2).toFixed(1),
+        (Number(correct) + 0.1).toFixed(1),
+        (a + b + 0.5).toFixed(1),
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-${a.toFixed(1)}${op}${b.toFixed(1)}`,
+      fingerprint: `${principleId}:${a.toFixed(1)}${op}${b.toFixed(1)}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Calculate: ${a.toFixed(1)} ${op} ${b.toFixed(1)} = ?`,
+      choices,
+      answer: correct,
+      explanation: `Line up the decimal points: ${a.toFixed(1)} ${op} ${b.toFixed(
+        1
+      )} = ${correct}.`,
+    }
+  },
+
+  'g5.decimal-mult': (rng, principleId, principleTitle) => {
+    const a = randInt(rng, 2, 9)
+    const bTenths = randInt(rng, 2, 18)
+    const b = bTenths / 10
+    const prod = ((a * bTenths) / 10).toFixed(1)
+    const choices = buildChoices(
+      prod,
+      [
+        String(a * bTenths),
+        ((a * bTenths) / 100).toFixed(2),
+        (Number(prod) + 1).toFixed(1),
+        (Number(prod) - 0.5).toFixed(1),
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-${a}x${b.toFixed(1)}`,
+      fingerprint: `${principleId}:${a}x${b.toFixed(1)}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Multiply: ${a} × ${b.toFixed(1)} = ?`,
+      choices,
+      answer: prod,
+      explanation: `Multiply ${a} × ${bTenths} = ${
+        a * bTenths
+      }, then place 1 decimal digit: ${prod}.`,
+    }
+  },
+
+  'g5.mult-multi-digit': (rng, principleId, principleTitle) => {
+    const a = randInt(rng, 102, 245)
+    const b = randInt(rng, 12, 25)
+    const correct = a * b
+    const ans = correct.toLocaleString('en-US')
+    const choices = buildChoices(
+      ans,
+      [
+        (correct + a).toLocaleString('en-US'),
+        (correct - b).toLocaleString('en-US'),
+        (correct + 100).toLocaleString('en-US'),
+        (correct - 10).toLocaleString('en-US'),
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-${a}x${b}`,
+      fingerprint: `${principleId}:${a}x${b}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Multiply: ${a} × ${b} = ?`,
+      choices,
+      answer: ans,
+      explanation: `Multiply ${a} by the ones and tens of ${b}, then add: ${ans}.`,
+    }
+  },
+
+  'g5.div-2digit': (rng, principleId, principleTitle) => {
+    const divisor = randInt(rng, 11, 24)
+    const quotient = randInt(rng, 11, 28)
+    const dividend = divisor * quotient
+    const choices = buildChoices(
+      String(quotient),
+      [quotient + 1, quotient - 1, quotient + 2, quotient - 2],
+      rng
+    )
+    return {
+      id: `${principleId}-${dividend}-div-${divisor}`,
+      fingerprint: `${principleId}:${dividend}/${divisor}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Divide: ${dividend} ÷ ${divisor} = ?`,
+      choices,
+      answer: String(quotient),
+      explanation: `Since ${divisor} × ${quotient} = ${dividend}, the quotient is ${quotient}.`,
+    }
+  },
+
+  'g5.fraction-add-unlike': (rng, principleId, principleTitle) => {
+    const pairs: [number, number][] = [
+      [2, 4],
+      [3, 6],
+      [2, 6],
+      [4, 8],
+      [5, 10],
+    ]
+    const [d1, d2] = pairs[randInt(rng, 0, pairs.length - 1)]
+    const mult = d2 / d1
+    const n1 = 1
+    const n2 = randInt(rng, 1, d2 - mult - 1)
+    const sumNum = n1 * mult + n2
+    const g = gcd(sumNum, d2)
+    const ans = `${sumNum / g}/${d2 / g}`
+    const choices = buildChoices(
+      ans,
+      [`${n1 + n2}/${d1 + d2}`, `${sumNum + 1}/${d2}`, `${n1 + n2}/${d2}`, `${sumNum}/${d1}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${n1}_${d1}+${n2}_${d2}`,
+      fingerprint: `${principleId}:${n1}/${d1}+${n2}/${d2}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Add and simplify: ${n1}/${d1} + ${n2}/${d2} = ?`,
+      choices,
+      answer: ans,
+      explanation: `Rewrite ${n1}/${d1} as ${
+        n1 * mult
+      }/${d2}. Add ${n1 * mult}/${d2} + ${n2}/${d2} = ${ans}.`,
+    }
+  },
+
+  'g5.fraction-sub-unlike': (rng, principleId, principleTitle) => {
+    const pairs: [number, number][] = [
+      [2, 4],
+      [3, 6],
+      [4, 8],
+      [5, 10],
+    ]
+    const [d1, d2] = pairs[randInt(rng, 0, pairs.length - 1)]
+    const mult = d2 / d1
+    const n1 = 1
+    const n2 = randInt(rng, 1, mult - 1)
+    const diffNum = n1 * mult - n2
+    const g = gcd(diffNum, d2)
+    const ans = `${diffNum / g}/${d2 / g}`
+    const choices = buildChoices(
+      ans,
+      [`${diffNum + 1}/${d2}`, `1/${d2 - d1}`, `${n1 * mult + n2}/${d2}`, `${diffNum}/${d1}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${n1}_${d1}-${n2}_${d2}`,
+      fingerprint: `${principleId}:${n1}/${d1}-${n2}/${d2}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Subtract and simplify: ${n1}/${d1} - ${n2}/${d2} = ?`,
+      choices,
+      answer: ans,
+      explanation: `Rewrite ${n1}/${d1} as ${
+        n1 * mult
+      }/${d2}. Subtract ${n2}/${d2} to get ${ans}.`,
+    }
+  },
+
+  'g5.fraction-mult': (rng, principleId, principleTitle) => {
+    const d1 = randInt(rng, 2, 6)
+    const n1 = randInt(rng, 1, d1 - 1)
+    const d2 = randInt(rng, 2, 6)
+    const n2 = randInt(rng, 1, d2 - 1)
+    const rawN = n1 * n2
+    const rawD = d1 * d2
+    const g = gcd(rawN, rawD)
+    const ans = `${rawN / g}/${rawD / g}`
+    const choices = buildChoices(
+      ans,
+      [`${n1 + n2}/${d1 + d2}`, `${rawN + 1}/${rawD}`, `${n1 * d2}/${d1 * n2}`, `${rawN}/${rawD + 1}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${n1}_${d1}x${n2}_${d2}`,
+      fingerprint: `${principleId}:${n1}/${d1}*${n2}/${d2}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Multiply and simplify: (${n1}/${d1}) × (${n2}/${d2}) = ?`,
+      choices,
+      answer: ans,
+      explanation: `Multiply numerators (${n1} × ${n2} = ${rawN}) and denominators (${d1} × ${d2} = ${rawD}), then simplify to ${ans}.`,
+    }
+  },
+
+  'g5.fraction-div-unit': (rng, principleId, principleTitle) => {
+    const whole = randInt(rng, 2, 9)
+    const den = randInt(rng, 2, 7)
+    const correct = whole * den
+    const choices = buildChoices(
+      String(correct),
+      [`1/${correct}`, `${whole + den}`, `${Math.max(1, whole - 1) * den}`, `${whole}/${den}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${whole}-div-1_${den}`,
+      fingerprint: `${principleId}:${whole}/(1/${den})`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Divide: ${whole} ÷ (1/${den}) = ?`,
+      choices,
+      answer: String(correct),
+      explanation: `There are ${den} one-${den}ths in each whole: ${whole} × ${den} = ${correct}.`,
+    }
+  },
+
+  'g5.volume-prism': (rng, principleId, principleTitle) => {
+    const l = randInt(rng, 3, 10)
+    const w = randInt(rng, 2, 8)
+    const h = randInt(rng, 3, 9)
+    const vol = l * w * h
+    const ans = `${vol} cubic units`
+    const choices = buildChoices(
+      ans,
+      [
+        `${l + w + h} cubic units`,
+        `${l * w + h} cubic units`,
+        `${2 * (l + w + h)} cubic units`,
+        `${vol + l} cubic units`,
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-${l}x${w}x${h}`,
+      fingerprint: `${principleId}:${l}x${w}x${h}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the volume of a ${l} by ${w} by ${h} prism.`,
+      choices,
+      answer: ans,
+      explanation: `Volume = length × width × height = ${l} × ${w} × ${h} = ${vol} cubic units.`,
+    }
+  },
+
+  'g5.unit-convert': (rng, principleId, principleTitle) => {
+    const meters = randInt(rng, 2, 19)
+    const cm = meters * 100
+    const ans = `${cm} cm`
+    const choices = buildChoices(
+      ans,
+      [`${meters * 10} cm`, `${meters * 1000} cm`, `${meters + 100} cm`, `${cm + 50} cm`],
+      rng
+    )
+    return {
+      id: `${principleId}-${meters}m`,
+      fingerprint: `${principleId}:${meters}m`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Convert ${meters} meters to centimeters. (1 m = 100 cm)`,
+      choices,
+      answer: ans,
+      explanation: `Multiply meters by 100: ${meters} × 100 = ${cm} cm.`,
+    }
+  },
+
+  'g5.coord-plane': (rng, principleId, principleTitle) => {
+    const x = randInt(rng, 1, 9)
+    const y = randInt(rng, 1, 9)
+    if (x === y) return MATH_GENERATORS['g5.coord-plane'](rng, principleId, principleTitle)
+    const askX = rng() < 0.5
+    const ans = String(askX ? x : y)
+    const choices = buildChoices(
+      ans,
+      [askX ? y : x, x + y, Math.abs(x - y), x * y],
+      rng
+    )
+    return {
+      id: `${principleId}-${x}-${y}-${askX ? 'x' : 'y'}`,
+      fingerprint: `${principleId}:(${x},${y}):${askX ? 'x' : 'y'}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `In the ordered pair (${x}, ${y}), what is the ${
+        askX ? 'x-coordinate' : 'y-coordinate'
+      }?`,
+      choices,
+      answer: ans,
+      explanation: `In (x, y), the first number is x (${x}) and the second is y (${y}).`,
+    }
+  },
+
+  'g5.order-of-ops': (rng, principleId, principleTitle) => {
+    const a = randInt(rng, 2, 8)
+    const b = randInt(rng, 2, 7)
+    const c = randInt(rng, 2, 6)
+    const correct = (a + b) * c
+    const wrongNoParen = a + b * c
+    const choices = buildChoices(
+      String(correct),
+      [wrongNoParen, a * b + c, a + b + c, correct + c],
+      rng
+    )
+    return {
+      id: `${principleId}-(${a}+${b})x${c}`,
+      fingerprint: `${principleId}:(${a}+${b})*${c}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Evaluate the expression: (${a} + ${b}) × ${c}`,
+      choices,
+      answer: String(correct),
+      explanation: `Solve parentheses first: ${a} + ${b} = ${a + b}. Then multiply by ${c} to get ${correct}.`,
+    }
+  },
+
+  // =========================================================================
+  // GRADE 6 MATH GENERATORS (Plain-Language Micro-Lesson Standard)
+  // =========================================================================
+  'g6.ratios-simplify': (rng, principleId, principleTitle) => {
+    const a = randInt(rng, 2, 7)
+    const b = randInt(rng, 2, 7)
+    if (gcd(a, b) !== 1) return MATH_GENERATORS['g6.ratios-simplify'](rng, principleId, principleTitle)
+    const k = randInt(rng, 2, 5)
+    const rawA = a * k
+    const rawB = b * k
+    const ans = `${a}:${b}`
+    const choices = buildChoices(
+      ans,
+      [`${b}:${a}`, `${a + 1}:${b}`, `${rawA}:${b}`, `${a}:${rawB}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${rawA}-${rawB}`,
+      fingerprint: `${principleId}:${rawA}:${rawB}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Simplify the ratio ${rawA}:${rawB} to lowest terms.`,
+      choices,
+      answer: ans,
+      explanation: `Divide both numbers by ${k}: ${rawA} ÷ ${k} = ${a} and ${rawB} ÷ ${k} = ${b}, giving ${ans}.`,
+    }
+  },
+
   'g6.ratios-unit-rate': (rng, principleId, principleTitle) => {
     const unitRate = randInt(rng, 4, 18)
     const qty = randInt(rng, 3, 9)
     const total = unitRate * qty
-    const items = ['notebooks', 'gallons of fuel', 'tickets', 'pounds of apples', 'hours of tutoring']
+    const items = ['notebooks', 'tickets', 'pounds of apples', 'boxes']
     const item = items[randInt(rng, 0, items.length - 1)]
     const ans = `$${unitRate}`
     const choices = buildChoices(
       ans,
-      [`$${unitRate + 2}`, `$${ Math.max(1, unitRate - 1) }`, `$${total - qty}`, `$${qty}`],
+      [`$${unitRate + 2}`, `$${Math.max(1, unitRate - 1)}`, `$${total - qty}`, `$${qty}`],
       rng
     )
     return {
@@ -300,10 +980,10 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       principleId,
       principleTitle,
       type: 'mc',
-      prompt: `If ${qty} ${item} cost $${total} in total, what is the unit cost per item?`,
+      prompt: `${qty} ${item} cost $${total}. What is the price for 1?`,
       choices,
       answer: ans,
-      explanation: `Divide the total cost by the number of units: $${total} ÷ ${qty} = $${unitRate} per unit.`,
+      explanation: `Divide total cost by quantity: $${total} ÷ ${qty} = $${unitRate} per item.`,
     }
   },
 
@@ -326,9 +1006,7 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       prompt: `What is ${pct}% of ${base}?`,
       choices,
       answer: String(correct),
-      explanation: `Convert ${pct}% to the decimal ${pct / 100} and multiply by ${base}: ${
-        pct / 100
-      } × ${base} = ${correct}.`,
+      explanation: `Multiply ${pct / 100} × ${base} = ${correct}.`,
     }
   },
 
@@ -355,10 +1033,31 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       principleId,
       principleTitle,
       type: 'mc',
-      prompt: `Divide and simplify to lowest terms: (${a}/${b}) ÷ (${c}/${d})`,
+      prompt: `Divide and simplify: (${a}/${b}) ÷ (${c}/${d}) = ?`,
       choices,
       answer: ans,
-      explanation: `Multiply by the reciprocal of the second fraction: (${a}/${b}) × (${d}/${c}) = ${rawNum}/${rawDen}, which simplifies to ${ans}.`,
+      explanation: `Multiply by the reciprocal: (${a}/${b}) × (${d}/${c}) = ${rawNum}/${rawDen} = ${ans}.`,
+    }
+  },
+
+  'g6.integers-abs-compare': (rng, principleId, principleTitle) => {
+    const n = randInt(rng, 4, 35)
+    const ans = String(n)
+    const choices = buildChoices(
+      ans,
+      [`-${n}`, '0', `${n * 2}`, `${n - 1}`],
+      rng
+    )
+    return {
+      id: `${principleId}-abs-${n}`,
+      fingerprint: `${principleId}:|-${n}|`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `What is the absolute value |-${n}|?`,
+      choices,
+      answer: ans,
+      explanation: `Absolute value is the distance from 0, which is always positive: |-${n}| = ${n}.`,
     }
   },
 
@@ -379,12 +1078,34 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       principleId,
       principleTitle,
       type: 'mc',
-      prompt: `Evaluate the integer expression: (${a}) ${op} ${b}`,
+      prompt: `Calculate: (${a}) ${op} ${b} = ?`,
       choices,
       answer: String(correct),
       explanation: isAdd
-        ? `Start at ${a} on the number line and move ${b} units to the right: ${a} + ${b} = ${correct}.`
-        : `Subtracting ${b} from ${a} moves ${b} units further left on the number line: ${a} - ${b} = ${correct}.`,
+        ? `Start at ${a} and move ${b} right: ${a} + ${b} = ${correct}.`
+        : `Start at ${a} and move ${b} left: ${a} - ${b} = ${correct}.`,
+    }
+  },
+
+  'g6.expressions-exponents': (rng, principleId, principleTitle) => {
+    const base = randInt(rng, 2, 9)
+    const exp = randInt(rng, 2, 3)
+    const correct = Math.pow(base, exp)
+    const choices = buildChoices(
+      String(correct),
+      [base * exp, base + exp, correct + base, Math.pow(exp, base)],
+      rng
+    )
+    return {
+      id: `${principleId}-${base}^${exp}`,
+      fingerprint: `${principleId}:${base}^${exp}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Evaluate the power: ${base}^${exp} = ?`,
+      choices,
+      answer: String(correct),
+      explanation: `Multiply ${base} by itself ${exp} times to get ${correct}.`,
     }
   },
 
@@ -396,8 +1117,8 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
     const choices = buildChoices(
       String(correct),
       [
-        Math.pow(coeff * x, 2) - constant, // order-of-operations error
-        coeff * 2 * x - constant, // 2x instead of x^2 error
+        Math.pow(coeff * x, 2) - constant,
+        coeff * 2 * x - constant,
         correct + constant * 2,
         correct + coeff,
       ],
@@ -409,12 +1130,12 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       principleId,
       principleTitle,
       type: 'mc',
-      prompt: `Evaluate the algebraic expression ${coeff}x² - ${constant} when x = ${x}.`,
+      prompt: `Find ${coeff}x² - ${constant} when x = ${x}.`,
       choices,
       answer: String(correct),
-      explanation: `Follow order of operations (exponents before multiplication): x² = ${x}² = ${
-        x * x
-      }. Then ${coeff} × ${x * x} = ${coeff * x * x}, and ${coeff * x * x} - ${constant} = ${correct}.`,
+      explanation: `Square x first (${x}² = ${x * x}), multiply by ${coeff} (${
+        coeff * x * x
+      }), then subtract ${constant}: ${correct}.`,
     }
   },
 
@@ -437,100 +1158,834 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
       prompt: `Solve for x: ${m}x + ${b} = ${rhs}`,
       choices,
       answer: `x = ${x}`,
-      explanation: `Subtract ${b} from both sides: ${m}x = ${rhs - b}. Then divide both sides by ${m}: x = ${
+      explanation: `Subtract ${b} (${m}x = ${
         rhs - b
-      } ÷ ${m} = ${x}.`,
+      }), then divide by ${m}: x = ${x}.`,
+    }
+  },
+
+  'g6.geometry-triangle': (rng, principleId, principleTitle) => {
+    const base = randInt(rng, 6, 20)
+    const height = randInt(rng, 4, 16)
+    const area = (base * height) / 2
+    const ans = `${area} sq cm`
+    const choices = buildChoices(
+      ans,
+      [
+        `${base * height} sq cm`,
+        `${base + height} sq cm`,
+        `${area + base} sq cm`,
+        `${2 * (base + height)} sq cm`,
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-tri-${base}x${height}`,
+      fingerprint: `${principleId}:tri:${base}x${height}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the area of a triangle: base ${base} cm, height ${height} cm.`,
+      choices,
+      answer: ans,
+      explanation: `Area = ½ × base × height = ½ × ${base} × ${height} = ${area} sq cm.`,
+    }
+  },
+
+  'g6.geometry-prism': (rng, principleId, principleTitle) => {
+    const l = randInt(rng, 3, 10)
+    const w = randInt(rng, 3, 8)
+    const h = randInt(rng, 4, 9)
+    const vol = l * w * h
+    const ans = `${vol} cubic cm`
+    const choices = buildChoices(
+      ans,
+      [
+        `${l + w + h} cubic cm`,
+        `${2 * (l * w + w * h + l * h)} cubic cm`,
+        `${l * w + h} cubic cm`,
+        `${vol + l * w} cubic cm`,
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-prism-${l}x${w}x${h}`,
+      fingerprint: `${principleId}:prism:${l}x${w}x${h}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the volume of a ${l} cm by ${w} cm by ${h} cm prism.`,
+      choices,
+      answer: ans,
+      explanation: `Volume = ${l} × ${w} × ${h} = ${vol} cubic cm.`,
     }
   },
 
   'g6.geometry-triangle-prism': (rng, principleId, principleTitle) => {
     const askTriangle = rng() < 0.5
     if (askTriangle) {
-      const base = randInt(rng, 6, 20)
-      const height = randInt(rng, 4, 16)
-      const area = (base * height) / 2
-      const ans = `${area} sq cm`
-      const choices = buildChoices(
-        ans,
-        [
-          `${base * height} sq cm`, // forgot 1/2
-          `${base + height} sq cm`,
-          `${area + base} sq cm`,
-          `${2 * (base + height)} sq cm`,
-        ],
-        rng
-      )
-      return {
-        id: `${principleId}-tri-${base}x${height}`,
-        fingerprint: `${principleId}:tri:${base}x${height}`,
-        principleId,
-        principleTitle,
-        type: 'mc',
-        prompt: `Find the area of a triangle with base ${base} cm and height ${height} cm.`,
-        choices,
-        answer: ans,
-        explanation: `Area of a triangle = ½ × base × height = ½ × ${base} × ${height} = ${area} sq cm.`,
-      }
-    } else {
-      const l = randInt(rng, 3, 10)
-      const w = randInt(rng, 3, 8)
-      const h = randInt(rng, 4, 9)
-      const vol = l * w * h
-      const ans = `${vol} cubic cm`
-      const choices = buildChoices(
-        ans,
-        [
-          `${l + w + h} cubic cm`,
-          `${2 * (l * w + w * h + l * h)} cubic cm`,
-          `${l * w + h} cubic cm`,
-          `${vol + l * w} cubic cm`,
-        ],
-        rng
-      )
-      return {
-        id: `${principleId}-prism-${l}x${w}x${h}`,
-        fingerprint: `${principleId}:prism:${l}x${w}x${h}`,
-        principleId,
-        principleTitle,
-        type: 'mc',
-        prompt: `A rectangular prism is ${l} cm long, ${w} cm wide, and ${h} cm high. What is its volume?`,
-        choices,
-        answer: ans,
-        explanation: `Volume of a rectangular prism = length × width × height = ${l} × ${w} × ${h} = ${vol} cubic cm.`,
-      }
+      return MATH_GENERATORS['g6.geometry-triangle'](rng, principleId, principleTitle)
     }
+    return MATH_GENERATORS['g6.geometry-prism'](rng, principleId, principleTitle)
   },
 
-  'g6.stats-mean-median': (rng, principleId, principleTitle) => {
+  'g6.stats-mean': (rng, principleId, principleTitle) => {
     const center = randInt(rng, 10, 35)
     const d1 = randInt(rng, 2, 6)
     const d2 = randInt(rng, 7, 12)
-    // Symmetric 5-number set so mean and median are clean integers
     const nums = shuffle([center - d2, center - d1, center, center + d1, center + d2 + 5], rng)
-    const askMean = rng() < 0.5
     const sum = nums.reduce((a, b) => a + b, 0)
     const mean = sum / 5
     const sorted = [...nums].sort((a, b) => a - b)
     const median = sorted[2]
     const range = sorted[4] - sorted[0]
-    const correct = askMean ? mean : median
     const choices = buildChoices(
-      String(correct),
-      [askMean ? median : mean, range, correct + 3, correct - 2],
+      String(mean),
+      [median, range, mean + 3, mean - 2],
       rng
     )
     return {
-      id: `${principleId}-${sorted.join('_')}-${askMean ? 'mean' : 'med'}`,
-      fingerprint: `${principleId}:${sorted.join(',')}:${askMean ? 'mean' : 'med'}`,
+      id: `${principleId}-${sorted.join('_')}-mean`,
+      fingerprint: `${principleId}:${sorted.join(',')}:mean`,
       principleId,
       principleTitle,
       type: 'mc',
-      prompt: `Find the ${askMean ? 'mean (average)' : 'median'} of the data set: ${nums.join(', ')}`,
+      prompt: `Find the mean (average) of: ${nums.join(', ')}`,
+      choices,
+      answer: String(mean),
+      explanation: `Add the 5 numbers (${sum}) and divide by 5: ${sum} ÷ 5 = ${mean}.`,
+    }
+  },
+
+  'g6.stats-median': (rng, principleId, principleTitle) => {
+    const center = randInt(rng, 10, 35)
+    const d1 = randInt(rng, 2, 6)
+    const d2 = randInt(rng, 7, 12)
+    const nums = shuffle([center - d2, center - d1, center, center + d1, center + d2 + 5], rng)
+    const sum = nums.reduce((a, b) => a + b, 0)
+    const mean = sum / 5
+    const sorted = [...nums].sort((a, b) => a - b)
+    const median = sorted[2]
+    const range = sorted[4] - sorted[0]
+    const choices = buildChoices(
+      String(median),
+      [mean, range, median + 3, median - 2],
+      rng
+    )
+    return {
+      id: `${principleId}-${sorted.join('_')}-med`,
+      fingerprint: `${principleId}:${sorted.join(',')}:med`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the median (middle value) of: ${nums.join(', ')}`,
+      choices,
+      answer: String(median),
+      explanation: `Order from least to greatest (${sorted.join(
+        ', '
+      )}). The middle number is ${median}.`,
+    }
+  },
+
+  'g6.stats-mean-median': (rng, principleId, principleTitle) => {
+    const askMean = rng() < 0.5
+    if (askMean) {
+      return MATH_GENERATORS['g6.stats-mean'](rng, principleId, principleTitle)
+    }
+    return MATH_GENERATORS['g6.stats-median'](rng, principleId, principleTitle)
+  },
+
+  // =========================================================================
+  // GRADE 7 MATH GENERATORS (Plain-Language Micro-Lesson Standard)
+  // =========================================================================
+  'g7.proportional-constant': (rng, principleId, principleTitle) => {
+    const k = randInt(rng, 3, 15)
+    const x = randInt(rng, 2, 9)
+    const y = k * x
+    const choices = buildChoices(
+      `k = ${k}`,
+      [`k = ${x}`, `k = ${y - x}`, `k = ${k + 2}`, `k = ${y}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${x}-${y}`,
+      fingerprint: `${principleId}:k:${x}->${y}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `In y = kx, y = ${y} when x = ${x}. Find k.`,
+      choices,
+      answer: `k = ${k}`,
+      explanation: `Divide y by x to find the constant of proportionality: k = ${y} ÷ ${x} = ${k}.`,
+    }
+  },
+
+  'g7.unit-rate-fractions': (rng, principleId, principleTitle) => {
+    const denom = randInt(rng, 2, 5)
+    const miles = randInt(rng, 2, 6)
+    const speed = miles * denom
+    const ans = `${speed} mph`
+    const choices = buildChoices(
+      ans,
+      [`${miles} mph`, `${miles + denom} mph`, `${speed + denom} mph`, `${denom} mph`],
+      rng
+    )
+    return {
+      id: `${principleId}-${miles}mi-1_${denom}hr`,
+      fingerprint: `${principleId}:${miles}/(1/${denom})`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `A runner goes ${miles} miles in 1/${denom} hour. Find the speed.`,
+      choices,
+      answer: ans,
+      explanation: `Divide distance by time: ${miles} ÷ (1/${denom}) = ${miles} × ${denom} = ${speed} mph.`,
+    }
+  },
+
+  'g7.percent-change': (rng, principleId, principleTitle) => {
+    const base = randInt(rng, 2, 10) * 10
+    const pct = [10, 20, 25, 50][randInt(rng, 0, 3)]
+    const delta = (base * pct) / 100
+    const next = base + delta
+    const ans = `${pct}%`
+    const choices = buildChoices(
+      ans,
+      [`${delta}%`, `${pct + 10}%`, `${Math.max(5, pct - 5)}%`, `${100 - pct}%`],
+      rng
+    )
+    return {
+      id: `${principleId}-${base}-to-${next}`,
+      fingerprint: `${principleId}:${base}->${next}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `A price rises from $${base} to $${next}. Find the percent increase.`,
+      choices,
+      answer: ans,
+      explanation: `Change is $${delta}. Divide by original: ${delta} ÷ ${base} = ${
+        pct / 100
+      } = ${pct}%.`,
+    }
+  },
+
+  'g7.simple-interest': (rng, principleId, principleTitle) => {
+    const p = randInt(rng, 2, 9) * 100
+    const rPct = randInt(rng, 3, 8)
+    const t = randInt(rng, 2, 5)
+    const interest = (p * rPct * t) / 100
+    const ans = `$${interest}`
+    const choices = buildChoices(
+      ans,
+      [`$${(p * rPct) / 100}`, `$${interest + p}`, `$${interest + 20}`, `$${rPct * t}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${p}-${rPct}-${t}`,
+      fingerprint: `${principleId}:${p}*${rPct}%*${t}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find simple interest: P = $${p}, rate = ${rPct}%, time = ${t} years.`,
+      choices,
+      answer: ans,
+      explanation: `Use I = P × r × t: $${p} × 0.0${rPct} × ${t} = $${interest}.`,
+    }
+  },
+
+  'g7.int-add-sub': (rng, principleId, principleTitle) => {
+    const a = -randInt(rng, 5, 22)
+    const b = -randInt(rng, 3, 18)
+    const isSub = rng() < 0.5
+    const correct = isSub ? a - b : a + b
+    const op = isSub ? '-' : '+'
+    const choices = buildChoices(
+      String(correct),
+      [-correct, isSub ? a + b : a - b, correct + 2, correct - 2],
+      rng
+    )
+    return {
+      id: `${principleId}-${a}${op}(${b})`,
+      fingerprint: `${principleId}:${a}${op}(${b})`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Calculate: (${a}) ${op} (${b}) = ?`,
       choices,
       answer: String(correct),
-      explanation: askMean
-        ? `Add all 5 values (${sum}) and divide by 5: ${sum} ÷ 5 = ${mean}.`
-        : `Order the numbers from least to greatest (${sorted.join(', ')}). The middle value is ${median}.`,
+      explanation: isSub
+        ? `Subtracting ${b} is adding ${-b}: ${a} + ${-b} = ${correct}.`
+        : `Add two negative integers: ${a} + (${b}) = ${correct}.`,
+    }
+  },
+
+  'g7.int-mult-div': (rng, principleId, principleTitle) => {
+    const a = -randInt(rng, 3, 11)
+    const b = randInt(rng, 2, 9) * (rng() < 0.5 ? -1 : 1)
+    const correct = a * b
+    const choices = buildChoices(
+      String(correct),
+      [-correct, a + b, Math.abs(correct) + 3, -(Math.abs(correct) + 2)],
+      rng
+    )
+    return {
+      id: `${principleId}-${a}x${b}`,
+      fingerprint: `${principleId}:${a}*${b}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Multiply the integers: (${a}) × (${b}) = ?`,
+      choices,
+      answer: String(correct),
+      explanation: `${
+        b < 0 ? 'Negative × negative = positive' : 'Negative × positive = negative'
+      }: (${a}) × (${b}) = ${correct}.`,
+    }
+  },
+
+  'g7.linear-combine': (rng, principleId, principleTitle) => {
+    const a = randInt(rng, 2, 9)
+    const b = randInt(rng, 2, 8)
+    const c = randInt(rng, 3, 12)
+    const ans = `${a + b}x + ${c}`
+    const choices = buildChoices(
+      ans,
+      [`${a + b + c}x`, `${a * b}x + ${c}`, `${a + b}x² + ${c}`, `${Math.abs(a - b)}x + ${c}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${a}x+${b}x+${c}`,
+      fingerprint: `${principleId}:${a}x+${b}x+${c}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Combine like terms: ${a}x + ${b}x + ${c}`,
+      choices,
+      answer: ans,
+      explanation: `Add the x coefficients (${a} + ${b} = ${a + b}) and keep + ${c}: ${ans}.`,
+    }
+  },
+
+  'g7.distributive': (rng, principleId, principleTitle) => {
+    const a = randInt(rng, 2, 7)
+    const b = randInt(rng, 2, 6)
+    const c = randInt(rng, 2, 9)
+    const ans = `${a * b}x + ${a * c}`
+    const choices = buildChoices(
+      ans,
+      [`${a * b}x + ${c}`, `${a + b}x + ${a + c}`, `${a * b + a * c}x`, `${b}x + ${a * c}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${a}(${b}x+${c})`,
+      fingerprint: `${principleId}:${a}(${b}x+${c})`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Expand using the distributive property: ${a}(${b}x + ${c})`,
+      choices,
+      answer: ans,
+      explanation: `Multiply ${a} by both terms inside: ${a}·${b}x + ${a}·${c} = ${ans}.`,
+    }
+  },
+
+  'g7.two-step-eq': (rng, principleId, principleTitle) => {
+    const m = randInt(rng, 2, 9)
+    const x = randInt(rng, 2, 12)
+    const b = randInt(rng, 3, 18)
+    const rhs = m * x - b
+    const choices = buildChoices(
+      `x = ${x}`,
+      [`x = ${x - 2}`, `x = ${x + 3}`, `x = ${rhs + b}`, `x = ${Math.max(1, Math.floor((rhs - b) / m))}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${m}x-${b}=${rhs}`,
+      fingerprint: `${principleId}:${m}x-${b}=${rhs}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Solve for x: ${m}x - ${b} = ${rhs}`,
+      choices,
+      answer: `x = ${x}`,
+      explanation: `Add ${b} to both sides (${m}x = ${
+        rhs + b
+      }), then divide by ${m}: x = ${x}.`,
+    }
+  },
+
+  'g7.inequalities': (rng, principleId, principleTitle) => {
+    const m = randInt(rng, 2, 7)
+    const k = randInt(rng, 3, 11)
+    const b = randInt(rng, 2, 14)
+    const rhs = m * k + b
+    const ans = `x > ${k}`
+    const choices = buildChoices(
+      ans,
+      [`x < ${k}`, `x > ${k + 2}`, `x > ${rhs - b}`, `x < ${k - 1}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${m}x+${b}>${rhs}`,
+      fingerprint: `${principleId}:${m}x+${b}>${rhs}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Solve the inequality: ${m}x + ${b} > ${rhs}`,
+      choices,
+      answer: ans,
+      explanation: `Subtract ${b} (${m}x > ${rhs - b}), then divide by ${m}: ${ans}.`,
+    }
+  },
+
+  'g7.scale-drawings': (rng, principleId, principleTitle) => {
+    const scale = randInt(rng, 4, 15)
+    const inches = randInt(rng, 3, 9)
+    const actual = scale * inches
+    const ans = `${actual} ft`
+    const choices = buildChoices(
+      ans,
+      [`${scale + inches} ft`, `${actual + scale} ft`, `${inches} ft`, `${actual - inches} ft`],
+      rng
+    )
+    return {
+      id: `${principleId}-${inches}in-${scale}ft`,
+      fingerprint: `${principleId}:${inches}in*${scale}ft`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Scale: 1 inch = ${scale} ft. Find the length of ${inches} inches.`,
+      choices,
+      answer: ans,
+      explanation: `Multiply drawing length by scale factor: ${inches} × ${scale} = ${actual} ft.`,
+    }
+  },
+
+  'g7.circle-circumference': (rng, principleId, principleTitle) => {
+    const r = randInt(rng, 2, 10)
+    const c = (2 * 3.14 * r).toFixed(2)
+    const ans = `${c} cm`
+    const choices = buildChoices(
+      ans,
+      [
+        `${(3.14 * r * r).toFixed(2)} cm`,
+        `${(3.14 * r).toFixed(2)} cm`,
+        `${2 * r} cm`,
+        `${(2 * 3.14 * (r + 1)).toFixed(2)} cm`,
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-r${r}`,
+      fingerprint: `${principleId}:C:r=${r}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the circumference when radius r = ${r} cm. (Use π ≈ 3.14)`,
+      choices,
+      answer: ans,
+      explanation: `Use C = 2 × π × r: 2 × 3.14 × ${r} = ${c} cm.`,
+    }
+  },
+
+  'g7.circle-area': (rng, principleId, principleTitle) => {
+    const r = randInt(rng, 2, 10)
+    const area = (3.14 * r * r).toFixed(2)
+    const ans = `${area} sq cm`
+    const choices = buildChoices(
+      ans,
+      [
+        `${(2 * 3.14 * r).toFixed(2)} sq cm`,
+        `${(3.14 * r).toFixed(2)} sq cm`,
+        `${r * r} sq cm`,
+        `${(3.14 * (r + 1) * (r + 1)).toFixed(2)} sq cm`,
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-r${r}`,
+      fingerprint: `${principleId}:A:r=${r}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the circle area when radius r = ${r} cm. (Use π ≈ 3.14)`,
+      choices,
+      answer: ans,
+      explanation: `Use A = π × r²: 3.14 × ${r}² = 3.14 × ${r * r} = ${area} sq cm.`,
+    }
+  },
+
+  'g7.angles-relations': (rng, principleId, principleTitle) => {
+    const isSupp = rng() < 0.5
+    const total = isSupp ? 180 : 90
+    const label = isSupp ? 'supplementary (180°)' : 'complementary (90°)'
+    const a = isSupp ? randInt(rng, 40, 140) : randInt(rng, 15, 75)
+    const b = total - a
+    const ans = `${b}°`
+    const choices = buildChoices(
+      ans,
+      [`${b + 10}°`, `${b - 10}°`, `${180 - a}°`, `${a}°`],
+      rng
+    )
+    return {
+      id: `${principleId}-${total}-${a}`,
+      fingerprint: `${principleId}:${total}-${a}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Two angles are ${label}. One is ${a}°. Find the other.`,
+      choices,
+      answer: ans,
+      explanation: `Subtract ${a}° from ${total}°: ${total}° - ${a}° = ${b}°.`,
+    }
+  },
+
+  'g7.probability-simple': (rng, principleId, principleTitle) => {
+    const red = randInt(rng, 2, 5)
+    const blue = randInt(rng, 3, 7)
+    const total = red + blue
+    const g = gcd(red, total)
+    const ans = `${red / g}/${total / g}`
+    const choices = buildChoices(
+      ans,
+      [`${red}/${blue}`, `${blue / gcd(blue, total)}/${total / gcd(blue, total)}`, `1/${total}`, `${red + 1}/${total}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${red}r-${blue}b`,
+      fingerprint: `${principleId}:${red}/${total}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `A bag has ${red} red and ${blue} blue marbles. Find P(red).`,
+      choices,
+      answer: ans,
+      explanation: `There are ${total} total marbles. P(red) = ${red}/${total} = ${ans}.`,
+    }
+  },
+
+  // =========================================================================
+  // GRADE 8 MATH GENERATORS (Plain-Language Micro-Lesson Standard)
+  // =========================================================================
+  'g8.exponent-product': (rng, principleId, principleTitle) => {
+    const a = randInt(rng, 2, 7)
+    const b = randInt(rng, 2, 6)
+    const ans = `x^${a + b}`
+    const choices = buildChoices(
+      ans,
+      [`x^${a * b}`, `2x^${a + b}`, `x^${Math.abs(a - b)}`, `x^${a + b + 1}`],
+      rng
+    )
+    return {
+      id: `${principleId}-x${a}-x${b}`,
+      fingerprint: `${principleId}:x^${a}*x^${b}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Simplify using exponent rules: x^${a} · x^${b} = ?`,
+      choices,
+      answer: ans,
+      explanation: `When multiplying same bases, add the exponents: x^(${a} + ${b}) = ${ans}.`,
+    }
+  },
+
+  'g8.exponent-power': (rng, principleId, principleTitle) => {
+    const a = randInt(rng, 2, 6)
+    const b = randInt(rng, 2, 5)
+    const ans = `x^${a * b}`
+    const choices = buildChoices(
+      ans,
+      [`x^${a + b}`, `${b}x^${a}`, `x^${a * b + 1}`, `x^${Math.abs(a - b)}`],
+      rng
+    )
+    return {
+      id: `${principleId}-(x${a})${b}`,
+      fingerprint: `${principleId}:(x^${a})^${b}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Simplify the power of a power: (x^${a})^${b} = ?`,
+      choices,
+      answer: ans,
+      explanation: `Multiply the exponents for a power of a power: x^(${a} × ${b}) = ${ans}.`,
+    }
+  },
+
+  'g8.sci-notation': (rng, principleId, principleTitle) => {
+    const coeff = randInt(rng, 2, 9)
+    const tenth = randInt(rng, 1, 8)
+    const exp = randInt(rng, 3, 6)
+    const val = (coeff + tenth / 10) * Math.pow(10, exp)
+    const ans = `${coeff}.${tenth} × 10^${exp}`
+    const choices = buildChoices(
+      ans,
+      [
+        `${coeff}.${tenth} × 10^${exp - 1}`,
+        `${coeff}.${tenth} × 10^${exp + 1}`,
+        `${coeff}${tenth} × 10^${exp}`,
+        `0.${coeff}${tenth} × 10^${exp}`,
+      ],
+      rng
+    )
+    return {
+      id: `${principleId}-${val}`,
+      fingerprint: `${principleId}:sci:${val}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Write ${Math.round(val).toLocaleString('en-US')} in scientific notation.`,
+      choices,
+      answer: ans,
+      explanation: `Move the decimal ${exp} places left to get ${coeff}.${tenth} × 10^${exp}.`,
+    }
+  },
+
+  'g8.square-cube-roots': (rng, principleId, principleTitle) => {
+    const root = randInt(rng, 4, 15)
+    const sq = root * root
+    const choices = buildChoices(
+      String(root),
+      [root + 1, root - 1, sq / 2, root + 2],
+      rng
+    )
+    return {
+      id: `${principleId}-sqrt-${sq}`,
+      fingerprint: `${principleId}:sqrt(${sq})`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the principal square root: √${sq} = ?`,
+      choices,
+      answer: String(root),
+      explanation: `Because ${root} × ${root} = ${sq}, √${sq} = ${root}.`,
+    }
+  },
+
+  'g8.slope-two-points': (rng, principleId, principleTitle) => {
+    const x1 = randInt(rng, 1, 5)
+    const y1 = randInt(rng, 1, 6)
+    const m = randInt(rng, -4, 6) || 2
+    const dx = randInt(rng, 2, 5)
+    const x2 = x1 + dx
+    const y2 = y1 + m * dx
+    const choices = buildChoices(
+      String(m),
+      [-m, m + 1, y2 - y1, dx],
+      rng
+    )
+    return {
+      id: `${principleId}-(${x1},${y1})-(${x2},${y2})`,
+      fingerprint: `${principleId}:slope:(${x1},${y1})(${x2},${y2})`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the slope between (${x1}, ${y1}) and (${x2}, ${y2}).`,
+      choices,
+      answer: String(m),
+      explanation: `Slope m = (${y2} - ${y1}) ÷ (${x2} - ${x1}) = ${
+        y2 - y1
+      } ÷ ${dx} = ${m}.`,
+    }
+  },
+
+  'g8.slope-intercept': (rng, principleId, principleTitle) => {
+    const m = randInt(rng, 2, 8)
+    const b = randInt(rng, -9, 12)
+    const sign = b >= 0 ? `+ ${b}` : `- ${Math.abs(b)}`
+    const askSlope = rng() < 0.5
+    const ans = String(askSlope ? m : b)
+    const choices = buildChoices(
+      ans,
+      [askSlope ? b : m, -m, Math.abs(b) + 2, m + b],
+      rng
+    )
+    return {
+      id: `${principleId}-y=${m}x${sign}-${askSlope ? 'm' : 'b'}`,
+      fingerprint: `${principleId}:y=${m}x${sign}:${askSlope ? 'm' : 'b'}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `In y = ${m}x ${sign}, what is the ${askSlope ? 'slope' : 'y-intercept'}?`,
+      choices,
+      answer: ans,
+      explanation: `In y = mx + b, m is the slope (${m}) and b is the y-intercept (${b}).`,
+    }
+  },
+
+  'g8.multi-step-eq': (rng, principleId, principleTitle) => {
+    const c = randInt(rng, 2, 5)
+    const a = c + randInt(rng, 2, 5)
+    const x = randInt(rng, 2, 9)
+    const b = randInt(rng, 1, 10)
+    const d = (a - c) * x + b
+    const choices = buildChoices(
+      `x = ${x}`,
+      [`x = ${x + 2}`, `x = ${x - 1}`, `x = ${d - b}`, `x = ${-x}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${a}x+${b}=${c}x+${d}`,
+      fingerprint: `${principleId}:${a}x+${b}=${c}x+${d}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Solve for x: ${a}x + ${b} = ${c}x + ${d}`,
+      choices,
+      answer: `x = ${x}`,
+      explanation: `Subtract ${c}x and ${b}: ${a - c}x = ${
+        d - b
+      }. Divide by ${a - c}: x = ${x}.`,
+    }
+  },
+
+  'g8.systems-linear': (rng, principleId, principleTitle) => {
+    const x = randInt(rng, 2, 8)
+    const y = randInt(rng, 1, 6)
+    const m = randInt(rng, 2, 4)
+    const sum = x + y
+    const choices = buildChoices(
+      `(${x}, ${y})`,
+      [`(${y}, ${x})`, `(${x + 1}, ${y})`, `(${x}, ${y + 1})`, `(${m}, ${sum})`],
+      rng
+    )
+    return {
+      id: `${principleId}-y=${m}x-sum=${sum}-at-${x}-${y}`,
+      fingerprint: `${principleId}:sys:${x},${y}:${m}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Solve the system: x = ${x} and x + y = ${sum}`,
+      choices,
+      answer: `(${x}, ${y})`,
+      explanation: `Substitute x = ${x} into x + y = ${sum} to get y = ${y}: (${x}, ${y}).`,
+    }
+  },
+
+  'g8.functions-rate': (rng, principleId, principleTitle) => {
+    const m = randInt(rng, 2, 7)
+    const b = randInt(rng, 1, 12)
+    const x = randInt(rng, 2, 8)
+    const correct = m * x + b
+    const choices = buildChoices(
+      String(correct),
+      [m + x + b, m * (x + b), correct + m, correct - b],
+      rng
+    )
+    return {
+      id: `${principleId}-f(${x})-${m}x+${b}`,
+      fingerprint: `${principleId}:f(${x})=${m}*${x}+${b}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `If f(x) = ${m}x + ${b}, find f(${x}).`,
+      choices,
+      answer: String(correct),
+      explanation: `Substitute x = ${x}: f(${x}) = ${m}(${x}) + ${b} = ${correct}.`,
+    }
+  },
+
+  'g8.pythagorean-hyp': (rng, principleId, principleTitle) => {
+    const triples: [number, number, number][] = [
+      [3, 4, 5],
+      [6, 8, 10],
+      [5, 12, 13],
+      [9, 12, 15],
+      [8, 15, 17],
+    ]
+    const [a, b, c] = triples[randInt(rng, 0, triples.length - 1)]
+    const choices = buildChoices(
+      `${c}`,
+      [`${a + b}`, `${c + 2}`, `${a * a + b * b}`, `${c - 1}`],
+      rng
+    )
+    return {
+      id: `${principleId}-${a}-${b}-${c}`,
+      fingerprint: `${principleId}:hyp:${a},${b}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Right triangle legs are ${a} and ${b}. Find hypotenuse c.`,
+      choices,
+      answer: `${c}`,
+      explanation: `Use a² + b² = c²: ${a}² + ${b}² = ${
+        a * a + b * b
+      }, so c = √${a * a + b * b} = ${c}.`,
+    }
+  },
+
+  'g8.pythagorean-leg': (rng, principleId, principleTitle) => {
+    const triples: [number, number, number][] = [
+      [3, 4, 5],
+      [6, 8, 10],
+      [5, 12, 13],
+      [9, 12, 15],
+      [8, 15, 17],
+    ]
+    const [a, b, c] = triples[randInt(rng, 0, triples.length - 1)]
+    const choices = buildChoices(
+      `${b}`,
+      [`${c - a}`, `${b + 2}`, `${c * c - a * a}`, `${a + c}`],
+      rng
+    )
+    return {
+      id: `${principleId}-leg-${a}-${c}`,
+      fingerprint: `${principleId}:leg:${a},${c}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `A right triangle has leg ${a} and hypotenuse ${c}. Find leg b.`,
+      choices,
+      answer: `${b}`,
+      explanation: `Use b² = c² - a²: ${c}² - ${a}² = ${
+        c * c - a * a
+      }, so b = ${b}.`,
+    }
+  },
+
+  'g8.transformations': (rng, principleId, principleTitle) => {
+    const x = randInt(rng, 1, 7)
+    const y = randInt(rng, 1, 7)
+    const dx = randInt(rng, 2, 6)
+    const dy = randInt(rng, 1, 5)
+    const ans = `(${x + dx}, ${y - dy})`
+    const choices = buildChoices(
+      ans,
+      [`(${x - dx}, ${y + dy})`, `(${x + dy}, ${y - dx})`, `(${x + dx}, ${y + dy})`, `(${-x}, ${-y})`],
+      rng
+    )
+    return {
+      id: `${principleId}-(${x},${y})+${dx}-${dy}`,
+      fingerprint: `${principleId}:trans:(${x},${y})+${dx}-${dy}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Translate point (${x}, ${y}) right ${dx} and down ${dy}.`,
+      choices,
+      answer: ans,
+      explanation: `Add ${dx} to x and subtract ${dy} from y: (${x} + ${dx}, ${y} - ${dy}) = ${ans}.`,
+    }
+  },
+
+  'g8.volume-cylinder-cone': (rng, principleId, principleTitle) => {
+    const r = randInt(rng, 2, 6)
+    const h = randInt(rng, 3, 9)
+    const coeff = r * r * h
+    const ans = `${coeff}π cubic cm`
+    const choices = buildChoices(
+      ans,
+      [`${2 * r * h}π cubic cm`, `${r * h}π cubic cm`, `${coeff + r}π cubic cm`, `${(r + h) * 2}π cubic cm`],
+      rng
+    )
+    return {
+      id: `${principleId}-cyl-r${r}-h${h}`,
+      fingerprint: `${principleId}:cyl:r=${r},h=${h}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find cylinder volume: radius r = ${r} cm, height h = ${h} cm.`,
+      choices,
+      answer: ans,
+      explanation: `Use V = πr²h: π × ${r}² × ${h} = ${coeff}π cubic cm.`,
     }
   },
 }

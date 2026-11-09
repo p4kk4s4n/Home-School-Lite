@@ -9,7 +9,12 @@ export const CoursePage: React.FC = () => {
   const { courseId } = useParams<{ courseId: string }>()
   const { attempts, settings } = useApp()
 
-  const course = useMemo(() => (courseId ? getCourseById(courseId) : undefined), [courseId])
+  const includeOhio = settings.includeOhioAdjustments ?? true
+
+  const course = useMemo(
+    () => (courseId ? getCourseById(courseId, includeOhio) : undefined),
+    [courseId, includeOhio]
+  )
 
   const progress = useMemo(() => {
     if (!course) return null
@@ -121,9 +126,20 @@ export const CoursePage: React.FC = () => {
 
                     <div className="lesson-row-body">
                       <div className="lesson-title-line">
+                        {lesson.partOf && (
+                          <span className="badge badge-primary">
+                            {lesson.partOf}
+                          </span>
+                        )}
                         <strong>{lesson.title}</strong>
+                        {lesson.kind === 'lesson_review' && (
+                          <span className="badge badge-warning">Review Check</span>
+                        )}
                         {lesson.kind === 'unit_test' && (
                           <span className="badge badge-exam">Unit Exam</span>
+                        )}
+                        {lesson.isOhioExtension && (
+                          <span className="badge badge-neutral">Ohio Standard</span>
                         )}
                       </div>
                       <div className="lesson-sub-line">
