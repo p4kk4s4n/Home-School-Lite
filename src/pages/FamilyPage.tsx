@@ -47,6 +47,11 @@ export const FamilyPage: React.FC = () => {
     return 'parent'
   })
 
+  // Whether user is choosing to link existing circle vs create new when unlinked
+  const [parentSetupMode, setParentSetupMode] = useState<'create' | 'join'>(() => {
+    return searchParams.get('join') === 'true' ? 'join' : 'create'
+  })
+
   // Inputs
   const [familyCodeInput, setFamilyCodeInput] = useState(() => {
     return searchParams.get('code') || syncCfg?.familyCode || generateRandomFamilyCode()
@@ -54,6 +59,11 @@ export const FamilyPage: React.FC = () => {
 
   const [dbUrlInput, setDbUrlInput] = useState(() => {
     return searchParams.get('url') || syncCfg?.syncEndpointUrl || ''
+  })
+
+  // Friendly name for this parent device (e.g. "Mom's Phone", "Dad's Laptop")
+  const [parentDeviceNameInput, setParentDeviceNameInput] = useState(() => {
+    return syncCfg?.parentName || ''
   })
 
   // Student join state
@@ -85,6 +95,10 @@ export const FamilyPage: React.FC = () => {
     if (codeParam) setFamilyCodeInput(codeParam)
     const urlParam = searchParams.get('url')
     if (urlParam) setDbUrlInput(urlParam)
+    if (searchParams.get('join') === 'true') {
+      setParentSetupMode('join')
+      setActiveTab('parent')
+    }
   }, [searchParams])
 
   // Summaries of all students for the Parent oversight view
@@ -156,6 +170,20 @@ export const FamilyPage: React.FC = () => {
     return `${base}#/family?${params.toString()}`
   }, [syncCfg])
 
+  // Generate shareable parent/co-parent invite link
+  const parentInviteLink = useMemo(() => {
+    if (!syncCfg?.familyCode) return ''
+    const base = window.location.origin + window.location.pathname
+    const params = new URLSearchParams()
+    params.set('role', 'parent')
+    params.set('join', 'true')
+    params.set('code', syncCfg.familyCode)
+    if (syncCfg.syncEndpointUrl) {
+      params.set('url', syncCfg.syncEndpointUrl)
+    }
+    return `${base}#/family?${params.toString()}`
+  }, [syncCfg])
+
   // --- ACTIONS ---
 
   const handleTestConnection = async () => {
@@ -200,10 +228,11 @@ export const FamilyPage: React.FC = () => {
       const res = await createCloudFamilyCircle({
         familyCode: cleanCode,
         endpointUrl: dbUrlInput.trim(),
+        parentName: parentDeviceNameInput.trim() || 'Primary Parent',
       })
       await reloadAllData()
       setStatusMsg(
-        `Family Circle "${res.familyCode}" initialized and saved to cloud! Now set your Student PINs below and share the code with student devices.`
+        `Family Circle "${res.familyCode}" initialized and saved to cloud! Now set your Student PINs below, share the Student link with children, or share the Co-Parent link with other parents.`
       )
     } catch (err) {
       setErrorMsg(
@@ -317,12 +346,13 @@ export const FamilyPage: React.FC = () => {
         familyCode: familyCodeInput,
         parentPin: parentPinInput,
         customEndpointUrl: dbUrlInput,
+        parentName: parentDeviceNameInput.trim() || 'Parent Device',
       })
       unlockParent(parentPinInput)
       await reloadAllData()
       setParentPinInput('')
       setStatusMsg(
-        `Linked this device as Parent to Family Circle "${res.familyCode}" (${res.studentsCount} students synced).`
+        `Linked this device as Parent to Family Circle "${res.familyCode}" (${res.studentsCount} students synced). You now have full parent oversight!`
       )
     } catch (err) {
       setErrorMsg(err instanceof Error ? err.message : 'Failed to link Parent device.')
@@ -422,10 +452,10 @@ export const FamilyPage: React.FC = () => {
           <section className="card">
             <div className="section-header">
               <div>
-                <span className="course-subject-tag">STEP 1: CLOUD SETUP</span>
-                <h2>Configure &amp; Initialize Family Circle</h2>
+                <span className="course-subject-tag">STEP 1: CLOUD SETUP &amp; PARENT DEVICES</span>
+                <h2>Configure &amp; Link Family Circle</h2>
                 <p className="muted-sm">
-                  Choose a unique Family Code and provide your Firebase Realtime Database URL (free Google cloud storage).
+                  Connect multiple parents and students to the same Circle with real-time progress syncing.
                 </p>
               </div>
               {syncCfg?.enabled && (
@@ -435,161 +465,305 @@ export const FamilyPage: React.FC = () => {
                   onClick={handleDisconnect}
                   disabled={busy}
                 >
-                  Disconnect &amp; Reset Sync
+                  Disconnect This Device
                 </button>
               )}
             </div>
 
-            <div className="settings-grid-2">
-              <div className="settings-panel">
-                <label className="field-label">
-                  1. Your Family Code (Randomized 5-Digit Code e.g. HSL-#####)
-                  <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.25rem' }}>
-                    <input
-                      type="text"
-                      className="input"
-                      placeholder="e.g., HSL-78421"
-                      value={familyCodeInput}
-                      onChange={(e) => setFamilyCodeInput(e.target.value)}
-                    />
+            {/* If NOT linked yet, provide clean toggle between "Create New Circle" and "Join Existing Circle as Parent" */}
+            {!syncCfg?.enabled ? (
+              <div>
+                <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem' }}>
+                  <button
+                    type="button"
+                    className={`btn ${parentSetupMode === 'create' ? 'btn-primary' : 'btn-secondary'}`}
+                    onClick={() => setParentSetupMode('create')}
+                  >
+                    ✨ Create New Family Circle (First Parent)
+                  </button>
+                  <button
+                    type="button"
+                    className={`btn ${parentSetupMode === 'join' ? 'btn-primary' : 'btn-secondary'}`}
+                    onClick={() => setParentSetupMode('join')}
+                  >
+                    🔗 Join Existing Circle as Co-Parent
+                  </button>
+                </div>
+
+                {parentSetupMode === 'create' ? (
+                  <div className="settings-panel">
+                    <h3 style={{ margin: '0 0 0.5rem' }}>Start a New Family Circle</h3>
+                    <p className="muted-sm">
+                      Choose a randomized Family Code and paste your free Firebase Realtime Database URL.
+                    </p>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', marginTop: '0.75rem' }}>
+                      <label className="field-label">
+                        1. Family Join Code (Randomized 5-Digit Code e.g. HSL-#####)
+                        <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.25rem' }}>
+                          <input
+                            type="text"
+                            className="input"
+                            placeholder="e.g., HSL-78421"
+                            value={familyCodeInput}
+                            onChange={(e) => setFamilyCodeInput(e.target.value)}
+                          />
+                          <button
+                            type="button"
+                            className="btn btn-secondary btn-sm"
+                            style={{ whiteSpace: 'nowrap' }}
+                            onClick={() => setFamilyCodeInput(generateRandomFamilyCode())}
+                            title="Generate new random 5-digit Family Code"
+                          >
+                            🎲 New Code
+                          </button>
+                        </div>
+                      </label>
+
+                      <label className="field-label">
+                        2. Parent Device Friendly Name
+                        <input
+                          type="text"
+                          className="input"
+                          style={{ marginTop: '0.25rem' }}
+                          placeholder="e.g. Mom's Laptop, Dad's Phone"
+                          value={parentDeviceNameInput}
+                          onChange={(e) => setParentDeviceNameInput(e.target.value)}
+                        />
+                      </label>
+                    </div>
+
+                    <label className="field-label" style={{ marginTop: '0.85rem' }}>
+                      3. Cloud Database URL (Firebase Realtime DB or custom REST)
+                      <input
+                        type="url"
+                        className="input"
+                        placeholder="https://your-proj-default-rtdb.firebaseio.com"
+                        value={dbUrlInput}
+                        onChange={(e) => setDbUrlInput(e.target.value)}
+                      />
+                      <span className="muted-sm">
+                        Need a free URL? See the <strong>How-To Guide tab</strong> for 90-second setup steps (free forever on Google Spark tier).
+                      </span>
+                    </label>
+
+                    <div style={{ display: 'flex', gap: '0.6rem', marginTop: '1rem', flexWrap: 'wrap' }}>
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        onClick={handleTestConnection}
+                        disabled={busy || !dbUrlInput.trim()}
+                      >
+                        🔌 Test Cloud Connection
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-primary"
+                        onClick={handleInitializeFamilyCircle}
+                        disabled={busy || !dbUrlInput.trim() || !familyCodeInput.trim()}
+                      >
+                        ☁️ Create &amp; Initialize Circle
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="settings-panel">
+                    <h3 style={{ margin: '0 0 0.5rem' }}>Join Existing Family Circle as Co-Parent</h3>
+                    <p className="muted-sm">
+                      Enter the Family Code, Cloud Database URL (auto-filled if using Co-Parent Invite link), and your shared Parent PIN.
+                    </p>
+
+                    <form onSubmit={handleParentLinkSubmit} style={{ marginTop: '0.85rem' }}>
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
+                        <label className="field-label">
+                          1. Family Code
+                          <input
+                            type="text"
+                            className="input"
+                            style={{ marginTop: '0.25rem', textTransform: 'uppercase', fontWeight: 'bold' }}
+                            placeholder="e.g., HSL-78421"
+                            value={familyCodeInput}
+                            onChange={(e) => setFamilyCodeInput(e.target.value)}
+                            required
+                          />
+                        </label>
+
+                        <label className="field-label">
+                          2. Parent Device Friendly Name
+                          <input
+                            type="text"
+                            className="input"
+                            style={{ marginTop: '0.25rem' }}
+                            placeholder="e.g. Dad's Phone, Mom's Laptop"
+                            value={parentDeviceNameInput}
+                            onChange={(e) => setParentDeviceNameInput(e.target.value)}
+                          />
+                        </label>
+
+                        <label className="field-label">
+                          3. Parent PIN
+                          <input
+                            type="password"
+                            className="input"
+                            style={{ marginTop: '0.25rem' }}
+                            placeholder="Parent PIN (default: 1234)"
+                            value={parentPinInput}
+                            onChange={(e) => setParentPinInput(e.target.value)}
+                            required
+                          />
+                        </label>
+                      </div>
+
+                      <label className="field-label" style={{ marginTop: '0.85rem' }}>
+                        4. Cloud Database URL
+                        <input
+                          type="url"
+                          className="input"
+                          placeholder="https://your-proj-default-rtdb.firebaseio.com"
+                          value={dbUrlInput}
+                          onChange={(e) => setDbUrlInput(e.target.value)}
+                          required
+                        />
+                      </label>
+
+                      <div style={{ display: 'flex', gap: '0.6rem', marginTop: '1rem', flexWrap: 'wrap' }}>
+                        <button
+                          type="button"
+                          className="btn btn-secondary"
+                          onClick={handleTestConnection}
+                          disabled={busy || !dbUrlInput.trim()}
+                        >
+                          🔌 Test Cloud Connection
+                        </button>
+                        <button
+                          type="submit"
+                          className="btn btn-primary"
+                          disabled={busy || !familyCodeInput.trim() || !parentPinInput.trim() || !dbUrlInput.trim()}
+                        >
+                          🔗 Connect as Co-Parent
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div className="settings-grid-2">
+                <div className="settings-panel">
+                  <span className="badge badge-success">Circle Active &amp; Synced</span>
+                  <div className="family-code-display" style={{ marginTop: '0.5rem' }}>
+                    <div>
+                      <span className="muted-sm">Family Join Code:</span>
+                      <strong className="family-code-text">{syncCfg.familyCode}</strong>
+                    </div>
                     <button
                       type="button"
                       className="btn btn-secondary btn-sm"
-                      style={{ whiteSpace: 'nowrap' }}
-                      onClick={() => setFamilyCodeInput(generateRandomFamilyCode())}
-                      title="Generate new random 5-digit Family Code"
+                      onClick={() => {
+                        void navigator.clipboard?.writeText(syncCfg.familyCode)
+                        setStatusMsg('Copied Family Code to clipboard!')
+                      }}
                     >
-                      🎲 New Code
+                      📋 Copy Code
                     </button>
                   </div>
-                  <span className="muted-sm">
-                    This is the code your children will type into their devices to find your family circle.
-                  </span>
-                </label>
 
-                <label className="field-label" style={{ marginTop: '0.85rem' }}>
-                  2. Cloud Database URL (Firebase Realtime DB or custom REST)
-                  <input
-                    type="url"
-                    className="input"
-                    placeholder="https://your-proj-default-rtdb.firebaseio.com"
-                    value={dbUrlInput}
-                    onChange={(e) => setDbUrlInput(e.target.value)}
-                  />
-                  <span className="muted-sm">
-                    Need a free URL? See the <strong>How-To Guide tab</strong> for 90-second setup steps (free forever on Google Spark tier).
-                  </span>
-                </label>
+                  <div style={{ marginTop: '1rem' }}>
+                    <span className="muted-sm">Connected Parent Devices in this Circle:</span>
+                    <ul style={{ margin: '0.4rem 0 0', paddingLeft: '1.25rem', lineHeight: '1.6' }}>
+                      {(settings.connectedParents && settings.connectedParents.length > 0
+                        ? settings.connectedParents
+                        : [
+                            {
+                              id: syncCfg.parentDeviceId || 'primary',
+                              name: syncCfg.parentName || 'Primary Parent',
+                              linkedAt: syncCfg.lastSyncedAt || new Date().toISOString(),
+                            },
+                          ]
+                      ).map((p) => {
+                        const isThisDevice = p.id === syncCfg.parentDeviceId
+                        return (
+                          <li key={p.id}>
+                            <strong>{p.name}</strong>{' '}
+                            {isThisDevice && <span className="badge badge-accent">This Device</span>}
+                            <span className="muted-sm"> (Linked: {new Date(p.linkedAt).toLocaleDateString()})</span>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  </div>
 
-                <div style={{ display: 'flex', gap: '0.6rem', marginTop: '1rem', flexWrap: 'wrap' }}>
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    onClick={handleTestConnection}
-                    disabled={busy || !dbUrlInput.trim()}
-                  >
-                    🔌 Test Cloud Connection
-                  </button>
-                  <button
-                    type="button"
-                    className="btn btn-primary"
-                    onClick={handleInitializeFamilyCircle}
-                    disabled={busy || !dbUrlInput.trim() || !familyCodeInput.trim()}
-                  >
-                    ☁️ Create / Initialize Circle
-                  </button>
+                  <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                    <button
+                      type="button"
+                      className="btn btn-secondary btn-sm"
+                      disabled={busy}
+                      onClick={handleForcePushToCloud}
+                    >
+                      ⬆ Force Push Roster to Cloud
+                    </button>
+                  </div>
                 </div>
-              </div>
 
-              <div className="settings-panel">
-                {syncCfg?.enabled && syncCfg.familyCode ? (
-                  <>
-                    <span className="badge badge-success">Circle Active &amp; Ready</span>
-                    <h3 style={{ margin: '0.4rem 0 0.2rem' }}>Share with Students</h3>
-                    <div className="family-code-display">
-                      <div>
-                        <span className="muted-sm">Family Join Code:</span>
-                        <strong className="family-code-text">{syncCfg.familyCode}</strong>
-                      </div>
+                <div className="settings-panel">
+                  <h3 style={{ margin: '0 0 0.4rem' }}>Share Links with Family</h3>
+
+                  {/* 1-Click Student Invite */}
+                  <div style={{ marginTop: '0.5rem' }}>
+                    <span className="muted-sm"><strong>🎒 1-Click Student Invite Link:</strong></span>
+                    <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.25rem' }}>
+                      <input
+                        type="text"
+                        className="input input-sm"
+                        style={{ flex: 1 }}
+                        readOnly
+                        value={studentInviteLink}
+                      />
                       <button
                         type="button"
                         className="btn btn-secondary btn-sm"
                         onClick={() => {
-                          void navigator.clipboard?.writeText(syncCfg.familyCode)
-                          setStatusMsg('Copied Family Code to clipboard!')
+                          void navigator.clipboard?.writeText(studentInviteLink)
+                          setStatusMsg('Copied Student Invite Link to clipboard!')
                         }}
                       >
-                        📋 Copy Code
+                        📋 Copy Link
                       </button>
                     </div>
+                    <span className="muted-sm">
+                      Opens directly on the child’s device with the code filled in so they can pick their name and enter their student PIN.
+                    </span>
+                  </div>
 
-                    <div style={{ marginTop: '0.85rem' }}>
-                      <span className="muted-sm">1-Click Student Invite Link:</span>
-                      <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.25rem' }}>
-                        <input
-                          type="text"
-                          className="input input-sm"
-                          style={{ flex: 1 }}
-                          readOnly
-                          value={studentInviteLink}
-                        />
-                        <button
-                          type="button"
-                          className="btn btn-secondary btn-sm"
-                          onClick={() => {
-                            void navigator.clipboard?.writeText(studentInviteLink)
-                            setStatusMsg('Copied Student Invite Link to clipboard!')
-                          }}
-                        >
-                          📋 Copy Link
-                        </button>
-                      </div>
-                      <span className="muted-sm">
-                        Send this link via text or email to open directly on the child’s device with the code filled in!
-                      </span>
-                    </div>
-
-                    <div style={{ marginTop: '1rem', display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {/* 1-Click Co-Parent Invite */}
+                  <div style={{ marginTop: '1rem', paddingTop: '0.75rem', borderTop: '1px solid var(--border)' }}>
+                    <span className="muted-sm"><strong>👨‍👩‍👧 1-Click Co-Parent Invite Link:</strong></span>
+                    <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.25rem' }}>
+                      <input
+                        type="text"
+                        className="input input-sm"
+                        style={{ flex: 1 }}
+                        readOnly
+                        value={parentInviteLink}
+                      />
                       <button
                         type="button"
                         className="btn btn-secondary btn-sm"
-                        disabled={busy}
-                        onClick={handleForcePushToCloud}
+                        onClick={() => {
+                          void navigator.clipboard?.writeText(parentInviteLink)
+                          setStatusMsg('Copied Co-Parent Invite Link to clipboard!')
+                        }}
                       >
-                        ⬆ Force Push Roster to Cloud
+                        📋 Copy Link
                       </button>
                     </div>
-                  </>
-                ) : (
-                  <>
-                    <h4>Link Another Existing Parent Device</h4>
-                    <p className="muted-sm">
-                      If you already created a Family Circle on another computer/phone, enter the code and your Parent PIN to link this device.
-                    </p>
-                    <form onSubmit={handleParentLinkSubmit} style={{ marginTop: '0.75rem' }}>
-                      <label className="field-label">
-                        Parent PIN
-                        <input
-                          type="password"
-                          className="input"
-                          placeholder="Parent PIN (default: 1234)"
-                          value={parentPinInput}
-                          onChange={(e) => setParentPinInput(e.target.value)}
-                        />
-                      </label>
-                      <button
-                        type="submit"
-                        className="btn btn-secondary"
-                        style={{ marginTop: '0.75rem' }}
-                        disabled={busy || !familyCodeInput.trim() || !parentPinInput.trim() || !dbUrlInput.trim()}
-                      >
-                        Link Existing Circle
-                      </button>
-                    </form>
-                  </>
-                )}
+                    <span className="muted-sm">
+                      Send to your spouse, co-parent, or tutor. Opens directly in "Join as Co-Parent" mode with code pre-filled!
+                    </span>
+                  </div>
+                </div>
               </div>
-            </div>
+            )}
           </section>
 
           {/* STEP 2: ROSTER & STUDENT PIN MANAGEMENT */}
@@ -1131,9 +1305,27 @@ export const FamilyPage: React.FC = () => {
             </div>
 
             <div className="settings-panel">
-              <h3 style={{ marginTop: 0 }}>4. How to Reset / Recover</h3>
+              <h3 style={{ marginTop: 0 }}>4. How to Connect a Second Parent Device in 30 Seconds</h3>
+              <ol style={{ paddingLeft: '1.25rem', lineHeight: '1.8' }}>
+                <li>
+                  On the first parent's device, copy the <strong>👨‍👩‍👧 1-Click Co-Parent Invite Link</strong>.
+                </li>
+                <li>
+                  Send the link to the second parent's computer or smartphone (via text, message, or email).
+                </li>
+                <li>
+                  When they tap the link, it opens directly with the Family Code and Database URL filled in. They enter their friendly name (e.g. "Dad's Phone") and the <strong>Parent PIN</strong> (default: <code>1234</code>).
+                </li>
+                <li>
+                  Click <strong>Connect as Co-Parent</strong>. Both parents now have simultaneous full administrative oversight, can view quiz attempts, and student progress synchronizes automatically across all devices!
+                </li>
+              </ol>
+            </div>
+
+            <div className="settings-panel">
+              <h3 style={{ marginTop: 0 }}>5. How to Reset / Recover</h3>
               <p className="muted-sm">
-                If anything gets confused or you want a fresh start, simply click <strong>"Disconnect &amp; Reset Sync"</strong> on the Parent tab. This returns your device to clean standalone mode without deleting your local student records.
+                If anything gets confused or you want a fresh start, simply click <strong>"Disconnect This Device"</strong> on the Parent tab. This returns your device to clean standalone mode without deleting your local student records.
               </p>
             </div>
           </div>

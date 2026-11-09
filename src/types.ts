@@ -149,12 +149,21 @@ export interface AttemptRecord {
 
 export type DeviceRole = 'parent' | 'student'
 
+export interface ConnectedParentDevice {
+  id: string
+  name: string
+  linkedAt: string
+  lastSeenAt?: string
+}
+
 export interface FamilySyncConfig {
   enabled: boolean
   familyCode: string
   syncEndpointUrl: string
   deviceRole: DeviceRole
   boundStudentId?: string
+  parentDeviceId?: string
+  parentName?: string
   autoSyncIntervalMin: 0 | 5 | 15
   lastSyncedAt?: string
 }
@@ -175,6 +184,7 @@ export interface AppSettings {
   lastUpdateCheck?: string
   updatedAt?: string
   deletedStudentIds?: string[]
+  connectedParents?: ConnectedParentDevice[]
   familySync?: FamilySyncConfig
 }
 

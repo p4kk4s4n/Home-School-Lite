@@ -3,6 +3,7 @@ import {
   AppSettings,
   AttemptRecord,
   BackupPayload,
+  ConnectedParentDevice,
   Enrollment,
   GradeLevel,
   Student,
@@ -539,10 +540,31 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
     enrollmentMap.set(e.id, e)
   }
 
-  // 4. Merge Settings (newer updatedAt wins for academic/parent settings; preserve device-local sync role)
+  // 4. Merge Settings & Connected Parents (union connectedParents by id, preserving latest lastSeenAt)
+  const parentDeviceMap = new Map<string, ConnectedParentDevice>()
+  for (const p of localSettings.connectedParents ?? []) {
+    parentDeviceMap.set(p.id, p)
+  }
+  for (const p of remote.settings?.connectedParents ?? []) {
+    const existing = parentDeviceMap.get(p.id)
+    if (!existing) {
+      parentDeviceMap.set(p.id, p)
+    } else {
+      const existingSeen = existing.lastSeenAt || existing.linkedAt
+      const incomingSeen = p.lastSeenAt || p.linkedAt
+      parentDeviceMap.set(p.id, {
+        ...existing,
+        name: p.name || existing.name,
+        lastSeenAt: incomingSeen >= existingSeen ? p.lastSeenAt : existing.lastSeenAt,
+      })
+    }
+  }
+  const mergedConnectedParents = Array.from(parentDeviceMap.values())
+
   let mergedSettings: AppSettings = {
     ...localSettings,
     deletedStudentIds: Array.from(allDeletedIds),
+    connectedParents: mergedConnectedParents,
   }
   if (remote.settings) {
     const localTime = Date.parse(localSettings.updatedAt || '0')
@@ -564,6 +586,7 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
           localSettings.includeOhioAdjustments ??
           true,
         deletedStudentIds: Array.from(allDeletedIds),
+        connectedParents: mergedConnectedParents,
         updatedAt: remote.settings.updatedAt,
         familySync: {
           ...localSettings.familySync!,
@@ -574,6 +597,7 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
       mergedSettings = {
         ...localSettings,
         deletedStudentIds: Array.from(allDeletedIds),
+        connectedParents: mergedConnectedParents,
         familySync: {
           ...localSettings.familySync!,
           lastSyncedAt: new Date().toISOString(),

@@ -1,4 +1,4 @@
-import { BackupPayload, Student } from '../types'
+import { BackupPayload, ConnectedParentDevice, Student } from '../types'
 import {
   exportBackupData,
   getSettings,
@@ -151,20 +151,61 @@ export async function testSyncConnection(
 export async function createCloudFamilyCircle(options: {
   familyCode: string
   endpointUrl: string
+  parentName?: string
   fetchImpl?: typeof fetch
 }): Promise<{ familyCode: string; endpointUrl: string }> {
-  const { familyCode: rawCode, endpointUrl: rawUrl, fetchImpl = fetch } = options
+  const {
+    familyCode: rawCode,
+    endpointUrl: rawUrl,
+    parentName,
+    fetchImpl = fetch,
+  } = options
   const familyCode = normalizeFamilyCode(rawCode)
   if (!familyCode) {
     throw new Error('Please enter a valid Family Code (e.g. HSL-78421).')
   }
 
   const endpointUrl = resolveSyncEndpoint(familyCode, rawUrl)
+  const currentSettings = await getSettings()
+  const parentDeviceId =
+    currentSettings.familySync?.parentDeviceId ||
+    `parent-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`
+  const displayName = (parentName || currentSettings.familySync?.parentName || 'Primary Parent').trim()
+  const nowIso = new Date().toISOString()
+
+  const parentDevice: ConnectedParentDevice = {
+    id: parentDeviceId,
+    name: displayName,
+    linkedAt: nowIso,
+    lastSeenAt: nowIso,
+  }
+
+  const existingParents = currentSettings.connectedParents || []
+  const updatedParents = [
+    ...existingParents.filter((p) => p.id !== parentDeviceId),
+    parentDevice,
+  ]
+
+  await saveSettings({
+    connectedParents: updatedParents,
+    familySync: {
+      enabled: true,
+      familyCode,
+      syncEndpointUrl: rawUrl.trim(),
+      deviceRole: 'parent',
+      parentDeviceId,
+      parentName: displayName,
+      boundStudentId: undefined,
+      autoSyncIntervalMin: 5,
+      lastSyncedAt: nowIso,
+    },
+  })
+
   const payload = await exportBackupData()
   const body: BackupPayload = {
     ...payload,
     familyCode,
-    exportedAt: new Date().toISOString(),
+    exportedAt: nowIso,
   }
 
   const res = await fetchImpl(endpointUrl, {
@@ -184,18 +225,6 @@ export async function createCloudFamilyCircle(options: {
     }
     throw new Error(`Cloud database returned HTTP ${res.status} when creating Family Circle.`)
   }
-
-  await saveSettings({
-    familySync: {
-      enabled: true,
-      familyCode,
-      syncEndpointUrl: rawUrl.trim(),
-      deviceRole: 'parent',
-      boundStudentId: undefined,
-      autoSyncIntervalMin: 5,
-      lastSyncedAt: new Date().toISOString(),
-    },
-  })
 
   return { familyCode, endpointUrl }
 }
@@ -298,9 +327,16 @@ export async function joinFamilyAsParent(options: {
   familyCode: string
   parentPin: string
   customEndpointUrl: string
+  parentName?: string
   fetchImpl?: typeof fetch
 }): Promise<{ familyCode: string; studentsCount: number }> {
-  const { familyCode: rawCode, parentPin, customEndpointUrl, fetchImpl = fetch } = options
+  const {
+    familyCode: rawCode,
+    parentPin,
+    customEndpointUrl,
+    parentName,
+    fetchImpl = fetch,
+  } = options
   const familyCode = normalizeFamilyCode(rawCode)
   const remote = await fetchRemoteFamilyPreview(familyCode, customEndpointUrl, fetchImpl)
 
@@ -312,27 +348,56 @@ export async function joinFamilyAsParent(options: {
   const merged = await mergeFamilyPayload(remote)
   const endpointUrl = resolveSyncEndpoint(familyCode, customEndpointUrl)
 
+  const currentLocal = await getSettings()
+  const parentDeviceId =
+    currentLocal.familySync?.parentDeviceId ||
+    `parent-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`
+  const displayName = (parentName || currentLocal.familySync?.parentName || 'Parent Device').trim()
+  const nowIso = new Date().toISOString()
+
+  const parentDevice: ConnectedParentDevice = {
+    id: parentDeviceId,
+    name: displayName,
+    linkedAt: nowIso,
+    lastSeenAt: nowIso,
+  }
+
+  const existingParents = currentLocal.connectedParents || []
+  const updatedParents = [
+    ...existingParents.filter((p) => p.id !== parentDeviceId),
+    parentDevice,
+  ]
+
   await saveSettings({
+    connectedParents: updatedParents,
     familySync: {
       enabled: true,
       familyCode,
       syncEndpointUrl: customEndpointUrl.trim(),
       deviceRole: 'parent',
+      parentDeviceId,
+      parentName: displayName,
       boundStudentId: undefined,
       autoSyncIntervalMin: 5,
-      lastSyncedAt: new Date().toISOString(),
+      lastSyncedAt: nowIso,
     },
   })
 
-  // Push back any local student attempts from this parent device
+  // Push back updated payload with this newly linked parent device
   const updatedPayload = await exportBackupData()
+  const body: BackupPayload = {
+    ...updatedPayload,
+    familyCode,
+    exportedAt: nowIso,
+  }
+
   await fetchImpl(endpointUrl, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/json',
     },
-    body: JSON.stringify(updatedPayload),
+    body: JSON.stringify(body),
   }).catch(() => {})
 
   return {
@@ -380,7 +445,19 @@ export async function syncFamilyCircle(
       }
     }
 
+    // Update this device's lastSeenAt in connectedParents if this is a parent device
+    let updatedParents = settings.connectedParents || []
+    if (syncCfg.deviceRole === 'parent' && syncCfg.parentDeviceId) {
+      updatedParents = updatedParents.map((p) =>
+        p.id === syncCfg.parentDeviceId ? { ...p, lastSeenAt: nowIso } : p
+      )
+    }
+
     const latestLocal = await exportBackupData()
+    if (syncCfg.deviceRole === 'parent' && syncCfg.parentDeviceId) {
+      latestLocal.settings.connectedParents = updatedParents
+    }
+
     const putRes = await fetchImpl(endpoint, {
       method: 'PUT',
       headers: {
@@ -395,6 +472,7 @@ export async function syncFamilyCircle(
     }
 
     await saveSettings({
+      connectedParents: updatedParents,
       familySync: {
         ...syncCfg,
         lastSyncedAt: nowIso,

@@ -50,6 +50,7 @@ import {
   createCloudFamilyCircle,
   disconnectFamilySync,
   generateRandomFamilyCode,
+  joinFamilyAsParent,
   joinFamilyAsStudent,
   normalizeFamilyCode,
   pushFamilyCircleToCloud,
@@ -917,5 +918,75 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
     expect(aliceAttempts).toHaveLength(1)
     expect(bobAttempts).toHaveLength(1)
     expect((await getStudents()).map((s) => s.name)).toContain('Bob')
+  })
+
+  it('allows multiple parent devices to link, validate Parent PIN, and sync connected parent rosters', async () => {
+    // 1. Parent 1 initializes circle
+    await resetDbConnectionForTests()
+    await createStudent({ name: 'Charlie', avatar: '🦁', grade: 5 })
+
+    let cloudData: any = null
+    const mockFetch = vi.fn().mockImplementation((url: string, init?: RequestInit) => {
+      const method = init?.method || 'GET'
+      if (method === 'PUT') {
+        cloudData = JSON.parse((init?.body as string) || '{}')
+        return Promise.resolve({
+          ok: true,
+          status: 200,
+          json: async () => ({ ok: true }),
+        })
+      }
+      return Promise.resolve({
+        ok: true,
+        status: 200,
+        json: async () => cloudData,
+      })
+    })
+
+    await createCloudFamilyCircle({
+      familyCode: 'HSL-12345',
+      endpointUrl: 'https://test-rtdb.firebaseio.com',
+      parentName: "Mom's Laptop",
+      fetchImpl: mockFetch as unknown as typeof fetch,
+    })
+
+    expect(cloudData.settings.connectedParents).toHaveLength(1)
+    expect(cloudData.settings.connectedParents[0].name).toBe("Mom's Laptop")
+
+    // 2. Parent 2 tries to link on a fresh device with wrong PIN
+    await resetDbConnectionForTests()
+    await expect(
+      joinFamilyAsParent({
+        familyCode: 'HSL-12345',
+        parentPin: '9999',
+        customEndpointUrl: 'https://test-rtdb.firebaseio.com',
+        parentName: "Dad's Phone",
+        fetchImpl: mockFetch as unknown as typeof fetch,
+      })
+    ).rejects.toThrow(/Incorrect Parent PIN/)
+
+    // 3. Parent 2 links with correct PIN (default 1234)
+    const linked = await joinFamilyAsParent({
+      familyCode: 'HSL-12345',
+      parentPin: '1234',
+      customEndpointUrl: 'https://test-rtdb.firebaseio.com',
+      parentName: "Dad's Phone",
+      fetchImpl: mockFetch as unknown as typeof fetch,
+    })
+
+    expect(linked.familyCode).toBe('HSL-12345')
+    expect(linked.studentsCount).toBeGreaterThanOrEqual(1)
+
+    // Verify cloud has both parent devices registered
+    expect(cloudData.settings.connectedParents).toHaveLength(2)
+    const parentNames = cloudData.settings.connectedParents.map((p: any) => p.name)
+    expect(parentNames).toContain("Mom's Laptop")
+    expect(parentNames).toContain("Dad's Phone")
+
+    // Verify local device has full parent access
+    const p2Settings = await getSettings()
+    expect(p2Settings.familySync?.deviceRole).toBe('parent')
+    expect(p2Settings.familySync?.parentName).toBe("Dad's Phone")
+    expect((await getStudents()).map((s) => s.name)).toContain('Charlie')
   })
 })
