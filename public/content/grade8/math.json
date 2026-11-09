@@ -1,0 +1,1003 @@
+{
+  "id": "g8-math",
+  "subject": "math",
+  "grade": 8,
+  "title": "Grade 8 Mathematics (Pre-Algebra & Linear Functions)",
+  "subtitle": "Exponents, Scientific Notation, Linear Equations, Systems, Functions & Pythagorean Geometry",
+  "credits": 1,
+  "color": "#1e40af",
+  "icon": "📈",
+  "units": [
+    {
+      "id": "g8-math-u1",
+      "title": "Unit 1: Exponents, Roots & Scientific Notation",
+      "standards": [
+        "8.EE.A.1",
+        "8.EE.A.2",
+        "8.EE.A.3"
+      ],
+      "lessons": [
+        {
+          "id": "g8-math-u1-l1",
+          "unitId": "g8-math-u1",
+          "title": "Micro-Lesson 1A: Exponent Product & Power Rules",
+          "kind": "lesson",
+          "partOf": "Exponents & Scientific Notation",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-exponent-properties",
+          "videoTitle": "Khan Academy: Exponent Properties (Product & Power Rules)",
+          "reading": "One rule at a time! Product Rule: when multiplying powers with the same base, keep the base and ADD the exponents (x^a · x^b = x^(a+b)). Power Rule: when raising a power to another power, MULTIPLY the exponents ((x^a)^b = x^(a·b)).",
+          "principles": [
+            {
+              "id": "p-g8-exp-product",
+              "title": "Multiplying Powers with the Same Base",
+              "standard": "8.EE.A.1",
+              "summary": "Add the exponents when multiplying powers with the same base: x^a · x^b = x^(a+b).",
+              "generatorId": "g8.exponent-product"
+            },
+            {
+              "id": "p-g8-exp-power",
+              "title": "Power of a Power Rule",
+              "standard": "8.EE.A.1",
+              "summary": "Multiply the exponents when raising a power to a power: (x^a)^b = x^(a·b).",
+              "generatorId": "g8.exponent-power"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Exponents & Scientific Notation] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Multiplying Powers with the Same Base & Power of a Power Rule\" (8.EE.A.1, 8.EE.A.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-math-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Exponent Properties (Product & Power Rules)",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Multiplying Powers with the Same Base & Power of a Power Rule\" (8.EE.A.1, 8.EE.A.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-exponent-properties"
+              },
+              {
+                "id": "g8-math-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Multiplying Powers with the Same Base & Power of a Power Rule.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-math-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (8.EE.A.1, 8.EE.A.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Multiplying Powers with the Same Base.",
+              "Add the exponents when multiplying powers with the same base: x^a · x^b = x^(a+b).",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Multiplying Powers with the Same Base\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Exponents & Scientific Notation\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20math%20Exponents%20%26%20Scientific%20Notation%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Exponents & Scientific Notation\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Exponents%20%26%20Scientific%20Notation",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Exponents & Scientific Notation (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Exponents%20%26%20Scientific%20Notation",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-math-u1-l2",
+          "unitId": "g8-math-u1",
+          "title": "Micro-Lesson 1B: Scientific Notation for Large Numbers",
+          "kind": "lesson",
+          "partOf": "Exponents & Scientific Notation",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-scientific-notation",
+          "videoTitle": "Khan Academy: Intro to Scientific Notation",
+          "reading": "Scientific notation writes very large numbers in the compact form a × 10^n, where 1 ≤ a < 10. Count how many places you move the decimal point to the left so only one non-zero digit remains in front; that count is the exponent n.",
+          "principles": [
+            {
+              "id": "p-g8-sci-not",
+              "title": "Writing Large Numbers in Scientific Notation",
+              "standard": "8.EE.A.3",
+              "summary": "Place the decimal after the first non-zero digit and count places moved as the power of 10.",
+              "generatorId": "g8.sci-notation"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Exponents & Scientific Notation] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Writing Large Numbers in Scientific Notation\" (8.EE.A.3), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-math-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Intro to Scientific Notation",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Writing Large Numbers in Scientific Notation\" (8.EE.A.3). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-scientific-notation"
+              },
+              {
+                "id": "g8-math-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Writing Large Numbers in Scientific Notation.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-math-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (8.EE.A.3)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Writing Large Numbers in Scientific Notation.",
+              "Place the decimal after the first non-zero digit and count places moved as the power of 10.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Writing Large Numbers in Scientific Notation\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Exponents & Scientific Notation\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20math%20Exponents%20%26%20Scientific%20Notation%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Exponents & Scientific Notation\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Exponents%20%26%20Scientific%20Notation",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Exponents & Scientific Notation (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Exponents%20%26%20Scientific%20Notation",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-math-u1-l3",
+          "unitId": "g8-math-u1",
+          "title": "Micro-Lesson 1C: Evaluating Square Roots",
+          "kind": "lesson",
+          "partOf": "Exponents & Scientific Notation",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-roots",
+          "videoTitle": "Khan Academy: Square Roots of Perfect Squares",
+          "reading": "Finding a square root is the inverse of squaring a number. The principal square root √n asks: \"What positive number multiplied by itself equals n?\" For example, √49 = 7 because 7 × 7 = 49.",
+          "principles": [
+            {
+              "id": "p-g8-sqrt",
+              "title": "Evaluating Square Roots of Perfect Squares",
+              "standard": "8.EE.A.2",
+              "summary": "Find the positive factor that, when multiplied by itself, equals the radicand.",
+              "generatorId": "g8.square-cube-roots"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Exponents & Scientific Notation] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Evaluating Square Roots of Perfect Squares\" (8.EE.A.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-math-u1-l3-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Square Roots of Perfect Squares",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Evaluating Square Roots of Perfect Squares\" (8.EE.A.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-roots"
+              },
+              {
+                "id": "g8-math-u1-l3-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Evaluating Square Roots of Perfect Squares.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-math-u1-l3-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (8.EE.A.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Evaluating Square Roots of Perfect Squares.",
+              "Find the positive factor that, when multiplied by itself, equals the radicand.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Evaluating Square Roots of Perfect Squares\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Exponents & Scientific Notation\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20math%20Exponents%20%26%20Scientific%20Notation%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Exponents & Scientific Notation\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Exponents%20%26%20Scientific%20Notation",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Exponents & Scientific Notation (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Exponents%20%26%20Scientific%20Notation",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-math-u1-review",
+          "unitId": "g8-math-u1",
+          "title": "Unit 1 Checkpoint Review: Exponents, Roots & Scientific Notation",
+          "kind": "lesson_review",
+          "partOf": "Exponents & Scientific Notation",
+          "estimatedMinutes": 12,
+          "videoUrl": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations",
+          "videoTitle": "Unit 1 Review: Exponents, Roots & Scientific Notation",
+          "reading": "Quick 6-question check combining exponent rules, scientific notation, and square roots. Each retry generates brand-new numbers!",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g8-exp-product",
+              "title": "Multiplying Powers with the Same Base",
+              "standard": "8.EE.A.1",
+              "summary": "Add exponents when multiplying like bases.",
+              "generatorId": "g8.exponent-product"
+            },
+            {
+              "id": "p-g8-exp-power",
+              "title": "Power of a Power Rule",
+              "standard": "8.EE.A.1",
+              "summary": "Multiply exponents when raising a power to a power.",
+              "generatorId": "g8.exponent-power"
+            },
+            {
+              "id": "p-g8-sci-not",
+              "title": "Writing Large Numbers in Scientific Notation",
+              "standard": "8.EE.A.3",
+              "summary": "Express large numbers as a × 10^n.",
+              "generatorId": "g8.sci-notation"
+            },
+            {
+              "id": "p-g8-sqrt",
+              "title": "Evaluating Square Roots of Perfect Squares",
+              "standard": "8.EE.A.2",
+              "summary": "Evaluate principal square roots.",
+              "generatorId": "g8.square-cube-roots"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering Multiplying Powers with the Same Base & Power of a Power Rule & Writing Large Numbers in Scientific Notation & Evaluating Square Roots of Perfect Squares (8.EE.A.1, 8.EE.A.1, 8.EE.A.3, 8.EE.A.2). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g8-math-u1-review-step-review",
+                "type": "reading",
+                "title": "Review Principles: Multiplying Powers with the Same Base & Power of a Power Rule & Writing Large Numbers in Scientific Notation & Evaluating Square Roots of Perfect Squares",
+                "description": "Read the Core Concept Summary and Principle cards on this page (8.EE.A.1, 8.EE.A.1, 8.EE.A.3, 8.EE.A.2) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g8-math-u1-review-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 Review: Exponents, Roots & Scientific Notation",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Multiplying Powers with the Same Base & Power of a Power Rule & Writing Large Numbers in Scientific Notation & Evaluating Square Roots of Perfect Squares\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Multiplying Powers with the Same Base.",
+              "Add exponents when multiplying like bases.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Multiplying Powers with the Same Base\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Exponents & Scientific Notation\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20math%20Exponents%20%26%20Scientific%20Notation%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Exponents & Scientific Notation\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Exponents%20%26%20Scientific%20Notation",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Exponents & Scientific Notation (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Exponents%20%26%20Scientific%20Notation",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g8-math-u2",
+      "title": "Unit 2: Linear Equations, Slope, Systems & Functions",
+      "standards": [
+        "8.EE.B.6",
+        "8.EE.C.7",
+        "8.EE.C.8",
+        "8.F.A.2"
+      ],
+      "lessons": [
+        {
+          "id": "g8-math-u2-l1",
+          "unitId": "g8-math-u2",
+          "title": "Micro-Lesson 2A: Finding Slope & Slope-Intercept Form (y = mx + b)",
+          "kind": "lesson",
+          "partOf": "Linear Equations & Functions",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions",
+          "videoTitle": "Khan Academy: Slope Formula & Slope-Intercept Intro",
+          "reading": "Slope (m) measures steepness: m = (y₂ - y₁) ÷ (x₂ - x₁) (\"rise over run\"). In slope-intercept form y = mx + b, m is the rate of change (slope) and b is the y-intercept (where the line crosses the vertical y-axis at x = 0).",
+          "principles": [
+            {
+              "id": "p-g8-slope-pts",
+              "title": "Finding Slope from Two Coordinate Points",
+              "standard": "8.EE.B.6",
+              "summary": "Compute m = (y₂ - y₁) ÷ (x₂ - x₁) to find the rate of change between two points.",
+              "generatorId": "g8.slope-two-points"
+            },
+            {
+              "id": "p-g8-slope-int",
+              "title": "Identifying Slope & Y-Intercept in y = mx + b",
+              "standard": "8.EE.B.6",
+              "summary": "In y = mx + b, m is the coefficient of x (slope) and b is the constant term (y-intercept).",
+              "generatorId": "g8.slope-intercept"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Linear Equations & Functions] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Finding Slope from Two Coordinate Points & Identifying Slope & Y-Intercept in y = mx + b\" (8.EE.B.6, 8.EE.B.6), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-math-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Slope Formula & Slope-Intercept Intro",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Finding Slope from Two Coordinate Points & Identifying Slope & Y-Intercept in y = mx + b\" (8.EE.B.6, 8.EE.B.6). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions"
+              },
+              {
+                "id": "g8-math-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Finding Slope from Two Coordinate Points & Identifying Slope & Y-Intercept in y = mx + b.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-math-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (8.EE.B.6, 8.EE.B.6)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Finding Slope from Two Coordinate Points.",
+              "Compute m = (y₂ - y₁) ÷ (x₂ - x₁) to find the rate of change between two points.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Finding Slope from Two Coordinate Points\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Linear Equations & Functions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20math%20Linear%20Equations%20%26%20Functions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Linear Equations & Functions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Linear%20Equations%20%26%20Functions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Linear Equations & Functions (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Linear%20Equations%20%26%20Functions",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-math-u2-l2",
+          "unitId": "g8-math-u2",
+          "title": "Micro-Lesson 2B: Multi-Step Equations, Systems & Function Rules",
+          "kind": "lesson",
+          "partOf": "Linear Equations & Functions",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-solving-equations",
+          "videoTitle": "Khan Academy: Equations with Variables on Both Sides & Systems",
+          "reading": "To solve ax + b = cx + d, subtract cx from both sides to gather x terms on the left, subtract b to gather constants on the right, then divide. For a system of equations, substitute the known value of x to find y. For a function f(x) = mx + b, plug in the input x and simplify.",
+          "principles": [
+            {
+              "id": "p-g8-multi-eq",
+              "title": "Solving Equations with Variables on Both Sides",
+              "standard": "8.EE.C.7",
+              "summary": "Collect variable terms on one side and constants on the other, then divide.",
+              "generatorId": "g8.multi-step-eq"
+            },
+            {
+              "id": "p-g8-systems",
+              "title": "Solving Systems of Linear Equations by Substitution",
+              "standard": "8.EE.C.8",
+              "summary": "Substitute the known coordinate into the second equation to find the intersection point (x, y).",
+              "generatorId": "g8.systems-linear"
+            },
+            {
+              "id": "p-g8-func-rate",
+              "title": "Evaluating Linear Function Rules f(x) = mx + b",
+              "standard": "8.F.A.2",
+              "summary": "Substitute the input value x into f(x) = mx + b to compute the output.",
+              "generatorId": "g8.functions-rate"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Linear Equations & Functions] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Solving Equations with Variables on Both Sides & Solving Systems of Linear Equations by Substitution & Evaluating Linear Function Rules f(x) = mx + b\" (8.EE.C.7, 8.EE.C.8, 8.F.A.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-math-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Equations with Variables on Both Sides & Systems",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Solving Equations with Variables on Both Sides & Solving Systems of Linear Equations by Substitution & Evaluating Linear Function Rules f(x) = mx + b\" (8.EE.C.7, 8.EE.C.8, 8.F.A.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-solving-equations"
+              },
+              {
+                "id": "g8-math-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Solving Equations with Variables on Both Sides & Solving Systems of Linear Equations by Substitution & Evaluating Linear Function Rules f(x) = mx + b.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-math-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (8.EE.C.7, 8.EE.C.8, 8.F.A.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Solving Equations with Variables on Both Sides.",
+              "Collect variable terms on one side and constants on the other, then divide.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Solving Equations with Variables on Both Sides\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Linear Equations & Functions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20math%20Linear%20Equations%20%26%20Functions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Linear Equations & Functions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Linear%20Equations%20%26%20Functions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Linear Equations & Functions (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Linear%20Equations%20%26%20Functions",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-math-u2-test",
+          "unitId": "g8-math-u2",
+          "title": "Unit 2 Exam: Slope, Linear Equations, Systems & Functions",
+          "kind": "unit_test",
+          "partOf": "Linear Equations & Functions",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions",
+          "videoTitle": "Unit 2 Mastery Review: Linear Algebra",
+          "reading": "This 8-question unit exam covers slope between two points, y = mx + b, equations with variables on both sides, linear systems, and function evaluation.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g8-slope-pts",
+              "title": "Finding Slope from Two Coordinate Points",
+              "standard": "8.EE.B.6",
+              "summary": "Compute slope using rise over run.",
+              "generatorId": "g8.slope-two-points"
+            },
+            {
+              "id": "p-g8-slope-int",
+              "title": "Identifying Slope & Y-Intercept in y = mx + b",
+              "standard": "8.EE.B.6",
+              "summary": "Read m and b from slope-intercept form.",
+              "generatorId": "g8.slope-intercept"
+            },
+            {
+              "id": "p-g8-multi-eq",
+              "title": "Solving Equations with Variables on Both Sides",
+              "standard": "8.EE.C.7",
+              "summary": "Isolate x across both sides of the equation.",
+              "generatorId": "g8.multi-step-eq"
+            },
+            {
+              "id": "p-g8-systems",
+              "title": "Solving Systems of Linear Equations by Substitution",
+              "standard": "8.EE.C.8",
+              "summary": "Find the ordered pair (x, y) that satisfies both equations.",
+              "generatorId": "g8.systems-linear"
+            },
+            {
+              "id": "p-g8-func-rate",
+              "title": "Evaluating Linear Function Rules f(x) = mx + b",
+              "standard": "8.F.A.2",
+              "summary": "Evaluate f(x) for a given input.",
+              "generatorId": "g8.functions-rate"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Finding Slope from Two Coordinate Points & Identifying Slope & Y-Intercept in y = mx + b & Solving Equations with Variables on Both Sides & Solving Systems of Linear Equations by Substitution & Evaluating Linear Function Rules f(x) = mx + b (8.EE.B.6, 8.EE.B.6, 8.EE.C.7, 8.EE.C.8, 8.F.A.2). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g8-math-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Finding Slope from Two Coordinate Points & Identifying Slope & Y-Intercept in y = mx + b & Solving Equations with Variables on Both Sides & Solving Systems of Linear Equations by Substitution & Evaluating Linear Function Rules f(x) = mx + b",
+                "description": "Read the Core Concept Summary and Principle cards on this page (8.EE.B.6, 8.EE.B.6, 8.EE.C.7, 8.EE.C.8, 8.F.A.2) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g8-math-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Mastery Review: Linear Algebra",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Finding Slope from Two Coordinate Points & Identifying Slope & Y-Intercept in y = mx + b & Solving Equations with Variables on Both Sides & Solving Systems of Linear Equations by Substitution & Evaluating Linear Function Rules f(x) = mx + b\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Finding Slope from Two Coordinate Points.",
+              "Compute slope using rise over run.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Finding Slope from Two Coordinate Points\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Linear Equations & Functions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20math%20Linear%20Equations%20%26%20Functions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Linear Equations & Functions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Linear%20Equations%20%26%20Functions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Linear Equations & Functions (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Linear%20Equations%20%26%20Functions",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g8-math-u3",
+      "title": "Unit 3: Pythagorean Theorem, Transformations & Cylinder Volume",
+      "standards": [
+        "8.G.A.1",
+        "8.G.B.7",
+        "OH.8.G.C.9"
+      ],
+      "isOhioExtension": true,
+      "lessons": [
+        {
+          "id": "g8-math-u3-l1",
+          "unitId": "g8-math-u3",
+          "title": "Micro-Lesson 3A: Pythagorean Theorem (Hypotenuse & Missing Leg)",
+          "kind": "lesson",
+          "partOf": "Pythagorean Theorem & Geometry",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem",
+          "videoTitle": "Khan Academy: Intro to the Pythagorean Theorem",
+          "reading": "In any right triangle with legs a and b and hypotenuse c (the longest side across from the right angle), a² + b² = c². To find the hypotenuse, compute c = √(a² + b²). To find a missing leg, subtract: b = √(c² - a²).",
+          "principles": [
+            {
+              "id": "p-g8-pyth-hyp",
+              "title": "Finding the Hypotenuse with a² + b² = c²",
+              "standard": "8.G.B.7",
+              "summary": "Square both legs, add them together, and take the square root to find hypotenuse c.",
+              "generatorId": "g8.pythagorean-hyp"
+            },
+            {
+              "id": "p-g8-pyth-leg",
+              "title": "Finding a Missing Leg with b² = c² - a²",
+              "standard": "8.G.B.7",
+              "summary": "Subtract the known leg squared from the hypotenuse squared, then take the square root.",
+              "generatorId": "g8.pythagorean-leg"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Pythagorean Theorem & Geometry] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Finding the Hypotenuse with a² + b² = c² & Finding a Missing Leg with b² = c² - a²\" (8.G.B.7, 8.G.B.7), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-math-u3-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Intro to the Pythagorean Theorem",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Finding the Hypotenuse with a² + b² = c² & Finding a Missing Leg with b² = c² - a²\" (8.G.B.7, 8.G.B.7). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem"
+              },
+              {
+                "id": "g8-math-u3-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Finding the Hypotenuse with a² + b² = c² & Finding a Missing Leg with b² = c² - a².",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-math-u3-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (8.G.B.7, 8.G.B.7)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Finding the Hypotenuse with a² + b² = c².",
+              "Square both legs, add them together, and take the square root to find hypotenuse c.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Finding the Hypotenuse with a² + b² = c²\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Pythagorean Theorem & Geometry\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20math%20Pythagorean%20Theorem%20%26%20Geometry%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Pythagorean Theorem & Geometry\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Pythagorean%20Theorem%20%26%20Geometry",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Pythagorean Theorem & Geometry (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Pythagorean%20Theorem%20%26%20Geometry",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-math-u3-l2",
+          "unitId": "g8-math-u3",
+          "title": "Micro-Lesson 3B: Coordinate Translations & Volume of Cylinders",
+          "kind": "lesson",
+          "partOf": "Pythagorean Theorem & Geometry",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-volume",
+          "videoTitle": "Khan Academy: Translations & Cylinder Volume (V = πr²h)",
+          "reading": "To translate a point (x, y) on the coordinate plane, add to x when moving right (subtract when moving left) and add to y when moving up (subtract when moving down). For a cylinder with radius r and height h (Ohio Standard OH.8.G.C.9), multiply circular base area πr² by height h: V = πr²h.",
+          "principles": [
+            {
+              "id": "p-g8-trans",
+              "title": "Coordinate Plane Translations",
+              "standard": "8.G.A.1",
+              "summary": "Shift (x, y) horizontally by adding/subtracting dx and vertically by adding/subtracting dy.",
+              "generatorId": "g8.transformations"
+            },
+            {
+              "id": "p-g8-vol-cyl",
+              "title": "Volume of Cylinders (V = πr²h)",
+              "standard": "OH.8.G.C.9",
+              "summary": "Square the radius r, multiply by height h, and attach π cubic units.",
+              "generatorId": "g8.volume-cylinder-cone"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Pythagorean Theorem & Geometry] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Coordinate Plane Translations & Volume of Cylinders (V = πr²h)\" (8.G.A.1, OH.8.G.C.9), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-math-u3-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Translations & Cylinder Volume (V = πr²h)",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Coordinate Plane Translations & Volume of Cylinders (V = πr²h)\" (8.G.A.1, OH.8.G.C.9). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-volume"
+              },
+              {
+                "id": "g8-math-u3-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Coordinate Plane Translations & Volume of Cylinders (V = πr²h).",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-math-u3-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (8.G.A.1, OH.8.G.C.9)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Coordinate Plane Translations.",
+              "Shift (x, y) horizontally by adding/subtracting dx and vertically by adding/subtracting dy.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Coordinate Plane Translations\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Pythagorean Theorem & Geometry\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20math%20Pythagorean%20Theorem%20%26%20Geometry%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Pythagorean Theorem & Geometry\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Pythagorean%20Theorem%20%26%20Geometry",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Pythagorean Theorem & Geometry (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Pythagorean%20Theorem%20%26%20Geometry",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-math-u3-test",
+          "unitId": "g8-math-u3",
+          "title": "Unit 3 Exam: Pythagorean Theorem, Transformations & Volume",
+          "kind": "unit_test",
+          "partOf": "Pythagorean Theorem & Geometry",
+          "isOhioExtension": true,
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry",
+          "videoTitle": "Unit 3 Geometry Mastery Review",
+          "reading": "Complete this 8-question exam covering right triangles, coordinate translations, and cylinder volume.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g8-pyth-hyp",
+              "title": "Finding the Hypotenuse with a² + b² = c²",
+              "standard": "8.G.B.7",
+              "summary": "Use a² + b² = c² to solve for hypotenuse c.",
+              "generatorId": "g8.pythagorean-hyp"
+            },
+            {
+              "id": "p-g8-pyth-leg",
+              "title": "Finding a Missing Leg with b² = c² - a²",
+              "standard": "8.G.B.7",
+              "summary": "Use b² = c² - a² to solve for a missing leg.",
+              "generatorId": "g8.pythagorean-leg"
+            },
+            {
+              "id": "p-g8-trans",
+              "title": "Coordinate Plane Translations",
+              "standard": "8.G.A.1",
+              "summary": "Find image coordinates after a translation.",
+              "generatorId": "g8.transformations"
+            },
+            {
+              "id": "p-g8-vol-cyl",
+              "title": "Volume of Cylinders (V = πr²h)",
+              "standard": "OH.8.G.C.9",
+              "summary": "Compute cylinder volume in terms of π.",
+              "generatorId": "g8.volume-cylinder-cone"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Finding the Hypotenuse with a² + b² = c² & Finding a Missing Leg with b² = c² - a² & Coordinate Plane Translations & Volume of Cylinders (V = πr²h) (8.G.B.7, 8.G.B.7, 8.G.A.1, OH.8.G.C.9). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g8-math-u3-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Finding the Hypotenuse with a² + b² = c² & Finding a Missing Leg with b² = c² - a² & Coordinate Plane Translations & Volume of Cylinders (V = πr²h)",
+                "description": "Read the Core Concept Summary and Principle cards on this page (8.G.B.7, 8.G.B.7, 8.G.A.1, OH.8.G.C.9) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g8-math-u3-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 3 Geometry Mastery Review",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Finding the Hypotenuse with a² + b² = c² & Finding a Missing Leg with b² = c² - a² & Coordinate Plane Translations & Volume of Cylinders (V = πr²h)\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Finding the Hypotenuse with a² + b² = c².",
+              "Use a² + b² = c² to solve for hypotenuse c.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Finding the Hypotenuse with a² + b² = c²\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Pythagorean Theorem & Geometry\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20math%20Pythagorean%20Theorem%20%26%20Geometry%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Pythagorean Theorem & Geometry\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Pythagorean%20Theorem%20%26%20Geometry",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Pythagorean Theorem & Geometry (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Pythagorean%20Theorem%20%26%20Geometry",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

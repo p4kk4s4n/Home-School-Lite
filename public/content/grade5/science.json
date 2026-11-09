@@ -1,0 +1,1994 @@
+{
+  "id": "g5-science",
+  "subject": "science",
+  "grade": 5,
+  "title": "Grade 5 Science",
+  "subtitle": "Ecosystems, Photosynthesis, Force, Light, Sound & Earth in Space",
+  "credits": 1,
+  "color": "#059669",
+  "icon": "🔬",
+  "units": [
+    {
+      "id": "g5-sci-u1",
+      "title": "Unit 1: Ecosystems, Food Webs & Physical Forces",
+      "standards": [
+        "5-LS1-1",
+        "5-LS2-1",
+        "OH.5.PS.1",
+        "OH.5.PS.2"
+      ],
+      "lessons": [
+        {
+          "id": "g5-sci-u1-l1",
+          "unitId": "g5-sci-u1",
+          "title": "Photosynthesis & How Plants Gain Matter",
+          "kind": "lesson",
+          "partOf": "Ecosystems & Energy",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-biology-ngss/x86f8a288a4b4cc01:matter-and-energy-in-organisms",
+          "videoTitle": "Khan Academy: Photosynthesis in Plants",
+          "reading": "Green plants are producers. Using energy from sunlight, leaves combine carbon dioxide from air and water from soil to make sugar and release oxygen. Plants get almost all of their matter from air and water.",
+          "principles": [
+            {
+              "id": "p-g5-sci-photo",
+              "title": "Photosynthesis and Plant Matter",
+              "standard": "5-LS1-1",
+              "summary": "Plants use sunlight, water, and carbon dioxide to make food and release oxygen.",
+              "bank": [
+                {
+                  "id": "g5-sci-photo-1",
+                  "type": "mc",
+                  "prompt": "What process do green plants use to make their own food?",
+                  "choices": [
+                    "Photosynthesis",
+                    "Erosion",
+                    "Evaporation",
+                    "Hibernation"
+                  ],
+                  "answer": "Photosynthesis",
+                  "explanation": "Photosynthesis is the process where plants use sunlight, water, and carbon dioxide to make sugar."
+                },
+                {
+                  "id": "g5-sci-photo-2",
+                  "type": "mc",
+                  "prompt": "Where do plants get the majority of matter to grow?",
+                  "choices": [
+                    "Air and water",
+                    "Rocks and sand",
+                    "Soil minerals only",
+                    "Moonlight"
+                  ],
+                  "answer": "Air and water",
+                  "explanation": "Plants build their tissues mostly from carbon dioxide in air and water, not soil."
+                },
+                {
+                  "id": "g5-sci-photo-3",
+                  "type": "mc",
+                  "prompt": "Which gas do plants take in from the air during photosynthesis?",
+                  "choices": [
+                    "Carbon dioxide",
+                    "Oxygen",
+                    "Helium",
+                    "Argon"
+                  ],
+                  "answer": "Carbon dioxide",
+                  "explanation": "Leaves take in carbon dioxide gas through tiny pores to make plant sugars."
+                },
+                {
+                  "id": "g5-sci-photo-4",
+                  "type": "mc",
+                  "prompt": "Which gas do plants release into the air during photosynthesis?",
+                  "choices": [
+                    "Oxygen",
+                    "Carbon dioxide",
+                    "Methane",
+                    "Hydrogen"
+                  ],
+                  "answer": "Oxygen",
+                  "explanation": "Plants release oxygen gas as a product of photosynthesis, which animals need to breathe."
+                },
+                {
+                  "id": "g5-sci-photo-5",
+                  "type": "mc",
+                  "prompt": "What provides the energy plants need to perform photosynthesis?",
+                  "choices": [
+                    "Sunlight",
+                    "Wind",
+                    "Gravity",
+                    "Ocean waves"
+                  ],
+                  "answer": "Sunlight",
+                  "explanation": "Chlorophyll in green leaves captures energy from sunlight to power photosynthesis."
+                },
+                {
+                  "id": "g5-sci-photo-6",
+                  "type": "mc",
+                  "prompt": "What role do green plants play in an ecosystem food web?",
+                  "choices": [
+                    "Producers",
+                    "Decomposers",
+                    "Carnivores",
+                    "Scavengers"
+                  ],
+                  "answer": "Producers",
+                  "explanation": "Producers are living things like plants that make their own food using sunlight."
+                },
+                {
+                  "id": "g5-sci-photo-7",
+                  "type": "mc",
+                  "prompt": "What are the tiny openings on leaves that exchange gases?",
+                  "choices": [
+                    "Stomata",
+                    "Roots",
+                    "Seeds",
+                    "Thorns"
+                  ],
+                  "answer": "Stomata",
+                  "explanation": "Stomata are microscopic pores on leaves that let carbon dioxide in and oxygen out."
+                },
+                {
+                  "id": "g5-sci-photo-8",
+                  "type": "mc",
+                  "prompt": "What happens to a green plant kept in total darkness?",
+                  "choices": [
+                    "It cannot make food by photosynthesis",
+                    "It grows twice as fast",
+                    "It turns into a mushroom",
+                    "It makes extra oxygen"
+                  ],
+                  "answer": "It cannot make food by photosynthesis",
+                  "explanation": "Without light energy, a plant cannot perform photosynthesis to produce sugar."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Ecosystems & Energy] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Photosynthesis and Plant Matter\" (5-LS1-1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-sci-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Photosynthesis in Plants",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Photosynthesis and Plant Matter\" (5-LS1-1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/middle-school-biology-ngss/x86f8a288a4b4cc01:matter-and-energy-in-organisms"
+              },
+              {
+                "id": "g5-sci-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Photosynthesis and Plant Matter.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-sci-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (5-LS1-1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Photosynthesis and Plant Matter.",
+              "Plants use sunlight, water, and carbon dioxide to make food and release oxygen.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What process do green plants use to make their own food?\" → Answer: Photosynthesis. (Photosynthesis is the process where plants use sunlight, water, and carbon dioxide to make sugar.)",
+            "links": [
+              {
+                "label": "YouTube: \"Ecosystems & Energy\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20science%20Ecosystems%20%26%20Energy%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Ecosystems & Energy\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Ecosystems%20%26%20Energy",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Ecosystems & Energy",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Ecosystems%20%26%20Energy",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-sci-u1-l2",
+          "unitId": "g5-sci-u1",
+          "title": "Food Webs, Consumers & Decomposers",
+          "kind": "lesson",
+          "partOf": "Ecosystems & Energy",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-biology-ngss/x86f8a288a4b4cc01:matter-and-energy-in-ecosystems",
+          "videoTitle": "Khan Academy: Food Chains, Food Webs & Decomposers",
+          "reading": "Food webs show how energy and matter move from producers to herbivores, omnivores, and carnivores. Decomposers like fungi and bacteria break down dead material and recycle nutrients back into the soil.",
+          "principles": [
+            {
+              "id": "p-g5-sci-web",
+              "title": "Energy Flow and Decomposers in Ecosystems",
+              "standard": "5-LS2-1",
+              "summary": "Energy flows from the Sun to producers and consumers; decomposers recycle matter.",
+              "bank": [
+                {
+                  "id": "g5-sci-web-1",
+                  "type": "mc",
+                  "prompt": "What do arrows in a food chain show?",
+                  "choices": [
+                    "The flow of energy and matter",
+                    "Which animal runs faster",
+                    "Where rivers flow",
+                    "How tall plants grow"
+                  ],
+                  "answer": "The flow of energy and matter",
+                  "explanation": "An arrow points from the organism being eaten to the organism that gets its energy."
+                },
+                {
+                  "id": "g5-sci-web-2",
+                  "type": "mc",
+                  "prompt": "What do decomposers like fungi and bacteria do in an ecosystem?",
+                  "choices": [
+                    "Break down dead matter into nutrients",
+                    "Make food from sunlight",
+                    "Hunt large predators",
+                    "Freeze water into ice"
+                  ],
+                  "answer": "Break down dead matter into nutrients",
+                  "explanation": "Decomposers recycle dead plants and animals back into soil nutrients that plants can use."
+                },
+                {
+                  "id": "g5-sci-web-3",
+                  "type": "mc",
+                  "prompt": "What is an animal that eats only plants called?",
+                  "choices": [
+                    "Herbivore",
+                    "Carnivore",
+                    "Producer",
+                    "Decomposer"
+                  ],
+                  "answer": "Herbivore",
+                  "explanation": "A herbivore is a consumer, such as a rabbit or deer, that eats only plants."
+                },
+                {
+                  "id": "g5-sci-web-4",
+                  "type": "mc",
+                  "prompt": "What is an animal that eats both plants and animals called?",
+                  "choices": [
+                    "Omnivore",
+                    "Herbivore",
+                    "Producer",
+                    "Mineral"
+                  ],
+                  "answer": "Omnivore",
+                  "explanation": "An omnivore, such as a bear or raccoon, eats both plant and animal matter."
+                },
+                {
+                  "id": "g5-sci-web-5",
+                  "type": "mc",
+                  "prompt": "Where does almost all energy in Earth’s food webs begin?",
+                  "choices": [
+                    "The Sun",
+                    "The Moon",
+                    "Ocean tides",
+                    "Rocks"
+                  ],
+                  "answer": "The Sun",
+                  "explanation": "Sunlight provides the original energy that producers capture and pass to consumers."
+                },
+                {
+                  "id": "g5-sci-web-6",
+                  "type": "mc",
+                  "prompt": "In Grass → Rabbit → Hawk, what is the rabbit?",
+                  "choices": [
+                    "Primary consumer",
+                    "Producer",
+                    "Decomposer",
+                    "Apex predator"
+                  ],
+                  "answer": "Primary consumer",
+                  "explanation": "A primary consumer is a herbivore that eats producers like grass."
+                },
+                {
+                  "id": "g5-sci-web-7",
+                  "type": "mc",
+                  "prompt": "Which organism is an example of a decomposer?",
+                  "choices": [
+                    "Mushroom",
+                    "Oak tree",
+                    "Red-tailed hawk",
+                    "Grasshopper"
+                  ],
+                  "answer": "Mushroom",
+                  "explanation": "Mushrooms are fungi that act as decomposers by breaking down dead wood and leaves."
+                },
+                {
+                  "id": "g5-sci-web-8",
+                  "type": "mc",
+                  "prompt": "What happens if all decomposers disappear from a forest?",
+                  "choices": [
+                    "Dead waste piles up and soil loses nutrients",
+                    "Trees get extra fertilizer",
+                    "Sunlight stops shining",
+                    "Herbivores turn into plants"
+                  ],
+                  "answer": "Dead waste piles up and soil loses nutrients",
+                  "explanation": "Without decomposers, nutrients stay locked in dead matter instead of returning to the soil."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Ecosystems & Energy] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Energy Flow and Decomposers in Ecosystems\" (5-LS2-1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-sci-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Food Chains, Food Webs & Decomposers",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Energy Flow and Decomposers in Ecosystems\" (5-LS2-1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/middle-school-biology-ngss/x86f8a288a4b4cc01:matter-and-energy-in-ecosystems"
+              },
+              {
+                "id": "g5-sci-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Energy Flow and Decomposers in Ecosystems.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-sci-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (5-LS2-1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Energy Flow and Decomposers in Ecosystems.",
+              "Energy flows from the Sun to producers and consumers; decomposers recycle matter.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What do arrows in a food chain show?\" → Answer: The flow of energy and matter. (An arrow points from the organism being eaten to the organism that gets its energy.)",
+            "links": [
+              {
+                "label": "YouTube: \"Ecosystems & Energy\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20science%20Ecosystems%20%26%20Energy%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Ecosystems & Energy\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Ecosystems%20%26%20Energy",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Ecosystems & Energy",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Ecosystems%20%26%20Energy",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-sci-u1-rev",
+          "unitId": "g5-sci-u1",
+          "title": "Review: Photosynthesis & Food Webs",
+          "kind": "lesson_review",
+          "partOf": "Ecosystems & Energy",
+          "estimatedMinutes": 10,
+          "questionCount": 6,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-biology-ngss/x86f8a288a4b4cc01:matter-and-energy-in-ecosystems",
+          "videoTitle": "Review: Producers, Consumers & Decomposers",
+          "reading": "Review how plants capture sunlight during photosynthesis and how energy and matter cycle through food webs.",
+          "principles": [
+            {
+              "id": "p-g5-sci-photo",
+              "title": "Photosynthesis and Plant Matter",
+              "standard": "5-LS1-1",
+              "summary": "Plants build matter mostly from air and water using sunlight.",
+              "bank": [
+                {
+                  "id": "g5-sci-photo-1",
+                  "type": "mc",
+                  "prompt": "What process do green plants use to make their own food?",
+                  "choices": [
+                    "Photosynthesis",
+                    "Erosion",
+                    "Evaporation",
+                    "Hibernation"
+                  ],
+                  "answer": "Photosynthesis",
+                  "explanation": "Photosynthesis is the process where plants use sunlight, water, and carbon dioxide to make sugar."
+                },
+                {
+                  "id": "g5-sci-photo-2",
+                  "type": "mc",
+                  "prompt": "Where do plants get the majority of matter to grow?",
+                  "choices": [
+                    "Air and water",
+                    "Rocks and sand",
+                    "Soil minerals only",
+                    "Moonlight"
+                  ],
+                  "answer": "Air and water",
+                  "explanation": "Plants build their tissues mostly from carbon dioxide in air and water, not soil."
+                },
+                {
+                  "id": "g5-sci-photo-3",
+                  "type": "mc",
+                  "prompt": "Which gas do plants take in from the air during photosynthesis?",
+                  "choices": [
+                    "Carbon dioxide",
+                    "Oxygen",
+                    "Helium",
+                    "Argon"
+                  ],
+                  "answer": "Carbon dioxide",
+                  "explanation": "Leaves take in carbon dioxide gas through tiny pores to make plant sugars."
+                },
+                {
+                  "id": "g5-sci-photo-4",
+                  "type": "mc",
+                  "prompt": "Which gas do plants release into the air during photosynthesis?",
+                  "choices": [
+                    "Oxygen",
+                    "Carbon dioxide",
+                    "Methane",
+                    "Hydrogen"
+                  ],
+                  "answer": "Oxygen",
+                  "explanation": "Plants release oxygen gas as a product of photosynthesis, which animals need to breathe."
+                },
+                {
+                  "id": "g5-sci-photo-5",
+                  "type": "mc",
+                  "prompt": "What provides the energy plants need to perform photosynthesis?",
+                  "choices": [
+                    "Sunlight",
+                    "Wind",
+                    "Gravity",
+                    "Ocean waves"
+                  ],
+                  "answer": "Sunlight",
+                  "explanation": "Chlorophyll in green leaves captures energy from sunlight to power photosynthesis."
+                },
+                {
+                  "id": "g5-sci-photo-6",
+                  "type": "mc",
+                  "prompt": "What role do green plants play in an ecosystem food web?",
+                  "choices": [
+                    "Producers",
+                    "Decomposers",
+                    "Carnivores",
+                    "Scavengers"
+                  ],
+                  "answer": "Producers",
+                  "explanation": "Producers are living things like plants that make their own food using sunlight."
+                },
+                {
+                  "id": "g5-sci-photo-7",
+                  "type": "mc",
+                  "prompt": "What are the tiny openings on leaves that exchange gases?",
+                  "choices": [
+                    "Stomata",
+                    "Roots",
+                    "Seeds",
+                    "Thorns"
+                  ],
+                  "answer": "Stomata",
+                  "explanation": "Stomata are microscopic pores on leaves that let carbon dioxide in and oxygen out."
+                },
+                {
+                  "id": "g5-sci-photo-8",
+                  "type": "mc",
+                  "prompt": "What happens to a green plant kept in total darkness?",
+                  "choices": [
+                    "It cannot make food by photosynthesis",
+                    "It grows twice as fast",
+                    "It turns into a mushroom",
+                    "It makes extra oxygen"
+                  ],
+                  "answer": "It cannot make food by photosynthesis",
+                  "explanation": "Without light energy, a plant cannot perform photosynthesis to produce sugar."
+                }
+              ]
+            },
+            {
+              "id": "p-g5-sci-web",
+              "title": "Energy Flow and Decomposers in Ecosystems",
+              "standard": "5-LS2-1",
+              "summary": "Arrows show energy flow and decomposers recycle nutrients.",
+              "bank": [
+                {
+                  "id": "g5-sci-web-1",
+                  "type": "mc",
+                  "prompt": "What do arrows in a food chain show?",
+                  "choices": [
+                    "The flow of energy and matter",
+                    "Which animal runs faster",
+                    "Where rivers flow",
+                    "How tall plants grow"
+                  ],
+                  "answer": "The flow of energy and matter",
+                  "explanation": "An arrow points from the organism being eaten to the organism that gets its energy."
+                },
+                {
+                  "id": "g5-sci-web-2",
+                  "type": "mc",
+                  "prompt": "What do decomposers like fungi and bacteria do in an ecosystem?",
+                  "choices": [
+                    "Break down dead matter into nutrients",
+                    "Make food from sunlight",
+                    "Hunt large predators",
+                    "Freeze water into ice"
+                  ],
+                  "answer": "Break down dead matter into nutrients",
+                  "explanation": "Decomposers recycle dead plants and animals back into soil nutrients that plants can use."
+                },
+                {
+                  "id": "g5-sci-web-3",
+                  "type": "mc",
+                  "prompt": "What is an animal that eats only plants called?",
+                  "choices": [
+                    "Herbivore",
+                    "Carnivore",
+                    "Producer",
+                    "Decomposer"
+                  ],
+                  "answer": "Herbivore",
+                  "explanation": "A herbivore is a consumer, such as a rabbit or deer, that eats only plants."
+                },
+                {
+                  "id": "g5-sci-web-4",
+                  "type": "mc",
+                  "prompt": "What is an animal that eats both plants and animals called?",
+                  "choices": [
+                    "Omnivore",
+                    "Herbivore",
+                    "Producer",
+                    "Mineral"
+                  ],
+                  "answer": "Omnivore",
+                  "explanation": "An omnivore, such as a bear or raccoon, eats both plant and animal matter."
+                },
+                {
+                  "id": "g5-sci-web-5",
+                  "type": "mc",
+                  "prompt": "Where does almost all energy in Earth’s food webs begin?",
+                  "choices": [
+                    "The Sun",
+                    "The Moon",
+                    "Ocean tides",
+                    "Rocks"
+                  ],
+                  "answer": "The Sun",
+                  "explanation": "Sunlight provides the original energy that producers capture and pass to consumers."
+                },
+                {
+                  "id": "g5-sci-web-6",
+                  "type": "mc",
+                  "prompt": "In Grass → Rabbit → Hawk, what is the rabbit?",
+                  "choices": [
+                    "Primary consumer",
+                    "Producer",
+                    "Decomposer",
+                    "Apex predator"
+                  ],
+                  "answer": "Primary consumer",
+                  "explanation": "A primary consumer is a herbivore that eats producers like grass."
+                },
+                {
+                  "id": "g5-sci-web-7",
+                  "type": "mc",
+                  "prompt": "Which organism is an example of a decomposer?",
+                  "choices": [
+                    "Mushroom",
+                    "Oak tree",
+                    "Red-tailed hawk",
+                    "Grasshopper"
+                  ],
+                  "answer": "Mushroom",
+                  "explanation": "Mushrooms are fungi that act as decomposers by breaking down dead wood and leaves."
+                },
+                {
+                  "id": "g5-sci-web-8",
+                  "type": "mc",
+                  "prompt": "What happens if all decomposers disappear from a forest?",
+                  "choices": [
+                    "Dead waste piles up and soil loses nutrients",
+                    "Trees get extra fertilizer",
+                    "Sunlight stops shining",
+                    "Herbivores turn into plants"
+                  ],
+                  "answer": "Dead waste piles up and soil loses nutrients",
+                  "explanation": "Without decomposers, nutrients stay locked in dead matter instead of returning to the soil."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering Photosynthesis and Plant Matter & Energy Flow and Decomposers in Ecosystems (5-LS1-1, 5-LS2-1). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g5-sci-u1-rev-step-review",
+                "type": "reading",
+                "title": "Review Principles: Photosynthesis and Plant Matter & Energy Flow and Decomposers in Ecosystems",
+                "description": "Read the Core Concept Summary and Principle cards on this page (5-LS1-1, 5-LS2-1) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g5-sci-u1-rev-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Review: Producers, Consumers & Decomposers",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Photosynthesis and Plant Matter & Energy Flow and Decomposers in Ecosystems\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/science/middle-school-biology-ngss/x86f8a288a4b4cc01:matter-and-energy-in-ecosystems"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Photosynthesis and Plant Matter.",
+              "Plants build matter mostly from air and water using sunlight.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What process do green plants use to make their own food?\" → Answer: Photosynthesis. (Photosynthesis is the process where plants use sunlight, water, and carbon dioxide to make sugar.)",
+            "links": [
+              {
+                "label": "YouTube: \"Ecosystems & Energy\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20science%20Ecosystems%20%26%20Energy%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Ecosystems & Energy\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Ecosystems%20%26%20Energy",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Ecosystems & Energy",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Ecosystems%20%26%20Energy",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-sci-u1-l3",
+          "unitId": "g5-sci-u1",
+          "title": "Force, Motion, Light & Sound",
+          "kind": "lesson",
+          "partOf": "Force, Light & Sound",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:forces-and-motion",
+          "videoTitle": "Khan Academy: Forces, Motion, Light & Sound Waves",
+          "reading": "Greater force causes a bigger change in speed, while heavier objects need more force to accelerate. Light travels in straight lines and can reflect (bounce) or refract (bend). Sound comes from vibrations—faster vibrations make a higher pitch.",
+          "principles": [
+            {
+              "id": "p-g5-sci-phys",
+              "title": "Force, Mass, Light, and Sound Pitch",
+              "standard": "OH.5.PS.1",
+              "summary": "Force and mass govern motion; light reflects/refracts and vibration speed sets pitch.",
+              "bank": [
+                {
+                  "id": "g5-sci-phys-1",
+                  "type": "mc",
+                  "prompt": "What happens when a stronger force pushes the same object?",
+                  "choices": [
+                    "Its speed changes more quickly",
+                    "Its mass disappears",
+                    "It stops moving forever",
+                    "Gravity turns off"
+                  ],
+                  "answer": "Its speed changes more quickly",
+                  "explanation": "A greater net force causes a larger change in an object’s motion or speed."
+                },
+                {
+                  "id": "g5-sci-phys-2",
+                  "type": "mc",
+                  "prompt": "Which cart speeds up more when pushed with the same force?",
+                  "choices": [
+                    "The lighter cart",
+                    "The heavier cart",
+                    "Both speed up equally",
+                    "Neither cart moves"
+                  ],
+                  "answer": "The lighter cart",
+                  "explanation": "Objects with less mass experience a greater change in motion from the same force."
+                },
+                {
+                  "id": "g5-sci-phys-3",
+                  "type": "mc",
+                  "prompt": "How does light travel through air or empty space?",
+                  "choices": [
+                    "In straight lines until it hits something",
+                    "In zig-zag loops",
+                    "Only through metal wires",
+                    "Backward into the source"
+                  ],
+                  "answer": "In straight lines until it hits something",
+                  "explanation": "Light rays travel in straight lines outward from a source until absorbed, reflected, or refracted."
+                },
+                {
+                  "id": "g5-sci-phys-4",
+                  "type": "mc",
+                  "prompt": "What is the bouncing of light off a smooth mirror called?",
+                  "choices": [
+                    "Reflection",
+                    "Refraction",
+                    "Absorption",
+                    "Friction"
+                  ],
+                  "answer": "Reflection",
+                  "explanation": "Reflection happens when light rays bounce off a surface such as a mirror."
+                },
+                {
+                  "id": "g5-sci-phys-5",
+                  "type": "mc",
+                  "prompt": "What is the bending of light as it passes from air into water?",
+                  "choices": [
+                    "Refraction",
+                    "Reflection",
+                    "Gravity",
+                    "Magnetism"
+                  ],
+                  "answer": "Refraction",
+                  "explanation": "Refraction is the bending of light when it changes speed moving into a new material."
+                },
+                {
+                  "id": "g5-sci-phys-6",
+                  "type": "mc",
+                  "prompt": "What causes all sounds to be produced?",
+                  "choices": [
+                    "Vibrating matter",
+                    "Complete silence",
+                    "Cold temperatures",
+                    "Shadows"
+                  ],
+                  "answer": "Vibrating matter",
+                  "explanation": "Sound is produced when an object vibrates back and forth, creating waves in the air."
+                },
+                {
+                  "id": "g5-sci-phys-7",
+                  "type": "mc",
+                  "prompt": "How does a faster vibration change the pitch of a sound?",
+                  "choices": [
+                    "It makes the pitch higher",
+                    "It makes the pitch lower",
+                    "It turns sound into light",
+                    "It stops the sound"
+                  ],
+                  "answer": "It makes the pitch higher",
+                  "explanation": "Pitch is how high or low a sound is; faster vibrations (higher frequency) make higher pitch."
+                },
+                {
+                  "id": "g5-sci-phys-8",
+                  "type": "mc",
+                  "prompt": "What force opposes motion when two surfaces rub together?",
+                  "choices": [
+                    "Friction",
+                    "Refraction",
+                    "Photosynthesis",
+                    "Condensation"
+                  ],
+                  "answer": "Friction",
+                  "explanation": "Friction is a contact force between rubbing surfaces that slows moving objects down."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Force, Light & Sound] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Force, Mass, Light, and Sound Pitch\" (OH.5.PS.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-sci-u1-l3-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Forces, Motion, Light & Sound Waves",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Force, Mass, Light, and Sound Pitch\" (OH.5.PS.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:forces-and-motion"
+              },
+              {
+                "id": "g5-sci-u1-l3-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Force, Mass, Light, and Sound Pitch.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-sci-u1-l3-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.5.PS.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Force, Mass, Light, and Sound Pitch.",
+              "Force and mass govern motion; light reflects/refracts and vibration speed sets pitch.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What happens when a stronger force pushes the same object?\" → Answer: Its speed changes more quickly. (A greater net force causes a larger change in an object’s motion or speed.)",
+            "links": [
+              {
+                "label": "YouTube: \"Force, Light & Sound\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20science%20Force%2C%20Light%20%26%20Sound%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Force, Light & Sound\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Force%2C%20Light%20%26%20Sound",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Force, Light & Sound",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Force%2C%20Light%20%26%20Sound",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-sci-u1-test",
+          "unitId": "g5-sci-u1",
+          "title": "Unit 1 Exam: Ecosystems & Physical Science",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "questionCount": 8,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-biology-ngss/x86f8a288a4b4cc01:matter-and-energy-in-ecosystems",
+          "videoTitle": "Unit 1 Review: Ecosystems, Forces, Light & Sound",
+          "reading": "Complete the Unit 1 Exam covering photosynthesis, food webs, decomposers, force and motion, light reflection/refraction, and sound vibrations.",
+          "principles": [
+            {
+              "id": "p-g5-sci-photo",
+              "title": "Photosynthesis and Plant Matter",
+              "standard": "5-LS1-1",
+              "summary": "Plants use sunlight, air, and water to make sugar and oxygen.",
+              "bank": [
+                {
+                  "id": "g5-sci-photo-1",
+                  "type": "mc",
+                  "prompt": "What process do green plants use to make their own food?",
+                  "choices": [
+                    "Photosynthesis",
+                    "Erosion",
+                    "Evaporation",
+                    "Hibernation"
+                  ],
+                  "answer": "Photosynthesis",
+                  "explanation": "Photosynthesis is the process where plants use sunlight, water, and carbon dioxide to make sugar."
+                },
+                {
+                  "id": "g5-sci-photo-2",
+                  "type": "mc",
+                  "prompt": "Where do plants get the majority of matter to grow?",
+                  "choices": [
+                    "Air and water",
+                    "Rocks and sand",
+                    "Soil minerals only",
+                    "Moonlight"
+                  ],
+                  "answer": "Air and water",
+                  "explanation": "Plants build their tissues mostly from carbon dioxide in air and water, not soil."
+                },
+                {
+                  "id": "g5-sci-photo-3",
+                  "type": "mc",
+                  "prompt": "Which gas do plants take in from the air during photosynthesis?",
+                  "choices": [
+                    "Carbon dioxide",
+                    "Oxygen",
+                    "Helium",
+                    "Argon"
+                  ],
+                  "answer": "Carbon dioxide",
+                  "explanation": "Leaves take in carbon dioxide gas through tiny pores to make plant sugars."
+                },
+                {
+                  "id": "g5-sci-photo-4",
+                  "type": "mc",
+                  "prompt": "Which gas do plants release into the air during photosynthesis?",
+                  "choices": [
+                    "Oxygen",
+                    "Carbon dioxide",
+                    "Methane",
+                    "Hydrogen"
+                  ],
+                  "answer": "Oxygen",
+                  "explanation": "Plants release oxygen gas as a product of photosynthesis, which animals need to breathe."
+                },
+                {
+                  "id": "g5-sci-photo-5",
+                  "type": "mc",
+                  "prompt": "What provides the energy plants need to perform photosynthesis?",
+                  "choices": [
+                    "Sunlight",
+                    "Wind",
+                    "Gravity",
+                    "Ocean waves"
+                  ],
+                  "answer": "Sunlight",
+                  "explanation": "Chlorophyll in green leaves captures energy from sunlight to power photosynthesis."
+                },
+                {
+                  "id": "g5-sci-photo-6",
+                  "type": "mc",
+                  "prompt": "What role do green plants play in an ecosystem food web?",
+                  "choices": [
+                    "Producers",
+                    "Decomposers",
+                    "Carnivores",
+                    "Scavengers"
+                  ],
+                  "answer": "Producers",
+                  "explanation": "Producers are living things like plants that make their own food using sunlight."
+                },
+                {
+                  "id": "g5-sci-photo-7",
+                  "type": "mc",
+                  "prompt": "What are the tiny openings on leaves that exchange gases?",
+                  "choices": [
+                    "Stomata",
+                    "Roots",
+                    "Seeds",
+                    "Thorns"
+                  ],
+                  "answer": "Stomata",
+                  "explanation": "Stomata are microscopic pores on leaves that let carbon dioxide in and oxygen out."
+                },
+                {
+                  "id": "g5-sci-photo-8",
+                  "type": "mc",
+                  "prompt": "What happens to a green plant kept in total darkness?",
+                  "choices": [
+                    "It cannot make food by photosynthesis",
+                    "It grows twice as fast",
+                    "It turns into a mushroom",
+                    "It makes extra oxygen"
+                  ],
+                  "answer": "It cannot make food by photosynthesis",
+                  "explanation": "Without light energy, a plant cannot perform photosynthesis to produce sugar."
+                }
+              ]
+            },
+            {
+              "id": "p-g5-sci-web",
+              "title": "Energy Flow and Decomposers in Ecosystems",
+              "standard": "5-LS2-1",
+              "summary": "Producers, consumers, and decomposers cycle matter and energy.",
+              "bank": [
+                {
+                  "id": "g5-sci-web-1",
+                  "type": "mc",
+                  "prompt": "What do arrows in a food chain show?",
+                  "choices": [
+                    "The flow of energy and matter",
+                    "Which animal runs faster",
+                    "Where rivers flow",
+                    "How tall plants grow"
+                  ],
+                  "answer": "The flow of energy and matter",
+                  "explanation": "An arrow points from the organism being eaten to the organism that gets its energy."
+                },
+                {
+                  "id": "g5-sci-web-2",
+                  "type": "mc",
+                  "prompt": "What do decomposers like fungi and bacteria do in an ecosystem?",
+                  "choices": [
+                    "Break down dead matter into nutrients",
+                    "Make food from sunlight",
+                    "Hunt large predators",
+                    "Freeze water into ice"
+                  ],
+                  "answer": "Break down dead matter into nutrients",
+                  "explanation": "Decomposers recycle dead plants and animals back into soil nutrients that plants can use."
+                },
+                {
+                  "id": "g5-sci-web-3",
+                  "type": "mc",
+                  "prompt": "What is an animal that eats only plants called?",
+                  "choices": [
+                    "Herbivore",
+                    "Carnivore",
+                    "Producer",
+                    "Decomposer"
+                  ],
+                  "answer": "Herbivore",
+                  "explanation": "A herbivore is a consumer, such as a rabbit or deer, that eats only plants."
+                },
+                {
+                  "id": "g5-sci-web-4",
+                  "type": "mc",
+                  "prompt": "What is an animal that eats both plants and animals called?",
+                  "choices": [
+                    "Omnivore",
+                    "Herbivore",
+                    "Producer",
+                    "Mineral"
+                  ],
+                  "answer": "Omnivore",
+                  "explanation": "An omnivore, such as a bear or raccoon, eats both plant and animal matter."
+                },
+                {
+                  "id": "g5-sci-web-5",
+                  "type": "mc",
+                  "prompt": "Where does almost all energy in Earth’s food webs begin?",
+                  "choices": [
+                    "The Sun",
+                    "The Moon",
+                    "Ocean tides",
+                    "Rocks"
+                  ],
+                  "answer": "The Sun",
+                  "explanation": "Sunlight provides the original energy that producers capture and pass to consumers."
+                },
+                {
+                  "id": "g5-sci-web-6",
+                  "type": "mc",
+                  "prompt": "In Grass → Rabbit → Hawk, what is the rabbit?",
+                  "choices": [
+                    "Primary consumer",
+                    "Producer",
+                    "Decomposer",
+                    "Apex predator"
+                  ],
+                  "answer": "Primary consumer",
+                  "explanation": "A primary consumer is a herbivore that eats producers like grass."
+                },
+                {
+                  "id": "g5-sci-web-7",
+                  "type": "mc",
+                  "prompt": "Which organism is an example of a decomposer?",
+                  "choices": [
+                    "Mushroom",
+                    "Oak tree",
+                    "Red-tailed hawk",
+                    "Grasshopper"
+                  ],
+                  "answer": "Mushroom",
+                  "explanation": "Mushrooms are fungi that act as decomposers by breaking down dead wood and leaves."
+                },
+                {
+                  "id": "g5-sci-web-8",
+                  "type": "mc",
+                  "prompt": "What happens if all decomposers disappear from a forest?",
+                  "choices": [
+                    "Dead waste piles up and soil loses nutrients",
+                    "Trees get extra fertilizer",
+                    "Sunlight stops shining",
+                    "Herbivores turn into plants"
+                  ],
+                  "answer": "Dead waste piles up and soil loses nutrients",
+                  "explanation": "Without decomposers, nutrients stay locked in dead matter instead of returning to the soil."
+                }
+              ]
+            },
+            {
+              "id": "p-g5-sci-phys",
+              "title": "Force, Mass, Light, and Sound Pitch",
+              "standard": "OH.5.PS.1",
+              "summary": "Forces change motion; light travels in straight lines; vibrations make sound.",
+              "bank": [
+                {
+                  "id": "g5-sci-phys-1",
+                  "type": "mc",
+                  "prompt": "What happens when a stronger force pushes the same object?",
+                  "choices": [
+                    "Its speed changes more quickly",
+                    "Its mass disappears",
+                    "It stops moving forever",
+                    "Gravity turns off"
+                  ],
+                  "answer": "Its speed changes more quickly",
+                  "explanation": "A greater net force causes a larger change in an object’s motion or speed."
+                },
+                {
+                  "id": "g5-sci-phys-2",
+                  "type": "mc",
+                  "prompt": "Which cart speeds up more when pushed with the same force?",
+                  "choices": [
+                    "The lighter cart",
+                    "The heavier cart",
+                    "Both speed up equally",
+                    "Neither cart moves"
+                  ],
+                  "answer": "The lighter cart",
+                  "explanation": "Objects with less mass experience a greater change in motion from the same force."
+                },
+                {
+                  "id": "g5-sci-phys-3",
+                  "type": "mc",
+                  "prompt": "How does light travel through air or empty space?",
+                  "choices": [
+                    "In straight lines until it hits something",
+                    "In zig-zag loops",
+                    "Only through metal wires",
+                    "Backward into the source"
+                  ],
+                  "answer": "In straight lines until it hits something",
+                  "explanation": "Light rays travel in straight lines outward from a source until absorbed, reflected, or refracted."
+                },
+                {
+                  "id": "g5-sci-phys-4",
+                  "type": "mc",
+                  "prompt": "What is the bouncing of light off a smooth mirror called?",
+                  "choices": [
+                    "Reflection",
+                    "Refraction",
+                    "Absorption",
+                    "Friction"
+                  ],
+                  "answer": "Reflection",
+                  "explanation": "Reflection happens when light rays bounce off a surface such as a mirror."
+                },
+                {
+                  "id": "g5-sci-phys-5",
+                  "type": "mc",
+                  "prompt": "What is the bending of light as it passes from air into water?",
+                  "choices": [
+                    "Refraction",
+                    "Reflection",
+                    "Gravity",
+                    "Magnetism"
+                  ],
+                  "answer": "Refraction",
+                  "explanation": "Refraction is the bending of light when it changes speed moving into a new material."
+                },
+                {
+                  "id": "g5-sci-phys-6",
+                  "type": "mc",
+                  "prompt": "What causes all sounds to be produced?",
+                  "choices": [
+                    "Vibrating matter",
+                    "Complete silence",
+                    "Cold temperatures",
+                    "Shadows"
+                  ],
+                  "answer": "Vibrating matter",
+                  "explanation": "Sound is produced when an object vibrates back and forth, creating waves in the air."
+                },
+                {
+                  "id": "g5-sci-phys-7",
+                  "type": "mc",
+                  "prompt": "How does a faster vibration change the pitch of a sound?",
+                  "choices": [
+                    "It makes the pitch higher",
+                    "It makes the pitch lower",
+                    "It turns sound into light",
+                    "It stops the sound"
+                  ],
+                  "answer": "It makes the pitch higher",
+                  "explanation": "Pitch is how high or low a sound is; faster vibrations (higher frequency) make higher pitch."
+                },
+                {
+                  "id": "g5-sci-phys-8",
+                  "type": "mc",
+                  "prompt": "What force opposes motion when two surfaces rub together?",
+                  "choices": [
+                    "Friction",
+                    "Refraction",
+                    "Photosynthesis",
+                    "Condensation"
+                  ],
+                  "answer": "Friction",
+                  "explanation": "Friction is a contact force between rubbing surfaces that slows moving objects down."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Photosynthesis and Plant Matter & Energy Flow and Decomposers in Ecosystems & Force, Mass, Light, and Sound Pitch (5-LS1-1, 5-LS2-1, OH.5.PS.1). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g5-sci-u1-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Photosynthesis and Plant Matter & Energy Flow and Decomposers in Ecosystems & Force, Mass, Light, and Sound Pitch",
+                "description": "Read the Core Concept Summary and Principle cards on this page (5-LS1-1, 5-LS2-1, OH.5.PS.1) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g5-sci-u1-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 Review: Ecosystems, Forces, Light & Sound",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Photosynthesis and Plant Matter & Energy Flow and Decomposers in Ecosystems & Force, Mass, Light, and Sound Pitch\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/science/middle-school-biology-ngss/x86f8a288a4b4cc01:matter-and-energy-in-ecosystems"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Photosynthesis and Plant Matter.",
+              "Plants use sunlight, air, and water to make sugar and oxygen.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What process do green plants use to make their own food?\" → Answer: Photosynthesis. (Photosynthesis is the process where plants use sunlight, water, and carbon dioxide to make sugar.)",
+            "links": [
+              {
+                "label": "YouTube: \"Ecosystems & Physical Science\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20science%20Ecosystems%20%26%20Physical%20Science%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Ecosystems & Physical Science\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Ecosystems%20%26%20Physical%20Science",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Ecosystems & Physical Science",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Ecosystems%20%26%20Physical%20Science",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g5-sci-u2",
+      "title": "Unit 2: Earth’s Four Spheres & the Solar System",
+      "standards": [
+        "5-ESS2-1",
+        "5-ESS2-2",
+        "5-ESS1-2",
+        "OH.5.ESS.1"
+      ],
+      "lessons": [
+        {
+          "id": "g5-sci-u2-l1",
+          "unitId": "g5-sci-u2",
+          "title": "Earth’s Four Spheres & Water Distribution",
+          "kind": "lesson",
+          "partOf": "Earth Systems & Space",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-systems",
+          "videoTitle": "Khan Academy: Geosphere, Hydrosphere, Atmosphere & Biosphere",
+          "reading": "Earth has four interacting spheres: geosphere (rock/soil), hydrosphere (water/ice), atmosphere (air), and biosphere (living things). About 97% of Earth’s water is salty ocean water, and most freshwater is frozen in glaciers.",
+          "principles": [
+            {
+              "id": "p-g5-sci-sph",
+              "title": "Earth’s Spheres and Freshwater Distribution",
+              "standard": "5-ESS2-1",
+              "summary": "Identify the four Earth spheres and explain where salt and fresh water are stored.",
+              "bank": [
+                {
+                  "id": "g5-sci-sph-1",
+                  "type": "mc",
+                  "prompt": "Which Earth sphere includes all rocks, soil, and mountains?",
+                  "choices": [
+                    "Geosphere",
+                    "Hydrosphere",
+                    "Atmosphere",
+                    "Biosphere"
+                  ],
+                  "answer": "Geosphere",
+                  "explanation": "The geosphere consists of Earth’s solid rock, soil, landforms, and interior layers."
+                },
+                {
+                  "id": "g5-sci-sph-2",
+                  "type": "mc",
+                  "prompt": "Which Earth sphere contains all oceans, rivers, lakes, and glaciers?",
+                  "choices": [
+                    "Hydrosphere",
+                    "Geosphere",
+                    "Atmosphere",
+                    "Biosphere"
+                  ],
+                  "answer": "Hydrosphere",
+                  "explanation": "The hydrosphere includes all liquid water, ice, and water vapor on Earth."
+                },
+                {
+                  "id": "g5-sci-sph-3",
+                  "type": "mc",
+                  "prompt": "Which Earth sphere is the blanket of gases surrounding the planet?",
+                  "choices": [
+                    "Atmosphere",
+                    "Biosphere",
+                    "Geosphere",
+                    "Hydrosphere"
+                  ],
+                  "answer": "Atmosphere",
+                  "explanation": "The atmosphere is the layer of air (mostly nitrogen and oxygen) around Earth."
+                },
+                {
+                  "id": "g5-sci-sph-4",
+                  "type": "mc",
+                  "prompt": "Which Earth sphere includes all living plants, animals, and microbes?",
+                  "choices": [
+                    "Biosphere",
+                    "Geosphere",
+                    "Atmosphere",
+                    "Hydrosphere"
+                  ],
+                  "answer": "Biosphere",
+                  "explanation": "The biosphere is made up of all living things on land, in water, and in air."
+                },
+                {
+                  "id": "g5-sci-sph-5",
+                  "type": "mc",
+                  "prompt": "Where is most of Earth’s water found?",
+                  "choices": [
+                    "Saltwater in the oceans",
+                    "Freshwater in rivers",
+                    "Clouds in the sky",
+                    "Puddles on land"
+                  ],
+                  "answer": "Saltwater in the oceans",
+                  "explanation": "About 97 percent of Earth’s water is saltwater stored in the oceans."
+                },
+                {
+                  "id": "g5-sci-sph-6",
+                  "type": "mc",
+                  "prompt": "Where is the largest amount of Earth’s freshwater stored?",
+                  "choices": [
+                    "Frozen in glaciers and ice caps",
+                    "In swimming pools",
+                    "In tree leaves",
+                    "In desert sand"
+                  ],
+                  "answer": "Frozen in glaciers and ice caps",
+                  "explanation": "Most of Earth’s freshwater is frozen solid in glaciers and polar ice caps."
+                },
+                {
+                  "id": "g5-sci-sph-7",
+                  "type": "mc",
+                  "prompt": "When a river carves a canyon in rock, which two spheres interact?",
+                  "choices": [
+                    "Hydrosphere and geosphere",
+                    "Biosphere and moon",
+                    "Atmosphere and sun",
+                    "Geosphere and stars"
+                  ],
+                  "answer": "Hydrosphere and geosphere",
+                  "explanation": "Moving water (hydrosphere) erodes solid rock (geosphere) to carve a canyon."
+                },
+                {
+                  "id": "g5-sci-sph-8",
+                  "type": "mc",
+                  "prompt": "Why is most of Earth’s water unavailable for humans to drink?",
+                  "choices": [
+                    "Most water is salty or frozen",
+                    "Earth has almost no water",
+                    "Oceans are made of freshwater",
+                    "Rain never falls on land"
+                  ],
+                  "answer": "Most water is salty or frozen",
+                  "explanation": "About 97% of water is salty ocean water, and most freshwater is locked in ice."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Earth Systems & Space] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Earth’s Spheres and Freshwater Distribution\" (5-ESS2-1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-sci-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Geosphere, Hydrosphere, Atmosphere & Biosphere",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Earth’s Spheres and Freshwater Distribution\" (5-ESS2-1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-systems"
+              },
+              {
+                "id": "g5-sci-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Earth’s Spheres and Freshwater Distribution.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-sci-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (5-ESS2-1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Earth’s Spheres and Freshwater Distribution.",
+              "Identify the four Earth spheres and explain where salt and fresh water are stored.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which Earth sphere includes all rocks, soil, and mountains?\" → Answer: Geosphere. (The geosphere consists of Earth’s solid rock, soil, landforms, and interior layers.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Systems & Space\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20science%20Earth%20Systems%20%26%20Space%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Systems & Space\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Earth%20Systems%20%26%20Space",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Systems & Space",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Systems%20%26%20Space",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-sci-u2-l2",
+          "unitId": "g5-sci-u2",
+          "title": "Solar System, Rotation, Shadows & Orbits",
+          "kind": "lesson",
+          "partOf": "Earth Systems & Space",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-in-space",
+          "videoTitle": "Khan Academy: Earth’s Rotation, Orbit & Stars",
+          "reading": "Earth rotates on its axis every 24 hours to cause day, night, and changing shadow lengths (shortest at noon). Earth orbits the Sun once every 365 days. The Sun looks brighter than other stars because it is much closer to Earth.",
+          "principles": [
+            {
+              "id": "p-g5-sci-spc",
+              "title": "Earth’s Rotation, Orbit, Gravity, and Star Brightness",
+              "standard": "OH.5.ESS.1",
+              "summary": "Rotation causes day/night; yearly orbit changes seasonal stars; distance affects star brightness.",
+              "bank": [
+                {
+                  "id": "g5-sci-spc-1",
+                  "type": "mc",
+                  "prompt": "What causes the daily cycle of day and night on Earth?",
+                  "choices": [
+                    "Earth’s rotation on its axis",
+                    "Earth’s yearly orbit around the Sun",
+                    "The Moon blocking the Sun daily",
+                    "Clouds covering the sky"
+                  ],
+                  "answer": "Earth’s rotation on its axis",
+                  "explanation": "Earth spins (rotates) once every 24 hours, causing day on the side facing the Sun."
+                },
+                {
+                  "id": "g5-sci-spc-2",
+                  "type": "mc",
+                  "prompt": "How long does it take Earth to complete one orbit around the Sun?",
+                  "choices": [
+                    "About 365 days (1 year)",
+                    "24 hours",
+                    "30 days",
+                    "10 years"
+                  ],
+                  "answer": "About 365 days (1 year)",
+                  "explanation": "One full revolution (orbit) of Earth around the Sun takes one year, or about 365 days."
+                },
+                {
+                  "id": "g5-sci-spc-3",
+                  "type": "mc",
+                  "prompt": "Why does the Sun look brighter and larger than other stars?",
+                  "choices": [
+                    "It is much closer to Earth",
+                    "It is the biggest star in space",
+                    "Other stars do not make light",
+                    "It orbits inside Earth’s atmosphere"
+                  ],
+                  "answer": "It is much closer to Earth",
+                  "explanation": "The Sun is an average-sized star, but it looks brightest because it is closest to Earth."
+                },
+                {
+                  "id": "g5-sci-spc-4",
+                  "type": "mc",
+                  "prompt": "In what direction does Earth’s gravity pull objects near the surface?",
+                  "choices": [
+                    "Downward toward Earth’s center",
+                    "Upward into outer space",
+                    "Sideways toward the east",
+                    "Toward the North Pole only"
+                  ],
+                  "answer": "Downward toward Earth’s center",
+                  "explanation": "Gravity pulls all objects inward toward the center of the planet."
+                },
+                {
+                  "id": "g5-sci-spc-5",
+                  "type": "mc",
+                  "prompt": "When is a shadow on the ground shortest during a sunny day?",
+                  "choices": [
+                    "Around noon",
+                    "At sunrise",
+                    "At sunset",
+                    "At midnight"
+                  ],
+                  "answer": "Around noon",
+                  "explanation": "At noon the Sun is highest in the sky, casting the shortest shadows."
+                },
+                {
+                  "id": "g5-sci-spc-6",
+                  "type": "mc",
+                  "prompt": "Why do we see different constellations in winter than in summer?",
+                  "choices": [
+                    "Earth orbits to different sides of the Sun",
+                    "Stars swim across the ocean",
+                    "The Sun turns off in winter",
+                    "Earth stops rotating in summer"
+                  ],
+                  "answer": "Earth orbits to different sides of the Sun",
+                  "explanation": "As Earth revolves around the Sun each year, our night sky faces different parts of space."
+                },
+                {
+                  "id": "g5-sci-spc-7",
+                  "type": "mc",
+                  "prompt": "Which object is at the center of our solar system?",
+                  "choices": [
+                    "The Sun",
+                    "The Moon",
+                    "Earth",
+                    "Mars"
+                  ],
+                  "answer": "The Sun",
+                  "explanation": "All eight planets, including Earth, orbit the Sun at the center of our solar system."
+                },
+                {
+                  "id": "g5-sci-spc-8",
+                  "type": "mc",
+                  "prompt": "Which way does a shadow point when the morning Sun is east?",
+                  "choices": [
+                    "West",
+                    "East",
+                    "Straight up",
+                    "Nowhere"
+                  ],
+                  "answer": "West",
+                  "explanation": "Shadows always point away from the light source, so a morning Sun casts shadows westward."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Earth Systems & Space] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Earth’s Rotation, Orbit, Gravity, and Star Brightness\" (OH.5.ESS.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-sci-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Earth’s Rotation, Orbit & Stars",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Earth’s Rotation, Orbit, Gravity, and Star Brightness\" (OH.5.ESS.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-in-space"
+              },
+              {
+                "id": "g5-sci-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Earth’s Rotation, Orbit, Gravity, and Star Brightness.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-sci-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.5.ESS.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Earth’s Rotation, Orbit, Gravity, and Star Brightness.",
+              "Rotation causes day/night; yearly orbit changes seasonal stars; distance affects star brightness.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What causes the daily cycle of day and night on Earth?\" → Answer: Earth’s rotation on its axis. (Earth spins (rotates) once every 24 hours, causing day on the side facing the Sun.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Systems & Space\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20science%20Earth%20Systems%20%26%20Space%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Systems & Space\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Earth%20Systems%20%26%20Space",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Systems & Space",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Systems%20%26%20Space",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-sci-u2-test",
+          "unitId": "g5-sci-u2",
+          "title": "Unit 2 Exam: Earth’s Spheres & Space Cycles",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "questionCount": 8,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-in-space",
+          "videoTitle": "Unit 2 Review: Earth Systems & the Solar System",
+          "reading": "Complete the Unit 2 Exam on Earth’s four spheres, water distribution, gravity, rotation, shadows, and the solar system.",
+          "principles": [
+            {
+              "id": "p-g5-sci-sph",
+              "title": "Earth’s Spheres and Freshwater Distribution",
+              "standard": "5-ESS2-1",
+              "summary": "Geosphere, hydrosphere, atmosphere, and biosphere interact across Earth.",
+              "bank": [
+                {
+                  "id": "g5-sci-sph-1",
+                  "type": "mc",
+                  "prompt": "Which Earth sphere includes all rocks, soil, and mountains?",
+                  "choices": [
+                    "Geosphere",
+                    "Hydrosphere",
+                    "Atmosphere",
+                    "Biosphere"
+                  ],
+                  "answer": "Geosphere",
+                  "explanation": "The geosphere consists of Earth’s solid rock, soil, landforms, and interior layers."
+                },
+                {
+                  "id": "g5-sci-sph-2",
+                  "type": "mc",
+                  "prompt": "Which Earth sphere contains all oceans, rivers, lakes, and glaciers?",
+                  "choices": [
+                    "Hydrosphere",
+                    "Geosphere",
+                    "Atmosphere",
+                    "Biosphere"
+                  ],
+                  "answer": "Hydrosphere",
+                  "explanation": "The hydrosphere includes all liquid water, ice, and water vapor on Earth."
+                },
+                {
+                  "id": "g5-sci-sph-3",
+                  "type": "mc",
+                  "prompt": "Which Earth sphere is the blanket of gases surrounding the planet?",
+                  "choices": [
+                    "Atmosphere",
+                    "Biosphere",
+                    "Geosphere",
+                    "Hydrosphere"
+                  ],
+                  "answer": "Atmosphere",
+                  "explanation": "The atmosphere is the layer of air (mostly nitrogen and oxygen) around Earth."
+                },
+                {
+                  "id": "g5-sci-sph-4",
+                  "type": "mc",
+                  "prompt": "Which Earth sphere includes all living plants, animals, and microbes?",
+                  "choices": [
+                    "Biosphere",
+                    "Geosphere",
+                    "Atmosphere",
+                    "Hydrosphere"
+                  ],
+                  "answer": "Biosphere",
+                  "explanation": "The biosphere is made up of all living things on land, in water, and in air."
+                },
+                {
+                  "id": "g5-sci-sph-5",
+                  "type": "mc",
+                  "prompt": "Where is most of Earth’s water found?",
+                  "choices": [
+                    "Saltwater in the oceans",
+                    "Freshwater in rivers",
+                    "Clouds in the sky",
+                    "Puddles on land"
+                  ],
+                  "answer": "Saltwater in the oceans",
+                  "explanation": "About 97 percent of Earth’s water is saltwater stored in the oceans."
+                },
+                {
+                  "id": "g5-sci-sph-6",
+                  "type": "mc",
+                  "prompt": "Where is the largest amount of Earth’s freshwater stored?",
+                  "choices": [
+                    "Frozen in glaciers and ice caps",
+                    "In swimming pools",
+                    "In tree leaves",
+                    "In desert sand"
+                  ],
+                  "answer": "Frozen in glaciers and ice caps",
+                  "explanation": "Most of Earth’s freshwater is frozen solid in glaciers and polar ice caps."
+                },
+                {
+                  "id": "g5-sci-sph-7",
+                  "type": "mc",
+                  "prompt": "When a river carves a canyon in rock, which two spheres interact?",
+                  "choices": [
+                    "Hydrosphere and geosphere",
+                    "Biosphere and moon",
+                    "Atmosphere and sun",
+                    "Geosphere and stars"
+                  ],
+                  "answer": "Hydrosphere and geosphere",
+                  "explanation": "Moving water (hydrosphere) erodes solid rock (geosphere) to carve a canyon."
+                },
+                {
+                  "id": "g5-sci-sph-8",
+                  "type": "mc",
+                  "prompt": "Why is most of Earth’s water unavailable for humans to drink?",
+                  "choices": [
+                    "Most water is salty or frozen",
+                    "Earth has almost no water",
+                    "Oceans are made of freshwater",
+                    "Rain never falls on land"
+                  ],
+                  "answer": "Most water is salty or frozen",
+                  "explanation": "About 97% of water is salty ocean water, and most freshwater is locked in ice."
+                }
+              ]
+            },
+            {
+              "id": "p-g5-sci-spc",
+              "title": "Earth’s Rotation, Orbit, Gravity, and Star Brightness",
+              "standard": "OH.5.ESS.1",
+              "summary": "24-hour rotation and 365-day orbit create predictable sky patterns.",
+              "bank": [
+                {
+                  "id": "g5-sci-spc-1",
+                  "type": "mc",
+                  "prompt": "What causes the daily cycle of day and night on Earth?",
+                  "choices": [
+                    "Earth’s rotation on its axis",
+                    "Earth’s yearly orbit around the Sun",
+                    "The Moon blocking the Sun daily",
+                    "Clouds covering the sky"
+                  ],
+                  "answer": "Earth’s rotation on its axis",
+                  "explanation": "Earth spins (rotates) once every 24 hours, causing day on the side facing the Sun."
+                },
+                {
+                  "id": "g5-sci-spc-2",
+                  "type": "mc",
+                  "prompt": "How long does it take Earth to complete one orbit around the Sun?",
+                  "choices": [
+                    "About 365 days (1 year)",
+                    "24 hours",
+                    "30 days",
+                    "10 years"
+                  ],
+                  "answer": "About 365 days (1 year)",
+                  "explanation": "One full revolution (orbit) of Earth around the Sun takes one year, or about 365 days."
+                },
+                {
+                  "id": "g5-sci-spc-3",
+                  "type": "mc",
+                  "prompt": "Why does the Sun look brighter and larger than other stars?",
+                  "choices": [
+                    "It is much closer to Earth",
+                    "It is the biggest star in space",
+                    "Other stars do not make light",
+                    "It orbits inside Earth’s atmosphere"
+                  ],
+                  "answer": "It is much closer to Earth",
+                  "explanation": "The Sun is an average-sized star, but it looks brightest because it is closest to Earth."
+                },
+                {
+                  "id": "g5-sci-spc-4",
+                  "type": "mc",
+                  "prompt": "In what direction does Earth’s gravity pull objects near the surface?",
+                  "choices": [
+                    "Downward toward Earth’s center",
+                    "Upward into outer space",
+                    "Sideways toward the east",
+                    "Toward the North Pole only"
+                  ],
+                  "answer": "Downward toward Earth’s center",
+                  "explanation": "Gravity pulls all objects inward toward the center of the planet."
+                },
+                {
+                  "id": "g5-sci-spc-5",
+                  "type": "mc",
+                  "prompt": "When is a shadow on the ground shortest during a sunny day?",
+                  "choices": [
+                    "Around noon",
+                    "At sunrise",
+                    "At sunset",
+                    "At midnight"
+                  ],
+                  "answer": "Around noon",
+                  "explanation": "At noon the Sun is highest in the sky, casting the shortest shadows."
+                },
+                {
+                  "id": "g5-sci-spc-6",
+                  "type": "mc",
+                  "prompt": "Why do we see different constellations in winter than in summer?",
+                  "choices": [
+                    "Earth orbits to different sides of the Sun",
+                    "Stars swim across the ocean",
+                    "The Sun turns off in winter",
+                    "Earth stops rotating in summer"
+                  ],
+                  "answer": "Earth orbits to different sides of the Sun",
+                  "explanation": "As Earth revolves around the Sun each year, our night sky faces different parts of space."
+                },
+                {
+                  "id": "g5-sci-spc-7",
+                  "type": "mc",
+                  "prompt": "Which object is at the center of our solar system?",
+                  "choices": [
+                    "The Sun",
+                    "The Moon",
+                    "Earth",
+                    "Mars"
+                  ],
+                  "answer": "The Sun",
+                  "explanation": "All eight planets, including Earth, orbit the Sun at the center of our solar system."
+                },
+                {
+                  "id": "g5-sci-spc-8",
+                  "type": "mc",
+                  "prompt": "Which way does a shadow point when the morning Sun is east?",
+                  "choices": [
+                    "West",
+                    "East",
+                    "Straight up",
+                    "Nowhere"
+                  ],
+                  "answer": "West",
+                  "explanation": "Shadows always point away from the light source, so a morning Sun casts shadows westward."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Earth’s Spheres and Freshwater Distribution & Earth’s Rotation, Orbit, Gravity, and Star Brightness (5-ESS2-1, OH.5.ESS.1). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g5-sci-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Earth’s Spheres and Freshwater Distribution & Earth’s Rotation, Orbit, Gravity, and Star Brightness",
+                "description": "Read the Core Concept Summary and Principle cards on this page (5-ESS2-1, OH.5.ESS.1) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g5-sci-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Review: Earth Systems & the Solar System",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Earth’s Spheres and Freshwater Distribution & Earth’s Rotation, Orbit, Gravity, and Star Brightness\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-in-space"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Earth’s Spheres and Freshwater Distribution.",
+              "Geosphere, hydrosphere, atmosphere, and biosphere interact across Earth.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which Earth sphere includes all rocks, soil, and mountains?\" → Answer: Geosphere. (The geosphere consists of Earth’s solid rock, soil, landforms, and interior layers.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth’s Spheres & Space Cycles\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20science%20Earth%E2%80%99s%20Spheres%20%26%20Space%20Cycles%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth’s Spheres & Space Cycles\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Earth%E2%80%99s%20Spheres%20%26%20Space%20Cycles",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth’s Spheres & Space Cycles",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%E2%80%99s%20Spheres%20%26%20Space%20Cycles",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

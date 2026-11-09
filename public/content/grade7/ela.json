@@ -1,0 +1,1715 @@
+{
+  "id": "g7-ela",
+  "subject": "ela",
+  "grade": 7,
+  "title": "Grade 7 English Language Arts",
+  "subtitle": "Theme, Contrasting Perspectives, Historical Fiction, Evaluating Arguments & Clauses/Modifiers",
+  "credits": 1,
+  "color": "#6d28d9",
+  "icon": "📚",
+  "units": [
+    {
+      "id": "g7-ela-u1",
+      "title": "Unit 1: Reading Literature — Theme, Setting & Point of View",
+      "standards": [
+        "RL.7.2",
+        "RL.7.3",
+        "RL.7.6",
+        "OH.RL.7.9"
+      ],
+      "lessons": [
+        {
+          "id": "g7-ela-u1-l1",
+          "unitId": "g7-ela-u1",
+          "title": "Part 1: Theme & How Setting Shapes Plot and Characters",
+          "kind": "lesson",
+          "partOf": "Literary Analysis",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-7th-reading-vocab",
+          "videoTitle": "Khan Academy: Developing Theme & Analyzing Story Elements",
+          "reading": "A story’s setting (time and place) often creates obstacles that force characters to make hard choices. Watching how a character responds and grows reveals the theme—the author’s deeper life lesson. When summarizing a story, include only objective facts and key events without personal opinions.",
+          "principles": [
+            {
+              "id": "p-g7-ela-theme",
+              "title": "Theme & How Setting Shapes Plot and Characters",
+              "standard": "RL.7.2 / RL.7.3",
+              "summary": "The setting creates challenges that shape character choices and reveal the theme.",
+              "bank": [
+                {
+                  "id": "g7-ela-thm-1",
+                  "passage": "A sudden blizzard trapped Maya at the mountain cabin. With the firewood nearly gone, she shared her heaviest blanket with her younger brother and rationed the warm soup.",
+                  "prompt": "How does the blizzard setting affect Maya?",
+                  "type": "mc",
+                  "choices": [
+                    "It forces her to act unselfishly",
+                    "It makes her forget her brother",
+                    "It lets her walk to town",
+                    "It ends the winter early"
+                  ],
+                  "answer": "It forces her to act unselfishly",
+                  "explanation": "Setting is the time and place of a story, which often creates conflict that tests characters."
+                },
+                {
+                  "id": "g7-ela-thm-2",
+                  "passage": "Eli practiced his speech every evening despite his stutter. On contest day, his voice trembled at first, yet he finished clearly and smiled with pride.",
+                  "prompt": "What is the main theme of this passage?",
+                  "type": "mc",
+                  "choices": [
+                    "Persistence helps overcome hard challenges",
+                    "Winning trophies is all that matters",
+                    "Public speaking is always easy",
+                    "Friends should write your speeches"
+                  ],
+                  "answer": "Persistence helps overcome hard challenges",
+                  "explanation": "Theme is the deeper life lesson or message about human nature revealed through the story."
+                },
+                {
+                  "id": "g7-ela-thm-3",
+                  "passage": "In the parched desert town, every family guarded their water barrels. When Lena’s neighbor lost his well, Lena carried two full jugs to his porch.",
+                  "prompt": "Why is the dry desert setting important to the plot?",
+                  "type": "mc",
+                  "choices": [
+                    "Scarcity makes Lena’s gift meaningful",
+                    "Water is cheap and easy to find",
+                    "Everyone wants to go swimming",
+                    "Rain falls every afternoon"
+                  ],
+                  "answer": "Scarcity makes Lena’s gift meaningful",
+                  "explanation": "Plot is the sequence of events; a harsh setting raises the stakes of a character’s choice."
+                },
+                {
+                  "id": "g7-ela-thm-4",
+                  "prompt": "What is the difference between a topic and a theme?",
+                  "type": "mc",
+                  "choices": [
+                    "Theme is a full message about life",
+                    "Theme is just one single word",
+                    "Topic is the main character’s name",
+                    "Topic tells where the story ends"
+                  ],
+                  "answer": "Theme is a full message about life",
+                  "explanation": "A topic is a subject like \"friendship,\" while a theme is a complete statement like \"true friends stay loyal.\""
+                },
+                {
+                  "id": "g7-ela-thm-5",
+                  "passage": "Toby boasted that he needed no map on the forest trail. Two hours later, facing three identical forks in the dim woods, he wished he had listened.",
+                  "prompt": "Which lesson does Toby’s experience teach?",
+                  "type": "mc",
+                  "choices": [
+                    "Overconfidence can lead to avoidable mistakes",
+                    "Maps are useless in the woods",
+                    "Forest trails never have forks",
+                    "Walking fast solves every problem"
+                  ],
+                  "answer": "Overconfidence can lead to avoidable mistakes",
+                  "explanation": "Characters often learn a lesson when their flaws clash with the story’s conflict."
+                },
+                {
+                  "id": "g7-ela-thm-6",
+                  "prompt": "What must an objective summary of a story leave out?",
+                  "type": "mc",
+                  "choices": [
+                    "Personal opinions and feelings",
+                    "The main character’s name",
+                    "The central conflict",
+                    "How the story ends"
+                  ],
+                  "answer": "Personal opinions and feelings",
+                  "explanation": "An objective summary states only the key events and facts of a text without personal judgment."
+                },
+                {
+                  "id": "g7-ela-thm-7",
+                  "passage": "During the power outage, neighbors who rarely spoke gathered on the front steps with flashlights and shared stories until midnight.",
+                  "prompt": "How does the power outage shape the characters?",
+                  "type": "mc",
+                  "choices": [
+                    "It brings distant neighbors together",
+                    "It causes everyone to move away",
+                    "It makes them watch television",
+                    "It starts a loud argument"
+                  ],
+                  "answer": "It brings distant neighbors together",
+                  "explanation": "A change in setting can disrupt normal habits and bring characters into new relationships."
+                },
+                {
+                  "id": "g7-ela-thm-8",
+                  "prompt": "Which detail best helps a reader find a story’s theme?",
+                  "type": "mc",
+                  "choices": [
+                    "How the main character changes and grows",
+                    "The page number of chapter one",
+                    "The font size on the cover",
+                    "The author’s middle initial"
+                  ],
+                  "answer": "How the main character changes and grows",
+                  "explanation": "Tracking how a character responds to conflict and changes reveals the author’s theme."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Literary Analysis] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Theme & How Setting Shapes Plot and Characters\" (RL.7.2 / RL.7.3), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-ela-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Developing Theme & Analyzing Story Elements",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Theme & How Setting Shapes Plot and Characters\" (RL.7.2 / RL.7.3). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-7th-reading-vocab"
+              },
+              {
+                "id": "g7-ela-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Theme & How Setting Shapes Plot and Characters.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-ela-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (RL.7.2 / RL.7.3)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Theme & How Setting Shapes Plot and Characters.",
+              "The setting creates challenges that shape character choices and reveal the theme.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How does the blizzard setting affect Maya?\" → Answer: It forces her to act unselfishly. (Setting is the time and place of a story, which often creates conflict that tests characters.)",
+            "links": [
+              {
+                "label": "YouTube: \"Literary Analysis\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20ela%20Literary%20Analysis%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Literary Analysis\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Literary%20Analysis",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-ela-u1-l2",
+          "unitId": "g7-ela-u1",
+          "title": "Part 2: Contrasting Points of View & Fictional vs. Historical Accounts",
+          "kind": "lesson",
+          "partOf": "Literary Analysis",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-7th-reading-vocab",
+          "videoTitle": "Khan Academy: Contrasting Perspectives & Historical Fiction",
+          "reading": "Authors contrast different characters’ points of view by showing how each person’s role or background shapes their attitude. Under Ohio standard OH.RL.7.9, readers also compare historical fiction with factual history to see how authors blend real events with invented characters to create emotional impact.",
+          "principles": [
+            {
+              "id": "p-g7-ela-pov",
+              "title": "Contrasting Points of View & Fictional vs. Historical Accounts",
+              "standard": "RL.7.6 / OH.RL.7.9",
+              "summary": "Authors contrast character perspectives and blend historical facts with creative fiction.",
+              "bank": [
+                {
+                  "id": "g7-ela-pov-1",
+                  "passage": "Mia stared at the roller coaster with wide eyes, thrilled by the roaring drop. Beside her, Sam gripped the rail and wished he had stayed on the bench.",
+                  "prompt": "How does the author contrast Mia and Sam?",
+                  "type": "mc",
+                  "choices": [
+                    "Mia feels excited while Sam feels afraid",
+                    "Both characters hate amusement parks",
+                    "Sam wants to ride twice",
+                    "Mia is scared of heights"
+                  ],
+                  "answer": "Mia feels excited while Sam feels afraid",
+                  "explanation": "Point of view is how a character or narrator sees and feels about events in a story."
+                },
+                {
+                  "id": "g7-ela-pov-2",
+                  "prompt": "How does a historical novel differ from a history textbook?",
+                  "type": "mc",
+                  "choices": [
+                    "It adds invented characters and dialogue",
+                    "It never mentions real dates",
+                    "It only uses photographs",
+                    "It avoids any real places"
+                  ],
+                  "answer": "It adds invented characters and dialogue",
+                  "explanation": "Historical fiction combines real historical settings with imaginative characters and emotions."
+                },
+                {
+                  "id": "g7-ela-pov-3",
+                  "passage": "History record: The 1913 Ohio flood damaged thousands of homes in Dayton. Novel excerpt: Young Clara watched muddy river water swirl past her attic window.",
+                  "prompt": "Why did the novelist include Clara’s attic view?",
+                  "type": "mc",
+                  "choices": [
+                    "To show the human emotion of the flood",
+                    "To prove floods never happened",
+                    "To list city tax numbers",
+                    "To replace weather maps"
+                  ],
+                  "answer": "To show the human emotion of the flood",
+                  "explanation": "Fiction writers use personal perspectives to help readers feel what living through history was like."
+                },
+                {
+                  "id": "g7-ela-pov-4",
+                  "prompt": "Which pronoun shows a story is told in first-person point of view?",
+                  "type": "mc",
+                  "choices": [
+                    "I",
+                    "They",
+                    "She",
+                    "You"
+                  ],
+                  "answer": "I",
+                  "explanation": "First-person point of view uses pronouns like \"I\" and \"we\" because a character tells the story."
+                },
+                {
+                  "id": "g7-ela-pov-5",
+                  "prompt": "What can a third-person omniscient narrator do?",
+                  "type": "mc",
+                  "choices": [
+                    "Know the thoughts of multiple characters",
+                    "Only speak as one minor character",
+                    "Never describe any feelings",
+                    "Write only in rhyme"
+                  ],
+                  "answer": "Know the thoughts of multiple characters",
+                  "explanation": "An omniscient narrator is all-knowing and can reveal the inner thoughts of any character."
+                },
+                {
+                  "id": "g7-ela-pov-6",
+                  "passage": "Coach Dan saw the rain as a chance to test team grit. However, the groundskeeper worried the muddy cleats would ruin the fresh grass.",
+                  "prompt": "Why do Coach Dan and the groundskeeper disagree?",
+                  "type": "mc",
+                  "choices": [
+                    "Their jobs give them different priorities",
+                    "Neither person notices the rain",
+                    "Both want to cancel the game",
+                    "They are on rival teams"
+                  ],
+                  "answer": "Their jobs give them different priorities",
+                  "explanation": "Authors develop contrasting points of view by showing how characters’ roles shape their opinions."
+                },
+                {
+                  "id": "g7-ela-pov-7",
+                  "prompt": "Why might a fiction writer alter a timeline from real history?",
+                  "type": "mc",
+                  "choices": [
+                    "To build dramatic tension in the plot",
+                    "Because history has no real dates",
+                    "To make the book shorter",
+                    "To confuse the main character"
+                  ],
+                  "answer": "To build dramatic tension in the plot",
+                  "explanation": "Authors sometimes compress or adjust historical details to tighten pacing and dramatic focus."
+                },
+                {
+                  "id": "g7-ela-pov-8",
+                  "prompt": "What does a factual historical account rely on most?",
+                  "type": "mc",
+                  "choices": [
+                    "Verified primary sources and evidence",
+                    "Imaginary talking animals",
+                    "Future predictions",
+                    "Made-up conversations"
+                  ],
+                  "answer": "Verified primary sources and evidence",
+                  "explanation": "Historical accounts rely on real documents, eyewitness records, and verified evidence."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Literary Analysis] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Contrasting Points of View & Fictional vs. Historical Accounts\" (RL.7.6 / OH.RL.7.9), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-ela-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Contrasting Perspectives & Historical Fiction",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Contrasting Points of View & Fictional vs. Historical Accounts\" (RL.7.6 / OH.RL.7.9). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-7th-reading-vocab"
+              },
+              {
+                "id": "g7-ela-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Contrasting Points of View & Fictional vs. Historical Accounts.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-ela-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (RL.7.6 / OH.RL.7.9)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Contrasting Points of View & Fictional vs. Historical Accounts.",
+              "Authors contrast character perspectives and blend historical facts with creative fiction.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How does the author contrast Mia and Sam?\" → Answer: Mia feels excited while Sam feels afraid. (Point of view is how a character or narrator sees and feels about events in a story.)",
+            "links": [
+              {
+                "label": "YouTube: \"Literary Analysis\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20ela%20Literary%20Analysis%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Literary Analysis\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Literary%20Analysis",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-ela-u1-test",
+          "unitId": "g7-ela-u1",
+          "title": "Unit 1 Exam: Theme, Setting & Point of View",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-7th-reading-vocab",
+          "videoTitle": "Unit 1 Review: Literary Elements & Perspectives",
+          "reading": "Answer 8 questions on theme, setting-plot interactions, contrasting character perspectives, and historical fiction.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g7-ela-theme",
+              "title": "Theme & How Setting Shapes Plot and Characters",
+              "standard": "RL.7.2 / RL.7.3",
+              "summary": "The setting creates challenges that shape character choices and reveal the theme.",
+              "bank": [
+                {
+                  "id": "g7-ela-thm-1",
+                  "passage": "A sudden blizzard trapped Maya at the mountain cabin. With the firewood nearly gone, she shared her heaviest blanket with her younger brother and rationed the warm soup.",
+                  "prompt": "How does the blizzard setting affect Maya?",
+                  "type": "mc",
+                  "choices": [
+                    "It forces her to act unselfishly",
+                    "It makes her forget her brother",
+                    "It lets her walk to town",
+                    "It ends the winter early"
+                  ],
+                  "answer": "It forces her to act unselfishly",
+                  "explanation": "Setting is the time and place of a story, which often creates conflict that tests characters."
+                },
+                {
+                  "id": "g7-ela-thm-2",
+                  "passage": "Eli practiced his speech every evening despite his stutter. On contest day, his voice trembled at first, yet he finished clearly and smiled with pride.",
+                  "prompt": "What is the main theme of this passage?",
+                  "type": "mc",
+                  "choices": [
+                    "Persistence helps overcome hard challenges",
+                    "Winning trophies is all that matters",
+                    "Public speaking is always easy",
+                    "Friends should write your speeches"
+                  ],
+                  "answer": "Persistence helps overcome hard challenges",
+                  "explanation": "Theme is the deeper life lesson or message about human nature revealed through the story."
+                },
+                {
+                  "id": "g7-ela-thm-3",
+                  "passage": "In the parched desert town, every family guarded their water barrels. When Lena’s neighbor lost his well, Lena carried two full jugs to his porch.",
+                  "prompt": "Why is the dry desert setting important to the plot?",
+                  "type": "mc",
+                  "choices": [
+                    "Scarcity makes Lena’s gift meaningful",
+                    "Water is cheap and easy to find",
+                    "Everyone wants to go swimming",
+                    "Rain falls every afternoon"
+                  ],
+                  "answer": "Scarcity makes Lena’s gift meaningful",
+                  "explanation": "Plot is the sequence of events; a harsh setting raises the stakes of a character’s choice."
+                },
+                {
+                  "id": "g7-ela-thm-4",
+                  "prompt": "What is the difference between a topic and a theme?",
+                  "type": "mc",
+                  "choices": [
+                    "Theme is a full message about life",
+                    "Theme is just one single word",
+                    "Topic is the main character’s name",
+                    "Topic tells where the story ends"
+                  ],
+                  "answer": "Theme is a full message about life",
+                  "explanation": "A topic is a subject like \"friendship,\" while a theme is a complete statement like \"true friends stay loyal.\""
+                },
+                {
+                  "id": "g7-ela-thm-5",
+                  "passage": "Toby boasted that he needed no map on the forest trail. Two hours later, facing three identical forks in the dim woods, he wished he had listened.",
+                  "prompt": "Which lesson does Toby’s experience teach?",
+                  "type": "mc",
+                  "choices": [
+                    "Overconfidence can lead to avoidable mistakes",
+                    "Maps are useless in the woods",
+                    "Forest trails never have forks",
+                    "Walking fast solves every problem"
+                  ],
+                  "answer": "Overconfidence can lead to avoidable mistakes",
+                  "explanation": "Characters often learn a lesson when their flaws clash with the story’s conflict."
+                },
+                {
+                  "id": "g7-ela-thm-6",
+                  "prompt": "What must an objective summary of a story leave out?",
+                  "type": "mc",
+                  "choices": [
+                    "Personal opinions and feelings",
+                    "The main character’s name",
+                    "The central conflict",
+                    "How the story ends"
+                  ],
+                  "answer": "Personal opinions and feelings",
+                  "explanation": "An objective summary states only the key events and facts of a text without personal judgment."
+                },
+                {
+                  "id": "g7-ela-thm-7",
+                  "passage": "During the power outage, neighbors who rarely spoke gathered on the front steps with flashlights and shared stories until midnight.",
+                  "prompt": "How does the power outage shape the characters?",
+                  "type": "mc",
+                  "choices": [
+                    "It brings distant neighbors together",
+                    "It causes everyone to move away",
+                    "It makes them watch television",
+                    "It starts a loud argument"
+                  ],
+                  "answer": "It brings distant neighbors together",
+                  "explanation": "A change in setting can disrupt normal habits and bring characters into new relationships."
+                },
+                {
+                  "id": "g7-ela-thm-8",
+                  "prompt": "Which detail best helps a reader find a story’s theme?",
+                  "type": "mc",
+                  "choices": [
+                    "How the main character changes and grows",
+                    "The page number of chapter one",
+                    "The font size on the cover",
+                    "The author’s middle initial"
+                  ],
+                  "answer": "How the main character changes and grows",
+                  "explanation": "Tracking how a character responds to conflict and changes reveals the author’s theme."
+                }
+              ]
+            },
+            {
+              "id": "p-g7-ela-pov",
+              "title": "Contrasting Points of View & Fictional vs. Historical Accounts",
+              "standard": "RL.7.6 / OH.RL.7.9",
+              "summary": "Authors contrast character perspectives and blend historical facts with creative fiction.",
+              "bank": [
+                {
+                  "id": "g7-ela-pov-1",
+                  "passage": "Mia stared at the roller coaster with wide eyes, thrilled by the roaring drop. Beside her, Sam gripped the rail and wished he had stayed on the bench.",
+                  "prompt": "How does the author contrast Mia and Sam?",
+                  "type": "mc",
+                  "choices": [
+                    "Mia feels excited while Sam feels afraid",
+                    "Both characters hate amusement parks",
+                    "Sam wants to ride twice",
+                    "Mia is scared of heights"
+                  ],
+                  "answer": "Mia feels excited while Sam feels afraid",
+                  "explanation": "Point of view is how a character or narrator sees and feels about events in a story."
+                },
+                {
+                  "id": "g7-ela-pov-2",
+                  "prompt": "How does a historical novel differ from a history textbook?",
+                  "type": "mc",
+                  "choices": [
+                    "It adds invented characters and dialogue",
+                    "It never mentions real dates",
+                    "It only uses photographs",
+                    "It avoids any real places"
+                  ],
+                  "answer": "It adds invented characters and dialogue",
+                  "explanation": "Historical fiction combines real historical settings with imaginative characters and emotions."
+                },
+                {
+                  "id": "g7-ela-pov-3",
+                  "passage": "History record: The 1913 Ohio flood damaged thousands of homes in Dayton. Novel excerpt: Young Clara watched muddy river water swirl past her attic window.",
+                  "prompt": "Why did the novelist include Clara’s attic view?",
+                  "type": "mc",
+                  "choices": [
+                    "To show the human emotion of the flood",
+                    "To prove floods never happened",
+                    "To list city tax numbers",
+                    "To replace weather maps"
+                  ],
+                  "answer": "To show the human emotion of the flood",
+                  "explanation": "Fiction writers use personal perspectives to help readers feel what living through history was like."
+                },
+                {
+                  "id": "g7-ela-pov-4",
+                  "prompt": "Which pronoun shows a story is told in first-person point of view?",
+                  "type": "mc",
+                  "choices": [
+                    "I",
+                    "They",
+                    "She",
+                    "You"
+                  ],
+                  "answer": "I",
+                  "explanation": "First-person point of view uses pronouns like \"I\" and \"we\" because a character tells the story."
+                },
+                {
+                  "id": "g7-ela-pov-5",
+                  "prompt": "What can a third-person omniscient narrator do?",
+                  "type": "mc",
+                  "choices": [
+                    "Know the thoughts of multiple characters",
+                    "Only speak as one minor character",
+                    "Never describe any feelings",
+                    "Write only in rhyme"
+                  ],
+                  "answer": "Know the thoughts of multiple characters",
+                  "explanation": "An omniscient narrator is all-knowing and can reveal the inner thoughts of any character."
+                },
+                {
+                  "id": "g7-ela-pov-6",
+                  "passage": "Coach Dan saw the rain as a chance to test team grit. However, the groundskeeper worried the muddy cleats would ruin the fresh grass.",
+                  "prompt": "Why do Coach Dan and the groundskeeper disagree?",
+                  "type": "mc",
+                  "choices": [
+                    "Their jobs give them different priorities",
+                    "Neither person notices the rain",
+                    "Both want to cancel the game",
+                    "They are on rival teams"
+                  ],
+                  "answer": "Their jobs give them different priorities",
+                  "explanation": "Authors develop contrasting points of view by showing how characters’ roles shape their opinions."
+                },
+                {
+                  "id": "g7-ela-pov-7",
+                  "prompt": "Why might a fiction writer alter a timeline from real history?",
+                  "type": "mc",
+                  "choices": [
+                    "To build dramatic tension in the plot",
+                    "Because history has no real dates",
+                    "To make the book shorter",
+                    "To confuse the main character"
+                  ],
+                  "answer": "To build dramatic tension in the plot",
+                  "explanation": "Authors sometimes compress or adjust historical details to tighten pacing and dramatic focus."
+                },
+                {
+                  "id": "g7-ela-pov-8",
+                  "prompt": "What does a factual historical account rely on most?",
+                  "type": "mc",
+                  "choices": [
+                    "Verified primary sources and evidence",
+                    "Imaginary talking animals",
+                    "Future predictions",
+                    "Made-up conversations"
+                  ],
+                  "answer": "Verified primary sources and evidence",
+                  "explanation": "Historical accounts rely on real documents, eyewitness records, and verified evidence."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Theme & How Setting Shapes Plot and Characters & Contrasting Points of View & Fictional vs. Historical Accounts (RL.7.2 / RL.7.3, RL.7.6 / OH.RL.7.9). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g7-ela-u1-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Theme & How Setting Shapes Plot and Characters & Contrasting Points of View & Fictional vs. Historical Accounts",
+                "description": "Read the Core Concept Summary and Principle cards on this page (RL.7.2 / RL.7.3, RL.7.6 / OH.RL.7.9) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g7-ela-u1-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 Review: Literary Elements & Perspectives",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Theme & How Setting Shapes Plot and Characters & Contrasting Points of View & Fictional vs. Historical Accounts\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/ela/cc-7th-reading-vocab"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Theme & How Setting Shapes Plot and Characters.",
+              "The setting creates challenges that shape character choices and reveal the theme.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How does the blizzard setting affect Maya?\" → Answer: It forces her to act unselfishly. (Setting is the time and place of a story, which often creates conflict that tests characters.)",
+            "links": [
+              {
+                "label": "YouTube: \"Theme, Setting & Point of View\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20ela%20Theme%2C%20Setting%20%26%20Point%20of%20View%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Theme, Setting & Point of View\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Theme%2C%20Setting%20%26%20Point%20of%20View",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g7-ela-u2",
+      "title": "Unit 2: Informational Arguments, Clauses & Word Roots",
+      "standards": [
+        "RI.7.2",
+        "RI.7.8",
+        "L.7.1",
+        "L.7.4"
+      ],
+      "lessons": [
+        {
+          "id": "g7-ela-u2-l1",
+          "unitId": "g7-ela-u2",
+          "title": "Part 1: Central Ideas & Evaluating Arguments and Evidence",
+          "kind": "lesson",
+          "partOf": "Arguments & Language Conventions",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-7th-reading-vocab",
+          "videoTitle": "Khan Academy: Evaluating Arguments, Claims & Evidence",
+          "reading": "In informational texts, the central idea is the main point the author wants readers to understand. When evaluating an argument, check that the reasoning is logical and that the evidence is both relevant (directly related to the claim) and sufficient (enough verified facts to prove the point).",
+          "principles": [
+            {
+              "id": "p-g7-ela-arg",
+              "title": "Central Ideas & Evaluating Arguments and Evidence",
+              "standard": "RI.7.2 / RI.7.8",
+              "summary": "Strong arguments support a clear claim with relevant evidence and sound reasoning.",
+              "bank": [
+                {
+                  "id": "g7-ela-arg-1",
+                  "passage": "Community gardens turn empty city lots into fresh food sources. Studies show neighborhoods with gardens eat more vegetables and report stronger neighbor connections.",
+                  "prompt": "What is the central claim of this passage?",
+                  "type": "mc",
+                  "choices": [
+                    "Community gardens benefit health and neighborhoods",
+                    "City lots should become parking garages",
+                    "Vegetables only grow on large farms",
+                    "Gardening takes too much water"
+                  ],
+                  "answer": "Community gardens benefit health and neighborhoods",
+                  "explanation": "A claim is the author’s main position or argument that they set out to prove."
+                },
+                {
+                  "id": "g7-ela-arg-2",
+                  "prompt": "What makes a piece of evidence relevant to a claim?",
+                  "type": "mc",
+                  "choices": [
+                    "It directly supports the author’s point",
+                    "It uses long, complicated words",
+                    "It changes the topic completely",
+                    "It repeats the title twice"
+                  ],
+                  "answer": "It directly supports the author’s point",
+                  "explanation": "Relevant evidence consists of facts, statistics, or examples directly tied to the claim."
+                },
+                {
+                  "id": "g7-ela-arg-3",
+                  "passage": "We should extend library hours because my cousin likes blue backpacks and libraries have tall shelves.",
+                  "prompt": "How would you evaluate the reasoning in this statement?",
+                  "type": "mc",
+                  "choices": [
+                    "Unsound because the reasons are unrelated",
+                    "Strong because it cites a survey",
+                    "Valid because shelves are tall",
+                    "Proven by scientific data"
+                  ],
+                  "answer": "Unsound because the reasons are unrelated",
+                  "explanation": "Sound reasoning logically connects evidence to the claim; unrelated details make reasoning weak."
+                },
+                {
+                  "id": "g7-ela-arg-4",
+                  "prompt": "When is evidence considered sufficient in an argument?",
+                  "type": "mc",
+                  "choices": [
+                    "When there is enough to prove the claim",
+                    "When it has just one guess",
+                    "When it uses no facts at all",
+                    "When it ignores every study"
+                  ],
+                  "answer": "When there is enough to prove the claim",
+                  "explanation": "Sufficient evidence provides enough reliable facts and examples to convince a careful reader."
+                },
+                {
+                  "id": "g7-ela-arg-5",
+                  "passage": "Honeybees pollinate one-third of human food crops. Without healthy bee colonies, orchards produce far fewer apples, almonds, and berries each harvest.",
+                  "prompt": "What is the central idea of this paragraph?",
+                  "type": "mc",
+                  "choices": [
+                    "Honeybees are vital for growing food crops",
+                    "Apples grow best in cold winters",
+                    "Bees only visit wild grasses",
+                    "Orchards do not need insects"
+                  ],
+                  "answer": "Honeybees are vital for growing food crops",
+                  "explanation": "The central idea is the most important point an informational text makes about a topic."
+                },
+                {
+                  "id": "g7-ela-arg-6",
+                  "prompt": "Which source provides the strongest evidence for a health article?",
+                  "type": "mc",
+                  "choices": [
+                    "Data from a medical research study",
+                    "A rumor from an anonymous blog",
+                    "A joke on a cereal box",
+                    "A guess from a neighbor"
+                  ],
+                  "answer": "Data from a medical research study",
+                  "explanation": "Credible, research-backed data provides strong, trustworthy support for informational claims."
+                },
+                {
+                  "id": "g7-ela-arg-7",
+                  "prompt": "What is a counterclaim in argumentative writing?",
+                  "type": "mc",
+                  "choices": [
+                    "An opposing viewpoint the author addresses",
+                    "The title of the bibliography",
+                    "A spelling mistake in the intro",
+                    "A list of chapter numbers"
+                  ],
+                  "answer": "An opposing viewpoint the author addresses",
+                  "explanation": "A counterclaim acknowledges the other side’s view so the writer can refute it with evidence."
+                },
+                {
+                  "id": "g7-ela-arg-8",
+                  "prompt": "Why should readers check if an author uses biased language?",
+                  "type": "mc",
+                  "choices": [
+                    "Bias can slant facts unfairly",
+                    "Bias makes fonts easier to read",
+                    "Bias proves every statistic true",
+                    "Bias shortens every sentence"
+                  ],
+                  "answer": "Bias can slant facts unfairly",
+                  "explanation": "Bias is an unfair preference that can lead a writer to ignore opposing evidence."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Arguments & Language Conventions] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Central Ideas & Evaluating Arguments and Evidence\" (RI.7.2 / RI.7.8), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-ela-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Evaluating Arguments, Claims & Evidence",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Central Ideas & Evaluating Arguments and Evidence\" (RI.7.2 / RI.7.8). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-7th-reading-vocab"
+              },
+              {
+                "id": "g7-ela-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Central Ideas & Evaluating Arguments and Evidence.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-ela-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (RI.7.2 / RI.7.8)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Central Ideas & Evaluating Arguments and Evidence.",
+              "Strong arguments support a clear claim with relevant evidence and sound reasoning.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the central claim of this passage?\" → Answer: Community gardens benefit health and neighborhoods. (A claim is the author’s main position or argument that they set out to prove.)",
+            "links": [
+              {
+                "label": "YouTube: \"Arguments & Language Conventions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20ela%20Arguments%20%26%20Language%20Conventions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Arguments & Language Conventions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Arguments%20%26%20Language%20Conventions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-ela-u2-l2",
+          "unitId": "g7-ela-u2",
+          "title": "Part 2: Clauses, Sentence Types, Modifiers & Greek/Latin Roots",
+          "kind": "lesson",
+          "partOf": "Arguments & Language Conventions",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/grammar/syntax-sentences-and-clauses",
+          "videoTitle": "Khan Academy: Phrases, Clauses, Dangling Modifiers & Word Roots",
+          "reading": "An independent clause can stand alone as a sentence, while a dependent clause starts with a word like \"although\" or \"because\" and cannot stand alone. A dangling modifier happens when a descriptive phrase is missing the noun it describes. Knowing roots like chron (time), bene (good), and rupt (break) unlocks unfamiliar words.",
+          "principles": [
+            {
+              "id": "p-g7-ela-gram",
+              "title": "Clauses, Sentence Types, Modifiers & Greek/Latin Roots",
+              "standard": "L.7.1 / L.7.4",
+              "summary": "Combine independent and dependent clauses clearly, fix dangling modifiers, and decode roots.",
+              "bank": [
+                {
+                  "id": "g7-ela-grm-1",
+                  "prompt": "What is an independent clause?",
+                  "type": "mc",
+                  "choices": [
+                    "A complete thought with subject and verb",
+                    "A phrase missing a verb",
+                    "A single preposition word",
+                    "A fragment starting with because"
+                  ],
+                  "answer": "A complete thought with subject and verb",
+                  "explanation": "An independent clause has a subject and predicate and can stand alone as a sentence."
+                },
+                {
+                  "id": "g7-ela-grm-2",
+                  "prompt": "Which sentence is a compound sentence?",
+                  "type": "mc",
+                  "choices": [
+                    "The rain stopped, and the sun appeared.",
+                    "Because it rained, we stayed inside.",
+                    "Running down the wet street.",
+                    "The bright sun warmed the porch."
+                  ],
+                  "answer": "The rain stopped, and the sun appeared.",
+                  "explanation": "A compound sentence joins two independent clauses with a comma and coordinating conjunction."
+                },
+                {
+                  "id": "g7-ela-grm-3",
+                  "prompt": "Which sentence contains a dangling modifier?",
+                  "type": "mc",
+                  "choices": [
+                    "Walking to school, my backpack felt heavy.",
+                    "While I walked to school, my backpack felt heavy.",
+                    "Maya carried her heavy backpack to school.",
+                    "The heavy backpack sat on the desk."
+                  ],
+                  "answer": "Walking to school, my backpack felt heavy.",
+                  "explanation": "A dangling modifier lacks a clear word to describe; backpacks cannot walk to school."
+                },
+                {
+                  "id": "g7-ela-grm-4",
+                  "prompt": "What kind of sentence has one independent and one dependent clause?",
+                  "type": "mc",
+                  "choices": [
+                    "A complex sentence",
+                    "A simple sentence",
+                    "A sentence fragment",
+                    "A dangling phrase"
+                  ],
+                  "answer": "A complex sentence",
+                  "explanation": "A complex sentence combines one independent clause with at least one dependent clause."
+                },
+                {
+                  "id": "g7-ela-grm-5",
+                  "prompt": "What does the Greek root \"chron\" mean in \"chronological\"?",
+                  "type": "mc",
+                  "choices": [
+                    "Time",
+                    "Water",
+                    "Light",
+                    "Earth"
+                  ],
+                  "answer": "Time",
+                  "explanation": "The Greek root \"chron\" means time, so chronological order arranges events by time."
+                },
+                {
+                  "id": "g7-ela-grm-6",
+                  "prompt": "What does the Latin root \"bene\" mean in \"beneficial\"?",
+                  "type": "mc",
+                  "choices": [
+                    "Good or well",
+                    "Empty or hollow",
+                    "Heavy or slow",
+                    "Broken or split"
+                  ],
+                  "answer": "Good or well",
+                  "explanation": "The Latin root \"bene\" means good or well, as seen in benefit and benevolent."
+                },
+                {
+                  "id": "g7-ela-grm-7",
+                  "prompt": "What does the Latin root \"rupt\" mean in \"erupt\" and \"interrupt\"?",
+                  "type": "mc",
+                  "choices": [
+                    "To break or burst",
+                    "To write or draw",
+                    "To carry across",
+                    "To listen closely"
+                  ],
+                  "answer": "To break or burst",
+                  "explanation": "The root \"rupt\" means to break or burst, so an eruption bursts outward."
+                },
+                {
+                  "id": "g7-ela-grm-8",
+                  "prompt": "Which group of words is a dependent clause?",
+                  "type": "mc",
+                  "choices": [
+                    "Although the bell rang early",
+                    "The students opened their books",
+                    "She solved the math puzzle",
+                    "Birds flew over the roof"
+                  ],
+                  "answer": "Although the bell rang early",
+                  "explanation": "A dependent clause starts with a subordinating word like \"although\" and cannot stand alone."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Arguments & Language Conventions] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Clauses, Sentence Types, Modifiers & Greek/Latin Roots\" (L.7.1 / L.7.4), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-ela-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Phrases, Clauses, Dangling Modifiers & Word Roots",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Clauses, Sentence Types, Modifiers & Greek/Latin Roots\" (L.7.1 / L.7.4). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/grammar/syntax-sentences-and-clauses"
+              },
+              {
+                "id": "g7-ela-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Clauses, Sentence Types, Modifiers & Greek/Latin Roots.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-ela-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (L.7.1 / L.7.4)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Clauses, Sentence Types, Modifiers & Greek/Latin Roots.",
+              "Combine independent and dependent clauses clearly, fix dangling modifiers, and decode roots.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is an independent clause?\" → Answer: A complete thought with subject and verb. (An independent clause has a subject and predicate and can stand alone as a sentence.)",
+            "links": [
+              {
+                "label": "YouTube: \"Arguments & Language Conventions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20ela%20Arguments%20%26%20Language%20Conventions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Arguments & Language Conventions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Arguments%20%26%20Language%20Conventions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-ela-u2-rev",
+          "unitId": "g7-ela-u2",
+          "title": "Topic Review: Evaluating Evidence & Sentence Clauses",
+          "kind": "lesson_review",
+          "partOf": "Arguments & Language Conventions",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/grammar/syntax-sentences-and-clauses",
+          "videoTitle": "Review: Arguments, Modifiers & Clauses",
+          "reading": "Practice 6 questions on evaluating claims, fixing dangling modifiers, and identifying clauses and roots.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g7-ela-arg",
+              "title": "Central Ideas & Evaluating Arguments and Evidence",
+              "standard": "RI.7.2 / RI.7.8",
+              "summary": "Strong arguments support a clear claim with relevant evidence and sound reasoning.",
+              "bank": [
+                {
+                  "id": "g7-ela-arg-1",
+                  "passage": "Community gardens turn empty city lots into fresh food sources. Studies show neighborhoods with gardens eat more vegetables and report stronger neighbor connections.",
+                  "prompt": "What is the central claim of this passage?",
+                  "type": "mc",
+                  "choices": [
+                    "Community gardens benefit health and neighborhoods",
+                    "City lots should become parking garages",
+                    "Vegetables only grow on large farms",
+                    "Gardening takes too much water"
+                  ],
+                  "answer": "Community gardens benefit health and neighborhoods",
+                  "explanation": "A claim is the author’s main position or argument that they set out to prove."
+                },
+                {
+                  "id": "g7-ela-arg-2",
+                  "prompt": "What makes a piece of evidence relevant to a claim?",
+                  "type": "mc",
+                  "choices": [
+                    "It directly supports the author’s point",
+                    "It uses long, complicated words",
+                    "It changes the topic completely",
+                    "It repeats the title twice"
+                  ],
+                  "answer": "It directly supports the author’s point",
+                  "explanation": "Relevant evidence consists of facts, statistics, or examples directly tied to the claim."
+                },
+                {
+                  "id": "g7-ela-arg-3",
+                  "passage": "We should extend library hours because my cousin likes blue backpacks and libraries have tall shelves.",
+                  "prompt": "How would you evaluate the reasoning in this statement?",
+                  "type": "mc",
+                  "choices": [
+                    "Unsound because the reasons are unrelated",
+                    "Strong because it cites a survey",
+                    "Valid because shelves are tall",
+                    "Proven by scientific data"
+                  ],
+                  "answer": "Unsound because the reasons are unrelated",
+                  "explanation": "Sound reasoning logically connects evidence to the claim; unrelated details make reasoning weak."
+                },
+                {
+                  "id": "g7-ela-arg-4",
+                  "prompt": "When is evidence considered sufficient in an argument?",
+                  "type": "mc",
+                  "choices": [
+                    "When there is enough to prove the claim",
+                    "When it has just one guess",
+                    "When it uses no facts at all",
+                    "When it ignores every study"
+                  ],
+                  "answer": "When there is enough to prove the claim",
+                  "explanation": "Sufficient evidence provides enough reliable facts and examples to convince a careful reader."
+                },
+                {
+                  "id": "g7-ela-arg-5",
+                  "passage": "Honeybees pollinate one-third of human food crops. Without healthy bee colonies, orchards produce far fewer apples, almonds, and berries each harvest.",
+                  "prompt": "What is the central idea of this paragraph?",
+                  "type": "mc",
+                  "choices": [
+                    "Honeybees are vital for growing food crops",
+                    "Apples grow best in cold winters",
+                    "Bees only visit wild grasses",
+                    "Orchards do not need insects"
+                  ],
+                  "answer": "Honeybees are vital for growing food crops",
+                  "explanation": "The central idea is the most important point an informational text makes about a topic."
+                },
+                {
+                  "id": "g7-ela-arg-6",
+                  "prompt": "Which source provides the strongest evidence for a health article?",
+                  "type": "mc",
+                  "choices": [
+                    "Data from a medical research study",
+                    "A rumor from an anonymous blog",
+                    "A joke on a cereal box",
+                    "A guess from a neighbor"
+                  ],
+                  "answer": "Data from a medical research study",
+                  "explanation": "Credible, research-backed data provides strong, trustworthy support for informational claims."
+                },
+                {
+                  "id": "g7-ela-arg-7",
+                  "prompt": "What is a counterclaim in argumentative writing?",
+                  "type": "mc",
+                  "choices": [
+                    "An opposing viewpoint the author addresses",
+                    "The title of the bibliography",
+                    "A spelling mistake in the intro",
+                    "A list of chapter numbers"
+                  ],
+                  "answer": "An opposing viewpoint the author addresses",
+                  "explanation": "A counterclaim acknowledges the other side’s view so the writer can refute it with evidence."
+                },
+                {
+                  "id": "g7-ela-arg-8",
+                  "prompt": "Why should readers check if an author uses biased language?",
+                  "type": "mc",
+                  "choices": [
+                    "Bias can slant facts unfairly",
+                    "Bias makes fonts easier to read",
+                    "Bias proves every statistic true",
+                    "Bias shortens every sentence"
+                  ],
+                  "answer": "Bias can slant facts unfairly",
+                  "explanation": "Bias is an unfair preference that can lead a writer to ignore opposing evidence."
+                }
+              ]
+            },
+            {
+              "id": "p-g7-ela-gram",
+              "title": "Clauses, Sentence Types, Modifiers & Greek/Latin Roots",
+              "standard": "L.7.1 / L.7.4",
+              "summary": "Combine independent and dependent clauses clearly, fix dangling modifiers, and decode roots.",
+              "bank": [
+                {
+                  "id": "g7-ela-grm-1",
+                  "prompt": "What is an independent clause?",
+                  "type": "mc",
+                  "choices": [
+                    "A complete thought with subject and verb",
+                    "A phrase missing a verb",
+                    "A single preposition word",
+                    "A fragment starting with because"
+                  ],
+                  "answer": "A complete thought with subject and verb",
+                  "explanation": "An independent clause has a subject and predicate and can stand alone as a sentence."
+                },
+                {
+                  "id": "g7-ela-grm-2",
+                  "prompt": "Which sentence is a compound sentence?",
+                  "type": "mc",
+                  "choices": [
+                    "The rain stopped, and the sun appeared.",
+                    "Because it rained, we stayed inside.",
+                    "Running down the wet street.",
+                    "The bright sun warmed the porch."
+                  ],
+                  "answer": "The rain stopped, and the sun appeared.",
+                  "explanation": "A compound sentence joins two independent clauses with a comma and coordinating conjunction."
+                },
+                {
+                  "id": "g7-ela-grm-3",
+                  "prompt": "Which sentence contains a dangling modifier?",
+                  "type": "mc",
+                  "choices": [
+                    "Walking to school, my backpack felt heavy.",
+                    "While I walked to school, my backpack felt heavy.",
+                    "Maya carried her heavy backpack to school.",
+                    "The heavy backpack sat on the desk."
+                  ],
+                  "answer": "Walking to school, my backpack felt heavy.",
+                  "explanation": "A dangling modifier lacks a clear word to describe; backpacks cannot walk to school."
+                },
+                {
+                  "id": "g7-ela-grm-4",
+                  "prompt": "What kind of sentence has one independent and one dependent clause?",
+                  "type": "mc",
+                  "choices": [
+                    "A complex sentence",
+                    "A simple sentence",
+                    "A sentence fragment",
+                    "A dangling phrase"
+                  ],
+                  "answer": "A complex sentence",
+                  "explanation": "A complex sentence combines one independent clause with at least one dependent clause."
+                },
+                {
+                  "id": "g7-ela-grm-5",
+                  "prompt": "What does the Greek root \"chron\" mean in \"chronological\"?",
+                  "type": "mc",
+                  "choices": [
+                    "Time",
+                    "Water",
+                    "Light",
+                    "Earth"
+                  ],
+                  "answer": "Time",
+                  "explanation": "The Greek root \"chron\" means time, so chronological order arranges events by time."
+                },
+                {
+                  "id": "g7-ela-grm-6",
+                  "prompt": "What does the Latin root \"bene\" mean in \"beneficial\"?",
+                  "type": "mc",
+                  "choices": [
+                    "Good or well",
+                    "Empty or hollow",
+                    "Heavy or slow",
+                    "Broken or split"
+                  ],
+                  "answer": "Good or well",
+                  "explanation": "The Latin root \"bene\" means good or well, as seen in benefit and benevolent."
+                },
+                {
+                  "id": "g7-ela-grm-7",
+                  "prompt": "What does the Latin root \"rupt\" mean in \"erupt\" and \"interrupt\"?",
+                  "type": "mc",
+                  "choices": [
+                    "To break or burst",
+                    "To write or draw",
+                    "To carry across",
+                    "To listen closely"
+                  ],
+                  "answer": "To break or burst",
+                  "explanation": "The root \"rupt\" means to break or burst, so an eruption bursts outward."
+                },
+                {
+                  "id": "g7-ela-grm-8",
+                  "prompt": "Which group of words is a dependent clause?",
+                  "type": "mc",
+                  "choices": [
+                    "Although the bell rang early",
+                    "The students opened their books",
+                    "She solved the math puzzle",
+                    "Birds flew over the roof"
+                  ],
+                  "answer": "Although the bell rang early",
+                  "explanation": "A dependent clause starts with a subordinating word like \"although\" and cannot stand alone."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering Central Ideas & Evaluating Arguments and Evidence & Clauses, Sentence Types, Modifiers & Greek/Latin Roots (RI.7.2 / RI.7.8, L.7.1 / L.7.4). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g7-ela-u2-rev-step-review",
+                "type": "reading",
+                "title": "Review Principles: Central Ideas & Evaluating Arguments and Evidence & Clauses, Sentence Types, Modifiers & Greek/Latin Roots",
+                "description": "Read the Core Concept Summary and Principle cards on this page (RI.7.2 / RI.7.8, L.7.1 / L.7.4) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g7-ela-u2-rev-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Review: Arguments, Modifiers & Clauses",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Central Ideas & Evaluating Arguments and Evidence & Clauses, Sentence Types, Modifiers & Greek/Latin Roots\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/grammar/syntax-sentences-and-clauses"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Central Ideas & Evaluating Arguments and Evidence.",
+              "Strong arguments support a clear claim with relevant evidence and sound reasoning.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the central claim of this passage?\" → Answer: Community gardens benefit health and neighborhoods. (A claim is the author’s main position or argument that they set out to prove.)",
+            "links": [
+              {
+                "label": "YouTube: \"Arguments & Language Conventions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20ela%20Arguments%20%26%20Language%20Conventions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Arguments & Language Conventions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Arguments%20%26%20Language%20Conventions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-ela-u2-test",
+          "unitId": "g7-ela-u2",
+          "title": "Unit 2 Exam: Informational Arguments & Grammar Conventions",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/humanities/grammar/syntax-sentences-and-clauses",
+          "videoTitle": "Unit 2 Review: Informational Reading & Grammar",
+          "reading": "Complete 8 questions testing argument evaluation, central ideas, sentence types, dangling modifiers, and Greek/Latin roots.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g7-ela-arg",
+              "title": "Central Ideas & Evaluating Arguments and Evidence",
+              "standard": "RI.7.2 / RI.7.8",
+              "summary": "Strong arguments support a clear claim with relevant evidence and sound reasoning.",
+              "bank": [
+                {
+                  "id": "g7-ela-arg-1",
+                  "passage": "Community gardens turn empty city lots into fresh food sources. Studies show neighborhoods with gardens eat more vegetables and report stronger neighbor connections.",
+                  "prompt": "What is the central claim of this passage?",
+                  "type": "mc",
+                  "choices": [
+                    "Community gardens benefit health and neighborhoods",
+                    "City lots should become parking garages",
+                    "Vegetables only grow on large farms",
+                    "Gardening takes too much water"
+                  ],
+                  "answer": "Community gardens benefit health and neighborhoods",
+                  "explanation": "A claim is the author’s main position or argument that they set out to prove."
+                },
+                {
+                  "id": "g7-ela-arg-2",
+                  "prompt": "What makes a piece of evidence relevant to a claim?",
+                  "type": "mc",
+                  "choices": [
+                    "It directly supports the author’s point",
+                    "It uses long, complicated words",
+                    "It changes the topic completely",
+                    "It repeats the title twice"
+                  ],
+                  "answer": "It directly supports the author’s point",
+                  "explanation": "Relevant evidence consists of facts, statistics, or examples directly tied to the claim."
+                },
+                {
+                  "id": "g7-ela-arg-3",
+                  "passage": "We should extend library hours because my cousin likes blue backpacks and libraries have tall shelves.",
+                  "prompt": "How would you evaluate the reasoning in this statement?",
+                  "type": "mc",
+                  "choices": [
+                    "Unsound because the reasons are unrelated",
+                    "Strong because it cites a survey",
+                    "Valid because shelves are tall",
+                    "Proven by scientific data"
+                  ],
+                  "answer": "Unsound because the reasons are unrelated",
+                  "explanation": "Sound reasoning logically connects evidence to the claim; unrelated details make reasoning weak."
+                },
+                {
+                  "id": "g7-ela-arg-4",
+                  "prompt": "When is evidence considered sufficient in an argument?",
+                  "type": "mc",
+                  "choices": [
+                    "When there is enough to prove the claim",
+                    "When it has just one guess",
+                    "When it uses no facts at all",
+                    "When it ignores every study"
+                  ],
+                  "answer": "When there is enough to prove the claim",
+                  "explanation": "Sufficient evidence provides enough reliable facts and examples to convince a careful reader."
+                },
+                {
+                  "id": "g7-ela-arg-5",
+                  "passage": "Honeybees pollinate one-third of human food crops. Without healthy bee colonies, orchards produce far fewer apples, almonds, and berries each harvest.",
+                  "prompt": "What is the central idea of this paragraph?",
+                  "type": "mc",
+                  "choices": [
+                    "Honeybees are vital for growing food crops",
+                    "Apples grow best in cold winters",
+                    "Bees only visit wild grasses",
+                    "Orchards do not need insects"
+                  ],
+                  "answer": "Honeybees are vital for growing food crops",
+                  "explanation": "The central idea is the most important point an informational text makes about a topic."
+                },
+                {
+                  "id": "g7-ela-arg-6",
+                  "prompt": "Which source provides the strongest evidence for a health article?",
+                  "type": "mc",
+                  "choices": [
+                    "Data from a medical research study",
+                    "A rumor from an anonymous blog",
+                    "A joke on a cereal box",
+                    "A guess from a neighbor"
+                  ],
+                  "answer": "Data from a medical research study",
+                  "explanation": "Credible, research-backed data provides strong, trustworthy support for informational claims."
+                },
+                {
+                  "id": "g7-ela-arg-7",
+                  "prompt": "What is a counterclaim in argumentative writing?",
+                  "type": "mc",
+                  "choices": [
+                    "An opposing viewpoint the author addresses",
+                    "The title of the bibliography",
+                    "A spelling mistake in the intro",
+                    "A list of chapter numbers"
+                  ],
+                  "answer": "An opposing viewpoint the author addresses",
+                  "explanation": "A counterclaim acknowledges the other side’s view so the writer can refute it with evidence."
+                },
+                {
+                  "id": "g7-ela-arg-8",
+                  "prompt": "Why should readers check if an author uses biased language?",
+                  "type": "mc",
+                  "choices": [
+                    "Bias can slant facts unfairly",
+                    "Bias makes fonts easier to read",
+                    "Bias proves every statistic true",
+                    "Bias shortens every sentence"
+                  ],
+                  "answer": "Bias can slant facts unfairly",
+                  "explanation": "Bias is an unfair preference that can lead a writer to ignore opposing evidence."
+                }
+              ]
+            },
+            {
+              "id": "p-g7-ela-gram",
+              "title": "Clauses, Sentence Types, Modifiers & Greek/Latin Roots",
+              "standard": "L.7.1 / L.7.4",
+              "summary": "Combine independent and dependent clauses clearly, fix dangling modifiers, and decode roots.",
+              "bank": [
+                {
+                  "id": "g7-ela-grm-1",
+                  "prompt": "What is an independent clause?",
+                  "type": "mc",
+                  "choices": [
+                    "A complete thought with subject and verb",
+                    "A phrase missing a verb",
+                    "A single preposition word",
+                    "A fragment starting with because"
+                  ],
+                  "answer": "A complete thought with subject and verb",
+                  "explanation": "An independent clause has a subject and predicate and can stand alone as a sentence."
+                },
+                {
+                  "id": "g7-ela-grm-2",
+                  "prompt": "Which sentence is a compound sentence?",
+                  "type": "mc",
+                  "choices": [
+                    "The rain stopped, and the sun appeared.",
+                    "Because it rained, we stayed inside.",
+                    "Running down the wet street.",
+                    "The bright sun warmed the porch."
+                  ],
+                  "answer": "The rain stopped, and the sun appeared.",
+                  "explanation": "A compound sentence joins two independent clauses with a comma and coordinating conjunction."
+                },
+                {
+                  "id": "g7-ela-grm-3",
+                  "prompt": "Which sentence contains a dangling modifier?",
+                  "type": "mc",
+                  "choices": [
+                    "Walking to school, my backpack felt heavy.",
+                    "While I walked to school, my backpack felt heavy.",
+                    "Maya carried her heavy backpack to school.",
+                    "The heavy backpack sat on the desk."
+                  ],
+                  "answer": "Walking to school, my backpack felt heavy.",
+                  "explanation": "A dangling modifier lacks a clear word to describe; backpacks cannot walk to school."
+                },
+                {
+                  "id": "g7-ela-grm-4",
+                  "prompt": "What kind of sentence has one independent and one dependent clause?",
+                  "type": "mc",
+                  "choices": [
+                    "A complex sentence",
+                    "A simple sentence",
+                    "A sentence fragment",
+                    "A dangling phrase"
+                  ],
+                  "answer": "A complex sentence",
+                  "explanation": "A complex sentence combines one independent clause with at least one dependent clause."
+                },
+                {
+                  "id": "g7-ela-grm-5",
+                  "prompt": "What does the Greek root \"chron\" mean in \"chronological\"?",
+                  "type": "mc",
+                  "choices": [
+                    "Time",
+                    "Water",
+                    "Light",
+                    "Earth"
+                  ],
+                  "answer": "Time",
+                  "explanation": "The Greek root \"chron\" means time, so chronological order arranges events by time."
+                },
+                {
+                  "id": "g7-ela-grm-6",
+                  "prompt": "What does the Latin root \"bene\" mean in \"beneficial\"?",
+                  "type": "mc",
+                  "choices": [
+                    "Good or well",
+                    "Empty or hollow",
+                    "Heavy or slow",
+                    "Broken or split"
+                  ],
+                  "answer": "Good or well",
+                  "explanation": "The Latin root \"bene\" means good or well, as seen in benefit and benevolent."
+                },
+                {
+                  "id": "g7-ela-grm-7",
+                  "prompt": "What does the Latin root \"rupt\" mean in \"erupt\" and \"interrupt\"?",
+                  "type": "mc",
+                  "choices": [
+                    "To break or burst",
+                    "To write or draw",
+                    "To carry across",
+                    "To listen closely"
+                  ],
+                  "answer": "To break or burst",
+                  "explanation": "The root \"rupt\" means to break or burst, so an eruption bursts outward."
+                },
+                {
+                  "id": "g7-ela-grm-8",
+                  "prompt": "Which group of words is a dependent clause?",
+                  "type": "mc",
+                  "choices": [
+                    "Although the bell rang early",
+                    "The students opened their books",
+                    "She solved the math puzzle",
+                    "Birds flew over the roof"
+                  ],
+                  "answer": "Although the bell rang early",
+                  "explanation": "A dependent clause starts with a subordinating word like \"although\" and cannot stand alone."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Central Ideas & Evaluating Arguments and Evidence & Clauses, Sentence Types, Modifiers & Greek/Latin Roots (RI.7.2 / RI.7.8, L.7.1 / L.7.4). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g7-ela-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Central Ideas & Evaluating Arguments and Evidence & Clauses, Sentence Types, Modifiers & Greek/Latin Roots",
+                "description": "Read the Core Concept Summary and Principle cards on this page (RI.7.2 / RI.7.8, L.7.1 / L.7.4) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g7-ela-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Review: Informational Reading & Grammar",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Central Ideas & Evaluating Arguments and Evidence & Clauses, Sentence Types, Modifiers & Greek/Latin Roots\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/grammar/syntax-sentences-and-clauses"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Central Ideas & Evaluating Arguments and Evidence.",
+              "Strong arguments support a clear claim with relevant evidence and sound reasoning.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the central claim of this passage?\" → Answer: Community gardens benefit health and neighborhoods. (A claim is the author’s main position or argument that they set out to prove.)",
+            "links": [
+              {
+                "label": "YouTube: \"Informational Arguments & Grammar Conventions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20ela%20Informational%20Arguments%20%26%20Grammar%20Conventions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Informational Arguments & Grammar Conventions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Informational%20Arguments%20%26%20Grammar%20Conventions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

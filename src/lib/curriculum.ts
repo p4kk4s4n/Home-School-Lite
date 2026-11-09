@@ -1,5 +1,8 @@
 import { GRADE_4_COURSES } from '../data/grade4Content'
+import { GRADE_5_COURSES } from '../data/grade5Content'
 import { GRADE_6_COURSES } from '../data/grade6Content'
+import { GRADE_7_COURSES } from '../data/grade7Content'
+import { GRADE_8_COURSES } from '../data/grade8Content'
 import { Course, GradeLevel, Lesson, LessonAssignment, Unit } from '../types'
 import { getLessonRemediation } from './remediation'
 
@@ -84,35 +87,54 @@ export function filterCourseForOhio(course: Course, includeOhio: boolean): Cours
   if (includeOhio) {
     return course
   }
-  return {
-    ...course,
-    units: course.units
-      .map((unit) => {
-        const regularLessons = unit.lessons.filter(
-          (l) => l.kind === 'lesson' && !l.isOhioExtension
-        )
-        if (regularLessons.length === 0) {
-          return null
+  const filteredUnits: Unit[] = []
+  for (const unit of course.units) {
+    const regularLessons = unit.lessons.filter(
+      (l) => l.kind === 'lesson' && !l.isOhioExtension
+    )
+    if (regularLessons.length === 0) {
+      continue
+    }
+    const allowedPrincipleIds = new Set(
+      regularLessons.flatMap((l) => l.principles.map((p) => p.id))
+    )
+    const filteredLessons: Lesson[] = unit.lessons
+      .filter((l) => {
+        if (l.kind === 'lesson') {
+          return !l.isOhioExtension
         }
-        const filteredLessons = unit.lessons.filter((l) => {
-          if (l.kind === 'lesson') {
-            return !l.isOhioExtension
-          }
-          return true
-        })
+        return true
+      })
+      .map((l) => {
+        const keptPrinciples = l.principles.filter((p) =>
+          allowedPrincipleIds.has(p.id)
+        )
         return {
-          ...unit,
+          ...l,
           isOhioExtension: false,
-          lessons: filteredLessons,
+          principles: keptPrinciples.length > 0 ? keptPrinciples : l.principles,
         }
       })
-      .filter((u): u is Unit => u !== null && u.lessons.length > 0),
+    if (filteredLessons.length > 0) {
+      filteredUnits.push({
+        ...unit,
+        isOhioExtension: false,
+        lessons: filteredLessons,
+      })
+    }
+  }
+  return {
+    ...course,
+    units: filteredUnits,
   }
 }
 
 export const ALL_COURSES: Course[] = enrichCourseAssignments([
   ...GRADE_4_COURSES,
+  ...GRADE_5_COURSES,
   ...GRADE_6_COURSES,
+  ...GRADE_7_COURSES,
+  ...GRADE_8_COURSES,
 ])
 
 /**

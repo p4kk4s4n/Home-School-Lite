@@ -1,0 +1,1689 @@
+{
+  "id": "g7-social",
+  "subject": "social",
+  "grade": 7,
+  "title": "Grade 7 World Studies: 750 B.C. to 1600 A.D.",
+  "subtitle": "Ancient Greece & Rome, Medieval Europe, Renaissance/Reformation & Global Trade Networks",
+  "credits": 1,
+  "color": "#b45309",
+  "icon": "🏛️",
+  "units": [
+    {
+      "id": "g7-soc-u1",
+      "title": "Unit 1: Classical Greece & Rome to Medieval Europe",
+      "standards": [
+        "OH.7.SS.2",
+        "OH.7.SS.4"
+      ],
+      "lessons": [
+        {
+          "id": "g7-soc-u1-l1",
+          "unitId": "g7-soc-u1",
+          "title": "Part 1: Classical Greece & Rome — Democracy, Republic & Law",
+          "kind": "lesson",
+          "partOf": "Classical & Medieval Civilizations",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/ancient-medieval",
+          "videoTitle": "Khan Academy: Classical Greece and the Roman Republic",
+          "reading": "Mountainous geography divided Greece into independent city-states. Athens pioneered direct democracy, where citizens voted directly on laws. Rome created a republic with elected representatives, written laws (the Twelve Tables), and engineering marvels like stone arches and aqueducts.",
+          "principles": [
+            {
+              "id": "p-g7-soc-classical",
+              "title": "Classical Greece & Rome: Democracy, Republic, Law & Engineering",
+              "standard": "OH.7.SS.2",
+              "summary": "Greek democracy and Roman republican law and engineering shaped modern civilization.",
+              "bank": [
+                {
+                  "id": "g7-soc-cls-1",
+                  "prompt": "What form of government did ancient Athens develop?",
+                  "type": "mc",
+                  "choices": [
+                    "Direct democracy",
+                    "Feudal monarchy",
+                    "Military dictatorship",
+                    "Imperial dynasty"
+                  ],
+                  "answer": "Direct democracy",
+                  "explanation": "Direct democracy is a system where citizens vote directly on laws and public decisions."
+                },
+                {
+                  "id": "g7-soc-cls-2",
+                  "prompt": "How did the Roman Republic govern its citizens?",
+                  "type": "mc",
+                  "choices": [
+                    "Citizens elected representatives to vote",
+                    "One pharaoh ruled as a god",
+                    "Citizens had no written laws",
+                    "Generals inherited the throne"
+                  ],
+                  "answer": "Citizens elected representatives to vote",
+                  "explanation": "A republic is a government in which citizens elect representatives to make laws for them."
+                },
+                {
+                  "id": "g7-soc-cls-3",
+                  "prompt": "What were the Twelve Tables in ancient Rome?",
+                  "type": "mc",
+                  "choices": [
+                    "Rome’s written code of laws",
+                    "Twelve marble dining halls",
+                    "Maps of Greek islands",
+                    "Ships used for grain trade"
+                  ],
+                  "answer": "Rome’s written code of laws",
+                  "explanation": "The Twelve Tables were Rome’s first published laws, establishing that law applies to all citizens."
+                },
+                {
+                  "id": "g7-soc-cls-4",
+                  "prompt": "What did Roman aqueducts transport into cities?",
+                  "type": "mc",
+                  "choices": [
+                    "Fresh water from distant hills",
+                    "Gold coins from mines",
+                    "Silk cloth from China",
+                    "Olive oil from Athens"
+                  ],
+                  "answer": "Fresh water from distant hills",
+                  "explanation": "Aqueducts were bridge-like stone channels engineered by Romans to carry fresh water to cities."
+                },
+                {
+                  "id": "g7-soc-cls-5",
+                  "prompt": "Why did mountains and islands matter in ancient Greece?",
+                  "type": "mc",
+                  "choices": [
+                    "They separated Greece into independent city-states",
+                    "They created one giant flat desert",
+                    "They blocked all sea travel",
+                    "They prevented farming everywhere"
+                  ],
+                  "answer": "They separated Greece into independent city-states",
+                  "explanation": "A polis (city-state) was an independent Greek city and its surrounding land, separated by mountains."
+                },
+                {
+                  "id": "g7-soc-cls-6",
+                  "prompt": "Which architectural feature allowed Romans to build strong bridges and domes?",
+                  "type": "mc",
+                  "choices": [
+                    "Rounded stone arches and concrete",
+                    "Paper walls and bamboo",
+                    "Thatched grass roofs",
+                    "Mud bricks dried in shade"
+                  ],
+                  "answer": "Rounded stone arches and concrete",
+                  "explanation": "Roman engineers used arches and concrete to support heavy weight across wide spaces."
+                },
+                {
+                  "id": "g7-soc-cls-7",
+                  "prompt": "How did Alexander the Great spread Hellenistic culture?",
+                  "type": "mc",
+                  "choices": [
+                    "Blending Greek ideas with Persian and Egyptian cultures",
+                    "Closing all libraries and trade routes",
+                    "Forbidding the Greek language",
+                    "Staying inside one small village"
+                  ],
+                  "answer": "Blending Greek ideas with Persian and Egyptian cultures",
+                  "explanation": "Hellenistic culture blended Greek art, science, and philosophy with cultures across Southwest Asia and Egypt."
+                },
+                {
+                  "id": "g7-soc-cls-8",
+                  "prompt": "Which Greek thinkers used logic and reason to study the world?",
+                  "type": "mc",
+                  "choices": [
+                    "Socrates, Plato, and Aristotle",
+                    "Julius Caesar and Augustus",
+                    "Ferdinand and Isabella",
+                    "Mansa Musa and Sundiata"
+                  ],
+                  "answer": "Socrates, Plato, and Aristotle",
+                  "explanation": "Philosophy is the search for wisdom using logic, observation, and questioning."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Classical & Medieval Civilizations] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Classical Greece & Rome: Democracy, Republic, Law & Engineering\" (OH.7.SS.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-soc-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Classical Greece and the Roman Republic",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Classical Greece & Rome: Democracy, Republic, Law & Engineering\" (OH.7.SS.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/world-history/ancient-medieval"
+              },
+              {
+                "id": "g7-soc-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Classical Greece & Rome: Democracy, Republic, Law & Engineering.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-soc-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.7.SS.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Classical Greece & Rome: Democracy, Republic, Law & Engineering.",
+              "Greek democracy and Roman republican law and engineering shaped modern civilization.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What form of government did ancient Athens develop?\" → Answer: Direct democracy. (Direct democracy is a system where citizens vote directly on laws and public decisions.)",
+            "links": [
+              {
+                "label": "YouTube: \"Classical & Medieval Civilizations\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20social%20Classical%20%26%20Medieval%20Civilizations%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Classical & Medieval Civilizations\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Classical%20%26%20Medieval%20Civilizations",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Classical & Medieval Civilizations",
+                "url": "https://www.youtube.com/results?search_query=Classical%20%26%20Medieval%20Civilizations%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-soc-u1-l2",
+          "unitId": "g7-soc-u1",
+          "title": "Part 2: Medieval Europe — Feudalism, Manors & the Magna Carta",
+          "kind": "lesson",
+          "partOf": "Classical & Medieval Civilizations",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/medieval-times",
+          "videoTitle": "Khan Academy: Feudalism, Serfdom & the Magna Carta",
+          "reading": "After Rome fell, European nobles used feudalism—exchanging land (fiefs) for military service from knights—while peasant serfs farmed self-sufficient manors. Later, the Crusades expanded trade, the Black Death created labor shortages, and England’s Magna Carta (1215) limited royal power under the law.",
+          "principles": [
+            {
+              "id": "p-g7-soc-feudal",
+              "title": "Medieval Europe: Feudalism, Manorialism & the Magna Carta",
+              "standard": "OH.7.SS.4",
+              "summary": "Feudalism exchanged land for loyalty, while the Magna Carta limited royal power.",
+              "bank": [
+                {
+                  "id": "g7-soc-feu-1",
+                  "prompt": "What was feudalism in medieval Europe?",
+                  "type": "mc",
+                  "choices": [
+                    "Exchanging land for military service and loyalty",
+                    "Voting for a president every four years",
+                    "Trading factory goods by railroad",
+                    "Paying taxes only in paper money"
+                  ],
+                  "answer": "Exchanging land for military service and loyalty",
+                  "explanation": "Feudalism was a medieval system where nobles gave land (fiefs) to vassals in exchange for loyalty."
+                },
+                {
+                  "id": "g7-soc-feu-2",
+                  "prompt": "What was the role of serfs on a medieval manor?",
+                  "type": "mc",
+                  "choices": [
+                    "Farmed the lord’s land in exchange for protection",
+                    "Led armies in foreign wars",
+                    "Crowned the king in cathedrals",
+                    "Sailed across the Atlantic Ocean"
+                  ],
+                  "answer": "Farmed the lord’s land in exchange for protection",
+                  "explanation": "Manorialism was the economic system where peasant serfs farmed a lord’s estate for shelter and safety."
+                },
+                {
+                  "id": "g7-soc-feu-3",
+                  "prompt": "Why was the Magna Carta of 1215 important?",
+                  "type": "mc",
+                  "choices": [
+                    "It limited the power of the English king",
+                    "It ended all farming in Europe",
+                    "It started the Roman Empire",
+                    "It invented the printing press"
+                  ],
+                  "answer": "It limited the power of the English king",
+                  "explanation": "The Magna Carta established that even the monarch must obey the law and respect basic rights."
+                },
+                {
+                  "id": "g7-soc-feu-4",
+                  "prompt": "Who were knights in the feudal system?",
+                  "type": "mc",
+                  "choices": [
+                    "Mounted warriors who pledged to defend a lord",
+                    "Merchants who ran coastal banks",
+                    "Monks who copied Latin books",
+                    "Peasants who ground wheat"
+                  ],
+                  "answer": "Mounted warriors who pledged to defend a lord",
+                  "explanation": "Knights were armored warriors who received land from lords in return for military service."
+                },
+                {
+                  "id": "g7-soc-feu-5",
+                  "prompt": "How did the Black Death affect medieval Europe?",
+                  "type": "mc",
+                  "choices": [
+                    "Caused labor shortages that weakened feudalism",
+                    "Doubled the population of every city",
+                    "Strengthened serfdom forever",
+                    "Stopped all medical study"
+                  ],
+                  "answer": "Caused labor shortages that weakened feudalism",
+                  "explanation": "The bubonic plague killed millions, allowing surviving workers to demand wages and weaken feudal ties."
+                },
+                {
+                  "id": "g7-soc-feu-6",
+                  "prompt": "What economic effect did the Crusades have on Europe?",
+                  "type": "mc",
+                  "choices": [
+                    "Increased trade between Europe and Southwest Asia",
+                    "Closed every Mediterranean seaport",
+                    "Ended the use of gold coins",
+                    "Stopped Europeans from buying spices"
+                  ],
+                  "answer": "Increased trade between Europe and Southwest Asia",
+                  "explanation": "The Crusades brought Europeans into contact with Asian silks, spices, and scientific knowledge."
+                },
+                {
+                  "id": "g7-soc-feu-7",
+                  "prompt": "What was a fief in medieval society?",
+                  "type": "mc",
+                  "choices": [
+                    "A grant of land given to a vassal",
+                    "A stone tower inside a castle",
+                    "A tax paid to a guild",
+                    "A type of iron plow"
+                  ],
+                  "answer": "A grant of land given to a vassal",
+                  "explanation": "A fief was an estate of land granted by a lord to a vassal in return for sworn loyalty."
+                },
+                {
+                  "id": "g7-soc-feu-8",
+                  "prompt": "How did monasteries preserve learning during the Middle Ages?",
+                  "type": "mc",
+                  "choices": [
+                    "Monks copied and saved ancient manuscripts",
+                    "Monks printed daily newspapers",
+                    "Monks built steam engines",
+                    "Monks closed all schools"
+                  ],
+                  "answer": "Monks copied and saved ancient manuscripts",
+                  "explanation": "Medieval monasteries served as centers of literacy where monks hand-copied classical and religious texts."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Classical & Medieval Civilizations] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Medieval Europe: Feudalism, Manorialism & the Magna Carta\" (OH.7.SS.4), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-soc-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Feudalism, Serfdom & the Magna Carta",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Medieval Europe: Feudalism, Manorialism & the Magna Carta\" (OH.7.SS.4). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/world-history/medieval-times"
+              },
+              {
+                "id": "g7-soc-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Medieval Europe: Feudalism, Manorialism & the Magna Carta.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-soc-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.7.SS.4)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Medieval Europe: Feudalism, Manorialism & the Magna Carta.",
+              "Feudalism exchanged land for loyalty, while the Magna Carta limited royal power.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What was feudalism in medieval Europe?\" → Answer: Exchanging land for military service and loyalty. (Feudalism was a medieval system where nobles gave land (fiefs) to vassals in exchange for loyalty.)",
+            "links": [
+              {
+                "label": "YouTube: \"Classical & Medieval Civilizations\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20social%20Classical%20%26%20Medieval%20Civilizations%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Classical & Medieval Civilizations\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Classical%20%26%20Medieval%20Civilizations",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Classical & Medieval Civilizations",
+                "url": "https://www.youtube.com/results?search_query=Classical%20%26%20Medieval%20Civilizations%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-soc-u1-test",
+          "unitId": "g7-soc-u1",
+          "title": "Unit 1 Exam: Classical Antiquity & Medieval Europe",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/ancient-medieval",
+          "videoTitle": "Unit 1 Review: Greece, Rome & Feudal Europe",
+          "reading": "Answer 8 questions on Greek democracy, the Roman Republic, feudalism, manorialism, and the Magna Carta.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g7-soc-classical",
+              "title": "Classical Greece & Rome: Democracy, Republic, Law & Engineering",
+              "standard": "OH.7.SS.2",
+              "summary": "Greek democracy and Roman republican law and engineering shaped modern civilization.",
+              "bank": [
+                {
+                  "id": "g7-soc-cls-1",
+                  "prompt": "What form of government did ancient Athens develop?",
+                  "type": "mc",
+                  "choices": [
+                    "Direct democracy",
+                    "Feudal monarchy",
+                    "Military dictatorship",
+                    "Imperial dynasty"
+                  ],
+                  "answer": "Direct democracy",
+                  "explanation": "Direct democracy is a system where citizens vote directly on laws and public decisions."
+                },
+                {
+                  "id": "g7-soc-cls-2",
+                  "prompt": "How did the Roman Republic govern its citizens?",
+                  "type": "mc",
+                  "choices": [
+                    "Citizens elected representatives to vote",
+                    "One pharaoh ruled as a god",
+                    "Citizens had no written laws",
+                    "Generals inherited the throne"
+                  ],
+                  "answer": "Citizens elected representatives to vote",
+                  "explanation": "A republic is a government in which citizens elect representatives to make laws for them."
+                },
+                {
+                  "id": "g7-soc-cls-3",
+                  "prompt": "What were the Twelve Tables in ancient Rome?",
+                  "type": "mc",
+                  "choices": [
+                    "Rome’s written code of laws",
+                    "Twelve marble dining halls",
+                    "Maps of Greek islands",
+                    "Ships used for grain trade"
+                  ],
+                  "answer": "Rome’s written code of laws",
+                  "explanation": "The Twelve Tables were Rome’s first published laws, establishing that law applies to all citizens."
+                },
+                {
+                  "id": "g7-soc-cls-4",
+                  "prompt": "What did Roman aqueducts transport into cities?",
+                  "type": "mc",
+                  "choices": [
+                    "Fresh water from distant hills",
+                    "Gold coins from mines",
+                    "Silk cloth from China",
+                    "Olive oil from Athens"
+                  ],
+                  "answer": "Fresh water from distant hills",
+                  "explanation": "Aqueducts were bridge-like stone channels engineered by Romans to carry fresh water to cities."
+                },
+                {
+                  "id": "g7-soc-cls-5",
+                  "prompt": "Why did mountains and islands matter in ancient Greece?",
+                  "type": "mc",
+                  "choices": [
+                    "They separated Greece into independent city-states",
+                    "They created one giant flat desert",
+                    "They blocked all sea travel",
+                    "They prevented farming everywhere"
+                  ],
+                  "answer": "They separated Greece into independent city-states",
+                  "explanation": "A polis (city-state) was an independent Greek city and its surrounding land, separated by mountains."
+                },
+                {
+                  "id": "g7-soc-cls-6",
+                  "prompt": "Which architectural feature allowed Romans to build strong bridges and domes?",
+                  "type": "mc",
+                  "choices": [
+                    "Rounded stone arches and concrete",
+                    "Paper walls and bamboo",
+                    "Thatched grass roofs",
+                    "Mud bricks dried in shade"
+                  ],
+                  "answer": "Rounded stone arches and concrete",
+                  "explanation": "Roman engineers used arches and concrete to support heavy weight across wide spaces."
+                },
+                {
+                  "id": "g7-soc-cls-7",
+                  "prompt": "How did Alexander the Great spread Hellenistic culture?",
+                  "type": "mc",
+                  "choices": [
+                    "Blending Greek ideas with Persian and Egyptian cultures",
+                    "Closing all libraries and trade routes",
+                    "Forbidding the Greek language",
+                    "Staying inside one small village"
+                  ],
+                  "answer": "Blending Greek ideas with Persian and Egyptian cultures",
+                  "explanation": "Hellenistic culture blended Greek art, science, and philosophy with cultures across Southwest Asia and Egypt."
+                },
+                {
+                  "id": "g7-soc-cls-8",
+                  "prompt": "Which Greek thinkers used logic and reason to study the world?",
+                  "type": "mc",
+                  "choices": [
+                    "Socrates, Plato, and Aristotle",
+                    "Julius Caesar and Augustus",
+                    "Ferdinand and Isabella",
+                    "Mansa Musa and Sundiata"
+                  ],
+                  "answer": "Socrates, Plato, and Aristotle",
+                  "explanation": "Philosophy is the search for wisdom using logic, observation, and questioning."
+                }
+              ]
+            },
+            {
+              "id": "p-g7-soc-feudal",
+              "title": "Medieval Europe: Feudalism, Manorialism & the Magna Carta",
+              "standard": "OH.7.SS.4",
+              "summary": "Feudalism exchanged land for loyalty, while the Magna Carta limited royal power.",
+              "bank": [
+                {
+                  "id": "g7-soc-feu-1",
+                  "prompt": "What was feudalism in medieval Europe?",
+                  "type": "mc",
+                  "choices": [
+                    "Exchanging land for military service and loyalty",
+                    "Voting for a president every four years",
+                    "Trading factory goods by railroad",
+                    "Paying taxes only in paper money"
+                  ],
+                  "answer": "Exchanging land for military service and loyalty",
+                  "explanation": "Feudalism was a medieval system where nobles gave land (fiefs) to vassals in exchange for loyalty."
+                },
+                {
+                  "id": "g7-soc-feu-2",
+                  "prompt": "What was the role of serfs on a medieval manor?",
+                  "type": "mc",
+                  "choices": [
+                    "Farmed the lord’s land in exchange for protection",
+                    "Led armies in foreign wars",
+                    "Crowned the king in cathedrals",
+                    "Sailed across the Atlantic Ocean"
+                  ],
+                  "answer": "Farmed the lord’s land in exchange for protection",
+                  "explanation": "Manorialism was the economic system where peasant serfs farmed a lord’s estate for shelter and safety."
+                },
+                {
+                  "id": "g7-soc-feu-3",
+                  "prompt": "Why was the Magna Carta of 1215 important?",
+                  "type": "mc",
+                  "choices": [
+                    "It limited the power of the English king",
+                    "It ended all farming in Europe",
+                    "It started the Roman Empire",
+                    "It invented the printing press"
+                  ],
+                  "answer": "It limited the power of the English king",
+                  "explanation": "The Magna Carta established that even the monarch must obey the law and respect basic rights."
+                },
+                {
+                  "id": "g7-soc-feu-4",
+                  "prompt": "Who were knights in the feudal system?",
+                  "type": "mc",
+                  "choices": [
+                    "Mounted warriors who pledged to defend a lord",
+                    "Merchants who ran coastal banks",
+                    "Monks who copied Latin books",
+                    "Peasants who ground wheat"
+                  ],
+                  "answer": "Mounted warriors who pledged to defend a lord",
+                  "explanation": "Knights were armored warriors who received land from lords in return for military service."
+                },
+                {
+                  "id": "g7-soc-feu-5",
+                  "prompt": "How did the Black Death affect medieval Europe?",
+                  "type": "mc",
+                  "choices": [
+                    "Caused labor shortages that weakened feudalism",
+                    "Doubled the population of every city",
+                    "Strengthened serfdom forever",
+                    "Stopped all medical study"
+                  ],
+                  "answer": "Caused labor shortages that weakened feudalism",
+                  "explanation": "The bubonic plague killed millions, allowing surviving workers to demand wages and weaken feudal ties."
+                },
+                {
+                  "id": "g7-soc-feu-6",
+                  "prompt": "What economic effect did the Crusades have on Europe?",
+                  "type": "mc",
+                  "choices": [
+                    "Increased trade between Europe and Southwest Asia",
+                    "Closed every Mediterranean seaport",
+                    "Ended the use of gold coins",
+                    "Stopped Europeans from buying spices"
+                  ],
+                  "answer": "Increased trade between Europe and Southwest Asia",
+                  "explanation": "The Crusades brought Europeans into contact with Asian silks, spices, and scientific knowledge."
+                },
+                {
+                  "id": "g7-soc-feu-7",
+                  "prompt": "What was a fief in medieval society?",
+                  "type": "mc",
+                  "choices": [
+                    "A grant of land given to a vassal",
+                    "A stone tower inside a castle",
+                    "A tax paid to a guild",
+                    "A type of iron plow"
+                  ],
+                  "answer": "A grant of land given to a vassal",
+                  "explanation": "A fief was an estate of land granted by a lord to a vassal in return for sworn loyalty."
+                },
+                {
+                  "id": "g7-soc-feu-8",
+                  "prompt": "How did monasteries preserve learning during the Middle Ages?",
+                  "type": "mc",
+                  "choices": [
+                    "Monks copied and saved ancient manuscripts",
+                    "Monks printed daily newspapers",
+                    "Monks built steam engines",
+                    "Monks closed all schools"
+                  ],
+                  "answer": "Monks copied and saved ancient manuscripts",
+                  "explanation": "Medieval monasteries served as centers of literacy where monks hand-copied classical and religious texts."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Classical Greece & Rome: Democracy, Republic, Law & Engineering & Medieval Europe: Feudalism, Manorialism & the Magna Carta (OH.7.SS.2, OH.7.SS.4). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g7-soc-u1-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Classical Greece & Rome: Democracy, Republic, Law & Engineering & Medieval Europe: Feudalism, Manorialism & the Magna Carta",
+                "description": "Read the Core Concept Summary and Principle cards on this page (OH.7.SS.2, OH.7.SS.4) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g7-soc-u1-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 Review: Greece, Rome & Feudal Europe",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Classical Greece & Rome: Democracy, Republic, Law & Engineering & Medieval Europe: Feudalism, Manorialism & the Magna Carta\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/world-history/ancient-medieval"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Classical Greece & Rome: Democracy, Republic, Law & Engineering.",
+              "Greek democracy and Roman republican law and engineering shaped modern civilization.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What form of government did ancient Athens develop?\" → Answer: Direct democracy. (Direct democracy is a system where citizens vote directly on laws and public decisions.)",
+            "links": [
+              {
+                "label": "YouTube: \"Classical Antiquity & Medieval Europe\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20social%20Classical%20Antiquity%20%26%20Medieval%20Europe%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Classical Antiquity & Medieval Europe\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Classical%20Antiquity%20%26%20Medieval%20Europe",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Classical Antiquity & Medieval Europe",
+                "url": "https://www.youtube.com/results?search_query=Classical%20Antiquity%20%26%20Medieval%20Europe%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g7-soc-u2",
+      "title": "Unit 2: Renaissance, Reformation & Global Trade Empires",
+      "standards": [
+        "OH.7.SS.6",
+        "OH.7.SS.7",
+        "OH.7.SS.8",
+        "OH.7.SS.11"
+      ],
+      "lessons": [
+        {
+          "id": "g7-soc-u2-l1",
+          "unitId": "g7-soc-u2",
+          "title": "Part 1: The Renaissance, Gutenberg Press & the Reformation",
+          "kind": "lesson",
+          "partOf": "Renaissance & Global Connections",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/renaissance-and-reformation",
+          "videoTitle": "Khan Academy: The Italian Renaissance & Protestant Reformation",
+          "reading": "Wealthy Italian trading cities sparked the Renaissance, a rebirth of classical art, science, and humanism. Johannes Gutenberg’s movable-type printing press made books affordable and helped spread Martin Luther’s Reformation ideas across Europe.",
+          "principles": [
+            {
+              "id": "p-g7-soc-ren",
+              "title": "The Renaissance, Gutenberg Press & the Reformation",
+              "standard": "OH.7.SS.6 / OH.7.SS.7",
+              "summary": "The Renaissance revived classical learning while the printing press spread Reformation ideas.",
+              "bank": [
+                {
+                  "id": "g7-soc-ren-1",
+                  "prompt": "What does the word \"Renaissance\" mean?",
+                  "type": "mc",
+                  "choices": [
+                    "Rebirth of art and learning",
+                    "Fall of ancient empires",
+                    "Rule by feudal knights",
+                    "Age of ice glaciers"
+                  ],
+                  "answer": "Rebirth of art and learning",
+                  "explanation": "The Renaissance was a cultural rebirth in Europe that revived Greek and Roman art and inquiry."
+                },
+                {
+                  "id": "g7-soc-ren-2",
+                  "prompt": "Why did the Renaissance begin in Italian city-states like Florence?",
+                  "type": "mc",
+                  "choices": [
+                    "Wealthy trade merchants funded artists and scholars",
+                    "Italy had no access to sea trade",
+                    "Feudal serfs owned all Italian banks",
+                    "Florence banned Greek books"
+                  ],
+                  "answer": "Wealthy trade merchants funded artists and scholars",
+                  "explanation": "Patrons were wealthy merchant families who sponsored painters, sculptors, and humanist thinkers."
+                },
+                {
+                  "id": "g7-soc-ren-3",
+                  "prompt": "What did Renaissance humanism emphasize?",
+                  "type": "mc",
+                  "choices": [
+                    "Human potential, reason, and classical education",
+                    "Ignoring history and science",
+                    "Living only on isolated manors",
+                    "Destroying ancient sculptures"
+                  ],
+                  "answer": "Human potential, reason, and classical education",
+                  "explanation": "Humanism focused on the value of human achievement, literature, history, and observation."
+                },
+                {
+                  "id": "g7-soc-ren-4",
+                  "prompt": "How did Johannes Gutenberg’s printing press change Europe?",
+                  "type": "mc",
+                  "choices": [
+                    "Made books cheaper and spread literacy rapidly",
+                    "Made books ten times more expensive",
+                    "Forced people to write on clay",
+                    "Stopped scientists from sharing ideas"
+                  ],
+                  "answer": "Made books cheaper and spread literacy rapidly",
+                  "explanation": "Movable-type printing allowed books to be produced quickly, spreading new religious and scientific ideas."
+                },
+                {
+                  "id": "g7-soc-ren-5",
+                  "prompt": "Who started the Protestant Reformation in 1517 with his Ninety-Five Theses?",
+                  "type": "mc",
+                  "choices": [
+                    "Martin Luther",
+                    "Leonardo da Vinci",
+                    "Julius Caesar",
+                    "Marco Polo"
+                  ],
+                  "answer": "Martin Luther",
+                  "explanation": "The Reformation was a religious movement started by Martin Luther to reform church practices."
+                },
+                {
+                  "id": "g7-soc-ren-6",
+                  "prompt": "What church practice did Martin Luther strongly criticize?",
+                  "type": "mc",
+                  "choices": [
+                    "Selling indulgences for forgiveness",
+                    "Painting cathedral ceilings",
+                    "Helping poor villagers",
+                    "Singing hymns on Sunday"
+                  ],
+                  "answer": "Selling indulgences for forgiveness",
+                  "explanation": "Luther argued that salvation could not be bought with money through certificates called indulgences."
+                },
+                {
+                  "id": "g7-soc-ren-7",
+                  "prompt": "Who painted the Mona Lisa and filled notebooks with inventions?",
+                  "type": "mc",
+                  "choices": [
+                    "Leonardo da Vinci",
+                    "Charlemagne",
+                    "King John",
+                    "Galileo Galilei"
+                  ],
+                  "answer": "Leonardo da Vinci",
+                  "explanation": "Leonardo da Vinci was a \"Renaissance man\" skilled in painting, anatomy, and engineering."
+                },
+                {
+                  "id": "g7-soc-ren-8",
+                  "prompt": "How did translating the Bible into everyday languages affect people?",
+                  "type": "mc",
+                  "choices": [
+                    "Ordinary citizens could read scripture themselves",
+                    "Only kings were allowed to read",
+                    "Latin became the only spoken tongue",
+                    "Libraries closed across Europe"
+                  ],
+                  "answer": "Ordinary citizens could read scripture themselves",
+                  "explanation": "Vernacular translations let everyday people read books in their own native language."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Renaissance & Global Connections] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"The Renaissance, Gutenberg Press & the Reformation\" (OH.7.SS.6 / OH.7.SS.7), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-soc-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: The Italian Renaissance & Protestant Reformation",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"The Renaissance, Gutenberg Press & the Reformation\" (OH.7.SS.6 / OH.7.SS.7). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/world-history/renaissance-and-reformation"
+              },
+              {
+                "id": "g7-soc-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to The Renaissance, Gutenberg Press & the Reformation.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-soc-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.7.SS.6 / OH.7.SS.7)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: The Renaissance, Gutenberg Press & the Reformation.",
+              "The Renaissance revived classical learning while the printing press spread Reformation ideas.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What does the word \"Renaissance\" mean?\" → Answer: Rebirth of art and learning. (The Renaissance was a cultural rebirth in Europe that revived Greek and Roman art and inquiry.)",
+            "links": [
+              {
+                "label": "YouTube: \"Renaissance & Global Connections\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20social%20Renaissance%20%26%20Global%20Connections%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Renaissance & Global Connections\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Renaissance%20%26%20Global%20Connections",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Renaissance & Global Connections",
+                "url": "https://www.youtube.com/results?search_query=Renaissance%20%26%20Global%20Connections%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-soc-u2-l2",
+          "unitId": "g7-soc-u2",
+          "title": "Part 2: West African Empires, Islamic Golden Age & Global Exchange",
+          "kind": "lesson",
+          "partOf": "Renaissance & Global Connections",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/medieval-times",
+          "videoTitle": "Khan Academy: Mali Empire, Silk Road & Columbian Exchange",
+          "reading": "In West Africa, the empires of Ghana and Mali (led by Mansa Musa) flourished on the gold-salt trade and turned Timbuktu into a center of learning. Scholars of the Islamic Golden Age advanced algebra and medicine, Silk Road caravans linked Eurasia, and the Columbian Exchange connected the Americas and Afro-Eurasia.",
+          "principles": [
+            {
+              "id": "p-g7-soc-global",
+              "title": "West African Empires, Islamic Golden Age & Global Exchange",
+              "standard": "OH.7.SS.8 / OH.7.SS.11",
+              "summary": "Trans-Saharan gold-salt trade, Silk Road networks, and the Columbian Exchange reshaped the world.",
+              "bank": [
+                {
+                  "id": "g7-soc-glb-1",
+                  "prompt": "Which two goods drove trade in West Africa’s Ghana and Mali empires?",
+                  "type": "mc",
+                  "choices": [
+                    "Gold and salt",
+                    "Silk and porcelain",
+                    "Coal and steel",
+                    "Fur and timber"
+                  ],
+                  "answer": "Gold and salt",
+                  "explanation": "West African empires grew wealthy by taxing the trans-Saharan trade of gold and desert salt."
+                },
+                {
+                  "id": "g7-soc-glb-2",
+                  "prompt": "Which Mali ruler made a famous pilgrimage and supported Timbuktu schools?",
+                  "type": "mc",
+                  "choices": [
+                    "Mansa Musa",
+                    "Alexander the Great",
+                    "Pericles of Athens",
+                    "William the Conqueror"
+                  ],
+                  "answer": "Mansa Musa",
+                  "explanation": "Mansa Musa ruled Mali and turned Timbuktu into a major center of Islamic learning and trade."
+                },
+                {
+                  "id": "g7-soc-glb-3",
+                  "prompt": "What were scholars in the Islamic Golden Age known for advancing?",
+                  "type": "mc",
+                  "choices": [
+                    "Algebra, medicine, and astronomy",
+                    "Feudal serf farming",
+                    "Viking longship raiding",
+                    "Gladiator arena games"
+                  ],
+                  "answer": "Algebra, medicine, and astronomy",
+                  "explanation": "During the Islamic Golden Age, scholars in cities like Baghdad advanced math, medicine, and optics."
+                },
+                {
+                  "id": "g7-soc-glb-4",
+                  "prompt": "What was the Silk Road?",
+                  "type": "mc",
+                  "choices": [
+                    "Trade routes linking China to the Mediterranean",
+                    "A stone highway inside Rome",
+                    "A river canal in England",
+                    "A sea route around Antarctica"
+                  ],
+                  "answer": "Trade routes linking China to the Mediterranean",
+                  "explanation": "The Silk Road was a network of overland trade routes carrying goods and ideas across Eurasia."
+                },
+                {
+                  "id": "g7-soc-glb-5",
+                  "prompt": "What was the Columbian Exchange?",
+                  "type": "mc",
+                  "choices": [
+                    "Transfer of plants, animals, and diseases across the Atlantic",
+                    "A treaty between Athens and Sparta",
+                    "A gold coin used in Mali",
+                    "A guild of Italian painters"
+                  ],
+                  "answer": "Transfer of plants, animals, and diseases across the Atlantic",
+                  "explanation": "The Columbian Exchange moved crops, livestock, people, and diseases between the Americas and Afro-Eurasia."
+                },
+                {
+                  "id": "g7-soc-glb-6",
+                  "prompt": "Which crops traveled from the Americas to Europe in the Columbian Exchange?",
+                  "type": "mc",
+                  "choices": [
+                    "Potatoes, corn, and tomatoes",
+                    "Wheat, rice, and sugarcane",
+                    "Olives, grapes, and peaches",
+                    "Coffee, tea, and bananas"
+                  ],
+                  "answer": "Potatoes, corn, and tomatoes",
+                  "explanation": "American crops like potatoes and maize (corn) boosted food supplies and populations in Europe."
+                },
+                {
+                  "id": "g7-soc-glb-7",
+                  "prompt": "How did Old World diseases affect Indigenous peoples in the Americas?",
+                  "type": "mc",
+                  "choices": [
+                    "Caused devastating population declines",
+                    "Had no effect on health",
+                    "Increased life expectancy",
+                    "Only affected farm animals"
+                  ],
+                  "answer": "Caused devastating population declines",
+                  "explanation": "Indigenous populations lacked immunity to smallpox and measles, leading to catastrophic losses."
+                },
+                {
+                  "id": "g7-soc-glb-8",
+                  "prompt": "Which animal brought from Europe transformed life on the Great Plains?",
+                  "type": "mc",
+                  "choices": [
+                    "The horse",
+                    "The llama",
+                    "The kangaroo",
+                    "The polar bear"
+                  ],
+                  "answer": "The horse",
+                  "explanation": "Europeans reintroduced horses to the Americas, changing travel and hunting for Indigenous nations."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Renaissance & Global Connections] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"West African Empires, Islamic Golden Age & Global Exchange\" (OH.7.SS.8 / OH.7.SS.11), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-soc-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Mali Empire, Silk Road & Columbian Exchange",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"West African Empires, Islamic Golden Age & Global Exchange\" (OH.7.SS.8 / OH.7.SS.11). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/world-history/medieval-times"
+              },
+              {
+                "id": "g7-soc-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to West African Empires, Islamic Golden Age & Global Exchange.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-soc-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.7.SS.8 / OH.7.SS.11)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: West African Empires, Islamic Golden Age & Global Exchange.",
+              "Trans-Saharan gold-salt trade, Silk Road networks, and the Columbian Exchange reshaped the world.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which two goods drove trade in West Africa’s Ghana and Mali empires?\" → Answer: Gold and salt. (West African empires grew wealthy by taxing the trans-Saharan trade of gold and desert salt.)",
+            "links": [
+              {
+                "label": "YouTube: \"Renaissance & Global Connections\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20social%20Renaissance%20%26%20Global%20Connections%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Renaissance & Global Connections\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Renaissance%20%26%20Global%20Connections",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Renaissance & Global Connections",
+                "url": "https://www.youtube.com/results?search_query=Renaissance%20%26%20Global%20Connections%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-soc-u2-rev",
+          "unitId": "g7-soc-u2",
+          "title": "Topic Review: Renaissance Ideas & Global Trade Routes",
+          "kind": "lesson_review",
+          "partOf": "Renaissance & Global Connections",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/renaissance-and-reformation",
+          "videoTitle": "Review: Printing Press, Mali & Columbian Exchange",
+          "reading": "Review 6 questions on humanism, the printing press, West African gold-salt trade, and the Columbian Exchange.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g7-soc-ren",
+              "title": "The Renaissance, Gutenberg Press & the Reformation",
+              "standard": "OH.7.SS.6 / OH.7.SS.7",
+              "summary": "The Renaissance revived classical learning while the printing press spread Reformation ideas.",
+              "bank": [
+                {
+                  "id": "g7-soc-ren-1",
+                  "prompt": "What does the word \"Renaissance\" mean?",
+                  "type": "mc",
+                  "choices": [
+                    "Rebirth of art and learning",
+                    "Fall of ancient empires",
+                    "Rule by feudal knights",
+                    "Age of ice glaciers"
+                  ],
+                  "answer": "Rebirth of art and learning",
+                  "explanation": "The Renaissance was a cultural rebirth in Europe that revived Greek and Roman art and inquiry."
+                },
+                {
+                  "id": "g7-soc-ren-2",
+                  "prompt": "Why did the Renaissance begin in Italian city-states like Florence?",
+                  "type": "mc",
+                  "choices": [
+                    "Wealthy trade merchants funded artists and scholars",
+                    "Italy had no access to sea trade",
+                    "Feudal serfs owned all Italian banks",
+                    "Florence banned Greek books"
+                  ],
+                  "answer": "Wealthy trade merchants funded artists and scholars",
+                  "explanation": "Patrons were wealthy merchant families who sponsored painters, sculptors, and humanist thinkers."
+                },
+                {
+                  "id": "g7-soc-ren-3",
+                  "prompt": "What did Renaissance humanism emphasize?",
+                  "type": "mc",
+                  "choices": [
+                    "Human potential, reason, and classical education",
+                    "Ignoring history and science",
+                    "Living only on isolated manors",
+                    "Destroying ancient sculptures"
+                  ],
+                  "answer": "Human potential, reason, and classical education",
+                  "explanation": "Humanism focused on the value of human achievement, literature, history, and observation."
+                },
+                {
+                  "id": "g7-soc-ren-4",
+                  "prompt": "How did Johannes Gutenberg’s printing press change Europe?",
+                  "type": "mc",
+                  "choices": [
+                    "Made books cheaper and spread literacy rapidly",
+                    "Made books ten times more expensive",
+                    "Forced people to write on clay",
+                    "Stopped scientists from sharing ideas"
+                  ],
+                  "answer": "Made books cheaper and spread literacy rapidly",
+                  "explanation": "Movable-type printing allowed books to be produced quickly, spreading new religious and scientific ideas."
+                },
+                {
+                  "id": "g7-soc-ren-5",
+                  "prompt": "Who started the Protestant Reformation in 1517 with his Ninety-Five Theses?",
+                  "type": "mc",
+                  "choices": [
+                    "Martin Luther",
+                    "Leonardo da Vinci",
+                    "Julius Caesar",
+                    "Marco Polo"
+                  ],
+                  "answer": "Martin Luther",
+                  "explanation": "The Reformation was a religious movement started by Martin Luther to reform church practices."
+                },
+                {
+                  "id": "g7-soc-ren-6",
+                  "prompt": "What church practice did Martin Luther strongly criticize?",
+                  "type": "mc",
+                  "choices": [
+                    "Selling indulgences for forgiveness",
+                    "Painting cathedral ceilings",
+                    "Helping poor villagers",
+                    "Singing hymns on Sunday"
+                  ],
+                  "answer": "Selling indulgences for forgiveness",
+                  "explanation": "Luther argued that salvation could not be bought with money through certificates called indulgences."
+                },
+                {
+                  "id": "g7-soc-ren-7",
+                  "prompt": "Who painted the Mona Lisa and filled notebooks with inventions?",
+                  "type": "mc",
+                  "choices": [
+                    "Leonardo da Vinci",
+                    "Charlemagne",
+                    "King John",
+                    "Galileo Galilei"
+                  ],
+                  "answer": "Leonardo da Vinci",
+                  "explanation": "Leonardo da Vinci was a \"Renaissance man\" skilled in painting, anatomy, and engineering."
+                },
+                {
+                  "id": "g7-soc-ren-8",
+                  "prompt": "How did translating the Bible into everyday languages affect people?",
+                  "type": "mc",
+                  "choices": [
+                    "Ordinary citizens could read scripture themselves",
+                    "Only kings were allowed to read",
+                    "Latin became the only spoken tongue",
+                    "Libraries closed across Europe"
+                  ],
+                  "answer": "Ordinary citizens could read scripture themselves",
+                  "explanation": "Vernacular translations let everyday people read books in their own native language."
+                }
+              ]
+            },
+            {
+              "id": "p-g7-soc-global",
+              "title": "West African Empires, Islamic Golden Age & Global Exchange",
+              "standard": "OH.7.SS.8 / OH.7.SS.11",
+              "summary": "Trans-Saharan gold-salt trade, Silk Road networks, and the Columbian Exchange reshaped the world.",
+              "bank": [
+                {
+                  "id": "g7-soc-glb-1",
+                  "prompt": "Which two goods drove trade in West Africa’s Ghana and Mali empires?",
+                  "type": "mc",
+                  "choices": [
+                    "Gold and salt",
+                    "Silk and porcelain",
+                    "Coal and steel",
+                    "Fur and timber"
+                  ],
+                  "answer": "Gold and salt",
+                  "explanation": "West African empires grew wealthy by taxing the trans-Saharan trade of gold and desert salt."
+                },
+                {
+                  "id": "g7-soc-glb-2",
+                  "prompt": "Which Mali ruler made a famous pilgrimage and supported Timbuktu schools?",
+                  "type": "mc",
+                  "choices": [
+                    "Mansa Musa",
+                    "Alexander the Great",
+                    "Pericles of Athens",
+                    "William the Conqueror"
+                  ],
+                  "answer": "Mansa Musa",
+                  "explanation": "Mansa Musa ruled Mali and turned Timbuktu into a major center of Islamic learning and trade."
+                },
+                {
+                  "id": "g7-soc-glb-3",
+                  "prompt": "What were scholars in the Islamic Golden Age known for advancing?",
+                  "type": "mc",
+                  "choices": [
+                    "Algebra, medicine, and astronomy",
+                    "Feudal serf farming",
+                    "Viking longship raiding",
+                    "Gladiator arena games"
+                  ],
+                  "answer": "Algebra, medicine, and astronomy",
+                  "explanation": "During the Islamic Golden Age, scholars in cities like Baghdad advanced math, medicine, and optics."
+                },
+                {
+                  "id": "g7-soc-glb-4",
+                  "prompt": "What was the Silk Road?",
+                  "type": "mc",
+                  "choices": [
+                    "Trade routes linking China to the Mediterranean",
+                    "A stone highway inside Rome",
+                    "A river canal in England",
+                    "A sea route around Antarctica"
+                  ],
+                  "answer": "Trade routes linking China to the Mediterranean",
+                  "explanation": "The Silk Road was a network of overland trade routes carrying goods and ideas across Eurasia."
+                },
+                {
+                  "id": "g7-soc-glb-5",
+                  "prompt": "What was the Columbian Exchange?",
+                  "type": "mc",
+                  "choices": [
+                    "Transfer of plants, animals, and diseases across the Atlantic",
+                    "A treaty between Athens and Sparta",
+                    "A gold coin used in Mali",
+                    "A guild of Italian painters"
+                  ],
+                  "answer": "Transfer of plants, animals, and diseases across the Atlantic",
+                  "explanation": "The Columbian Exchange moved crops, livestock, people, and diseases between the Americas and Afro-Eurasia."
+                },
+                {
+                  "id": "g7-soc-glb-6",
+                  "prompt": "Which crops traveled from the Americas to Europe in the Columbian Exchange?",
+                  "type": "mc",
+                  "choices": [
+                    "Potatoes, corn, and tomatoes",
+                    "Wheat, rice, and sugarcane",
+                    "Olives, grapes, and peaches",
+                    "Coffee, tea, and bananas"
+                  ],
+                  "answer": "Potatoes, corn, and tomatoes",
+                  "explanation": "American crops like potatoes and maize (corn) boosted food supplies and populations in Europe."
+                },
+                {
+                  "id": "g7-soc-glb-7",
+                  "prompt": "How did Old World diseases affect Indigenous peoples in the Americas?",
+                  "type": "mc",
+                  "choices": [
+                    "Caused devastating population declines",
+                    "Had no effect on health",
+                    "Increased life expectancy",
+                    "Only affected farm animals"
+                  ],
+                  "answer": "Caused devastating population declines",
+                  "explanation": "Indigenous populations lacked immunity to smallpox and measles, leading to catastrophic losses."
+                },
+                {
+                  "id": "g7-soc-glb-8",
+                  "prompt": "Which animal brought from Europe transformed life on the Great Plains?",
+                  "type": "mc",
+                  "choices": [
+                    "The horse",
+                    "The llama",
+                    "The kangaroo",
+                    "The polar bear"
+                  ],
+                  "answer": "The horse",
+                  "explanation": "Europeans reintroduced horses to the Americas, changing travel and hunting for Indigenous nations."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering The Renaissance, Gutenberg Press & the Reformation & West African Empires, Islamic Golden Age & Global Exchange (OH.7.SS.6 / OH.7.SS.7, OH.7.SS.8 / OH.7.SS.11). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g7-soc-u2-rev-step-review",
+                "type": "reading",
+                "title": "Review Principles: The Renaissance, Gutenberg Press & the Reformation & West African Empires, Islamic Golden Age & Global Exchange",
+                "description": "Read the Core Concept Summary and Principle cards on this page (OH.7.SS.6 / OH.7.SS.7, OH.7.SS.8 / OH.7.SS.11) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g7-soc-u2-rev-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Review: Printing Press, Mali & Columbian Exchange",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"The Renaissance, Gutenberg Press & the Reformation & West African Empires, Islamic Golden Age & Global Exchange\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/world-history/renaissance-and-reformation"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: The Renaissance, Gutenberg Press & the Reformation.",
+              "The Renaissance revived classical learning while the printing press spread Reformation ideas.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What does the word \"Renaissance\" mean?\" → Answer: Rebirth of art and learning. (The Renaissance was a cultural rebirth in Europe that revived Greek and Roman art and inquiry.)",
+            "links": [
+              {
+                "label": "YouTube: \"Renaissance & Global Connections\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20social%20Renaissance%20%26%20Global%20Connections%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Renaissance & Global Connections\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Renaissance%20%26%20Global%20Connections",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Renaissance & Global Connections",
+                "url": "https://www.youtube.com/results?search_query=Renaissance%20%26%20Global%20Connections%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-soc-u2-test",
+          "unitId": "g7-soc-u2",
+          "title": "Unit 2 Exam: Renaissance, Reformation & Global Networks",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/renaissance-and-reformation",
+          "videoTitle": "Unit 2 Review: Early Modern World History",
+          "reading": "Complete 8 questions covering the Renaissance, Reformation, West African empires, Islamic Golden Age, and Columbian Exchange.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g7-soc-ren",
+              "title": "The Renaissance, Gutenberg Press & the Reformation",
+              "standard": "OH.7.SS.6 / OH.7.SS.7",
+              "summary": "The Renaissance revived classical learning while the printing press spread Reformation ideas.",
+              "bank": [
+                {
+                  "id": "g7-soc-ren-1",
+                  "prompt": "What does the word \"Renaissance\" mean?",
+                  "type": "mc",
+                  "choices": [
+                    "Rebirth of art and learning",
+                    "Fall of ancient empires",
+                    "Rule by feudal knights",
+                    "Age of ice glaciers"
+                  ],
+                  "answer": "Rebirth of art and learning",
+                  "explanation": "The Renaissance was a cultural rebirth in Europe that revived Greek and Roman art and inquiry."
+                },
+                {
+                  "id": "g7-soc-ren-2",
+                  "prompt": "Why did the Renaissance begin in Italian city-states like Florence?",
+                  "type": "mc",
+                  "choices": [
+                    "Wealthy trade merchants funded artists and scholars",
+                    "Italy had no access to sea trade",
+                    "Feudal serfs owned all Italian banks",
+                    "Florence banned Greek books"
+                  ],
+                  "answer": "Wealthy trade merchants funded artists and scholars",
+                  "explanation": "Patrons were wealthy merchant families who sponsored painters, sculptors, and humanist thinkers."
+                },
+                {
+                  "id": "g7-soc-ren-3",
+                  "prompt": "What did Renaissance humanism emphasize?",
+                  "type": "mc",
+                  "choices": [
+                    "Human potential, reason, and classical education",
+                    "Ignoring history and science",
+                    "Living only on isolated manors",
+                    "Destroying ancient sculptures"
+                  ],
+                  "answer": "Human potential, reason, and classical education",
+                  "explanation": "Humanism focused on the value of human achievement, literature, history, and observation."
+                },
+                {
+                  "id": "g7-soc-ren-4",
+                  "prompt": "How did Johannes Gutenberg’s printing press change Europe?",
+                  "type": "mc",
+                  "choices": [
+                    "Made books cheaper and spread literacy rapidly",
+                    "Made books ten times more expensive",
+                    "Forced people to write on clay",
+                    "Stopped scientists from sharing ideas"
+                  ],
+                  "answer": "Made books cheaper and spread literacy rapidly",
+                  "explanation": "Movable-type printing allowed books to be produced quickly, spreading new religious and scientific ideas."
+                },
+                {
+                  "id": "g7-soc-ren-5",
+                  "prompt": "Who started the Protestant Reformation in 1517 with his Ninety-Five Theses?",
+                  "type": "mc",
+                  "choices": [
+                    "Martin Luther",
+                    "Leonardo da Vinci",
+                    "Julius Caesar",
+                    "Marco Polo"
+                  ],
+                  "answer": "Martin Luther",
+                  "explanation": "The Reformation was a religious movement started by Martin Luther to reform church practices."
+                },
+                {
+                  "id": "g7-soc-ren-6",
+                  "prompt": "What church practice did Martin Luther strongly criticize?",
+                  "type": "mc",
+                  "choices": [
+                    "Selling indulgences for forgiveness",
+                    "Painting cathedral ceilings",
+                    "Helping poor villagers",
+                    "Singing hymns on Sunday"
+                  ],
+                  "answer": "Selling indulgences for forgiveness",
+                  "explanation": "Luther argued that salvation could not be bought with money through certificates called indulgences."
+                },
+                {
+                  "id": "g7-soc-ren-7",
+                  "prompt": "Who painted the Mona Lisa and filled notebooks with inventions?",
+                  "type": "mc",
+                  "choices": [
+                    "Leonardo da Vinci",
+                    "Charlemagne",
+                    "King John",
+                    "Galileo Galilei"
+                  ],
+                  "answer": "Leonardo da Vinci",
+                  "explanation": "Leonardo da Vinci was a \"Renaissance man\" skilled in painting, anatomy, and engineering."
+                },
+                {
+                  "id": "g7-soc-ren-8",
+                  "prompt": "How did translating the Bible into everyday languages affect people?",
+                  "type": "mc",
+                  "choices": [
+                    "Ordinary citizens could read scripture themselves",
+                    "Only kings were allowed to read",
+                    "Latin became the only spoken tongue",
+                    "Libraries closed across Europe"
+                  ],
+                  "answer": "Ordinary citizens could read scripture themselves",
+                  "explanation": "Vernacular translations let everyday people read books in their own native language."
+                }
+              ]
+            },
+            {
+              "id": "p-g7-soc-global",
+              "title": "West African Empires, Islamic Golden Age & Global Exchange",
+              "standard": "OH.7.SS.8 / OH.7.SS.11",
+              "summary": "Trans-Saharan gold-salt trade, Silk Road networks, and the Columbian Exchange reshaped the world.",
+              "bank": [
+                {
+                  "id": "g7-soc-glb-1",
+                  "prompt": "Which two goods drove trade in West Africa’s Ghana and Mali empires?",
+                  "type": "mc",
+                  "choices": [
+                    "Gold and salt",
+                    "Silk and porcelain",
+                    "Coal and steel",
+                    "Fur and timber"
+                  ],
+                  "answer": "Gold and salt",
+                  "explanation": "West African empires grew wealthy by taxing the trans-Saharan trade of gold and desert salt."
+                },
+                {
+                  "id": "g7-soc-glb-2",
+                  "prompt": "Which Mali ruler made a famous pilgrimage and supported Timbuktu schools?",
+                  "type": "mc",
+                  "choices": [
+                    "Mansa Musa",
+                    "Alexander the Great",
+                    "Pericles of Athens",
+                    "William the Conqueror"
+                  ],
+                  "answer": "Mansa Musa",
+                  "explanation": "Mansa Musa ruled Mali and turned Timbuktu into a major center of Islamic learning and trade."
+                },
+                {
+                  "id": "g7-soc-glb-3",
+                  "prompt": "What were scholars in the Islamic Golden Age known for advancing?",
+                  "type": "mc",
+                  "choices": [
+                    "Algebra, medicine, and astronomy",
+                    "Feudal serf farming",
+                    "Viking longship raiding",
+                    "Gladiator arena games"
+                  ],
+                  "answer": "Algebra, medicine, and astronomy",
+                  "explanation": "During the Islamic Golden Age, scholars in cities like Baghdad advanced math, medicine, and optics."
+                },
+                {
+                  "id": "g7-soc-glb-4",
+                  "prompt": "What was the Silk Road?",
+                  "type": "mc",
+                  "choices": [
+                    "Trade routes linking China to the Mediterranean",
+                    "A stone highway inside Rome",
+                    "A river canal in England",
+                    "A sea route around Antarctica"
+                  ],
+                  "answer": "Trade routes linking China to the Mediterranean",
+                  "explanation": "The Silk Road was a network of overland trade routes carrying goods and ideas across Eurasia."
+                },
+                {
+                  "id": "g7-soc-glb-5",
+                  "prompt": "What was the Columbian Exchange?",
+                  "type": "mc",
+                  "choices": [
+                    "Transfer of plants, animals, and diseases across the Atlantic",
+                    "A treaty between Athens and Sparta",
+                    "A gold coin used in Mali",
+                    "A guild of Italian painters"
+                  ],
+                  "answer": "Transfer of plants, animals, and diseases across the Atlantic",
+                  "explanation": "The Columbian Exchange moved crops, livestock, people, and diseases between the Americas and Afro-Eurasia."
+                },
+                {
+                  "id": "g7-soc-glb-6",
+                  "prompt": "Which crops traveled from the Americas to Europe in the Columbian Exchange?",
+                  "type": "mc",
+                  "choices": [
+                    "Potatoes, corn, and tomatoes",
+                    "Wheat, rice, and sugarcane",
+                    "Olives, grapes, and peaches",
+                    "Coffee, tea, and bananas"
+                  ],
+                  "answer": "Potatoes, corn, and tomatoes",
+                  "explanation": "American crops like potatoes and maize (corn) boosted food supplies and populations in Europe."
+                },
+                {
+                  "id": "g7-soc-glb-7",
+                  "prompt": "How did Old World diseases affect Indigenous peoples in the Americas?",
+                  "type": "mc",
+                  "choices": [
+                    "Caused devastating population declines",
+                    "Had no effect on health",
+                    "Increased life expectancy",
+                    "Only affected farm animals"
+                  ],
+                  "answer": "Caused devastating population declines",
+                  "explanation": "Indigenous populations lacked immunity to smallpox and measles, leading to catastrophic losses."
+                },
+                {
+                  "id": "g7-soc-glb-8",
+                  "prompt": "Which animal brought from Europe transformed life on the Great Plains?",
+                  "type": "mc",
+                  "choices": [
+                    "The horse",
+                    "The llama",
+                    "The kangaroo",
+                    "The polar bear"
+                  ],
+                  "answer": "The horse",
+                  "explanation": "Europeans reintroduced horses to the Americas, changing travel and hunting for Indigenous nations."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering The Renaissance, Gutenberg Press & the Reformation & West African Empires, Islamic Golden Age & Global Exchange (OH.7.SS.6 / OH.7.SS.7, OH.7.SS.8 / OH.7.SS.11). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g7-soc-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: The Renaissance, Gutenberg Press & the Reformation & West African Empires, Islamic Golden Age & Global Exchange",
+                "description": "Read the Core Concept Summary and Principle cards on this page (OH.7.SS.6 / OH.7.SS.7, OH.7.SS.8 / OH.7.SS.11) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g7-soc-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Review: Early Modern World History",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"The Renaissance, Gutenberg Press & the Reformation & West African Empires, Islamic Golden Age & Global Exchange\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/world-history/renaissance-and-reformation"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: The Renaissance, Gutenberg Press & the Reformation.",
+              "The Renaissance revived classical learning while the printing press spread Reformation ideas.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What does the word \"Renaissance\" mean?\" → Answer: Rebirth of art and learning. (The Renaissance was a cultural rebirth in Europe that revived Greek and Roman art and inquiry.)",
+            "links": [
+              {
+                "label": "YouTube: \"Renaissance, Reformation & Global Networks\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20social%20Renaissance%2C%20Reformation%20%26%20Global%20Networks%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Renaissance, Reformation & Global Networks\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Renaissance%2C%20Reformation%20%26%20Global%20Networks",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Renaissance, Reformation & Global Networks",
+                "url": "https://www.youtube.com/results?search_query=Renaissance%2C%20Reformation%20%26%20Global%20Networks%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

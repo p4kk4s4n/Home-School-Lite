@@ -3,237 +3,800 @@
   "subject": "social",
   "grade": 6,
   "title": "Grade 6 Social Studies",
-  "subtitle": "Ancient Civilizations (Mesopotamia, Egypt, Greece, Rome), World Geography & Trade",
+  "subtitle": "River Valley Civilizations, Classical Greece & Rome, and Ohio Eastern Hemisphere Trade",
   "credits": 1,
   "color": "#d97706",
   "icon": "🌐",
   "units": [
     {
       "id": "g6-soc-u1",
-      "title": "Unit 1: Early River Valley Civilizations (Mesopotamia & Ancient Egypt)",
+      "title": "Unit 1: Early River Valley Civilizations (Mesopotamia & Egypt)",
       "standards": [
-        "C3.D2.His.1.6-8",
         "C3.D2.His.14.6-8",
-        "C3.D2.Geo.4.6-8"
+        "OH.6.SS.2"
       ],
       "lessons": [
         {
           "id": "g6-soc-u1-l1",
           "unitId": "g6-soc-u1",
-          "title": "Lesson 1: The Agricultural Revolution, Mesopotamia & Ancient Egypt",
+          "title": "Mesopotamia & Ancient Egypt (Part 1 of 1)",
+          "partOf": "River Valley Civilizations",
           "kind": "lesson",
-          "estimatedMinutes": 22,
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/humanities/world-history/world-history-beginnings",
-          "videoTitle": "Khan Academy World History: Neolithic Revolution, Mesopotamia & Egypt",
-          "reading": "During the Neolithic (Agricultural) Revolution, humans transitioned from nomadic hunting and gathering to domesticating plants and animals. Reliable food surpluses enabled permanent settlements, job specialization, and the rise of river valley civilizations: Mesopotamia in the Fertile Crescent between the Tigris and Euphrates Rivers (known for cuneiform writing, ziggurats, and Hammurabi’s Code) and Ancient Egypt along the Nile River (known for annual fertile silt floods, hieroglyphics, papyrus, and pharaohs).",
+          "videoTitle": "Khan Academy: Mesopotamia & Ancient Egypt",
+          "reading": "Rivers provided fresh water and rich silt for farming surpluses. Mesopotamia grew between the Tigris and Euphrates Rivers (developing cuneiform and Hammurabi’s Code), while Egypt flourished along the Nile River.",
           "principles": [
             {
               "id": "p-g6-soc-river-valleys",
               "title": "Mesopotamia, Ancient Egypt & River Valley Geography",
               "standard": "C3.D2.His.14.6-8",
-              "summary": "Explain how river valleys supported food surpluses, writing systems (cuneiform, hieroglyphics), and early written law (Hammurabi’s Code).",
+              "summary": "Explain how river valleys supported surpluses, writing systems, and written laws.",
               "bank": [
                 {
-                  "id": "rv1",
+                  "id": "g6-soc-rv1",
                   "type": "mc",
-                  "prompt": "Why did the earliest civilizations (Mesopotamia, Egypt, Indus Valley, Yellow River) all develop along major river valleys?",
+                  "prompt": "Why did early civilizations begin along major river valleys?",
                   "choices": [
-                    "Rivers provided fresh water, transportation, and fertile silt from seasonal flooding for farming surpluses.",
-                    "River valleys had no weather or seasons.",
-                    "Mountains prevented people from building houses.",
-                    "Rivers were the only places with iron ore."
+                    "Rivers gave fresh water and fertile soil for farming",
+                    "River valleys had no weather or seasons",
+                    "Mountains blocked all rain from falling",
+                    "Rivers were made of salt water"
                   ],
-                  "answer": "Rivers provided fresh water, transportation, and fertile silt from seasonal flooding for farming surpluses.",
-                  "explanation": "Freshwater irrigation and nutrient-rich alluvial soil allowed farmers to grow food surpluses that sustained cities."
+                  "answer": "Rivers gave fresh water and fertile soil for farming",
+                  "explanation": "Seasonal river floods left rich silt that helped farmers grow food surpluses."
                 },
                 {
-                  "id": "rv2",
+                  "id": "g6-soc-rv2",
                   "type": "mc",
-                  "prompt": "Mesopotamia—whose name means \"land between the rivers\"—developed between which two rivers?",
+                  "prompt": "Mesopotamia developed between which two rivers?",
                   "choices": [
-                    "The Tigris and Euphrates Rivers",
-                    "The Nile and Amazon Rivers",
-                    "The Danube and Rhine Rivers",
-                    "The Ganges and Mekong Rivers"
+                    "Tigris and Euphrates Rivers",
+                    "Nile and Amazon Rivers",
+                    "Danube and Rhine Rivers",
+                    "Ohio and Mississippi Rivers"
                   ],
-                  "answer": "The Tigris and Euphrates Rivers",
-                  "explanation": "Mesopotamia lay in the Fertile Crescent between the Tigris and Euphrates Rivers in modern-day Iraq."
+                  "answer": "Tigris and Euphrates Rivers",
+                  "explanation": "Mesopotamia means \"land between the rivers\" and lay between the Tigris and Euphrates."
                 },
                 {
-                  "id": "rv3",
+                  "id": "g6-soc-rv3",
                   "type": "mc",
-                  "prompt": "What is the historical significance of the Code of Hammurabi from ancient Babylon?",
+                  "prompt": "Why was the Code of Hammurabi historically important?",
                   "choices": [
-                    "It was one of the earliest comprehensive written law codes displayed publicly for citizens to see.",
-                    "It was the first map of the Atlantic Ocean.",
-                    "It abolished all taxes in Egypt.",
-                    "It invented the printing press."
+                    "It was an early written law code displayed in public",
+                    "It was the first map of the Pacific Ocean",
+                    "It ended all farming in Babylon",
+                    "It invented the steam engine"
                   ],
-                  "answer": "It was one of the earliest comprehensive written law codes displayed publicly for citizens to see.",
-                  "explanation": "Carved onto a stone stele around 1750 BCE, Hammurabi’s Code established written legal standards and consequences."
+                  "answer": "It was an early written law code displayed in public",
+                  "explanation": "Hammurabi’s Code was carved in stone so citizens could see written laws and punishments."
                 },
                 {
-                  "id": "rv4",
+                  "id": "g6-soc-rv4",
                   "type": "mc",
-                  "prompt": "What wedge-shaped writing system did the Sumerians of Mesopotamia press into wet clay tablets using a reed stylus?",
+                  "prompt": "What wedge-shaped writing system did Sumerians invent?",
                   "choices": [
                     "Cuneiform",
                     "Hieroglyphics",
-                    "Sanskrit",
-                    "Latin alphabet"
+                    "Braille",
+                    "Morse code"
                   ],
                   "answer": "Cuneiform",
-                  "explanation": "Sumerians developed cuneiform—the world’s earliest known writing system—originally to track grain and trade records."
+                  "explanation": "Cuneiform is the wedge-shaped writing Sumerians pressed into wet clay tablets."
                 },
                 {
-                  "id": "rv5",
+                  "id": "g6-soc-rv5",
                   "type": "mc",
-                  "prompt": "How did the Neolithic (Agricultural) Revolution lead to the specialization of labor (potters, weavers, scribes, metalworkers)?",
+                  "prompt": "How did farm surpluses lead to job specialization?",
                   "choices": [
-                    "Farming produced a food surplus, so not everyone had to spend all day finding food.",
-                    "Hunting wild herds required clay pots.",
-                    "Kings outlawed farming.",
-                    "People stopped eating grain."
+                    "Extra food let some people become artisans and scribes",
+                    "Everyone had to hunt wild herds all day",
+                    "Kings banned people from making pottery",
+                    "Farmers stopped growing grain"
                   ],
-                  "answer": "Farming produced a food surplus, so not everyone had to spend all day finding food.",
-                  "explanation": "When farmers grew more food than their families needed, other community members could specialize in crafts, trade, and writing."
+                  "answer": "Extra food let some people become artisans and scribes",
+                  "explanation": "A food surplus meant not everyone had to farm, so workers could specialize in crafts and trade."
                 },
                 {
-                  "id": "rv6",
+                  "id": "g6-soc-rv6",
                   "type": "mc",
-                  "prompt": "Which artifact, discovered in 1799 with the same decree inscribed in Greek, Demotic, and Egyptian hieroglyphics, unlocked the translation of hieroglyphics?",
+                  "prompt": "Which artifact helped scholars translate Egyptian hieroglyphics?",
                   "choices": [
                     "The Rosetta Stone",
-                    "The Dead Sea Scrolls",
                     "The Magna Carta",
-                    "The Parthenon frieze"
+                    "The Liberty Bell",
+                    "The Colosseum"
                   ],
                   "answer": "The Rosetta Stone",
-                  "explanation": "Because scholars could read ancient Greek, Jean-François Champollion used the Rosetta Stone to decipher Egyptian hieroglyphics."
+                  "explanation": "The Rosetta Stone had the same message in Greek and hieroglyphics, unlocking the translation."
+                },
+                {
+                  "id": "g6-soc-rv7",
+                  "type": "mc",
+                  "prompt": "Why was Egypt called \"the Gift of the Nile\"?",
+                  "choices": [
+                    "Nile floods brought water and rich soil",
+                    "The Nile River flowed uphill into mountains",
+                    "Greece gave the river to Egypt",
+                    "The Nile froze solid every summer"
+                  ],
+                  "answer": "Nile floods brought water and rich soil",
+                  "explanation": "Without the Nile’s predictable floods and fertile silt, Egypt would have been barren desert."
+                },
+                {
+                  "id": "g6-soc-rv8",
+                  "type": "mc",
+                  "prompt": "What were stepped pyramid temples in Mesopotamia called?",
+                  "choices": [
+                    "Ziggurats",
+                    "Aqueducts",
+                    "Parthenons",
+                    "Igloos"
+                  ],
+                  "answer": "Ziggurats",
+                  "explanation": "A ziggurat was a terraced mud-brick temple tower built at the center of a Mesopotamian city."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[River Valley Civilizations] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Mesopotamia, Ancient Egypt & River Valley Geography\" (C3.D2.His.14.6-8), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-soc-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Mesopotamia & Ancient Egypt",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Mesopotamia, Ancient Egypt & River Valley Geography\" (C3.D2.His.14.6-8). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/world-history/world-history-beginnings"
+              },
+              {
+                "id": "g6-soc-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Mesopotamia, Ancient Egypt & River Valley Geography.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-soc-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (C3.D2.His.14.6-8)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Mesopotamia, Ancient Egypt & River Valley Geography.",
+              "Explain how river valleys supported surpluses, writing systems, and written laws.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Why did early civilizations begin along major river valleys?\" → Answer: Rivers gave fresh water and fertile soil for farming. (Seasonal river floods left rich silt that helped farmers grow food surpluses.)",
+            "links": [
+              {
+                "label": "YouTube: \"River Valley Civilizations\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20social%20River%20Valley%20Civilizations%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"River Valley Civilizations\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20River%20Valley%20Civilizations",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — River Valley Civilizations",
+                "url": "https://www.youtube.com/results?search_query=River%20Valley%20Civilizations%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g6-soc-u1-review",
+          "unitId": "g6-soc-u1",
+          "title": "Unit 1 Review: River Valley Civilizations",
+          "kind": "lesson_review",
+          "estimatedMinutes": 12,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/world-history-beginnings",
+          "videoTitle": "Review: Early River Valley Civilizations",
+          "reading": "Check your understanding of Mesopotamia, Egypt, and the Agricultural Revolution.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g6-soc-river-valleys",
+              "title": "Mesopotamia, Ancient Egypt & River Valley Geography",
+              "standard": "C3.D2.His.14.6-8",
+              "summary": "Review river valley geography, writing, and law codes.",
+              "bank": [
+                {
+                  "id": "g6-soc-rv1",
+                  "type": "mc",
+                  "prompt": "Why did early civilizations begin along major river valleys?",
+                  "choices": [
+                    "Rivers gave fresh water and fertile soil for farming",
+                    "River valleys had no weather or seasons",
+                    "Mountains blocked all rain from falling",
+                    "Rivers were made of salt water"
+                  ],
+                  "answer": "Rivers gave fresh water and fertile soil for farming",
+                  "explanation": "Seasonal river floods left rich silt that helped farmers grow food surpluses."
+                },
+                {
+                  "id": "g6-soc-rv2",
+                  "type": "mc",
+                  "prompt": "Mesopotamia developed between which two rivers?",
+                  "choices": [
+                    "Tigris and Euphrates Rivers",
+                    "Nile and Amazon Rivers",
+                    "Danube and Rhine Rivers",
+                    "Ohio and Mississippi Rivers"
+                  ],
+                  "answer": "Tigris and Euphrates Rivers",
+                  "explanation": "Mesopotamia means \"land between the rivers\" and lay between the Tigris and Euphrates."
+                },
+                {
+                  "id": "g6-soc-rv3",
+                  "type": "mc",
+                  "prompt": "Why was the Code of Hammurabi historically important?",
+                  "choices": [
+                    "It was an early written law code displayed in public",
+                    "It was the first map of the Pacific Ocean",
+                    "It ended all farming in Babylon",
+                    "It invented the steam engine"
+                  ],
+                  "answer": "It was an early written law code displayed in public",
+                  "explanation": "Hammurabi’s Code was carved in stone so citizens could see written laws and punishments."
+                },
+                {
+                  "id": "g6-soc-rv4",
+                  "type": "mc",
+                  "prompt": "What wedge-shaped writing system did Sumerians invent?",
+                  "choices": [
+                    "Cuneiform",
+                    "Hieroglyphics",
+                    "Braille",
+                    "Morse code"
+                  ],
+                  "answer": "Cuneiform",
+                  "explanation": "Cuneiform is the wedge-shaped writing Sumerians pressed into wet clay tablets."
+                },
+                {
+                  "id": "g6-soc-rv5",
+                  "type": "mc",
+                  "prompt": "How did farm surpluses lead to job specialization?",
+                  "choices": [
+                    "Extra food let some people become artisans and scribes",
+                    "Everyone had to hunt wild herds all day",
+                    "Kings banned people from making pottery",
+                    "Farmers stopped growing grain"
+                  ],
+                  "answer": "Extra food let some people become artisans and scribes",
+                  "explanation": "A food surplus meant not everyone had to farm, so workers could specialize in crafts and trade."
+                },
+                {
+                  "id": "g6-soc-rv6",
+                  "type": "mc",
+                  "prompt": "Which artifact helped scholars translate Egyptian hieroglyphics?",
+                  "choices": [
+                    "The Rosetta Stone",
+                    "The Magna Carta",
+                    "The Liberty Bell",
+                    "The Colosseum"
+                  ],
+                  "answer": "The Rosetta Stone",
+                  "explanation": "The Rosetta Stone had the same message in Greek and hieroglyphics, unlocking the translation."
+                },
+                {
+                  "id": "g6-soc-rv7",
+                  "type": "mc",
+                  "prompt": "Why was Egypt called \"the Gift of the Nile\"?",
+                  "choices": [
+                    "Nile floods brought water and rich soil",
+                    "The Nile River flowed uphill into mountains",
+                    "Greece gave the river to Egypt",
+                    "The Nile froze solid every summer"
+                  ],
+                  "answer": "Nile floods brought water and rich soil",
+                  "explanation": "Without the Nile’s predictable floods and fertile silt, Egypt would have been barren desert."
+                },
+                {
+                  "id": "g6-soc-rv8",
+                  "type": "mc",
+                  "prompt": "What were stepped pyramid temples in Mesopotamia called?",
+                  "choices": [
+                    "Ziggurats",
+                    "Aqueducts",
+                    "Parthenons",
+                    "Igloos"
+                  ],
+                  "answer": "Ziggurats",
+                  "explanation": "A ziggurat was a terraced mud-brick temple tower built at the center of a Mesopotamian city."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering Mesopotamia, Ancient Egypt & River Valley Geography (C3.D2.His.14.6-8). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g6-soc-u1-review-step-review",
+                "type": "reading",
+                "title": "Review Principles: Mesopotamia, Ancient Egypt & River Valley Geography",
+                "description": "Read the Core Concept Summary and Principle cards on this page (C3.D2.His.14.6-8) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g6-soc-u1-review-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Review: Early River Valley Civilizations",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Mesopotamia, Ancient Egypt & River Valley Geography\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/world-history/world-history-beginnings"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Mesopotamia, Ancient Egypt & River Valley Geography.",
+              "Review river valley geography, writing, and law codes.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Why did early civilizations begin along major river valleys?\" → Answer: Rivers gave fresh water and fertile soil for farming. (Seasonal river floods left rich silt that helped farmers grow food surpluses.)",
+            "links": [
+              {
+                "label": "YouTube: \"Unit 1 Review: River Valley Civilizations\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20social%20Unit%201%20Review%3A%20River%20Valley%20Civilizations%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Unit 1 Review: River Valley Civilizations\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Unit%201%20Review%3A%20River%20Valley%20Civilizations",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Unit 1 Review: River Valley Civilizations",
+                "url": "https://www.youtube.com/results?search_query=Unit%201%20Review%3A%20River%20Valley%20Civilizations%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "g6-soc-u2",
-      "title": "Unit 2: Classical Greece, Rome & Silk Road Trade Networks",
+      "title": "Unit 2: Classical Greece & Rome, World Religions & Silk Road Trade",
       "standards": [
         "C3.D2.Civ.2.6-8",
-        "C3.D2.His.2.6-8",
-        "C3.D2.Eco.14.6-8"
+        "OH.6.SS.7",
+        "OH.6.SS.13"
       ],
+      "isOhioExtension": true,
       "lessons": [
         {
           "id": "g6-soc-u2-l1",
           "unitId": "g6-soc-u2",
-          "title": "Lesson 1: Classical Greece (Athenian Democracy) & The Roman Republic",
+          "title": "Athenian Democracy & The Roman Republic (Part 1 of 2)",
+          "partOf": "Classical World & Trade",
           "kind": "lesson",
-          "estimatedMinutes": 22,
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/humanities/world-history/ancient-medieval",
-          "videoTitle": "Classical Greece, Athenian Democracy & The Roman Republic",
-          "reading": "Greece’s mountainous peninsula and island geography led to independent city-states (poleis) such as Athens and Sparta. Athens pioneered direct democracy, in which eligible citizens debated and voted directly on laws in the Assembly. Ancient Rome established a republic (representative government) where citizens elected representatives, balanced power among the Senate, Consuls, and Assemblies, and codified laws on the Twelve Tables.",
+          "videoTitle": "Khan Academy: Classical Greece and Rome",
+          "reading": "Mountains divided Greece into city-states like Athens, which created direct democracy. Rome built a republic where citizens elected representatives and posted laws on the Twelve Tables.",
           "principles": [
             {
               "id": "p-g6-soc-greece-rome",
               "title": "Athenian Direct Democracy vs. Roman Representative Republic",
               "standard": "C3.D2.Civ.2.6-8",
-              "summary": "Compare Greek geography, Athenian direct democracy, Roman republican institutions, and Silk Road cultural diffusion.",
+              "summary": "Compare Greek direct democracy, Roman republican government, and primary sources.",
               "bank": [
                 {
-                  "id": "grc1",
+                  "id": "g6-soc-gr1",
                   "type": "mc",
-                  "prompt": "How did the rugged mountains and islands of ancient Greece shape its early political development?",
+                  "prompt": "How did mountains shape ancient Greek government?",
                   "choices": [
-                    "Geographic barriers isolated communities, leading to independent city-states (poleis) like Athens and Sparta.",
-                    "Flat plains united all Greeks into a single empire from the very beginning.",
-                    "Lack of coastline prevented Greeks from ever sailing or trading by sea.",
-                    "Dense rainforests covered the Greek peninsula."
+                    "Isolated valleys formed independent city-states",
+                    "Flat plains united Greece into one kingdom early on",
+                    "Lack of seas stopped all Greek boat travel",
+                    "Thick ice covered every Greek island"
                   ],
-                  "answer": "Geographic barriers isolated communities, leading to independent city-states (poleis) like Athens and Sparta.",
-                  "explanation": "Mountain ranges separated valleys and encouraged self-governing city-states connected by Mediterranean sea trade."
+                  "answer": "Isolated valleys formed independent city-states",
+                  "explanation": "Mountain barriers separated Greek communities into independent city-states called poleis."
                 },
                 {
-                  "id": "grc2",
+                  "id": "g6-soc-gr2",
                   "type": "mc",
-                  "prompt": "What is the key difference between the DIRECT DEMOCRACY of ancient Athens and the REPUBLIC of ancient Rome (and the modern United States)?",
+                  "prompt": "How does direct democracy differ from a republic?",
                   "choices": [
-                    "In direct democracy citizens vote on every law themselves; in a republic citizens elect representatives to vote on laws.",
-                    "In a republic a hereditary king makes all laws alone.",
-                    "In direct democracy no citizen is allowed to vote.",
-                    "There is no difference between the two systems."
+                    "Citizens vote on laws directly instead of electing representatives",
+                    "A king makes every law without any vote",
+                    "No citizen is allowed to speak in public",
+                    "Generals rule the country by force"
                   ],
-                  "answer": "In direct democracy citizens vote on every law themselves; in a republic citizens elect representatives to vote on laws.",
-                  "explanation": "Athenian citizens voted directly in the Assembly, whereas a republic uses elected representatives."
+                  "answer": "Citizens vote on laws directly instead of electing representatives",
+                  "explanation": "In direct democracy (Athens), citizens vote on laws themselves; in a republic (Rome), they elect representatives."
                 },
                 {
-                  "id": "grc3",
+                  "id": "g6-soc-gr3",
                   "type": "mc",
-                  "prompt": "How did Roman engineering projects like stone aqueducts and paved roads strengthen the Roman Empire?",
+                  "prompt": "What was the main purpose of Roman aqueducts?",
                   "choices": [
-                    "Aqueducts supplied fresh water to cities, while paved roads connected provinces for trade and rapid communication.",
-                    "Aqueducts were used only as defensive walls against ships.",
-                    "Roads were built only inside the Colosseum.",
-                    "They prevented merchants from traveling between cities."
+                    "Carrying fresh water from hills into cities",
+                    "Launching warships into the ocean",
+                    "Blocking merchants from entering Rome",
+                    "Storing grain underground in winter"
                   ],
-                  "answer": "Aqueducts supplied fresh water to cities, while paved roads connected provinces for trade and rapid communication.",
-                  "explanation": "Gravity-fed aqueducts sustained urban populations and 50,000+ miles of paved roads integrated trade and governance."
+                  "answer": "Carrying fresh water from hills into cities",
+                  "explanation": "Aqueducts were stone channels and bridges that used gravity to bring fresh water to Roman cities."
                 },
                 {
-                  "id": "grc4",
+                  "id": "g6-soc-gr4",
                   "type": "mc",
-                  "prompt": "What was the Silk Road in the ancient and classical world?",
+                  "prompt": "What was Rome’s first written law code called?",
                   "choices": [
-                    "An overland network of trade routes linking China, Central Asia, India, and the Mediterranean world",
-                    "A single paved highway built entirely of silk fabric",
-                    "A sea route around South America",
-                    "A wall separating Greece from Sparta"
+                    "The Twelve Tables",
+                    "The Bill of Rights",
+                    "The Rosetta Stone",
+                    "The Mayflower Compact"
                   ],
-                  "answer": "An overland network of trade routes linking China, Central Asia, India, and the Mediterranean world",
-                  "explanation": "The Silk Road was a web of caravan routes carrying silk, spices, glassware, paper-making technology, and ideas across Eurasia."
+                  "answer": "The Twelve Tables",
+                  "explanation": "The Twelve Tables were bronze tablets posted in the Roman Forum listing citizens’ legal rights."
                 },
                 {
-                  "id": "grc5",
+                  "id": "g6-soc-gr5",
                   "type": "mc",
-                  "prompt": "In historical research, which of the following is a PRIMARY SOURCE from ancient Rome?",
+                  "prompt": "Which item is a primary source from ancient Rome?",
                   "choices": [
-                    "A silver coin minted during the reign of Augustus and a letter written by Cicero in 50 BCE",
-                    "A 2024 middle school history textbook chapter about Rome",
-                    "A modern encyclopedia article on gladiators",
-                    "A documentary film made last year"
+                    "A silver coin minted under Emperor Augustus",
+                    "A 2024 history textbook chapter on Rome",
+                    "A modern movie about gladiators",
+                    "An online encyclopedia article written today"
                   ],
-                  "answer": "A silver coin minted during the reign of Augustus and a letter written by Cicero in 50 BCE",
-                  "explanation": "Primary sources are original artifacts, documents, or eyewitness records created during the historical period under study."
+                  "answer": "A silver coin minted under Emperor Augustus",
+                  "explanation": "A primary source is an original object or document created during the time period being studied."
                 },
                 {
-                  "id": "grc6",
+                  "id": "g6-soc-gr6",
                   "type": "mc",
-                  "prompt": "Besides physical goods like silk and porcelain, what else spread along the Silk Road trade routes?",
+                  "prompt": "What is a modern biography of Julius Caesar classified as?",
                   "choices": [
-                    "Cultural diffusion: scientific knowledge, technologies (like papermaking), and world religions (like Buddhism)",
-                    "Only Roman chariots",
-                    "Modern electricity",
-                    "Nothing except gold coins"
+                    "A secondary source",
+                    "A primary source",
+                    "An ancient fossil",
+                    "A written law code"
                   ],
-                  "answer": "Cultural diffusion: scientific knowledge, technologies (like papermaking), and world religions (like Buddhism)",
-                  "explanation": "Trade networks fostered cultural diffusion—the exchange of inventions, languages, art styles, and religious beliefs."
+                  "answer": "A secondary source",
+                  "explanation": "A secondary source is created long after an event by someone who did not witness it firsthand."
+                },
+                {
+                  "id": "g6-soc-gr7",
+                  "type": "mc",
+                  "prompt": "Which Greek philosopher taught by asking probing questions?",
+                  "choices": [
+                    "Socrates",
+                    "Julius Caesar",
+                    "Hammurabi",
+                    "King Tut"
+                  ],
+                  "answer": "Socrates",
+                  "explanation": "Socrates developed the Socratic Method, using careful questions to test ideas and logic."
+                },
+                {
+                  "id": "g6-soc-gr8",
+                  "type": "mc",
+                  "prompt": "Why did the Roman Republic divide power into three branches?",
+                  "choices": [
+                    "To create checks and balances so no one ruled alone",
+                    "To make sure only one king held all power",
+                    "To stop citizens from ever voting",
+                    "To abolish the Roman Senate"
+                  ],
+                  "answer": "To create checks and balances so no one ruled alone",
+                  "explanation": "Dividing power among Consuls, the Senate, and Assemblies prevented any one leader from becoming a tyrant."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Classical World & Trade] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Athenian Direct Democracy vs. Roman Representative Republic\" (C3.D2.Civ.2.6-8), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-soc-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Classical Greece and Rome",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Athenian Direct Democracy vs. Roman Representative Republic\" (C3.D2.Civ.2.6-8). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/world-history/ancient-medieval"
+              },
+              {
+                "id": "g6-soc-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Athenian Direct Democracy vs. Roman Representative Republic.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-soc-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (C3.D2.Civ.2.6-8)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Athenian Direct Democracy vs. Roman Representative Republic.",
+              "Compare Greek direct democracy, Roman republican government, and primary sources.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How did mountains shape ancient Greek government?\" → Answer: Isolated valleys formed independent city-states. (Mountain barriers separated Greek communities into independent city-states called poleis.)",
+            "links": [
+              {
+                "label": "YouTube: \"Classical World & Trade\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20social%20Classical%20World%20%26%20Trade%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Classical World & Trade\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Classical%20World%20%26%20Trade",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Classical World & Trade",
+                "url": "https://www.youtube.com/results?search_query=Classical%20World%20%26%20Trade%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g6-soc-u2-l2",
+          "unitId": "g6-soc-u2",
+          "title": "Ohio Eastern Hemisphere: Religions, Silk Road & Trade (Part 2 of 2)",
+          "partOf": "Classical World & Trade",
+          "kind": "lesson",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/ancient-medieval/silk-road/v/the-silk-road-khan-academy",
+          "videoTitle": "Khan Academy: The Silk Road & Cultural Diffusion (OH.6.SS.7 / OH.6.SS.13)",
+          "reading": "Along the Silk Road, merchants traded silk and spices while spreading technologies and world religions like Buddhism (cultural diffusion). Regions specialize in goods based on local resources, supply, demand, and opportunity cost.",
+          "principles": [
+            {
+              "id": "p-g6-soc-ohio-east",
+              "title": "Eastern Hemisphere Religions, Cultural Diffusion & Trade Economics",
+              "standard": "OH.6.SS.7",
+              "summary": "Explain Silk Road cultural diffusion, world religions, scarcity, and opportunity cost.",
+              "bank": [
+                {
+                  "id": "g6-soc-oh1",
+                  "type": "mc",
+                  "prompt": "What was the Silk Road across the Eastern Hemisphere?",
+                  "choices": [
+                    "A network of trade routes linking China and the Mediterranean",
+                    "A single highway paved with silk cloth",
+                    "A sea route around South America",
+                    "A stone wall built across Greece"
+                  ],
+                  "answer": "A network of trade routes linking China and the Mediterranean",
+                  "explanation": "The Silk Road was an overland web of caravan routes connecting China, Central Asia, India, and Rome."
+                },
+                {
+                  "id": "g6-soc-oh2",
+                  "type": "mc",
+                  "prompt": "What does cultural diffusion mean in world history?",
+                  "choices": [
+                    "The spread of ideas, religions, and technology between cultures",
+                    "Keeping every invention hidden inside one city",
+                    "Building tall walls to stop all trade",
+                    "Melting bronze into coins"
+                  ],
+                  "answer": "The spread of ideas, religions, and technology between cultures",
+                  "explanation": "Cultural diffusion is the exchange of beliefs, customs, and inventions when different societies trade and meet."
+                },
+                {
+                  "id": "g6-soc-oh3",
+                  "type": "mc",
+                  "prompt": "Which world religion spread from India to China along the Silk Road?",
+                  "choices": [
+                    "Buddhism",
+                    "Ancient Greek myth",
+                    "Druidism",
+                    "Shinto"
+                  ],
+                  "answer": "Buddhism",
+                  "explanation": "Monks and merchants traveling the Silk Road carried Buddhism from India into Central Asia and China."
+                },
+                {
+                  "id": "g6-soc-oh4",
+                  "type": "mc",
+                  "prompt": "Why do countries specialize in making certain goods to trade?",
+                  "choices": [
+                    "Resources are unevenly distributed across regions",
+                    "Every country has the exact same climate and soil",
+                    "Trade makes goods more expensive for everyone",
+                    "No country ever needs food or fuel"
+                  ],
+                  "answer": "Resources are unevenly distributed across regions",
+                  "explanation": "Regions specialize in goods suited to their local resources and trade for items they cannot easily produce."
+                },
+                {
+                  "id": "g6-soc-oh5",
+                  "type": "mc",
+                  "prompt": "In economics, what happens when a popular good becomes scarce?",
+                  "choices": [
+                    "Its price tends to rise",
+                    "Its price drops to zero",
+                    "Demand disappears overnight",
+                    "Stores give it away for free"
+                  ],
+                  "answer": "Its price tends to rise",
+                  "explanation": "Scarcity means limited supply. When demand is high and supply is low, prices rise."
+                },
+                {
+                  "id": "g6-soc-oh6",
+                  "type": "mc",
+                  "prompt": "What is opportunity cost when making an economic choice?",
+                  "choices": [
+                    "The value of the next-best choice you give up",
+                    "The sales tax printed on a receipt",
+                    "The weight of gold coins in a bank",
+                    "A free gift given at a market"
+                  ],
+                  "answer": "The value of the next-best choice you give up",
+                  "explanation": "Opportunity cost is the next-best alternative you give up when you choose one option over another."
+                },
+                {
+                  "id": "g6-soc-oh7",
+                  "type": "mc",
+                  "prompt": "How did most goods travel across the 4,000-mile Silk Road?",
+                  "choices": [
+                    "In stages through relay trade between oasis cities",
+                    "By steam train in a single day",
+                    "By cargo airplanes over the mountains",
+                    "One merchant walked the whole way alone"
+                  ],
+                  "answer": "In stages through relay trade between oasis cities",
+                  "explanation": "Merchants traded goods from one oasis trading post to the next in a relay system."
+                },
+                {
+                  "id": "g6-soc-oh8",
+                  "type": "mc",
+                  "prompt": "Which three major monotheistic religions began in Southwest Asia?",
+                  "choices": [
+                    "Judaism, Christianity, and Islam",
+                    "Hinduism, Buddhism, and Taoism",
+                    "Shinto, Confucianism, and Jainism",
+                    "Greek, Roman, and Norse myth"
+                  ],
+                  "answer": "Judaism, Christianity, and Islam",
+                  "explanation": "Judaism, Christianity, and Islam all originated in Southwest Asia and teach belief in one God (monotheism)."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Classical World & Trade] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Eastern Hemisphere Religions, Cultural Diffusion & Trade Economics\" (OH.6.SS.7), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-soc-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: The Silk Road & Cultural Diffusion (OH.6.SS.7 / OH.6.SS.13)",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Eastern Hemisphere Religions, Cultural Diffusion & Trade Economics\" (OH.6.SS.7). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/world-history/ancient-medieval/silk-road/v/the-silk-road-khan-academy"
+              },
+              {
+                "id": "g6-soc-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Eastern Hemisphere Religions, Cultural Diffusion & Trade Economics.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-soc-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.6.SS.7)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Eastern Hemisphere Religions, Cultural Diffusion & Trade Economics.",
+              "Explain Silk Road cultural diffusion, world religions, scarcity, and opportunity cost.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What was the Silk Road across the Eastern Hemisphere?\" → Answer: A network of trade routes linking China and the Mediterranean. (The Silk Road was an overland web of caravan routes connecting China, Central Asia, India, and Rome.)",
+            "links": [
+              {
+                "label": "YouTube: \"Classical World & Trade\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20social%20Classical%20World%20%26%20Trade%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Classical World & Trade\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Classical%20World%20%26%20Trade",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Classical World & Trade",
+                "url": "https://www.youtube.com/results?search_query=Classical%20World%20%26%20Trade%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g6-soc-u2-test",
           "unitId": "g6-soc-u2",
           "title": "Unit 2 Exam: Ancient & Classical Civilizations",
           "kind": "unit_test",
-          "estimatedMinutes": 25,
+          "isOhioExtension": true,
+          "estimatedMinutes": 15,
           "videoUrl": "https://www.khanacademy.org/humanities/world-history/ancient-medieval",
           "videoTitle": "Grade 6 Social Studies Mastery Review",
-          "reading": "Review river valley civilizations, Classical Greece and Rome, primary vs. secondary sources, and the Silk Road.",
-          "questionCount": 6,
+          "reading": "Complete this exam covering river valleys, Greece, Rome, and Eastern Hemisphere trade.",
+          "questionCount": 8,
           "principles": [
             {
               "id": "p-g6-soc-river-valleys",
@@ -242,30 +805,108 @@
               "summary": "Analyze early river valley civilizations.",
               "bank": [
                 {
-                  "id": "g6sut1",
+                  "id": "g6-soc-rv1",
                   "type": "mc",
-                  "prompt": "Why did the Greek historian Herodotus call Egypt \"the Gift of the Nile\"?",
+                  "prompt": "Why did early civilizations begin along major river valleys?",
                   "choices": [
-                    "Without the Nile’s predictable annual floods depositing rich black silt, Egypt would have been barren desert.",
-                    "The Nile River flowed backward up mountains.",
-                    "Greece gave the Nile River to Egypt as a treaty gift.",
-                    "The Nile was made of salt water."
+                    "Rivers gave fresh water and fertile soil for farming",
+                    "River valleys had no weather or seasons",
+                    "Mountains blocked all rain from falling",
+                    "Rivers were made of salt water"
                   ],
-                  "answer": "Without the Nile’s predictable annual floods depositing rich black silt, Egypt would have been barren desert.",
-                  "explanation": "The Nile provided life-giving water and fertile soil across an otherwise arid Sahara landscape."
+                  "answer": "Rivers gave fresh water and fertile soil for farming",
+                  "explanation": "Seasonal river floods left rich silt that helped farmers grow food surpluses."
                 },
                 {
-                  "id": "g6sut2",
+                  "id": "g6-soc-rv2",
                   "type": "mc",
-                  "prompt": "Stepped pyramid temples built at the center of Mesopotamian city-states were called:",
+                  "prompt": "Mesopotamia developed between which two rivers?",
+                  "choices": [
+                    "Tigris and Euphrates Rivers",
+                    "Nile and Amazon Rivers",
+                    "Danube and Rhine Rivers",
+                    "Ohio and Mississippi Rivers"
+                  ],
+                  "answer": "Tigris and Euphrates Rivers",
+                  "explanation": "Mesopotamia means \"land between the rivers\" and lay between the Tigris and Euphrates."
+                },
+                {
+                  "id": "g6-soc-rv3",
+                  "type": "mc",
+                  "prompt": "Why was the Code of Hammurabi historically important?",
+                  "choices": [
+                    "It was an early written law code displayed in public",
+                    "It was the first map of the Pacific Ocean",
+                    "It ended all farming in Babylon",
+                    "It invented the steam engine"
+                  ],
+                  "answer": "It was an early written law code displayed in public",
+                  "explanation": "Hammurabi’s Code was carved in stone so citizens could see written laws and punishments."
+                },
+                {
+                  "id": "g6-soc-rv4",
+                  "type": "mc",
+                  "prompt": "What wedge-shaped writing system did Sumerians invent?",
+                  "choices": [
+                    "Cuneiform",
+                    "Hieroglyphics",
+                    "Braille",
+                    "Morse code"
+                  ],
+                  "answer": "Cuneiform",
+                  "explanation": "Cuneiform is the wedge-shaped writing Sumerians pressed into wet clay tablets."
+                },
+                {
+                  "id": "g6-soc-rv5",
+                  "type": "mc",
+                  "prompt": "How did farm surpluses lead to job specialization?",
+                  "choices": [
+                    "Extra food let some people become artisans and scribes",
+                    "Everyone had to hunt wild herds all day",
+                    "Kings banned people from making pottery",
+                    "Farmers stopped growing grain"
+                  ],
+                  "answer": "Extra food let some people become artisans and scribes",
+                  "explanation": "A food surplus meant not everyone had to farm, so workers could specialize in crafts and trade."
+                },
+                {
+                  "id": "g6-soc-rv6",
+                  "type": "mc",
+                  "prompt": "Which artifact helped scholars translate Egyptian hieroglyphics?",
+                  "choices": [
+                    "The Rosetta Stone",
+                    "The Magna Carta",
+                    "The Liberty Bell",
+                    "The Colosseum"
+                  ],
+                  "answer": "The Rosetta Stone",
+                  "explanation": "The Rosetta Stone had the same message in Greek and hieroglyphics, unlocking the translation."
+                },
+                {
+                  "id": "g6-soc-rv7",
+                  "type": "mc",
+                  "prompt": "Why was Egypt called \"the Gift of the Nile\"?",
+                  "choices": [
+                    "Nile floods brought water and rich soil",
+                    "The Nile River flowed uphill into mountains",
+                    "Greece gave the river to Egypt",
+                    "The Nile froze solid every summer"
+                  ],
+                  "answer": "Nile floods brought water and rich soil",
+                  "explanation": "Without the Nile’s predictable floods and fertile silt, Egypt would have been barren desert."
+                },
+                {
+                  "id": "g6-soc-rv8",
+                  "type": "mc",
+                  "prompt": "What were stepped pyramid temples in Mesopotamia called?",
                   "choices": [
                     "Ziggurats",
                     "Aqueducts",
-                    "Acropolises",
-                    "Colosseums"
+                    "Parthenons",
+                    "Igloos"
                   ],
                   "answer": "Ziggurats",
-                  "explanation": "Mesopotamian cities built monumental mud-brick stepped temples called ziggurats."
+                  "explanation": "A ziggurat was a terraced mud-brick temple tower built at the center of a Mesopotamian city."
                 }
               ]
             },
@@ -276,60 +917,283 @@
               "summary": "Compare classical civic traditions and historical sources.",
               "bank": [
                 {
-                  "id": "g6sut3",
+                  "id": "g6-soc-gr1",
                   "type": "mc",
-                  "prompt": " Rome’s first written law code, posted in the Forum so all citizens could know their legal rights, was the:",
+                  "prompt": "How did mountains shape ancient Greek government?",
                   "choices": [
-                    "Twelve Tables",
-                    "Bill of Rights",
-                    "Rosetta Stone",
-                    "Mayflower Compact"
+                    "Isolated valleys formed independent city-states",
+                    "Flat plains united Greece into one kingdom early on",
+                    "Lack of seas stopped all Greek boat travel",
+                    "Thick ice covered every Greek island"
                   ],
-                  "answer": "Twelve Tables",
-                  "explanation": "Around 450 BCE, Rome inscribed the Law of the Twelve Tables on bronze tablets in the Roman Forum."
+                  "answer": "Isolated valleys formed independent city-states",
+                  "explanation": "Mountain barriers separated Greek communities into independent city-states called poleis."
                 },
                 {
-                  "id": "g6sut4",
+                  "id": "g6-soc-gr2",
                   "type": "mc",
-                  "prompt": "A modern historian’s biography written in 2022 about Alexander the Great is classified as a:",
+                  "prompt": "How does direct democracy differ from a republic?",
                   "choices": [
-                    "Secondary source",
-                    "Primary source",
-                    "Fossil artifact",
-                    "Constitutional amendment"
+                    "Citizens vote on laws directly instead of electing representatives",
+                    "A king makes every law without any vote",
+                    "No citizen is allowed to speak in public",
+                    "Generals rule the country by force"
                   ],
-                  "answer": "Secondary source",
-                  "explanation": "A work created long after the historical period by someone who did not witness the events firsthand is a secondary source."
+                  "answer": "Citizens vote on laws directly instead of electing representatives",
+                  "explanation": "In direct democracy (Athens), citizens vote on laws themselves; in a republic (Rome), they elect representatives."
                 },
                 {
-                  "id": "g6sut5",
+                  "id": "g6-soc-gr3",
                   "type": "mc",
-                  "prompt": "Which Greek philosopher taught by asking probing questions (the Socratic Method) to examine beliefs and logic?",
+                  "prompt": "What was the main purpose of Roman aqueducts?",
+                  "choices": [
+                    "Carrying fresh water from hills into cities",
+                    "Launching warships into the ocean",
+                    "Blocking merchants from entering Rome",
+                    "Storing grain underground in winter"
+                  ],
+                  "answer": "Carrying fresh water from hills into cities",
+                  "explanation": "Aqueducts were stone channels and bridges that used gravity to bring fresh water to Roman cities."
+                },
+                {
+                  "id": "g6-soc-gr4",
+                  "type": "mc",
+                  "prompt": "What was Rome’s first written law code called?",
+                  "choices": [
+                    "The Twelve Tables",
+                    "The Bill of Rights",
+                    "The Rosetta Stone",
+                    "The Mayflower Compact"
+                  ],
+                  "answer": "The Twelve Tables",
+                  "explanation": "The Twelve Tables were bronze tablets posted in the Roman Forum listing citizens’ legal rights."
+                },
+                {
+                  "id": "g6-soc-gr5",
+                  "type": "mc",
+                  "prompt": "Which item is a primary source from ancient Rome?",
+                  "choices": [
+                    "A silver coin minted under Emperor Augustus",
+                    "A 2024 history textbook chapter on Rome",
+                    "A modern movie about gladiators",
+                    "An online encyclopedia article written today"
+                  ],
+                  "answer": "A silver coin minted under Emperor Augustus",
+                  "explanation": "A primary source is an original object or document created during the time period being studied."
+                },
+                {
+                  "id": "g6-soc-gr6",
+                  "type": "mc",
+                  "prompt": "What is a modern biography of Julius Caesar classified as?",
+                  "choices": [
+                    "A secondary source",
+                    "A primary source",
+                    "An ancient fossil",
+                    "A written law code"
+                  ],
+                  "answer": "A secondary source",
+                  "explanation": "A secondary source is created long after an event by someone who did not witness it firsthand."
+                },
+                {
+                  "id": "g6-soc-gr7",
+                  "type": "mc",
+                  "prompt": "Which Greek philosopher taught by asking probing questions?",
                   "choices": [
                     "Socrates",
                     "Julius Caesar",
                     "Hammurabi",
-                    "Ramses II"
+                    "King Tut"
                   ],
                   "answer": "Socrates",
-                  "explanation": "Socrates encouraged critical thinking through cooperative dialogue and questioning."
+                  "explanation": "Socrates developed the Socratic Method, using careful questions to test ideas and logic."
                 },
                 {
-                  "id": "g6sut6",
+                  "id": "g6-soc-gr8",
                   "type": "mc",
-                  "prompt": "When merchants from different empires traded along the Silk Road, few traveled the entire 4,000-mile route. Instead, goods moved:",
+                  "prompt": "Why did the Roman Republic divide power into three branches?",
                   "choices": [
-                    "In stages through relay trade across oasis cities and trading posts",
-                    "By steam locomotives",
-                    "Only by submarine",
-                    "In a single afternoon"
+                    "To create checks and balances so no one ruled alone",
+                    "To make sure only one king held all power",
+                    "To stop citizens from ever voting",
+                    "To abolish the Roman Senate"
                   ],
-                  "answer": "In stages through relay trade across oasis cities and trading posts",
-                  "explanation": "Caravans traded goods from one oasis city (like Samarkand or Dunhuang) to the next in a relay network."
+                  "answer": "To create checks and balances so no one ruled alone",
+                  "explanation": "Dividing power among Consuls, the Senate, and Assemblies prevented any one leader from becoming a tyrant."
+                }
+              ]
+            },
+            {
+              "id": "p-g6-soc-ohio-east",
+              "title": "Eastern Hemisphere Religions, Cultural Diffusion & Trade Economics",
+              "standard": "OH.6.SS.7",
+              "summary": "Analyze cultural diffusion, world religions, and trade economics.",
+              "bank": [
+                {
+                  "id": "g6-soc-oh1",
+                  "type": "mc",
+                  "prompt": "What was the Silk Road across the Eastern Hemisphere?",
+                  "choices": [
+                    "A network of trade routes linking China and the Mediterranean",
+                    "A single highway paved with silk cloth",
+                    "A sea route around South America",
+                    "A stone wall built across Greece"
+                  ],
+                  "answer": "A network of trade routes linking China and the Mediterranean",
+                  "explanation": "The Silk Road was an overland web of caravan routes connecting China, Central Asia, India, and Rome."
+                },
+                {
+                  "id": "g6-soc-oh2",
+                  "type": "mc",
+                  "prompt": "What does cultural diffusion mean in world history?",
+                  "choices": [
+                    "The spread of ideas, religions, and technology between cultures",
+                    "Keeping every invention hidden inside one city",
+                    "Building tall walls to stop all trade",
+                    "Melting bronze into coins"
+                  ],
+                  "answer": "The spread of ideas, religions, and technology between cultures",
+                  "explanation": "Cultural diffusion is the exchange of beliefs, customs, and inventions when different societies trade and meet."
+                },
+                {
+                  "id": "g6-soc-oh3",
+                  "type": "mc",
+                  "prompt": "Which world religion spread from India to China along the Silk Road?",
+                  "choices": [
+                    "Buddhism",
+                    "Ancient Greek myth",
+                    "Druidism",
+                    "Shinto"
+                  ],
+                  "answer": "Buddhism",
+                  "explanation": "Monks and merchants traveling the Silk Road carried Buddhism from India into Central Asia and China."
+                },
+                {
+                  "id": "g6-soc-oh4",
+                  "type": "mc",
+                  "prompt": "Why do countries specialize in making certain goods to trade?",
+                  "choices": [
+                    "Resources are unevenly distributed across regions",
+                    "Every country has the exact same climate and soil",
+                    "Trade makes goods more expensive for everyone",
+                    "No country ever needs food or fuel"
+                  ],
+                  "answer": "Resources are unevenly distributed across regions",
+                  "explanation": "Regions specialize in goods suited to their local resources and trade for items they cannot easily produce."
+                },
+                {
+                  "id": "g6-soc-oh5",
+                  "type": "mc",
+                  "prompt": "In economics, what happens when a popular good becomes scarce?",
+                  "choices": [
+                    "Its price tends to rise",
+                    "Its price drops to zero",
+                    "Demand disappears overnight",
+                    "Stores give it away for free"
+                  ],
+                  "answer": "Its price tends to rise",
+                  "explanation": "Scarcity means limited supply. When demand is high and supply is low, prices rise."
+                },
+                {
+                  "id": "g6-soc-oh6",
+                  "type": "mc",
+                  "prompt": "What is opportunity cost when making an economic choice?",
+                  "choices": [
+                    "The value of the next-best choice you give up",
+                    "The sales tax printed on a receipt",
+                    "The weight of gold coins in a bank",
+                    "A free gift given at a market"
+                  ],
+                  "answer": "The value of the next-best choice you give up",
+                  "explanation": "Opportunity cost is the next-best alternative you give up when you choose one option over another."
+                },
+                {
+                  "id": "g6-soc-oh7",
+                  "type": "mc",
+                  "prompt": "How did most goods travel across the 4,000-mile Silk Road?",
+                  "choices": [
+                    "In stages through relay trade between oasis cities",
+                    "By steam train in a single day",
+                    "By cargo airplanes over the mountains",
+                    "One merchant walked the whole way alone"
+                  ],
+                  "answer": "In stages through relay trade between oasis cities",
+                  "explanation": "Merchants traded goods from one oasis trading post to the next in a relay system."
+                },
+                {
+                  "id": "g6-soc-oh8",
+                  "type": "mc",
+                  "prompt": "Which three major monotheistic religions began in Southwest Asia?",
+                  "choices": [
+                    "Judaism, Christianity, and Islam",
+                    "Hinduism, Buddhism, and Taoism",
+                    "Shinto, Confucianism, and Jainism",
+                    "Greek, Roman, and Norse myth"
+                  ],
+                  "answer": "Judaism, Christianity, and Islam",
+                  "explanation": "Judaism, Christianity, and Islam all originated in Southwest Asia and teach belief in one God (monotheism)."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Mesopotamia, Ancient Egypt & River Valley Geography & Athenian Direct Democracy vs. Roman Representative Republic & Eastern Hemisphere Religions, Cultural Diffusion & Trade Economics (C3.D2.His.14.6-8, C3.D2.Civ.2.6-8, OH.6.SS.7). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g6-soc-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Mesopotamia, Ancient Egypt & River Valley Geography & Athenian Direct Democracy vs. Roman Representative Republic & Eastern Hemisphere Religions, Cultural Diffusion & Trade Economics",
+                "description": "Read the Core Concept Summary and Principle cards on this page (C3.D2.His.14.6-8, C3.D2.Civ.2.6-8, OH.6.SS.7) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g6-soc-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Grade 6 Social Studies Mastery Review",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Mesopotamia, Ancient Egypt & River Valley Geography & Athenian Direct Democracy vs. Roman Representative Republic & Eastern Hemisphere Religions, Cultural Diffusion & Trade Economics\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/world-history/ancient-medieval"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Mesopotamia, Ancient Egypt & River Valley Geography.",
+              "Analyze early river valley civilizations.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Why did early civilizations begin along major river valleys?\" → Answer: Rivers gave fresh water and fertile soil for farming. (Seasonal river floods left rich silt that helped farmers grow food surpluses.)",
+            "links": [
+              {
+                "label": "YouTube: \"Ancient & Classical Civilizations\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20social%20Ancient%20%26%20Classical%20Civilizations%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Ancient & Classical Civilizations\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Ancient%20%26%20Classical%20Civilizations",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Ancient & Classical Civilizations",
+                "url": "https://www.youtube.com/results?search_query=Ancient%20%26%20Classical%20Civilizations%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     }

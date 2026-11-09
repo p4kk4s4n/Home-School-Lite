@@ -1,0 +1,1993 @@
+{
+  "id": "g7-science",
+  "subject": "science",
+  "grade": 7,
+  "title": "Grade 7 Integrated Science",
+  "subtitle": "Conservation of Matter, Periodic Table, Hydrologic/Atmospheric Cycles, Tides & Ecosystems",
+  "credits": 1,
+  "color": "#047857",
+  "icon": "🧪",
+  "units": [
+    {
+      "id": "g7-sci-u1",
+      "title": "Unit 1: Conservation of Matter & Periodic Properties",
+      "standards": [
+        "MS-PS1-5",
+        "OH.7.PS.1"
+      ],
+      "lessons": [
+        {
+          "id": "g7-sci-u1-l1",
+          "unitId": "g7-sci-u1",
+          "title": "Part 1: Elements, Compounds, Mixtures & Conservation of Matter",
+          "kind": "lesson",
+          "partOf": "Matter & Periodic Properties",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/ms-chemistry/xc370bc422b7f75fc:chemical-reactions",
+          "videoTitle": "Khan Academy: Conservation of Atoms in Chemical Reactions",
+          "reading": "An element is made of one kind of atom, while a compound has two or more elements chemically bonded together. A mixture blends substances physically without chemical bonds. During any chemical reaction, atoms rearrange into new molecules, so total mass is always conserved.",
+          "principles": [
+            {
+              "id": "p-g7-sci-matter",
+              "title": "Elements, Compounds, Mixtures & Conservation of Matter",
+              "standard": "MS-PS1-5 / OH.7.PS.1",
+              "summary": "Atoms rearrange during chemical reactions, so total mass stays the same.",
+              "bank": [
+                {
+                  "id": "g7-sci-mat-1",
+                  "prompt": "What is a pure substance made of one atom type?",
+                  "type": "mc",
+                  "choices": [
+                    "An element",
+                    "A mixture",
+                    "A solution",
+                    "An alloy"
+                  ],
+                  "answer": "An element",
+                  "explanation": "An element is a pure substance made of only one kind of atom, like gold or oxygen."
+                },
+                {
+                  "id": "g7-sci-mat-2",
+                  "prompt": "What forms when two elements chemically bond together?",
+                  "type": "mc",
+                  "choices": [
+                    "A compound",
+                    "A mixture",
+                    "An electron",
+                    "A proton"
+                  ],
+                  "answer": "A compound",
+                  "explanation": "A compound is a substance formed when two or more elements chemically bond in a fixed ratio."
+                },
+                {
+                  "id": "g7-sci-mat-3",
+                  "prompt": "How are substances combined inside a mixture?",
+                  "type": "mc",
+                  "choices": [
+                    "Blended physically without chemical bonds",
+                    "Fused inside atomic nuclei",
+                    "Bonded into new molecules",
+                    "Destroyed by heat energy"
+                  ],
+                  "answer": "Blended physically without chemical bonds",
+                  "explanation": "A mixture combines substances physically so each substance keeps its own chemical identity."
+                },
+                {
+                  "id": "g7-sci-mat-4",
+                  "prompt": "What happens to total mass during a chemical reaction?",
+                  "type": "mc",
+                  "choices": [
+                    "Total mass stays the same",
+                    "Total mass doubles quickly",
+                    "Total mass disappears completely",
+                    "Total mass turns into light"
+                  ],
+                  "answer": "Total mass stays the same",
+                  "explanation": "Conservation of matter means matter is neither created nor destroyed during a chemical reaction."
+                },
+                {
+                  "id": "g7-sci-mat-5",
+                  "prompt": "What happens to atoms during a chemical change?",
+                  "type": "mc",
+                  "choices": [
+                    "Atoms rearrange into new molecules",
+                    "Atoms vanish into empty space",
+                    "Atoms change into different elements",
+                    "Atoms stop moving forever"
+                  ],
+                  "answer": "Atoms rearrange into new molecules",
+                  "explanation": "In a chemical reaction, existing atoms break apart and rearrange to form new products."
+                },
+                {
+                  "id": "g7-sci-mat-6",
+                  "prompt": "What is a uniform mixture like salt water called?",
+                  "type": "mc",
+                  "choices": [
+                    "A homogeneous solution",
+                    "A pure element",
+                    "A suspension",
+                    "A heavy precipitate"
+                  ],
+                  "answer": "A homogeneous solution",
+                  "explanation": "A solution is a homogeneous mixture where one substance dissolves evenly into another."
+                },
+                {
+                  "id": "g7-sci-mat-7",
+                  "prompt": "If 10 grams of reactants react in a sealed jar, what is the product mass?",
+                  "type": "mc",
+                  "choices": [
+                    "Exactly 10 grams",
+                    "About 5 grams",
+                    "Over 20 grams",
+                    "Zero grams"
+                  ],
+                  "answer": "Exactly 10 grams",
+                  "explanation": "By conservation of mass, the mass of products equals the starting mass of reactants."
+                },
+                {
+                  "id": "g7-sci-mat-8",
+                  "prompt": "Which example shows a chemical compound?",
+                  "type": "mc",
+                  "choices": [
+                    "Water made of hydrogen and oxygen",
+                    "Trail mix with nuts and raisins",
+                    "Pure copper wire",
+                    "Sand stirred into water"
+                  ],
+                  "answer": "Water made of hydrogen and oxygen",
+                  "explanation": "Water (H2O) is a compound because hydrogen and oxygen atoms are chemically bonded together."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Matter & Periodic Properties] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Elements, Compounds, Mixtures & Conservation of Matter\" (MS-PS1-5 / OH.7.PS.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-sci-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Conservation of Atoms in Chemical Reactions",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Elements, Compounds, Mixtures & Conservation of Matter\" (MS-PS1-5 / OH.7.PS.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-chemistry/xc370bc422b7f75fc:chemical-reactions"
+              },
+              {
+                "id": "g7-sci-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Elements, Compounds, Mixtures & Conservation of Matter.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-sci-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (MS-PS1-5 / OH.7.PS.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Elements, Compounds, Mixtures & Conservation of Matter.",
+              "Atoms rearrange during chemical reactions, so total mass stays the same.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is a pure substance made of one atom type?\" → Answer: An element. (An element is a pure substance made of only one kind of atom, like gold or oxygen.)",
+            "links": [
+              {
+                "label": "YouTube: \"Matter & Periodic Properties\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20science%20Matter%20%26%20Periodic%20Properties%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Matter & Periodic Properties\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Matter%20%26%20Periodic%20Properties",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Matter & Periodic Properties",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Matter%20%26%20Periodic%20Properties",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-sci-u1-l2",
+          "unitId": "g7-sci-u1",
+          "title": "Part 2: Periodic Table Groups & Physical vs. Chemical Properties",
+          "kind": "lesson",
+          "partOf": "Matter & Periodic Properties",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/ms-chemistry/xc370bc422b7f75fc:atoms-and-elements",
+          "videoTitle": "Khan Academy: Periodic Table Groups & Properties of Matter",
+          "reading": "Vertical columns on the periodic table are called groups or families. Elements in the same group have similar outer electrons and react in similar ways. Physical properties like melting point and conductivity can be observed without changing the substance, while chemical properties like rusting or pH describe how it reacts.",
+          "principles": [
+            {
+              "id": "p-g7-sci-periodic",
+              "title": "Periodic Table Groups & Physical vs. Chemical Properties",
+              "standard": "OH.7.PS.1",
+              "summary": "Elements in the same column share similar chemical properties.",
+              "bank": [
+                {
+                  "id": "g7-sci-per-1",
+                  "prompt": "What are columns on the periodic table called?",
+                  "type": "mc",
+                  "choices": [
+                    "Groups or families",
+                    "Horizontal periods",
+                    "Atomic shells",
+                    "Phase mixtures"
+                  ],
+                  "answer": "Groups or families",
+                  "explanation": "Groups are vertical columns on the periodic table whose elements have similar chemical behavior."
+                },
+                {
+                  "id": "g7-sci-per-2",
+                  "prompt": "Why do elements in the same group react similarly?",
+                  "type": "mc",
+                  "choices": [
+                    "They have similar outer electrons",
+                    "They have identical atomic masses",
+                    "They were discovered the same year",
+                    "They are all liquids"
+                  ],
+                  "answer": "They have similar outer electrons",
+                  "explanation": "Chemical reactivity depends on outer electrons, which match within a periodic table group."
+                },
+                {
+                  "id": "g7-sci-per-3",
+                  "prompt": "Which trait is a physical property of matter?",
+                  "type": "mc",
+                  "choices": [
+                    "Melting point",
+                    "Flammability in air",
+                    "Rusting in water",
+                    "Reactivity with acid"
+                  ],
+                  "answer": "Melting point",
+                  "explanation": "A physical property can be measured without changing the substance into something new."
+                },
+                {
+                  "id": "g7-sci-per-4",
+                  "prompt": "Which trait is a chemical property of matter?",
+                  "type": "mc",
+                  "choices": [
+                    "Ability to rust",
+                    "Density of a block",
+                    "Boiling temperature",
+                    "Color of a crystal"
+                  ],
+                  "answer": "Ability to rust",
+                  "explanation": "A chemical property describes how a substance reacts to form a new substance."
+                },
+                {
+                  "id": "g7-sci-per-5",
+                  "prompt": "Where are metals located on the periodic table?",
+                  "type": "mc",
+                  "choices": [
+                    "On the left and center",
+                    "Only in the far right column",
+                    "Above the noble gases",
+                    "Below the table only"
+                  ],
+                  "answer": "On the left and center",
+                  "explanation": "Metals occupy the left and middle sections of the periodic table and conduct heat well."
+                },
+                {
+                  "id": "g7-sci-per-6",
+                  "prompt": "What property makes copper useful for electrical wires?",
+                  "type": "mc",
+                  "choices": [
+                    "High electrical conductivity",
+                    "Low melting temperature",
+                    "Extreme brittleness",
+                    "Strong acidity"
+                  ],
+                  "answer": "High electrical conductivity",
+                  "explanation": "Electrical conductivity is a physical property allowing electric current to flow easily through metals."
+                },
+                {
+                  "id": "g7-sci-per-7",
+                  "prompt": "Why are noble gases in Group 18 mostly unreactive?",
+                  "type": "mc",
+                  "choices": [
+                    "Their outer electron shells are full",
+                    "They have zero protons inside",
+                    "They are frozen solid",
+                    "They are mixtures of metals"
+                  ],
+                  "answer": "Their outer electron shells are full",
+                  "explanation": "Noble gases have full outer electron shells, so they rarely form chemical bonds."
+                },
+                {
+                  "id": "g7-sci-per-8",
+                  "prompt": "What does acidity or pH measure in a liquid?",
+                  "type": "mc",
+                  "choices": [
+                    "How acidic or basic it is",
+                    "How heavy the container is",
+                    "How fast it boils",
+                    "How much light it reflects"
+                  ],
+                  "answer": "How acidic or basic it is",
+                  "explanation": "The pH scale measures whether a solution is an acid, neutral, or a base."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Matter & Periodic Properties] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Periodic Table Groups & Physical vs. Chemical Properties\" (OH.7.PS.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-sci-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Periodic Table Groups & Properties of Matter",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Periodic Table Groups & Physical vs. Chemical Properties\" (OH.7.PS.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-chemistry/xc370bc422b7f75fc:atoms-and-elements"
+              },
+              {
+                "id": "g7-sci-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Periodic Table Groups & Physical vs. Chemical Properties.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-sci-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.7.PS.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Periodic Table Groups & Physical vs. Chemical Properties.",
+              "Elements in the same column share similar chemical properties.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What are columns on the periodic table called?\" → Answer: Groups or families. (Groups are vertical columns on the periodic table whose elements have similar chemical behavior.)",
+            "links": [
+              {
+                "label": "YouTube: \"Matter & Periodic Properties\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20science%20Matter%20%26%20Periodic%20Properties%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Matter & Periodic Properties\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Matter%20%26%20Periodic%20Properties",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Matter & Periodic Properties",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Matter%20%26%20Periodic%20Properties",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-sci-u1-test",
+          "unitId": "g7-sci-u1",
+          "title": "Unit 1 Exam: Matter, Mixtures & Periodic Properties",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/science/ms-chemistry/xc370bc422b7f75fc:chemical-reactions",
+          "videoTitle": "Unit 1 Review: Conservation of Matter & Elements",
+          "reading": "Answer 8 questions covering elements, compounds, mixtures, conservation of mass, and the periodic table.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g7-sci-matter",
+              "title": "Elements, Compounds, Mixtures & Conservation of Matter",
+              "standard": "MS-PS1-5 / OH.7.PS.1",
+              "summary": "Atoms rearrange during chemical reactions, so total mass stays the same.",
+              "bank": [
+                {
+                  "id": "g7-sci-mat-1",
+                  "prompt": "What is a pure substance made of one atom type?",
+                  "type": "mc",
+                  "choices": [
+                    "An element",
+                    "A mixture",
+                    "A solution",
+                    "An alloy"
+                  ],
+                  "answer": "An element",
+                  "explanation": "An element is a pure substance made of only one kind of atom, like gold or oxygen."
+                },
+                {
+                  "id": "g7-sci-mat-2",
+                  "prompt": "What forms when two elements chemically bond together?",
+                  "type": "mc",
+                  "choices": [
+                    "A compound",
+                    "A mixture",
+                    "An electron",
+                    "A proton"
+                  ],
+                  "answer": "A compound",
+                  "explanation": "A compound is a substance formed when two or more elements chemically bond in a fixed ratio."
+                },
+                {
+                  "id": "g7-sci-mat-3",
+                  "prompt": "How are substances combined inside a mixture?",
+                  "type": "mc",
+                  "choices": [
+                    "Blended physically without chemical bonds",
+                    "Fused inside atomic nuclei",
+                    "Bonded into new molecules",
+                    "Destroyed by heat energy"
+                  ],
+                  "answer": "Blended physically without chemical bonds",
+                  "explanation": "A mixture combines substances physically so each substance keeps its own chemical identity."
+                },
+                {
+                  "id": "g7-sci-mat-4",
+                  "prompt": "What happens to total mass during a chemical reaction?",
+                  "type": "mc",
+                  "choices": [
+                    "Total mass stays the same",
+                    "Total mass doubles quickly",
+                    "Total mass disappears completely",
+                    "Total mass turns into light"
+                  ],
+                  "answer": "Total mass stays the same",
+                  "explanation": "Conservation of matter means matter is neither created nor destroyed during a chemical reaction."
+                },
+                {
+                  "id": "g7-sci-mat-5",
+                  "prompt": "What happens to atoms during a chemical change?",
+                  "type": "mc",
+                  "choices": [
+                    "Atoms rearrange into new molecules",
+                    "Atoms vanish into empty space",
+                    "Atoms change into different elements",
+                    "Atoms stop moving forever"
+                  ],
+                  "answer": "Atoms rearrange into new molecules",
+                  "explanation": "In a chemical reaction, existing atoms break apart and rearrange to form new products."
+                },
+                {
+                  "id": "g7-sci-mat-6",
+                  "prompt": "What is a uniform mixture like salt water called?",
+                  "type": "mc",
+                  "choices": [
+                    "A homogeneous solution",
+                    "A pure element",
+                    "A suspension",
+                    "A heavy precipitate"
+                  ],
+                  "answer": "A homogeneous solution",
+                  "explanation": "A solution is a homogeneous mixture where one substance dissolves evenly into another."
+                },
+                {
+                  "id": "g7-sci-mat-7",
+                  "prompt": "If 10 grams of reactants react in a sealed jar, what is the product mass?",
+                  "type": "mc",
+                  "choices": [
+                    "Exactly 10 grams",
+                    "About 5 grams",
+                    "Over 20 grams",
+                    "Zero grams"
+                  ],
+                  "answer": "Exactly 10 grams",
+                  "explanation": "By conservation of mass, the mass of products equals the starting mass of reactants."
+                },
+                {
+                  "id": "g7-sci-mat-8",
+                  "prompt": "Which example shows a chemical compound?",
+                  "type": "mc",
+                  "choices": [
+                    "Water made of hydrogen and oxygen",
+                    "Trail mix with nuts and raisins",
+                    "Pure copper wire",
+                    "Sand stirred into water"
+                  ],
+                  "answer": "Water made of hydrogen and oxygen",
+                  "explanation": "Water (H2O) is a compound because hydrogen and oxygen atoms are chemically bonded together."
+                }
+              ]
+            },
+            {
+              "id": "p-g7-sci-periodic",
+              "title": "Periodic Table Groups & Physical vs. Chemical Properties",
+              "standard": "OH.7.PS.1",
+              "summary": "Elements in the same column share similar chemical properties.",
+              "bank": [
+                {
+                  "id": "g7-sci-per-1",
+                  "prompt": "What are columns on the periodic table called?",
+                  "type": "mc",
+                  "choices": [
+                    "Groups or families",
+                    "Horizontal periods",
+                    "Atomic shells",
+                    "Phase mixtures"
+                  ],
+                  "answer": "Groups or families",
+                  "explanation": "Groups are vertical columns on the periodic table whose elements have similar chemical behavior."
+                },
+                {
+                  "id": "g7-sci-per-2",
+                  "prompt": "Why do elements in the same group react similarly?",
+                  "type": "mc",
+                  "choices": [
+                    "They have similar outer electrons",
+                    "They have identical atomic masses",
+                    "They were discovered the same year",
+                    "They are all liquids"
+                  ],
+                  "answer": "They have similar outer electrons",
+                  "explanation": "Chemical reactivity depends on outer electrons, which match within a periodic table group."
+                },
+                {
+                  "id": "g7-sci-per-3",
+                  "prompt": "Which trait is a physical property of matter?",
+                  "type": "mc",
+                  "choices": [
+                    "Melting point",
+                    "Flammability in air",
+                    "Rusting in water",
+                    "Reactivity with acid"
+                  ],
+                  "answer": "Melting point",
+                  "explanation": "A physical property can be measured without changing the substance into something new."
+                },
+                {
+                  "id": "g7-sci-per-4",
+                  "prompt": "Which trait is a chemical property of matter?",
+                  "type": "mc",
+                  "choices": [
+                    "Ability to rust",
+                    "Density of a block",
+                    "Boiling temperature",
+                    "Color of a crystal"
+                  ],
+                  "answer": "Ability to rust",
+                  "explanation": "A chemical property describes how a substance reacts to form a new substance."
+                },
+                {
+                  "id": "g7-sci-per-5",
+                  "prompt": "Where are metals located on the periodic table?",
+                  "type": "mc",
+                  "choices": [
+                    "On the left and center",
+                    "Only in the far right column",
+                    "Above the noble gases",
+                    "Below the table only"
+                  ],
+                  "answer": "On the left and center",
+                  "explanation": "Metals occupy the left and middle sections of the periodic table and conduct heat well."
+                },
+                {
+                  "id": "g7-sci-per-6",
+                  "prompt": "What property makes copper useful for electrical wires?",
+                  "type": "mc",
+                  "choices": [
+                    "High electrical conductivity",
+                    "Low melting temperature",
+                    "Extreme brittleness",
+                    "Strong acidity"
+                  ],
+                  "answer": "High electrical conductivity",
+                  "explanation": "Electrical conductivity is a physical property allowing electric current to flow easily through metals."
+                },
+                {
+                  "id": "g7-sci-per-7",
+                  "prompt": "Why are noble gases in Group 18 mostly unreactive?",
+                  "type": "mc",
+                  "choices": [
+                    "Their outer electron shells are full",
+                    "They have zero protons inside",
+                    "They are frozen solid",
+                    "They are mixtures of metals"
+                  ],
+                  "answer": "Their outer electron shells are full",
+                  "explanation": "Noble gases have full outer electron shells, so they rarely form chemical bonds."
+                },
+                {
+                  "id": "g7-sci-per-8",
+                  "prompt": "What does acidity or pH measure in a liquid?",
+                  "type": "mc",
+                  "choices": [
+                    "How acidic or basic it is",
+                    "How heavy the container is",
+                    "How fast it boils",
+                    "How much light it reflects"
+                  ],
+                  "answer": "How acidic or basic it is",
+                  "explanation": "The pH scale measures whether a solution is an acid, neutral, or a base."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Elements, Compounds, Mixtures & Conservation of Matter & Periodic Table Groups & Physical vs. Chemical Properties (MS-PS1-5 / OH.7.PS.1, OH.7.PS.1). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g7-sci-u1-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Elements, Compounds, Mixtures & Conservation of Matter & Periodic Table Groups & Physical vs. Chemical Properties",
+                "description": "Read the Core Concept Summary and Principle cards on this page (MS-PS1-5 / OH.7.PS.1, OH.7.PS.1) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g7-sci-u1-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 Review: Conservation of Matter & Elements",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Elements, Compounds, Mixtures & Conservation of Matter & Periodic Table Groups & Physical vs. Chemical Properties\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/science/ms-chemistry/xc370bc422b7f75fc:chemical-reactions"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Elements, Compounds, Mixtures & Conservation of Matter.",
+              "Atoms rearrange during chemical reactions, so total mass stays the same.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is a pure substance made of one atom type?\" → Answer: An element. (An element is a pure substance made of only one kind of atom, like gold or oxygen.)",
+            "links": [
+              {
+                "label": "YouTube: \"Matter, Mixtures & Periodic Properties\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20science%20Matter%2C%20Mixtures%20%26%20Periodic%20Properties%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Matter, Mixtures & Periodic Properties\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Matter%2C%20Mixtures%20%26%20Periodic%20Properties",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Matter, Mixtures & Periodic Properties",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Matter%2C%20Mixtures%20%26%20Periodic%20Properties",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g7-sci-u2",
+      "title": "Unit 2: Earth’s Water, Atmosphere, Moon Cycles & Ecosystems",
+      "standards": [
+        "OH.7.ESS.1",
+        "OH.7.ESS.4",
+        "MS-LS2-3",
+        "OH.7.LS.1"
+      ],
+      "lessons": [
+        {
+          "id": "g7-sci-u2-l1",
+          "unitId": "g7-sci-u2",
+          "title": "Part 1: Hydrologic Cycle, Ocean Currents & Atmosphere",
+          "kind": "lesson",
+          "partOf": "Earth Cycles & Ecosystems",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/ms-earth-and-space-science/x37589312f55438b9:water-and-weather",
+          "videoTitle": "Khan Academy: The Water Cycle, Ocean Currents & Atmosphere",
+          "reading": "Sunlight powers evaporation and transpiration, while gravity pulls precipitation down as rain or snow. In the oceans, cold salty water is denser and sinks to drive deep currents, while warm surface currents warm nearby coasts. Most weather happens in the troposphere, Earth’s lowest atmospheric layer.",
+          "principles": [
+            {
+              "id": "p-g7-sci-hydro",
+              "title": "Hydrologic Cycle, Ocean Currents & Earth Atmosphere",
+              "standard": "OH.7.ESS.1 / OH.7.ESS.2",
+              "summary": "Solar energy and gravity drive water movement, winds, and ocean currents.",
+              "bank": [
+                {
+                  "id": "g7-sci-hyd-1",
+                  "prompt": "What main energy source powers the water cycle?",
+                  "type": "mc",
+                  "choices": [
+                    "Energy from the Sun",
+                    "Heat from volcanoes",
+                    "Wind from windmills",
+                    "Light from distant stars"
+                  ],
+                  "answer": "Energy from the Sun",
+                  "explanation": "Solar energy warms liquid water on Earth, causing evaporation into the atmosphere."
+                },
+                {
+                  "id": "g7-sci-hyd-2",
+                  "prompt": "What force pulls rain and snow back to Earth?",
+                  "type": "mc",
+                  "choices": [
+                    "Gravity",
+                    "Magnetism",
+                    "Static electricity",
+                    "Air friction"
+                  ],
+                  "answer": "Gravity",
+                  "explanation": "Gravity pulls condensed water droplets down as precipitation and moves runoff downhill."
+                },
+                {
+                  "id": "g7-sci-hyd-3",
+                  "prompt": "What happens during condensation in the sky?",
+                  "type": "mc",
+                  "choices": [
+                    "Water vapor cools into liquid drops",
+                    "Ice melts into warm rivers",
+                    "Plants release oxygen gas",
+                    "Oceans freeze into glaciers"
+                  ],
+                  "answer": "Water vapor cools into liquid drops",
+                  "explanation": "Condensation occurs when rising water vapor cools and changes into liquid cloud droplets."
+                },
+                {
+                  "id": "g7-sci-hyd-4",
+                  "prompt": "What causes deep ocean density currents to sink?",
+                  "type": "mc",
+                  "choices": [
+                    "Cold temperature and high salinity",
+                    "Warm tropical sunlight",
+                    "Strong surface breezes",
+                    "Fresh river water"
+                  ],
+                  "answer": "Cold temperature and high salinity",
+                  "explanation": "Cold, salty ocean water is denser than warm water, so it sinks and drives deep currents."
+                },
+                {
+                  "id": "g7-sci-hyd-5",
+                  "prompt": "In which atmospheric layer does most weather occur?",
+                  "type": "mc",
+                  "choices": [
+                    "The troposphere",
+                    "The thermosphere",
+                    "The exosphere",
+                    "The mesosphere"
+                  ],
+                  "answer": "The troposphere",
+                  "explanation": "The troposphere is the lowest layer of the atmosphere and holds most water vapor and weather."
+                },
+                {
+                  "id": "g7-sci-hyd-6",
+                  "prompt": "What is the release of water vapor from plant leaves?",
+                  "type": "mc",
+                  "choices": [
+                    "Transpiration",
+                    "Precipitation",
+                    "Infiltration",
+                    "Sublimation"
+                  ],
+                  "answer": "Transpiration",
+                  "explanation": "Transpiration is the process where plants release water vapor into the air through tiny leaf pores."
+                },
+                {
+                  "id": "g7-sci-hyd-7",
+                  "prompt": "How do warm surface ocean currents affect nearby coasts?",
+                  "type": "mc",
+                  "choices": [
+                    "They warm the coastal climate",
+                    "They freeze coastal harbors",
+                    "They stop all rainfall",
+                    "They block sunlight"
+                  ],
+                  "answer": "They warm the coastal climate",
+                  "explanation": "Warm ocean currents transfer thermal energy to the air, creating milder coastal temperatures."
+                },
+                {
+                  "id": "g7-sci-hyd-8",
+                  "prompt": "Which gas is most abundant in Earth’s atmosphere?",
+                  "type": "mc",
+                  "choices": [
+                    "Nitrogen",
+                    "Carbon dioxide",
+                    "Hydrogen",
+                    "Helium"
+                  ],
+                  "answer": "Nitrogen",
+                  "explanation": "Earth’s atmosphere is about 78 percent nitrogen and 21 percent oxygen."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Earth Cycles & Ecosystems] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Hydrologic Cycle, Ocean Currents & Earth Atmosphere\" (OH.7.ESS.1 / OH.7.ESS.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-sci-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: The Water Cycle, Ocean Currents & Atmosphere",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Hydrologic Cycle, Ocean Currents & Earth Atmosphere\" (OH.7.ESS.1 / OH.7.ESS.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-earth-and-space-science/x37589312f55438b9:water-and-weather"
+              },
+              {
+                "id": "g7-sci-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Hydrologic Cycle, Ocean Currents & Earth Atmosphere.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-sci-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.7.ESS.1 / OH.7.ESS.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Hydrologic Cycle, Ocean Currents & Earth Atmosphere.",
+              "Solar energy and gravity drive water movement, winds, and ocean currents.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What main energy source powers the water cycle?\" → Answer: Energy from the Sun. (Solar energy warms liquid water on Earth, causing evaporation into the atmosphere.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Cycles & Ecosystems\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20science%20Earth%20Cycles%20%26%20Ecosystems%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Cycles & Ecosystems\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Earth%20Cycles%20%26%20Ecosystems",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Cycles & Ecosystems",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Cycles%20%26%20Ecosystems",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-sci-u2-l2",
+          "unitId": "g7-sci-u2",
+          "title": "Part 2: Earth-Moon-Sun Cycles: Tides, Eclipses & Phases",
+          "kind": "lesson",
+          "partOf": "Earth Cycles & Ecosystems",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/ms-earth-and-space-science/x37589312f55438b9:earth-sun-moon-system",
+          "videoTitle": "Khan Academy: Moon Phases, Eclipses, Seasons & Ocean Tides",
+          "reading": "The Moon’s gravity pulls on Earth’s oceans to create daily high and low tides. When the Sun, Earth, and Moon align during new and full moons, extra-strong spring tides occur. A solar eclipse happens when the Moon blocks sunlight, while a lunar eclipse happens when Earth’s shadow falls on the Moon.",
+          "principles": [
+            {
+              "id": "p-g7-sci-tides",
+              "title": "Earth-Moon-Sun Cycles: Tides, Eclipses & Phases",
+              "standard": "OH.7.ESS.4",
+              "summary": "Positions of Earth, Moon, and Sun cause moon phases, eclipses, and ocean tides.",
+              "bank": [
+                {
+                  "id": "g7-sci-tid-1",
+                  "prompt": "What is the main cause of daily ocean tides?",
+                  "type": "mc",
+                  "choices": [
+                    "The Moon’s gravitational pull",
+                    "Strong ocean windstorms",
+                    "Earth’s magnetic field",
+                    "Underwater volcanic heat"
+                  ],
+                  "answer": "The Moon’s gravitational pull",
+                  "explanation": "Tides are regular rises and falls of ocean water caused mainly by the Moon’s gravity."
+                },
+                {
+                  "id": "g7-sci-tid-2",
+                  "prompt": "When do extra-high spring tides happen?",
+                  "type": "mc",
+                  "choices": [
+                    "During new and full moons",
+                    "Only during quarter moons",
+                    "Once every ten years",
+                    "Only in winter months"
+                  ],
+                  "answer": "During new and full moons",
+                  "explanation": "Spring tides occur when the Sun, Earth, and Moon line up, combining their gravitational pull."
+                },
+                {
+                  "id": "g7-sci-tid-3",
+                  "prompt": "What happens during a solar eclipse?",
+                  "type": "mc",
+                  "choices": [
+                    "The Moon blocks sunlight from Earth",
+                    "Earth blocks light to the Moon",
+                    "The Sun turns off briefly",
+                    "Mars passes behind the Sun"
+                  ],
+                  "answer": "The Moon blocks sunlight from Earth",
+                  "explanation": "A solar eclipse occurs when the Moon passes directly between the Sun and Earth."
+                },
+                {
+                  "id": "g7-sci-tid-4",
+                  "prompt": "What causes the different phases of the Moon?",
+                  "type": "mc",
+                  "choices": [
+                    "Viewing the lit Moon from angles",
+                    "Earth’s shadow covering the Moon daily",
+                    "Clouds blocking moonlight",
+                    "The Moon spinning on a tilt"
+                  ],
+                  "answer": "Viewing the lit Moon from angles",
+                  "explanation": "Moon phases change as the Moon orbits Earth and we see different portions of its sunlit side."
+                },
+                {
+                  "id": "g7-sci-tid-5",
+                  "prompt": "What causes a lunar eclipse?",
+                  "type": "mc",
+                  "choices": [
+                    "Earth’s shadow falls on the Moon",
+                    "The Moon moves in front of Venus",
+                    "Sunspots cool the Moon",
+                    "Dust storms on the Moon"
+                  ],
+                  "answer": "Earth’s shadow falls on the Moon",
+                  "explanation": "A lunar eclipse happens when Earth is directly between the Sun and a full Moon."
+                },
+                {
+                  "id": "g7-sci-tid-6",
+                  "prompt": "When do moderate neap tides occur?",
+                  "type": "mc",
+                  "choices": [
+                    "During first and third quarter moons",
+                    "During a total solar eclipse",
+                    "Only at the North Pole",
+                    "When Earth is closest to Mars"
+                  ],
+                  "answer": "During first and third quarter moons",
+                  "explanation": "Neap tides occur when the Sun and Moon pull at right angles, making smaller tidal ranges."
+                },
+                {
+                  "id": "g7-sci-tid-7",
+                  "prompt": "Why does Earth experience four seasons each year?",
+                  "type": "mc",
+                  "choices": [
+                    "Earth’s tilted axis as it orbits",
+                    "Earth moving closer to the Moon",
+                    "Changes in ocean salt levels",
+                    "Spinning faster in summer"
+                  ],
+                  "answer": "Earth’s tilted axis as it orbits",
+                  "explanation": "Seasons happen because Earth’s axis is tilted 23.5 degrees as it revolves around the Sun."
+                },
+                {
+                  "id": "g7-sci-tid-8",
+                  "prompt": "About how long does one full cycle of Moon phases take?",
+                  "type": "mc",
+                  "choices": [
+                    "About 29.5 days",
+                    "Exactly 7 days",
+                    "About 365 days",
+                    "Roughly 24 hours"
+                  ],
+                  "answer": "About 29.5 days",
+                  "explanation": "A lunar cycle from one new moon to the next takes about 29.5 days."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Earth Cycles & Ecosystems] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Earth-Moon-Sun Cycles: Tides, Eclipses & Phases\" (OH.7.ESS.4), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-sci-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Moon Phases, Eclipses, Seasons & Ocean Tides",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Earth-Moon-Sun Cycles: Tides, Eclipses & Phases\" (OH.7.ESS.4). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-earth-and-space-science/x37589312f55438b9:earth-sun-moon-system"
+              },
+              {
+                "id": "g7-sci-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Earth-Moon-Sun Cycles: Tides, Eclipses & Phases.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-sci-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.7.ESS.4)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Earth-Moon-Sun Cycles: Tides, Eclipses & Phases.",
+              "Positions of Earth, Moon, and Sun cause moon phases, eclipses, and ocean tides.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the main cause of daily ocean tides?\" → Answer: The Moon’s gravitational pull. (Tides are regular rises and falls of ocean water caused mainly by the Moon’s gravity.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Cycles & Ecosystems\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20science%20Earth%20Cycles%20%26%20Ecosystems%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Cycles & Ecosystems\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Earth%20Cycles%20%26%20Ecosystems",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Cycles & Ecosystems",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Cycles%20%26%20Ecosystems",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-sci-u2-rev",
+          "unitId": "g7-sci-u2",
+          "title": "Topic Review: Earth’s Water, Atmosphere & Moon Cycles",
+          "kind": "lesson_review",
+          "partOf": "Earth Cycles & Ecosystems",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/ms-earth-and-space-science/x37589312f55438b9:earth-sun-moon-system",
+          "videoTitle": "Review: Hydrologic & Earth-Moon-Sun Systems",
+          "reading": "Review 6 questions on the water cycle, ocean currents, atmosphere, and Moon/tide cycles.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g7-sci-hydro",
+              "title": "Hydrologic Cycle, Ocean Currents & Earth Atmosphere",
+              "standard": "OH.7.ESS.1 / OH.7.ESS.2",
+              "summary": "Solar energy and gravity drive water movement, winds, and ocean currents.",
+              "bank": [
+                {
+                  "id": "g7-sci-hyd-1",
+                  "prompt": "What main energy source powers the water cycle?",
+                  "type": "mc",
+                  "choices": [
+                    "Energy from the Sun",
+                    "Heat from volcanoes",
+                    "Wind from windmills",
+                    "Light from distant stars"
+                  ],
+                  "answer": "Energy from the Sun",
+                  "explanation": "Solar energy warms liquid water on Earth, causing evaporation into the atmosphere."
+                },
+                {
+                  "id": "g7-sci-hyd-2",
+                  "prompt": "What force pulls rain and snow back to Earth?",
+                  "type": "mc",
+                  "choices": [
+                    "Gravity",
+                    "Magnetism",
+                    "Static electricity",
+                    "Air friction"
+                  ],
+                  "answer": "Gravity",
+                  "explanation": "Gravity pulls condensed water droplets down as precipitation and moves runoff downhill."
+                },
+                {
+                  "id": "g7-sci-hyd-3",
+                  "prompt": "What happens during condensation in the sky?",
+                  "type": "mc",
+                  "choices": [
+                    "Water vapor cools into liquid drops",
+                    "Ice melts into warm rivers",
+                    "Plants release oxygen gas",
+                    "Oceans freeze into glaciers"
+                  ],
+                  "answer": "Water vapor cools into liquid drops",
+                  "explanation": "Condensation occurs when rising water vapor cools and changes into liquid cloud droplets."
+                },
+                {
+                  "id": "g7-sci-hyd-4",
+                  "prompt": "What causes deep ocean density currents to sink?",
+                  "type": "mc",
+                  "choices": [
+                    "Cold temperature and high salinity",
+                    "Warm tropical sunlight",
+                    "Strong surface breezes",
+                    "Fresh river water"
+                  ],
+                  "answer": "Cold temperature and high salinity",
+                  "explanation": "Cold, salty ocean water is denser than warm water, so it sinks and drives deep currents."
+                },
+                {
+                  "id": "g7-sci-hyd-5",
+                  "prompt": "In which atmospheric layer does most weather occur?",
+                  "type": "mc",
+                  "choices": [
+                    "The troposphere",
+                    "The thermosphere",
+                    "The exosphere",
+                    "The mesosphere"
+                  ],
+                  "answer": "The troposphere",
+                  "explanation": "The troposphere is the lowest layer of the atmosphere and holds most water vapor and weather."
+                },
+                {
+                  "id": "g7-sci-hyd-6",
+                  "prompt": "What is the release of water vapor from plant leaves?",
+                  "type": "mc",
+                  "choices": [
+                    "Transpiration",
+                    "Precipitation",
+                    "Infiltration",
+                    "Sublimation"
+                  ],
+                  "answer": "Transpiration",
+                  "explanation": "Transpiration is the process where plants release water vapor into the air through tiny leaf pores."
+                },
+                {
+                  "id": "g7-sci-hyd-7",
+                  "prompt": "How do warm surface ocean currents affect nearby coasts?",
+                  "type": "mc",
+                  "choices": [
+                    "They warm the coastal climate",
+                    "They freeze coastal harbors",
+                    "They stop all rainfall",
+                    "They block sunlight"
+                  ],
+                  "answer": "They warm the coastal climate",
+                  "explanation": "Warm ocean currents transfer thermal energy to the air, creating milder coastal temperatures."
+                },
+                {
+                  "id": "g7-sci-hyd-8",
+                  "prompt": "Which gas is most abundant in Earth’s atmosphere?",
+                  "type": "mc",
+                  "choices": [
+                    "Nitrogen",
+                    "Carbon dioxide",
+                    "Hydrogen",
+                    "Helium"
+                  ],
+                  "answer": "Nitrogen",
+                  "explanation": "Earth’s atmosphere is about 78 percent nitrogen and 21 percent oxygen."
+                }
+              ]
+            },
+            {
+              "id": "p-g7-sci-tides",
+              "title": "Earth-Moon-Sun Cycles: Tides, Eclipses & Phases",
+              "standard": "OH.7.ESS.4",
+              "summary": "Positions of Earth, Moon, and Sun cause moon phases, eclipses, and ocean tides.",
+              "bank": [
+                {
+                  "id": "g7-sci-tid-1",
+                  "prompt": "What is the main cause of daily ocean tides?",
+                  "type": "mc",
+                  "choices": [
+                    "The Moon’s gravitational pull",
+                    "Strong ocean windstorms",
+                    "Earth’s magnetic field",
+                    "Underwater volcanic heat"
+                  ],
+                  "answer": "The Moon’s gravitational pull",
+                  "explanation": "Tides are regular rises and falls of ocean water caused mainly by the Moon’s gravity."
+                },
+                {
+                  "id": "g7-sci-tid-2",
+                  "prompt": "When do extra-high spring tides happen?",
+                  "type": "mc",
+                  "choices": [
+                    "During new and full moons",
+                    "Only during quarter moons",
+                    "Once every ten years",
+                    "Only in winter months"
+                  ],
+                  "answer": "During new and full moons",
+                  "explanation": "Spring tides occur when the Sun, Earth, and Moon line up, combining their gravitational pull."
+                },
+                {
+                  "id": "g7-sci-tid-3",
+                  "prompt": "What happens during a solar eclipse?",
+                  "type": "mc",
+                  "choices": [
+                    "The Moon blocks sunlight from Earth",
+                    "Earth blocks light to the Moon",
+                    "The Sun turns off briefly",
+                    "Mars passes behind the Sun"
+                  ],
+                  "answer": "The Moon blocks sunlight from Earth",
+                  "explanation": "A solar eclipse occurs when the Moon passes directly between the Sun and Earth."
+                },
+                {
+                  "id": "g7-sci-tid-4",
+                  "prompt": "What causes the different phases of the Moon?",
+                  "type": "mc",
+                  "choices": [
+                    "Viewing the lit Moon from angles",
+                    "Earth’s shadow covering the Moon daily",
+                    "Clouds blocking moonlight",
+                    "The Moon spinning on a tilt"
+                  ],
+                  "answer": "Viewing the lit Moon from angles",
+                  "explanation": "Moon phases change as the Moon orbits Earth and we see different portions of its sunlit side."
+                },
+                {
+                  "id": "g7-sci-tid-5",
+                  "prompt": "What causes a lunar eclipse?",
+                  "type": "mc",
+                  "choices": [
+                    "Earth’s shadow falls on the Moon",
+                    "The Moon moves in front of Venus",
+                    "Sunspots cool the Moon",
+                    "Dust storms on the Moon"
+                  ],
+                  "answer": "Earth’s shadow falls on the Moon",
+                  "explanation": "A lunar eclipse happens when Earth is directly between the Sun and a full Moon."
+                },
+                {
+                  "id": "g7-sci-tid-6",
+                  "prompt": "When do moderate neap tides occur?",
+                  "type": "mc",
+                  "choices": [
+                    "During first and third quarter moons",
+                    "During a total solar eclipse",
+                    "Only at the North Pole",
+                    "When Earth is closest to Mars"
+                  ],
+                  "answer": "During first and third quarter moons",
+                  "explanation": "Neap tides occur when the Sun and Moon pull at right angles, making smaller tidal ranges."
+                },
+                {
+                  "id": "g7-sci-tid-7",
+                  "prompt": "Why does Earth experience four seasons each year?",
+                  "type": "mc",
+                  "choices": [
+                    "Earth’s tilted axis as it orbits",
+                    "Earth moving closer to the Moon",
+                    "Changes in ocean salt levels",
+                    "Spinning faster in summer"
+                  ],
+                  "answer": "Earth’s tilted axis as it orbits",
+                  "explanation": "Seasons happen because Earth’s axis is tilted 23.5 degrees as it revolves around the Sun."
+                },
+                {
+                  "id": "g7-sci-tid-8",
+                  "prompt": "About how long does one full cycle of Moon phases take?",
+                  "type": "mc",
+                  "choices": [
+                    "About 29.5 days",
+                    "Exactly 7 days",
+                    "About 365 days",
+                    "Roughly 24 hours"
+                  ],
+                  "answer": "About 29.5 days",
+                  "explanation": "A lunar cycle from one new moon to the next takes about 29.5 days."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering Hydrologic Cycle, Ocean Currents & Earth Atmosphere & Earth-Moon-Sun Cycles: Tides, Eclipses & Phases (OH.7.ESS.1 / OH.7.ESS.2, OH.7.ESS.4). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g7-sci-u2-rev-step-review",
+                "type": "reading",
+                "title": "Review Principles: Hydrologic Cycle, Ocean Currents & Earth Atmosphere & Earth-Moon-Sun Cycles: Tides, Eclipses & Phases",
+                "description": "Read the Core Concept Summary and Principle cards on this page (OH.7.ESS.1 / OH.7.ESS.2, OH.7.ESS.4) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g7-sci-u2-rev-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Review: Hydrologic & Earth-Moon-Sun Systems",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Hydrologic Cycle, Ocean Currents & Earth Atmosphere & Earth-Moon-Sun Cycles: Tides, Eclipses & Phases\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/science/ms-earth-and-space-science/x37589312f55438b9:earth-sun-moon-system"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Hydrologic Cycle, Ocean Currents & Earth Atmosphere.",
+              "Solar energy and gravity drive water movement, winds, and ocean currents.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What main energy source powers the water cycle?\" → Answer: Energy from the Sun. (Solar energy warms liquid water on Earth, causing evaporation into the atmosphere.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Cycles & Ecosystems\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20science%20Earth%20Cycles%20%26%20Ecosystems%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Cycles & Ecosystems\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Earth%20Cycles%20%26%20Ecosystems",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Cycles & Ecosystems",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Cycles%20%26%20Ecosystems",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-sci-u2-l3",
+          "unitId": "g7-sci-u2",
+          "title": "Part 3: Matter & Energy Flow in Ecosystems & Biomes",
+          "kind": "lesson",
+          "partOf": "Earth Cycles & Ecosystems",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-organisms-and-ecosystems",
+          "videoTitle": "Khan Academy: Photosynthesis, Energy Pyramids & Biomes",
+          "reading": "Producers use photosynthesis to turn sunlight, water, and carbon dioxide into glucose and oxygen. Consumers and decomposers use cellular respiration to release that energy and recycle nutrients. Because most energy escapes as heat at each level, higher trophic levels have less available energy.",
+          "principles": [
+            {
+              "id": "p-g7-sci-eco",
+              "title": "Matter & Energy Flow in Ecosystems & Biomes",
+              "standard": "MS-LS2-3 / OH.7.LS.1",
+              "summary": "Producers capture solar energy while matter cycles among organisms and the environment.",
+              "bank": [
+                {
+                  "id": "g7-sci-eco-1",
+                  "prompt": "What process do plants use to make food from sunlight?",
+                  "type": "mc",
+                  "choices": [
+                    "Photosynthesis",
+                    "Cellular respiration",
+                    "Fermentation",
+                    "Transpiration"
+                  ],
+                  "answer": "Photosynthesis",
+                  "explanation": "Photosynthesis uses sunlight, water, and carbon dioxide to make glucose sugar and oxygen."
+                },
+                {
+                  "id": "g7-sci-eco-2",
+                  "prompt": "What is the role of decomposers in an ecosystem?",
+                  "type": "mc",
+                  "choices": [
+                    "Break down dead matter for nutrients",
+                    "Make sunlight for green plants",
+                    "Hunt large apex predators",
+                    "Freeze water in winter"
+                  ],
+                  "answer": "Break down dead matter for nutrients",
+                  "explanation": "Decomposers like fungi and bacteria recycle nutrients from dead organisms back into the soil."
+                },
+                {
+                  "id": "g7-sci-eco-3",
+                  "prompt": "What gas do plants release during photosynthesis?",
+                  "type": "mc",
+                  "choices": [
+                    "Oxygen",
+                    "Methane",
+                    "Argon",
+                    "Helium"
+                  ],
+                  "answer": "Oxygen",
+                  "explanation": "Plants take in carbon dioxide and release oxygen gas as a product of photosynthesis."
+                },
+                {
+                  "id": "g7-sci-eco-4",
+                  "prompt": "How do cells release energy from sugar during respiration?",
+                  "type": "mc",
+                  "choices": [
+                    "Break down glucose using oxygen",
+                    "Freeze water inside roots",
+                    "Absorb green light directly",
+                    "Turn nitrogen into rock"
+                  ],
+                  "answer": "Break down glucose using oxygen",
+                  "explanation": "Cellular respiration uses oxygen to break down glucose, releasing energy, water, and carbon dioxide."
+                },
+                {
+                  "id": "g7-sci-eco-5",
+                  "prompt": "What happens to available energy moving up an energy pyramid?",
+                  "type": "mc",
+                  "choices": [
+                    "Most energy is lost as heat",
+                    "Energy doubles at each level",
+                    "Energy stays 100 percent equal",
+                    "Energy turns into new atoms"
+                  ],
+                  "answer": "Most energy is lost as heat",
+                  "explanation": "Only about 10 percent of energy passes to the next level; the rest escapes as heat."
+                },
+                {
+                  "id": "g7-sci-eco-6",
+                  "prompt": "Which two factors mainly define a land biome?",
+                  "type": "mc",
+                  "choices": [
+                    "Temperature and precipitation",
+                    "Moon phase and tides",
+                    "Longitude and time zone",
+                    "Wind speed and clouds"
+                  ],
+                  "answer": "Temperature and precipitation",
+                  "explanation": "A biome is a large region characterized by its average temperature, rainfall, and plant life."
+                },
+                {
+                  "id": "g7-sci-eco-7",
+                  "prompt": "Which biome has permanently frozen soil called permafrost?",
+                  "type": "mc",
+                  "choices": [
+                    "The arctic tundra",
+                    "The tropical rainforest",
+                    "The savanna grassland",
+                    "The hot desert"
+                  ],
+                  "answer": "The arctic tundra",
+                  "explanation": "The tundra is a cold, treeless biome with a frozen soil layer called permafrost."
+                },
+                {
+                  "id": "g7-sci-eco-8",
+                  "prompt": "What are organisms that make their own food called?",
+                  "type": "mc",
+                  "choices": [
+                    "Producers or autotrophs",
+                    "Primary carnivores",
+                    "Apex scavengers",
+                    "Parasitic consumers"
+                  ],
+                  "answer": "Producers or autotrophs",
+                  "explanation": "Producers make their own food using energy from sunlight and form the base of food webs."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Earth Cycles & Ecosystems] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Matter & Energy Flow in Ecosystems & Biomes\" (MS-LS2-3 / OH.7.LS.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-sci-u2-l3-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Photosynthesis, Energy Pyramids & Biomes",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Matter & Energy Flow in Ecosystems & Biomes\" (MS-LS2-3 / OH.7.LS.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-organisms-and-ecosystems"
+              },
+              {
+                "id": "g7-sci-u2-l3-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Matter & Energy Flow in Ecosystems & Biomes.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-sci-u2-l3-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (MS-LS2-3 / OH.7.LS.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Matter & Energy Flow in Ecosystems & Biomes.",
+              "Producers capture solar energy while matter cycles among organisms and the environment.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What process do plants use to make food from sunlight?\" → Answer: Photosynthesis. (Photosynthesis uses sunlight, water, and carbon dioxide to make glucose sugar and oxygen.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Cycles & Ecosystems\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20science%20Earth%20Cycles%20%26%20Ecosystems%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Cycles & Ecosystems\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Earth%20Cycles%20%26%20Ecosystems",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Cycles & Ecosystems",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Cycles%20%26%20Ecosystems",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-sci-u2-test",
+          "unitId": "g7-sci-u2",
+          "title": "Unit 2 Exam: Earth Cycles, Tides & Ecosystem Energy",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-organisms-and-ecosystems",
+          "videoTitle": "Unit 2 Review: Earth Systems & Ecosystems",
+          "reading": "Complete 8 questions covering the water cycle, ocean currents, Moon tides, photosynthesis, and biomes.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g7-sci-hydro",
+              "title": "Hydrologic Cycle, Ocean Currents & Earth Atmosphere",
+              "standard": "OH.7.ESS.1 / OH.7.ESS.2",
+              "summary": "Solar energy and gravity drive water movement, winds, and ocean currents.",
+              "bank": [
+                {
+                  "id": "g7-sci-hyd-1",
+                  "prompt": "What main energy source powers the water cycle?",
+                  "type": "mc",
+                  "choices": [
+                    "Energy from the Sun",
+                    "Heat from volcanoes",
+                    "Wind from windmills",
+                    "Light from distant stars"
+                  ],
+                  "answer": "Energy from the Sun",
+                  "explanation": "Solar energy warms liquid water on Earth, causing evaporation into the atmosphere."
+                },
+                {
+                  "id": "g7-sci-hyd-2",
+                  "prompt": "What force pulls rain and snow back to Earth?",
+                  "type": "mc",
+                  "choices": [
+                    "Gravity",
+                    "Magnetism",
+                    "Static electricity",
+                    "Air friction"
+                  ],
+                  "answer": "Gravity",
+                  "explanation": "Gravity pulls condensed water droplets down as precipitation and moves runoff downhill."
+                },
+                {
+                  "id": "g7-sci-hyd-3",
+                  "prompt": "What happens during condensation in the sky?",
+                  "type": "mc",
+                  "choices": [
+                    "Water vapor cools into liquid drops",
+                    "Ice melts into warm rivers",
+                    "Plants release oxygen gas",
+                    "Oceans freeze into glaciers"
+                  ],
+                  "answer": "Water vapor cools into liquid drops",
+                  "explanation": "Condensation occurs when rising water vapor cools and changes into liquid cloud droplets."
+                },
+                {
+                  "id": "g7-sci-hyd-4",
+                  "prompt": "What causes deep ocean density currents to sink?",
+                  "type": "mc",
+                  "choices": [
+                    "Cold temperature and high salinity",
+                    "Warm tropical sunlight",
+                    "Strong surface breezes",
+                    "Fresh river water"
+                  ],
+                  "answer": "Cold temperature and high salinity",
+                  "explanation": "Cold, salty ocean water is denser than warm water, so it sinks and drives deep currents."
+                },
+                {
+                  "id": "g7-sci-hyd-5",
+                  "prompt": "In which atmospheric layer does most weather occur?",
+                  "type": "mc",
+                  "choices": [
+                    "The troposphere",
+                    "The thermosphere",
+                    "The exosphere",
+                    "The mesosphere"
+                  ],
+                  "answer": "The troposphere",
+                  "explanation": "The troposphere is the lowest layer of the atmosphere and holds most water vapor and weather."
+                },
+                {
+                  "id": "g7-sci-hyd-6",
+                  "prompt": "What is the release of water vapor from plant leaves?",
+                  "type": "mc",
+                  "choices": [
+                    "Transpiration",
+                    "Precipitation",
+                    "Infiltration",
+                    "Sublimation"
+                  ],
+                  "answer": "Transpiration",
+                  "explanation": "Transpiration is the process where plants release water vapor into the air through tiny leaf pores."
+                },
+                {
+                  "id": "g7-sci-hyd-7",
+                  "prompt": "How do warm surface ocean currents affect nearby coasts?",
+                  "type": "mc",
+                  "choices": [
+                    "They warm the coastal climate",
+                    "They freeze coastal harbors",
+                    "They stop all rainfall",
+                    "They block sunlight"
+                  ],
+                  "answer": "They warm the coastal climate",
+                  "explanation": "Warm ocean currents transfer thermal energy to the air, creating milder coastal temperatures."
+                },
+                {
+                  "id": "g7-sci-hyd-8",
+                  "prompt": "Which gas is most abundant in Earth’s atmosphere?",
+                  "type": "mc",
+                  "choices": [
+                    "Nitrogen",
+                    "Carbon dioxide",
+                    "Hydrogen",
+                    "Helium"
+                  ],
+                  "answer": "Nitrogen",
+                  "explanation": "Earth’s atmosphere is about 78 percent nitrogen and 21 percent oxygen."
+                }
+              ]
+            },
+            {
+              "id": "p-g7-sci-tides",
+              "title": "Earth-Moon-Sun Cycles: Tides, Eclipses & Phases",
+              "standard": "OH.7.ESS.4",
+              "summary": "Positions of Earth, Moon, and Sun cause moon phases, eclipses, and ocean tides.",
+              "bank": [
+                {
+                  "id": "g7-sci-tid-1",
+                  "prompt": "What is the main cause of daily ocean tides?",
+                  "type": "mc",
+                  "choices": [
+                    "The Moon’s gravitational pull",
+                    "Strong ocean windstorms",
+                    "Earth’s magnetic field",
+                    "Underwater volcanic heat"
+                  ],
+                  "answer": "The Moon’s gravitational pull",
+                  "explanation": "Tides are regular rises and falls of ocean water caused mainly by the Moon’s gravity."
+                },
+                {
+                  "id": "g7-sci-tid-2",
+                  "prompt": "When do extra-high spring tides happen?",
+                  "type": "mc",
+                  "choices": [
+                    "During new and full moons",
+                    "Only during quarter moons",
+                    "Once every ten years",
+                    "Only in winter months"
+                  ],
+                  "answer": "During new and full moons",
+                  "explanation": "Spring tides occur when the Sun, Earth, and Moon line up, combining their gravitational pull."
+                },
+                {
+                  "id": "g7-sci-tid-3",
+                  "prompt": "What happens during a solar eclipse?",
+                  "type": "mc",
+                  "choices": [
+                    "The Moon blocks sunlight from Earth",
+                    "Earth blocks light to the Moon",
+                    "The Sun turns off briefly",
+                    "Mars passes behind the Sun"
+                  ],
+                  "answer": "The Moon blocks sunlight from Earth",
+                  "explanation": "A solar eclipse occurs when the Moon passes directly between the Sun and Earth."
+                },
+                {
+                  "id": "g7-sci-tid-4",
+                  "prompt": "What causes the different phases of the Moon?",
+                  "type": "mc",
+                  "choices": [
+                    "Viewing the lit Moon from angles",
+                    "Earth’s shadow covering the Moon daily",
+                    "Clouds blocking moonlight",
+                    "The Moon spinning on a tilt"
+                  ],
+                  "answer": "Viewing the lit Moon from angles",
+                  "explanation": "Moon phases change as the Moon orbits Earth and we see different portions of its sunlit side."
+                },
+                {
+                  "id": "g7-sci-tid-5",
+                  "prompt": "What causes a lunar eclipse?",
+                  "type": "mc",
+                  "choices": [
+                    "Earth’s shadow falls on the Moon",
+                    "The Moon moves in front of Venus",
+                    "Sunspots cool the Moon",
+                    "Dust storms on the Moon"
+                  ],
+                  "answer": "Earth’s shadow falls on the Moon",
+                  "explanation": "A lunar eclipse happens when Earth is directly between the Sun and a full Moon."
+                },
+                {
+                  "id": "g7-sci-tid-6",
+                  "prompt": "When do moderate neap tides occur?",
+                  "type": "mc",
+                  "choices": [
+                    "During first and third quarter moons",
+                    "During a total solar eclipse",
+                    "Only at the North Pole",
+                    "When Earth is closest to Mars"
+                  ],
+                  "answer": "During first and third quarter moons",
+                  "explanation": "Neap tides occur when the Sun and Moon pull at right angles, making smaller tidal ranges."
+                },
+                {
+                  "id": "g7-sci-tid-7",
+                  "prompt": "Why does Earth experience four seasons each year?",
+                  "type": "mc",
+                  "choices": [
+                    "Earth’s tilted axis as it orbits",
+                    "Earth moving closer to the Moon",
+                    "Changes in ocean salt levels",
+                    "Spinning faster in summer"
+                  ],
+                  "answer": "Earth’s tilted axis as it orbits",
+                  "explanation": "Seasons happen because Earth’s axis is tilted 23.5 degrees as it revolves around the Sun."
+                },
+                {
+                  "id": "g7-sci-tid-8",
+                  "prompt": "About how long does one full cycle of Moon phases take?",
+                  "type": "mc",
+                  "choices": [
+                    "About 29.5 days",
+                    "Exactly 7 days",
+                    "About 365 days",
+                    "Roughly 24 hours"
+                  ],
+                  "answer": "About 29.5 days",
+                  "explanation": "A lunar cycle from one new moon to the next takes about 29.5 days."
+                }
+              ]
+            },
+            {
+              "id": "p-g7-sci-eco",
+              "title": "Matter & Energy Flow in Ecosystems & Biomes",
+              "standard": "MS-LS2-3 / OH.7.LS.1",
+              "summary": "Producers capture solar energy while matter cycles among organisms and the environment.",
+              "bank": [
+                {
+                  "id": "g7-sci-eco-1",
+                  "prompt": "What process do plants use to make food from sunlight?",
+                  "type": "mc",
+                  "choices": [
+                    "Photosynthesis",
+                    "Cellular respiration",
+                    "Fermentation",
+                    "Transpiration"
+                  ],
+                  "answer": "Photosynthesis",
+                  "explanation": "Photosynthesis uses sunlight, water, and carbon dioxide to make glucose sugar and oxygen."
+                },
+                {
+                  "id": "g7-sci-eco-2",
+                  "prompt": "What is the role of decomposers in an ecosystem?",
+                  "type": "mc",
+                  "choices": [
+                    "Break down dead matter for nutrients",
+                    "Make sunlight for green plants",
+                    "Hunt large apex predators",
+                    "Freeze water in winter"
+                  ],
+                  "answer": "Break down dead matter for nutrients",
+                  "explanation": "Decomposers like fungi and bacteria recycle nutrients from dead organisms back into the soil."
+                },
+                {
+                  "id": "g7-sci-eco-3",
+                  "prompt": "What gas do plants release during photosynthesis?",
+                  "type": "mc",
+                  "choices": [
+                    "Oxygen",
+                    "Methane",
+                    "Argon",
+                    "Helium"
+                  ],
+                  "answer": "Oxygen",
+                  "explanation": "Plants take in carbon dioxide and release oxygen gas as a product of photosynthesis."
+                },
+                {
+                  "id": "g7-sci-eco-4",
+                  "prompt": "How do cells release energy from sugar during respiration?",
+                  "type": "mc",
+                  "choices": [
+                    "Break down glucose using oxygen",
+                    "Freeze water inside roots",
+                    "Absorb green light directly",
+                    "Turn nitrogen into rock"
+                  ],
+                  "answer": "Break down glucose using oxygen",
+                  "explanation": "Cellular respiration uses oxygen to break down glucose, releasing energy, water, and carbon dioxide."
+                },
+                {
+                  "id": "g7-sci-eco-5",
+                  "prompt": "What happens to available energy moving up an energy pyramid?",
+                  "type": "mc",
+                  "choices": [
+                    "Most energy is lost as heat",
+                    "Energy doubles at each level",
+                    "Energy stays 100 percent equal",
+                    "Energy turns into new atoms"
+                  ],
+                  "answer": "Most energy is lost as heat",
+                  "explanation": "Only about 10 percent of energy passes to the next level; the rest escapes as heat."
+                },
+                {
+                  "id": "g7-sci-eco-6",
+                  "prompt": "Which two factors mainly define a land biome?",
+                  "type": "mc",
+                  "choices": [
+                    "Temperature and precipitation",
+                    "Moon phase and tides",
+                    "Longitude and time zone",
+                    "Wind speed and clouds"
+                  ],
+                  "answer": "Temperature and precipitation",
+                  "explanation": "A biome is a large region characterized by its average temperature, rainfall, and plant life."
+                },
+                {
+                  "id": "g7-sci-eco-7",
+                  "prompt": "Which biome has permanently frozen soil called permafrost?",
+                  "type": "mc",
+                  "choices": [
+                    "The arctic tundra",
+                    "The tropical rainforest",
+                    "The savanna grassland",
+                    "The hot desert"
+                  ],
+                  "answer": "The arctic tundra",
+                  "explanation": "The tundra is a cold, treeless biome with a frozen soil layer called permafrost."
+                },
+                {
+                  "id": "g7-sci-eco-8",
+                  "prompt": "What are organisms that make their own food called?",
+                  "type": "mc",
+                  "choices": [
+                    "Producers or autotrophs",
+                    "Primary carnivores",
+                    "Apex scavengers",
+                    "Parasitic consumers"
+                  ],
+                  "answer": "Producers or autotrophs",
+                  "explanation": "Producers make their own food using energy from sunlight and form the base of food webs."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Hydrologic Cycle, Ocean Currents & Earth Atmosphere & Earth-Moon-Sun Cycles: Tides, Eclipses & Phases & Matter & Energy Flow in Ecosystems & Biomes (OH.7.ESS.1 / OH.7.ESS.2, OH.7.ESS.4, MS-LS2-3 / OH.7.LS.1). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g7-sci-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Hydrologic Cycle, Ocean Currents & Earth Atmosphere & Earth-Moon-Sun Cycles: Tides, Eclipses & Phases & Matter & Energy Flow in Ecosystems & Biomes",
+                "description": "Read the Core Concept Summary and Principle cards on this page (OH.7.ESS.1 / OH.7.ESS.2, OH.7.ESS.4, MS-LS2-3 / OH.7.LS.1) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g7-sci-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Review: Earth Systems & Ecosystems",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Hydrologic Cycle, Ocean Currents & Earth Atmosphere & Earth-Moon-Sun Cycles: Tides, Eclipses & Phases & Matter & Energy Flow in Ecosystems & Biomes\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-organisms-and-ecosystems"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Hydrologic Cycle, Ocean Currents & Earth Atmosphere.",
+              "Solar energy and gravity drive water movement, winds, and ocean currents.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What main energy source powers the water cycle?\" → Answer: Energy from the Sun. (Solar energy warms liquid water on Earth, causing evaporation into the atmosphere.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Cycles, Tides & Ecosystem Energy\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20science%20Earth%20Cycles%2C%20Tides%20%26%20Ecosystem%20Energy%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Cycles, Tides & Ecosystem Energy\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Earth%20Cycles%2C%20Tides%20%26%20Ecosystem%20Energy",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Cycles, Tides & Ecosystem Energy",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Cycles%2C%20Tides%20%26%20Ecosystem%20Energy",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

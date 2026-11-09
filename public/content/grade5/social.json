@@ -1,0 +1,1687 @@
+{
+  "id": "g5-social",
+  "subject": "social",
+  "grade": 5,
+  "title": "Grade 5 Social Studies",
+  "subtitle": "Ancient Americas, Indigenous Regions, U.S. Founding & Western Hemisphere Geography",
+  "credits": 1,
+  "color": "#d97706",
+  "icon": "🌎",
+  "units": [
+    {
+      "id": "g5-soc-u1",
+      "title": "Unit 1: Early Indigenous Civilizations & Cultural Regions",
+      "standards": [
+        "OH.5.SS.1",
+        "OH.5.SS.2"
+      ],
+      "lessons": [
+        {
+          "id": "g5-soc-u1-l1",
+          "unitId": "g5-soc-u1",
+          "title": "Maya, Aztec, Inca & Mound-Building Civilizations",
+          "kind": "lesson",
+          "partOf": "Early Americas",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/medieval-times/maya-aztec-and-inca/v/maya-civilization",
+          "videoTitle": "Khan Academy: Maya, Aztec, Inca & Mississippian Civilizations",
+          "reading": "Long before European arrival, the Maya built stone pyramids and calendars, the Aztecs built Tenochtitlan with floating chinampas, the Inca built Andes mountain terraces and roads, and Mississippian/Ohio mound builders constructed Cahokia and Serpent Mound.",
+          "principles": [
+            {
+              "id": "p-g5-soc-anc",
+              "title": "Early Civilizations of the Americas",
+              "standard": "OH.5.SS.1",
+              "summary": "Compare achievements of the Maya, Aztec, Inca, and Mississippian mound builders.",
+              "bank": [
+                {
+                  "id": "g5-soc-anc-1",
+                  "type": "mc",
+                  "prompt": "Which civilization built stone pyramids and a 365-day calendar in Central America?",
+                  "choices": [
+                    "The Maya",
+                    "The Inca",
+                    "The Vikings",
+                    "The Iroquois"
+                  ],
+                  "answer": "The Maya",
+                  "explanation": "The Maya civilization developed hieroglyphic writing, astronomy, and stone pyramids in Mesoamerica."
+                },
+                {
+                  "id": "g5-soc-anc-2",
+                  "type": "mc",
+                  "prompt": "What was the island capital city of the Aztec Empire in Mexico?",
+                  "choices": [
+                    "Tenochtitlan",
+                    "Cuzco",
+                    "Jamestown",
+                    "Plymouth"
+                  ],
+                  "answer": "Tenochtitlan",
+                  "explanation": "The Aztecs built their grand capital, Tenochtitlan, on an island in Lake Texcoco."
+                },
+                {
+                  "id": "g5-soc-anc-3",
+                  "type": "mc",
+                  "prompt": "How did the Aztecs grow crops on shallow lake beds?",
+                  "choices": [
+                    "Floating garden islands called chinampas",
+                    "Glass greenhouses",
+                    "Steel tractors",
+                    "Desert windmills"
+                  ],
+                  "answer": "Floating garden islands called chinampas",
+                  "explanation": "Chinampas were fertile, man-made garden beds built in shallow lake water around Tenochtitlan."
+                },
+                {
+                  "id": "g5-soc-anc-4",
+                  "type": "mc",
+                  "prompt": "Where did the Inca Empire build its road network and terraced farms?",
+                  "choices": [
+                    "The Andes Mountains of South America",
+                    "The Great Plains of North America",
+                    "The Arctic tundra",
+                    "The islands of Hawaii"
+                  ],
+                  "answer": "The Andes Mountains of South America",
+                  "explanation": "The Inca carved step-like terraces into steep Andes mountainsides and connected their empire with stone roads."
+                },
+                {
+                  "id": "g5-soc-anc-5",
+                  "type": "mc",
+                  "prompt": "What was the largest Mississippian mound-building city near the Mississippi River?",
+                  "choices": [
+                    "Cahokia",
+                    "Tenochtitlan",
+                    "Machu Picchu",
+                    "Boston"
+                  ],
+                  "answer": "Cahokia",
+                  "explanation": "Cahokia was a major Mississippian trade center famous for Monks Mound and earthen plazas."
+                },
+                {
+                  "id": "g5-soc-anc-6",
+                  "type": "mc",
+                  "prompt": "Why did the Inca cut flat steps (terraces) into steep mountain slopes?",
+                  "choices": [
+                    "To create flat farmland and stop erosion",
+                    "To park wagons",
+                    "To catch ocean fish",
+                    "To melt snow into lava"
+                  ],
+                  "answer": "To create flat farmland and stop erosion",
+                  "explanation": "Terrace farming kept soil and water in place so crops could grow on steep mountainsides."
+                },
+                {
+                  "id": "g5-soc-anc-7",
+                  "type": "mc",
+                  "prompt": "Which Ohio earthwork was built by ancient American Indian mound builders?",
+                  "choices": [
+                    "Serpent Mound",
+                    "Hoover Dam",
+                    "Mount Rushmore",
+                    "Golden Gate Bridge"
+                  ],
+                  "answer": "Serpent Mound",
+                  "explanation": "Serpent Mound in southern Ohio is a famous effigy mound shaped like a giant curving snake."
+                },
+                {
+                  "id": "g5-soc-anc-8",
+                  "type": "mc",
+                  "prompt": "What knotted cords did the Inca use to record numbers and supplies?",
+                  "choices": [
+                    "Quipu",
+                    "Papyrus",
+                    "Wampum",
+                    "Telegraph"
+                  ],
+                  "answer": "Quipu",
+                  "explanation": "A quipu was a system of colored, knotted strings used by the Inca to keep numerical records."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Early Americas] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Early Civilizations of the Americas\" (OH.5.SS.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-soc-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Maya, Aztec, Inca & Mississippian Civilizations",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Early Civilizations of the Americas\" (OH.5.SS.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/world-history/medieval-times/maya-aztec-and-inca/v/maya-civilization"
+              },
+              {
+                "id": "g5-soc-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Early Civilizations of the Americas.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-soc-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.5.SS.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Early Civilizations of the Americas.",
+              "Compare achievements of the Maya, Aztec, Inca, and Mississippian mound builders.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which civilization built stone pyramids and a 365-day calendar in Central America?\" → Answer: The Maya. (The Maya civilization developed hieroglyphic writing, astronomy, and stone pyramids in Mesoamerica.)",
+            "links": [
+              {
+                "label": "YouTube: \"Early Americas\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20social%20Early%20Americas%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Early Americas\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Early%20Americas",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Early Americas",
+                "url": "https://www.youtube.com/results?search_query=Early%20Americas%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-soc-u1-l2",
+          "unitId": "g5-soc-u1",
+          "title": "American Indian Cultural Regions of North America",
+          "kind": "lesson",
+          "partOf": "Early Americas",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-history/precontact-and-early-colonial-era/before-contact/v/native-indian-culture-of-the-northeast",
+          "videoTitle": "Khan Academy: Indigenous Cultural Regions of North America",
+          "reading": "American Indian nations adapted to their environments: Eastern Woodlands peoples grew the Three Sisters (corn, beans, squash) and built longhouses; Plains nations used portable tipis; Southwest Pueblo peoples built adobe homes and irrigation canals.",
+          "principles": [
+            {
+              "id": "p-g5-soc-wd",
+              "title": "North American Cultural Regions and Adaptations",
+              "standard": "OH.5.SS.2",
+              "summary": "Explain how Indigenous groups adapted food and shelter to local environments.",
+              "bank": [
+                {
+                  "id": "g5-soc-wd-1",
+                  "type": "mc",
+                  "prompt": "What were the \"Three Sisters\" crops grown by Eastern Woodland peoples?",
+                  "choices": [
+                    "Corn, beans, and squash",
+                    "Wheat, rice, and oats",
+                    "Apples, oranges, and bananas",
+                    "Cotton, tea, and coffee"
+                  ],
+                  "answer": "Corn, beans, and squash",
+                  "explanation": "Corn, beans, and squash were planted together because corn stalks supported beans and squash shaded the soil."
+                },
+                {
+                  "id": "g5-soc-wd-2",
+                  "type": "mc",
+                  "prompt": "What type of multi-family bark homes did the Haudenosaunee (Iroquois) build?",
+                  "choices": [
+                    "Longhouses",
+                    "Igloos",
+                    "Adobe apartments",
+                    "Grass huts"
+                  ],
+                  "answer": "Longhouses",
+                  "explanation": "Eastern Woodland Haudenosaunee families lived in long wooden frames covered with elm bark called longhouses."
+                },
+                {
+                  "id": "g5-soc-wd-3",
+                  "type": "mc",
+                  "prompt": "Why did Great Plains nations build portable tipis?",
+                  "choices": [
+                    "Tipis were easy to move while following bison",
+                    "Tipis were built from heavy stone blocks",
+                    "Tipis floated on the ocean",
+                    "Tipis were carved inside caves"
+                  ],
+                  "answer": "Tipis were easy to move while following bison",
+                  "explanation": "Plains nations used portable cone-shaped tipis made of poles and bison hides during seasonal hunts."
+                },
+                {
+                  "id": "g5-soc-wd-4",
+                  "type": "mc",
+                  "prompt": "How did Ancestral Pueblo peoples in the arid Southwest water their crops?",
+                  "choices": [
+                    "Irrigation canals that directed scarce water",
+                    "Melting polar icebergs",
+                    "Daily tropical monsoons",
+                    "Ocean saltwater pipes"
+                  ],
+                  "answer": "Irrigation canals that directed scarce water",
+                  "explanation": "Southwest peoples adapted to dry desert climates by building irrigation ditches and adobe homes."
+                },
+                {
+                  "id": "g5-soc-wd-5",
+                  "type": "mc",
+                  "prompt": "What natural resource was most important to Pacific Northwest Coast cultures?",
+                  "choices": [
+                    "Cedar trees and ocean salmon",
+                    "Desert cactus",
+                    "Prairie sod",
+                    "Arctic seal blubber"
+                  ],
+                  "answer": "Cedar trees and ocean salmon",
+                  "explanation": "Pacific Northwest nations used giant cedar trees for plank houses and canoes and fished for salmon."
+                },
+                {
+                  "id": "g5-soc-wd-6",
+                  "type": "mc",
+                  "prompt": "What was the Haudenosaunee (Iroquois) Confederacy?",
+                  "choices": [
+                    "A peaceful alliance of American Indian nations",
+                    "A Spanish fleet of ships",
+                    "A gold mine in South America",
+                    "A British tax law"
+                  ],
+                  "answer": "A peaceful alliance of American Indian nations",
+                  "explanation": "The Haudenosaunee Confederacy united nations under the Great Law of Peace to make shared decisions."
+                },
+                {
+                  "id": "g5-soc-wd-7",
+                  "type": "mc",
+                  "prompt": "What material did Southwest Pueblo builders use for cool, sturdy homes?",
+                  "choices": [
+                    "Sun-dried clay bricks called adobe",
+                    "Birch bark",
+                    "Whale bones",
+                    "Sheet metal"
+                  ],
+                  "answer": "Sun-dried clay bricks called adobe",
+                  "explanation": "Adobe bricks made from clay, sand, and straw kept Southwest homes cool in desert heat."
+                },
+                {
+                  "id": "g5-soc-wd-8",
+                  "type": "mc",
+                  "prompt": "Why did different American Indian cultural regions have different foods and homes?",
+                  "choices": [
+                    "They adapted to local climate and natural resources",
+                    "They all lived in identical climates",
+                    "Europeans built their houses first",
+                    "No plants grew in North America"
+                  ],
+                  "answer": "They adapted to local climate and natural resources",
+                  "explanation": "Indigenous peoples shaped their shelter, clothing, and food around the environment of their region."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Early Americas] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"North American Cultural Regions and Adaptations\" (OH.5.SS.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-soc-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Indigenous Cultural Regions of North America",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"North American Cultural Regions and Adaptations\" (OH.5.SS.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/us-history/precontact-and-early-colonial-era/before-contact/v/native-indian-culture-of-the-northeast"
+              },
+              {
+                "id": "g5-soc-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to North American Cultural Regions and Adaptations.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-soc-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.5.SS.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: North American Cultural Regions and Adaptations.",
+              "Explain how Indigenous groups adapted food and shelter to local environments.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What were the \"Three Sisters\" crops grown by Eastern Woodland peoples?\" → Answer: Corn, beans, and squash. (Corn, beans, and squash were planted together because corn stalks supported beans and squash shaded the soil.)",
+            "links": [
+              {
+                "label": "YouTube: \"Early Americas\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20social%20Early%20Americas%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Early Americas\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Early%20Americas",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Early Americas",
+                "url": "https://www.youtube.com/results?search_query=Early%20Americas%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-soc-u1-rev",
+          "unitId": "g5-soc-u1",
+          "title": "Review: Early Civilizations & Cultural Regions",
+          "kind": "lesson_review",
+          "partOf": "Early Americas",
+          "estimatedMinutes": 10,
+          "questionCount": 6,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/medieval-times/maya-aztec-and-inca/v/maya-civilization",
+          "videoTitle": "Review: Ancient Americas & Cultural Regions",
+          "reading": "Review the achievements of the Maya, Aztec, Inca, and Mississippian civilizations alongside North American cultural regions.",
+          "principles": [
+            {
+              "id": "p-g5-soc-anc",
+              "title": "Early Civilizations of the Americas",
+              "standard": "OH.5.SS.1",
+              "summary": "Identify Maya, Aztec, Inca, and Mound Builder achievements.",
+              "bank": [
+                {
+                  "id": "g5-soc-anc-1",
+                  "type": "mc",
+                  "prompt": "Which civilization built stone pyramids and a 365-day calendar in Central America?",
+                  "choices": [
+                    "The Maya",
+                    "The Inca",
+                    "The Vikings",
+                    "The Iroquois"
+                  ],
+                  "answer": "The Maya",
+                  "explanation": "The Maya civilization developed hieroglyphic writing, astronomy, and stone pyramids in Mesoamerica."
+                },
+                {
+                  "id": "g5-soc-anc-2",
+                  "type": "mc",
+                  "prompt": "What was the island capital city of the Aztec Empire in Mexico?",
+                  "choices": [
+                    "Tenochtitlan",
+                    "Cuzco",
+                    "Jamestown",
+                    "Plymouth"
+                  ],
+                  "answer": "Tenochtitlan",
+                  "explanation": "The Aztecs built their grand capital, Tenochtitlan, on an island in Lake Texcoco."
+                },
+                {
+                  "id": "g5-soc-anc-3",
+                  "type": "mc",
+                  "prompt": "How did the Aztecs grow crops on shallow lake beds?",
+                  "choices": [
+                    "Floating garden islands called chinampas",
+                    "Glass greenhouses",
+                    "Steel tractors",
+                    "Desert windmills"
+                  ],
+                  "answer": "Floating garden islands called chinampas",
+                  "explanation": "Chinampas were fertile, man-made garden beds built in shallow lake water around Tenochtitlan."
+                },
+                {
+                  "id": "g5-soc-anc-4",
+                  "type": "mc",
+                  "prompt": "Where did the Inca Empire build its road network and terraced farms?",
+                  "choices": [
+                    "The Andes Mountains of South America",
+                    "The Great Plains of North America",
+                    "The Arctic tundra",
+                    "The islands of Hawaii"
+                  ],
+                  "answer": "The Andes Mountains of South America",
+                  "explanation": "The Inca carved step-like terraces into steep Andes mountainsides and connected their empire with stone roads."
+                },
+                {
+                  "id": "g5-soc-anc-5",
+                  "type": "mc",
+                  "prompt": "What was the largest Mississippian mound-building city near the Mississippi River?",
+                  "choices": [
+                    "Cahokia",
+                    "Tenochtitlan",
+                    "Machu Picchu",
+                    "Boston"
+                  ],
+                  "answer": "Cahokia",
+                  "explanation": "Cahokia was a major Mississippian trade center famous for Monks Mound and earthen plazas."
+                },
+                {
+                  "id": "g5-soc-anc-6",
+                  "type": "mc",
+                  "prompt": "Why did the Inca cut flat steps (terraces) into steep mountain slopes?",
+                  "choices": [
+                    "To create flat farmland and stop erosion",
+                    "To park wagons",
+                    "To catch ocean fish",
+                    "To melt snow into lava"
+                  ],
+                  "answer": "To create flat farmland and stop erosion",
+                  "explanation": "Terrace farming kept soil and water in place so crops could grow on steep mountainsides."
+                },
+                {
+                  "id": "g5-soc-anc-7",
+                  "type": "mc",
+                  "prompt": "Which Ohio earthwork was built by ancient American Indian mound builders?",
+                  "choices": [
+                    "Serpent Mound",
+                    "Hoover Dam",
+                    "Mount Rushmore",
+                    "Golden Gate Bridge"
+                  ],
+                  "answer": "Serpent Mound",
+                  "explanation": "Serpent Mound in southern Ohio is a famous effigy mound shaped like a giant curving snake."
+                },
+                {
+                  "id": "g5-soc-anc-8",
+                  "type": "mc",
+                  "prompt": "What knotted cords did the Inca use to record numbers and supplies?",
+                  "choices": [
+                    "Quipu",
+                    "Papyrus",
+                    "Wampum",
+                    "Telegraph"
+                  ],
+                  "answer": "Quipu",
+                  "explanation": "A quipu was a system of colored, knotted strings used by the Inca to keep numerical records."
+                }
+              ]
+            },
+            {
+              "id": "p-g5-soc-wd",
+              "title": "North American Cultural Regions and Adaptations",
+              "standard": "OH.5.SS.2",
+              "summary": "Match Indigenous housing and food to geographic regions.",
+              "bank": [
+                {
+                  "id": "g5-soc-wd-1",
+                  "type": "mc",
+                  "prompt": "What were the \"Three Sisters\" crops grown by Eastern Woodland peoples?",
+                  "choices": [
+                    "Corn, beans, and squash",
+                    "Wheat, rice, and oats",
+                    "Apples, oranges, and bananas",
+                    "Cotton, tea, and coffee"
+                  ],
+                  "answer": "Corn, beans, and squash",
+                  "explanation": "Corn, beans, and squash were planted together because corn stalks supported beans and squash shaded the soil."
+                },
+                {
+                  "id": "g5-soc-wd-2",
+                  "type": "mc",
+                  "prompt": "What type of multi-family bark homes did the Haudenosaunee (Iroquois) build?",
+                  "choices": [
+                    "Longhouses",
+                    "Igloos",
+                    "Adobe apartments",
+                    "Grass huts"
+                  ],
+                  "answer": "Longhouses",
+                  "explanation": "Eastern Woodland Haudenosaunee families lived in long wooden frames covered with elm bark called longhouses."
+                },
+                {
+                  "id": "g5-soc-wd-3",
+                  "type": "mc",
+                  "prompt": "Why did Great Plains nations build portable tipis?",
+                  "choices": [
+                    "Tipis were easy to move while following bison",
+                    "Tipis were built from heavy stone blocks",
+                    "Tipis floated on the ocean",
+                    "Tipis were carved inside caves"
+                  ],
+                  "answer": "Tipis were easy to move while following bison",
+                  "explanation": "Plains nations used portable cone-shaped tipis made of poles and bison hides during seasonal hunts."
+                },
+                {
+                  "id": "g5-soc-wd-4",
+                  "type": "mc",
+                  "prompt": "How did Ancestral Pueblo peoples in the arid Southwest water their crops?",
+                  "choices": [
+                    "Irrigation canals that directed scarce water",
+                    "Melting polar icebergs",
+                    "Daily tropical monsoons",
+                    "Ocean saltwater pipes"
+                  ],
+                  "answer": "Irrigation canals that directed scarce water",
+                  "explanation": "Southwest peoples adapted to dry desert climates by building irrigation ditches and adobe homes."
+                },
+                {
+                  "id": "g5-soc-wd-5",
+                  "type": "mc",
+                  "prompt": "What natural resource was most important to Pacific Northwest Coast cultures?",
+                  "choices": [
+                    "Cedar trees and ocean salmon",
+                    "Desert cactus",
+                    "Prairie sod",
+                    "Arctic seal blubber"
+                  ],
+                  "answer": "Cedar trees and ocean salmon",
+                  "explanation": "Pacific Northwest nations used giant cedar trees for plank houses and canoes and fished for salmon."
+                },
+                {
+                  "id": "g5-soc-wd-6",
+                  "type": "mc",
+                  "prompt": "What was the Haudenosaunee (Iroquois) Confederacy?",
+                  "choices": [
+                    "A peaceful alliance of American Indian nations",
+                    "A Spanish fleet of ships",
+                    "A gold mine in South America",
+                    "A British tax law"
+                  ],
+                  "answer": "A peaceful alliance of American Indian nations",
+                  "explanation": "The Haudenosaunee Confederacy united nations under the Great Law of Peace to make shared decisions."
+                },
+                {
+                  "id": "g5-soc-wd-7",
+                  "type": "mc",
+                  "prompt": "What material did Southwest Pueblo builders use for cool, sturdy homes?",
+                  "choices": [
+                    "Sun-dried clay bricks called adobe",
+                    "Birch bark",
+                    "Whale bones",
+                    "Sheet metal"
+                  ],
+                  "answer": "Sun-dried clay bricks called adobe",
+                  "explanation": "Adobe bricks made from clay, sand, and straw kept Southwest homes cool in desert heat."
+                },
+                {
+                  "id": "g5-soc-wd-8",
+                  "type": "mc",
+                  "prompt": "Why did different American Indian cultural regions have different foods and homes?",
+                  "choices": [
+                    "They adapted to local climate and natural resources",
+                    "They all lived in identical climates",
+                    "Europeans built their houses first",
+                    "No plants grew in North America"
+                  ],
+                  "answer": "They adapted to local climate and natural resources",
+                  "explanation": "Indigenous peoples shaped their shelter, clothing, and food around the environment of their region."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering Early Civilizations of the Americas & North American Cultural Regions and Adaptations (OH.5.SS.1, OH.5.SS.2). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g5-soc-u1-rev-step-review",
+                "type": "reading",
+                "title": "Review Principles: Early Civilizations of the Americas & North American Cultural Regions and Adaptations",
+                "description": "Read the Core Concept Summary and Principle cards on this page (OH.5.SS.1, OH.5.SS.2) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g5-soc-u1-rev-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Review: Ancient Americas & Cultural Regions",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Early Civilizations of the Americas & North American Cultural Regions and Adaptations\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/world-history/medieval-times/maya-aztec-and-inca/v/maya-civilization"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Early Civilizations of the Americas.",
+              "Identify Maya, Aztec, Inca, and Mound Builder achievements.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which civilization built stone pyramids and a 365-day calendar in Central America?\" → Answer: The Maya. (The Maya civilization developed hieroglyphic writing, astronomy, and stone pyramids in Mesoamerica.)",
+            "links": [
+              {
+                "label": "YouTube: \"Early Americas\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20social%20Early%20Americas%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Early Americas\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Early%20Americas",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Early Americas",
+                "url": "https://www.youtube.com/results?search_query=Early%20Americas%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-soc-u1-test",
+          "unitId": "g5-soc-u1",
+          "title": "Unit 1 Exam: Early Civilizations of the Americas",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "questionCount": 8,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/medieval-times/maya-aztec-and-inca/v/maya-civilization",
+          "videoTitle": "Unit 1 Exam Review: Indigenous Civilizations & Regions",
+          "reading": "Complete the Unit 1 Exam covering the Maya, Aztec, Inca, Mississippian mound builders, and North American Indigenous cultural regions.",
+          "principles": [
+            {
+              "id": "p-g5-soc-anc",
+              "title": "Early Civilizations of the Americas",
+              "standard": "OH.5.SS.1",
+              "summary": "Compare Maya, Aztec, Inca, and Mississippian civilizations.",
+              "bank": [
+                {
+                  "id": "g5-soc-anc-1",
+                  "type": "mc",
+                  "prompt": "Which civilization built stone pyramids and a 365-day calendar in Central America?",
+                  "choices": [
+                    "The Maya",
+                    "The Inca",
+                    "The Vikings",
+                    "The Iroquois"
+                  ],
+                  "answer": "The Maya",
+                  "explanation": "The Maya civilization developed hieroglyphic writing, astronomy, and stone pyramids in Mesoamerica."
+                },
+                {
+                  "id": "g5-soc-anc-2",
+                  "type": "mc",
+                  "prompt": "What was the island capital city of the Aztec Empire in Mexico?",
+                  "choices": [
+                    "Tenochtitlan",
+                    "Cuzco",
+                    "Jamestown",
+                    "Plymouth"
+                  ],
+                  "answer": "Tenochtitlan",
+                  "explanation": "The Aztecs built their grand capital, Tenochtitlan, on an island in Lake Texcoco."
+                },
+                {
+                  "id": "g5-soc-anc-3",
+                  "type": "mc",
+                  "prompt": "How did the Aztecs grow crops on shallow lake beds?",
+                  "choices": [
+                    "Floating garden islands called chinampas",
+                    "Glass greenhouses",
+                    "Steel tractors",
+                    "Desert windmills"
+                  ],
+                  "answer": "Floating garden islands called chinampas",
+                  "explanation": "Chinampas were fertile, man-made garden beds built in shallow lake water around Tenochtitlan."
+                },
+                {
+                  "id": "g5-soc-anc-4",
+                  "type": "mc",
+                  "prompt": "Where did the Inca Empire build its road network and terraced farms?",
+                  "choices": [
+                    "The Andes Mountains of South America",
+                    "The Great Plains of North America",
+                    "The Arctic tundra",
+                    "The islands of Hawaii"
+                  ],
+                  "answer": "The Andes Mountains of South America",
+                  "explanation": "The Inca carved step-like terraces into steep Andes mountainsides and connected their empire with stone roads."
+                },
+                {
+                  "id": "g5-soc-anc-5",
+                  "type": "mc",
+                  "prompt": "What was the largest Mississippian mound-building city near the Mississippi River?",
+                  "choices": [
+                    "Cahokia",
+                    "Tenochtitlan",
+                    "Machu Picchu",
+                    "Boston"
+                  ],
+                  "answer": "Cahokia",
+                  "explanation": "Cahokia was a major Mississippian trade center famous for Monks Mound and earthen plazas."
+                },
+                {
+                  "id": "g5-soc-anc-6",
+                  "type": "mc",
+                  "prompt": "Why did the Inca cut flat steps (terraces) into steep mountain slopes?",
+                  "choices": [
+                    "To create flat farmland and stop erosion",
+                    "To park wagons",
+                    "To catch ocean fish",
+                    "To melt snow into lava"
+                  ],
+                  "answer": "To create flat farmland and stop erosion",
+                  "explanation": "Terrace farming kept soil and water in place so crops could grow on steep mountainsides."
+                },
+                {
+                  "id": "g5-soc-anc-7",
+                  "type": "mc",
+                  "prompt": "Which Ohio earthwork was built by ancient American Indian mound builders?",
+                  "choices": [
+                    "Serpent Mound",
+                    "Hoover Dam",
+                    "Mount Rushmore",
+                    "Golden Gate Bridge"
+                  ],
+                  "answer": "Serpent Mound",
+                  "explanation": "Serpent Mound in southern Ohio is a famous effigy mound shaped like a giant curving snake."
+                },
+                {
+                  "id": "g5-soc-anc-8",
+                  "type": "mc",
+                  "prompt": "What knotted cords did the Inca use to record numbers and supplies?",
+                  "choices": [
+                    "Quipu",
+                    "Papyrus",
+                    "Wampum",
+                    "Telegraph"
+                  ],
+                  "answer": "Quipu",
+                  "explanation": "A quipu was a system of colored, knotted strings used by the Inca to keep numerical records."
+                }
+              ]
+            },
+            {
+              "id": "p-g5-soc-wd",
+              "title": "North American Cultural Regions and Adaptations",
+              "standard": "OH.5.SS.2",
+              "summary": "Compare Eastern Woodlands, Plains, Southwest, and Northwest cultures.",
+              "bank": [
+                {
+                  "id": "g5-soc-wd-1",
+                  "type": "mc",
+                  "prompt": "What were the \"Three Sisters\" crops grown by Eastern Woodland peoples?",
+                  "choices": [
+                    "Corn, beans, and squash",
+                    "Wheat, rice, and oats",
+                    "Apples, oranges, and bananas",
+                    "Cotton, tea, and coffee"
+                  ],
+                  "answer": "Corn, beans, and squash",
+                  "explanation": "Corn, beans, and squash were planted together because corn stalks supported beans and squash shaded the soil."
+                },
+                {
+                  "id": "g5-soc-wd-2",
+                  "type": "mc",
+                  "prompt": "What type of multi-family bark homes did the Haudenosaunee (Iroquois) build?",
+                  "choices": [
+                    "Longhouses",
+                    "Igloos",
+                    "Adobe apartments",
+                    "Grass huts"
+                  ],
+                  "answer": "Longhouses",
+                  "explanation": "Eastern Woodland Haudenosaunee families lived in long wooden frames covered with elm bark called longhouses."
+                },
+                {
+                  "id": "g5-soc-wd-3",
+                  "type": "mc",
+                  "prompt": "Why did Great Plains nations build portable tipis?",
+                  "choices": [
+                    "Tipis were easy to move while following bison",
+                    "Tipis were built from heavy stone blocks",
+                    "Tipis floated on the ocean",
+                    "Tipis were carved inside caves"
+                  ],
+                  "answer": "Tipis were easy to move while following bison",
+                  "explanation": "Plains nations used portable cone-shaped tipis made of poles and bison hides during seasonal hunts."
+                },
+                {
+                  "id": "g5-soc-wd-4",
+                  "type": "mc",
+                  "prompt": "How did Ancestral Pueblo peoples in the arid Southwest water their crops?",
+                  "choices": [
+                    "Irrigation canals that directed scarce water",
+                    "Melting polar icebergs",
+                    "Daily tropical monsoons",
+                    "Ocean saltwater pipes"
+                  ],
+                  "answer": "Irrigation canals that directed scarce water",
+                  "explanation": "Southwest peoples adapted to dry desert climates by building irrigation ditches and adobe homes."
+                },
+                {
+                  "id": "g5-soc-wd-5",
+                  "type": "mc",
+                  "prompt": "What natural resource was most important to Pacific Northwest Coast cultures?",
+                  "choices": [
+                    "Cedar trees and ocean salmon",
+                    "Desert cactus",
+                    "Prairie sod",
+                    "Arctic seal blubber"
+                  ],
+                  "answer": "Cedar trees and ocean salmon",
+                  "explanation": "Pacific Northwest nations used giant cedar trees for plank houses and canoes and fished for salmon."
+                },
+                {
+                  "id": "g5-soc-wd-6",
+                  "type": "mc",
+                  "prompt": "What was the Haudenosaunee (Iroquois) Confederacy?",
+                  "choices": [
+                    "A peaceful alliance of American Indian nations",
+                    "A Spanish fleet of ships",
+                    "A gold mine in South America",
+                    "A British tax law"
+                  ],
+                  "answer": "A peaceful alliance of American Indian nations",
+                  "explanation": "The Haudenosaunee Confederacy united nations under the Great Law of Peace to make shared decisions."
+                },
+                {
+                  "id": "g5-soc-wd-7",
+                  "type": "mc",
+                  "prompt": "What material did Southwest Pueblo builders use for cool, sturdy homes?",
+                  "choices": [
+                    "Sun-dried clay bricks called adobe",
+                    "Birch bark",
+                    "Whale bones",
+                    "Sheet metal"
+                  ],
+                  "answer": "Sun-dried clay bricks called adobe",
+                  "explanation": "Adobe bricks made from clay, sand, and straw kept Southwest homes cool in desert heat."
+                },
+                {
+                  "id": "g5-soc-wd-8",
+                  "type": "mc",
+                  "prompt": "Why did different American Indian cultural regions have different foods and homes?",
+                  "choices": [
+                    "They adapted to local climate and natural resources",
+                    "They all lived in identical climates",
+                    "Europeans built their houses first",
+                    "No plants grew in North America"
+                  ],
+                  "answer": "They adapted to local climate and natural resources",
+                  "explanation": "Indigenous peoples shaped their shelter, clothing, and food around the environment of their region."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Early Civilizations of the Americas & North American Cultural Regions and Adaptations (OH.5.SS.1, OH.5.SS.2). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g5-soc-u1-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Early Civilizations of the Americas & North American Cultural Regions and Adaptations",
+                "description": "Read the Core Concept Summary and Principle cards on this page (OH.5.SS.1, OH.5.SS.2) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g5-soc-u1-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 Exam Review: Indigenous Civilizations & Regions",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Early Civilizations of the Americas & North American Cultural Regions and Adaptations\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/world-history/medieval-times/maya-aztec-and-inca/v/maya-civilization"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Early Civilizations of the Americas.",
+              "Compare Maya, Aztec, Inca, and Mississippian civilizations.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which civilization built stone pyramids and a 365-day calendar in Central America?\" → Answer: The Maya. (The Maya civilization developed hieroglyphic writing, astronomy, and stone pyramids in Mesoamerica.)",
+            "links": [
+              {
+                "label": "YouTube: \"Early Civilizations of the Americas\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20social%20Early%20Civilizations%20of%20the%20Americas%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Early Civilizations of the Americas\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Early%20Civilizations%20of%20the%20Americas",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Early Civilizations of the Americas",
+                "url": "https://www.youtube.com/results?search_query=Early%20Civilizations%20of%20the%20Americas%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g5-soc-u2",
+      "title": "Unit 2: Exploration, Thirteen Colonies, U.S. Founding & Geography",
+      "standards": [
+        "OH.5.SS.5",
+        "OH.5.SS.11",
+        "OH.5.SS.14"
+      ],
+      "lessons": [
+        {
+          "id": "g5-soc-u2-l1",
+          "unitId": "g5-soc-u2",
+          "title": "Exploration, Thirteen Colonies & the American Revolution",
+          "kind": "lesson",
+          "partOf": "Colonies, Geography & Economics",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-history/road-to-revolution/the-american-revolution/v/the-seven-years-war-part-1",
+          "videoTitle": "Khan Academy: Colonies, Revolution & the U.S. Constitution",
+          "reading": "European exploration started the Columbian Exchange. English colonists founded Jamestown (1607) and Plymouth (1620). Later, colonists protested British taxes without representation, adopted the Declaration of Independence (1776), and created the U.S. Constitution with three branches of government.",
+          "principles": [
+            {
+              "id": "p-g5-soc-col",
+              "title": "Exploration, Colonial America, and Constitutional Government",
+              "standard": "OH.5.SS.5",
+              "summary": "Trace the Columbian Exchange, Jamestown/Plymouth, the Revolution, and the three branches of government.",
+              "bank": [
+                {
+                  "id": "g5-soc-col-1",
+                  "type": "mc",
+                  "prompt": "What was the Columbian Exchange?",
+                  "choices": [
+                    "Exchange of plants, animals, and goods across oceans",
+                    "A railroad across South America",
+                    "A treaty between Ohio and Canada",
+                    "A gold coin used in Boston"
+                  ],
+                  "answer": "Exchange of plants, animals, and goods across oceans",
+                  "explanation": "The Columbian Exchange moved crops, livestock, people, and diseases between the Americas and Afro-Eurasia."
+                },
+                {
+                  "id": "g5-soc-col-2",
+                  "type": "mc",
+                  "prompt": "What was the first permanent English settlement in North America (1607)?",
+                  "choices": [
+                    "Jamestown, Virginia",
+                    "Plymouth, Massachusetts",
+                    "St. Augustine",
+                    "Quebec"
+                  ],
+                  "answer": "Jamestown, Virginia",
+                  "explanation": "English colonists founded Jamestown in Virginia in 1607 as their first permanent settlement."
+                },
+                {
+                  "id": "g5-soc-col-3",
+                  "type": "mc",
+                  "prompt": "Why did the Pilgrims sign the Mayflower Compact in 1620?",
+                  "choices": [
+                    "To agree on fair laws and self-government",
+                    "To declare war on France",
+                    "To buy land in California",
+                    "To ban farming in New England"
+                  ],
+                  "answer": "To agree on fair laws and self-government",
+                  "explanation": "The Mayflower Compact was an early agreement establishing self-government in Plymouth Colony."
+                },
+                {
+                  "id": "g5-soc-col-4",
+                  "type": "mc",
+                  "prompt": "Why did American colonists protest British taxes like the Stamp Act?",
+                  "choices": [
+                    "They had no elected representatives in Parliament",
+                    "They wanted higher taxes on tea",
+                    "They wanted to return to England",
+                    "They disliked using paper money"
+                  ],
+                  "answer": "They had no elected representatives in Parliament",
+                  "explanation": "Colonists argued \"no taxation without representation\" because they had no voice in the British Parliament."
+                },
+                {
+                  "id": "g5-soc-col-5",
+                  "type": "mc",
+                  "prompt": "Who was the primary author of the Declaration of Independence in 1776?",
+                  "choices": [
+                    "Thomas Jefferson",
+                    "King George III",
+                    "Abraham Lincoln",
+                    "Christopher Columbus"
+                  ],
+                  "answer": "Thomas Jefferson",
+                  "explanation": "Thomas Jefferson wrote the Declaration of Independence explaining why the colonies broke away from Britain."
+                },
+                {
+                  "id": "g5-soc-col-6",
+                  "type": "mc",
+                  "prompt": "According to the Declaration of Independence, what are people’s natural rights?",
+                  "choices": [
+                    "Life, liberty, and the pursuit of happiness",
+                    "Free gold and silver",
+                    "Rule by a king forever",
+                    "No laws or courts"
+                  ],
+                  "answer": "Life, liberty, and the pursuit of happiness",
+                  "explanation": "The Declaration states that all people have natural rights to life, liberty, and the pursuit of happiness."
+                },
+                {
+                  "id": "g5-soc-col-7",
+                  "type": "mc",
+                  "prompt": "What are the three branches of the U.S. government under the Constitution?",
+                  "choices": [
+                    "Legislative, Executive, and Judicial",
+                    "Army, Navy, and Air Force",
+                    "Local, County, and City",
+                    "Banks, Farms, and Factories"
+                  ],
+                  "answer": "Legislative, Executive, and Judicial",
+                  "explanation": "The Constitution divides power among the Legislative (Congress), Executive (President), and Judicial (Courts) branches."
+                },
+                {
+                  "id": "g5-soc-col-8",
+                  "type": "mc",
+                  "prompt": "What do the first ten amendments to the U.S. Constitution protect?",
+                  "choices": [
+                    "Individual freedoms in the Bill of Rights",
+                    "British royal taxes",
+                    "Only state borders",
+                    "Airline schedules"
+                  ],
+                  "answer": "Individual freedoms in the Bill of Rights",
+                  "explanation": "The Bill of Rights guarantees freedoms such as speech, religion, press, and fair trials."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Colonies, Geography & Economics] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Exploration, Colonial America, and Constitutional Government\" (OH.5.SS.5), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-soc-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Colonies, Revolution & the U.S. Constitution",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Exploration, Colonial America, and Constitutional Government\" (OH.5.SS.5). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/us-history/road-to-revolution/the-american-revolution/v/the-seven-years-war-part-1"
+              },
+              {
+                "id": "g5-soc-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Exploration, Colonial America, and Constitutional Government.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-soc-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.5.SS.5)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Exploration, Colonial America, and Constitutional Government.",
+              "Trace the Columbian Exchange, Jamestown/Plymouth, the Revolution, and the three branches of government.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What was the Columbian Exchange?\" → Answer: Exchange of plants, animals, and goods across oceans. (The Columbian Exchange moved crops, livestock, people, and diseases between the Americas and Afro-Eurasia.)",
+            "links": [
+              {
+                "label": "YouTube: \"Colonies, Geography & Economics\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20social%20Colonies%2C%20Geography%20%26%20Economics%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Colonies, Geography & Economics\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Colonies%2C%20Geography%20%26%20Economics",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Colonies, Geography & Economics",
+                "url": "https://www.youtube.com/results?search_query=Colonies%2C%20Geography%20%26%20Economics%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-soc-u2-l2",
+          "unitId": "g5-soc-u2",
+          "title": "Western Hemisphere Geography, Trade & Opportunity Cost",
+          "kind": "lesson",
+          "partOf": "Colonies, Geography & Economics",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/world-history/world-history-beginnings",
+          "videoTitle": "Khan Academy: Latitude, Longitude, Trade & Opportunity Cost",
+          "reading": "Latitude measures degrees north or south of the Equator (0°), and longitude measures degrees east or west of the Prime Meridian. Regions near the Equator are warmer. In economics, opportunity cost is the next best choice you give up when making a decision.",
+          "principles": [
+            {
+              "id": "p-g5-soc-geo",
+              "title": "Latitude, Longitude, Specialization, and Opportunity Cost",
+              "standard": "OH.5.SS.14",
+              "summary": "Use latitude/longitude and explain specialization, trade, and opportunity cost.",
+              "bank": [
+                {
+                  "id": "g5-soc-geo-1",
+                  "type": "mc",
+                  "prompt": "What do lines of latitude measure on a globe or map?",
+                  "choices": [
+                    "Distance north or south of the Equator",
+                    "Distance east or west of the Prime Meridian",
+                    "Height of mountains in feet",
+                    "Depth of the ocean floor"
+                  ],
+                  "answer": "Distance north or south of the Equator",
+                  "explanation": "Parallels of latitude run east-west and measure degrees north or south of the Equator."
+                },
+                {
+                  "id": "g5-soc-geo-2",
+                  "type": "mc",
+                  "prompt": "What do lines of longitude measure on a globe or map?",
+                  "choices": [
+                    "Distance east or west of the Prime Meridian",
+                    "Distance north or south of the Equator",
+                    "Daily rainfall totals",
+                    "Population density"
+                  ],
+                  "answer": "Distance east or west of the Prime Meridian",
+                  "explanation": "Meridians of longitude run from pole to pole and measure degrees east or west of the Prime Meridian."
+                },
+                {
+                  "id": "g5-soc-geo-3",
+                  "type": "mc",
+                  "prompt": "How does climate generally change as you travel closer to the Equator?",
+                  "choices": [
+                    "Temperatures become warmer year-round",
+                    "Temperatures become freezing all year",
+                    "Sunlight disappears for six months",
+                    "Blizzards happen every day"
+                  ],
+                  "answer": "Temperatures become warmer year-round",
+                  "explanation": "Low latitudes near the Equator receive direct sunlight all year, creating warm tropical climates."
+                },
+                {
+                  "id": "g5-soc-geo-4",
+                  "type": "mc",
+                  "prompt": "In economics, what is \"opportunity cost\"?",
+                  "choices": [
+                    "The next best choice you give up when deciding",
+                    "The price tag printed on a toy",
+                    "Money saved in a piggy bank",
+                    "A free gift from a friend"
+                  ],
+                  "answer": "The next best choice you give up when deciding",
+                  "explanation": "Opportunity cost is the value of the second-best option you give up when you make a choice."
+                },
+                {
+                  "id": "g5-soc-geo-5",
+                  "type": "mc",
+                  "prompt": "Why do countries in the Western Hemisphere specialize and trade?",
+                  "choices": [
+                    "Different regions produce goods they make best",
+                    "Every country has identical resources",
+                    "Trade reduces the variety of goods",
+                    "No country grows its own food"
+                  ],
+                  "answer": "Different regions produce goods they make best",
+                  "explanation": "Specialization and trade let regions exchange products they make efficiently for goods they need."
+                },
+                {
+                  "id": "g5-soc-geo-6",
+                  "type": "mc",
+                  "prompt": "What happens to orange prices if a frost ruins the crop?",
+                  "choices": [
+                    "Prices rise because supply is lower",
+                    "Prices drop to zero",
+                    "Oranges become free",
+                    "Supply becomes unlimited"
+                  ],
+                  "answer": "Prices rise because supply is lower",
+                  "explanation": "When supply drops and demand stays the same, scarcity causes the price of a good to increase."
+                },
+                {
+                  "id": "g5-soc-geo-7",
+                  "type": "mc",
+                  "prompt": "Which 0° latitude line divides Earth into Northern and Southern Hemispheres?",
+                  "choices": [
+                    "The Equator",
+                    "The Prime Meridian",
+                    "The Arctic Circle",
+                    "The Tropic of Cancer"
+                  ],
+                  "answer": "The Equator",
+                  "explanation": "The Equator sits at 0 degrees latitude halfway between the North and South Poles."
+                },
+                {
+                  "id": "g5-soc-geo-8",
+                  "type": "mc",
+                  "prompt": "Mia picks a book over a game. What is her opportunity cost?",
+                  "choices": [
+                    "The board game",
+                    "The book",
+                    "Twenty dollars",
+                    "The library"
+                  ],
+                  "answer": "The board game",
+                  "explanation": "Because Mia chose the book, the board game she gave up is her opportunity cost."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Colonies, Geography & Economics] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Latitude, Longitude, Specialization, and Opportunity Cost\" (OH.5.SS.14), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-soc-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Latitude, Longitude, Trade & Opportunity Cost",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Latitude, Longitude, Specialization, and Opportunity Cost\" (OH.5.SS.14). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/world-history/world-history-beginnings"
+              },
+              {
+                "id": "g5-soc-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Latitude, Longitude, Specialization, and Opportunity Cost.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-soc-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.5.SS.14)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Latitude, Longitude, Specialization, and Opportunity Cost.",
+              "Use latitude/longitude and explain specialization, trade, and opportunity cost.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What do lines of latitude measure on a globe or map?\" → Answer: Distance north or south of the Equator. (Parallels of latitude run east-west and measure degrees north or south of the Equator.)",
+            "links": [
+              {
+                "label": "YouTube: \"Colonies, Geography & Economics\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20social%20Colonies%2C%20Geography%20%26%20Economics%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Colonies, Geography & Economics\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Colonies%2C%20Geography%20%26%20Economics",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Colonies, Geography & Economics",
+                "url": "https://www.youtube.com/results?search_query=Colonies%2C%20Geography%20%26%20Economics%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-soc-u2-test",
+          "unitId": "g5-soc-u2",
+          "title": "Unit 2 Exam: Colonies, Government, Geography & Economics",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "questionCount": 8,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-history/road-to-revolution/the-american-revolution/v/the-seven-years-war-part-1",
+          "videoTitle": "Unit 2 Exam Review: Early America & Western Hemisphere Geography",
+          "reading": "Complete the Unit 2 Exam covering the Columbian Exchange, Thirteen Colonies, Declaration of Independence, U.S. Constitution, latitude/longitude, and opportunity cost.",
+          "principles": [
+            {
+              "id": "p-g5-soc-col",
+              "title": "Exploration, Colonial America, and Constitutional Government",
+              "standard": "OH.5.SS.5",
+              "summary": "Explain colonial founding, the American Revolution, and the three branches of government.",
+              "bank": [
+                {
+                  "id": "g5-soc-col-1",
+                  "type": "mc",
+                  "prompt": "What was the Columbian Exchange?",
+                  "choices": [
+                    "Exchange of plants, animals, and goods across oceans",
+                    "A railroad across South America",
+                    "A treaty between Ohio and Canada",
+                    "A gold coin used in Boston"
+                  ],
+                  "answer": "Exchange of plants, animals, and goods across oceans",
+                  "explanation": "The Columbian Exchange moved crops, livestock, people, and diseases between the Americas and Afro-Eurasia."
+                },
+                {
+                  "id": "g5-soc-col-2",
+                  "type": "mc",
+                  "prompt": "What was the first permanent English settlement in North America (1607)?",
+                  "choices": [
+                    "Jamestown, Virginia",
+                    "Plymouth, Massachusetts",
+                    "St. Augustine",
+                    "Quebec"
+                  ],
+                  "answer": "Jamestown, Virginia",
+                  "explanation": "English colonists founded Jamestown in Virginia in 1607 as their first permanent settlement."
+                },
+                {
+                  "id": "g5-soc-col-3",
+                  "type": "mc",
+                  "prompt": "Why did the Pilgrims sign the Mayflower Compact in 1620?",
+                  "choices": [
+                    "To agree on fair laws and self-government",
+                    "To declare war on France",
+                    "To buy land in California",
+                    "To ban farming in New England"
+                  ],
+                  "answer": "To agree on fair laws and self-government",
+                  "explanation": "The Mayflower Compact was an early agreement establishing self-government in Plymouth Colony."
+                },
+                {
+                  "id": "g5-soc-col-4",
+                  "type": "mc",
+                  "prompt": "Why did American colonists protest British taxes like the Stamp Act?",
+                  "choices": [
+                    "They had no elected representatives in Parliament",
+                    "They wanted higher taxes on tea",
+                    "They wanted to return to England",
+                    "They disliked using paper money"
+                  ],
+                  "answer": "They had no elected representatives in Parliament",
+                  "explanation": "Colonists argued \"no taxation without representation\" because they had no voice in the British Parliament."
+                },
+                {
+                  "id": "g5-soc-col-5",
+                  "type": "mc",
+                  "prompt": "Who was the primary author of the Declaration of Independence in 1776?",
+                  "choices": [
+                    "Thomas Jefferson",
+                    "King George III",
+                    "Abraham Lincoln",
+                    "Christopher Columbus"
+                  ],
+                  "answer": "Thomas Jefferson",
+                  "explanation": "Thomas Jefferson wrote the Declaration of Independence explaining why the colonies broke away from Britain."
+                },
+                {
+                  "id": "g5-soc-col-6",
+                  "type": "mc",
+                  "prompt": "According to the Declaration of Independence, what are people’s natural rights?",
+                  "choices": [
+                    "Life, liberty, and the pursuit of happiness",
+                    "Free gold and silver",
+                    "Rule by a king forever",
+                    "No laws or courts"
+                  ],
+                  "answer": "Life, liberty, and the pursuit of happiness",
+                  "explanation": "The Declaration states that all people have natural rights to life, liberty, and the pursuit of happiness."
+                },
+                {
+                  "id": "g5-soc-col-7",
+                  "type": "mc",
+                  "prompt": "What are the three branches of the U.S. government under the Constitution?",
+                  "choices": [
+                    "Legislative, Executive, and Judicial",
+                    "Army, Navy, and Air Force",
+                    "Local, County, and City",
+                    "Banks, Farms, and Factories"
+                  ],
+                  "answer": "Legislative, Executive, and Judicial",
+                  "explanation": "The Constitution divides power among the Legislative (Congress), Executive (President), and Judicial (Courts) branches."
+                },
+                {
+                  "id": "g5-soc-col-8",
+                  "type": "mc",
+                  "prompt": "What do the first ten amendments to the U.S. Constitution protect?",
+                  "choices": [
+                    "Individual freedoms in the Bill of Rights",
+                    "British royal taxes",
+                    "Only state borders",
+                    "Airline schedules"
+                  ],
+                  "answer": "Individual freedoms in the Bill of Rights",
+                  "explanation": "The Bill of Rights guarantees freedoms such as speech, religion, press, and fair trials."
+                }
+              ]
+            },
+            {
+              "id": "p-g5-soc-geo",
+              "title": "Latitude, Longitude, Specialization, and Opportunity Cost",
+              "standard": "OH.5.SS.14",
+              "summary": "Apply map coordinates, climate patterns, supply/demand, and opportunity cost.",
+              "bank": [
+                {
+                  "id": "g5-soc-geo-1",
+                  "type": "mc",
+                  "prompt": "What do lines of latitude measure on a globe or map?",
+                  "choices": [
+                    "Distance north or south of the Equator",
+                    "Distance east or west of the Prime Meridian",
+                    "Height of mountains in feet",
+                    "Depth of the ocean floor"
+                  ],
+                  "answer": "Distance north or south of the Equator",
+                  "explanation": "Parallels of latitude run east-west and measure degrees north or south of the Equator."
+                },
+                {
+                  "id": "g5-soc-geo-2",
+                  "type": "mc",
+                  "prompt": "What do lines of longitude measure on a globe or map?",
+                  "choices": [
+                    "Distance east or west of the Prime Meridian",
+                    "Distance north or south of the Equator",
+                    "Daily rainfall totals",
+                    "Population density"
+                  ],
+                  "answer": "Distance east or west of the Prime Meridian",
+                  "explanation": "Meridians of longitude run from pole to pole and measure degrees east or west of the Prime Meridian."
+                },
+                {
+                  "id": "g5-soc-geo-3",
+                  "type": "mc",
+                  "prompt": "How does climate generally change as you travel closer to the Equator?",
+                  "choices": [
+                    "Temperatures become warmer year-round",
+                    "Temperatures become freezing all year",
+                    "Sunlight disappears for six months",
+                    "Blizzards happen every day"
+                  ],
+                  "answer": "Temperatures become warmer year-round",
+                  "explanation": "Low latitudes near the Equator receive direct sunlight all year, creating warm tropical climates."
+                },
+                {
+                  "id": "g5-soc-geo-4",
+                  "type": "mc",
+                  "prompt": "In economics, what is \"opportunity cost\"?",
+                  "choices": [
+                    "The next best choice you give up when deciding",
+                    "The price tag printed on a toy",
+                    "Money saved in a piggy bank",
+                    "A free gift from a friend"
+                  ],
+                  "answer": "The next best choice you give up when deciding",
+                  "explanation": "Opportunity cost is the value of the second-best option you give up when you make a choice."
+                },
+                {
+                  "id": "g5-soc-geo-5",
+                  "type": "mc",
+                  "prompt": "Why do countries in the Western Hemisphere specialize and trade?",
+                  "choices": [
+                    "Different regions produce goods they make best",
+                    "Every country has identical resources",
+                    "Trade reduces the variety of goods",
+                    "No country grows its own food"
+                  ],
+                  "answer": "Different regions produce goods they make best",
+                  "explanation": "Specialization and trade let regions exchange products they make efficiently for goods they need."
+                },
+                {
+                  "id": "g5-soc-geo-6",
+                  "type": "mc",
+                  "prompt": "What happens to orange prices if a frost ruins the crop?",
+                  "choices": [
+                    "Prices rise because supply is lower",
+                    "Prices drop to zero",
+                    "Oranges become free",
+                    "Supply becomes unlimited"
+                  ],
+                  "answer": "Prices rise because supply is lower",
+                  "explanation": "When supply drops and demand stays the same, scarcity causes the price of a good to increase."
+                },
+                {
+                  "id": "g5-soc-geo-7",
+                  "type": "mc",
+                  "prompt": "Which 0° latitude line divides Earth into Northern and Southern Hemispheres?",
+                  "choices": [
+                    "The Equator",
+                    "The Prime Meridian",
+                    "The Arctic Circle",
+                    "The Tropic of Cancer"
+                  ],
+                  "answer": "The Equator",
+                  "explanation": "The Equator sits at 0 degrees latitude halfway between the North and South Poles."
+                },
+                {
+                  "id": "g5-soc-geo-8",
+                  "type": "mc",
+                  "prompt": "Mia picks a book over a game. What is her opportunity cost?",
+                  "choices": [
+                    "The board game",
+                    "The book",
+                    "Twenty dollars",
+                    "The library"
+                  ],
+                  "answer": "The board game",
+                  "explanation": "Because Mia chose the book, the board game she gave up is her opportunity cost."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Exploration, Colonial America, and Constitutional Government & Latitude, Longitude, Specialization, and Opportunity Cost (OH.5.SS.5, OH.5.SS.14). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g5-soc-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Exploration, Colonial America, and Constitutional Government & Latitude, Longitude, Specialization, and Opportunity Cost",
+                "description": "Read the Core Concept Summary and Principle cards on this page (OH.5.SS.5, OH.5.SS.14) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g5-soc-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Exam Review: Early America & Western Hemisphere Geography",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Exploration, Colonial America, and Constitutional Government & Latitude, Longitude, Specialization, and Opportunity Cost\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/us-history/road-to-revolution/the-american-revolution/v/the-seven-years-war-part-1"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Exploration, Colonial America, and Constitutional Government.",
+              "Explain colonial founding, the American Revolution, and the three branches of government.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What was the Columbian Exchange?\" → Answer: Exchange of plants, animals, and goods across oceans. (The Columbian Exchange moved crops, livestock, people, and diseases between the Americas and Afro-Eurasia.)",
+            "links": [
+              {
+                "label": "YouTube: \"Colonies, Government, Geography & Economics\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20social%20Colonies%2C%20Government%2C%20Geography%20%26%20Economics%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Colonies, Government, Geography & Economics\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Colonies%2C%20Government%2C%20Geography%20%26%20Economics",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Colonies, Government, Geography & Economics",
+                "url": "https://www.youtube.com/results?search_query=Colonies%2C%20Government%2C%20Geography%20%26%20Economics%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

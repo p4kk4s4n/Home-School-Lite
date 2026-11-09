@@ -1,0 +1,1028 @@
+{
+  "id": "g7-math",
+  "subject": "math",
+  "grade": 7,
+  "title": "Grade 7 Mathematics",
+  "subtitle": "Proportional Relationships, Rational Numbers, Expressions/Equations, Geometry & Probability",
+  "credits": 1,
+  "color": "#1d4ed8",
+  "icon": "📐",
+  "units": [
+    {
+      "id": "g7-math-u1",
+      "title": "Unit 1: Proportional Relationships & Percentages",
+      "standards": [
+        "7.RP.A.1",
+        "7.RP.A.2",
+        "7.RP.A.3",
+        "OH.7.RP.A.3"
+      ],
+      "lessons": [
+        {
+          "id": "g7-math-u1-l1",
+          "unitId": "g7-math-u1",
+          "title": "Part 1: Constant of Proportionality & Unit Rates with Fractions",
+          "kind": "lesson",
+          "partOf": "Proportional Reasoning",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion",
+          "videoTitle": "Khan Academy: Constant of Proportionality & Rates with Fractions",
+          "reading": "Two quantities are in a proportional relationship when their ratio y/x is always constant. That constant k = y/x is called the constant of proportionality, giving the equation y = kx. When a rate involves fractions (like 3/4 mile in 1/2 hour), divide the first fraction by the second to find the unit rate.",
+          "principles": [
+            {
+              "id": "p-g7-prop-const",
+              "title": "Constant of Proportionality (k = y/x)",
+              "standard": "7.RP.A.2b",
+              "summary": "Divide y by x to find the constant of proportionality k in y = kx.",
+              "generatorId": "g7.proportional-constant"
+            },
+            {
+              "id": "p-g7-unit-rate-frac",
+              "title": "Unit Rates with Fractional Quantities",
+              "standard": "7.RP.A.1",
+              "summary": "Compute unit rates associated with ratios of fractions by dividing.",
+              "generatorId": "g7.unit-rate-fractions"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Proportional Reasoning] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Constant of Proportionality (k = y/x) & Unit Rates with Fractional Quantities\" (7.RP.A.2b, 7.RP.A.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-math-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Constant of Proportionality & Rates with Fractions",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Constant of Proportionality (k = y/x) & Unit Rates with Fractional Quantities\" (7.RP.A.2b, 7.RP.A.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion"
+              },
+              {
+                "id": "g7-math-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Constant of Proportionality (k = y/x) & Unit Rates with Fractional Quantities.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-math-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (7.RP.A.2b, 7.RP.A.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Constant of Proportionality (k = y/x).",
+              "Divide y by x to find the constant of proportionality k in y = kx.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Constant of Proportionality (k = y/x)\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Proportional Reasoning\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20math%20Proportional%20Reasoning%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Proportional Reasoning\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Proportional%20Reasoning",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Proportional Reasoning (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Proportional%20Reasoning",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-math-u1-l2",
+          "unitId": "g7-math-u1",
+          "title": "Part 2: Percent Change, Markup, Markdown & Tax",
+          "kind": "lesson",
+          "partOf": "Proportional Reasoning",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals",
+          "videoTitle": "Khan Academy: Percent Problems, Tax & Discounts",
+          "reading": "Percent change compares the amount of change to the original amount: Percent Change = (Change / Original) × 100%. For markups or sales tax, add the percent increase to 100%; for markdowns or discounts, subtract the percent decrease from 100%.",
+          "principles": [
+            {
+              "id": "p-g7-pct-change",
+              "title": "Percent Increase, Decrease & Discounts",
+              "standard": "7.RP.A.3",
+              "summary": "Calculate percent change, markups, and discounts from the original value.",
+              "generatorId": "g7.percent-change"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Proportional Reasoning] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Percent Increase, Decrease & Discounts\" (7.RP.A.3), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-math-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Percent Problems, Tax & Discounts",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Percent Increase, Decrease & Discounts\" (7.RP.A.3). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals"
+              },
+              {
+                "id": "g7-math-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Percent Increase, Decrease & Discounts.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-math-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (7.RP.A.3)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Percent Increase, Decrease & Discounts.",
+              "Calculate percent change, markups, and discounts from the original value.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Percent Increase, Decrease & Discounts\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Proportional Reasoning\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20math%20Proportional%20Reasoning%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Proportional Reasoning\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Proportional%20Reasoning",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Proportional Reasoning (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Proportional%20Reasoning",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-math-u1-l3",
+          "unitId": "g7-math-u1",
+          "title": "Part 3: Simple Interest (I = Prt)",
+          "kind": "lesson",
+          "partOf": "Proportional Reasoning",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals",
+          "videoTitle": "Khan Academy: Simple Interest Formula I = Prt",
+          "reading": "Simple interest is money earned on savings or paid on a loan. Use the Ohio Grade 7 formula I = P × r × t, where P is the principal (starting amount), r is the annual interest rate as a decimal, and t is the time in years.",
+          "principles": [
+            {
+              "id": "p-g7-simple-interest",
+              "title": "Simple Interest (I = Prt)",
+              "standard": "OH.7.RP.A.3",
+              "summary": "Multiply principal P by decimal rate r and time t in years.",
+              "generatorId": "g7.simple-interest"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Proportional Reasoning] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Simple Interest (I = Prt)\" (OH.7.RP.A.3), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-math-u1-l3-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Simple Interest Formula I = Prt",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Simple Interest (I = Prt)\" (OH.7.RP.A.3). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals"
+              },
+              {
+                "id": "g7-math-u1-l3-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Simple Interest (I = Prt).",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-math-u1-l3-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.7.RP.A.3)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Simple Interest (I = Prt).",
+              "Multiply principal P by decimal rate r and time t in years.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Simple Interest (I = Prt)\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Proportional Reasoning\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20math%20Proportional%20Reasoning%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Proportional Reasoning\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Proportional%20Reasoning",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Proportional Reasoning (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Proportional%20Reasoning",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-math-u1-test",
+          "unitId": "g7-math-u1",
+          "title": "Unit 1 Exam: Proportions, Percents & Simple Interest",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion",
+          "videoTitle": "Unit 1 Review: Proportional Relationships",
+          "reading": "Complete 8 problems covering unit rates, constant of proportionality, percent change, and simple interest.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g7-prop-const",
+              "title": "Constant of Proportionality (k = y/x)",
+              "standard": "7.RP.A.2b",
+              "summary": "Divide y by x to find k.",
+              "generatorId": "g7.proportional-constant"
+            },
+            {
+              "id": "p-g7-unit-rate-frac",
+              "title": "Unit Rates with Fractional Quantities",
+              "standard": "7.RP.A.1",
+              "summary": "Divide fractional quantities to find the unit rate.",
+              "generatorId": "g7.unit-rate-fractions"
+            },
+            {
+              "id": "p-g7-pct-change",
+              "title": "Percent Increase, Decrease & Discounts",
+              "standard": "7.RP.A.3",
+              "summary": "Calculate percent change from the original value.",
+              "generatorId": "g7.percent-change"
+            },
+            {
+              "id": "p-g7-simple-interest",
+              "title": "Simple Interest (I = Prt)",
+              "standard": "OH.7.RP.A.3",
+              "summary": "Calculate simple interest using I = Prt.",
+              "generatorId": "g7.simple-interest"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Constant of Proportionality (k = y/x) & Unit Rates with Fractional Quantities & Percent Increase, Decrease & Discounts & Simple Interest (I = Prt) (7.RP.A.2b, 7.RP.A.1, 7.RP.A.3, OH.7.RP.A.3). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g7-math-u1-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Constant of Proportionality (k = y/x) & Unit Rates with Fractional Quantities & Percent Increase, Decrease & Discounts & Simple Interest (I = Prt)",
+                "description": "Read the Core Concept Summary and Principle cards on this page (7.RP.A.2b, 7.RP.A.1, 7.RP.A.3, OH.7.RP.A.3) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g7-math-u1-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 Review: Proportional Relationships",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Constant of Proportionality (k = y/x) & Unit Rates with Fractional Quantities & Percent Increase, Decrease & Discounts & Simple Interest (I = Prt)\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Constant of Proportionality (k = y/x).",
+              "Divide y by x to find k.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Constant of Proportionality (k = y/x)\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Proportions, Percents & Simple Interest\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20math%20Proportions%2C%20Percents%20%26%20Simple%20Interest%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Proportions, Percents & Simple Interest\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Proportions%2C%20Percents%20%26%20Simple%20Interest",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Proportions, Percents & Simple Interest (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Proportions%2C%20Percents%20%26%20Simple%20Interest",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g7-math-u2",
+      "title": "Unit 2: Integer Operations, Expressions & Equations",
+      "standards": [
+        "7.NS.A.1",
+        "7.NS.A.2",
+        "7.EE.A.1",
+        "7.EE.B.4"
+      ],
+      "lessons": [
+        {
+          "id": "g7-math-u2-l1",
+          "unitId": "g7-math-u2",
+          "title": "Part 1: Adding, Subtracting, Multiplying & Dividing Integers",
+          "kind": "lesson",
+          "partOf": "Rational Number Operations & Algebra",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract",
+          "videoTitle": "Khan Academy: Operations with Negative Numbers",
+          "reading": "Subtracting an integer is the same as adding its opposite: a − b = a + (−b). When multiplying or dividing two integers, same signs give a positive result and different signs give a negative result.",
+          "principles": [
+            {
+              "id": "p-g7-int-add-sub",
+              "title": "Adding & Subtracting Integers",
+              "standard": "7.NS.A.1",
+              "summary": "Add and subtract positive and negative integers using opposites.",
+              "generatorId": "g7.int-add-sub"
+            },
+            {
+              "id": "p-g7-int-mult-div",
+              "title": "Multiplying & Dividing Integers",
+              "standard": "7.NS.A.2",
+              "summary": "Apply sign rules to multiply and divide signed integers.",
+              "generatorId": "g7.int-mult-div"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Rational Number Operations & Algebra] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Adding & Subtracting Integers & Multiplying & Dividing Integers\" (7.NS.A.1, 7.NS.A.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-math-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Operations with Negative Numbers",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Adding & Subtracting Integers & Multiplying & Dividing Integers\" (7.NS.A.1, 7.NS.A.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract"
+              },
+              {
+                "id": "g7-math-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Adding & Subtracting Integers & Multiplying & Dividing Integers.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-math-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (7.NS.A.1, 7.NS.A.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Adding & Subtracting Integers.",
+              "Add and subtract positive and negative integers using opposites.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Adding & Subtracting Integers\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Rational Number Operations & Algebra\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20math%20Rational%20Number%20Operations%20%26%20Algebra%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Rational Number Operations & Algebra\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Rational%20Number%20Operations%20%26%20Algebra",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Rational Number Operations & Algebra (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Rational%20Number%20Operations%20%26%20Algebra",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-math-u2-l2",
+          "unitId": "g7-math-u2",
+          "title": "Part 2: Combining Like Terms, Distributive Property & Two-Step Equations",
+          "kind": "lesson",
+          "partOf": "Rational Number Operations & Algebra",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions",
+          "videoTitle": "Khan Academy: Simplifying Expressions & Two-Step Equations",
+          "reading": "Combine like terms by adding coefficients of the same variable. Use the distributive property a(bx + c) = abx + ac to clear parentheses. To solve a two-step equation like ax + b = c or a-x inequality, undo addition/subtraction first, then undo multiplication/division.",
+          "principles": [
+            {
+              "id": "p-g7-linear-combine",
+              "title": "Combining Like Terms",
+              "standard": "7.EE.A.1",
+              "summary": "Add or subtract coefficients of like variable terms.",
+              "generatorId": "g7.linear-combine"
+            },
+            {
+              "id": "p-g7-distributive",
+              "title": "Expanding with the Distributive Property",
+              "standard": "7.EE.A.1",
+              "summary": "Multiply the outside factor across each term inside parentheses.",
+              "generatorId": "g7.distributive"
+            },
+            {
+              "id": "p-g7-two-step-eq",
+              "title": "Solving Two-Step Equations (ax + b = c)",
+              "standard": "7.EE.B.4a",
+              "summary": "Isolate the variable using inverse operations in two steps.",
+              "generatorId": "g7.two-step-eq"
+            },
+            {
+              "id": "p-g7-inequalities",
+              "title": "Solving One- and Two-Step Inequalities",
+              "standard": "7.EE.B.4b",
+              "summary": "Solve linear inequalities and interpret solution sets.",
+              "generatorId": "g7.inequalities"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Rational Number Operations & Algebra] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Combining Like Terms & Expanding with the Distributive Property & Solving Two-Step Equations (ax + b = c) & Solving One- and Two-Step Inequalities\" (7.EE.A.1, 7.EE.A.1, 7.EE.B.4a, 7.EE.B.4b), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-math-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Simplifying Expressions & Two-Step Equations",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Combining Like Terms & Expanding with the Distributive Property & Solving Two-Step Equations (ax + b = c) & Solving One- and Two-Step Inequalities\" (7.EE.A.1, 7.EE.A.1, 7.EE.B.4a, 7.EE.B.4b). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions"
+              },
+              {
+                "id": "g7-math-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Combining Like Terms & Expanding with the Distributive Property & Solving Two-Step Equations (ax + b = c) & Solving One- and Two-Step Inequalities.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-math-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (7.EE.A.1, 7.EE.A.1, 7.EE.B.4a, 7.EE.B.4b)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Combining Like Terms.",
+              "Add or subtract coefficients of like variable terms.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Combining Like Terms\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Rational Number Operations & Algebra\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20math%20Rational%20Number%20Operations%20%26%20Algebra%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Rational Number Operations & Algebra\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Rational%20Number%20Operations%20%26%20Algebra",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Rational Number Operations & Algebra (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Rational%20Number%20Operations%20%26%20Algebra",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-math-u2-test",
+          "unitId": "g7-math-u2",
+          "title": "Unit 2 Exam: Integers, Expressions & Two-Step Equations",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions",
+          "videoTitle": "Unit 2 Review: Integers & Linear Equations",
+          "reading": "Complete 8 problems testing integer operations, simplifying linear expressions, and solving two-step equations and inequalities.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g7-int-add-sub",
+              "title": "Adding & Subtracting Integers",
+              "standard": "7.NS.A.1",
+              "summary": "Add and subtract signed integers.",
+              "generatorId": "g7.int-add-sub"
+            },
+            {
+              "id": "p-g7-int-mult-div",
+              "title": "Multiplying & Dividing Integers",
+              "standard": "7.NS.A.2",
+              "summary": "Multiply and divide signed integers.",
+              "generatorId": "g7.int-mult-div"
+            },
+            {
+              "id": "p-g7-linear-combine",
+              "title": "Combining Like Terms",
+              "standard": "7.EE.A.1",
+              "summary": "Simplify linear expressions.",
+              "generatorId": "g7.linear-combine"
+            },
+            {
+              "id": "p-g7-distributive",
+              "title": "Expanding with the Distributive Property",
+              "standard": "7.EE.A.1",
+              "summary": "Expand expressions using distribution.",
+              "generatorId": "g7.distributive"
+            },
+            {
+              "id": "p-g7-two-step-eq",
+              "title": "Solving Two-Step Equations (ax + b = c)",
+              "standard": "7.EE.B.4a",
+              "summary": "Solve ax + b = c for x.",
+              "generatorId": "g7.two-step-eq"
+            },
+            {
+              "id": "p-g7-inequalities",
+              "title": "Solving One- and Two-Step Inequalities",
+              "standard": "7.EE.B.4b",
+              "summary": "Solve linear inequalities.",
+              "generatorId": "g7.inequalities"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Adding & Subtracting Integers & Multiplying & Dividing Integers & Combining Like Terms & Expanding with the Distributive Property & Solving Two-Step Equations (ax + b = c) & Solving One- and Two-Step Inequalities (7.NS.A.1, 7.NS.A.2, 7.EE.A.1, 7.EE.A.1, 7.EE.B.4a, 7.EE.B.4b). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g7-math-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Adding & Subtracting Integers & Multiplying & Dividing Integers & Combining Like Terms & Expanding with the Distributive Property & Solving Two-Step Equations (ax + b = c) & Solving One- and Two-Step Inequalities",
+                "description": "Read the Core Concept Summary and Principle cards on this page (7.NS.A.1, 7.NS.A.2, 7.EE.A.1, 7.EE.A.1, 7.EE.B.4a, 7.EE.B.4b) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g7-math-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Review: Integers & Linear Equations",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Adding & Subtracting Integers & Multiplying & Dividing Integers & Combining Like Terms & Expanding with the Distributive Property & Solving Two-Step Equations (ax + b = c) & Solving One- and Two-Step Inequalities\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Adding & Subtracting Integers.",
+              "Add and subtract signed integers.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Adding & Subtracting Integers\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Integers, Expressions & Two-Step Equations\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20math%20Integers%2C%20Expressions%20%26%20Two-Step%20Equations%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Integers, Expressions & Two-Step Equations\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Integers%2C%20Expressions%20%26%20Two-Step%20Equations",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Integers, Expressions & Two-Step Equations (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Integers%2C%20Expressions%20%26%20Two-Step%20Equations",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g7-math-u3",
+      "title": "Unit 3: Geometry (Scale, Circles, Angles) & Probability",
+      "standards": [
+        "7.G.A.1",
+        "7.G.B.4",
+        "7.G.B.5",
+        "7.SP.C.5"
+      ],
+      "lessons": [
+        {
+          "id": "g7-math-u3-l1",
+          "unitId": "g7-math-u3",
+          "title": "Part 1: Scale Drawings, Circle Circumference & Area",
+          "kind": "lesson",
+          "partOf": "Geometry & Probability",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry",
+          "videoTitle": "Khan Academy: Scale Drawings, Circumference & Area of a Circle",
+          "reading": "Multiply a drawing measurement by the scale factor to find the actual length. For any circle with radius r and diameter d = 2r, the circumference is C = 2πr (or πd) and the area is A = πr² (using π ≈ 3.14).",
+          "principles": [
+            {
+              "id": "p-g7-scale",
+              "title": "Scale Drawings & Actual Lengths",
+              "standard": "7.G.A.1",
+              "summary": "Use scale factors to convert between map measurements and real lengths.",
+              "generatorId": "g7.scale-drawings"
+            },
+            {
+              "id": "p-g7-circle-circ",
+              "title": "Circumference of a Circle (C = 2πr)",
+              "standard": "7.G.B.4",
+              "summary": "Calculate circle circumference using C = 2πr or πd.",
+              "generatorId": "g7.circle-circumference"
+            },
+            {
+              "id": "p-g7-circle-area",
+              "title": "Area of a Circle (A = πr²)",
+              "standard": "7.G.B.4",
+              "summary": "Calculate circle area by squaring the radius and multiplying by π.",
+              "generatorId": "g7.circle-area"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Geometry & Probability] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Scale Drawings & Actual Lengths & Circumference of a Circle (C = 2πr) & Area of a Circle (A = πr²)\" (7.G.A.1, 7.G.B.4, 7.G.B.4), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-math-u3-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Scale Drawings, Circumference & Area of a Circle",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Scale Drawings & Actual Lengths & Circumference of a Circle (C = 2πr) & Area of a Circle (A = πr²)\" (7.G.A.1, 7.G.B.4, 7.G.B.4). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry"
+              },
+              {
+                "id": "g7-math-u3-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Scale Drawings & Actual Lengths & Circumference of a Circle (C = 2πr) & Area of a Circle (A = πr²).",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-math-u3-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (7.G.A.1, 7.G.B.4, 7.G.B.4)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Scale Drawings & Actual Lengths.",
+              "Use scale factors to convert between map measurements and real lengths.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Scale Drawings & Actual Lengths\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Geometry & Probability\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20math%20Geometry%20%26%20Probability%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Geometry & Probability\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Geometry%20%26%20Probability",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Geometry & Probability (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Geometry%20%26%20Probability",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-math-u3-l2",
+          "unitId": "g7-math-u3",
+          "title": "Part 2: Angle Relationships & Simple Probability",
+          "kind": "lesson",
+          "partOf": "Geometry & Probability",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics",
+          "videoTitle": "Khan Academy: Complementary/Supplementary Angles & Theoretical Probability",
+          "reading": "Complementary angles add up to 90°, supplementary angles add up to 180°, and vertical angles are equal. The probability of a simple event is the number of favorable outcomes divided by the total number of equally likely outcomes.",
+          "principles": [
+            {
+              "id": "p-g7-angles",
+              "title": "Complementary, Supplementary & Vertical Angles",
+              "standard": "7.G.B.5",
+              "summary": "Find unknown angle measures using 90°, 180°, and vertical angle rules.",
+              "generatorId": "g7.angles-relations"
+            },
+            {
+              "id": "p-g7-prob",
+              "title": "Simple Theoretical Probability",
+              "standard": "7.SP.C.5",
+              "summary": "Compute probability as favorable outcomes over total possible outcomes.",
+              "generatorId": "g7.probability-simple"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Geometry & Probability] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Complementary, Supplementary & Vertical Angles & Simple Theoretical Probability\" (7.G.B.5, 7.SP.C.5), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g7-math-u3-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Complementary/Supplementary Angles & Theoretical Probability",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Complementary, Supplementary & Vertical Angles & Simple Theoretical Probability\" (7.G.B.5, 7.SP.C.5). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics"
+              },
+              {
+                "id": "g7-math-u3-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Complementary, Supplementary & Vertical Angles & Simple Theoretical Probability.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g7-math-u3-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (7.G.B.5, 7.SP.C.5)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Complementary, Supplementary & Vertical Angles.",
+              "Find unknown angle measures using 90°, 180°, and vertical angle rules.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Complementary, Supplementary & Vertical Angles\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Geometry & Probability\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20math%20Geometry%20%26%20Probability%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Geometry & Probability\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Geometry%20%26%20Probability",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Geometry & Probability (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Geometry%20%26%20Probability",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g7-math-u3-test",
+          "unitId": "g7-math-u3",
+          "title": "Unit 3 Exam: Scale, Circles, Angles & Probability",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry",
+          "videoTitle": "Unit 3 Review: Geometry & Probability",
+          "reading": "Complete 8 problems covering scale drawings, circle circumference and area, angle pairs, and simple probability.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g7-scale",
+              "title": "Scale Drawings & Actual Lengths",
+              "standard": "7.G.A.1",
+              "summary": "Compute actual lengths from scale drawings.",
+              "generatorId": "g7.scale-drawings"
+            },
+            {
+              "id": "p-g7-circle-circ",
+              "title": "Circumference of a Circle (C = 2πr)",
+              "standard": "7.G.B.4",
+              "summary": "Compute circumference of a circle.",
+              "generatorId": "g7.circle-circumference"
+            },
+            {
+              "id": "p-g7-circle-area",
+              "title": "Area of a Circle (A = πr²)",
+              "standard": "7.G.B.4",
+              "summary": "Compute area of a circle.",
+              "generatorId": "g7.circle-area"
+            },
+            {
+              "id": "p-g7-angles",
+              "title": "Complementary, Supplementary & Vertical Angles",
+              "standard": "7.G.B.5",
+              "summary": "Solve for missing angle measures.",
+              "generatorId": "g7.angles-relations"
+            },
+            {
+              "id": "p-g7-prob",
+              "title": "Simple Theoretical Probability",
+              "standard": "7.SP.C.5",
+              "summary": "Calculate simple probability.",
+              "generatorId": "g7.probability-simple"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Scale Drawings & Actual Lengths & Circumference of a Circle (C = 2πr) & Area of a Circle (A = πr²) & Complementary, Supplementary & Vertical Angles & Simple Theoretical Probability (7.G.A.1, 7.G.B.4, 7.G.B.4, 7.G.B.5, 7.SP.C.5). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g7-math-u3-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Scale Drawings & Actual Lengths & Circumference of a Circle (C = 2πr) & Area of a Circle (A = πr²) & Complementary, Supplementary & Vertical Angles & Simple Theoretical Probability",
+                "description": "Read the Core Concept Summary and Principle cards on this page (7.G.A.1, 7.G.B.4, 7.G.B.4, 7.G.B.5, 7.SP.C.5) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g7-math-u3-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 3 Review: Geometry & Probability",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Scale Drawings & Actual Lengths & Circumference of a Circle (C = 2πr) & Area of a Circle (A = πr²) & Complementary, Supplementary & Vertical Angles & Simple Theoretical Probability\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Scale Drawings & Actual Lengths.",
+              "Compute actual lengths from scale drawings.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Scale Drawings & Actual Lengths\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Scale, Circles, Angles & Probability\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%207%20math%20Scale%2C%20Circles%2C%20Angles%20%26%20Probability%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Scale, Circles, Angles & Probability\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%207%20Scale%2C%20Circles%2C%20Angles%20%26%20Probability",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Scale, Circles, Angles & Probability (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Scale%2C%20Circles%2C%20Angles%20%26%20Probability",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

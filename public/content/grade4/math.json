@@ -3,7 +3,7 @@
   "subject": "math",
   "grade": 4,
   "title": "Grade 4 Mathematics",
-  "subtitle": "Place Value, Multi-Digit Operations, Fractions, Decimals & Geometry",
+  "subtitle": "Place Value, Multi-Digit Operations, Fractions, Decimals, Geometry & Angles",
   "credits": 1,
   "color": "#2563eb",
   "icon": "∑",
@@ -20,12 +20,13 @@
         {
           "id": "g4-math-u1-l1",
           "unitId": "g4-math-u1",
-          "title": "Lesson 1: Place Value & Rounding Multi-Digit Numbers",
+          "title": "Lesson 1a: Place Value & Rounding Multi-Digit Numbers",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Place Value & Rounding",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2",
           "videoTitle": "Khan Academy: Place Value & Rounding to Nearest 100 and 1,000",
-          "reading": "In the base-ten system, each place value represents 10 times the value to its right. To round a multi-digit number to a target place (such as the nearest hundred or thousand), inspect the digit immediately to the right: if it is 5 or greater, round up; if it is 4 or less, round down and replace all digits to the right with zeros.",
+          "reading": "In the base-ten system, each place is 10 times the place to its right. To round to the nearest hundred or thousand, look one digit to the right: 5 or more rounds up, and 4 or less stays the same.",
           "principles": [
             {
               "id": "p-g4-round",
@@ -34,17 +35,84 @@
               "summary": "Look one place to the right of the rounding place: 5 or more rounds up; 4 or less stays the same.",
               "generatorId": "g4.place-value-round"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Place Value & Rounding] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Rounding to Nearest Hundred and Thousand\" (4.NBT.A.3), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-math-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Place Value & Rounding to Nearest 100 and 1,000",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Rounding to Nearest Hundred and Thousand\" (4.NBT.A.3). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2"
+              },
+              {
+                "id": "g4-math-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Rounding to Nearest Hundred and Thousand.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-math-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (4.NBT.A.3)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Rounding to Nearest Hundred and Thousand.",
+              "Look one place to the right of the rounding place: 5 or more rounds up; 4 or less stays the same.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Rounding to Nearest Hundred and Thousand\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Place Value & Rounding\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20math%20Place%20Value%20%26%20Rounding%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Place Value & Rounding\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Place%20Value%20%26%20Rounding",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Place Value & Rounding (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Place%20Value%20%26%20Rounding",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g4-math-u1-l2",
           "unitId": "g4-math-u1",
-          "title": "Lesson 2: Multi-Digit Addition & Subtraction with Regrouping",
+          "title": "Lesson 1b: Multi-Digit Addition & Subtraction with Regrouping",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Multi-Digit Operations",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2",
           "videoTitle": "Khan Academy: Adding & Subtracting Multi-Digit Whole Numbers",
-          "reading": "When adding or subtracting multi-digit numbers using the standard algorithm, align digits by place value (ones, tens, hundreds, thousands). Regroup 10 of a smaller unit into 1 of the next larger unit when adding, or decompose 1 larger unit into 10 smaller units when subtracting.",
+          "reading": "Line up numbers by place value (ones, tens, hundreds, thousands). Regroup 10 smaller units into 1 larger unit when adding, or trade 1 larger unit for 10 smaller units when subtracting.",
           "principles": [
             {
               "id": "p-g4-addsub",
@@ -53,18 +121,84 @@
               "summary": "Align place values vertically and regroup across tens, hundreds, and thousands.",
               "generatorId": "g4.multi-digit-add-sub"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Multi-Digit Operations] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Standard Algorithm for Multi-Digit Addition & Subtraction\" (4.NBT.B.4), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-math-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Adding & Subtracting Multi-Digit Whole Numbers",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Standard Algorithm for Multi-Digit Addition & Subtraction\" (4.NBT.B.4). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2"
+              },
+              {
+                "id": "g4-math-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Standard Algorithm for Multi-Digit Addition & Subtraction.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-math-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (4.NBT.B.4)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Standard Algorithm for Multi-Digit Addition & Subtraction.",
+              "Align place values vertically and regroup across tens, hundreds, and thousands.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Standard Algorithm for Multi-Digit Addition & Subtraction\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Multi-Digit Operations\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20math%20Multi-Digit%20Operations%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Multi-Digit Operations\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Multi-Digit%20Operations",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Multi-Digit Operations (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Multi-Digit%20Operations",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g4-math-u1-test",
           "unitId": "g4-math-u1",
           "title": "Unit 1 Exam: Place Value & Multi-Digit Fluency",
           "kind": "unit_test",
-          "estimatedMinutes": 25,
+          "estimatedMinutes": 15,
           "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2",
           "videoTitle": "Unit 1 Review: Place Value & Regrouping",
-          "reading": "This Unit Exam assesses both rounding multi-digit numbers and fluent multi-digit addition and subtraction.",
-          "questionCount": 6,
+          "reading": "This Unit Exam checks both rounding multi-digit numbers and multi-digit addition and subtraction.",
+          "questionCount": 8,
           "principles": [
             {
               "id": "p-g4-round",
@@ -80,7 +214,66 @@
               "summary": "Fluently add and subtract multi-digit whole numbers.",
               "generatorId": "g4.multi-digit-add-sub"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Rounding to Nearest Hundred and Thousand & Standard Algorithm for Multi-Digit Addition & Subtraction (4.NBT.A.3, 4.NBT.B.4). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g4-math-u1-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Rounding to Nearest Hundred and Thousand & Standard Algorithm for Multi-Digit Addition & Subtraction",
+                "description": "Read the Core Concept Summary and Principle cards on this page (4.NBT.A.3, 4.NBT.B.4) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g4-math-u1-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 Review: Place Value & Regrouping",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Rounding to Nearest Hundred and Thousand & Standard Algorithm for Multi-Digit Addition & Subtraction\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Rounding to Nearest Hundred and Thousand.",
+              "Inspect the digit to the right of the target place to round accurately.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Rounding to Nearest Hundred and Thousand\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Place Value & Multi-Digit Fluency\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20math%20Place%20Value%20%26%20Multi-Digit%20Fluency%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Place Value & Multi-Digit Fluency\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Place%20Value%20%26%20Multi-Digit%20Fluency",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Place Value & Multi-Digit Fluency (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Place%20Value%20%26%20Multi-Digit%20Fluency",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     },
@@ -96,12 +289,13 @@
         {
           "id": "g4-math-u2-l1",
           "unitId": "g4-math-u2",
-          "title": "Lesson 1: Multiplying 2-Digit Numbers by Area Model & Partial Products",
+          "title": "Lesson 2a: Multiplying 2-Digit Numbers by Area Model",
           "kind": "lesson",
-          "estimatedMinutes": 22,
+          "partOf": "Multiplication & Division",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2",
           "videoTitle": "Khan Academy: Multiplying 2-Digit by 2-Digit Numbers",
-          "reading": "To multiply two 2-digit numbers such as 24 × 16, decompose each factor into tens and ones: (20 + 4) × (10 + 6). Multiply each part to find the four partial products, then add them together.",
+          "reading": "To multiply two 2-digit numbers like 24 × 16, break each number into tens and ones: (20 + 4) × (10 + 6). Multiply the four parts and add the partial products together.",
           "principles": [
             {
               "id": "p-g4-mult2",
@@ -110,17 +304,84 @@
               "summary": "Decompose factors by place value, multiply partial products, and sum the results.",
               "generatorId": "g4.mult-2digit"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Multiplication & Division] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Two-Digit Multiplication via Partial Products\" (4.NBT.B.5), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-math-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Multiplying 2-Digit by 2-Digit Numbers",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Two-Digit Multiplication via Partial Products\" (4.NBT.B.5). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2"
+              },
+              {
+                "id": "g4-math-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Two-Digit Multiplication via Partial Products.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-math-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (4.NBT.B.5)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Two-Digit Multiplication via Partial Products.",
+              "Decompose factors by place value, multiply partial products, and sum the results.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Two-Digit Multiplication via Partial Products\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Multiplication & Division\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20math%20Multiplication%20%26%20Division%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Multiplication & Division\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Multiplication%20%26%20Division",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Multiplication & Division (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Multiplication%20%26%20Division",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g4-math-u2-l2",
           "unitId": "g4-math-u2",
-          "title": "Lesson 2: Division with Remainders & Partial Quotients",
+          "title": "Lesson 2b: Division with Remainders",
           "kind": "lesson",
-          "estimatedMinutes": 22,
+          "partOf": "Multiplication & Division",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2",
           "videoTitle": "Khan Academy: Division with Remainders",
-          "reading": "Division finds how many equal groups fit into a dividend. When a dividend is not a multiple of the divisor, the leftover amount is the remainder (R), which must always be strictly less than the divisor: Dividend = (Divisor × Quotient) + Remainder.",
+          "reading": "Division splits a number into equal groups. Any leftover amount is the remainder (R), which is always smaller than the divisor: Dividend = (Divisor × Quotient) + Remainder.",
           "principles": [
             {
               "id": "p-g4-divrem",
@@ -129,18 +390,84 @@
               "summary": "Verify division using Dividend = Divisor × Quotient + Remainder, with Remainder < Divisor.",
               "generatorId": "g4.div-remainders"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Multiplication & Division] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Quotients and Remainders\" (4.NBT.B.6), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-math-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Division with Remainders",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Quotients and Remainders\" (4.NBT.B.6). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2"
+              },
+              {
+                "id": "g4-math-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Quotients and Remainders.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-math-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (4.NBT.B.6)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Quotients and Remainders.",
+              "Verify division using Dividend = Divisor × Quotient + Remainder, with Remainder < Divisor.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Quotients and Remainders\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Multiplication & Division\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20math%20Multiplication%20%26%20Division%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Multiplication & Division\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Multiplication%20%26%20Division",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Multiplication & Division (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Multiplication%20%26%20Division",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g4-math-u2-test",
           "unitId": "g4-math-u2",
           "title": "Unit 2 Exam: Multiplication & Division Mastery",
           "kind": "unit_test",
-          "estimatedMinutes": 25,
+          "estimatedMinutes": 15,
           "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2",
           "videoTitle": "Unit 2 Review: Multi-Digit Multiplication & Division",
-          "reading": "Demonstrate mastery of two-digit multiplication and division with remainders.",
-          "questionCount": 6,
+          "reading": "Show mastery of two-digit multiplication and division with remainders.",
+          "questionCount": 8,
           "principles": [
             {
               "id": "p-g4-mult2",
@@ -156,29 +483,90 @@
               "summary": "Divide whole numbers and interpret remainders.",
               "generatorId": "g4.div-remainders"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Two-Digit Multiplication via Partial Products & Quotients and Remainders (4.NBT.B.5, 4.NBT.B.6). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g4-math-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Two-Digit Multiplication via Partial Products & Quotients and Remainders",
+                "description": "Read the Core Concept Summary and Principle cards on this page (4.NBT.B.5, 4.NBT.B.6) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g4-math-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Review: Multi-Digit Multiplication & Division",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Two-Digit Multiplication via Partial Products & Quotients and Remainders\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Two-Digit Multiplication via Partial Products.",
+              "Decompose factors by place value and add partial products.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Two-Digit Multiplication via Partial Products\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Multiplication & Division Mastery\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20math%20Multiplication%20%26%20Division%20Mastery%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Multiplication & Division Mastery\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Multiplication%20%26%20Division%20Mastery",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Multiplication & Division Mastery (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Multiplication%20%26%20Division%20Mastery",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "g4-math-u3",
-      "title": "Unit 3: Equivalent Fractions, Decimals & Geometric Measurement",
+      "title": "Unit 3: Fractions, Decimals, Geometry & Ohio Angle Measurement",
       "standards": [
         "4.NF.A.1",
         "4.NF.B.3",
         "4.NF.C.6",
-        "4.MD.A.3"
+        "4.MD.A.3",
+        "OH.4.MD.C.7"
       ],
       "lessons": [
         {
           "id": "g4-math-u3-l1",
           "unitId": "g4-math-u3",
-          "title": "Lesson 1: Equivalent Fractions & Adding Like Fractions",
+          "title": "Lesson 3a: Equivalent Fractions & Adding Like Fractions",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Fractions & Decimals",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2",
           "videoTitle": "Khan Academy: Equivalent Fractions & Adding Fractions",
-          "reading": "Multiplying both the numerator and denominator of a fraction by the same nonzero whole number creates an equivalent fraction (a/b = (n×a)/(n×b)). To add fractions with the same denominator, add the numerators and keep the common denominator.",
+          "reading": "Multiply the top and bottom of a fraction by the same number to make an equivalent fraction. To add fractions with the same denominator, add the top numbers and keep the bottom number.",
           "principles": [
             {
               "id": "p-g4-equiv-frac",
@@ -194,17 +582,84 @@
               "summary": "Add numerators while keeping the like denominator unchanged.",
               "generatorId": "g4.fraction-add-like"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Fractions & Decimals] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Generating Equivalent Fractions & Adding Fractions with Like Denominators\" (4.NF.A.1, 4.NF.B.3), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-math-u3-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Equivalent Fractions & Adding Fractions",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Generating Equivalent Fractions & Adding Fractions with Like Denominators\" (4.NF.A.1, 4.NF.B.3). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2"
+              },
+              {
+                "id": "g4-math-u3-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Generating Equivalent Fractions & Adding Fractions with Like Denominators.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-math-u3-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (4.NF.A.1, 4.NF.B.3)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Generating Equivalent Fractions.",
+              "Multiply or divide numerator and denominator by the same nonzero number.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Generating Equivalent Fractions\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Fractions & Decimals\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20math%20Fractions%20%26%20Decimals%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Fractions & Decimals\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Fractions%20%26%20Decimals",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Fractions & Decimals (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Fractions%20%26%20Decimals",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g4-math-u3-l2",
           "unitId": "g4-math-u3",
-          "title": "Lesson 2: Decimal Notation & Area/Perimeter of Rectangles",
+          "title": "Lesson 3b: Decimals & Rectangle Area and Perimeter",
           "kind": "lesson",
-          "estimatedMinutes": 22,
+          "partOf": "Fractions & Decimals",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-decimals",
           "videoTitle": "Khan Academy: Decimals as Fractions & Area/Perimeter",
-          "reading": "Decimals with two digits after the decimal point represent hundredths (0.47 = 47/100). In geometry, the perimeter of a rectangle is the distance around its boundary (P = 2L + 2W), while its area is the number of square units inside (A = L × W).",
+          "reading": "Two digits after a decimal point show hundredths (0.47 = 47/100). For a rectangle, perimeter is the distance around the outside (P = 2L + 2W) and area is the space inside (A = L × W).",
           "principles": [
             {
               "id": "p-g4-decimals",
@@ -220,17 +675,170 @@
               "summary": "Use Area = L × W and Perimeter = 2(L + W) to solve measurement problems.",
               "generatorId": "g4.geometry-area-perim"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Fractions & Decimals] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Decimals and Fractions in Tenths & Hundredths & Area and Perimeter Formulas for Rectangles\" (4.NF.C.6, 4.MD.A.3), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-math-u3-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Decimals as Fractions & Area/Perimeter",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Decimals and Fractions in Tenths & Hundredths & Area and Perimeter Formulas for Rectangles\" (4.NF.C.6, 4.MD.A.3). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-decimals"
+              },
+              {
+                "id": "g4-math-u3-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Decimals and Fractions in Tenths & Hundredths & Area and Perimeter Formulas for Rectangles.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-math-u3-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (4.NF.C.6, 4.MD.A.3)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Decimals and Fractions in Tenths & Hundredths.",
+              "Convert between decimal notation and fractions with denominators of 10 or 100.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Decimals and Fractions in Tenths & Hundredths\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Fractions & Decimals\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20math%20Fractions%20%26%20Decimals%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Fractions & Decimals\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Fractions%20%26%20Decimals",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Fractions & Decimals (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Fractions%20%26%20Decimals",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g4-math-u3-l3",
+          "unitId": "g4-math-u3",
+          "title": "Lesson 3c (Ohio): Angle Addition & Decomposing Angles",
+          "kind": "lesson",
+          "partOf": "Geometric Measurement",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2",
+          "videoTitle": "Khan Academy: Measuring & Decomposing Angles",
+          "reading": "An angle is measured in degrees (°). A right angle is 90° and a straight line is 180°. When an angle is split into two smaller angles side by side, their measures add up to the whole angle.",
+          "principles": [
+            {
+              "id": "p-g4-ohio-angles",
+              "title": "Additive Angle Measurement & Decomposing Angles",
+              "standard": "OH.4.MD.C.7",
+              "summary": "Add and subtract adjacent angle measures, including complementary (90°) and supplementary (180°) angles.",
+              "generatorId": "g4.angles-measure"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Geometric Measurement] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Additive Angle Measurement & Decomposing Angles\" (OH.4.MD.C.7), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-math-u3-l3-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Measuring & Decomposing Angles",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Additive Angle Measurement & Decomposing Angles\" (OH.4.MD.C.7). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2"
+              },
+              {
+                "id": "g4-math-u3-l3-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Additive Angle Measurement & Decomposing Angles.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-math-u3-l3-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.4.MD.C.7)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Additive Angle Measurement & Decomposing Angles.",
+              "Add and subtract adjacent angle measures, including complementary (90°) and supplementary (180°) angles.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Additive Angle Measurement & Decomposing Angles\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Geometric Measurement\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20math%20Geometric%20Measurement%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Geometric Measurement\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Geometric%20Measurement",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Geometric Measurement (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Geometric%20Measurement",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g4-math-u3-test",
           "unitId": "g4-math-u3",
           "title": "Unit 3 Exam: Fractions, Decimals & Geometry",
           "kind": "unit_test",
-          "estimatedMinutes": 25,
+          "estimatedMinutes": 15,
           "videoUrl": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2",
           "videoTitle": "Unit 3 Comprehensive Review",
-          "reading": "Comprehensive assessment of equivalent fractions, like-denominator addition, decimals, and rectangle area/perimeter.",
+          "reading": "Review equivalent fractions, decimals, rectangle area and perimeter, and angle addition.",
           "questionCount": 8,
           "principles": [
             {
@@ -260,8 +868,74 @@
               "standard": "4.MD.A.3",
               "summary": "Distinguish square units of area from linear units of perimeter.",
               "generatorId": "g4.geometry-area-perim"
+            },
+            {
+              "id": "p-g4-ohio-angles",
+              "title": "Additive Angle Measurement & Decomposing Angles",
+              "standard": "OH.4.MD.C.7",
+              "summary": "Find unknown angles by adding or subtracting known parts.",
+              "generatorId": "g4.angles-measure"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Generating Equivalent Fractions & Adding Fractions with Like Denominators & Decimals and Fractions in Tenths & Hundredths & Area and Perimeter Formulas for Rectangles & Additive Angle Measurement & Decomposing Angles (4.NF.A.1, 4.NF.B.3, 4.NF.C.6, 4.MD.A.3, OH.4.MD.C.7). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g4-math-u3-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Generating Equivalent Fractions & Adding Fractions with Like Denominators & Decimals and Fractions in Tenths & Hundredths & Area and Perimeter Formulas for Rectangles & Additive Angle Measurement & Decomposing Angles",
+                "description": "Read the Core Concept Summary and Principle cards on this page (4.NF.A.1, 4.NF.B.3, 4.NF.C.6, 4.MD.A.3, OH.4.MD.C.7) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g4-math-u3-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 3 Comprehensive Review",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Generating Equivalent Fractions & Adding Fractions with Like Denominators & Decimals and Fractions in Tenths & Hundredths & Area and Perimeter Formulas for Rectangles & Additive Angle Measurement & Decomposing Angles\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Generating Equivalent Fractions.",
+              "Scale numerator and denominator equally.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Generating Equivalent Fractions\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Fractions, Decimals & Geometry\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20math%20Fractions%2C%20Decimals%20%26%20Geometry%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Fractions, Decimals & Geometry\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Fractions%2C%20Decimals%20%26%20Geometry",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Fractions, Decimals & Geometry (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Fractions%2C%20Decimals%20%26%20Geometry",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     }

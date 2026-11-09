@@ -3,270 +3,1036 @@
   "subject": "ela",
   "grade": 4,
   "title": "Grade 4 Language Arts",
-  "subtitle": "Reading Comprehension, Theme, Text Structure, Figurative Language & Grammar",
+  "subtitle": "Theme, Objective Summary, Text Structure, Figurative Language & Grammar",
   "credits": 1,
   "color": "#9333ea",
   "icon": "✒",
   "units": [
     {
       "id": "g4-ela-u1",
-      "title": "Unit 1: Theme, Main Idea & Text Evidence",
+      "title": "Unit 1: Theme, Objective Summary & Text Structure",
       "standards": [
         "RL.4.1",
         "RL.4.2",
-        "RI.4.2",
+        "OH.RL.4.2",
         "RI.4.5"
       ],
       "lessons": [
         {
           "id": "g4-ela-u1-l1",
           "unitId": "g4-ela-u1",
-          "title": "Lesson 1: Determining Theme & Supporting Details in Literature",
+          "title": "Lesson 1a: Finding Theme & Using Text Clues",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Theme & Main Idea",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/ela/cc-4th-reading-vocab",
           "videoTitle": "Khan Academy ELA: Finding the Theme of a Story",
-          "reading": "The theme of a story is its underlying message or life lesson about how the world works (for example, \"Perseverance through failure leads to growth\"). Unlike the plot (what happens) or the topic (one or two words like \"friendship\"), a theme is a complete statement supported by how characters respond to challenges.",
+          "reading": "The theme of a story is the big life lesson it teaches (such as \"Steady practice overcomes mistakes\"). You can also make inferences by combining text clues with what you already know.",
           "principles": [
             {
               "id": "p-g4-ela-theme",
-              "title": "Identifying Theme vs. Plot and Using Text Evidence",
+              "title": "Identifying Theme and Using Text Evidence",
               "standard": "RL.4.2",
-              "summary": "Theme is the universal life lesson revealed by how characters grow or overcome obstacles.",
+              "summary": "Theme is the big life lesson a story teaches, supported by character actions and text clues.",
               "bank": [
                 {
-                  "id": "el1",
+                  "id": "g4-ela-th-1",
                   "type": "mc",
-                  "passage": "Maya practiced her violin solo all week, but during rehearsal her strings squeaked and she forgot the second measure. Instead of quitting, she asked her music teacher for tips on bow pressure and practiced slowly each evening. On concert night, her melody rang clear across the auditorium.",
-                  "prompt": "What is the central theme of the passage about Maya?",
+                  "passage": "Maya squeaked her violin strings during rehearsal and forgot a measure. Instead of quitting, she asked her teacher for help and practiced slowly every night. At the concert, her song rang clear and sweet.",
+                  "prompt": "What is the central theme of Maya’s story?",
                   "choices": [
-                    "Patient practice and seeking help can turn early setbacks into success.",
-                    "Violin strings always squeak during rehearsals.",
-                    "Concerts are held in large auditoriums.",
-                    "Only naturally talented musicians should perform solos."
+                    "Steady practice and asking help overcome setbacks.",
+                    "Violins always squeak in concerts.",
+                    "Music teachers never play violin.",
+                    "Only lucky people can play music."
                   ],
-                  "answer": "Patient practice and seeking help can turn early setbacks into success.",
-                  "explanation": "Maya’s response to her mistake—asking for guidance and practicing steadily—demonstrates the lesson that persistence overcomes setbacks."
+                  "answer": "Steady practice and asking help overcome setbacks.",
+                  "explanation": "Theme is the life lesson of a story. Maya’s hard work shows that persistence leads to success."
                 },
                 {
-                  "id": "el2",
+                  "id": "g4-ela-th-2",
                   "type": "mc",
-                  "passage": "Leo found a wallet on the park bench containing twenty dollars—the exact price of the skateboard helmet he wanted. Looking inside, he saw a neighbor’s library card. Leo walked straight to Mrs. Alvarez’s porch and handed her the wallet. She smiled warmly and thanked him for his honesty.",
-                  "prompt": "Which statement best expresses the theme of this story?",
+                  "passage": "Leo found a wallet on a park bench with twenty dollars inside. He saw Mrs. Alvarez’s library card in it and walked straight to her porch to return it. She smiled and thanked him.",
+                  "prompt": "What life lesson does Leo’s choice teach?",
                   "choices": [
-                    "Doing the right thing brings a deeper reward than keeping what is not yours.",
-                    "Skateboard helmets cost twenty dollars.",
-                    "Library cards should be kept in wallets.",
-                    "Parks are dangerous places to leave belongings."
+                    "Honesty is better than keeping what is not yours.",
+                    "Library cards cost twenty dollars.",
+                    "Wallets belong on park benches.",
+                    "Never walk through a neighborhood park."
                   ],
-                  "answer": "Doing the right thing brings a deeper reward than keeping what is not yours.",
-                  "explanation": "Leo chooses integrity over temptation, illustrating a moral lesson about honesty."
+                  "answer": "Honesty is better than keeping what is not yours.",
+                  "explanation": "Leo returns the lost wallet instead of keeping the money, showing the theme of honesty."
                 },
                 {
-                  "id": "el3",
+                  "id": "g4-ela-th-3",
                   "type": "mc",
-                  "prompt": "Which of the following is an example of a THEME rather than a topic or plot detail?",
+                  "prompt": "Which statement is a complete story theme instead of just a topic?",
                   "choices": [
-                    "True friends stand by each other even when it is inconvenient.",
-                    "Two boys go camping in the mountains.",
-                    "Courage and bravery.",
-                    "A dog chases a squirrel up an oak tree."
+                    "True friends help each other in hard times.",
+                    "Two boys go camping.",
+                    "Bravery and courage.",
+                    "A dog runs fast."
                   ],
-                  "answer": "True friends stand by each other even when it is inconvenient.",
-                  "explanation": "A theme is a universal message stated as a full thought, not a single-word topic or a specific plot event."
+                  "answer": "True friends help each other in hard times.",
+                  "explanation": "A topic is one or two words, while a theme is a full sentence stating a life lesson."
                 },
                 {
-                  "id": "el4",
+                  "id": "g4-ela-th-4",
                   "type": "mc",
-                  "passage": "When the class garden wilted in the July heat, Noah wanted to blame Sam for forgetting the watering can. Instead, Elena organized a daily watering schedule where every student took a five-minute turn. Within two weeks, bright red tomatoes ripened on the vines.",
-                  "prompt": "What detail from the passage best supports the theme that teamwork solves problems better than blame?",
+                  "passage": "When the class garden wilted in July, Noah wanted to blame Sam. Instead, Elena made a five-minute daily watering schedule for everyone. Two weeks later, bright red tomatoes ripened.",
+                  "prompt": "Which detail supports the theme that teamwork solves problems?",
                   "choices": [
-                    "Elena organized a shared watering schedule and the garden recovered.",
-                    "The weather in July was very hot.",
-                    "Tomatoes are red when ripe.",
-                    "Noah noticed the watering can was empty."
+                    "Elena made a shared schedule that saved the garden.",
+                    "July weather was very sunny.",
+                    "Ripe tomatoes are bright red.",
+                    "The watering can was made of metal."
                   ],
-                  "answer": "Elena organized a shared watering schedule and the garden recovered.",
-                  "explanation": "Elena’s cooperative action directly contrasts with blame and produces the positive outcome."
+                  "answer": "Elena made a shared schedule that saved the garden.",
+                  "explanation": "Text evidence is a specific detail from the story that proves the main idea or theme."
                 },
                 {
-                  "id": "el5",
+                  "id": "g4-ela-th-5",
                   "type": "mc",
-                  "passage": "Crow boasted that his glossy black feathers made him the finest singer in the forest. Fox flattered Crow, asking to hear a song. The moment Crow opened his beak to caw, the piece of cheese he was holding dropped straight into Fox’s waiting jaws.",
-                  "prompt": "What lesson (theme) does this classic fable teach?",
+                  "passage": "Crow held a piece of cheese in his beak. Fox praised Crow’s shiny feathers and begged to hear him sing. When Crow opened his beak to caw, the cheese dropped into Fox’s mouth.",
+                  "prompt": "What is the theme of this fable about Crow and Fox?",
                   "choices": [
-                    "Beware of flatterers who praise you only to take advantage of your pride.",
-                    "Crows enjoy eating cheese in trees.",
-                    "Foxes cannot climb tall trees.",
-                    "Singing loudly improves your voice."
+                    "Do not let fake praise trick your pride.",
+                    "Crows are the best singers.",
+                    "Foxes can fly into tall trees.",
+                    "Cheese grows on oak branches."
                   ],
-                  "answer": "Beware of flatterers who praise you only to take advantage of your pride.",
-                  "explanation": "Crow’s vanity blinds him to Fox’s trick, teaching readers to be cautious of insincere flattery."
+                  "answer": "Do not let fake praise trick your pride.",
+                  "explanation": "A fable teaches a moral lesson. Crow’s pride made him fall for Fox’s trick."
                 },
                 {
-                  "id": "el6",
+                  "id": "g4-ela-th-6",
                   "type": "mc",
-                  "prompt": "When making an inference while reading a story, a reader combines:",
+                  "prompt": "What two things do you combine to make an inference while reading?",
                   "choices": [
-                    "Clues from the text with their own background knowledge",
-                    "Only the title and the page numbers",
-                    "Random guesses unrelated to the passage",
-                    "Only the dictionary definition of the last word"
+                    "Text clues and your own background knowledge",
+                    "Only page numbers and cover art",
+                    "Wild guesses without reading",
+                    "Only the last word of the book"
                   ],
-                  "answer": "Clues from the text with their own background knowledge",
-                  "explanation": "An inference is an evidence-based conclusion drawn from explicit text clues plus prior knowledge."
+                  "answer": "Text clues and your own background knowledge",
+                  "explanation": "An inference is a smart conclusion made by combining clues in the text with what you already know."
                 },
                 {
-                  "id": "el7",
+                  "id": "g4-ela-th-7",
                   "type": "mc",
-                  "passage": "As the ferry pulled away from the dock, Sofia gripped the railing, her knuckles white. She stared at the shrinking shoreline and swallowed hard, barely hearing her brother’s excited chatter about the island ahead.",
-                  "prompt": "What can you infer about how Sofia feels?",
+                  "passage": "As the boat left the dock, Sofia gripped the railing with white knuckles. She stared back at the shore and swallowed hard while her brother cheered.",
+                  "prompt": "What can you infer about how Sofia feels on the boat?",
                   "choices": [
-                    "She is nervous or anxious about leaving the shore.",
-                    "She is bored and falling asleep.",
-                    "She is angry at the ferry captain.",
-                    "She has visited the island every day for years."
+                    "She feels nervous about leaving shore.",
+                    "She is fast asleep.",
+                    "She is angry at her brother.",
+                    "She captains the boat every day."
                   ],
-                  "answer": "She is nervous or anxious about leaving the shore.",
-                  "explanation": "White knuckles, staring back at the shore, and swallowing hard are physical clues showing nervousness."
+                  "answer": "She feels nervous about leaving shore.",
+                  "explanation": "Clues like white knuckles and swallowing hard show that Sofia is nervous, even without saying the word."
                 },
                 {
-                  "id": "el8",
+                  "id": "g4-ela-th-8",
                   "type": "mc",
-                  "prompt": "In an informational article, how does the MAIN IDEA differ from supporting details?",
+                  "prompt": "How do supporting details help the main idea in an article?",
                   "choices": [
-                    "The main idea is the overarching point the author makes; supporting details are facts and examples that prove it.",
-                    "Supporting details always appear in the title.",
-                    "The main idea is always a fictional moral.",
-                    "There is no difference between them."
+                    "They give facts and examples that prove it.",
+                    "They change the topic completely.",
+                    "They only tell jokes.",
+                    "They replace the title."
                   ],
-                  "answer": "The main idea is the overarching point the author makes; supporting details are facts and examples that prove it.",
-                  "explanation": "Supporting details provide specific facts, statistics, and examples that back up the central main idea."
+                  "answer": "They give facts and examples that prove it.",
+                  "explanation": "The main idea is the key point, and supporting details are the facts that back it up."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Theme & Main Idea] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Identifying Theme and Using Text Evidence\" (RL.4.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-ela-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy ELA: Finding the Theme of a Story",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Identifying Theme and Using Text Evidence\" (RL.4.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-4th-reading-vocab"
+              },
+              {
+                "id": "g4-ela-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Identifying Theme and Using Text Evidence.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-ela-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (RL.4.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Identifying Theme and Using Text Evidence.",
+              "Theme is the big life lesson a story teaches, supported by character actions and text clues.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the central theme of Maya’s story?\" → Answer: Steady practice and asking help overcome setbacks.. (Theme is the life lesson of a story. Maya’s hard work shows that persistence leads to success.)",
+            "links": [
+              {
+                "label": "YouTube: \"Theme & Main Idea\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20ela%20Theme%20%26%20Main%20Idea%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Theme & Main Idea\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Theme%20%26%20Main%20Idea",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g4-ela-u1-l2",
           "unitId": "g4-ela-u1",
-          "title": "Lesson 2: Informational Text Structures (Cause/Effect, Compare/Contrast, Chronology)",
+          "title": "Lesson 1b (Ohio): Theme vs. Summary in Ohio Stories",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Theme & Main Idea",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-4th-reading-vocab",
+          "videoTitle": "Distinguishing Theme from Objective Summary",
+          "reading": "In Ohio’s ELA standards, readers separate theme from summary. A theme is the life lesson, while an objective summary briefly retells the main events in order without personal opinions.",
+          "principles": [
+            {
+              "id": "p-g4-ela-ohio-summary",
+              "title": "Theme vs. Summary in Ohio & Midwest Texts",
+              "standard": "OH.RL.4.2",
+              "summary": "A summary retells key events in order without opinions, while a theme states the universal life lesson.",
+              "bank": [
+                {
+                  "id": "g4-ela-oh-1",
+                  "type": "mc",
+                  "passage": "Johnny Appleseed walked across Ohio planting apple seeds in clearings. He shared saplings with pioneer families so orchards would feed newcomers for years.",
+                  "prompt": "What is the theme of this passage about Johnny Appleseed?",
+                  "choices": [
+                    "Generous actions today can help others for years.",
+                    "Apples only grow near rivers.",
+                    "Pioneers disliked eating fruit.",
+                    "Walking barefoot is very easy."
+                  ],
+                  "answer": "Generous actions today can help others for years.",
+                  "explanation": "Theme is the universal life lesson. Planting trees for future families shows generosity and foresight."
+                },
+                {
+                  "id": "g4-ela-oh-2",
+                  "type": "mc",
+                  "passage": "Johnny Appleseed walked across Ohio planting apple seeds in clearings. He shared saplings with pioneer families so orchards would feed newcomers for years.",
+                  "prompt": "Which sentence is the best summary of this passage?",
+                  "choices": [
+                    "Johnny Appleseed planted apple trees across Ohio to feed pioneers.",
+                    "Apples are the tastiest fruit in the world.",
+                    "Everyone should move to Ohio.",
+                    "Seeds are smaller than leaves."
+                  ],
+                  "answer": "Johnny Appleseed planted apple trees across Ohio to feed pioneers.",
+                  "explanation": "A summary briefly retells the main facts of a passage without adding personal opinions."
+                },
+                {
+                  "id": "g4-ela-oh-3",
+                  "type": "mc",
+                  "prompt": "What should NEVER be included in an objective summary of an article?",
+                  "choices": [
+                    "Your personal opinions and feelings",
+                    "The main idea of the text",
+                    "Key facts from the passage",
+                    "The important events in order"
+                  ],
+                  "answer": "Your personal opinions and feelings",
+                  "explanation": "An objective summary sticks strictly to the facts and main points from the text, leaving out opinions."
+                },
+                {
+                  "id": "g4-ela-oh-4",
+                  "type": "mc",
+                  "passage": "In Dayton, Ohio, Orville and Wilbur Wright tested gliders that crashed in the sand. Each time, they measured the wings, fixed the frame, and tried again until they flew.",
+                  "prompt": "What theme do the Wright brothers’ experiments show?",
+                  "choices": [
+                    "Learning from mistakes leads to great discoveries.",
+                    "Bicycles are faster than airplanes.",
+                    "Sand dunes are too windy for gliders.",
+                    "First tries always work perfectly."
+                  ],
+                  "answer": "Learning from mistakes leads to great discoveries.",
+                  "explanation": "The Wright brothers studied each crash and kept improving, showing the theme of perseverance."
+                },
+                {
+                  "id": "g4-ela-oh-5",
+                  "type": "mc",
+                  "prompt": "How is a story summary different from a story theme?",
+                  "choices": [
+                    "A summary retells main events; theme is the life lesson.",
+                    "A summary is one word; theme is ten pages.",
+                    "A theme only lists character names.",
+                    "They mean the exact same thing."
+                  ],
+                  "answer": "A summary retells main events; theme is the life lesson.",
+                  "explanation": "A summary tells what happened in the text, while a theme explains the deeper message or lesson."
+                },
+                {
+                  "id": "g4-ela-oh-6",
+                  "type": "mc",
+                  "passage": "When floodwaters rose along the Ohio River, neighbors filled sandbags together all night. By morning, the strong wall kept every home on the street dry.",
+                  "prompt": "What is the theme of this Ohio River story?",
+                  "choices": [
+                    "Neighbors working together can protect their community.",
+                    "Sandbags are filled with river water.",
+                    "Floods only happen at night.",
+                    "Houses near rivers are always blue."
+                  ],
+                  "answer": "Neighbors working together can protect their community.",
+                  "explanation": "The neighbors united to build the sandbag wall, teaching a lesson about community cooperation."
+                },
+                {
+                  "id": "g4-ela-oh-7",
+                  "type": "mc",
+                  "passage": "The Ohio and Erie Canal opened in 1832, linking Lake Erie to the Ohio River. Canal boats pulled by mules carried farmers’ wheat to distant markets.",
+                  "prompt": "Which choice best summarizes this paragraph?",
+                  "choices": [
+                    "The 1832 Ohio canal let boats carry crops to market.",
+                    "Mules are much smarter than horses.",
+                    "Canals are fun places to swim.",
+                    "Wheat grows only in winter."
+                  ],
+                  "answer": "The 1832 Ohio canal let boats carry crops to market.",
+                  "explanation": "A good summary captures who, what, and why in one short statement using facts from the text."
+                },
+                {
+                  "id": "g4-ela-oh-8",
+                  "type": "mc",
+                  "prompt": "Which detail belongs in a summary of a story?",
+                  "choices": [
+                    "The main problem and how it was solved",
+                    "Every single adjective on page two",
+                    "Whether you liked the cover art",
+                    "A list of your favorite foods"
+                  ],
+                  "answer": "The main problem and how it was solved",
+                  "explanation": "A story summary includes the main characters, the central problem, and the resolution."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Theme & Main Idea] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Theme vs. Summary in Ohio & Midwest Texts\" (OH.RL.4.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-ela-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Distinguishing Theme from Objective Summary",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Theme vs. Summary in Ohio & Midwest Texts\" (OH.RL.4.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-4th-reading-vocab"
+              },
+              {
+                "id": "g4-ela-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Theme vs. Summary in Ohio & Midwest Texts.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-ela-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.RL.4.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Theme vs. Summary in Ohio & Midwest Texts.",
+              "A summary retells key events in order without opinions, while a theme states the universal life lesson.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the theme of this passage about Johnny Appleseed?\" → Answer: Generous actions today can help others for years.. (Theme is the universal life lesson. Planting trees for future families shows generosity and foresight.)",
+            "links": [
+              {
+                "label": "YouTube: \"Theme & Main Idea\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20ela%20Theme%20%26%20Main%20Idea%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Theme & Main Idea\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Theme%20%26%20Main%20Idea",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g4-ela-u1-l3",
+          "unitId": "g4-ela-u1",
+          "title": "Lesson 1c: Informational Text Structures",
+          "kind": "lesson",
+          "partOf": "Text Structure",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/ela/cc-4th-reading-vocab",
           "videoTitle": "Khan Academy ELA: Informational Text Structures",
-          "reading": "Authors organize informational texts using deliberate structures: Chronological/Sequence (steps or events in time order using signal words like first, next, finally, in 1903), Cause and Effect (why something happens and its result: because, consequently, therefore), Compare and Contrast (similarities and differences: both, however, unlike), and Problem and Solution.",
+          "reading": "Authors organize nonfiction in clear patterns: Sequence (first, next, finally), Cause and Effect (because, as a result), Compare and Contrast (both, however), and Problem and Solution.",
           "principles": [
             {
               "id": "p-g4-ela-structure",
-              "title": "Recognizing Informational Text Structures & Signal Words",
+              "title": "Recognizing Informational Text Structures",
               "standard": "RI.4.5",
-              "summary": "Identify chronology, cause/effect, compare/contrast, and problem/solution from organization and signal words.",
+              "summary": "Spot chronology, cause/effect, compare/contrast, and problem/solution using signal words.",
               "bank": [
                 {
-                  "id": "ts1",
+                  "id": "g4-ela-ts-1",
                   "type": "mc",
-                  "passage": "Both butterflies and moths belong to the insect order Lepidoptera and have wings covered in tiny scales. However, butterflies usually fly during the day and rest with their wings folded upright, whereas most moths are active at night and rest with their wings flat.",
-                  "prompt": "Which text structure does the author use in this passage?",
+                  "passage": "Both butterflies and moths have wings with tiny scales. However, butterflies fly during the day, whereas most moths fly at night.",
+                  "prompt": "What text structure is used in this passage?",
                   "choices": [
                     "Compare and Contrast",
                     "Chronological Order",
                     "Problem and Solution",
-                    "First-Person Narrative"
+                    "Fairy Tale"
                   ],
                   "answer": "Compare and Contrast",
-                  "explanation": "Signal words like \"Both,\" \"However,\" and \"whereas\" show similarities and differences between butterflies and moths."
+                  "explanation": "Compare and contrast shows how two things are alike and different using words like \"both\" and \"however.\""
                 },
                 {
-                  "id": "ts2",
+                  "id": "g4-ela-ts-2",
                   "type": "mc",
-                  "passage": "Because warm ocean water evaporated rapidly during late summer, humid air rose into the atmosphere. As a result, towering storm clouds formed and heavy rain fell along the coastline.",
-                  "prompt": "How is this passage organized?",
+                  "passage": "Because warm lake water evaporated into cold air, thick snow clouds formed. As a result, heavy lake-effect snow fell on Cleveland.",
+                  "prompt": "How is this weather passage organized?",
                   "choices": [
                     "Cause and Effect",
                     "Compare and Contrast",
                     "Alphabetical Order",
-                    "Dialogue"
-                  ],
-                  "answer": "Cause and Effect",
-                  "explanation": "\"Because\" and \"As a result\" explain why the storm formed (cause) and what happened next (effect)."
-                },
-                {
-                  "id": "ts3",
-                  "type": "mc",
-                  "passage": "To build a backyard compost bin, first choose a shady, level spot. Next, layer dry brown leaves with green kitchen scraps. Then, sprinkle water to keep the pile damp, and finally turn the pile with a pitchfork every week.",
-                  "prompt": "Which text structure is used in these instructions?",
-                  "choices": [
-                    "Sequence / Chronological Order",
-                    "Compare and Contrast",
-                    "Cause and Effect",
-                    "Character Description"
-                  ],
-                  "answer": "Sequence / Chronological Order",
-                  "explanation": "Step-by-step signal words (\"first,\" \"Next,\" \"Then,\" \"finally\") indicate sequence order."
-                },
-                {
-                  "id": "ts4",
-                  "type": "mc",
-                  "passage": "Sea turtles Mistakenly swallow plastic bags floating in the ocean because they look like jellyfish. To solve this threat, coastal towns have banned single-use plastic bags and organized weekly beach cleanups.",
-                  "prompt": "Which text structure best describes this paragraph?",
-                  "choices": [
-                    "Problem and Solution",
-                    "Chronological Biography",
-                    "Compare and Contrast",
                     "Poetry"
                   ],
-                  "answer": "Problem and Solution",
-                  "explanation": "The first sentence states a serious environmental problem, and the second sentence describes actions taken to solve it."
+                  "answer": "Cause and Effect",
+                  "explanation": "Cause and effect explains why something happened and what resulted, using signal words like \"because\" and \"as a result.\""
                 },
                 {
-                  "id": "ts5",
+                  "id": "g4-ela-ts-3",
                   "type": "mc",
-                  "prompt": "Which group of signal words most strongly points to a CAUSE AND EFFECT text structure?",
+                  "passage": "To plant a seed, first dig a small hole in damp soil. Next, drop the seed in. Finally, cover it with dirt and water it.",
+                  "prompt": "What text structure is used in these planting steps?",
                   "choices": [
-                    "because, consequently, therefore, as a result",
-                    "first, second, next, finally",
-                    "similarly, alike, on the other hand, both",
-                    "once upon a time, happily ever after"
+                    "Sequence or Chronological Order",
+                    "Compare and Contrast",
+                    "Cause and Effect",
+                    "Dialogue"
                   ],
-                  "answer": "because, consequently, therefore, as a result",
-                  "explanation": "These transition words link reasons (causes) directly to outcomes (effects)."
+                  "answer": "Sequence or Chronological Order",
+                  "explanation": "Sequence order tells steps from first to last using words like \"first,\" \"next,\" and \"finally.\""
                 },
                 {
-                  "id": "ts6",
+                  "id": "g4-ela-ts-4",
                   "type": "mc",
-                  "prompt": "An article tracing the life of Wright brothers from childhood in the 1870s to their 1903 flight at Kitty Hawk uses:",
+                  "passage": "Sea turtles can mistake floating plastic bags for jellyfish and swallow them. To solve this problem, towns organize weekly beach cleanups.",
+                  "prompt": "What text structure describes the sea turtle paragraph?",
+                  "choices": [
+                    "Problem and Solution",
+                    "Chronological Order",
+                    "Compare and Contrast",
+                    "Tall Tale"
+                  ],
+                  "answer": "Problem and Solution",
+                  "explanation": "Problem and solution states a difficulty first and then explains how people fix it."
+                },
+                {
+                  "id": "g4-ela-ts-5",
+                  "type": "mc",
+                  "prompt": "Which signal words show a cause and effect text structure?",
+                  "choices": [
+                    "because, therefore, as a result",
+                    "first, next, finally",
+                    "both, alike, however",
+                    "once upon a time"
+                  ],
+                  "answer": "because, therefore, as a result",
+                  "explanation": "Signal words like \"because\" and \"therefore\" connect a reason (cause) to its outcome (effect)."
+                },
+                {
+                  "id": "g4-ela-ts-6",
+                  "type": "mc",
+                  "prompt": "A biography told by dates from 1870 to 1903 uses what structure?",
                   "choices": [
                     "Chronological Order",
                     "Compare and Contrast",
                     "Problem and Solution",
-                    "Spatial Order"
+                    "Rhyme Scheme"
                   ],
                   "answer": "Chronological Order",
-                  "explanation": "Events arranged by dates and time progression follow chronological order."
+                  "explanation": "Chronological order arranges real events in the time order in which they happened."
                 },
                 {
-                  "id": "ts7",
+                  "id": "g4-ela-ts-7",
                   "type": "mc",
-                  "prompt": "Which signal words help a reader spot a COMPARE AND CONTRAST paragraph?",
+                  "prompt": "Which signal words point to a compare and contrast paragraph?",
                   "choices": [
-                    "both, alike, however, in contrast",
-                    "therefore, since, due to",
-                    "first, after that, last",
-                    "problem, answer, remedy"
+                    "both, alike, however, unlike",
+                    "since, due to, consequently",
+                    "first, second, third",
+                    "question, answer, fix"
                   ],
-                  "answer": "both, alike, however, in contrast",
-                  "explanation": "Words like \"both\" and \"alike\" compare, while \"however\" and \"in contrast\" show differences."
+                  "answer": "both, alike, however, unlike",
+                  "explanation": "Words like \"both\" show similarities, while \"however\" and \"unlike\" show differences."
+                },
+                {
+                  "id": "g4-ela-ts-8",
+                  "type": "mc",
+                  "prompt": "Which text structure tells steps in order from beginning to end?",
+                  "choices": [
+                    "Sequence Order",
+                    "Compare and Contrast",
+                    "Cause and Effect",
+                    "Metaphor"
+                  ],
+                  "answer": "Sequence Order",
+                  "explanation": "Sequence order lists steps or events one after another in the exact order they happen."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Text Structure] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Recognizing Informational Text Structures\" (RI.4.5), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-ela-u1-l3-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy ELA: Informational Text Structures",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Recognizing Informational Text Structures\" (RI.4.5). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-4th-reading-vocab"
+              },
+              {
+                "id": "g4-ela-u1-l3-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Recognizing Informational Text Structures.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-ela-u1-l3-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (RI.4.5)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Recognizing Informational Text Structures.",
+              "Spot chronology, cause/effect, compare/contrast, and problem/solution using signal words.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What text structure is used in this passage?\" → Answer: Compare and Contrast. (Compare and contrast shows how two things are alike and different using words like \"both\" and \"however.\")",
+            "links": [
+              {
+                "label": "YouTube: \"Text Structure\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20ela%20Text%20Structure%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Text Structure\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Text%20Structure",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g4-ela-u1-review",
+          "unitId": "g4-ela-u1",
+          "title": "Unit 1 Review: Theme, Summary & Structure",
+          "kind": "lesson_review",
+          "estimatedMinutes": 12,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-4th-reading-vocab",
+          "videoTitle": "Unit 1 Reading Review",
+          "reading": "Review story themes, objective summaries, and nonfiction text structures for this 6-question checkup.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g4-ela-theme",
+              "title": "Identifying Theme and Using Text Evidence",
+              "standard": "RL.4.2",
+              "summary": "Theme is the big life lesson a story teaches, supported by character actions and text clues.",
+              "bank": [
+                {
+                  "id": "g4-ela-th-1",
+                  "type": "mc",
+                  "passage": "Maya squeaked her violin strings during rehearsal and forgot a measure. Instead of quitting, she asked her teacher for help and practiced slowly every night. At the concert, her song rang clear and sweet.",
+                  "prompt": "What is the central theme of Maya’s story?",
+                  "choices": [
+                    "Steady practice and asking help overcome setbacks.",
+                    "Violins always squeak in concerts.",
+                    "Music teachers never play violin.",
+                    "Only lucky people can play music."
+                  ],
+                  "answer": "Steady practice and asking help overcome setbacks.",
+                  "explanation": "Theme is the life lesson of a story. Maya’s hard work shows that persistence leads to success."
+                },
+                {
+                  "id": "g4-ela-th-2",
+                  "type": "mc",
+                  "passage": "Leo found a wallet on a park bench with twenty dollars inside. He saw Mrs. Alvarez’s library card in it and walked straight to her porch to return it. She smiled and thanked him.",
+                  "prompt": "What life lesson does Leo’s choice teach?",
+                  "choices": [
+                    "Honesty is better than keeping what is not yours.",
+                    "Library cards cost twenty dollars.",
+                    "Wallets belong on park benches.",
+                    "Never walk through a neighborhood park."
+                  ],
+                  "answer": "Honesty is better than keeping what is not yours.",
+                  "explanation": "Leo returns the lost wallet instead of keeping the money, showing the theme of honesty."
+                },
+                {
+                  "id": "g4-ela-th-3",
+                  "type": "mc",
+                  "prompt": "Which statement is a complete story theme instead of just a topic?",
+                  "choices": [
+                    "True friends help each other in hard times.",
+                    "Two boys go camping.",
+                    "Bravery and courage.",
+                    "A dog runs fast."
+                  ],
+                  "answer": "True friends help each other in hard times.",
+                  "explanation": "A topic is one or two words, while a theme is a full sentence stating a life lesson."
+                },
+                {
+                  "id": "g4-ela-th-4",
+                  "type": "mc",
+                  "passage": "When the class garden wilted in July, Noah wanted to blame Sam. Instead, Elena made a five-minute daily watering schedule for everyone. Two weeks later, bright red tomatoes ripened.",
+                  "prompt": "Which detail supports the theme that teamwork solves problems?",
+                  "choices": [
+                    "Elena made a shared schedule that saved the garden.",
+                    "July weather was very sunny.",
+                    "Ripe tomatoes are bright red.",
+                    "The watering can was made of metal."
+                  ],
+                  "answer": "Elena made a shared schedule that saved the garden.",
+                  "explanation": "Text evidence is a specific detail from the story that proves the main idea or theme."
+                },
+                {
+                  "id": "g4-ela-th-5",
+                  "type": "mc",
+                  "passage": "Crow held a piece of cheese in his beak. Fox praised Crow’s shiny feathers and begged to hear him sing. When Crow opened his beak to caw, the cheese dropped into Fox’s mouth.",
+                  "prompt": "What is the theme of this fable about Crow and Fox?",
+                  "choices": [
+                    "Do not let fake praise trick your pride.",
+                    "Crows are the best singers.",
+                    "Foxes can fly into tall trees.",
+                    "Cheese grows on oak branches."
+                  ],
+                  "answer": "Do not let fake praise trick your pride.",
+                  "explanation": "A fable teaches a moral lesson. Crow’s pride made him fall for Fox’s trick."
+                },
+                {
+                  "id": "g4-ela-th-6",
+                  "type": "mc",
+                  "prompt": "What two things do you combine to make an inference while reading?",
+                  "choices": [
+                    "Text clues and your own background knowledge",
+                    "Only page numbers and cover art",
+                    "Wild guesses without reading",
+                    "Only the last word of the book"
+                  ],
+                  "answer": "Text clues and your own background knowledge",
+                  "explanation": "An inference is a smart conclusion made by combining clues in the text with what you already know."
+                },
+                {
+                  "id": "g4-ela-th-7",
+                  "type": "mc",
+                  "passage": "As the boat left the dock, Sofia gripped the railing with white knuckles. She stared back at the shore and swallowed hard while her brother cheered.",
+                  "prompt": "What can you infer about how Sofia feels on the boat?",
+                  "choices": [
+                    "She feels nervous about leaving shore.",
+                    "She is fast asleep.",
+                    "She is angry at her brother.",
+                    "She captains the boat every day."
+                  ],
+                  "answer": "She feels nervous about leaving shore.",
+                  "explanation": "Clues like white knuckles and swallowing hard show that Sofia is nervous, even without saying the word."
+                },
+                {
+                  "id": "g4-ela-th-8",
+                  "type": "mc",
+                  "prompt": "How do supporting details help the main idea in an article?",
+                  "choices": [
+                    "They give facts and examples that prove it.",
+                    "They change the topic completely.",
+                    "They only tell jokes.",
+                    "They replace the title."
+                  ],
+                  "answer": "They give facts and examples that prove it.",
+                  "explanation": "The main idea is the key point, and supporting details are the facts that back it up."
+                }
+              ]
+            },
+            {
+              "id": "p-g4-ela-ohio-summary",
+              "title": "Theme vs. Summary in Ohio & Midwest Texts",
+              "standard": "OH.RL.4.2",
+              "summary": "A summary retells key events in order without opinions, while a theme states the universal life lesson.",
+              "bank": [
+                {
+                  "id": "g4-ela-oh-1",
+                  "type": "mc",
+                  "passage": "Johnny Appleseed walked across Ohio planting apple seeds in clearings. He shared saplings with pioneer families so orchards would feed newcomers for years.",
+                  "prompt": "What is the theme of this passage about Johnny Appleseed?",
+                  "choices": [
+                    "Generous actions today can help others for years.",
+                    "Apples only grow near rivers.",
+                    "Pioneers disliked eating fruit.",
+                    "Walking barefoot is very easy."
+                  ],
+                  "answer": "Generous actions today can help others for years.",
+                  "explanation": "Theme is the universal life lesson. Planting trees for future families shows generosity and foresight."
+                },
+                {
+                  "id": "g4-ela-oh-2",
+                  "type": "mc",
+                  "passage": "Johnny Appleseed walked across Ohio planting apple seeds in clearings. He shared saplings with pioneer families so orchards would feed newcomers for years.",
+                  "prompt": "Which sentence is the best summary of this passage?",
+                  "choices": [
+                    "Johnny Appleseed planted apple trees across Ohio to feed pioneers.",
+                    "Apples are the tastiest fruit in the world.",
+                    "Everyone should move to Ohio.",
+                    "Seeds are smaller than leaves."
+                  ],
+                  "answer": "Johnny Appleseed planted apple trees across Ohio to feed pioneers.",
+                  "explanation": "A summary briefly retells the main facts of a passage without adding personal opinions."
+                },
+                {
+                  "id": "g4-ela-oh-3",
+                  "type": "mc",
+                  "prompt": "What should NEVER be included in an objective summary of an article?",
+                  "choices": [
+                    "Your personal opinions and feelings",
+                    "The main idea of the text",
+                    "Key facts from the passage",
+                    "The important events in order"
+                  ],
+                  "answer": "Your personal opinions and feelings",
+                  "explanation": "An objective summary sticks strictly to the facts and main points from the text, leaving out opinions."
+                },
+                {
+                  "id": "g4-ela-oh-4",
+                  "type": "mc",
+                  "passage": "In Dayton, Ohio, Orville and Wilbur Wright tested gliders that crashed in the sand. Each time, they measured the wings, fixed the frame, and tried again until they flew.",
+                  "prompt": "What theme do the Wright brothers’ experiments show?",
+                  "choices": [
+                    "Learning from mistakes leads to great discoveries.",
+                    "Bicycles are faster than airplanes.",
+                    "Sand dunes are too windy for gliders.",
+                    "First tries always work perfectly."
+                  ],
+                  "answer": "Learning from mistakes leads to great discoveries.",
+                  "explanation": "The Wright brothers studied each crash and kept improving, showing the theme of perseverance."
+                },
+                {
+                  "id": "g4-ela-oh-5",
+                  "type": "mc",
+                  "prompt": "How is a story summary different from a story theme?",
+                  "choices": [
+                    "A summary retells main events; theme is the life lesson.",
+                    "A summary is one word; theme is ten pages.",
+                    "A theme only lists character names.",
+                    "They mean the exact same thing."
+                  ],
+                  "answer": "A summary retells main events; theme is the life lesson.",
+                  "explanation": "A summary tells what happened in the text, while a theme explains the deeper message or lesson."
+                },
+                {
+                  "id": "g4-ela-oh-6",
+                  "type": "mc",
+                  "passage": "When floodwaters rose along the Ohio River, neighbors filled sandbags together all night. By morning, the strong wall kept every home on the street dry.",
+                  "prompt": "What is the theme of this Ohio River story?",
+                  "choices": [
+                    "Neighbors working together can protect their community.",
+                    "Sandbags are filled with river water.",
+                    "Floods only happen at night.",
+                    "Houses near rivers are always blue."
+                  ],
+                  "answer": "Neighbors working together can protect their community.",
+                  "explanation": "The neighbors united to build the sandbag wall, teaching a lesson about community cooperation."
+                },
+                {
+                  "id": "g4-ela-oh-7",
+                  "type": "mc",
+                  "passage": "The Ohio and Erie Canal opened in 1832, linking Lake Erie to the Ohio River. Canal boats pulled by mules carried farmers’ wheat to distant markets.",
+                  "prompt": "Which choice best summarizes this paragraph?",
+                  "choices": [
+                    "The 1832 Ohio canal let boats carry crops to market.",
+                    "Mules are much smarter than horses.",
+                    "Canals are fun places to swim.",
+                    "Wheat grows only in winter."
+                  ],
+                  "answer": "The 1832 Ohio canal let boats carry crops to market.",
+                  "explanation": "A good summary captures who, what, and why in one short statement using facts from the text."
+                },
+                {
+                  "id": "g4-ela-oh-8",
+                  "type": "mc",
+                  "prompt": "Which detail belongs in a summary of a story?",
+                  "choices": [
+                    "The main problem and how it was solved",
+                    "Every single adjective on page two",
+                    "Whether you liked the cover art",
+                    "A list of your favorite foods"
+                  ],
+                  "answer": "The main problem and how it was solved",
+                  "explanation": "A story summary includes the main characters, the central problem, and the resolution."
+                }
+              ]
+            },
+            {
+              "id": "p-g4-ela-structure",
+              "title": "Recognizing Informational Text Structures",
+              "standard": "RI.4.5",
+              "summary": "Spot chronology, cause/effect, compare/contrast, and problem/solution using signal words.",
+              "bank": [
+                {
+                  "id": "g4-ela-ts-1",
+                  "type": "mc",
+                  "passage": "Both butterflies and moths have wings with tiny scales. However, butterflies fly during the day, whereas most moths fly at night.",
+                  "prompt": "What text structure is used in this passage?",
+                  "choices": [
+                    "Compare and Contrast",
+                    "Chronological Order",
+                    "Problem and Solution",
+                    "Fairy Tale"
+                  ],
+                  "answer": "Compare and Contrast",
+                  "explanation": "Compare and contrast shows how two things are alike and different using words like \"both\" and \"however.\""
+                },
+                {
+                  "id": "g4-ela-ts-2",
+                  "type": "mc",
+                  "passage": "Because warm lake water evaporated into cold air, thick snow clouds formed. As a result, heavy lake-effect snow fell on Cleveland.",
+                  "prompt": "How is this weather passage organized?",
+                  "choices": [
+                    "Cause and Effect",
+                    "Compare and Contrast",
+                    "Alphabetical Order",
+                    "Poetry"
+                  ],
+                  "answer": "Cause and Effect",
+                  "explanation": "Cause and effect explains why something happened and what resulted, using signal words like \"because\" and \"as a result.\""
+                },
+                {
+                  "id": "g4-ela-ts-3",
+                  "type": "mc",
+                  "passage": "To plant a seed, first dig a small hole in damp soil. Next, drop the seed in. Finally, cover it with dirt and water it.",
+                  "prompt": "What text structure is used in these planting steps?",
+                  "choices": [
+                    "Sequence or Chronological Order",
+                    "Compare and Contrast",
+                    "Cause and Effect",
+                    "Dialogue"
+                  ],
+                  "answer": "Sequence or Chronological Order",
+                  "explanation": "Sequence order tells steps from first to last using words like \"first,\" \"next,\" and \"finally.\""
+                },
+                {
+                  "id": "g4-ela-ts-4",
+                  "type": "mc",
+                  "passage": "Sea turtles can mistake floating plastic bags for jellyfish and swallow them. To solve this problem, towns organize weekly beach cleanups.",
+                  "prompt": "What text structure describes the sea turtle paragraph?",
+                  "choices": [
+                    "Problem and Solution",
+                    "Chronological Order",
+                    "Compare and Contrast",
+                    "Tall Tale"
+                  ],
+                  "answer": "Problem and Solution",
+                  "explanation": "Problem and solution states a difficulty first and then explains how people fix it."
+                },
+                {
+                  "id": "g4-ela-ts-5",
+                  "type": "mc",
+                  "prompt": "Which signal words show a cause and effect text structure?",
+                  "choices": [
+                    "because, therefore, as a result",
+                    "first, next, finally",
+                    "both, alike, however",
+                    "once upon a time"
+                  ],
+                  "answer": "because, therefore, as a result",
+                  "explanation": "Signal words like \"because\" and \"therefore\" connect a reason (cause) to its outcome (effect)."
+                },
+                {
+                  "id": "g4-ela-ts-6",
+                  "type": "mc",
+                  "prompt": "A biography told by dates from 1870 to 1903 uses what structure?",
+                  "choices": [
+                    "Chronological Order",
+                    "Compare and Contrast",
+                    "Problem and Solution",
+                    "Rhyme Scheme"
+                  ],
+                  "answer": "Chronological Order",
+                  "explanation": "Chronological order arranges real events in the time order in which they happened."
+                },
+                {
+                  "id": "g4-ela-ts-7",
+                  "type": "mc",
+                  "prompt": "Which signal words point to a compare and contrast paragraph?",
+                  "choices": [
+                    "both, alike, however, unlike",
+                    "since, due to, consequently",
+                    "first, second, third",
+                    "question, answer, fix"
+                  ],
+                  "answer": "both, alike, however, unlike",
+                  "explanation": "Words like \"both\" show similarities, while \"however\" and \"unlike\" show differences."
+                },
+                {
+                  "id": "g4-ela-ts-8",
+                  "type": "mc",
+                  "prompt": "Which text structure tells steps in order from beginning to end?",
+                  "choices": [
+                    "Sequence Order",
+                    "Compare and Contrast",
+                    "Cause and Effect",
+                    "Metaphor"
+                  ],
+                  "answer": "Sequence Order",
+                  "explanation": "Sequence order lists steps or events one after another in the exact order they happen."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering Identifying Theme and Using Text Evidence & Theme vs. Summary in Ohio & Midwest Texts & Recognizing Informational Text Structures (RL.4.2, OH.RL.4.2, RI.4.5). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g4-ela-u1-review-step-review",
+                "type": "reading",
+                "title": "Review Principles: Identifying Theme and Using Text Evidence & Theme vs. Summary in Ohio & Midwest Texts & Recognizing Informational Text Structures",
+                "description": "Read the Core Concept Summary and Principle cards on this page (RL.4.2, OH.RL.4.2, RI.4.5) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g4-ela-u1-review-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 Reading Review",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Identifying Theme and Using Text Evidence & Theme vs. Summary in Ohio & Midwest Texts & Recognizing Informational Text Structures\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/ela/cc-4th-reading-vocab"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Identifying Theme and Using Text Evidence.",
+              "Theme is the big life lesson a story teaches, supported by character actions and text clues.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the central theme of Maya’s story?\" → Answer: Steady practice and asking help overcome setbacks.. (Theme is the life lesson of a story. Maya’s hard work shows that persistence leads to success.)",
+            "links": [
+              {
+                "label": "YouTube: \"Unit 1 Review: Theme, Summary & Structure\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20ela%20Unit%201%20Review%3A%20Theme%2C%20Summary%20%26%20Structure%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Unit 1 Review: Theme, Summary & Structure\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Unit%201%20Review%3A%20Theme%2C%20Summary%20%26%20Structure",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "g4-ela-u2",
-      "title": "Unit 2: Figurative Language, Vocabulary & Sentence Conventions",
+      "title": "Unit 2: Figurative Language & Sentence Conventions",
       "standards": [
         "L.4.1",
         "L.4.4",
@@ -276,333 +1042,686 @@
         {
           "id": "g4-ela-u2-l1",
           "unitId": "g4-ela-u2",
-          "title": "Lesson 1: Similes, Metaphors, Idioms & Context Clues",
+          "title": "Lesson 2a: Similes, Metaphors, Idioms & Context Clues",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Figurative Language",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/ela/cc-4th-reading-vocab",
           "videoTitle": "Figurative Language: Similes, Metaphors & Idioms",
-          "reading": "Figurative language goes beyond literal word meanings. A simile compares two unlike things using \"like\" or \"as\" (\"her voice was as smooth as honey\"). A metaphor directly states that one thing IS another (\"the snow was a white blanket over the town\"). An idiom is a common expression whose figurative meaning differs from its literal words (\"piece of cake\" = very easy).",
+          "reading": "A simile compares two things using \"like\" or \"as.\" A metaphor says one thing IS another. Idioms are sayings like \"piece of cake\" (easy), and context clues help you figure out new words.",
           "principles": [
             {
               "id": "p-g4-ela-fig",
               "title": "Similes, Metaphors, Idioms & Context Clues",
               "standard": "L.4.5",
-              "summary": "Distinguish similes (uses like/as), metaphors (direct comparison), and idioms, and use context clues for unfamiliar words.",
+              "summary": "Similes use like/as, metaphors say one thing is another, and context clues reveal word meanings.",
               "bank": [
                 {
-                  "id": "fg1",
+                  "id": "g4-ela-fg-1",
                   "type": "mc",
-                  "prompt": "Which sentence contains a METAPHOR?",
+                  "prompt": "Which sentence contains a metaphor?",
                   "choices": [
-                    "The classroom was a buzzing beehive of activity before the science fair.",
-                    "The runner sprinted as fast as a cheetah.",
-                    "The kitten’s fur felt like soft velvet.",
-                    "He ate his lunch quickly at noon."
+                    "The classroom was a buzzing beehive.",
+                    "He ran as fast as a cheetah.",
+                    "The fur felt like soft velvet.",
+                    "She ate lunch at noon."
                   ],
-                  "answer": "The classroom was a buzzing beehive of activity before the science fair.",
-                  "explanation": "Calling the classroom \"a buzzing beehive\" directly compares two things without using \"like\" or \"as\"—that is a metaphor."
+                  "answer": "The classroom was a buzzing beehive.",
+                  "explanation": "A metaphor compares two unlike things directly by saying one thing IS the other, without \"like\" or \"as.\""
                 },
                 {
-                  "id": "fg2",
+                  "id": "g4-ela-fg-2",
                   "type": "mc",
-                  "prompt": "Which sentence contains a SIMILE?",
+                  "prompt": "Which sentence contains a simile?",
                   "choices": [
-                    "After the ice storm, the driveway was as slick as glass.",
-                    "Time is a thief that steals our summers.",
-                    "The library was a quiet sanctuary.",
-                    "She finished her math homework before dinner."
+                    "The icy sidewalk was as slick as glass.",
+                    "Snow is a white blanket.",
+                    "The library was a quiet cave.",
+                    "We walked home after school."
                   ],
-                  "answer": "After the ice storm, the driveway was as slick as glass.",
-                  "explanation": "Comparing the driveway to glass using \"as ... as\" is a simile."
+                  "answer": "The icy sidewalk was as slick as glass.",
+                  "explanation": "A simile compares two things using the words \"like\" or \"as.\""
                 },
                 {
-                  "id": "fg3",
+                  "id": "g4-ela-fg-3",
                   "type": "mc",
-                  "prompt": "Before the spelling bee, Grandpa told Caleb, \"Don’t worry—you know these words inside and out. It’ll be a piece of cake!\" What does the idiom \"a piece of cake\" mean?",
+                  "prompt": "What does the idiom \"a piece of cake\" mean?",
                   "choices": [
-                    "Something that is very easy to accomplish",
-                    "A dessert served after the contest",
-                    "Something that is impossible to finish",
-                    "A recipe that requires flour and sugar"
+                    "Something very easy to do",
+                    "A slice of birthday dessert",
+                    "Something impossible to finish",
+                    "A hard math test"
                   ],
-                  "answer": "Something that is very easy to accomplish",
-                  "explanation": "The idiom \"a piece of cake\" means a task is simple and easy."
+                  "answer": "Something very easy to do",
+                  "explanation": "An idiom is a phrase with a non-literal meaning. \"A piece of cake\" means an easy task."
                 },
                 {
-                  "id": "fg4",
+                  "id": "g4-ela-fg-4",
                   "type": "mc",
-                  "passage": "The ancient pottery was so FRAGILE that museum workers wore padded gloves and carried it in a foam-lined crate so it would not shatter.",
-                  "prompt": "Using context clues in the sentence, what does the word FRAGILE mean?",
+                  "passage": "The ancient clay bowl was so fragile that workers wore soft gloves so it would not shatter.",
+                  "prompt": "Using context clues, what does fragile mean?",
                   "choices": [
                     "Delicate and easily broken",
                     "Heavy and made of iron",
-                    "Brand new and flexible",
-                    "Waterproof and sturdy"
+                    "Stretchy like rubber",
+                    "Waterproof and strong"
                   ],
                   "answer": "Delicate and easily broken",
-                  "explanation": "Clues like \"padded gloves,\" \"foam-lined crate,\" and \"so it would not shatter\" show that fragile means easily broken."
+                  "explanation": "Context clues are nearby words that help explain an unfamiliar word. \"Shatter\" shows fragile means easily broken."
                 },
                 {
-                  "id": "fg5",
+                  "id": "g4-ela-fg-5",
                   "type": "mc",
                   "prompt": "What does the proverb \"Actions speak louder than words\" mean?",
                   "choices": [
-                    "What you actually do matters more than what you merely promise to do.",
+                    "What you do matters more than promises.",
                     "Shouting is better than whispering.",
-                    "Actors in plays must use microphones.",
-                    "Writing a letter takes longer than speaking."
+                    "Actors must talk very loudly.",
+                    "Books are quieter than movies."
                   ],
-                  "answer": "What you actually do matters more than what you merely promise to do.",
-                  "explanation": "A person’s behavior shows their true character more reliably than empty promises."
+                  "answer": "What you do matters more than promises.",
+                  "explanation": "A proverb is a traditional saying that gives advice. Real actions prove more than talk."
                 },
                 {
-                  "id": "fg6",
+                  "id": "g4-ela-fg-6",
                   "type": "mc",
-                  "passage": "After hiking ten miles up the steep trail, the scouts were FAMISHED and eagerly ate every sandwich in their packs.",
-                  "prompt": "Based on the context clues, what does FAMISHED mean?",
+                  "passage": "After hiking ten miles up the mountain, the scouts were famished and ate every sandwich.",
+                  "prompt": "What does the word famished mean in this sentence?",
                   "choices": [
                     "Extremely hungry",
-                    "Very cold",
-                    "Completely lost",
-                    "Wide awake"
+                    "Freezing cold",
+                    "Wide awake",
+                    "Very angry"
                   ],
                   "answer": "Extremely hungry",
-                  "explanation": "Hiking ten miles and eagerly eating every sandwich shows that \"famished\" means starving or very hungry."
+                  "explanation": "Hiking ten miles and eating every sandwich are context clues showing famished means very hungry."
                 },
                 {
-                  "id": "fg7",
+                  "id": "g4-ela-fg-7",
                   "type": "mc",
-                  "prompt": "When Sophia accidentally told her brother about the surprise party, she \"let the cat out of the bag.\" This idiom means she:",
+                  "prompt": "What does the idiom \"let the cat out of the bag\" mean?",
                   "choices": [
-                    "Revealed a secret by mistake",
-                    "Adopted a new pet kitten",
-                    "Lost her backpack at school",
-                    "Cleaned her bedroom"
+                    "Told a secret by mistake",
+                    "Bought a new pet kitten",
+                    "Lost a school backpack",
+                    "Fed the family dog"
                   ],
-                  "answer": "Revealed a secret by mistake",
-                  "explanation": "\"Letting the cat out of the bag\" is an idiom meaning to disclose a secret."
+                  "answer": "Told a secret by mistake",
+                  "explanation": "\"Letting the cat out of the bag\" is an idiom that means revealing a secret."
+                },
+                {
+                  "id": "g4-ela-fg-8",
+                  "type": "mc",
+                  "passage": "The beaver was industrious, working from sunrise to sunset to fix the log dam.",
+                  "prompt": "Based on the sentence, what does industrious mean?",
+                  "choices": [
+                    "Hard-working and busy",
+                    "Lazy and sleepy",
+                    "Loud and rude",
+                    "Tiny and weak"
+                  ],
+                  "answer": "Hard-working and busy",
+                  "explanation": "\"Working from sunrise to sunset\" is a context clue showing that industrious means hard-working."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Figurative Language] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Similes, Metaphors, Idioms & Context Clues\" (L.4.5), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-ela-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Figurative Language: Similes, Metaphors & Idioms",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Similes, Metaphors, Idioms & Context Clues\" (L.4.5). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-4th-reading-vocab"
+              },
+              {
+                "id": "g4-ela-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Similes, Metaphors, Idioms & Context Clues.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-ela-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (L.4.5)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Similes, Metaphors, Idioms & Context Clues.",
+              "Similes use like/as, metaphors say one thing is another, and context clues reveal word meanings.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which sentence contains a metaphor?\" → Answer: The classroom was a buzzing beehive.. (A metaphor compares two unlike things directly by saying one thing IS the other, without \"like\" or \"as.\")",
+            "links": [
+              {
+                "label": "YouTube: \"Figurative Language\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20ela%20Figurative%20Language%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Figurative Language\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Figurative%20Language",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g4-ela-u2-l2",
           "unitId": "g4-ela-u2",
-          "title": "Lesson 2: Complete Sentences, Fragments, Run-Ons & Homophones",
+          "title": "Lesson 2b: Complete Sentences, Run-Ons & Homophones",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Grammar & Conventions",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/humanities/grammar/syntax-sentences-and-clauses",
           "videoTitle": "Khan Academy Grammar: Fragments, Run-Ons & Compound Sentences",
-          "reading": "A complete sentence requires a subject, a predicate (verb), and a complete thought. A fragment is missing one of these pieces (\"Because the rain started.\"). A run-on joins two independent clauses without proper punctuation or a coordinating conjunction (FANBOYS: for, and, nor, but, or, yet, so). Also watch common homophones: their (possessive), there (place), and they’re (they are).",
+          "reading": "Every complete sentence has a subject and a verb. Fix run-on sentences with a comma and a joining word like \"and,\" \"but,\" or \"so.\" Watch tricky homophones like their, there, and they’re.",
           "principles": [
             {
               "id": "p-g4-ela-grammar",
-              "title": "Correcting Fragments, Run-Ons & Homophone Errors",
+              "title": "Complete Sentences, Fragments, Run-Ons & Homophones",
               "standard": "L.4.1",
-              "summary": "Join independent clauses with a comma + coordinating conjunction, fix fragments, and choose correct homophones.",
+              "summary": "Every sentence needs a subject and verb; fix run-ons with a comma + conjunction and pick the right homophone.",
               "bank": [
                 {
-                  "id": "gr1",
+                  "id": "g4-ela-gr-1",
                   "type": "mc",
-                  "prompt": "Which of the following is a COMPLETE sentence rather than a fragment?",
+                  "prompt": "Which choice is a complete sentence instead of a fragment?",
                   "choices": [
-                    "The peregrine falcon dove swiftly toward the river.",
-                    "Because the library closed at five o’clock.",
-                    "Running across the wet soccer field after school.",
-                    "Underneath the old wooden bridge by the creek."
+                    "The falcon dove toward the river.",
+                    "Because the library closed early.",
+                    "Running across the wet grass.",
+                    "Under the old wooden bridge."
                   ],
-                  "answer": "The peregrine falcon dove swiftly toward the river.",
-                  "explanation": "It has a complete subject (\"The peregrine falcon\"), a verb (\"dove\"), and expresses a complete thought."
+                  "answer": "The falcon dove toward the river.",
+                  "explanation": "A complete sentence has a subject (\"The falcon\"), a verb (\"dove\"), and expresses a full thought."
                 },
                 {
-                  "id": "gr2",
+                  "id": "g4-ela-gr-2",
                   "type": "mc",
-                  "prompt": "How should you fix this run-on sentence? \"The storm knocked out the power we lit candles in the living room.\"",
+                  "prompt": "Which choice fixes the run-on: \"It rained hard we stayed inside\"?",
                   "choices": [
-                    "The storm knocked out the power, so we lit candles in the living room.",
-                    "The storm knocked out the power we, lit candles in the living room.",
-                    "Because the storm knocked out the power, lighting candles.",
-                    "The storm knocking out the power and we lit candles."
+                    "It rained hard, so we stayed inside.",
+                    "It rained hard we, stayed inside.",
+                    "Because it rained hard staying inside.",
+                    "It raining hard we stayed inside."
                   ],
-                  "answer": "The storm knocked out the power, so we lit candles in the living room.",
-                  "explanation": "Two independent clauses can be joined with a comma followed by the coordinating conjunction \"so\"."
+                  "answer": "It rained hard, so we stayed inside.",
+                  "explanation": "A run-on joins two sentences improperly. Fix it with a comma and a conjunction like \"so.\""
                 },
                 {
-                  "id": "gr3",
+                  "id": "g4-ela-gr-3",
                   "type": "mc",
-                  "prompt": "Choose the sentence that uses \"their,\" \"there,\" and \"they’re\" correctly:",
+                  "prompt": "Which sentence uses their, there, and they’re correctly?",
                   "choices": [
-                    "They’re parking their bikes over there by the gym.",
-                    "Their parking they’re bikes over there by the gym.",
-                    "There parking their bikes over they’re by the gym.",
-                    "They’re parking there bikes over their by the gym."
+                    "They’re parking their bikes over there.",
+                    "Their parking they’re bikes over there.",
+                    "There parking their bikes over they’re.",
+                    "They’re parking there bikes over their."
                   ],
-                  "answer": "They’re parking their bikes over there by the gym.",
-                  "explanation": "\"They’re\" = They are; \"their\" = belonging to them; \"there\" = at that place."
+                  "answer": "They’re parking their bikes over there.",
+                  "explanation": "\"They’re\" means they are, \"their\" shows ownership, and \"there\" names a place."
                 },
                 {
-                  "id": "gr4",
+                  "id": "g4-ela-gr-4",
                   "type": "mc",
-                  "prompt": "Which sentence uses the correct relative pronoun?",
+                  "prompt": "Which sentence uses the correct relative pronoun for a person?",
                   "choices": [
-                    "The scientist who discovered the fossil spoke at our school.",
-                    "The scientist which discovered the fossil spoke at our school.",
-                    "The book who I borrowed is on the desk.",
-                    "The dog whom barked all night is asleep."
+                    "The scientist who found the fossil spoke.",
+                    "The scientist which found the fossil spoke.",
+                    "The book who I read was great.",
+                    "The bike whom I rode is red."
                   ],
-                  "answer": "The scientist who discovered the fossil spoke at our school.",
-                  "explanation": "Use the relative pronoun \"who\" as the subject referring to a person (\"The scientist\")."
+                  "answer": "The scientist who found the fossil spoke.",
+                  "explanation": "Use the relative pronoun \"who\" for people and \"which\" or \"that\" for things."
                 },
                 {
-                  "id": "gr5",
+                  "id": "g4-ela-gr-5",
                   "type": "mc",
-                  "prompt": "Choose the sentence that uses \"its\" and \"it’s\" correctly:",
+                  "prompt": "Which sentence uses its and it’s correctly?",
                   "choices": [
-                    "It’s amazing how a chameleon changes its color.",
-                    "Its amazing how a chameleon changes it’s color.",
-                    "It’s amazing how a chameleon changes it’s color.",
-                    "Its amazing how a chameleon changes its color."
+                    "It’s fun to watch a dog chase its tail.",
+                    "Its fun to watch a dog chase it’s tail.",
+                    "It’s fun to watch a dog chase it’s tail.",
+                    "Its fun to watch a dog chase its tail."
                   ],
-                  "answer": "It’s amazing how a chameleon changes its color.",
-                  "explanation": "\"It’s\" is the contraction for \"It is,\" while \"its\" (no apostrophe) is the possessive pronoun."
+                  "answer": "It’s fun to watch a dog chase its tail.",
+                  "explanation": "\"It’s\" is short for \"it is.\" \"Its\" without an apostrophe shows ownership."
                 },
                 {
-                  "id": "gr6",
+                  "id": "g4-ela-gr-6",
                   "type": "mc",
-                  "prompt": "Which sentence uses the progressive verb tense to show an action happening right now?",
+                  "prompt": "Which sentence uses the present progressive tense for action happening now?",
                   "choices": [
-                    "The fourth graders are building a model solar system.",
-                    "The fourth graders built a model solar system yesterday.",
-                    "The fourth graders will build a model next month.",
-                    "The fourth graders build models every year."
+                    "The students are building a robot.",
+                    "The students built a robot yesterday.",
+                    "The students will build a robot.",
+                    "The students build robots every year."
                   ],
-                  "answer": "The fourth graders are building a model solar system.",
-                  "explanation": "\"Are building\" is the present progressive tense (am/is/are + verb-ing)."
+                  "answer": "The students are building a robot.",
+                  "explanation": "Present progressive tense uses \"am,\" \"is,\" or \"are\" plus a verb ending in \"-ing.\""
                 },
                 {
-                  "id": "gr7",
+                  "id": "g4-ela-gr-7",
                   "type": "mc",
-                  "prompt": "In which sentence are adjectives ordered correctly according to standard English conventions?",
+                  "prompt": "Which sentence orders the adjectives correctly before the noun?",
                   "choices": [
                     "She adopted a small brown puppy.",
                     "She adopted a brown small puppy.",
                     "He found three round tiny coins.",
-                    "They drove a metal old red truck."
+                    "They drove a metal old truck."
                   ],
                   "answer": "She adopted a small brown puppy.",
-                  "explanation": "In English, size adjectives (\"small\") come before color adjectives (\"brown\") before the noun."
+                  "explanation": "In English, size adjectives like \"small\" come before color adjectives like \"brown.\""
+                },
+                {
+                  "id": "g4-ela-gr-8",
+                  "type": "mc",
+                  "prompt": "Which choice is a sentence fragment?",
+                  "choices": [
+                    "Whenever the campfire crackles at night.",
+                    "Sparks floated into the dark sky.",
+                    "Dad roasted marshmallows on a stick.",
+                    "The tent stayed warm all night."
+                  ],
+                  "answer": "Whenever the campfire crackles at night.",
+                  "explanation": "A fragment is an incomplete thought. Starting with \"Whenever\" leaves the clause needing a main action."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Grammar & Conventions] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Complete Sentences, Fragments, Run-Ons & Homophones\" (L.4.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-ela-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy Grammar: Fragments, Run-Ons & Compound Sentences",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Complete Sentences, Fragments, Run-Ons & Homophones\" (L.4.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/grammar/syntax-sentences-and-clauses"
+              },
+              {
+                "id": "g4-ela-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Complete Sentences, Fragments, Run-Ons & Homophones.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-ela-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (L.4.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Complete Sentences, Fragments, Run-Ons & Homophones.",
+              "Every sentence needs a subject and verb; fix run-ons with a comma + conjunction and pick the right homophone.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which choice is a complete sentence instead of a fragment?\" → Answer: The falcon dove toward the river.. (A complete sentence has a subject (\"The falcon\"), a verb (\"dove\"), and expresses a full thought.)",
+            "links": [
+              {
+                "label": "YouTube: \"Grammar & Conventions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20ela%20Grammar%20%26%20Conventions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Grammar & Conventions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Grammar%20%26%20Conventions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g4-ela-u2-test",
           "unitId": "g4-ela-u2",
           "title": "Unit 2 Exam: Reading & Language Mastery",
           "kind": "unit_test",
-          "estimatedMinutes": 25,
+          "estimatedMinutes": 15,
           "videoUrl": "https://www.khanacademy.org/ela/cc-4th-reading-vocab",
           "videoTitle": "Grade 4 ELA Comprehensive Review",
-          "reading": "Demonstrate mastery of theme, text structure, figurative language, and sentence conventions.",
-          "questionCount": 6,
+          "reading": "Show mastery of similes, metaphors, context clues, complete sentences, and homophones.",
+          "questionCount": 8,
           "principles": [
             {
               "id": "p-g4-ela-fig",
               "title": "Similes, Metaphors, Idioms & Context Clues",
               "standard": "L.4.5",
-              "summary": "Interpret figurative comparisons and vocabulary in context.",
+              "summary": "Similes use like/as, metaphors say one thing is another, and context clues reveal word meanings.",
               "bank": [
                 {
-                  "id": "eut1",
+                  "id": "g4-ela-fg-1",
                   "type": "mc",
-                  "prompt": "\"The calm lake was a mirror reflecting the snow-capped peaks.\" What figure of speech is used?",
+                  "prompt": "Which sentence contains a metaphor?",
                   "choices": [
-                    "Metaphor",
-                    "Simile",
-                    "Onomatopoeia",
-                    "Hyperbole"
+                    "The classroom was a buzzing beehive.",
+                    "He ran as fast as a cheetah.",
+                    "The fur felt like soft velvet.",
+                    "She ate lunch at noon."
                   ],
-                  "answer": "Metaphor",
-                  "explanation": "The lake is directly called \"a mirror\" without using \"like\" or \"as.\""
+                  "answer": "The classroom was a buzzing beehive.",
+                  "explanation": "A metaphor compares two unlike things directly by saying one thing IS the other, without \"like\" or \"as.\""
                 },
                 {
-                  "id": "eut2",
+                  "id": "g4-ela-fg-2",
                   "type": "mc",
-                  "prompt": "In the sentence \"The owl was as silent as a shadow gliding through the pines,\" the phrase \"as silent as a shadow\" is a:",
+                  "prompt": "Which sentence contains a simile?",
                   "choices": [
-                    "Simile",
-                    "Metaphor",
-                    "Idiom",
-                    "Alliteration"
+                    "The icy sidewalk was as slick as glass.",
+                    "Snow is a white blanket.",
+                    "The library was a quiet cave.",
+                    "We walked home after school."
                   ],
-                  "answer": "Simile",
-                  "explanation": "It compares the owl’s silence to a shadow using \"as ... as.\""
+                  "answer": "The icy sidewalk was as slick as glass.",
+                  "explanation": "A simile compares two things using the words \"like\" or \"as.\""
                 },
                 {
-                  "id": "eut3",
+                  "id": "g4-ela-fg-3",
                   "type": "mc",
-                  "prompt": "The beaver was INDUSTRIOUS, working from dawn until dusk to repair the dam before winter. What does INDUSTRIOUS mean?",
+                  "prompt": "What does the idiom \"a piece of cake\" mean?",
                   "choices": [
-                    "Hard-working and diligent",
+                    "Something very easy to do",
+                    "A slice of birthday dessert",
+                    "Something impossible to finish",
+                    "A hard math test"
+                  ],
+                  "answer": "Something very easy to do",
+                  "explanation": "An idiom is a phrase with a non-literal meaning. \"A piece of cake\" means an easy task."
+                },
+                {
+                  "id": "g4-ela-fg-4",
+                  "type": "mc",
+                  "passage": "The ancient clay bowl was so fragile that workers wore soft gloves so it would not shatter.",
+                  "prompt": "Using context clues, what does fragile mean?",
+                  "choices": [
+                    "Delicate and easily broken",
+                    "Heavy and made of iron",
+                    "Stretchy like rubber",
+                    "Waterproof and strong"
+                  ],
+                  "answer": "Delicate and easily broken",
+                  "explanation": "Context clues are nearby words that help explain an unfamiliar word. \"Shatter\" shows fragile means easily broken."
+                },
+                {
+                  "id": "g4-ela-fg-5",
+                  "type": "mc",
+                  "prompt": "What does the proverb \"Actions speak louder than words\" mean?",
+                  "choices": [
+                    "What you do matters more than promises.",
+                    "Shouting is better than whispering.",
+                    "Actors must talk very loudly.",
+                    "Books are quieter than movies."
+                  ],
+                  "answer": "What you do matters more than promises.",
+                  "explanation": "A proverb is a traditional saying that gives advice. Real actions prove more than talk."
+                },
+                {
+                  "id": "g4-ela-fg-6",
+                  "type": "mc",
+                  "passage": "After hiking ten miles up the mountain, the scouts were famished and ate every sandwich.",
+                  "prompt": "What does the word famished mean in this sentence?",
+                  "choices": [
+                    "Extremely hungry",
+                    "Freezing cold",
+                    "Wide awake",
+                    "Very angry"
+                  ],
+                  "answer": "Extremely hungry",
+                  "explanation": "Hiking ten miles and eating every sandwich are context clues showing famished means very hungry."
+                },
+                {
+                  "id": "g4-ela-fg-7",
+                  "type": "mc",
+                  "prompt": "What does the idiom \"let the cat out of the bag\" mean?",
+                  "choices": [
+                    "Told a secret by mistake",
+                    "Bought a new pet kitten",
+                    "Lost a school backpack",
+                    "Fed the family dog"
+                  ],
+                  "answer": "Told a secret by mistake",
+                  "explanation": "\"Letting the cat out of the bag\" is an idiom that means revealing a secret."
+                },
+                {
+                  "id": "g4-ela-fg-8",
+                  "type": "mc",
+                  "passage": "The beaver was industrious, working from sunrise to sunset to fix the log dam.",
+                  "prompt": "Based on the sentence, what does industrious mean?",
+                  "choices": [
+                    "Hard-working and busy",
                     "Lazy and sleepy",
-                    "Frightened and shy",
-                    "Noisy and careless"
+                    "Loud and rude",
+                    "Tiny and weak"
                   ],
-                  "answer": "Hard-working and diligent",
-                  "explanation": "\"Working from dawn until dusk\" provides context showing industrious means hard-working."
+                  "answer": "Hard-working and busy",
+                  "explanation": "\"Working from sunrise to sunset\" is a context clue showing that industrious means hard-working."
                 }
               ]
             },
             {
               "id": "p-g4-ela-grammar",
-              "title": "Correcting Fragments, Run-Ons & Homophone Errors",
+              "title": "Complete Sentences, Fragments, Run-Ons & Homophones",
               "standard": "L.4.1",
-              "summary": "Identify complete sentences and proper conventions.",
+              "summary": "Every sentence needs a subject and verb; fix run-ons with a comma + conjunction and pick the right homophone.",
               "bank": [
                 {
-                  "id": "eut4",
+                  "id": "g4-ela-gr-1",
                   "type": "mc",
-                  "prompt": "Which sentence is punctuated correctly as a compound sentence?",
+                  "prompt": "Which choice is a complete sentence instead of a fragment?",
                   "choices": [
-                    "We wanted to stargaze tonight, but thick clouds covered the sky.",
-                    "We wanted to stargaze tonight but, thick clouds covered the sky.",
-                    "We wanted to stargaze tonight, thick clouds covered the sky.",
-                    "Although we wanted to stargaze tonight, but clouds covered the sky."
+                    "The falcon dove toward the river.",
+                    "Because the library closed early.",
+                    "Running across the wet grass.",
+                    "Under the old wooden bridge."
                   ],
-                  "answer": "We wanted to stargaze tonight, but thick clouds covered the sky.",
-                  "explanation": "A comma goes before the coordinating conjunction \"but\" when joining two complete sentences."
+                  "answer": "The falcon dove toward the river.",
+                  "explanation": "A complete sentence has a subject (\"The falcon\"), a verb (\"dove\"), and expresses a full thought."
                 },
                 {
-                  "id": "eut5",
+                  "id": "g4-ela-gr-2",
                   "type": "mc",
-                  "prompt": "Identify the sentence fragment below:",
+                  "prompt": "Which choice fixes the run-on: \"It rained hard we stayed inside\"?",
                   "choices": [
-                    "Whenever the campfire crackles under the starry sky.",
-                    "Sparks floated upward into the night air.",
-                    "Dad roasted marshmallows on a wooden stick.",
+                    "It rained hard, so we stayed inside.",
+                    "It rained hard we, stayed inside.",
+                    "Because it rained hard staying inside.",
+                    "It raining hard we stayed inside."
+                  ],
+                  "answer": "It rained hard, so we stayed inside.",
+                  "explanation": "A run-on joins two sentences improperly. Fix it with a comma and a conjunction like \"so.\""
+                },
+                {
+                  "id": "g4-ela-gr-3",
+                  "type": "mc",
+                  "prompt": "Which sentence uses their, there, and they’re correctly?",
+                  "choices": [
+                    "They’re parking their bikes over there.",
+                    "Their parking they’re bikes over there.",
+                    "There parking their bikes over they’re.",
+                    "They’re parking there bikes over their."
+                  ],
+                  "answer": "They’re parking their bikes over there.",
+                  "explanation": "\"They’re\" means they are, \"their\" shows ownership, and \"there\" names a place."
+                },
+                {
+                  "id": "g4-ela-gr-4",
+                  "type": "mc",
+                  "prompt": "Which sentence uses the correct relative pronoun for a person?",
+                  "choices": [
+                    "The scientist who found the fossil spoke.",
+                    "The scientist which found the fossil spoke.",
+                    "The book who I read was great.",
+                    "The bike whom I rode is red."
+                  ],
+                  "answer": "The scientist who found the fossil spoke.",
+                  "explanation": "Use the relative pronoun \"who\" for people and \"which\" or \"that\" for things."
+                },
+                {
+                  "id": "g4-ela-gr-5",
+                  "type": "mc",
+                  "prompt": "Which sentence uses its and it’s correctly?",
+                  "choices": [
+                    "It’s fun to watch a dog chase its tail.",
+                    "Its fun to watch a dog chase it’s tail.",
+                    "It’s fun to watch a dog chase it’s tail.",
+                    "Its fun to watch a dog chase its tail."
+                  ],
+                  "answer": "It’s fun to watch a dog chase its tail.",
+                  "explanation": "\"It’s\" is short for \"it is.\" \"Its\" without an apostrophe shows ownership."
+                },
+                {
+                  "id": "g4-ela-gr-6",
+                  "type": "mc",
+                  "prompt": "Which sentence uses the present progressive tense for action happening now?",
+                  "choices": [
+                    "The students are building a robot.",
+                    "The students built a robot yesterday.",
+                    "The students will build a robot.",
+                    "The students build robots every year."
+                  ],
+                  "answer": "The students are building a robot.",
+                  "explanation": "Present progressive tense uses \"am,\" \"is,\" or \"are\" plus a verb ending in \"-ing.\""
+                },
+                {
+                  "id": "g4-ela-gr-7",
+                  "type": "mc",
+                  "prompt": "Which sentence orders the adjectives correctly before the noun?",
+                  "choices": [
+                    "She adopted a small brown puppy.",
+                    "She adopted a brown small puppy.",
+                    "He found three round tiny coins.",
+                    "They drove a metal old truck."
+                  ],
+                  "answer": "She adopted a small brown puppy.",
+                  "explanation": "In English, size adjectives like \"small\" come before color adjectives like \"brown.\""
+                },
+                {
+                  "id": "g4-ela-gr-8",
+                  "type": "mc",
+                  "prompt": "Which choice is a sentence fragment?",
+                  "choices": [
+                    "Whenever the campfire crackles at night.",
+                    "Sparks floated into the dark sky.",
+                    "Dad roasted marshmallows on a stick.",
                     "The tent stayed warm all night."
                   ],
-                  "answer": "Whenever the campfire crackles under the starry sky.",
-                  "explanation": "Starting with the subordinating conjunction \"Whenever\" makes this a dependent clause that needs a main clause to be complete."
-                },
-                {
-                  "id": "eut6",
-                  "type": "mc",
-                  "prompt": "Choose the sentence with correct homophone usage:",
-                  "choices": [
-                    "Are you going to bring your two cousins, too?",
-                    "Are you going too bring your two cousins, to?",
-                    "Are you going to bring you’re two cousins, two?",
-                    "Are you going two bring your to cousins, too?"
-                  ],
-                  "answer": "Are you going to bring your two cousins, too?",
-                  "explanation": "\"to\" (infinitive/preposition), \"your\" (possessive), \"two\" (number 2), and \"too\" (also)."
+                  "answer": "Whenever the campfire crackles at night.",
+                  "explanation": "A fragment is an incomplete thought. Starting with \"Whenever\" leaves the clause needing a main action."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Similes, Metaphors, Idioms & Context Clues & Complete Sentences, Fragments, Run-Ons & Homophones (L.4.5, L.4.1). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g4-ela-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Similes, Metaphors, Idioms & Context Clues & Complete Sentences, Fragments, Run-Ons & Homophones",
+                "description": "Read the Core Concept Summary and Principle cards on this page (L.4.5, L.4.1) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g4-ela-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Grade 4 ELA Comprehensive Review",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Similes, Metaphors, Idioms & Context Clues & Complete Sentences, Fragments, Run-Ons & Homophones\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/ela/cc-4th-reading-vocab"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Similes, Metaphors, Idioms & Context Clues.",
+              "Similes use like/as, metaphors say one thing is another, and context clues reveal word meanings.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which sentence contains a metaphor?\" → Answer: The classroom was a buzzing beehive.. (A metaphor compares two unlike things directly by saying one thing IS the other, without \"like\" or \"as.\")",
+            "links": [
+              {
+                "label": "YouTube: \"Reading & Language Mastery\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20ela%20Reading%20%26%20Language%20Mastery%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Reading & Language Mastery\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Reading%20%26%20Language%20Mastery",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     }

@@ -1,0 +1,1051 @@
+{
+  "id": "g5-math",
+  "subject": "math",
+  "grade": 5,
+  "title": "Grade 5 Mathematics",
+  "subtitle": "Powers of 10, Decimals, Fractions, Volume & the Coordinate Plane",
+  "credits": 1,
+  "color": "#2563eb",
+  "icon": "📐",
+  "units": [
+    {
+      "id": "g5-math-u1",
+      "title": "Unit 1: Powers of 10, Decimals & Multi-Digit Operations",
+      "standards": [
+        "5.NBT.A.2",
+        "5.NBT.A.4",
+        "5.NBT.B.5",
+        "5.NBT.B.6",
+        "5.NBT.B.7"
+      ],
+      "lessons": [
+        {
+          "id": "g5-math-u1-l1",
+          "unitId": "g5-math-u1",
+          "title": "Powers of 10 & Place Value Shifts",
+          "kind": "lesson",
+          "partOf": "Decimals & Powers of 10",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten",
+          "videoTitle": "Khan Academy: Multiplying by Powers of 10",
+          "reading": "An exponent on 10 tells how many times 10 is multiplied by itself. For example, 10² = 100 (2 zeros) and 10³ = 1,000 (3 zeros). To multiply a whole number by 10ⁿ, shift the digits n places to the left.",
+          "principles": [
+            {
+              "id": "p-g5-pow10",
+              "title": "Multiplying by Powers of 10",
+              "standard": "5.NBT.A.2",
+              "summary": "Use exponents to represent powers of 10 and shift place values accurately.",
+              "generatorId": "g5.powers-of-ten"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Decimals & Powers of 10] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Multiplying by Powers of 10\" (5.NBT.A.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-math-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Multiplying by Powers of 10",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Multiplying by Powers of 10\" (5.NBT.A.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten"
+              },
+              {
+                "id": "g5-math-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Multiplying by Powers of 10.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-math-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (5.NBT.A.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Multiplying by Powers of 10.",
+              "Use exponents to represent powers of 10 and shift place values accurately.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Multiplying by Powers of 10\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Decimals & Powers of 10\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20math%20Decimals%20%26%20Powers%20of%2010%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Decimals & Powers of 10\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Decimals%20%26%20Powers%20of%2010",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Decimals & Powers of 10 (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Decimals%20%26%20Powers%20of%2010",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-math-u1-l2",
+          "unitId": "g5-math-u1",
+          "title": "Rounding, Adding & Subtracting Decimals",
+          "kind": "lesson",
+          "partOf": "Decimals & Powers of 10",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-add-and-subtract-decimals",
+          "videoTitle": "Khan Academy: Rounding, Adding & Subtracting Decimals",
+          "reading": "To round a decimal to the nearest tenth, check the hundredths digit (5 or more rounds up). When adding or subtracting decimals, line up the decimal points vertically so tenths add to tenths.",
+          "principles": [
+            {
+              "id": "p-g5-dec-addsub",
+              "title": "Adding and Subtracting Decimals to Tenths",
+              "standard": "5.NBT.B.7",
+              "summary": "Line up decimal points vertically to add and subtract decimals.",
+              "generatorId": "g5.decimal-add-sub"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Decimals & Powers of 10] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Adding and Subtracting Decimals to Tenths\" (5.NBT.B.7), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-math-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Rounding, Adding & Subtracting Decimals",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Adding and Subtracting Decimals to Tenths\" (5.NBT.B.7). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-add-and-subtract-decimals"
+              },
+              {
+                "id": "g5-math-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Adding and Subtracting Decimals to Tenths.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-math-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (5.NBT.B.7)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Adding and Subtracting Decimals to Tenths.",
+              "Line up decimal points vertically to add and subtract decimals.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Adding and Subtracting Decimals to Tenths\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Decimals & Powers of 10\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20math%20Decimals%20%26%20Powers%20of%2010%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Decimals & Powers of 10\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Decimals%20%26%20Powers%20of%2010",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Decimals & Powers of 10 (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Decimals%20%26%20Powers%20of%2010",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-math-u1-l3",
+          "unitId": "g5-math-u1",
+          "title": "Multi-Digit Multiplication & 2-Digit Division",
+          "kind": "lesson",
+          "partOf": "Multi-Digit Operations",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division",
+          "videoTitle": "Khan Academy: Multi-Digit Multiplication & Division",
+          "reading": "Use the standard algorithm to multiply 3-digit numbers by 2-digit numbers by adding partial products. For division by a 2-digit divisor, use inverse multiplication to find the exact quotient.",
+          "principles": [
+            {
+              "id": "p-g5-mult-multi",
+              "title": "Multi-Digit Whole Number Multiplication",
+              "standard": "5.NBT.B.5",
+              "summary": "Fluently multiply multi-digit whole numbers using the standard algorithm.",
+              "generatorId": "g5.mult-multi-digit"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Multi-Digit Operations] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Multi-Digit Whole Number Multiplication\" (5.NBT.B.5), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-math-u1-l3-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Multi-Digit Multiplication & Division",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Multi-Digit Whole Number Multiplication\" (5.NBT.B.5). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division"
+              },
+              {
+                "id": "g5-math-u1-l3-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Multi-Digit Whole Number Multiplication.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-math-u1-l3-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (5.NBT.B.5)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Multi-Digit Whole Number Multiplication.",
+              "Fluently multiply multi-digit whole numbers using the standard algorithm.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Multi-Digit Whole Number Multiplication\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Multi-Digit Operations\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20math%20Multi-Digit%20Operations%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Multi-Digit Operations\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Multi-Digit%20Operations",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Multi-Digit Operations (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Multi-Digit%20Operations",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-math-u1-test",
+          "unitId": "g5-math-u1",
+          "title": "Unit 1 Exam: Powers of 10, Decimals & Whole-Number Fluency",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "questionCount": 8,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten",
+          "videoTitle": "Unit 1 Review: Decimals & Multi-Digit Operations",
+          "reading": "This Unit Exam checks mastery of powers of 10, decimal rounding, decimal addition/subtraction/multiplication, and multi-digit multiplication and division.",
+          "principles": [
+            {
+              "id": "p-g5-pow10",
+              "title": "Multiplying by Powers of 10",
+              "standard": "5.NBT.A.2",
+              "summary": "Multiply whole numbers by powers of 10.",
+              "generatorId": "g5.powers-of-ten"
+            },
+            {
+              "id": "p-g5-dec-round",
+              "title": "Rounding Decimals to the Nearest Tenth",
+              "standard": "5.NBT.A.4",
+              "summary": "Inspect the hundredths place to round decimals to the nearest tenth.",
+              "generatorId": "g5.decimal-round"
+            },
+            {
+              "id": "p-g5-dec-addsub",
+              "title": "Adding and Subtracting Decimals",
+              "standard": "5.NBT.B.7",
+              "summary": "Line up decimal points to add or subtract decimals.",
+              "generatorId": "g5.decimal-add-sub"
+            },
+            {
+              "id": "p-g5-dec-mult",
+              "title": "Multiplying Decimals by Whole Numbers",
+              "standard": "5.NBT.B.7",
+              "summary": "Multiply tenths by whole numbers and place the decimal point.",
+              "generatorId": "g5.decimal-mult"
+            },
+            {
+              "id": "p-g5-mult-multi",
+              "title": "Multi-Digit Whole Number Multiplication",
+              "standard": "5.NBT.B.5",
+              "summary": "Multiply 3-digit by 2-digit whole numbers.",
+              "generatorId": "g5.mult-multi-digit"
+            },
+            {
+              "id": "p-g5-div-2digit",
+              "title": "Dividing by 2-Digit Divisors",
+              "standard": "5.NBT.B.6",
+              "summary": "Find whole-number quotients with 2-digit divisors.",
+              "generatorId": "g5.div-2digit"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Multiplying by Powers of 10 & Rounding Decimals to the Nearest Tenth & Adding and Subtracting Decimals & Multiplying Decimals by Whole Numbers & Multi-Digit Whole Number Multiplication & Dividing by 2-Digit Divisors (5.NBT.A.2, 5.NBT.A.4, 5.NBT.B.7, 5.NBT.B.7, 5.NBT.B.5, 5.NBT.B.6). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g5-math-u1-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Multiplying by Powers of 10 & Rounding Decimals to the Nearest Tenth & Adding and Subtracting Decimals & Multiplying Decimals by Whole Numbers & Multi-Digit Whole Number Multiplication & Dividing by 2-Digit Divisors",
+                "description": "Read the Core Concept Summary and Principle cards on this page (5.NBT.A.2, 5.NBT.A.4, 5.NBT.B.7, 5.NBT.B.7, 5.NBT.B.5, 5.NBT.B.6) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g5-math-u1-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 Review: Decimals & Multi-Digit Operations",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Multiplying by Powers of 10 & Rounding Decimals to the Nearest Tenth & Adding and Subtracting Decimals & Multiplying Decimals by Whole Numbers & Multi-Digit Whole Number Multiplication & Dividing by 2-Digit Divisors\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Multiplying by Powers of 10.",
+              "Multiply whole numbers by powers of 10.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Multiplying by Powers of 10\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Powers of 10, Decimals & Whole-Number Fluency\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20math%20Powers%20of%2010%2C%20Decimals%20%26%20Whole-Number%20Fluency%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Powers of 10, Decimals & Whole-Number Fluency\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Powers%20of%2010%2C%20Decimals%20%26%20Whole-Number%20Fluency",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Powers of 10, Decimals & Whole-Number Fluency (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Powers%20of%2010%2C%20Decimals%20%26%20Whole-Number%20Fluency",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g5-math-u2",
+      "title": "Unit 2: Adding, Subtracting, Multiplying & Dividing Fractions",
+      "standards": [
+        "5.NF.A.1",
+        "5.NF.B.4",
+        "5.NF.B.7"
+      ],
+      "lessons": [
+        {
+          "id": "g5-math-u2-l1",
+          "unitId": "g5-math-u2",
+          "title": "Adding & Subtracting Fractions with Unlike Denominators",
+          "kind": "lesson",
+          "partOf": "Fraction Operations",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3",
+          "videoTitle": "Khan Academy: Adding & Subtracting Unlike Fractions",
+          "reading": "Before adding or subtracting fractions with different denominators, rewrite one or both as equivalent fractions with a common denominator. Then add or subtract the numerators and simplify.",
+          "principles": [
+            {
+              "id": "p-g5-frac-add",
+              "title": "Adding Fractions with Unlike Denominators",
+              "standard": "5.NF.A.1",
+              "summary": "Find a common denominator, add numerators, and simplify.",
+              "generatorId": "g5.fraction-add-unlike"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Fraction Operations] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Adding Fractions with Unlike Denominators\" (5.NF.A.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-math-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Adding & Subtracting Unlike Fractions",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Adding Fractions with Unlike Denominators\" (5.NF.A.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3"
+              },
+              {
+                "id": "g5-math-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Adding Fractions with Unlike Denominators.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-math-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (5.NF.A.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Adding Fractions with Unlike Denominators.",
+              "Find a common denominator, add numerators, and simplify.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Adding Fractions with Unlike Denominators\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Fraction Operations\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20math%20Fraction%20Operations%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Fraction Operations\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Fraction%20Operations",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Fraction Operations (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Fraction%20Operations",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-math-u2-l2",
+          "unitId": "g5-math-u2",
+          "title": "Multiplying Fractions & Dividing by Unit Fractions",
+          "kind": "lesson",
+          "partOf": "Fraction Operations",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplying-and-dividing-fractions",
+          "videoTitle": "Khan Academy: Multiplying & Dividing Fractions",
+          "reading": "To multiply two fractions, multiply the numerators together and multiply the denominators together. To divide a whole number by a unit fraction (such as 4 ÷ 1/3), count how many 1/3 pieces fit in 4 wholes: 4 × 3 = 12.",
+          "principles": [
+            {
+              "id": "p-g5-frac-mult",
+              "title": "Multiplying Fractions",
+              "standard": "5.NF.B.4",
+              "summary": "Multiply numerators and denominators, then simplify to lowest terms.",
+              "generatorId": "g5.fraction-mult"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Fraction Operations] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Multiplying Fractions\" (5.NF.B.4), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-math-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Multiplying & Dividing Fractions",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Multiplying Fractions\" (5.NF.B.4). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplying-and-dividing-fractions"
+              },
+              {
+                "id": "g5-math-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Multiplying Fractions.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-math-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (5.NF.B.4)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Multiplying Fractions.",
+              "Multiply numerators and denominators, then simplify to lowest terms.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Multiplying Fractions\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Fraction Operations\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20math%20Fraction%20Operations%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Fraction Operations\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Fraction%20Operations",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Fraction Operations (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Fraction%20Operations",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-math-u2-test",
+          "unitId": "g5-math-u2",
+          "title": "Unit 2 Exam: All Four Fraction Operations",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "questionCount": 8,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplying-and-dividing-fractions",
+          "videoTitle": "Unit 2 Review: Fraction Operations Mastery",
+          "reading": "Demonstrate mastery of adding and subtracting unlike fractions, multiplying fractions, and dividing whole numbers by unit fractions.",
+          "principles": [
+            {
+              "id": "p-g5-frac-add",
+              "title": "Adding Fractions with Unlike Denominators",
+              "standard": "5.NF.A.1",
+              "summary": "Rewrite with a common denominator and add.",
+              "generatorId": "g5.fraction-add-unlike"
+            },
+            {
+              "id": "p-g5-frac-sub",
+              "title": "Subtracting Fractions with Unlike Denominators",
+              "standard": "5.NF.A.1",
+              "summary": "Rewrite with a common denominator and subtract.",
+              "generatorId": "g5.fraction-sub-unlike"
+            },
+            {
+              "id": "p-g5-frac-mult",
+              "title": "Multiplying Fractions",
+              "standard": "5.NF.B.4",
+              "summary": "Multiply numerators and denominators and simplify.",
+              "generatorId": "g5.fraction-mult"
+            },
+            {
+              "id": "p-g5-frac-div",
+              "title": "Dividing Whole Numbers by Unit Fractions",
+              "standard": "5.NF.B.7",
+              "summary": "Find how many unit fractions fit into a whole number.",
+              "generatorId": "g5.fraction-div-unit"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Adding Fractions with Unlike Denominators & Subtracting Fractions with Unlike Denominators & Multiplying Fractions & Dividing Whole Numbers by Unit Fractions (5.NF.A.1, 5.NF.A.1, 5.NF.B.4, 5.NF.B.7). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g5-math-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Adding Fractions with Unlike Denominators & Subtracting Fractions with Unlike Denominators & Multiplying Fractions & Dividing Whole Numbers by Unit Fractions",
+                "description": "Read the Core Concept Summary and Principle cards on this page (5.NF.A.1, 5.NF.A.1, 5.NF.B.4, 5.NF.B.7) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g5-math-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Review: Fraction Operations Mastery",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Adding Fractions with Unlike Denominators & Subtracting Fractions with Unlike Denominators & Multiplying Fractions & Dividing Whole Numbers by Unit Fractions\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplying-and-dividing-fractions"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Adding Fractions with Unlike Denominators.",
+              "Rewrite with a common denominator and add.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Adding Fractions with Unlike Denominators\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"All Four Fraction Operations\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20math%20All%20Four%20Fraction%20Operations%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"All Four Fraction Operations\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20All%20Four%20Fraction%20Operations",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — All Four Fraction Operations (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20All%20Four%20Fraction%20Operations",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g5-math-u3",
+      "title": "Unit 3: Volume, Metric Conversions, Coordinate Plane & Expressions",
+      "standards": [
+        "5.MD.C.5",
+        "OH.5.MD.A.1",
+        "5.G.A.1",
+        "5.OA.A.1"
+      ],
+      "lessons": [
+        {
+          "id": "g5-math-u3-l1",
+          "unitId": "g5-math-u3",
+          "title": "Volume of Rectangular Prisms",
+          "kind": "lesson",
+          "partOf": "Volume & Measurement",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume",
+          "videoTitle": "Khan Academy: Volume of Rectangular Prisms",
+          "reading": "Volume measures the 3-D space inside a solid figure in cubic units. For any rectangular prism, multiply length × width × height (V = l × w × h).",
+          "principles": [
+            {
+              "id": "p-g5-vol",
+              "title": "Volume of a Rectangular Prism",
+              "standard": "5.MD.C.5",
+              "summary": "Calculate volume using V = length × width × height.",
+              "generatorId": "g5.volume-prism"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Volume & Measurement] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Volume of a Rectangular Prism\" (5.MD.C.5), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-math-u3-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Volume of Rectangular Prisms",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Volume of a Rectangular Prism\" (5.MD.C.5). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume"
+              },
+              {
+                "id": "g5-math-u3-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Volume of a Rectangular Prism.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-math-u3-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (5.MD.C.5)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Volume of a Rectangular Prism.",
+              "Calculate volume using V = length × width × height.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Volume of a Rectangular Prism\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Volume & Measurement\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20math%20Volume%20%26%20Measurement%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Volume & Measurement\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Volume%20%26%20Measurement",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Volume & Measurement (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Volume%20%26%20Measurement",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-math-u3-l2",
+          "unitId": "g5-math-u3",
+          "title": "Metric & Customary Unit Conversions",
+          "kind": "lesson",
+          "partOf": "Volume & Measurement",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3",
+          "videoTitle": "Khan Academy: Converting Metric & Customary Units",
+          "reading": "Convert larger units to smaller units by multiplying: 1 meter = 100 centimeters, 1 kilometer = 1,000 meters, 1 kilogram = 1,000 grams, 1 liter = 1,000 milliliters, and 1 foot = 12 inches.",
+          "principles": [
+            {
+              "id": "p-g5-conv",
+              "title": "Converting Measurement Units",
+              "standard": "OH.5.MD.A.1",
+              "summary": "Convert among standard metric and customary measurement units.",
+              "generatorId": "g5.unit-convert"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Volume & Measurement] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Converting Measurement Units\" (OH.5.MD.A.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-math-u3-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Converting Metric & Customary Units",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Converting Measurement Units\" (OH.5.MD.A.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3"
+              },
+              {
+                "id": "g5-math-u3-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Converting Measurement Units.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-math-u3-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.5.MD.A.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Converting Measurement Units.",
+              "Convert among standard metric and customary measurement units.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Converting Measurement Units\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Volume & Measurement\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20math%20Volume%20%26%20Measurement%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Volume & Measurement\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Volume%20%26%20Measurement",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Volume & Measurement (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Volume%20%26%20Measurement",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-math-u3-l3",
+          "unitId": "g5-math-u3",
+          "title": "Coordinate Plane & Order of Operations",
+          "kind": "lesson",
+          "partOf": "Coordinate Plane & Expressions",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking",
+          "videoTitle": "Khan Academy: Order of Operations & Coordinate Plane",
+          "reading": "Evaluate parentheses first, then multiplication or division, then addition or subtraction. On the coordinate plane, an ordered pair (x, y) gives the horizontal x-coordinate first and the vertical y-coordinate second.",
+          "principles": [
+            {
+              "id": "p-g5-order",
+              "title": "Order of Operations with Parentheses",
+              "standard": "5.OA.A.1",
+              "summary": "Evaluate inside parentheses first, then multiply/divide before adding/subtracting.",
+              "generatorId": "g5.order-of-ops"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Coordinate Plane & Expressions] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Order of Operations with Parentheses\" (5.OA.A.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-math-u3-l3-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Order of Operations & Coordinate Plane",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Order of Operations with Parentheses\" (5.OA.A.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking"
+              },
+              {
+                "id": "g5-math-u3-l3-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Order of Operations with Parentheses.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-math-u3-l3-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (5.OA.A.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Order of Operations with Parentheses.",
+              "Evaluate inside parentheses first, then multiply/divide before adding/subtracting.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Order of Operations with Parentheses\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Coordinate Plane & Expressions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20math%20Coordinate%20Plane%20%26%20Expressions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Coordinate Plane & Expressions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Coordinate%20Plane%20%26%20Expressions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Coordinate Plane & Expressions (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Coordinate%20Plane%20%26%20Expressions",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-math-u3-test",
+          "unitId": "g5-math-u3",
+          "title": "Unit 3 Exam: Volume, Conversions, Coordinates & Expressions",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "questionCount": 8,
+          "videoUrl": "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume",
+          "videoTitle": "Unit 3 Review: Geometry, Measurement & Expressions",
+          "reading": "Demonstrate mastery of rectangular prism volume, unit conversions, coordinate pairs, and order of operations.",
+          "principles": [
+            {
+              "id": "p-g5-vol",
+              "title": "Volume of a Rectangular Prism",
+              "standard": "5.MD.C.5",
+              "summary": "Use V = l × w × h to find cubic volume.",
+              "generatorId": "g5.volume-prism"
+            },
+            {
+              "id": "p-g5-conv",
+              "title": "Converting Measurement Units",
+              "standard": "OH.5.MD.A.1",
+              "summary": "Convert metric and customary units accurately.",
+              "generatorId": "g5.unit-convert"
+            },
+            {
+              "id": "p-g5-coord",
+              "title": "Ordered Pairs on the Coordinate Plane",
+              "standard": "5.G.A.1",
+              "summary": "Identify the x-coordinate and y-coordinate in an ordered pair (x, y).",
+              "generatorId": "g5.coord-plane"
+            },
+            {
+              "id": "p-g5-order",
+              "title": "Order of Operations with Parentheses",
+              "standard": "5.OA.A.1",
+              "summary": "Evaluate expressions with parentheses.",
+              "generatorId": "g5.order-of-ops"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Volume of a Rectangular Prism & Converting Measurement Units & Ordered Pairs on the Coordinate Plane & Order of Operations with Parentheses (5.MD.C.5, OH.5.MD.A.1, 5.G.A.1, 5.OA.A.1). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g5-math-u3-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Volume of a Rectangular Prism & Converting Measurement Units & Ordered Pairs on the Coordinate Plane & Order of Operations with Parentheses",
+                "description": "Read the Core Concept Summary and Principle cards on this page (5.MD.C.5, OH.5.MD.A.1, 5.G.A.1, 5.OA.A.1) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g5-math-u3-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 3 Review: Geometry, Measurement & Expressions",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Volume of a Rectangular Prism & Converting Measurement Units & Ordered Pairs on the Coordinate Plane & Order of Operations with Parentheses\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Volume of a Rectangular Prism.",
+              "Use V = l × w × h to find cubic volume.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Volume of a Rectangular Prism\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Volume, Conversions, Coordinates & Expressions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20math%20Volume%2C%20Conversions%2C%20Coordinates%20%26%20Expressions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Volume, Conversions, Coordinates & Expressions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Volume%2C%20Conversions%2C%20Coordinates%20%26%20Expressions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Volume, Conversions, Coordinates & Expressions (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Volume%2C%20Conversions%2C%20Coordinates%20%26%20Expressions",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

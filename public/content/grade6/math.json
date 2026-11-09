@@ -3,7 +3,7 @@
   "subject": "math",
   "grade": 6,
   "title": "Grade 6 Mathematics",
-  "subtitle": "Ratios & Unit Rates, Rational Numbers, Expressions/Equations, Geometry & Statistics",
+  "subtitle": "Ratios & Unit Rates, Rational Numbers, Expressions/Equations, Geometry & Ohio Statistics",
   "credits": 1,
   "color": "#2563eb",
   "icon": "∑",
@@ -20,12 +20,13 @@
         {
           "id": "g6-math-u1-l1",
           "unitId": "g6-math-u1",
-          "title": "Lesson 1: Ratios & Unit Rates in Real-World Contexts",
+          "title": "Ratios & Unit Rates (Part 1 of 2)",
+          "partOf": "Proportional Reasoning",
           "kind": "lesson",
-          "estimatedMinutes": 22,
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic",
-          "videoTitle": "Khan Academy: Intro to Ratios & Solving Unit Rate Problems",
-          "reading": "A ratio compares two quantities. A rate compares two quantities with different units (such as miles and hours, or dollars and items). A unit rate has a denominator of 1 unit (for example, $6 per pound or 55 miles per 1 hour) and is found by dividing the first quantity by the second.",
+          "videoTitle": "Khan Academy: Solving Unit Rate Problems",
+          "reading": "A rate compares two quantities with different units, like miles and hours. A unit rate tells the amount per 1 single unit (such as $6 per 1 pound). Divide the total amount by the number of units to find the unit rate.",
           "principles": [
             {
               "id": "p-g6-unit-rate",
@@ -34,17 +35,84 @@
               "summary": "Divide total cost or distance by quantity to find the rate per 1 unit.",
               "generatorId": "g6.ratios-unit-rate"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Proportional Reasoning] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Computing Unit Rates by Division\" (6.RP.A.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-math-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Solving Unit Rate Problems",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Computing Unit Rates by Division\" (6.RP.A.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic"
+              },
+              {
+                "id": "g6-math-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Computing Unit Rates by Division.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-math-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (6.RP.A.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Computing Unit Rates by Division.",
+              "Divide total cost or distance by quantity to find the rate per 1 unit.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Computing Unit Rates by Division\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Proportional Reasoning\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20math%20Proportional%20Reasoning%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Proportional Reasoning\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Proportional%20Reasoning",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Proportional Reasoning (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Proportional%20Reasoning",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g6-math-u1-l2",
           "unitId": "g6-math-u1",
-          "title": "Lesson 2: Finding a Percent of a Quantity",
+          "title": "Percent of a Quantity (Part 2 of 2)",
+          "partOf": "Proportional Reasoning",
           "kind": "lesson",
-          "estimatedMinutes": 22,
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages",
-          "videoTitle": "Khan Academy: Percents as Ratios Per 100",
-          "reading": "Percent means \"per hundred\" (p% = p/100). To find p% of a number, convert the percentage to a decimal by dividing by 100 (or write it as a fraction over 100) and multiply by the whole quantity.",
+          "videoTitle": "Khan Academy: Finding Percents",
+          "reading": "Percent means \"per 100.\" To find a percent of a number, rewrite the percent as a fraction over 100 (or a decimal) and multiply by the whole number.",
           "principles": [
             {
               "id": "p-g6-percent",
@@ -53,18 +121,84 @@
               "summary": "Express p% as p/100 and multiply by the base quantity.",
               "generatorId": "g6.percent-of-number"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Proportional Reasoning] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Calculating Percent of a Number\" (6.RP.A.3c), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-math-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Finding Percents",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Calculating Percent of a Number\" (6.RP.A.3c). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages"
+              },
+              {
+                "id": "g6-math-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Calculating Percent of a Number.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-math-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (6.RP.A.3c)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Calculating Percent of a Number.",
+              "Express p% as p/100 and multiply by the base quantity.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Calculating Percent of a Number\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Proportional Reasoning\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20math%20Proportional%20Reasoning%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Proportional Reasoning\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Proportional%20Reasoning",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Proportional Reasoning (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Proportional%20Reasoning",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g6-math-u1-test",
           "unitId": "g6-math-u1",
           "title": "Unit 1 Exam: Ratios, Rates & Percentages",
           "kind": "unit_test",
-          "estimatedMinutes": 25,
+          "estimatedMinutes": 15,
           "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic",
           "videoTitle": "Unit 1 Review: Proportional Reasoning",
-          "reading": "This exam assesses unit rates and percent calculations with freshly generated numbers.",
-          "questionCount": 6,
+          "reading": "Show mastery of unit rates and percentage calculations.",
+          "questionCount": 8,
           "principles": [
             {
               "id": "p-g6-unit-rate",
@@ -77,106 +211,270 @@
               "id": "p-g6-percent",
               "title": "Calculating Percent of a Number",
               "standard": "6.RP.A.3c",
-              "summary": "Convert percent to decimal/fraction and multiply.",
+              "summary": "Convert percent to decimal or fraction and multiply.",
               "generatorId": "g6.percent-of-number"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Computing Unit Rates by Division & Calculating Percent of a Number (6.RP.A.2, 6.RP.A.3c). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g6-math-u1-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Computing Unit Rates by Division & Calculating Percent of a Number",
+                "description": "Read the Core Concept Summary and Principle cards on this page (6.RP.A.2, 6.RP.A.3c) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g6-math-u1-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 Review: Proportional Reasoning",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Computing Unit Rates by Division & Calculating Percent of a Number\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Computing Unit Rates by Division.",
+              "Find the per-unit rate by division.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Computing Unit Rates by Division\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Ratios, Rates & Percentages\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20math%20Ratios%2C%20Rates%20%26%20Percentages%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Ratios, Rates & Percentages\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Ratios%2C%20Rates%20%26%20Percentages",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Ratios, Rates & Percentages (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Ratios%2C%20Rates%20%26%20Percentages",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "g6-math-u2",
-      "title": "Unit 2: Fraction Division, Integers & Algebraic Equations",
+      "title": "Unit 2: Fraction Division, Integers & One-Step Equations",
       "standards": [
         "6.NS.A.1",
         "6.NS.C.5",
-        "6.EE.A.2",
         "6.EE.B.7"
       ],
       "lessons": [
         {
           "id": "g6-math-u2-l1",
           "unitId": "g6-math-u2",
-          "title": "Lesson 1: Dividing Fractions & Operating with Negative Integers",
+          "title": "Dividing Fractions by Fractions (Part 1 of 2)",
+          "partOf": "Rational Numbers & Algebra",
           "kind": "lesson",
-          "estimatedMinutes": 24,
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations",
-          "videoTitle": "Khan Academy: Dividing Fractions by Fractions & Negative Numbers",
-          "reading": "To divide a fraction by another fraction, multiply the dividend by the reciprocal (multiplicative inverse) of the divisor: (a/b) ÷ (c/d) = (a/b) × (d/c), then simplify using the greatest common divisor. On the number line, negative integers lie to the left of 0; adding a positive integer moves right, while subtracting moves left.",
+          "videoTitle": "Khan Academy: Dividing Fractions",
+          "reading": "To divide by a fraction, multiply the first fraction by the reciprocal (flipped version) of the second fraction. Then simplify your answer to lowest terms.",
           "principles": [
             {
               "id": "p-g6-frac-div",
               "title": "Dividing Fractions by Multiplying by the Reciprocal",
               "standard": "6.NS.A.1",
-              "summary": "Invert the second fraction (divisor) and multiply numerators and denominators, then simplify.",
+              "summary": "Flip the second fraction and multiply numerators and denominators.",
               "generatorId": "g6.fraction-division"
-            },
-            {
-              "id": "p-g6-integers",
-              "title": "Adding & Subtracting Signed Integers",
-              "standard": "6.NS.C.5",
-              "summary": "Use number-line direction and absolute value to evaluate signed integer expressions.",
-              "generatorId": "g6.integers-rational"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Rational Numbers & Algebra] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Dividing Fractions by Multiplying by the Reciprocal\" (6.NS.A.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-math-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Dividing Fractions",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Dividing Fractions by Multiplying by the Reciprocal\" (6.NS.A.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations"
+              },
+              {
+                "id": "g6-math-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Dividing Fractions by Multiplying by the Reciprocal.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-math-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (6.NS.A.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Dividing Fractions by Multiplying by the Reciprocal.",
+              "Flip the second fraction and multiply numerators and denominators.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Dividing Fractions by Multiplying by the Reciprocal\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Rational Numbers & Algebra\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20math%20Rational%20Numbers%20%26%20Algebra%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Rational Numbers & Algebra\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Rational%20Numbers%20%26%20Algebra",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Rational Numbers & Algebra (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Rational%20Numbers%20%26%20Algebra",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g6-math-u2-l2",
           "unitId": "g6-math-u2",
-          "title": "Lesson 2: Evaluating Expressions with Exponents & Solving Linear Equations",
+          "title": "Solving One-Step Equations (Part 2 of 2)",
+          "partOf": "Rational Numbers & Algebra",
           "kind": "lesson",
-          "estimatedMinutes": 24,
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables",
-          "videoTitle": "Khan Academy: Algebraic Expressions & Equations",
-          "reading": "When evaluating an algebraic expression like 4x² - 7 for a given value of x, substitute the number for x and follow the Order of Operations (PEMDAS: Parentheses, Exponents, Multiplication/Division, Addition/Subtraction). To solve an equation such as mx + b = c, apply inverse operations to both sides to isolate x.",
+          "videoTitle": "Khan Academy: One-Step Equations",
+          "reading": "To solve an equation for x, use inverse (opposite) operations on both sides to get x by itself. Undo addition with subtraction, and undo multiplication with division.",
           "principles": [
-            {
-              "id": "p-g6-eval-expr",
-              "title": "Evaluating Expressions with Exponents",
-              "standard": "6.EE.A.2",
-              "summary": "Substitute variable values and compute exponents before multiplication and subtraction.",
-              "generatorId": "g6.expressions-evaluate"
-            },
             {
               "id": "p-g6-solve-eq",
               "title": "Solving Equations Using Inverse Operations",
               "standard": "6.EE.B.7",
-              "summary": "Undo addition/subtraction first, then divide by the coefficient of x.",
+              "summary": "Undo addition or subtraction first, then divide by the coefficient of x.",
               "generatorId": "g6.one-step-equations"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Rational Numbers & Algebra] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Solving Equations Using Inverse Operations\" (6.EE.B.7), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-math-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: One-Step Equations",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Solving Equations Using Inverse Operations\" (6.EE.B.7). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables"
+              },
+              {
+                "id": "g6-math-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Solving Equations Using Inverse Operations.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-math-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (6.EE.B.7)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Solving Equations Using Inverse Operations.",
+              "Undo addition or subtraction first, then divide by the coefficient of x.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Solving Equations Using Inverse Operations\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Rational Numbers & Algebra\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20math%20Rational%20Numbers%20%26%20Algebra%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Rational Numbers & Algebra\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Rational%20Numbers%20%26%20Algebra",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Rational Numbers & Algebra (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Rational%20Numbers%20%26%20Algebra",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g6-math-u2-test",
           "unitId": "g6-math-u2",
-          "title": "Unit 2 Exam: Rational Numbers & Algebra",
+          "title": "Unit 2 Exam: Fractions & Equations",
           "kind": "unit_test",
-          "estimatedMinutes": 25,
+          "estimatedMinutes": 15,
           "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables",
           "videoTitle": "Unit 2 Review: Rational Numbers & Algebra",
-          "reading": "Demonstrate mastery of fraction division, signed integers, exponent expressions, and equation solving.",
+          "reading": "Complete this unit exam on fraction division and solving algebraic equations.",
           "questionCount": 8,
           "principles": [
             {
               "id": "p-g6-frac-div",
               "title": "Dividing Fractions by Multiplying by the Reciprocal",
               "standard": "6.NS.A.1",
-              "summary": "Multiply by the reciprocal and reduce to lowest terms.",
+              "summary": "Multiply by the reciprocal and simplify.",
               "generatorId": "g6.fraction-division"
-            },
-            {
-              "id": "p-g6-integers",
-              "title": "Adding & Subtracting Signed Integers",
-              "standard": "6.NS.C.5",
-              "summary": "Operate with negative and positive integers.",
-              "generatorId": "g6.integers-rational"
-            },
-            {
-              "id": "p-g6-eval-expr",
-              "title": "Evaluating Expressions with Exponents",
-              "standard": "6.EE.A.2",
-              "summary": "Evaluate variable expressions with exponents.",
-              "generatorId": "g6.expressions-evaluate"
             },
             {
               "id": "p-g6-solve-eq",
@@ -185,71 +483,337 @@
               "summary": "Isolate the variable x using inverse operations.",
               "generatorId": "g6.one-step-equations"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Dividing Fractions by Multiplying by the Reciprocal & Solving Equations Using Inverse Operations (6.NS.A.1, 6.EE.B.7). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g6-math-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Dividing Fractions by Multiplying by the Reciprocal & Solving Equations Using Inverse Operations",
+                "description": "Read the Core Concept Summary and Principle cards on this page (6.NS.A.1, 6.EE.B.7) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g6-math-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Review: Rational Numbers & Algebra",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Dividing Fractions by Multiplying by the Reciprocal & Solving Equations Using Inverse Operations\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Dividing Fractions by Multiplying by the Reciprocal.",
+              "Multiply by the reciprocal and simplify.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Dividing Fractions by Multiplying by the Reciprocal\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Fractions & Equations\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20math%20Fractions%20%26%20Equations%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Fractions & Equations\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Fractions%20%26%20Equations",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Fractions & Equations (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Fractions%20%26%20Equations",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "g6-math-u3",
-      "title": "Unit 3: Geometry (Triangles & Prisms) and Data Statistics",
+      "title": "Unit 3: Geometry & Ohio Statistical Measures",
       "standards": [
         "6.G.A.1",
-        "6.G.A.2",
-        "6.SP.B.5c"
+        "OH.6.SP.B.5c"
       ],
+      "isOhioExtension": true,
       "lessons": [
         {
           "id": "g6-math-u3-l1",
           "unitId": "g6-math-u3",
-          "title": "Lesson 1: Area of Triangles, Volume of Prisms & Mean/Median",
+          "title": "Area of Triangles (Part 1 of 2)",
+          "partOf": "Geometry & Data",
           "kind": "lesson",
-          "estimatedMinutes": 24,
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic",
-          "videoTitle": "Khan Academy: Area of Triangles, Volume & Mean/Median",
-          "reading": "Every triangle is half of a parallelogram with the same base and height, so Area = ½ × b × h. The volume of a rectangular prism is Volume = length × width × height (cubic units). In statistics, the mean is the arithmetic average (sum of values divided by count) and the median is the middle value when data are ordered from least to greatest.",
+          "videoTitle": "Khan Academy: Area of Triangles",
+          "reading": "Every triangle is exactly half of a rectangle or parallelogram with the same base and height. Use the formula Area = (base × height) ÷ 2.",
           "principles": [
             {
               "id": "p-g6-geom",
-              "title": "Area of Triangles and Volume of Rectangular Prisms",
+              "title": "Area of Right and Acute Triangles",
               "standard": "6.G.A.1",
-              "summary": "Use A = ½bh for triangles and V = lwh for rectangular prisms.",
-              "generatorId": "g6.geometry-triangle-prism"
-            },
+              "summary": "Multiply base by height and divide by 2 to find triangle area.",
+              "generatorId": "g6.geometry-triangle"
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Geometry & Data] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Area of Right and Acute Triangles\" (6.G.A.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-math-u3-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Area of Triangles",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Area of Right and Acute Triangles\" (6.G.A.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic"
+              },
+              {
+                "id": "g6-math-u3-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Area of Right and Acute Triangles.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-math-u3-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (6.G.A.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Area of Right and Acute Triangles.",
+              "Multiply base by height and divide by 2 to find triangle area.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Area of Right and Acute Triangles\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Geometry & Data\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20math%20Geometry%20%26%20Data%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Geometry & Data\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Geometry%20%26%20Data",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Geometry & Data (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Geometry%20%26%20Data",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g6-math-u3-l2",
+          "unitId": "g6-math-u3",
+          "title": "Ohio Stats: Median & Center of Data (Part 2 of 2)",
+          "partOf": "Geometry & Data",
+          "kind": "lesson",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics",
+          "videoTitle": "Khan Academy: Median & Measures of Center (OH.6.SP.B.5c)",
+          "reading": "Under Ohio Standard OH.6.SP.B.5c, we summarize data sets using measures of center. To find the median, sort the numbers from least to greatest and pick the middle number.",
+          "principles": [
             {
               "id": "p-g6-stats",
-              "title": "Measures of Center: Mean and Median",
-              "standard": "6.SP.B.5c",
-              "summary": "Compute the mean (sum ÷ count) and median (middle value of ordered list).",
-              "generatorId": "g6.stats-mean-median"
+              "title": "Finding the Median of an Ordered Data Set",
+              "standard": "OH.6.SP.B.5c",
+              "summary": "Order the numbers from least to greatest and identify the middle value.",
+              "generatorId": "g6.stats-median"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Geometry & Data] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Finding the Median of an Ordered Data Set\" (OH.6.SP.B.5c), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-math-u3-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Median & Measures of Center (OH.6.SP.B.5c)",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Finding the Median of an Ordered Data Set\" (OH.6.SP.B.5c). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics"
+              },
+              {
+                "id": "g6-math-u3-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Finding the Median of an Ordered Data Set.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-math-u3-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.6.SP.B.5c)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Finding the Median of an Ordered Data Set.",
+              "Order the numbers from least to greatest and identify the middle value.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Finding the Median of an Ordered Data Set\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Geometry & Data\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20math%20Geometry%20%26%20Data%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Geometry & Data\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Geometry%20%26%20Data",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Geometry & Data (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Geometry%20%26%20Data",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g6-math-u3-test",
           "unitId": "g6-math-u3",
           "title": "Unit 3 Exam: Geometry & Statistical Measures",
           "kind": "unit_test",
-          "estimatedMinutes": 25,
+          "isOhioExtension": true,
+          "estimatedMinutes": 15,
           "videoUrl": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics",
           "videoTitle": "Unit 3 Review: Geometry & Statistics",
-          "reading": "Complete this Unit Exam on triangle area, prism volume, mean, and median.",
-          "questionCount": 6,
+          "reading": "Complete this exam covering triangle area and statistical median.",
+          "questionCount": 8,
           "principles": [
             {
               "id": "p-g6-geom",
-              "title": "Area of Triangles and Volume of Rectangular Prisms",
+              "title": "Area of Right and Acute Triangles",
               "standard": "6.G.A.1",
-              "summary": "Calculate triangle area and prism volume.",
-              "generatorId": "g6.geometry-triangle-prism"
+              "summary": "Calculate triangle area using A = ½bh.",
+              "generatorId": "g6.geometry-triangle"
             },
             {
               "id": "p-g6-stats",
-              "title": "Measures of Center: Mean and Median",
-              "standard": "6.SP.B.5c",
-              "summary": "Calculate mean and median of numerical data sets.",
-              "generatorId": "g6.stats-mean-median"
+              "title": "Finding the Median of an Ordered Data Set",
+              "standard": "OH.6.SP.B.5c",
+              "summary": "Sort data from least to greatest to find the median.",
+              "generatorId": "g6.stats-median"
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Area of Right and Acute Triangles & Finding the Median of an Ordered Data Set (6.G.A.1, OH.6.SP.B.5c). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g6-math-u3-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Area of Right and Acute Triangles & Finding the Median of an Ordered Data Set",
+                "description": "Read the Core Concept Summary and Principle cards on this page (6.G.A.1, OH.6.SP.B.5c) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g6-math-u3-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 3 Review: Geometry & Statistics",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Area of Right and Acute Triangles & Finding the Median of an Ordered Data Set\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Area of Right and Acute Triangles.",
+              "Calculate triangle area using A = ½bh.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Review the principle summary for \"Area of Right and Acute Triangles\" and test one small number at a time.",
+            "links": [
+              {
+                "label": "YouTube: \"Geometry & Statistical Measures\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20math%20Geometry%20%26%20Statistical%20Measures%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Geometry & Statistical Measures\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Geometry%20%26%20Statistical%20Measures",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Math Antics — Geometry & Statistical Measures (Visual Breakdown)",
+                "url": "https://www.youtube.com/results?search_query=Math%20Antics%20Geometry%20%26%20Statistical%20Measures",
+                "kind": "video",
+                "provider": "Math Antics (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     }

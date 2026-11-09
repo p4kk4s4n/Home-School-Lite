@@ -3,7 +3,7 @@
   "subject": "science",
   "grade": 4,
   "title": "Grade 4 Science",
-  "subtitle": "Energy Transfer, Waves, Earth Processes & Plant/Animal Structures",
+  "subtitle": "Energy Transfer, Waves, Ohio Geology & Plant/Animal Structures",
   "credits": 1,
   "color": "#059669",
   "icon": "⚛",
@@ -20,603 +20,1499 @@
         {
           "id": "g4-sci-u1-l1",
           "unitId": "g4-sci-u1",
-          "title": "Lesson 1: Speed, Kinetic Energy & Energy Transformations",
+          "title": "Lesson 1a: Speed, Kinetic Energy & Energy Changes",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Energy & Motion",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy",
           "videoTitle": "Forms of Energy: Kinetic, Potential & Thermal Transfer",
-          "reading": "Energy is the ability to do work or cause change. Moving objects possess kinetic energy—the faster an object moves, the more kinetic energy it has. Stored energy due to position is potential energy. Energy is never destroyed; it transforms between kinetic, potential, thermal (heat), light, sound, and electrical energy.",
+          "reading": "Moving objects have kinetic energy—the faster an object moves, the more kinetic energy it has. Stored energy is potential energy. Energy can change into heat, light, sound, or electricity.",
           "principles": [
             {
               "id": "p-g4-sci-energy",
               "title": "Kinetic vs. Potential Energy & Energy Transfer",
               "standard": "4-PS3-1",
-              "summary": "Faster objects carry greater kinetic energy; energy transforms from one form to another during collisions and motion.",
+              "summary": "Faster objects have more kinetic energy; energy changes form during motion and collisions.",
               "bank": [
                 {
-                  "id": "q1",
+                  "id": "g4-sci-en-1",
                   "type": "mc",
-                  "prompt": "How does the speed of a rolling bowling ball affect its kinetic energy?",
+                  "prompt": "How does faster speed change a rolling ball’s kinetic energy?",
                   "choices": [
-                    "The faster it rolls, the more kinetic energy it has.",
-                    "The faster it rolls, the less kinetic energy it has.",
-                    "Speed has no effect on kinetic energy.",
-                    "It only has kinetic energy when it stops moving."
+                    "It has more kinetic energy.",
+                    "It has less kinetic energy.",
+                    "Its kinetic energy stays zero.",
+                    "Its mass disappears."
                   ],
-                  "answer": "The faster it rolls, the more kinetic energy it has.",
-                  "explanation": "Kinetic energy is the energy of motion; increasing an object’s speed increases its kinetic energy."
+                  "answer": "It has more kinetic energy.",
+                  "explanation": "Kinetic energy is the energy of motion. Faster objects carry more kinetic energy."
                 },
                 {
-                  "id": "q2",
+                  "id": "g4-sci-en-2",
                   "type": "mc",
-                  "prompt": "A rollercoaster car paused at the very top of a tall hill has the greatest amount of which type of energy?",
+                  "prompt": "What energy is stored in a car stopped on a high hill?",
                   "choices": [
                     "Gravitational potential energy",
                     "Sound energy",
                     "Kinetic energy",
-                    "Chemical energy"
+                    "Light energy"
                   ],
                   "answer": "Gravitational potential energy",
-                  "explanation": "At the top of the hill, energy is stored due to height above the ground—this is gravitational potential energy."
+                  "explanation": "Potential energy is stored energy. Height above the ground stores gravitational potential energy."
                 },
                 {
-                  "id": "q3",
+                  "id": "g4-sci-en-3",
                   "type": "mc",
-                  "prompt": "When two marbles collide on a track and make a clicking noise, what happens to the energy?",
+                  "prompt": "What happens to energy when two rolling marbles collide and click?",
                   "choices": [
-                    "Energy transfers between the marbles and some transforms into sound and heat.",
-                    "All energy disappears upon impact.",
-                    "New energy is created out of nothing.",
-                    "The marbles gain mass from the sound."
+                    "Energy transfers and makes sound and heat.",
+                    "All energy disappears forever.",
+                    "New energy is created from nothing.",
+                    "The marbles double in weight."
                   ],
-                  "answer": "Energy transfers between the marbles and some transforms into sound and heat.",
-                  "explanation": "By conservation of energy, kinetic energy transfers between colliding objects and part converts to sound and thermal energy."
+                  "answer": "Energy transfers and makes sound and heat.",
+                  "explanation": "Energy cannot be destroyed. During a collision, motion energy transfers or turns into sound and heat."
                 },
                 {
-                  "id": "q4",
+                  "id": "g4-sci-en-4",
                   "type": "mc",
-                  "prompt": "A toaster plugged into a wall outlet primarily converts electrical energy into which form?",
+                  "prompt": "A kitchen toaster changes electrical energy mainly into what form?",
                   "choices": [
-                    "Thermal (heat) and light energy",
+                    "Thermal heat and light energy",
                     "Gravitational potential energy",
                     "Nuclear energy",
-                    "Magnetic mass"
+                    "Wind energy"
                   ],
-                  "answer": "Thermal (heat) and light energy",
-                  "explanation": "Heating coils resist electric current, transforming electrical energy into thermal energy (heat) and glowing red light."
+                  "answer": "Thermal heat and light energy",
+                  "explanation": "Thermal energy is heat energy. A toaster turns electricity into heat and glowing light."
                 },
                 {
-                  "id": "q5",
+                  "id": "g4-sci-en-5",
                   "type": "mc",
-                  "prompt": "Which object has the MOST kinetic energy if all four have the same mass?",
+                  "prompt": "Four identical balls roll. Which ball has the most kinetic energy?",
                   "choices": [
-                    "A soccer ball kicked at 25 meters per second",
-                    "A soccer ball rolling at 5 meters per second",
-                    "A soccer ball sitting still on the field",
-                    "A soccer ball moving at 12 meters per second"
+                    "The ball moving 20 meters per second",
+                    "The ball moving 5 meters per second",
+                    "The ball sitting still",
+                    "The ball moving 10 meters per second"
                   ],
-                  "answer": "A soccer ball kicked at 25 meters per second",
-                  "explanation": "For objects of equal mass, the object moving at the highest speed has the greatest kinetic energy."
+                  "answer": "The ball moving 20 meters per second",
+                  "explanation": "When objects have the same mass, the fastest one has the most kinetic energy."
                 },
                 {
-                  "id": "q6",
+                  "id": "g4-sci-en-6",
                   "type": "mc",
-                  "prompt": "Solar panels on a roof transform light energy from the sun directly into:",
+                  "prompt": "Solar panels on a roof change sunlight directly into what energy?",
                   "choices": [
                     "Electrical energy",
                     "Sound energy",
-                    "Fossil fuels",
-                    "Wind energy"
+                    "Fossil fuel",
+                    "Elastic energy"
                   ],
                   "answer": "Electrical energy",
-                  "explanation": "Photovoltaic cells in solar panels convert sunlight directly into electrical energy."
+                  "explanation": "Solar cells capture light energy from the sun and convert it into electrical energy."
                 },
                 {
-                  "id": "q7",
+                  "id": "g4-sci-en-7",
                   "type": "mc",
-                  "prompt": "When you rub your hands together rapidly on a cold day, mechanical motion transforms into:",
+                  "prompt": "Rubbing cold hands together makes them warm through what force?",
                   "choices": [
-                    "Thermal energy (heat) due to friction",
-                    "Light energy",
-                    "Chemical energy",
-                    "Magnetic energy"
+                    "Friction turning motion into heat",
+                    "Gravity pulling hands down",
+                    "Magnetism between fingers",
+                    "Light reflecting off skin"
                   ],
-                  "answer": "Thermal energy (heat) due to friction",
-                  "explanation": "Friction between your moving hands converts kinetic energy into thermal energy that warms your skin."
+                  "answer": "Friction turning motion into heat",
+                  "explanation": "Friction is a force between rubbing surfaces. It changes kinetic motion energy into thermal heat."
                 },
                 {
-                  "id": "q8",
+                  "id": "g4-sci-en-8",
                   "type": "mc",
-                  "prompt": "A stretched rubber band before it is released stores what kind of energy?",
+                  "prompt": "What type of energy is stored in a stretched rubber band?",
                   "choices": [
                     "Elastic potential energy",
-                    "Thermal energy",
                     "Sound energy",
-                    "Radiant energy"
+                    "Thermal energy",
+                    "Light energy"
                   ],
                   "answer": "Elastic potential energy",
-                  "explanation": "Stretching or compressing an elastic object stores elastic potential energy ready to convert into motion."
-                },
-                {
-                  "id": "q9",
-                  "type": "mc",
-                  "prompt": "What happens to a moving toy car’s speed when you push it harder with more force?",
-                  "choices": [
-                    "It gains more energy and moves faster.",
-                    "It loses energy and slows down.",
-                    "Its mass doubles.",
-                    "Its speed stays unchanged."
-                  ],
-                  "answer": "It gains more energy and moves faster.",
-                  "explanation": "A stronger push transfers more energy to the toy car, increasing its speed."
-                },
-                {
-                  "id": "q10",
-                  "type": "mc",
-                  "prompt": "Which sequence accurately describes a battery-powered flashlight turned on?",
-                  "choices": [
-                    "Chemical energy → Electrical energy → Light & Thermal energy",
-                    "Light energy → Chemical energy → Sound energy",
-                    "Sound energy → Mechanical energy → Chemical energy",
-                    "Gravitational energy → Nuclear energy → Light energy"
-                  ],
-                  "answer": "Chemical energy → Electrical energy → Light & Thermal energy",
-                  "explanation": "A battery stores chemical energy, which drives an electric current that produces light and heat in the bulb."
+                  "explanation": "Elastic potential energy is stored when an object is stretched or compressed."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Energy & Motion] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Kinetic vs. Potential Energy & Energy Transfer\" (4-PS3-1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-sci-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Forms of Energy: Kinetic, Potential & Thermal Transfer",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Kinetic vs. Potential Energy & Energy Transfer\" (4-PS3-1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy"
+              },
+              {
+                "id": "g4-sci-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Kinetic vs. Potential Energy & Energy Transfer.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-sci-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (4-PS3-1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Kinetic vs. Potential Energy & Energy Transfer.",
+              "Faster objects have more kinetic energy; energy changes form during motion and collisions.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How does faster speed change a rolling ball’s kinetic energy?\" → Answer: It has more kinetic energy.. (Kinetic energy is the energy of motion. Faster objects carry more kinetic energy.)",
+            "links": [
+              {
+                "label": "YouTube: \"Energy & Motion\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20science%20Energy%20%26%20Motion%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Energy & Motion\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Energy%20%26%20Motion",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Energy & Motion",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Energy%20%26%20Motion",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g4-sci-u1-l2",
           "unitId": "g4-sci-u1",
-          "title": "Lesson 2: Properties of Waves, Amplitude & Wavelength",
+          "title": "Lesson 1b: Wave Amplitude & Wavelength",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Waves & Information",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves",
           "videoTitle": "Wave Properties: Crest, Trough, Amplitude & Wavelength",
-          "reading": "Waves are regular patterns of motion that transfer energy from place to place without transferring matter permanently. The highest point of a wave is the crest and the lowest point is the trough. Amplitude is the height from the resting line to the crest (taller amplitude = more energy), and wavelength is the distance from one crest to the next crest.",
+          "reading": "Waves carry energy without moving matter far. The top of a wave is the crest and the bottom is the trough. Amplitude is wave height, and wavelength is the distance from crest to crest.",
           "principles": [
             {
               "id": "p-g4-sci-waves",
               "title": "Wave Amplitude, Wavelength, and Energy Transfer",
               "standard": "4-PS4-1",
-              "summary": "Waves transfer energy, not matter; amplitude measures wave height/energy and wavelength measures crest-to-crest distance.",
+              "summary": "Waves move energy without moving matter far; amplitude is height and wavelength is crest-to-crest distance.",
               "bank": [
                 {
-                  "id": "w1",
+                  "id": "g4-sci-wv-1",
                   "type": "mc",
-                  "prompt": "What do ocean waves carry across the water toward the shore?",
+                  "prompt": "What do ocean waves carry across the water toward shore?",
                   "choices": [
-                    "Energy, while water molecules mostly move up and down in place",
-                    "The same water molecules all the way from the middle of the ocean",
-                    "Only sand from the ocean floor",
-                    "Gravity"
+                    "Energy while water bobs in place",
+                    "The same water drops across oceans",
+                    "Only heavy rocks",
+                    "Gravity and air"
                   ],
-                  "answer": "Energy, while water molecules mostly move up and down in place",
-                  "explanation": "Waves transfer energy through a medium; floating objects bob up and down in circular orbits rather than traveling across the ocean."
+                  "answer": "Energy while water bobs in place",
+                  "explanation": "A wave is a pattern of motion that carries energy, while water mostly moves up and down."
                 },
                 {
-                  "id": "w2",
+                  "id": "g4-sci-wv-2",
                   "type": "mc",
-                  "prompt": "The distance from one wave crest to the very next wave crest is called the:",
+                  "prompt": "What is the distance from one wave crest to the next crest?",
                   "choices": [
                     "Wavelength",
                     "Amplitude",
                     "Trough",
-                    "Frequency"
+                    "Pitch"
                   ],
                   "answer": "Wavelength",
-                  "explanation": "Wavelength is the spatial distance between two consecutive crests (or two consecutive troughs)."
+                  "explanation": "Wavelength is the distance between two matching points on consecutive waves, such as crest to crest."
                 },
                 {
-                  "id": "w3",
+                  "id": "g4-sci-wv-3",
                   "type": "mc",
-                  "prompt": "If a sound wave has a larger amplitude, how does the sound change?",
+                  "prompt": "How does a larger amplitude change a sound wave?",
                   "choices": [
-                    "The sound is louder because it carries more energy.",
+                    "The sound is louder.",
                     "The sound is quieter.",
-                    "The sound stops traveling.",
-                    "The pitch becomes silent."
+                    "The sound stops moving.",
+                    "The sound turns into light."
                   ],
-                  "answer": "The sound is louder because it carries more energy.",
-                  "explanation": "Greater wave amplitude means more energy is transferred, which we hear as a louder sound."
+                  "answer": "The sound is louder.",
+                  "explanation": "Amplitude is wave height from the resting line. Greater amplitude carries more energy and makes louder sound."
                 },
                 {
-                  "id": "w4",
+                  "id": "g4-sci-wv-4",
                   "type": "mc",
-                  "prompt": "What is the lowest point of a transverse wave called?",
+                  "prompt": "What is the lowest point of a wave called?",
                   "choices": [
                     "Trough",
                     "Crest",
                     "Amplitude",
-                    "Resting line"
+                    "Midpoint"
                   ],
                   "answer": "Trough",
-                  "explanation": "The peak is the crest and the valley (lowest point) is the trough."
+                  "explanation": "The crest is the highest peak of a wave, and the trough is the lowest valley."
                 },
                 {
-                  "id": "w5",
+                  "id": "g4-sci-wv-5",
                   "type": "mc",
-                  "prompt": "How do we see an object that does not make its own light, such as a book?",
+                  "prompt": "How do our eyes see a book that makes no light?",
                   "choices": [
-                    "Light reflects off the book and enters our eyes.",
-                    "Our eyes send out beams of light onto the book.",
-                    "The book absorbs 100% of all light.",
-                    "Sound waves bounce off the book into our eyes."
+                    "Light reflects off the book into eyes.",
+                    "Eyes shoot light beams out.",
+                    "The book absorbs all light.",
+                    "Sound bounces off the pages."
                   ],
-                  "answer": "Light reflects off the book and enters our eyes.",
-                  "explanation": "Vision occurs when light from a source reflects off an object’s surface and enters the eye’s pupil."
+                  "answer": "Light reflects off the book into eyes.",
+                  "explanation": "Reflection happens when light bounces off an object and enters our eyes so we can see it."
                 },
                 {
-                  "id": "w6",
+                  "id": "g4-sci-wv-6",
                   "type": "mc",
-                  "prompt": "Which measurement describes the vertical height of a wave from its midpoint (rest position) to its crest?",
+                  "prompt": "What measures a wave’s height from its rest line to its crest?",
                   "choices": [
                     "Amplitude",
                     "Wavelength",
-                    "Speed",
-                    "Reflection"
+                    "Echo",
+                    "Refraction"
                   ],
                   "answer": "Amplitude",
-                  "explanation": "Amplitude is the distance from the centerline (rest position) to the top of a crest or bottom of a trough."
+                  "explanation": "Amplitude is the vertical height of a wave measured from the center rest line to the crest."
                 },
                 {
-                  "id": "w7",
+                  "id": "g4-sci-wv-7",
                   "type": "mc",
-                  "prompt": "A cork floating on a pond bobs up and down 6 times as ripples pass by. After the ripples pass, where is the cork?",
+                  "prompt": "Where is a floating cork after small pond ripples pass under it?",
                   "choices": [
-                    "In nearly the same spot on the pond",
-                    "Pushed all the way to the bottom of the pond",
-                    "Carried miles away by a single ripple",
-                    "Dissolved into the wave"
+                    "In almost the same spot",
+                    "Sunk at the pond bottom",
+                    "Miles away on land",
+                    "Melted into the water"
                   ],
-                  "answer": "In nearly the same spot on the pond",
-                  "explanation": "Surface water waves move energy forward while the medium moves up and down locally."
+                  "answer": "In almost the same spot",
+                  "explanation": "Water waves transfer energy forward, so a floating cork bobs up and down in place."
                 },
                 {
-                  "id": "w8",
+                  "id": "g4-sci-wv-8",
                   "type": "mc",
-                  "prompt": "Comparing two water waves, Wave A has crests 2 meters high and Wave B has crests 0.5 meters high. Which is true?",
+                  "prompt": "Wave A is taller than Wave B. Which wave carries more energy?",
                   "choices": [
-                    "Wave A has a greater amplitude and carries more energy.",
-                    "Wave B has a greater amplitude.",
-                    "Both waves have identical amplitude.",
-                    "Neither wave transfers energy."
+                    "Wave A because its amplitude is larger",
+                    "Wave B because it is shorter",
+                    "Both carry zero energy",
+                    "Both have the same amplitude"
                   ],
-                  "answer": "Wave A has a greater amplitude and carries more energy.",
-                  "explanation": "Higher crests mean larger amplitude and greater wave energy."
+                  "answer": "Wave A because its amplitude is larger",
+                  "explanation": "Taller waves have greater amplitude and transfer more energy than shorter waves."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Waves & Information] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Wave Amplitude, Wavelength, and Energy Transfer\" (4-PS4-1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-sci-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Wave Properties: Crest, Trough, Amplitude & Wavelength",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Wave Amplitude, Wavelength, and Energy Transfer\" (4-PS4-1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves"
+              },
+              {
+                "id": "g4-sci-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Wave Amplitude, Wavelength, and Energy Transfer.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-sci-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (4-PS4-1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Wave Amplitude, Wavelength, and Energy Transfer.",
+              "Waves move energy without moving matter far; amplitude is height and wavelength is crest-to-crest distance.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What do ocean waves carry across the water toward shore?\" → Answer: Energy while water bobs in place. (A wave is a pattern of motion that carries energy, while water mostly moves up and down.)",
+            "links": [
+              {
+                "label": "YouTube: \"Waves & Information\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20science%20Waves%20%26%20Information%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Waves & Information\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Waves%20%26%20Information",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Waves & Information",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Waves%20%26%20Information",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g4-sci-u1-review",
+          "unitId": "g4-sci-u1",
+          "title": "Unit 1 Review: Energy & Waves Checkup",
+          "kind": "lesson_review",
+          "estimatedMinutes": 12,
+          "videoUrl": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy",
+          "videoTitle": "Reviewing Energy & Wave Properties",
+          "reading": "Review kinetic energy, potential energy, wave amplitude, and wavelength before starting this 6-question checkup.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g4-sci-energy",
+              "title": "Kinetic vs. Potential Energy & Energy Transfer",
+              "standard": "4-PS3-1",
+              "summary": "Faster objects have more kinetic energy; energy changes form during motion and collisions.",
+              "bank": [
+                {
+                  "id": "g4-sci-en-1",
+                  "type": "mc",
+                  "prompt": "How does faster speed change a rolling ball’s kinetic energy?",
+                  "choices": [
+                    "It has more kinetic energy.",
+                    "It has less kinetic energy.",
+                    "Its kinetic energy stays zero.",
+                    "Its mass disappears."
+                  ],
+                  "answer": "It has more kinetic energy.",
+                  "explanation": "Kinetic energy is the energy of motion. Faster objects carry more kinetic energy."
+                },
+                {
+                  "id": "g4-sci-en-2",
+                  "type": "mc",
+                  "prompt": "What energy is stored in a car stopped on a high hill?",
+                  "choices": [
+                    "Gravitational potential energy",
+                    "Sound energy",
+                    "Kinetic energy",
+                    "Light energy"
+                  ],
+                  "answer": "Gravitational potential energy",
+                  "explanation": "Potential energy is stored energy. Height above the ground stores gravitational potential energy."
+                },
+                {
+                  "id": "g4-sci-en-3",
+                  "type": "mc",
+                  "prompt": "What happens to energy when two rolling marbles collide and click?",
+                  "choices": [
+                    "Energy transfers and makes sound and heat.",
+                    "All energy disappears forever.",
+                    "New energy is created from nothing.",
+                    "The marbles double in weight."
+                  ],
+                  "answer": "Energy transfers and makes sound and heat.",
+                  "explanation": "Energy cannot be destroyed. During a collision, motion energy transfers or turns into sound and heat."
+                },
+                {
+                  "id": "g4-sci-en-4",
+                  "type": "mc",
+                  "prompt": "A kitchen toaster changes electrical energy mainly into what form?",
+                  "choices": [
+                    "Thermal heat and light energy",
+                    "Gravitational potential energy",
+                    "Nuclear energy",
+                    "Wind energy"
+                  ],
+                  "answer": "Thermal heat and light energy",
+                  "explanation": "Thermal energy is heat energy. A toaster turns electricity into heat and glowing light."
+                },
+                {
+                  "id": "g4-sci-en-5",
+                  "type": "mc",
+                  "prompt": "Four identical balls roll. Which ball has the most kinetic energy?",
+                  "choices": [
+                    "The ball moving 20 meters per second",
+                    "The ball moving 5 meters per second",
+                    "The ball sitting still",
+                    "The ball moving 10 meters per second"
+                  ],
+                  "answer": "The ball moving 20 meters per second",
+                  "explanation": "When objects have the same mass, the fastest one has the most kinetic energy."
+                },
+                {
+                  "id": "g4-sci-en-6",
+                  "type": "mc",
+                  "prompt": "Solar panels on a roof change sunlight directly into what energy?",
+                  "choices": [
+                    "Electrical energy",
+                    "Sound energy",
+                    "Fossil fuel",
+                    "Elastic energy"
+                  ],
+                  "answer": "Electrical energy",
+                  "explanation": "Solar cells capture light energy from the sun and convert it into electrical energy."
+                },
+                {
+                  "id": "g4-sci-en-7",
+                  "type": "mc",
+                  "prompt": "Rubbing cold hands together makes them warm through what force?",
+                  "choices": [
+                    "Friction turning motion into heat",
+                    "Gravity pulling hands down",
+                    "Magnetism between fingers",
+                    "Light reflecting off skin"
+                  ],
+                  "answer": "Friction turning motion into heat",
+                  "explanation": "Friction is a force between rubbing surfaces. It changes kinetic motion energy into thermal heat."
+                },
+                {
+                  "id": "g4-sci-en-8",
+                  "type": "mc",
+                  "prompt": "What type of energy is stored in a stretched rubber band?",
+                  "choices": [
+                    "Elastic potential energy",
+                    "Sound energy",
+                    "Thermal energy",
+                    "Light energy"
+                  ],
+                  "answer": "Elastic potential energy",
+                  "explanation": "Elastic potential energy is stored when an object is stretched or compressed."
+                }
+              ]
+            },
+            {
+              "id": "p-g4-sci-waves",
+              "title": "Wave Amplitude, Wavelength, and Energy Transfer",
+              "standard": "4-PS4-1",
+              "summary": "Waves move energy without moving matter far; amplitude is height and wavelength is crest-to-crest distance.",
+              "bank": [
+                {
+                  "id": "g4-sci-wv-1",
+                  "type": "mc",
+                  "prompt": "What do ocean waves carry across the water toward shore?",
+                  "choices": [
+                    "Energy while water bobs in place",
+                    "The same water drops across oceans",
+                    "Only heavy rocks",
+                    "Gravity and air"
+                  ],
+                  "answer": "Energy while water bobs in place",
+                  "explanation": "A wave is a pattern of motion that carries energy, while water mostly moves up and down."
+                },
+                {
+                  "id": "g4-sci-wv-2",
+                  "type": "mc",
+                  "prompt": "What is the distance from one wave crest to the next crest?",
+                  "choices": [
+                    "Wavelength",
+                    "Amplitude",
+                    "Trough",
+                    "Pitch"
+                  ],
+                  "answer": "Wavelength",
+                  "explanation": "Wavelength is the distance between two matching points on consecutive waves, such as crest to crest."
+                },
+                {
+                  "id": "g4-sci-wv-3",
+                  "type": "mc",
+                  "prompt": "How does a larger amplitude change a sound wave?",
+                  "choices": [
+                    "The sound is louder.",
+                    "The sound is quieter.",
+                    "The sound stops moving.",
+                    "The sound turns into light."
+                  ],
+                  "answer": "The sound is louder.",
+                  "explanation": "Amplitude is wave height from the resting line. Greater amplitude carries more energy and makes louder sound."
+                },
+                {
+                  "id": "g4-sci-wv-4",
+                  "type": "mc",
+                  "prompt": "What is the lowest point of a wave called?",
+                  "choices": [
+                    "Trough",
+                    "Crest",
+                    "Amplitude",
+                    "Midpoint"
+                  ],
+                  "answer": "Trough",
+                  "explanation": "The crest is the highest peak of a wave, and the trough is the lowest valley."
+                },
+                {
+                  "id": "g4-sci-wv-5",
+                  "type": "mc",
+                  "prompt": "How do our eyes see a book that makes no light?",
+                  "choices": [
+                    "Light reflects off the book into eyes.",
+                    "Eyes shoot light beams out.",
+                    "The book absorbs all light.",
+                    "Sound bounces off the pages."
+                  ],
+                  "answer": "Light reflects off the book into eyes.",
+                  "explanation": "Reflection happens when light bounces off an object and enters our eyes so we can see it."
+                },
+                {
+                  "id": "g4-sci-wv-6",
+                  "type": "mc",
+                  "prompt": "What measures a wave’s height from its rest line to its crest?",
+                  "choices": [
+                    "Amplitude",
+                    "Wavelength",
+                    "Echo",
+                    "Refraction"
+                  ],
+                  "answer": "Amplitude",
+                  "explanation": "Amplitude is the vertical height of a wave measured from the center rest line to the crest."
+                },
+                {
+                  "id": "g4-sci-wv-7",
+                  "type": "mc",
+                  "prompt": "Where is a floating cork after small pond ripples pass under it?",
+                  "choices": [
+                    "In almost the same spot",
+                    "Sunk at the pond bottom",
+                    "Miles away on land",
+                    "Melted into the water"
+                  ],
+                  "answer": "In almost the same spot",
+                  "explanation": "Water waves transfer energy forward, so a floating cork bobs up and down in place."
+                },
+                {
+                  "id": "g4-sci-wv-8",
+                  "type": "mc",
+                  "prompt": "Wave A is taller than Wave B. Which wave carries more energy?",
+                  "choices": [
+                    "Wave A because its amplitude is larger",
+                    "Wave B because it is shorter",
+                    "Both carry zero energy",
+                    "Both have the same amplitude"
+                  ],
+                  "answer": "Wave A because its amplitude is larger",
+                  "explanation": "Taller waves have greater amplitude and transfer more energy than shorter waves."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering Kinetic vs. Potential Energy & Energy Transfer & Wave Amplitude, Wavelength, and Energy Transfer (4-PS3-1, 4-PS4-1). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g4-sci-u1-review-step-review",
+                "type": "reading",
+                "title": "Review Principles: Kinetic vs. Potential Energy & Energy Transfer & Wave Amplitude, Wavelength, and Energy Transfer",
+                "description": "Read the Core Concept Summary and Principle cards on this page (4-PS3-1, 4-PS4-1) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g4-sci-u1-review-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Reviewing Energy & Wave Properties",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Kinetic vs. Potential Energy & Energy Transfer & Wave Amplitude, Wavelength, and Energy Transfer\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Kinetic vs. Potential Energy & Energy Transfer.",
+              "Faster objects have more kinetic energy; energy changes form during motion and collisions.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How does faster speed change a rolling ball’s kinetic energy?\" → Answer: It has more kinetic energy.. (Kinetic energy is the energy of motion. Faster objects carry more kinetic energy.)",
+            "links": [
+              {
+                "label": "YouTube: \"Unit 1 Review: Energy & Waves Checkup\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20science%20Unit%201%20Review%3A%20Energy%20%26%20Waves%20Checkup%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Unit 1 Review: Energy & Waves Checkup\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Unit%201%20Review%3A%20Energy%20%26%20Waves%20Checkup",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Unit 1 Review: Energy & Waves Checkup",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Unit%201%20Review%3A%20Energy%20%26%20Waves%20Checkup",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "g4-sci-u2",
-      "title": "Unit 2: Earth’s Changing Surface & Living Structures",
+      "title": "Unit 2: Earth’s Changing Surface, Ohio Geology & Living Structures",
       "standards": [
         "4-ESS2-1",
+        "OH.4.ESS.1",
+        "OH.4.ESS.3",
         "4-LS1-1"
       ],
       "lessons": [
         {
           "id": "g4-sci-u2-l1",
           "unitId": "g4-sci-u2",
-          "title": "Lesson 1: Weathering, Erosion & Rock Layers",
+          "title": "Lesson 2a: Weathering, Erosion & Rock Layers",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Earth Surface Changes",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-in-space",
           "videoTitle": "Weathering, Erosion, Deposition & Fossil Rock Layers",
-          "reading": "Weathering breaks rocks down into smaller sediment through water, ice (frost wedging), wind, and plant roots. Erosion transports that sediment to new locations by flowing rivers, glaciers, or wind, and deposition lays it down in layers. In undisturbed sedimentary rock, the oldest layers are at the bottom and the youngest are at the top.",
+          "reading": "Weathering breaks rock into small pieces. Erosion moves those pieces using water, wind, or ice, and deposition drops them in layers. In undisturbed rock, the bottom layer is the oldest.",
           "principles": [
             {
               "id": "p-g4-sci-earth",
               "title": "Weathering, Erosion & Sedimentary Rock Layers",
               "standard": "4-ESS2-1",
-              "summary": "Weathering breaks rock down; erosion moves sediment; deeper undisturbed rock layers are older.",
+              "summary": "Weathering breaks rock down, erosion moves sediment, and bottom rock layers are oldest.",
               "bank": [
                 {
-                  "id": "e1",
+                  "id": "g4-sci-er-1",
                   "type": "mc",
-                  "prompt": "What is the main difference between weathering and erosion?",
+                  "prompt": "How is weathering different from erosion?",
                   "choices": [
-                    "Weathering breaks rock into pieces; erosion carries those pieces away.",
-                    "Erosion breaks rock in place; weathering moves it down rivers.",
-                    "Weathering only happens in summer; erosion only happens in winter.",
+                    "Weathering breaks rock; erosion moves it.",
+                    "Erosion breaks rock; weathering moves it.",
+                    "Weathering only happens in summer.",
                     "They mean the exact same thing."
                   ],
-                  "answer": "Weathering breaks rock into pieces; erosion carries those pieces away.",
-                  "explanation": "Weathering is the breakdown of rock in place, whereas erosion is the transport of sediment by wind, water, or ice."
+                  "answer": "Weathering breaks rock; erosion moves it.",
+                  "explanation": "Weathering breaks rocks into smaller pieces in place. Erosion carries those pieces to new places."
                 },
                 {
-                  "id": "e2",
+                  "id": "g4-sci-er-2",
                   "type": "mc",
-                  "prompt": "Water seeps into a crack in a boulder, freezes into ice overnight, expands, and splits the rock. This is an example of:",
+                  "prompt": "Water freezes inside a rock crack and splits it. What process is this?",
                   "choices": [
-                    "Physical (mechanical) weathering by ice wedging",
+                    "Ice wedging weathering",
                     "Volcanic eruption",
-                    "Deposition of sand dunes",
+                    "Sand dune deposition",
                     "Photosynthesis"
                   ],
-                  "answer": "Physical (mechanical) weathering by ice wedging",
-                  "explanation": "Water expands by about 9% when freezing, acting as a wedge that cracks rock apart (ice wedging)."
+                  "answer": "Ice wedging weathering",
+                  "explanation": "Ice wedging is physical weathering where freezing water expands and cracks rock apart."
                 },
                 {
-                  "id": "e3",
+                  "id": "g4-sci-er-3",
                   "type": "mc",
-                  "prompt": "In a canyon wall with four undisturbed horizontal layers of sedimentary rock, where is the OLDEST rock layer found?",
+                  "prompt": "Where is the oldest rock layer in an undisturbed canyon wall?",
                   "choices": [
                     "At the very bottom layer",
                     "At the very top layer",
                     "In the middle layer",
-                    "All layers formed at the same instant"
+                    "Every layer is the same age"
                   ],
                   "answer": "At the very bottom layer",
-                  "explanation": "By the Law of Superposition, lower sedimentary layers were deposited first and are older than layers above them."
+                  "explanation": "Sedimentary layers form from bottom to top, so the lowest layer was laid down first."
                 },
                 {
-                  "id": "e4",
+                  "id": "g4-sci-er-4",
                   "type": "mc",
-                  "prompt": "A scientist discovers fossilized marine seashells inside rock layers at the top of a desert mountain. What does this evidence show?",
+                  "prompt": "What do seashell fossils on a high mountain prove about its past?",
                   "choices": [
-                    "The area was once covered by an ancient ocean before the land was uplifted.",
-                    "Fish used to live in dry desert sand.",
-                    "Wind blew heavy seashells up the mountain yesterday.",
-                    "Rock layers never change over time."
+                    "An ancient ocean once covered the land.",
+                    "Clams can climb dry mountains.",
+                    "Wind blew heavy shells uphill yesterday.",
+                    "Mountains never change over time."
                   ],
-                  "answer": "The area was once covered by an ancient ocean before the land was uplifted.",
-                  "explanation": "Marine fossils in mountain rock layers show the environment was once underwater before tectonic uplift."
+                  "answer": "An ancient ocean once covered the land.",
+                  "explanation": "Fossils are preserved remains of ancient life. Marine fossils on mountains show the rock formed underwater."
                 },
                 {
-                  "id": "e5",
+                  "id": "g4-sci-er-5",
                   "type": "mc",
-                  "prompt": "Planting grass and trees on a steep hillside helps prevent landslides primarily because:",
+                  "prompt": "How do grass and tree roots help steep hillsides during heavy rain?",
                   "choices": [
-                    "Plant roots hold soil in place and reduce erosion from rainwater.",
-                    "Leaves make the soil heavier so it slides faster.",
-                    "Trees stop rain from falling from clouds.",
-                    "Roots turn soil into magma."
+                    "Roots hold soil and stop erosion.",
+                    "Leaves make soil slide faster.",
+                    "Trees stop rain from falling.",
+                    "Roots turn dirt into lava."
                   ],
-                  "answer": "Plant roots hold soil in place and reduce erosion from rainwater.",
-                  "explanation": "Root networks bind soil particles together and absorb water, slowing runoff and erosion."
+                  "answer": "Roots hold soil and stop erosion.",
+                  "explanation": "Plant roots anchor soil in place so rainwater cannot easily wash it away."
                 },
                 {
-                  "id": "e6",
+                  "id": "g4-sci-er-6",
                   "type": "mc",
-                  "prompt": "When a fast-moving river enters a calm ocean and slows down, it drops its load of mud and sand to form a fan-shaped:",
+                  "prompt": "What forms when a slowing river drops mud and sand at the ocean?",
                   "choices": [
-                    "Delta (deposition)",
-                    "Glacier",
-                    "Volcano",
-                    "Fault line"
+                    "A river delta from deposition",
+                    "A mountain glacier",
+                    "An earthquake fault",
+                    "A deep volcano"
                   ],
-                  "answer": "Delta (deposition)",
-                  "explanation": "Dropping sediment when water slows down is deposition, which builds a river delta."
+                  "answer": "A river delta from deposition",
+                  "explanation": "Deposition is the dropping of sediment when wind or water slows down, building landforms like deltas."
                 },
                 {
-                  "id": "e7",
+                  "id": "g4-sci-er-7",
                   "type": "mc",
-                  "prompt": "How do tree roots growing inside a sidewalk crack change the concrete over time?",
+                  "prompt": "How do growing tree roots crack a concrete sidewalk over time?",
                   "choices": [
-                    "As the roots thicken, they pry the concrete apart (biological weathering).",
-                    "They melt the concrete with heat.",
-                    "They glue the crack back together.",
-                    "They have no effect on rock or concrete."
+                    "Thickening roots push the concrete apart.",
+                    "Roots melt concrete with heat.",
+                    "Roots glue cracks together.",
+                    "Roots never touch concrete."
                   ],
-                  "answer": "As the roots thicken, they pry the concrete apart (biological weathering).",
-                  "explanation": "Growing roots exert strong outward pressure that widens cracks in rock and pavement."
+                  "answer": "Thickening roots push the concrete apart.",
+                  "explanation": "Biological weathering happens when living things like growing tree roots wedge rock or pavement apart."
                 },
                 {
-                  "id": "e8",
+                  "id": "g4-sci-er-8",
                   "type": "mc",
-                  "prompt": "Which natural agent carved the Grand Canyon over millions of years?",
+                  "prompt": "What natural force carved the Grand Canyon over millions of years?",
                   "choices": [
-                    "Weathering and erosion by the flowing Colorado River",
-                    "A single meteor impact",
-                    "Ocean tides rising over Arizona yesterday",
-                    "Sand dunes blowing from the north"
+                    "Erosion by the flowing Colorado River",
+                    "A single meteor crash",
+                    "Ocean waves last week",
+                    "Campfires on the rim"
                   ],
-                  "answer": "Weathering and erosion by the flowing Colorado River",
-                  "explanation": "The Colorado River weathered and eroded layer after layer of rock as the plateau uplifted."
+                  "answer": "Erosion by the flowing Colorado River",
+                  "explanation": "Moving river water weathers and erodes rock layers over millions of years to carve deep canyons."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Earth Surface Changes] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Weathering, Erosion & Sedimentary Rock Layers\" (4-ESS2-1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-sci-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Weathering, Erosion, Deposition & Fossil Rock Layers",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Weathering, Erosion & Sedimentary Rock Layers\" (4-ESS2-1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-in-space"
+              },
+              {
+                "id": "g4-sci-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Weathering, Erosion & Sedimentary Rock Layers.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-sci-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (4-ESS2-1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Weathering, Erosion & Sedimentary Rock Layers.",
+              "Weathering breaks rock down, erosion moves sediment, and bottom rock layers are oldest.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How is weathering different from erosion?\" → Answer: Weathering breaks rock; erosion moves it.. (Weathering breaks rocks into smaller pieces in place. Erosion carries those pieces to new places.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Surface Changes\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20science%20Earth%20Surface%20Changes%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Surface Changes\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Earth%20Surface%20Changes",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Surface Changes",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Surface%20Changes",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g4-sci-u2-l2",
           "unitId": "g4-sci-u2",
-          "title": "Lesson 2: Plant & Animal Internal and External Structures",
+          "title": "Lesson 2b (Ohio): Ohio Glaciers, Fossils & Landforms",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Earth Surface Changes",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-in-space",
+          "videoTitle": "Ohio Glaciation, Lake Erie & Trilobite Fossils",
+          "reading": "Long ago, warm seas covered Ohio and left marine fossils like Isotelus (the state trilobite fossil). Much later, Ice Age glaciers flattened northern and western Ohio, carved Lake Erie, and left rich soil.",
+          "principles": [
+            {
+              "id": "p-g4-sci-ohio-geo",
+              "title": "Ohio Fossils, Glacial Landforms & Earth Surface Changes",
+              "standard": "OH.4.ESS.1",
+              "summary": "Ice Age glaciers flattened northern and western Ohio, carved Lake Erie, and exposed marine trilobite fossils.",
+              "bank": [
+                {
+                  "id": "g4-sci-oh-1",
+                  "type": "mc",
+                  "prompt": "How did Ice Age glaciers change western and northern Ohio’s land?",
+                  "choices": [
+                    "They flattened hills and left rich soil.",
+                    "They built active volcanoes.",
+                    "They turned Ohio into a desert.",
+                    "They created tropical coral reefs."
+                  ],
+                  "answer": "They flattened hills and left rich soil.",
+                  "explanation": "Glaciers are giant ice sheets that scraped across Ohio, flattening hills and depositing fertile glacial till."
+                },
+                {
+                  "id": "g4-sci-oh-2",
+                  "type": "mc",
+                  "prompt": "What is Ohio’s official state invertebrate fossil from ancient seas?",
+                  "choices": [
+                    "Isotelus, a marine trilobite",
+                    "Tyrannosaurus rex",
+                    "Woolly mammoth tooth",
+                    "Giant redwood leaf"
+                  ],
+                  "answer": "Isotelus, a marine trilobite",
+                  "explanation": "Isotelus is an extinct ocean arthropod called a trilobite, proving warm seas once covered Ohio."
+                },
+                {
+                  "id": "g4-sci-oh-3",
+                  "type": "mc",
+                  "prompt": "Why does southeastern Ohio have steep hills instead of flat plains?",
+                  "choices": [
+                    "Glaciers stopped before reaching southeastern Ohio.",
+                    "Volcanoes erupted there last year.",
+                    "Ocean tides carved the hills yesterday.",
+                    "Sand dunes covered the forests."
+                  ],
+                  "answer": "Glaciers stopped before reaching southeastern Ohio.",
+                  "explanation": "The unglaciated Allegheny Plateau in southeastern Ohio was not flattened by Ice Age glaciers."
+                },
+                {
+                  "id": "g4-sci-oh-4",
+                  "type": "mc",
+                  "prompt": "How was the basin of Lake Erie formed?",
+                  "choices": [
+                    "Glaciers scooped out soft bedrock.",
+                    "A meteor hit Cleveland.",
+                    "Beavers built a giant dam.",
+                    "Lava dammed the Ohio River."
+                  ],
+                  "answer": "Glaciers scooped out soft bedrock.",
+                  "explanation": "Advancing glaciers carved deep basins into soft rock, which filled with meltwater to form the Great Lakes."
+                },
+                {
+                  "id": "g4-sci-oh-5",
+                  "type": "mc",
+                  "prompt": "What is glacial till found across Ohio’s central plains?",
+                  "choices": [
+                    "Rock, clay, and sand dropped by melting ice",
+                    "Hot ash from a volcano",
+                    "Pure ocean salt water",
+                    "Coal mined from deep caves"
+                  ],
+                  "answer": "Rock, clay, and sand dropped by melting ice",
+                  "explanation": "Glacial till is unsorted sediment dropped when glacial ice melts, creating rich farmland soil."
+                },
+                {
+                  "id": "g4-sci-oh-6",
+                  "type": "mc",
+                  "prompt": "Where can you see deep grooves scraped into limestone by glaciers in Ohio?",
+                  "choices": [
+                    "Kelleys Island in Lake Erie",
+                    "The bottom of the Atlantic Ocean",
+                    "The Sahara Desert",
+                    "Inside a glass greenhouse"
+                  ],
+                  "answer": "Kelleys Island in Lake Erie",
+                  "explanation": "Glacial grooves are deep scratches cut into bedrock by rocks frozen in moving glacier ice."
+                },
+                {
+                  "id": "g4-sci-oh-7",
+                  "type": "mc",
+                  "prompt": "Is flooding a rapid or slow change to Ohio’s river valleys?",
+                  "choices": [
+                    "A rapid change",
+                    "A million-year change",
+                    "A change that never moves soil",
+                    "A type of freezing glacier"
+                  ],
+                  "answer": "A rapid change",
+                  "explanation": "Floods, landslides, and earthquakes reshape Earth’s surface rapidly in hours or days."
+                },
+                {
+                  "id": "g4-sci-oh-8",
+                  "type": "mc",
+                  "prompt": "What do coral fossils in Ohio limestone tell scientists?",
+                  "choices": [
+                    "Ohio was once covered by a warm sea.",
+                    "Ohio was always frozen solid.",
+                    "Coral grows on dry oak trees.",
+                    "Limestone forms from melted plastic."
+                  ],
+                  "answer": "Ohio was once covered by a warm sea.",
+                  "explanation": "Corals live in shallow, warm ocean water, so their fossils show Ohio’s ancient environment."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Earth Surface Changes] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Ohio Fossils, Glacial Landforms & Earth Surface Changes\" (OH.4.ESS.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-sci-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Ohio Glaciation, Lake Erie & Trilobite Fossils",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Ohio Fossils, Glacial Landforms & Earth Surface Changes\" (OH.4.ESS.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-in-space"
+              },
+              {
+                "id": "g4-sci-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Ohio Fossils, Glacial Landforms & Earth Surface Changes.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-sci-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.4.ESS.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Ohio Fossils, Glacial Landforms & Earth Surface Changes.",
+              "Ice Age glaciers flattened northern and western Ohio, carved Lake Erie, and exposed marine trilobite fossils.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How did Ice Age glaciers change western and northern Ohio’s land?\" → Answer: They flattened hills and left rich soil.. (Glaciers are giant ice sheets that scraped across Ohio, flattening hills and depositing fertile glacial till.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Surface Changes\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20science%20Earth%20Surface%20Changes%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Surface Changes\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Earth%20Surface%20Changes",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Surface Changes",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Surface%20Changes",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g4-sci-u2-l3",
+          "unitId": "g4-sci-u2",
+          "title": "Lesson 2c: Plant & Animal Structures for Survival",
+          "kind": "lesson",
+          "partOf": "Living Structures",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/science/high-school-biology/hs-plant-biology",
           "videoTitle": "Structure & Function in Plants and Animals",
-          "reading": "Plants and animals have specialized internal and external structures that support survival, growth, behavior, and reproduction. In vascular plants, roots anchor the plant and absorb water, xylem tubes transport water upward, leaves capture sunlight for photosynthesis, and flowers enable pollination and seed production.",
+          "reading": "Living things have body parts built for survival. Plant roots soak up water, xylem tubes carry water up the stem, leaves make food from sunlight, and animal gills or hollow bones help them live.",
           "principles": [
             {
               "id": "p-g4-sci-structures",
               "title": "Plant & Animal Structures for Survival",
               "standard": "4-LS1-1",
-              "summary": "External and internal structures (roots, xylem, leaves, gills, skeletons) serve specific survival functions.",
+              "summary": "Internal and external parts like roots, xylem, leaves, gills, and skeletons help organisms survive.",
               "bank": [
                 {
-                  "id": "s1",
+                  "id": "g4-sci-st-1",
                   "type": "mc",
-                  "prompt": "What is the primary function of xylem tubes inside a plant’s stem?",
+                  "prompt": "What do xylem tubes inside a plant stem do?",
                   "choices": [
-                    "Transporting water and dissolved minerals upward from the roots to the leaves",
-                    "Capturing insects for food",
-                    "Producing pollen grains",
-                    "Reflecting sunlight away from the plant"
+                    "Carry water upward from roots to leaves",
+                    "Catch insects for food",
+                    "Make flower petals glow",
+                    "Block sunlight from leaves"
                   ],
-                  "answer": "Transporting water and dissolved minerals upward from the roots to the leaves",
-                  "explanation": "Xylem acts like internal plumbing that carries water and minerals from roots up to stems and leaves."
+                  "answer": "Carry water upward from roots to leaves",
+                  "explanation": "Xylem is internal plant tissue that transports water and minerals up from the roots."
                 },
                 {
-                  "id": "s2",
+                  "id": "g4-sci-st-2",
                   "type": "mc",
-                  "prompt": "Why do desert cacti have thick, waxy stems and sharp spines instead of broad, flat leaves?",
+                  "prompt": "Why do desert cacti have waxy stems and sharp spines?",
                   "choices": [
-                    "To store water and minimize water loss while protecting against thirsty animals",
-                    "To help the cactus swim in floods",
-                    "To attract grazing deer to eat the stem",
-                    "To release as much water into the dry air as possible"
+                    "To store water and stop animals eating them",
+                    "To help the cactus swim",
+                    "To lose water very quickly",
+                    "To attract hungry deer"
                   ],
-                  "answer": "To store water and minimize water loss while protecting against thirsty animals",
-                  "explanation": "Waxy stems prevent evaporation and store water, while spines deter herbivores and reduce surface area."
+                  "answer": "To store water and stop animals eating them",
+                  "explanation": "Adaptations are structures that help survival. Waxy stems hold water and spines protect the cactus."
                 },
                 {
-                  "id": "s3",
+                  "id": "g4-sci-st-3",
                   "type": "mc",
-                  "prompt": "Which internal structure allows fish to extract dissolved oxygen directly from water?",
+                  "prompt": "What structure lets fish breathe oxygen dissolved in water?",
                   "choices": [
                     "Gills",
                     "Lungs",
-                    "Hollow bones",
-                    "Stomata"
+                    "Feathers",
+                    "Tree bark"
                   ],
                   "answer": "Gills",
-                  "explanation": "Feathery gill filaments have rich blood vessels that absorb dissolved oxygen as water flows across them."
+                  "explanation": "Gills are feathery organs that absorb dissolved oxygen as water flows over them."
                 },
                 {
-                  "id": "s4",
+                  "id": "g4-sci-st-4",
                   "type": "mc",
-                  "prompt": "In flowering plants, which part is primarily responsible for making food using sunlight, water, and carbon dioxide?",
+                  "prompt": "Which plant part uses sunlight to make food during photosynthesis?",
                   "choices": [
-                    "Green leaves (via photosynthesis)",
-                    "Root hairs underground",
-                    "Tree bark",
-                    "Seed coats"
+                    "Green leaves",
+                    "Underground root tips",
+                    "Dry outer bark",
+                    "Hard seed coats"
                   ],
-                  "answer": "Green leaves (via photosynthesis)",
-                  "explanation": "Leaves contain chloroplasts with chlorophyll that capture sunlight to manufacture sugar during photosynthesis."
+                  "answer": "Green leaves",
+                  "explanation": "Photosynthesis happens in green leaves, which use sunlight, water, and carbon dioxide to make sugar."
                 },
                 {
-                  "id": "s5",
+                  "id": "g4-sci-st-5",
                   "type": "mc",
                   "prompt": "How do hollow, lightweight bones help birds survive?",
                   "choices": [
-                    "They reduce body weight so flight requires less energy.",
-                    "They help birds sink deep underwater.",
-                    "They store heavy rocks for balance.",
-                    "They prevent birds from breathing oxygen."
+                    "They make the bird light enough to fly.",
+                    "They help the bird sink underwater.",
+                    "They store heavy rocks.",
+                    "They stop the bird from breathing."
                   ],
-                  "answer": "They reduce body weight so flight requires less energy.",
-                  "explanation": "Internal struts inside hollow bones keep them strong while drastically reducing weight for flight."
+                  "answer": "They make the bird light enough to fly.",
+                  "explanation": "Hollow bones are strong but light, reducing body weight so flying takes less energy."
                 },
                 {
-                  "id": "s6",
+                  "id": "g4-sci-st-6",
                   "type": "mc",
-                  "prompt": "Tiny pores on the underside of leaves that open and close to exchange gases (CO₂ and oxygen) are called:",
+                  "prompt": "What are the tiny pores on leaves that let gases in and out?",
                   "choices": [
                     "Stomata",
-                    "Roots",
                     "Petals",
-                    "Tendons"
+                    "Roots",
+                    "Thorns"
                   ],
                   "answer": "Stomata",
-                  "explanation": "Stomata are microscopic openings regulated by guard cells for gas exchange and transpiration."
+                  "explanation": "Stomata are microscopic openings on leaves that take in carbon dioxide and release oxygen."
                 },
                 {
-                  "id": "s7",
+                  "id": "g4-sci-st-7",
                   "type": "mc",
-                  "prompt": "The hard outer covering of a beetle or crab that protects its soft internal organs is an:",
+                  "prompt": "What is the hard outer shell that protects a beetle or crab?",
                   "choices": [
-                    "Exoskeleton",
-                    "Endoskeleton",
-                    "Amphibian skin",
-                    "Cartilage fin"
+                    "An exoskeleton",
+                    "An internal spine",
+                    "A fur coat",
+                    "A leaf stem"
                   ],
-                  "answer": "Exoskeleton",
-                  "explanation": "Arthropods have a rigid external skeleton (exoskeleton) for protection and muscle attachment."
+                  "answer": "An exoskeleton",
+                  "explanation": "An exoskeleton is a rigid outer covering that supports and protects an animal’s soft body."
                 },
                 {
-                  "id": "s8",
+                  "id": "g4-sci-st-8",
                   "type": "mc",
-                  "prompt": "Brightly colored petals and sweet nectar in flowers serve what survival purpose for the plant?",
+                  "prompt": "How do bright flower petals and sweet nectar help a plant?",
                   "choices": [
-                    "Attracting pollinators like bees and hummingbirds so the plant can reproduce",
-                    "Absorbing minerals from underground soil",
-                    "Keeping the plant warm during snowstorms",
-                    "Anchored the plant against strong winds"
+                    "They attract bees to spread pollen.",
+                    "They soak up mud from soil.",
+                    "They keep roots warm in winter.",
+                    "They block all sunlight."
                   ],
-                  "answer": "Attracting pollinators like bees and hummingbirds so the plant can reproduce",
-                  "explanation": "Pollinators transfer pollen between flowers as they feed on nectar, enabling fertilization and seed formation."
+                  "answer": "They attract bees to spread pollen.",
+                  "explanation": "Pollination happens when insects visit flowers for nectar and carry pollen to help make seeds."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Living Structures] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Plant & Animal Structures for Survival\" (4-LS1-1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-sci-u2-l3-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Structure & Function in Plants and Animals",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Plant & Animal Structures for Survival\" (4-LS1-1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/high-school-biology/hs-plant-biology"
+              },
+              {
+                "id": "g4-sci-u2-l3-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Plant & Animal Structures for Survival.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-sci-u2-l3-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (4-LS1-1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Plant & Animal Structures for Survival.",
+              "Internal and external parts like roots, xylem, leaves, gills, and skeletons help organisms survive.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What do xylem tubes inside a plant stem do?\" → Answer: Carry water upward from roots to leaves. (Xylem is internal plant tissue that transports water and minerals up from the roots.)",
+            "links": [
+              {
+                "label": "YouTube: \"Living Structures\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20science%20Living%20Structures%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Living Structures\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Living%20Structures",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Living Structures",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Living%20Structures",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g4-sci-u2-test",
           "unitId": "g4-sci-u2",
           "title": "Unit 2 Exam: Earth Processes & Living Systems",
           "kind": "unit_test",
-          "estimatedMinutes": 25,
+          "estimatedMinutes": 15,
           "videoUrl": "https://www.khanacademy.org/science/high-school-biology/hs-plant-biology",
           "videoTitle": "Unit 2 Science Mastery Review",
-          "reading": "Review weathering, erosion, rock layers, and plant/animal structures before starting the Unit 2 Exam.",
-          "questionCount": 6,
+          "reading": "Review weathering, erosion, Ohio glaciers and fossils, and plant and animal structures.",
+          "questionCount": 8,
           "principles": [
             {
               "id": "p-g4-sci-earth",
               "title": "Weathering, Erosion & Sedimentary Rock Layers",
               "standard": "4-ESS2-1",
-              "summary": "Distinguish weathering from erosion and interpret rock strata.",
+              "summary": "Weathering breaks rock down, erosion moves sediment, and bottom rock layers are oldest.",
               "bank": [
                 {
-                  "id": "ut1",
+                  "id": "g4-sci-er-1",
                   "type": "mc",
-                  "prompt": "Which process moves sand down a beach by ocean currents?",
+                  "prompt": "How is weathering different from erosion?",
                   "choices": [
-                    "Erosion",
-                    "Photosynthesis",
-                    "Metamorphism",
-                    "Condensation"
+                    "Weathering breaks rock; erosion moves it.",
+                    "Erosion breaks rock; weathering moves it.",
+                    "Weathering only happens in summer.",
+                    "They mean the exact same thing."
                   ],
-                  "answer": "Erosion",
-                  "explanation": "Erosion is the movement of sediment from one place to another by water, wind, or ice."
+                  "answer": "Weathering breaks rock; erosion moves it.",
+                  "explanation": "Weathering breaks rocks into smaller pieces in place. Erosion carries those pieces to new places."
                 },
                 {
-                  "id": "ut2",
+                  "id": "g4-sci-er-2",
                   "type": "mc",
-                  "prompt": "When acid rain slowly dissolves limestone statues in a park, this is an example of:",
+                  "prompt": "Water freezes inside a rock crack and splits it. What process is this?",
                   "choices": [
-                    "Chemical weathering",
-                    "Deposition",
-                    "Volcanic uplift",
-                    "Glaciation"
+                    "Ice wedging weathering",
+                    "Volcanic eruption",
+                    "Sand dune deposition",
+                    "Photosynthesis"
                   ],
-                  "answer": "Chemical weathering",
-                  "explanation": "Chemical reactions that dissolve or alter rock minerals in place are chemical weathering."
+                  "answer": "Ice wedging weathering",
+                  "explanation": "Ice wedging is physical weathering where freezing water expands and cracks rock apart."
                 },
                 {
-                  "id": "ut3",
+                  "id": "g4-sci-er-3",
                   "type": "mc",
-                  "prompt": "Rock Layer X lies below Rock Layer Y in an undisturbed cliff. Which statement is true?",
+                  "prompt": "Where is the oldest rock layer in an undisturbed canyon wall?",
                   "choices": [
-                    "Rock Layer X formed before Rock Layer Y.",
-                    "Rock Layer Y is older than Rock Layer X.",
-                    "Both layers formed after the canyon was carved.",
-                    "Fossils in Layer X are younger than fossils in Layer Y."
+                    "At the very bottom layer",
+                    "At the very top layer",
+                    "In the middle layer",
+                    "Every layer is the same age"
                   ],
-                  "answer": "Rock Layer X formed before Rock Layer Y.",
-                  "explanation": "In undisturbed sedimentary layers, deeper layers were deposited earlier."
+                  "answer": "At the very bottom layer",
+                  "explanation": "Sedimentary layers form from bottom to top, so the lowest layer was laid down first."
                 },
                 {
-                  "id": "ut4",
+                  "id": "g4-sci-er-4",
                   "type": "mc",
-                  "prompt": "Smooth, rounded pebbles found in a streambed became rounded because:",
+                  "prompt": "What do seashell fossils on a high mountain prove about its past?",
                   "choices": [
-                    "Tumbling in flowing water weathered and abraded their sharp edges.",
-                    "Fish chewed on the rocks.",
-                    "Sunlight melted the rock corners.",
-                    "They fell from clouds."
+                    "An ancient ocean once covered the land.",
+                    "Clams can climb dry mountains.",
+                    "Wind blew heavy shells uphill yesterday.",
+                    "Mountains never change over time."
                   ],
-                  "answer": "Tumbling in flowing water weathered and abraded their sharp edges.",
-                  "explanation": "Abrasion as rocks bump against each other in moving water wears down sharp corners."
+                  "answer": "An ancient ocean once covered the land.",
+                  "explanation": "Fossils are preserved remains of ancient life. Marine fossils on mountains show the rock formed underwater."
+                },
+                {
+                  "id": "g4-sci-er-5",
+                  "type": "mc",
+                  "prompt": "How do grass and tree roots help steep hillsides during heavy rain?",
+                  "choices": [
+                    "Roots hold soil and stop erosion.",
+                    "Leaves make soil slide faster.",
+                    "Trees stop rain from falling.",
+                    "Roots turn dirt into lava."
+                  ],
+                  "answer": "Roots hold soil and stop erosion.",
+                  "explanation": "Plant roots anchor soil in place so rainwater cannot easily wash it away."
+                },
+                {
+                  "id": "g4-sci-er-6",
+                  "type": "mc",
+                  "prompt": "What forms when a slowing river drops mud and sand at the ocean?",
+                  "choices": [
+                    "A river delta from deposition",
+                    "A mountain glacier",
+                    "An earthquake fault",
+                    "A deep volcano"
+                  ],
+                  "answer": "A river delta from deposition",
+                  "explanation": "Deposition is the dropping of sediment when wind or water slows down, building landforms like deltas."
+                },
+                {
+                  "id": "g4-sci-er-7",
+                  "type": "mc",
+                  "prompt": "How do growing tree roots crack a concrete sidewalk over time?",
+                  "choices": [
+                    "Thickening roots push the concrete apart.",
+                    "Roots melt concrete with heat.",
+                    "Roots glue cracks together.",
+                    "Roots never touch concrete."
+                  ],
+                  "answer": "Thickening roots push the concrete apart.",
+                  "explanation": "Biological weathering happens when living things like growing tree roots wedge rock or pavement apart."
+                },
+                {
+                  "id": "g4-sci-er-8",
+                  "type": "mc",
+                  "prompt": "What natural force carved the Grand Canyon over millions of years?",
+                  "choices": [
+                    "Erosion by the flowing Colorado River",
+                    "A single meteor crash",
+                    "Ocean waves last week",
+                    "Campfires on the rim"
+                  ],
+                  "answer": "Erosion by the flowing Colorado River",
+                  "explanation": "Moving river water weathers and erodes rock layers over millions of years to carve deep canyons."
+                }
+              ]
+            },
+            {
+              "id": "p-g4-sci-ohio-geo",
+              "title": "Ohio Fossils, Glacial Landforms & Earth Surface Changes",
+              "standard": "OH.4.ESS.1",
+              "summary": "Ice Age glaciers flattened northern and western Ohio, carved Lake Erie, and exposed marine trilobite fossils.",
+              "bank": [
+                {
+                  "id": "g4-sci-oh-1",
+                  "type": "mc",
+                  "prompt": "How did Ice Age glaciers change western and northern Ohio’s land?",
+                  "choices": [
+                    "They flattened hills and left rich soil.",
+                    "They built active volcanoes.",
+                    "They turned Ohio into a desert.",
+                    "They created tropical coral reefs."
+                  ],
+                  "answer": "They flattened hills and left rich soil.",
+                  "explanation": "Glaciers are giant ice sheets that scraped across Ohio, flattening hills and depositing fertile glacial till."
+                },
+                {
+                  "id": "g4-sci-oh-2",
+                  "type": "mc",
+                  "prompt": "What is Ohio’s official state invertebrate fossil from ancient seas?",
+                  "choices": [
+                    "Isotelus, a marine trilobite",
+                    "Tyrannosaurus rex",
+                    "Woolly mammoth tooth",
+                    "Giant redwood leaf"
+                  ],
+                  "answer": "Isotelus, a marine trilobite",
+                  "explanation": "Isotelus is an extinct ocean arthropod called a trilobite, proving warm seas once covered Ohio."
+                },
+                {
+                  "id": "g4-sci-oh-3",
+                  "type": "mc",
+                  "prompt": "Why does southeastern Ohio have steep hills instead of flat plains?",
+                  "choices": [
+                    "Glaciers stopped before reaching southeastern Ohio.",
+                    "Volcanoes erupted there last year.",
+                    "Ocean tides carved the hills yesterday.",
+                    "Sand dunes covered the forests."
+                  ],
+                  "answer": "Glaciers stopped before reaching southeastern Ohio.",
+                  "explanation": "The unglaciated Allegheny Plateau in southeastern Ohio was not flattened by Ice Age glaciers."
+                },
+                {
+                  "id": "g4-sci-oh-4",
+                  "type": "mc",
+                  "prompt": "How was the basin of Lake Erie formed?",
+                  "choices": [
+                    "Glaciers scooped out soft bedrock.",
+                    "A meteor hit Cleveland.",
+                    "Beavers built a giant dam.",
+                    "Lava dammed the Ohio River."
+                  ],
+                  "answer": "Glaciers scooped out soft bedrock.",
+                  "explanation": "Advancing glaciers carved deep basins into soft rock, which filled with meltwater to form the Great Lakes."
+                },
+                {
+                  "id": "g4-sci-oh-5",
+                  "type": "mc",
+                  "prompt": "What is glacial till found across Ohio’s central plains?",
+                  "choices": [
+                    "Rock, clay, and sand dropped by melting ice",
+                    "Hot ash from a volcano",
+                    "Pure ocean salt water",
+                    "Coal mined from deep caves"
+                  ],
+                  "answer": "Rock, clay, and sand dropped by melting ice",
+                  "explanation": "Glacial till is unsorted sediment dropped when glacial ice melts, creating rich farmland soil."
+                },
+                {
+                  "id": "g4-sci-oh-6",
+                  "type": "mc",
+                  "prompt": "Where can you see deep grooves scraped into limestone by glaciers in Ohio?",
+                  "choices": [
+                    "Kelleys Island in Lake Erie",
+                    "The bottom of the Atlantic Ocean",
+                    "The Sahara Desert",
+                    "Inside a glass greenhouse"
+                  ],
+                  "answer": "Kelleys Island in Lake Erie",
+                  "explanation": "Glacial grooves are deep scratches cut into bedrock by rocks frozen in moving glacier ice."
+                },
+                {
+                  "id": "g4-sci-oh-7",
+                  "type": "mc",
+                  "prompt": "Is flooding a rapid or slow change to Ohio’s river valleys?",
+                  "choices": [
+                    "A rapid change",
+                    "A million-year change",
+                    "A change that never moves soil",
+                    "A type of freezing glacier"
+                  ],
+                  "answer": "A rapid change",
+                  "explanation": "Floods, landslides, and earthquakes reshape Earth’s surface rapidly in hours or days."
+                },
+                {
+                  "id": "g4-sci-oh-8",
+                  "type": "mc",
+                  "prompt": "What do coral fossils in Ohio limestone tell scientists?",
+                  "choices": [
+                    "Ohio was once covered by a warm sea.",
+                    "Ohio was always frozen solid.",
+                    "Coral grows on dry oak trees.",
+                    "Limestone forms from melted plastic."
+                  ],
+                  "answer": "Ohio was once covered by a warm sea.",
+                  "explanation": "Corals live in shallow, warm ocean water, so their fossils show Ohio’s ancient environment."
                 }
               ]
             },
@@ -624,63 +1520,174 @@
               "id": "p-g4-sci-structures",
               "title": "Plant & Animal Structures for Survival",
               "standard": "4-LS1-1",
-              "summary": "Relate biological structures to survival functions.",
+              "summary": "Internal and external parts like roots, xylem, leaves, gills, and skeletons help organisms survive.",
               "bank": [
                 {
-                  "id": "ut5",
+                  "id": "g4-sci-st-1",
                   "type": "mc",
-                  "prompt": "How do an owl’s large forward-facing eyes help it survive at night?",
+                  "prompt": "What do xylem tubes inside a plant stem do?",
                   "choices": [
-                    "They gather maximum dim light and provide depth perception to locate prey.",
-                    "They produce light like a flashlight.",
-                    "They help the owl breathe underwater.",
-                    "They digest food."
+                    "Carry water upward from roots to leaves",
+                    "Catch insects for food",
+                    "Make flower petals glow",
+                    "Block sunlight from leaves"
                   ],
-                  "answer": "They gather maximum dim light and provide depth perception to locate prey.",
-                  "explanation": "Nocturnal predators have large corneas and pupils to collect faint light and binocular overlap to judge distance."
+                  "answer": "Carry water upward from roots to leaves",
+                  "explanation": "Xylem is internal plant tissue that transports water and minerals up from the roots."
                 },
                 {
-                  "id": "ut6",
+                  "id": "g4-sci-st-2",
                   "type": "mc",
-                  "prompt": "If a plant’s roots are damaged, which need is MOST directly affected first?",
+                  "prompt": "Why do desert cacti have waxy stems and sharp spines?",
                   "choices": [
-                    "Absorbing water and minerals from the soil",
-                    "Capturing sunlight in the upper canopy",
-                    "Attracting bees to petals",
-                    "Releasing oxygen from leaves"
+                    "To store water and stop animals eating them",
+                    "To help the cactus swim",
+                    "To lose water very quickly",
+                    "To attract hungry deer"
                   ],
-                  "answer": "Absorbing water and minerals from the soil",
-                  "explanation": "Roots anchor the plant and take up water and dissolved nutrients from soil."
+                  "answer": "To store water and stop animals eating them",
+                  "explanation": "Adaptations are structures that help survival. Waxy stems hold water and spines protect the cactus."
                 },
                 {
-                  "id": "ut7",
+                  "id": "g4-sci-st-3",
                   "type": "mc",
-                  "prompt": "Why do arctic foxes have thick white fur during winter?",
+                  "prompt": "What structure lets fish breathe oxygen dissolved in water?",
                   "choices": [
-                    "For insulation against freezing temperatures and camouflage in the snow",
-                    "To absorb heat from tropical sun",
-                    "To stand out brightly against white snow",
-                    "To help them swim like fish"
+                    "Gills",
+                    "Lungs",
+                    "Feathers",
+                    "Tree bark"
                   ],
-                  "answer": "For insulation against freezing temperatures and camouflage in the snow",
-                  "explanation": "Thick white fur traps body heat and blends into snowy surroundings to hide from predators and prey."
+                  "answer": "Gills",
+                  "explanation": "Gills are feathery organs that absorb dissolved oxygen as water flows over them."
                 },
                 {
-                  "id": "ut8",
+                  "id": "g4-sci-st-4",
                   "type": "mc",
-                  "prompt": "Which structure protects a plant embryo and stores food for it until it can sprout?",
+                  "prompt": "Which plant part uses sunlight to make food during photosynthesis?",
                   "choices": [
-                    "The seed",
-                    "The stamen",
-                    "The xylem",
-                    "The bark"
+                    "Green leaves",
+                    "Underground root tips",
+                    "Dry outer bark",
+                    "Hard seed coats"
                   ],
-                  "answer": "The seed",
-                  "explanation": "A seed contains the baby plant (embryo), stored food (cotyledon/endosperm), and a protective seed coat."
+                  "answer": "Green leaves",
+                  "explanation": "Photosynthesis happens in green leaves, which use sunlight, water, and carbon dioxide to make sugar."
+                },
+                {
+                  "id": "g4-sci-st-5",
+                  "type": "mc",
+                  "prompt": "How do hollow, lightweight bones help birds survive?",
+                  "choices": [
+                    "They make the bird light enough to fly.",
+                    "They help the bird sink underwater.",
+                    "They store heavy rocks.",
+                    "They stop the bird from breathing."
+                  ],
+                  "answer": "They make the bird light enough to fly.",
+                  "explanation": "Hollow bones are strong but light, reducing body weight so flying takes less energy."
+                },
+                {
+                  "id": "g4-sci-st-6",
+                  "type": "mc",
+                  "prompt": "What are the tiny pores on leaves that let gases in and out?",
+                  "choices": [
+                    "Stomata",
+                    "Petals",
+                    "Roots",
+                    "Thorns"
+                  ],
+                  "answer": "Stomata",
+                  "explanation": "Stomata are microscopic openings on leaves that take in carbon dioxide and release oxygen."
+                },
+                {
+                  "id": "g4-sci-st-7",
+                  "type": "mc",
+                  "prompt": "What is the hard outer shell that protects a beetle or crab?",
+                  "choices": [
+                    "An exoskeleton",
+                    "An internal spine",
+                    "A fur coat",
+                    "A leaf stem"
+                  ],
+                  "answer": "An exoskeleton",
+                  "explanation": "An exoskeleton is a rigid outer covering that supports and protects an animal’s soft body."
+                },
+                {
+                  "id": "g4-sci-st-8",
+                  "type": "mc",
+                  "prompt": "How do bright flower petals and sweet nectar help a plant?",
+                  "choices": [
+                    "They attract bees to spread pollen.",
+                    "They soak up mud from soil.",
+                    "They keep roots warm in winter.",
+                    "They block all sunlight."
+                  ],
+                  "answer": "They attract bees to spread pollen.",
+                  "explanation": "Pollination happens when insects visit flowers for nectar and carry pollen to help make seeds."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Weathering, Erosion & Sedimentary Rock Layers & Ohio Fossils, Glacial Landforms & Earth Surface Changes & Plant & Animal Structures for Survival (4-ESS2-1, OH.4.ESS.1, 4-LS1-1). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g4-sci-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Weathering, Erosion & Sedimentary Rock Layers & Ohio Fossils, Glacial Landforms & Earth Surface Changes & Plant & Animal Structures for Survival",
+                "description": "Read the Core Concept Summary and Principle cards on this page (4-ESS2-1, OH.4.ESS.1, 4-LS1-1) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g4-sci-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Science Mastery Review",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Weathering, Erosion & Sedimentary Rock Layers & Ohio Fossils, Glacial Landforms & Earth Surface Changes & Plant & Animal Structures for Survival\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/science/high-school-biology/hs-plant-biology"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Weathering, Erosion & Sedimentary Rock Layers.",
+              "Weathering breaks rock down, erosion moves sediment, and bottom rock layers are oldest.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How is weathering different from erosion?\" → Answer: Weathering breaks rock; erosion moves it.. (Weathering breaks rocks into smaller pieces in place. Erosion carries those pieces to new places.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Processes & Living Systems\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20science%20Earth%20Processes%20%26%20Living%20Systems%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Processes & Living Systems\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Earth%20Processes%20%26%20Living%20Systems",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Processes & Living Systems",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Processes%20%26%20Living%20Systems",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     }

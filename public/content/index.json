@@ -34,6 +34,38 @@
       "path": "/Home-School-Lite/content/grade4/social.json"
     },
     {
+      "id": "g5-math",
+      "subject": "math",
+      "grade": 5,
+      "title": "Grade 5 Mathematics",
+      "credits": 1,
+      "path": "/Home-School-Lite/content/grade5/math.json"
+    },
+    {
+      "id": "g5-science",
+      "subject": "science",
+      "grade": 5,
+      "title": "Grade 5 Science",
+      "credits": 1,
+      "path": "/Home-School-Lite/content/grade5/science.json"
+    },
+    {
+      "id": "g5-ela",
+      "subject": "ela",
+      "grade": 5,
+      "title": "Grade 5 English Language Arts",
+      "credits": 1,
+      "path": "/Home-School-Lite/content/grade5/ela.json"
+    },
+    {
+      "id": "g5-social",
+      "subject": "social",
+      "grade": 5,
+      "title": "Grade 5 Social Studies",
+      "credits": 1,
+      "path": "/Home-School-Lite/content/grade5/social.json"
+    },
+    {
       "id": "g6-math",
       "subject": "math",
       "grade": 6,
@@ -64,6 +96,70 @@
       "title": "Grade 6 Social Studies",
       "credits": 1,
       "path": "/Home-School-Lite/content/grade6/social.json"
+    },
+    {
+      "id": "g7-math",
+      "subject": "math",
+      "grade": 7,
+      "title": "Grade 7 Mathematics",
+      "credits": 1,
+      "path": "/Home-School-Lite/content/grade7/math.json"
+    },
+    {
+      "id": "g7-science",
+      "subject": "science",
+      "grade": 7,
+      "title": "Grade 7 Integrated Science",
+      "credits": 1,
+      "path": "/Home-School-Lite/content/grade7/science.json"
+    },
+    {
+      "id": "g7-ela",
+      "subject": "ela",
+      "grade": 7,
+      "title": "Grade 7 English Language Arts",
+      "credits": 1,
+      "path": "/Home-School-Lite/content/grade7/ela.json"
+    },
+    {
+      "id": "g7-social",
+      "subject": "social",
+      "grade": 7,
+      "title": "Grade 7 World Studies: 750 B.C. to 1600 A.D.",
+      "credits": 1,
+      "path": "/Home-School-Lite/content/grade7/social.json"
+    },
+    {
+      "id": "g8-math",
+      "subject": "math",
+      "grade": 8,
+      "title": "Grade 8 Mathematics (Pre-Algebra & Linear Functions)",
+      "credits": 1,
+      "path": "/Home-School-Lite/content/grade8/math.json"
+    },
+    {
+      "id": "g8-science",
+      "subject": "science",
+      "grade": 8,
+      "title": "Grade 8 Integrated Science",
+      "credits": 1,
+      "path": "/Home-School-Lite/content/grade8/science.json"
+    },
+    {
+      "id": "g8-ela",
+      "subject": "ela",
+      "grade": 8,
+      "title": "Grade 8 English Language Arts",
+      "credits": 1,
+      "path": "/Home-School-Lite/content/grade8/ela.json"
+    },
+    {
+      "id": "g8-social",
+      "subject": "social",
+      "grade": 8,
+      "title": "Grade 8 U.S. & Ohio Studies (1763–1877)",
+      "credits": 1,
+      "path": "/Home-School-Lite/content/grade8/social.json"
     }
   ]
 }

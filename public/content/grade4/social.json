@@ -3,78 +3,80 @@
   "subject": "social",
   "grade": 4,
   "title": "Grade 4 Social Studies",
-  "subtitle": "U.S. Geography & Regions, Branches of Government, Civics & Economics",
+  "subtitle": "U.S. Regions, Ohio History, Three Branches of Government & Economics",
   "credits": 1,
   "color": "#d97706",
   "icon": "🌐",
   "units": [
     {
       "id": "g4-soc-u1",
-      "title": "Unit 1: Map Skills & Regions of the United States",
+      "title": "Unit 1: Map Skills, U.S. Regions & Ohio History",
       "standards": [
-        "C3.D2.Geo.1.3-5",
-        "C3.D2.Geo.2.3-5"
+        "C3.D2.Geo.2.3-5",
+        "OH.4.SS.2",
+        "OH.4.SS.3"
       ],
       "lessons": [
         {
           "id": "g4-soc-u1-l1",
           "unitId": "g4-soc-u1",
-          "title": "Lesson 1: Latitude, Longitude, Map Tools & U.S. Regions",
+          "title": "Lesson 1a: Latitude, Longitude & U.S. Regions",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Geography & Regions",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/humanities/us-history",
           "videoTitle": "Geography Skills: Latitude, Longitude & Regions of the United States",
-          "reading": "Geographers use a grid of imaginary lines to locate places on Earth. Lines of latitude (parallels) run east–west and measure distance north or south of the Equator (0° latitude). Lines of longitude (meridians) run north–south from pole to pole and measure distance east or west of the Prime Meridian. The United States is commonly grouped into five major regions: Northeast, Southeast, Midwest, Southwest, and West.",
+          "reading": "Latitude lines measure north and south of the Equator (0°). Longitude lines measure east and west of the Prime Meridian. Ohio sits in the fertile Midwest region, often called America’s Breadbasket.",
           "principles": [
             {
               "id": "p-g4-soc-geo",
-              "title": "Map Coordinates & Physical/Cultural Regions of the U.S.",
+              "title": "Map Coordinates & Regions of the United States",
               "standard": "C3.D2.Geo.2.3-5",
-              "summary": "Use latitude, longitude, compass rose, and map scales, and identify major landforms and U.S. regions.",
+              "summary": "Latitude runs east-west, longitude runs north-south, and the U.S. has five major regions.",
               "bank": [
                 {
-                  "id": "sg1",
+                  "id": "g4-soc-ge-1",
                   "type": "mc",
-                  "prompt": "What is the imaginary line at 0° latitude that divides Earth into the Northern and Southern Hemispheres?",
+                  "prompt": "What line at 0° latitude splits Earth into Northern and Southern Hemispheres?",
                   "choices": [
                     "The Equator",
                     "The Prime Meridian",
-                    "The Tropic of Cancer",
-                    "The Continental Divide"
+                    "The North Pole",
+                    "The Ohio River"
                   ],
                   "answer": "The Equator",
-                  "explanation": "The Equator is 0° latitude, circling Earth halfway between the North and South Poles."
+                  "explanation": "The Equator is the imaginary 0° latitude line halfway between the North and South Poles."
                 },
                 {
-                  "id": "sg2",
+                  "id": "g4-soc-ge-2",
                   "type": "mc",
-                  "prompt": "Which tool on a map helps you convert inches or centimeters on the page into actual miles or kilometers on the ground?",
+                  "prompt": "Which map tool compares inches on a map to real miles?",
                   "choices": [
                     "Map scale",
                     "Compass rose",
                     "Map title",
-                    "Grid index"
+                    "Map border"
                   ],
                   "answer": "Map scale",
-                  "explanation": "A map scale shows the ratio between distance on a map and real-world distance on Earth."
+                  "explanation": "A map scale shows how distance on a map matches actual distance on the ground."
                 },
                 {
-                  "id": "sg3",
+                  "id": "g4-soc-ge-3",
                   "type": "mc",
-                  "prompt": "Which U.S. region is famous for its fertile prairies and is often called \"America’s Breadbasket\" because of its corn and wheat farms?",
+                  "prompt": "Which U.S. region is called \"America’s Breadbasket\" for its corn and wheat?",
                   "choices": [
                     "The Midwest",
                     "The Northeast",
                     "The Southwest",
-                    "The Pacific Northwest"
+                    "The West Coast"
                   ],
                   "answer": "The Midwest",
-                  "explanation": "The flat, fertile plains of the Midwest make it one of the world’s most productive agricultural regions."
+                  "explanation": "The Midwest has flat, fertile plains ideal for growing grain crops like corn, soybeans, and wheat."
                 },
                 {
-                  "id": "sg4",
+                  "id": "g4-soc-ge-4",
                   "type": "mc",
-                  "prompt": "Which major mountain range runs along the eastern United States from Maine to Georgia?",
+                  "prompt": "Which mountain range runs through the eastern United States?",
                   "choices": [
                     "The Appalachian Mountains",
                     "The Rocky Mountains",
@@ -82,69 +84,623 @@
                     "The Andes Mountains"
                   ],
                   "answer": "The Appalachian Mountains",
-                  "explanation": "The Appalachian Mountains are the ancient mountain chain in eastern North America."
+                  "explanation": "The Appalachian Mountains stretch from Maine to Georgia in eastern North America."
                 },
                 {
-                  "id": "sg5",
+                  "id": "g4-soc-ge-5",
                   "type": "mc",
-                  "prompt": "Lines of longitude run from the North Pole to the South Pole and measure distance east or west of the:",
+                  "prompt": "Lines of longitude measure distance east or west of what 0° line?",
                   "choices": [
-                    "Prime Meridian",
-                    "Equator",
-                    "Mississippi River",
-                    "Arctic Circle"
+                    "The Prime Meridian",
+                    "The Equator",
+                    "The Mississippi River",
+                    "The Atlantic Coast"
                   ],
-                  "answer": "Prime Meridian",
-                  "explanation": "The Prime Meridian (0° longitude) is the starting reference line for measuring east and west longitude."
+                  "answer": "The Prime Meridian",
+                  "explanation": "Longitude lines run pole to pole and measure distance east or west of the Prime Meridian."
                 },
                 {
-                  "id": "sg6",
+                  "id": "g4-soc-ge-6",
                   "type": "mc",
-                  "prompt": "The Grand Canyon, Sonoran Desert, and Colorado Plateau are signature physical features of which U.S. region?",
+                  "prompt": "What does a compass rose show on a map?",
                   "choices": [
+                    "Cardinal directions like north and south",
+                    "Population of each city",
+                    "Average winter snowfall",
+                    "State tax rates"
+                  ],
+                  "answer": "Cardinal directions like north and south",
+                  "explanation": "A compass rose displays cardinal directions (north, south, east, west) to orient the reader."
+                },
+                {
+                  "id": "g4-soc-ge-7",
+                  "type": "mc",
+                  "prompt": "What explains the meaning of symbols and colors on a map?",
+                  "choices": [
+                    "The map key or legend",
+                    "The Prime Meridian",
+                    "The Equator",
+                    "The longitude grid"
+                  ],
+                  "answer": "The map key or legend",
+                  "explanation": "A map legend (or key) defines what each icon, line, and color represents on the map."
+                },
+                {
+                  "id": "g4-soc-ge-8",
+                  "type": "mc",
+                  "prompt": "In which U.S. region is the state of Ohio located?",
+                  "choices": [
+                    "The Midwest",
                     "The Southwest",
-                    "The Northeast",
-                    "The Southeast",
+                    "The Pacific West",
                     "New England"
                   ],
-                  "answer": "The Southwest",
-                  "explanation": "Arid deserts, canyons, and mesas characterize the American Southwest (including Arizona and New Mexico)."
-                },
-                {
-                  "id": "sg7",
-                  "type": "mc",
-                  "prompt": "Which river system forms a massive north-to-south waterway through the center of the United States emptying into the Gulf of Mexico?",
-                  "choices": [
-                    "The Mississippi River",
-                    "The Hudson River",
-                    "The Columbia River",
-                    "The Potomac River"
-                  ],
-                  "answer": "The Mississippi River",
-                  "explanation": "The Mississippi River and its tributaries drain the interior of the United States into the Gulf of Mexico."
-                },
-                {
-                  "id": "sg8",
-                  "type": "mc",
-                  "prompt": "What is the purpose of a map legend (or key)?",
-                  "choices": [
-                    "To explain the meaning of symbols, colors, and lines used on the map",
-                    "To show which direction is north",
-                    "To list the authors of the atlas",
-                    "To tell the temperature tomorrow"
-                  ],
-                  "answer": "To explain the meaning of symbols, colors, and lines used on the map",
-                  "explanation": "A map legend decodes what the symbols and colors represent (e.g., capitals, highways, elevation)."
+                  "answer": "The Midwest",
+                  "explanation": "Ohio is part of the Midwest region, bordered by Lake Erie to the north and the Ohio River."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Geography & Regions] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Map Coordinates & Regions of the United States\" (C3.D2.Geo.2.3-5), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-soc-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Geography Skills: Latitude, Longitude & Regions of the United States",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Map Coordinates & Regions of the United States\" (C3.D2.Geo.2.3-5). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/us-history"
+              },
+              {
+                "id": "g4-soc-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Map Coordinates & Regions of the United States.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-soc-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (C3.D2.Geo.2.3-5)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Map Coordinates & Regions of the United States.",
+              "Latitude runs east-west, longitude runs north-south, and the U.S. has five major regions.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What line at 0° latitude splits Earth into Northern and Southern Hemispheres?\" → Answer: The Equator. (The Equator is the imaginary 0° latitude line halfway between the North and South Poles.)",
+            "links": [
+              {
+                "label": "YouTube: \"Geography & Regions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20social%20Geography%20%26%20Regions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Geography & Regions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Geography%20%26%20Regions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Geography & Regions",
+                "url": "https://www.youtube.com/results?search_query=Geography%20%26%20Regions%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g4-soc-u1-l2",
+          "unitId": "g4-soc-u1",
+          "title": "Lesson 1b (Ohio): Mound Builders, Northwest Ordinance & Statehood",
+          "kind": "lesson",
+          "partOf": "Ohio History",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-history",
+          "videoTitle": "Ohio History: Prehistoric Earthworks & 1803 Statehood",
+          "reading": "Ancient Adena, Hopewell, and Fort Ancient peoples built earthworks across Ohio, including Serpent Mound. Later, the Northwest Ordinance of 1787 banned slavery in the territory and led to Ohio statehood in 1803.",
+          "principles": [
+            {
+              "id": "p-g4-soc-ohio-hist",
+              "title": "Ohio Mound Builders, Northwest Ordinance & Statehood",
+              "standard": "OH.4.SS.2",
+              "summary": "Adena, Hopewell, and Fort Ancient peoples built earthworks; the Northwest Ordinance of 1787 led to Ohio statehood in 1803.",
+              "bank": [
+                {
+                  "id": "g4-soc-oh-1",
+                  "type": "mc",
+                  "prompt": "Why did ancient Adena and Hopewell peoples build earthwork mounds in Ohio?",
+                  "choices": [
+                    "For burials, ceremonies, and gathering places",
+                    "To block modern highways",
+                    "To store coal for steamboats",
+                    "To ski down in winter"
+                  ],
+                  "answer": "For burials, ceremonies, and gathering places",
+                  "explanation": "Prehistoric Indigenous groups in Ohio built thousands of earthen mounds for sacred ceremonies and burials."
+                },
+                {
+                  "id": "g4-soc-oh-2",
+                  "type": "mc",
+                  "prompt": "What famous effigy mound in Adams County, Ohio is shaped like a snake?",
+                  "choices": [
+                    "Serpent Mound",
+                    "Cahokia Pyramid",
+                    "Mount Rushmore",
+                    "Plymouth Rock"
+                  ],
+                  "answer": "Serpent Mound",
+                  "explanation": "Serpent Mound is a 1,348-foot-long prehistoric effigy mound shaped like a curving snake in southern Ohio."
+                },
+                {
+                  "id": "g4-soc-oh-3",
+                  "type": "mc",
+                  "prompt": "What did the Northwest Ordinance of 1787 ban in the Northwest Territory?",
+                  "choices": [
+                    "Slavery",
+                    "Public schools",
+                    "Farming corn",
+                    "River travel"
+                  ],
+                  "answer": "Slavery",
+                  "explanation": "The Northwest Ordinance of 1787 outlawed slavery in the territory and encouraged public education."
+                },
+                {
+                  "id": "g4-soc-oh-4",
+                  "type": "mc",
+                  "prompt": "In what year did Ohio become the 17th state of the United States?",
+                  "choices": [
+                    "1803",
+                    "1492",
+                    "1776",
+                    "1920"
+                  ],
+                  "answer": "1803",
+                  "explanation": "Following the rules of the Northwest Ordinance, Ohio achieved statehood in 1803."
+                },
+                {
+                  "id": "g4-soc-oh-5",
+                  "type": "mc",
+                  "prompt": "Which town served as Ohio’s very first state capital in 1803?",
+                  "choices": [
+                    "Chillicothe",
+                    "Toledo",
+                    "Akron",
+                    "Dayton"
+                  ],
+                  "answer": "Chillicothe",
+                  "explanation": "Chillicothe was Ohio’s first state capital in 1803 before the capital permanently moved to Columbus."
+                },
+                {
+                  "id": "g4-soc-oh-6",
+                  "type": "mc",
+                  "prompt": "What do copper and obsidian artifacts in Ohio Hopewell mounds prove?",
+                  "choices": [
+                    "They traded across North America.",
+                    "They only stayed in one small cave.",
+                    "They bought metal from Europe.",
+                    "Volcanoes erupted in Columbus."
+                  ],
+                  "answer": "They traded across North America.",
+                  "explanation": "Copper from Lake Superior and obsidian from the Rocky Mountains show vast Hopewell trade networks."
+                },
+                {
+                  "id": "g4-soc-oh-7",
+                  "type": "mc",
+                  "prompt": "What rights did the Northwest Ordinance guarantee to settlers?",
+                  "choices": [
+                    "Freedom of religion and trial by jury",
+                    "The right to own kings",
+                    "Free gold mines for everyone",
+                    "No taxes forever"
+                  ],
+                  "answer": "Freedom of religion and trial by jury",
+                  "explanation": "The Northwest Ordinance included a bill of rights protecting religious freedom and jury trials."
+                },
+                {
+                  "id": "g4-soc-oh-8",
+                  "type": "mc",
+                  "prompt": "How did the Ohio and Erie Canal change Ohio in the 1830s?",
+                  "choices": [
+                    "It connected farms to eastern markets.",
+                    "It drained Lake Erie dry.",
+                    "It stopped all boat travel.",
+                    "It replaced airplanes."
+                  ],
+                  "answer": "It connected farms to eastern markets.",
+                  "explanation": "Canals linked Lake Erie to the Ohio River so farmers could ship crops cheaply by water."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Ohio History] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Ohio Mound Builders, Northwest Ordinance & Statehood\" (OH.4.SS.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-soc-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Ohio History: Prehistoric Earthworks & 1803 Statehood",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Ohio Mound Builders, Northwest Ordinance & Statehood\" (OH.4.SS.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/us-history"
+              },
+              {
+                "id": "g4-soc-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Ohio Mound Builders, Northwest Ordinance & Statehood.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-soc-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.4.SS.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Ohio Mound Builders, Northwest Ordinance & Statehood.",
+              "Adena, Hopewell, and Fort Ancient peoples built earthworks; the Northwest Ordinance of 1787 led to Ohio statehood in 1803.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Why did ancient Adena and Hopewell peoples build earthwork mounds in Ohio?\" → Answer: For burials, ceremonies, and gathering places. (Prehistoric Indigenous groups in Ohio built thousands of earthen mounds for sacred ceremonies and burials.)",
+            "links": [
+              {
+                "label": "YouTube: \"Ohio History\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20social%20Ohio%20History%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Ohio History\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Ohio%20History",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Ohio History",
+                "url": "https://www.youtube.com/results?search_query=Ohio%20History%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g4-soc-u1-review",
+          "unitId": "g4-soc-u1",
+          "title": "Unit 1 Review: Map Skills & Ohio History",
+          "kind": "lesson_review",
+          "estimatedMinutes": 12,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-history",
+          "videoTitle": "Reviewing U.S. Geography & Early Ohio History",
+          "reading": "Review map tools, U.S. regions, Ohio’s prehistoric Mound Builders, and the Northwest Ordinance of 1787.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g4-soc-geo",
+              "title": "Map Coordinates & Regions of the United States",
+              "standard": "C3.D2.Geo.2.3-5",
+              "summary": "Latitude runs east-west, longitude runs north-south, and the U.S. has five major regions.",
+              "bank": [
+                {
+                  "id": "g4-soc-ge-1",
+                  "type": "mc",
+                  "prompt": "What line at 0° latitude splits Earth into Northern and Southern Hemispheres?",
+                  "choices": [
+                    "The Equator",
+                    "The Prime Meridian",
+                    "The North Pole",
+                    "The Ohio River"
+                  ],
+                  "answer": "The Equator",
+                  "explanation": "The Equator is the imaginary 0° latitude line halfway between the North and South Poles."
+                },
+                {
+                  "id": "g4-soc-ge-2",
+                  "type": "mc",
+                  "prompt": "Which map tool compares inches on a map to real miles?",
+                  "choices": [
+                    "Map scale",
+                    "Compass rose",
+                    "Map title",
+                    "Map border"
+                  ],
+                  "answer": "Map scale",
+                  "explanation": "A map scale shows how distance on a map matches actual distance on the ground."
+                },
+                {
+                  "id": "g4-soc-ge-3",
+                  "type": "mc",
+                  "prompt": "Which U.S. region is called \"America’s Breadbasket\" for its corn and wheat?",
+                  "choices": [
+                    "The Midwest",
+                    "The Northeast",
+                    "The Southwest",
+                    "The West Coast"
+                  ],
+                  "answer": "The Midwest",
+                  "explanation": "The Midwest has flat, fertile plains ideal for growing grain crops like corn, soybeans, and wheat."
+                },
+                {
+                  "id": "g4-soc-ge-4",
+                  "type": "mc",
+                  "prompt": "Which mountain range runs through the eastern United States?",
+                  "choices": [
+                    "The Appalachian Mountains",
+                    "The Rocky Mountains",
+                    "The Sierra Nevada",
+                    "The Andes Mountains"
+                  ],
+                  "answer": "The Appalachian Mountains",
+                  "explanation": "The Appalachian Mountains stretch from Maine to Georgia in eastern North America."
+                },
+                {
+                  "id": "g4-soc-ge-5",
+                  "type": "mc",
+                  "prompt": "Lines of longitude measure distance east or west of what 0° line?",
+                  "choices": [
+                    "The Prime Meridian",
+                    "The Equator",
+                    "The Mississippi River",
+                    "The Atlantic Coast"
+                  ],
+                  "answer": "The Prime Meridian",
+                  "explanation": "Longitude lines run pole to pole and measure distance east or west of the Prime Meridian."
+                },
+                {
+                  "id": "g4-soc-ge-6",
+                  "type": "mc",
+                  "prompt": "What does a compass rose show on a map?",
+                  "choices": [
+                    "Cardinal directions like north and south",
+                    "Population of each city",
+                    "Average winter snowfall",
+                    "State tax rates"
+                  ],
+                  "answer": "Cardinal directions like north and south",
+                  "explanation": "A compass rose displays cardinal directions (north, south, east, west) to orient the reader."
+                },
+                {
+                  "id": "g4-soc-ge-7",
+                  "type": "mc",
+                  "prompt": "What explains the meaning of symbols and colors on a map?",
+                  "choices": [
+                    "The map key or legend",
+                    "The Prime Meridian",
+                    "The Equator",
+                    "The longitude grid"
+                  ],
+                  "answer": "The map key or legend",
+                  "explanation": "A map legend (or key) defines what each icon, line, and color represents on the map."
+                },
+                {
+                  "id": "g4-soc-ge-8",
+                  "type": "mc",
+                  "prompt": "In which U.S. region is the state of Ohio located?",
+                  "choices": [
+                    "The Midwest",
+                    "The Southwest",
+                    "The Pacific West",
+                    "New England"
+                  ],
+                  "answer": "The Midwest",
+                  "explanation": "Ohio is part of the Midwest region, bordered by Lake Erie to the north and the Ohio River."
+                }
+              ]
+            },
+            {
+              "id": "p-g4-soc-ohio-hist",
+              "title": "Ohio Mound Builders, Northwest Ordinance & Statehood",
+              "standard": "OH.4.SS.2",
+              "summary": "Adena, Hopewell, and Fort Ancient peoples built earthworks; the Northwest Ordinance of 1787 led to Ohio statehood in 1803.",
+              "bank": [
+                {
+                  "id": "g4-soc-oh-1",
+                  "type": "mc",
+                  "prompt": "Why did ancient Adena and Hopewell peoples build earthwork mounds in Ohio?",
+                  "choices": [
+                    "For burials, ceremonies, and gathering places",
+                    "To block modern highways",
+                    "To store coal for steamboats",
+                    "To ski down in winter"
+                  ],
+                  "answer": "For burials, ceremonies, and gathering places",
+                  "explanation": "Prehistoric Indigenous groups in Ohio built thousands of earthen mounds for sacred ceremonies and burials."
+                },
+                {
+                  "id": "g4-soc-oh-2",
+                  "type": "mc",
+                  "prompt": "What famous effigy mound in Adams County, Ohio is shaped like a snake?",
+                  "choices": [
+                    "Serpent Mound",
+                    "Cahokia Pyramid",
+                    "Mount Rushmore",
+                    "Plymouth Rock"
+                  ],
+                  "answer": "Serpent Mound",
+                  "explanation": "Serpent Mound is a 1,348-foot-long prehistoric effigy mound shaped like a curving snake in southern Ohio."
+                },
+                {
+                  "id": "g4-soc-oh-3",
+                  "type": "mc",
+                  "prompt": "What did the Northwest Ordinance of 1787 ban in the Northwest Territory?",
+                  "choices": [
+                    "Slavery",
+                    "Public schools",
+                    "Farming corn",
+                    "River travel"
+                  ],
+                  "answer": "Slavery",
+                  "explanation": "The Northwest Ordinance of 1787 outlawed slavery in the territory and encouraged public education."
+                },
+                {
+                  "id": "g4-soc-oh-4",
+                  "type": "mc",
+                  "prompt": "In what year did Ohio become the 17th state of the United States?",
+                  "choices": [
+                    "1803",
+                    "1492",
+                    "1776",
+                    "1920"
+                  ],
+                  "answer": "1803",
+                  "explanation": "Following the rules of the Northwest Ordinance, Ohio achieved statehood in 1803."
+                },
+                {
+                  "id": "g4-soc-oh-5",
+                  "type": "mc",
+                  "prompt": "Which town served as Ohio’s very first state capital in 1803?",
+                  "choices": [
+                    "Chillicothe",
+                    "Toledo",
+                    "Akron",
+                    "Dayton"
+                  ],
+                  "answer": "Chillicothe",
+                  "explanation": "Chillicothe was Ohio’s first state capital in 1803 before the capital permanently moved to Columbus."
+                },
+                {
+                  "id": "g4-soc-oh-6",
+                  "type": "mc",
+                  "prompt": "What do copper and obsidian artifacts in Ohio Hopewell mounds prove?",
+                  "choices": [
+                    "They traded across North America.",
+                    "They only stayed in one small cave.",
+                    "They bought metal from Europe.",
+                    "Volcanoes erupted in Columbus."
+                  ],
+                  "answer": "They traded across North America.",
+                  "explanation": "Copper from Lake Superior and obsidian from the Rocky Mountains show vast Hopewell trade networks."
+                },
+                {
+                  "id": "g4-soc-oh-7",
+                  "type": "mc",
+                  "prompt": "What rights did the Northwest Ordinance guarantee to settlers?",
+                  "choices": [
+                    "Freedom of religion and trial by jury",
+                    "The right to own kings",
+                    "Free gold mines for everyone",
+                    "No taxes forever"
+                  ],
+                  "answer": "Freedom of religion and trial by jury",
+                  "explanation": "The Northwest Ordinance included a bill of rights protecting religious freedom and jury trials."
+                },
+                {
+                  "id": "g4-soc-oh-8",
+                  "type": "mc",
+                  "prompt": "How did the Ohio and Erie Canal change Ohio in the 1830s?",
+                  "choices": [
+                    "It connected farms to eastern markets.",
+                    "It drained Lake Erie dry.",
+                    "It stopped all boat travel.",
+                    "It replaced airplanes."
+                  ],
+                  "answer": "It connected farms to eastern markets.",
+                  "explanation": "Canals linked Lake Erie to the Ohio River so farmers could ship crops cheaply by water."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering Map Coordinates & Regions of the United States & Ohio Mound Builders, Northwest Ordinance & Statehood (C3.D2.Geo.2.3-5, OH.4.SS.2). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g4-soc-u1-review-step-review",
+                "type": "reading",
+                "title": "Review Principles: Map Coordinates & Regions of the United States & Ohio Mound Builders, Northwest Ordinance & Statehood",
+                "description": "Read the Core Concept Summary and Principle cards on this page (C3.D2.Geo.2.3-5, OH.4.SS.2) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g4-soc-u1-review-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Reviewing U.S. Geography & Early Ohio History",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Map Coordinates & Regions of the United States & Ohio Mound Builders, Northwest Ordinance & Statehood\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/us-history"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Map Coordinates & Regions of the United States.",
+              "Latitude runs east-west, longitude runs north-south, and the U.S. has five major regions.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What line at 0° latitude splits Earth into Northern and Southern Hemispheres?\" → Answer: The Equator. (The Equator is the imaginary 0° latitude line halfway between the North and South Poles.)",
+            "links": [
+              {
+                "label": "YouTube: \"Unit 1 Review: Map Skills & Ohio History\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20social%20Unit%201%20Review%3A%20Map%20Skills%20%26%20Ohio%20History%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Unit 1 Review: Map Skills & Ohio History\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Unit%201%20Review%3A%20Map%20Skills%20%26%20Ohio%20History",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Unit 1 Review: Map Skills & Ohio History",
+                "url": "https://www.youtube.com/results?search_query=Unit%201%20Review%3A%20Map%20Skills%20%26%20Ohio%20History%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "g4-soc-u2",
-      "title": "Unit 2: U.S. Constitution, Branches of Government & Economics",
+      "title": "Unit 2: Three Branches of Government & Economics",
       "standards": [
         "C3.D2.Civ.1.3-5",
         "C3.D2.Eco.1.3-5"
@@ -153,280 +709,293 @@
         {
           "id": "g4-soc-u2-l1",
           "unitId": "g4-soc-u2",
-          "title": "Lesson 1: Three Branches of Government & Checks and Balances",
+          "title": "Lesson 2a: Three Branches of Government & Bill of Rights",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Government & Civics",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/humanities/us-government-and-civics",
-          "videoTitle": "The U.S. Constitution & Three Branches of Government",
-          "reading": "The U.S. Constitution divides federal power among three branches so no single leader or group gains total control (Separation of Powers and Checks and Balances): 1) Legislative Branch (Congress: Senate and House of Representatives) makes laws; 2) Executive Branch (President, Vice President, Cabinet) carries out and enforces laws; 3) Judicial Branch (Supreme Court and federal courts) interprets laws under the Constitution.",
+          "videoTitle": "The Three Branches of Government & The Bill of Rights",
+          "reading": "The U.S. Constitution splits power into three branches: Legislative (Congress makes laws), Executive (the President enforces laws), and Judicial (the Supreme Court interprets laws). The Bill of Rights protects citizens’ freedoms.",
           "principles": [
             {
               "id": "p-g4-soc-civics",
-              "title": "Legislative, Executive & Judicial Branches and Citizens’ Rights",
+              "title": "Three Branches of Government & Citizens’ Rights",
               "standard": "C3.D2.Civ.1.3-5",
-              "summary": "Congress makes laws, the President enforces laws, and the Supreme Court interprets laws under Checks and Balances.",
+              "summary": "The Legislative branch makes laws, Executive enforces laws, and Judicial interprets laws under the Constitution.",
               "bank": [
                 {
-                  "id": "sc1",
+                  "id": "g4-soc-cv-1",
                   "type": "mc",
-                  "prompt": "Which branch of the U.S. government is responsible for MAKING federal laws?",
+                  "prompt": "Which branch of government makes federal laws in Congress?",
                   "choices": [
-                    "The Legislative Branch (Congress)",
-                    "The Executive Branch (President)",
-                    "The Judicial Branch (Supreme Court)",
-                    "The State Police"
+                    "The Legislative Branch",
+                    "The Executive Branch",
+                    "The Judicial Branch",
+                    "The City Council"
                   ],
-                  "answer": "The Legislative Branch (Congress)",
-                  "explanation": "Congress—made up of the Senate and the House of Representatives—writes and votes on bills to make federal laws."
+                  "answer": "The Legislative Branch",
+                  "explanation": "The Legislative Branch (Congress: Senate and House of Representatives) writes and votes on laws."
                 },
                 {
-                  "id": "sc2",
+                  "id": "g4-soc-cv-2",
                   "type": "mc",
-                  "prompt": "Why did the framers of the Constitution create a system of \"Checks and Balances\"?",
+                  "prompt": "Who leads the Executive Branch of the United States government?",
                   "choices": [
-                    "To prevent any single branch of government from becoming too powerful",
-                    "To help banks print paper money faster",
-                    "To give the President complete power to write all laws alone",
-                    "To eliminate state governments"
-                  ],
-                  "answer": "To prevent any single branch of government from becoming too powerful",
-                  "explanation": "Checks and balances give each branch ways to limit the power of the other two branches."
-                },
-                {
-                  "id": "sc3",
-                  "type": "mc",
-                  "prompt": "Who leads the Executive Branch of the federal government and serves as Commander-in-Chief?",
-                  "choices": [
-                    "The President of the United States",
+                    "The President",
                     "The Chief Justice",
                     "The Speaker of the House",
-                    "The State Governor"
+                    "The Mayor"
                   ],
-                  "answer": "The President of the United States",
-                  "explanation": "The President heads the Executive Branch and sees that federal laws are faithfully executed."
+                  "answer": "The President",
+                  "explanation": "The President heads the Executive Branch and makes sure federal laws are carried out."
                 },
                 {
-                  "id": "sc4",
+                  "id": "g4-soc-cv-3",
                   "type": "mc",
                   "prompt": "What are the first ten amendments to the U.S. Constitution called?",
                   "choices": [
                     "The Bill of Rights",
                     "The Declaration of Independence",
-                    "The Articles of Confederation",
-                    "The Emancipation Proclamation"
+                    "The Mayflower Compact",
+                    "The Articles of Confederation"
                   ],
                   "answer": "The Bill of Rights",
-                  "explanation": "Ratified in 1791, the Bill of Rights guarantees fundamental freedoms such as speech, religion, press, and fair trial."
+                  "explanation": "The Bill of Rights is the first ten amendments, protecting freedoms like speech and religion."
                 },
                 {
-                  "id": "sc5",
+                  "id": "g4-soc-cv-4",
                   "type": "mc",
-                  "prompt": "Which branch of government includes the Supreme Court and decides whether laws follow the Constitution?",
+                  "prompt": "Which branch includes the Supreme Court and interprets our laws?",
                   "choices": [
                     "The Judicial Branch",
                     "The Legislative Branch",
                     "The Executive Branch",
-                    "The Treasury Department"
+                    "The Postal Service"
                   ],
                   "answer": "The Judicial Branch",
-                  "explanation": "The Judicial Branch interprets laws and can strike down laws that violate the Constitution."
+                  "explanation": "The Judicial Branch interprets the meaning of laws and applies the U.S. Constitution."
                 },
                 {
-                  "id": "sc6",
+                  "id": "g4-soc-cv-5",
                   "type": "mc",
-                  "prompt": "When the President refuses to sign a bill passed by Congress, this action is called a:",
+                  "prompt": "What is it called when the President refuses to sign a bill?",
                   "choices": [
-                    "Veto",
-                    "Pardon",
-                    "Filibuster",
-                    "Ratification"
+                    "A veto",
+                    "A pardon",
+                    "A treaty",
+                    "A ballot"
                   ],
-                  "answer": "Veto",
-                  "explanation": "A presidential veto is an executive check on the legislative branch (which Congress can override with a two-thirds vote)."
+                  "answer": "A veto",
+                  "explanation": "A veto is the President’s power to reject a bill passed by Congress, checking legislative power."
+                },
+                {
+                  "id": "g4-soc-cv-6",
+                  "type": "mc",
+                  "prompt": "How many U.S. Senators does each state have in Congress?",
+                  "choices": [
+                    "Two Senators per state",
+                    "One Senator per state",
+                    "Ten Senators per state",
+                    "Fifty Senators per state"
+                  ],
+                  "answer": "Two Senators per state",
+                  "explanation": "Every state elects exactly two U.S. Senators, making 100 Senators in total."
+                },
+                {
+                  "id": "g4-soc-cv-7",
+                  "type": "mc",
+                  "prompt": "Which amendment protects freedom of speech, press, and religion?",
+                  "choices": [
+                    "The First Amendment",
+                    "The Tenth Amendment",
+                    "The Nineteenth Amendment",
+                    "The Fifth Amendment"
+                  ],
+                  "answer": "The First Amendment",
+                  "explanation": "The First Amendment guarantees freedom of speech, religion, the press, assembly, and petition."
+                },
+                {
+                  "id": "g4-soc-cv-8",
+                  "type": "mc",
+                  "prompt": "Why does the Constitution divide government into three branches?",
+                  "choices": [
+                    "To provide checks and balances on power",
+                    "To make one person a king",
+                    "To stop citizens from voting",
+                    "To eliminate all courts"
+                  ],
+                  "answer": "To provide checks and balances on power",
+                  "explanation": "Checks and balances prevent any single branch of government from becoming too powerful."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Government & Civics] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Three Branches of Government & Citizens’ Rights\" (C3.D2.Civ.1.3-5), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-soc-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — The Three Branches of Government & The Bill of Rights",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Three Branches of Government & Citizens’ Rights\" (C3.D2.Civ.1.3-5). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/us-government-and-civics"
+              },
+              {
+                "id": "g4-soc-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Three Branches of Government & Citizens’ Rights.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-soc-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (C3.D2.Civ.1.3-5)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Three Branches of Government & Citizens’ Rights.",
+              "The Legislative branch makes laws, Executive enforces laws, and Judicial interprets laws under the Constitution.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which branch of government makes federal laws in Congress?\" → Answer: The Legislative Branch. (The Legislative Branch (Congress: Senate and House of Representatives) writes and votes on laws.)",
+            "links": [
+              {
+                "label": "YouTube: \"Government & Civics\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20social%20Government%20%26%20Civics%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Government & Civics\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Government%20%26%20Civics",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Government & Civics",
+                "url": "https://www.youtube.com/results?search_query=Government%20%26%20Civics%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g4-soc-u2-l2",
           "unitId": "g4-soc-u2",
-          "title": "Lesson 2: Scarcity, Opportunity Cost, Supply & Demand",
+          "title": "Lesson 2b: Scarcity, Opportunity Cost & Supply and Demand",
           "kind": "lesson",
-          "estimatedMinutes": 20,
+          "partOf": "Economics",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/economics-finance-domain/microeconomics/basic-economic-concepts-gen-micro",
           "videoTitle": "Economics: Goods, Services, Opportunity Cost & Supply/Demand",
-          "reading": "Economics studies how people use limited resources to satisfy wants and needs. Scarcity means resources (time, money, raw materials) are limited. When you make a choice, your opportunity cost is the value of the NEXT BEST alternative you gave up. Supply is how much of a good producers offer for sale, and demand is how much consumers are willing and able to buy.",
+          "reading": "Scarcity means resources are limited. Your opportunity cost is the next best choice you give up when making a decision. High demand and low supply push prices up, while high supply and low demand lower prices.",
           "principles": [
             {
               "id": "p-g4-soc-econ",
               "title": "Scarcity, Opportunity Cost, Goods/Services & Supply/Demand",
               "standard": "C3.D2.Eco.1.3-5",
-              "summary": "Opportunity cost is the next best choice given up; high demand and low supply push prices up.",
+              "summary": "Scarcity means limited resources; opportunity cost is the next best choice given up.",
               "bank": [
                 {
-                  "id": "se1",
+                  "id": "g4-soc-ec-1",
                   "type": "mc",
-                  "prompt": "Liam has $15. He wants either a board game or a soccer ball, and he chooses the soccer ball. What is his OPPORTUNITY COST?",
+                  "prompt": "Liam picks a ball over a game. What is his opportunity cost?",
                   "choices": [
                     "The board game he gave up",
                     "The soccer ball he bought",
-                    "Both the board game and the soccer ball",
+                    "Both items together",
                     "Zero dollars"
                   ],
                   "answer": "The board game he gave up",
-                  "explanation": "Opportunity cost is the next best alternative you give up when making a decision."
+                  "explanation": "Opportunity cost is the next best choice you give up when you make a decision."
                 },
                 {
-                  "id": "se2",
+                  "id": "g4-soc-ec-2",
                   "type": "mc",
-                  "prompt": "Which of the following is an example of a SERVICE rather than a physical GOOD?",
+                  "prompt": "Which choice is a service rather than a physical good?",
                   "choices": [
                     "A dentist cleaning your teeth",
-                    "A loaf of fresh bread from a bakery",
+                    "A loaf of fresh bread",
                     "A pair of running shoes",
-                    "A hardcover history book"
+                    "A history textbook"
                   ],
                   "answer": "A dentist cleaning your teeth",
-                  "explanation": "A service is helpful work performed for others, whereas a good is a physical object you can touch."
+                  "explanation": "A service is helpful work done for others, while a good is a physical object."
                 },
                 {
-                  "id": "se3",
+                  "id": "g4-soc-ec-3",
                   "type": "mc",
-                  "prompt": "If a late spring freeze destroys most of the peach crop while many shoppers still want peaches, what usually happens to the price of peaches?",
+                  "prompt": "What happens to peach prices when a freeze ruins most of the crop?",
                   "choices": [
-                    "The price increases because supply is low and demand is high.",
-                    "The price drops to zero.",
-                    "The supply of peaches doubles overnight.",
-                    "Peaches become a free public service."
+                    "Prices rise because supply is low.",
+                    "Prices drop to zero.",
+                    "Supply doubles overnight.",
+                    "Peaches become free."
                   ],
-                  "answer": "The price increases because supply is low and demand is high.",
-                  "explanation": "When supply decreases while demand remains strong, scarcity pushes the market price up."
+                  "answer": "Prices rise because supply is low.",
+                  "explanation": "When supply drops and demand stays high, scarcity pushes prices upward."
                 },
                 {
-                  "id": "se4",
+                  "id": "g4-soc-ec-4",
                   "type": "mc",
-                  "prompt": "What does the economic term SCARCITY mean?",
+                  "prompt": "What does scarcity mean in economics?",
                   "choices": [
-                    "People have unlimited wants, but resources to fulfill them are limited.",
-                    "Stores have too many items on sale.",
-                    "Everyone has enough money to buy everything at once.",
-                    "Only gold and diamonds have value."
+                    "Wants are unlimited but resources are limited.",
+                    "Every store has too many goods.",
+                    "Money grows on trees.",
+                    "Only gold has value."
                   ],
-                  "answer": "People have unlimited wants, but resources to fulfill them are limited.",
-                  "explanation": "Scarcity is the fundamental economic condition of limited resources relative to human wants."
+                  "answer": "Wants are unlimited but resources are limited.",
+                  "explanation": "Scarcity means there are not enough resources to satisfy every want at once."
                 },
                 {
-                  "id": "se5",
+                  "id": "g4-soc-ec-5",
                   "type": "mc",
-                  "prompt": "A bakery buys flour, ovens, and mixing bowls to make muffins. In economics, the ovens and mixing bowls are:",
+                  "prompt": "In a bakery, what type of resource are the ovens and mixing bowls?",
                   "choices": [
-                    "Capital resources (tools and equipment)",
+                    "Capital resources",
                     "Natural resources",
                     "Consumers",
-                    "Opportunity costs"
+                    "Taxes"
                   ],
-                  "answer": "Capital resources (tools and equipment)",
-                  "explanation": "Man-made tools, machines, and buildings used to produce other goods are capital resources."
+                  "answer": "Capital resources",
+                  "explanation": "Capital resources are man-made tools, machines, and buildings used to produce goods."
                 },
                 {
-                  "id": "se6",
+                  "id": "g4-soc-ec-6",
                   "type": "mc",
-                  "prompt": "When a toy store has 200 winter sleds left over in April and very few customers want to buy them, the store will likely:",
+                  "prompt": "What will a store likely do with extra winter sleds in April?",
                   "choices": [
-                    "Lower the price (put them on sale) to encourage demand",
-                    "Triple the price of the sleds",
-                    "Order 500 more sleds immediately",
-                    "Stop selling summer items"
+                    "Lower the price to increase demand",
+                    "Triple the price",
+                    "Order 500 more sleds",
+                    "Close the store forever"
                   ],
-                  "answer": "Lower the price (put them on sale) to encourage demand",
-                  "explanation": "High supply paired with low demand leads sellers to reduce prices to clear inventory."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "g4-soc-u2-test",
-          "unitId": "g4-soc-u2",
-          "title": "Unit 2 Exam: Civics, Geography & Economics",
-          "kind": "unit_test",
-          "estimatedMinutes": 25,
-          "videoUrl": "https://www.khanacademy.org/humanities/us-government-and-civics",
-          "videoTitle": "Grade 4 Social Studies Review",
-          "reading": "Review U.S. regions, the three branches of government, and economic principles for the Unit 2 Exam.",
-          "questionCount": 6,
-          "principles": [
-            {
-              "id": "p-g4-soc-civics",
-              "title": "Legislative, Executive & Judicial Branches and Citizens’ Rights",
-              "standard": "C3.D2.Civ.1.3-5",
-              "summary": "Understand separation of powers and constitutional rights.",
-              "bank": [
-                {
-                  "id": "sut1",
-                  "type": "mc",
-                  "prompt": "How many U.S. Senators represent each state in Congress?",
-                  "choices": [
-                    "2 Senators per state (100 total)",
-                    "1 Senator per state",
-                    "10 Senators per state",
-                    "It depends on the state’s land area"
-                  ],
-                  "answer": "2 Senators per state (100 total)",
-                  "explanation": "Every state has equal representation in the U.S. Senate with 2 Senators."
+                  "answer": "Lower the price to increase demand",
+                  "explanation": "When supply is high and demand is low, sellers lower prices to attract buyers."
                 },
                 {
-                  "id": "sut2",
+                  "id": "g4-soc-ec-7",
                   "type": "mc",
-                  "prompt": "Freedom of speech, freedom of the press, and freedom of religion are protected by which amendment?",
-                  "choices": [
-                    "The First Amendment",
-                    "The Nineteenth Amendment",
-                    "The Tenth Amendment",
-                    "The Twenty-Sixth Amendment"
-                  ],
-                  "answer": "The First Amendment",
-                  "explanation": "The First Amendment in the Bill of Rights protects religion, speech, press, assembly, and petition."
-                },
-                {
-                  "id": "sut3",
-                  "type": "mc",
-                  "prompt": "Which level of government is primarily responsible for local fire departments, city parks, and public libraries?",
-                  "choices": [
-                    "Local (city/county) government",
-                    "Foreign embassies",
-                    "The Supreme Court",
-                    "The United Nations"
-                  ],
-                  "answer": "Local (city/county) government",
-                  "explanation": "Local governments manage community services like fire protection, local roads, parks, and libraries."
-                }
-              ]
-            },
-            {
-              "id": "p-g4-soc-econ",
-              "title": "Scarcity, Opportunity Cost, Goods/Services & Supply/Demand",
-              "standard": "C3.D2.Eco.1.3-5",
-              "summary": "Apply opportunity cost and supply/demand reasoning.",
-              "bank": [
-                {
-                  "id": "sut4",
-                  "type": "mc",
-                  "prompt": "Maya spends Saturday afternoon studying for her science test instead of going to the movies. Going to the movies is her:",
-                  "choices": [
-                    "Opportunity cost",
-                    "Natural resource",
-                    "Supply curve",
-                    "Tax rate"
-                  ],
-                  "answer": "Opportunity cost",
-                  "explanation": "The activity she gave up (going to the movies) is the opportunity cost of her choice to study."
-                },
-                {
-                  "id": "sut5",
-                  "type": "mc",
-                  "prompt": "Trees, fresh water, fertile soil, and iron ore used to make products are examples of:",
+                  "prompt": "Trees, fresh water, and fertile soil are examples of what resource?",
                   "choices": [
                     "Natural resources",
                     "Capital resources",
@@ -434,24 +1003,386 @@
                     "Services"
                   ],
                   "answer": "Natural resources",
-                  "explanation": "Materials that come directly from nature without being made by humans are natural resources."
+                  "explanation": "Natural resources come directly from Earth and nature without being made by people."
                 },
                 {
-                  "id": "sut6",
+                  "id": "g4-soc-ec-8",
                   "type": "mc",
-                  "prompt": "A person who buys and uses goods and services is called a:",
+                  "prompt": "What do we call a person who buys and uses goods and services?",
                   "choices": [
-                    "Consumer",
-                    "Producer",
-                    "Legislator",
-                    "Cartographer"
+                    "A consumer",
+                    "A producer",
+                    "A senator",
+                    "A glacier"
                   ],
-                  "answer": "Consumer",
-                  "explanation": "Producers make goods or provide services; consumers purchase and use them."
+                  "answer": "A consumer",
+                  "explanation": "A consumer is someone who buys and uses goods or services; a producer makes them."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Economics] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Scarcity, Opportunity Cost, Goods/Services & Supply/Demand\" (C3.D2.Eco.1.3-5), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g4-soc-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Economics: Goods, Services, Opportunity Cost & Supply/Demand",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Scarcity, Opportunity Cost, Goods/Services & Supply/Demand\" (C3.D2.Eco.1.3-5). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/economics-finance-domain/microeconomics/basic-economic-concepts-gen-micro"
+              },
+              {
+                "id": "g4-soc-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Scarcity, Opportunity Cost, Goods/Services & Supply/Demand.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g4-soc-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (C3.D2.Eco.1.3-5)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Scarcity, Opportunity Cost, Goods/Services & Supply/Demand.",
+              "Scarcity means limited resources; opportunity cost is the next best choice given up.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Liam picks a ball over a game. What is his opportunity cost?\" → Answer: The board game he gave up. (Opportunity cost is the next best choice you give up when you make a decision.)",
+            "links": [
+              {
+                "label": "YouTube: \"Economics\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20social%20Economics%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Economics\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Economics",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Economics",
+                "url": "https://www.youtube.com/results?search_query=Economics%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g4-soc-u2-test",
+          "unitId": "g4-soc-u2",
+          "title": "Unit 2 Exam: Civics, Geography & Economics",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-government-and-civics",
+          "videoTitle": "Grade 4 Social Studies Review",
+          "reading": "Review the three branches of government, the Bill of Rights, opportunity cost, and supply and demand.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g4-soc-civics",
+              "title": "Three Branches of Government & Citizens’ Rights",
+              "standard": "C3.D2.Civ.1.3-5",
+              "summary": "The Legislative branch makes laws, Executive enforces laws, and Judicial interprets laws under the Constitution.",
+              "bank": [
+                {
+                  "id": "g4-soc-cv-1",
+                  "type": "mc",
+                  "prompt": "Which branch of government makes federal laws in Congress?",
+                  "choices": [
+                    "The Legislative Branch",
+                    "The Executive Branch",
+                    "The Judicial Branch",
+                    "The City Council"
+                  ],
+                  "answer": "The Legislative Branch",
+                  "explanation": "The Legislative Branch (Congress: Senate and House of Representatives) writes and votes on laws."
+                },
+                {
+                  "id": "g4-soc-cv-2",
+                  "type": "mc",
+                  "prompt": "Who leads the Executive Branch of the United States government?",
+                  "choices": [
+                    "The President",
+                    "The Chief Justice",
+                    "The Speaker of the House",
+                    "The Mayor"
+                  ],
+                  "answer": "The President",
+                  "explanation": "The President heads the Executive Branch and makes sure federal laws are carried out."
+                },
+                {
+                  "id": "g4-soc-cv-3",
+                  "type": "mc",
+                  "prompt": "What are the first ten amendments to the U.S. Constitution called?",
+                  "choices": [
+                    "The Bill of Rights",
+                    "The Declaration of Independence",
+                    "The Mayflower Compact",
+                    "The Articles of Confederation"
+                  ],
+                  "answer": "The Bill of Rights",
+                  "explanation": "The Bill of Rights is the first ten amendments, protecting freedoms like speech and religion."
+                },
+                {
+                  "id": "g4-soc-cv-4",
+                  "type": "mc",
+                  "prompt": "Which branch includes the Supreme Court and interprets our laws?",
+                  "choices": [
+                    "The Judicial Branch",
+                    "The Legislative Branch",
+                    "The Executive Branch",
+                    "The Postal Service"
+                  ],
+                  "answer": "The Judicial Branch",
+                  "explanation": "The Judicial Branch interprets the meaning of laws and applies the U.S. Constitution."
+                },
+                {
+                  "id": "g4-soc-cv-5",
+                  "type": "mc",
+                  "prompt": "What is it called when the President refuses to sign a bill?",
+                  "choices": [
+                    "A veto",
+                    "A pardon",
+                    "A treaty",
+                    "A ballot"
+                  ],
+                  "answer": "A veto",
+                  "explanation": "A veto is the President’s power to reject a bill passed by Congress, checking legislative power."
+                },
+                {
+                  "id": "g4-soc-cv-6",
+                  "type": "mc",
+                  "prompt": "How many U.S. Senators does each state have in Congress?",
+                  "choices": [
+                    "Two Senators per state",
+                    "One Senator per state",
+                    "Ten Senators per state",
+                    "Fifty Senators per state"
+                  ],
+                  "answer": "Two Senators per state",
+                  "explanation": "Every state elects exactly two U.S. Senators, making 100 Senators in total."
+                },
+                {
+                  "id": "g4-soc-cv-7",
+                  "type": "mc",
+                  "prompt": "Which amendment protects freedom of speech, press, and religion?",
+                  "choices": [
+                    "The First Amendment",
+                    "The Tenth Amendment",
+                    "The Nineteenth Amendment",
+                    "The Fifth Amendment"
+                  ],
+                  "answer": "The First Amendment",
+                  "explanation": "The First Amendment guarantees freedom of speech, religion, the press, assembly, and petition."
+                },
+                {
+                  "id": "g4-soc-cv-8",
+                  "type": "mc",
+                  "prompt": "Why does the Constitution divide government into three branches?",
+                  "choices": [
+                    "To provide checks and balances on power",
+                    "To make one person a king",
+                    "To stop citizens from voting",
+                    "To eliminate all courts"
+                  ],
+                  "answer": "To provide checks and balances on power",
+                  "explanation": "Checks and balances prevent any single branch of government from becoming too powerful."
+                }
+              ]
+            },
+            {
+              "id": "p-g4-soc-econ",
+              "title": "Scarcity, Opportunity Cost, Goods/Services & Supply/Demand",
+              "standard": "C3.D2.Eco.1.3-5",
+              "summary": "Scarcity means limited resources; opportunity cost is the next best choice given up.",
+              "bank": [
+                {
+                  "id": "g4-soc-ec-1",
+                  "type": "mc",
+                  "prompt": "Liam picks a ball over a game. What is his opportunity cost?",
+                  "choices": [
+                    "The board game he gave up",
+                    "The soccer ball he bought",
+                    "Both items together",
+                    "Zero dollars"
+                  ],
+                  "answer": "The board game he gave up",
+                  "explanation": "Opportunity cost is the next best choice you give up when you make a decision."
+                },
+                {
+                  "id": "g4-soc-ec-2",
+                  "type": "mc",
+                  "prompt": "Which choice is a service rather than a physical good?",
+                  "choices": [
+                    "A dentist cleaning your teeth",
+                    "A loaf of fresh bread",
+                    "A pair of running shoes",
+                    "A history textbook"
+                  ],
+                  "answer": "A dentist cleaning your teeth",
+                  "explanation": "A service is helpful work done for others, while a good is a physical object."
+                },
+                {
+                  "id": "g4-soc-ec-3",
+                  "type": "mc",
+                  "prompt": "What happens to peach prices when a freeze ruins most of the crop?",
+                  "choices": [
+                    "Prices rise because supply is low.",
+                    "Prices drop to zero.",
+                    "Supply doubles overnight.",
+                    "Peaches become free."
+                  ],
+                  "answer": "Prices rise because supply is low.",
+                  "explanation": "When supply drops and demand stays high, scarcity pushes prices upward."
+                },
+                {
+                  "id": "g4-soc-ec-4",
+                  "type": "mc",
+                  "prompt": "What does scarcity mean in economics?",
+                  "choices": [
+                    "Wants are unlimited but resources are limited.",
+                    "Every store has too many goods.",
+                    "Money grows on trees.",
+                    "Only gold has value."
+                  ],
+                  "answer": "Wants are unlimited but resources are limited.",
+                  "explanation": "Scarcity means there are not enough resources to satisfy every want at once."
+                },
+                {
+                  "id": "g4-soc-ec-5",
+                  "type": "mc",
+                  "prompt": "In a bakery, what type of resource are the ovens and mixing bowls?",
+                  "choices": [
+                    "Capital resources",
+                    "Natural resources",
+                    "Consumers",
+                    "Taxes"
+                  ],
+                  "answer": "Capital resources",
+                  "explanation": "Capital resources are man-made tools, machines, and buildings used to produce goods."
+                },
+                {
+                  "id": "g4-soc-ec-6",
+                  "type": "mc",
+                  "prompt": "What will a store likely do with extra winter sleds in April?",
+                  "choices": [
+                    "Lower the price to increase demand",
+                    "Triple the price",
+                    "Order 500 more sleds",
+                    "Close the store forever"
+                  ],
+                  "answer": "Lower the price to increase demand",
+                  "explanation": "When supply is high and demand is low, sellers lower prices to attract buyers."
+                },
+                {
+                  "id": "g4-soc-ec-7",
+                  "type": "mc",
+                  "prompt": "Trees, fresh water, and fertile soil are examples of what resource?",
+                  "choices": [
+                    "Natural resources",
+                    "Capital resources",
+                    "Human resources",
+                    "Services"
+                  ],
+                  "answer": "Natural resources",
+                  "explanation": "Natural resources come directly from Earth and nature without being made by people."
+                },
+                {
+                  "id": "g4-soc-ec-8",
+                  "type": "mc",
+                  "prompt": "What do we call a person who buys and uses goods and services?",
+                  "choices": [
+                    "A consumer",
+                    "A producer",
+                    "A senator",
+                    "A glacier"
+                  ],
+                  "answer": "A consumer",
+                  "explanation": "A consumer is someone who buys and uses goods or services; a producer makes them."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Three Branches of Government & Citizens’ Rights & Scarcity, Opportunity Cost, Goods/Services & Supply/Demand (C3.D2.Civ.1.3-5, C3.D2.Eco.1.3-5). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g4-soc-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Three Branches of Government & Citizens’ Rights & Scarcity, Opportunity Cost, Goods/Services & Supply/Demand",
+                "description": "Read the Core Concept Summary and Principle cards on this page (C3.D2.Civ.1.3-5, C3.D2.Eco.1.3-5) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g4-soc-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Grade 4 Social Studies Review",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Three Branches of Government & Citizens’ Rights & Scarcity, Opportunity Cost, Goods/Services & Supply/Demand\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/us-government-and-civics"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Three Branches of Government & Citizens’ Rights.",
+              "The Legislative branch makes laws, Executive enforces laws, and Judicial interprets laws under the Constitution.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which branch of government makes federal laws in Congress?\" → Answer: The Legislative Branch. (The Legislative Branch (Congress: Senate and House of Representatives) writes and votes on laws.)",
+            "links": [
+              {
+                "label": "YouTube: \"Civics, Geography & Economics\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%204%20social%20Civics%2C%20Geography%20%26%20Economics%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Civics, Geography & Economics\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%204%20Civics%2C%20Geography%20%26%20Economics",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Civics, Geography & Economics",
+                "url": "https://www.youtube.com/results?search_query=Civics%2C%20Geography%20%26%20Economics%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     }

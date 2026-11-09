@@ -952,12 +952,12 @@ const SOC_RIVER_BANK = [
     type: 'mc' as const,
     prompt: 'Why was Egypt called "the Gift of the Nile"?',
     choices: [
-      'Annual Nile floods brought water and rich silt to desert land',
+      'Nile floods brought water and rich soil',
       'The Nile River flowed uphill into mountains',
-      'Greece gave the river to Egypt in a treaty',
+      'Greece gave the river to Egypt',
       'The Nile froze solid every summer',
     ],
-    answer: 'Annual Nile floods brought water and rich silt to desert land',
+    answer: 'Nile floods brought water and rich soil',
     explanation: 'Without the Nile’s predictable floods and fertile silt, Egypt would have been barren desert.',
   },
   {

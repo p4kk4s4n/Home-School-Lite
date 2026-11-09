@@ -1,0 +1,1782 @@
+{
+  "id": "g8-science",
+  "subject": "science",
+  "grade": 8,
+  "title": "Grade 8 Integrated Science",
+  "subtitle": "Forces, Motion & Fields, Plate Tectonics, Earth’s Interior & Heredity",
+  "credits": 1,
+  "color": "#065f46",
+  "icon": "⚛️",
+  "units": [
+    {
+      "id": "g8-sci-u1",
+      "title": "Unit 1: Forces, Motion & Non-Contact Force Fields",
+      "standards": [
+        "MS-PS2-2",
+        "OH.8.PS.1",
+        "OH.8.PS.2"
+      ],
+      "lessons": [
+        {
+          "id": "g8-sci-u1-l1",
+          "unitId": "g8-sci-u1",
+          "title": "Micro-Lesson 1A: Net Force, Friction & Newton’s Laws",
+          "kind": "lesson",
+          "partOf": "Forces & Fields",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:forces-and-motion",
+          "videoTitle": "Khan Academy: Balanced & Unbalanced Forces",
+          "reading": "A force is a push or pull measured in Newtons (N). Net force combines all forces on an object: forces in the same direction add together, while forces in opposite directions subtract. If net force is 0 N (balanced), motion does not change. If net force is greater than 0 N (unbalanced), the object accelerates (F = ma).",
+          "principles": [
+            {
+              "id": "p-g8-sci-net-force",
+              "title": "Forces, Net Force & Balanced Motion",
+              "standard": "MS-PS2-2 / OH.8.PS.2",
+              "summary": "Net force is the combined push or pull on an object; unbalanced forces change speed or direction.",
+              "bank": [
+                {
+                  "id": "g8-sci-nf-1",
+                  "type": "mc",
+                  "prompt": "What is the total combined force acting on an object called?",
+                  "choices": [
+                    "Net force",
+                    "Mass",
+                    "Inertia",
+                    "Density"
+                  ],
+                  "answer": "Net force",
+                  "explanation": "Net force is the overall force left after combining all pushes and pulls on an object."
+                },
+                {
+                  "id": "g8-sci-nf-2",
+                  "type": "mc",
+                  "prompt": "Two students push a box right with 15 N each. Find net force.",
+                  "choices": [
+                    "30 N to the right",
+                    "0 N balanced",
+                    "15 N to the left",
+                    "225 N upward"
+                  ],
+                  "answer": "30 N to the right",
+                  "explanation": "Forces acting in the same direction add together: 15 N + 15 N = 30 N right."
+                },
+                {
+                  "id": "g8-sci-nf-3",
+                  "type": "mc",
+                  "prompt": "You push right with 20 N against 20 N left. What happens?",
+                  "choices": [
+                    "Net force is 0 N; motion stays unchanged.",
+                    "Net force is 40 N right.",
+                    "The object speeds up to the left.",
+                    "Gravity disappears."
+                  ],
+                  "answer": "Net force is 0 N; motion stays unchanged.",
+                  "explanation": "Equal forces in opposite directions cancel out (balanced forces), so net force is 0 N."
+                },
+                {
+                  "id": "g8-sci-nf-4",
+                  "type": "mc",
+                  "prompt": "What causes a moving hockey puck to slow down on rough ice?",
+                  "choices": [
+                    "Friction opposing the motion",
+                    "Balanced forces",
+                    "Zero gravity",
+                    "Magnetic attraction"
+                  ],
+                  "answer": "Friction opposing the motion",
+                  "explanation": "Friction is a contact force between surfaces that acts opposite to the direction of motion."
+                },
+                {
+                  "id": "g8-sci-nf-5",
+                  "type": "mc",
+                  "prompt": "According to F = m × a, what happens if force doubles?",
+                  "choices": [
+                    "Acceleration doubles for the same mass.",
+                    "Acceleration drops to zero.",
+                    "Mass doubles automatically.",
+                    "The object stops moving."
+                  ],
+                  "answer": "Acceleration doubles for the same mass.",
+                  "explanation": "In Newton’s Second Law (F = ma), doubling the net force on the same mass doubles acceleration."
+                },
+                {
+                  "id": "g8-sci-nf-6",
+                  "type": "mc",
+                  "prompt": "An object’s tendency to resist any change in motion is called:",
+                  "choices": [
+                    "Inertia",
+                    "Velocity",
+                    "Friction",
+                    "Compression"
+                  ],
+                  "answer": "Inertia",
+                  "explanation": "Inertia is the property of matter that keeps resting objects still and moving objects in motion."
+                },
+                {
+                  "id": "g8-sci-nf-7",
+                  "type": "mc",
+                  "prompt": "A 10 N force pulls right and 4 N pulls left. Net force?",
+                  "choices": [
+                    "6 N to the right",
+                    "14 N to the right",
+                    "6 N to the left",
+                    "40 N balanced"
+                  ],
+                  "answer": "6 N to the right",
+                  "explanation": "Subtract opposite forces: 10 N right minus 4 N left leaves 6 N to the right."
+                },
+                {
+                  "id": "g8-sci-nf-8",
+                  "type": "mc",
+                  "prompt": "In Newton’s Third Law, when a swimmer pushes water backward, the water:",
+                  "choices": [
+                    "Pushes the swimmer forward with equal force",
+                    "Applies zero force to the swimmer",
+                    "Pulls the swimmer backward",
+                    "Loses all mass"
+                  ],
+                  "answer": "Pushes the swimmer forward with equal force",
+                  "explanation": "Every action force has an equal and opposite reaction force pushing back on the swimmer."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Forces & Fields] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Forces, Net Force & Balanced Motion\" (MS-PS2-2 / OH.8.PS.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-sci-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Balanced & Unbalanced Forces",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Forces, Net Force & Balanced Motion\" (MS-PS2-2 / OH.8.PS.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:forces-and-motion"
+              },
+              {
+                "id": "g8-sci-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Forces, Net Force & Balanced Motion.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-sci-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (MS-PS2-2 / OH.8.PS.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Forces, Net Force & Balanced Motion.",
+              "Net force is the combined push or pull on an object; unbalanced forces change speed or direction.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the total combined force acting on an object called?\" → Answer: Net force. (Net force is the overall force left after combining all pushes and pulls on an object.)",
+            "links": [
+              {
+                "label": "YouTube: \"Forces & Fields\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20science%20Forces%20%26%20Fields%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Forces & Fields\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Forces%20%26%20Fields",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Forces & Fields",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Forces%20%26%20Fields",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-sci-u1-l2",
+          "unitId": "g8-sci-u1",
+          "title": "Micro-Lesson 1B: Gravitational, Electric & Magnetic Fields",
+          "kind": "lesson",
+          "partOf": "Forces & Fields",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions",
+          "videoTitle": "Khan Academy: Gravity, Magnetism & Electric Force Fields",
+          "reading": "Gravity, magnetism, and electric forces are non-contact forces that act through invisible fields across empty space. Gravity attracts all masses and grows stronger with larger mass or closer distance. In magnetic and electric fields, like poles or charges repel and opposite poles or charges attract.",
+          "principles": [
+            {
+              "id": "p-g8-sci-fields",
+              "title": "Gravitational, Electric & Magnetic Force Fields",
+              "standard": "OH.8.PS.1",
+              "summary": "Non-contact forces act across space through fields; field strength increases with mass or charge and decreases with distance.",
+              "bank": [
+                {
+                  "id": "g8-sci-fld-1",
+                  "type": "mc",
+                  "prompt": "What is a force that acts on objects without touching them?",
+                  "choices": [
+                    "Non-contact field force",
+                    "Sliding friction",
+                    "Rope tension",
+                    "Air resistance"
+                  ],
+                  "answer": "Non-contact field force",
+                  "explanation": "Gravity, magnetism, and electric forces act across empty space through invisible force fields."
+                },
+                {
+                  "id": "g8-sci-fld-2",
+                  "type": "mc",
+                  "prompt": "What happens when the north poles of two magnets come close?",
+                  "choices": [
+                    "They repel (push apart) each other.",
+                    "They attract and stick together.",
+                    "They melt from friction.",
+                    "Gravity turns off."
+                  ],
+                  "answer": "They repel (push apart) each other.",
+                  "explanation": "Like magnetic poles (north-north or south-south) repel each other across a magnetic field."
+                },
+                {
+                  "id": "g8-sci-fld-3",
+                  "type": "mc",
+                  "prompt": "How does distance affect the gravitational pull between two planets?",
+                  "choices": [
+                    "Greater distance makes gravitational pull weaker.",
+                    "Greater distance makes gravity stronger.",
+                    "Distance has no effect on gravity.",
+                    "Gravity only works when planets touch."
+                  ],
+                  "answer": "Greater distance makes gravitational pull weaker.",
+                  "explanation": "Gravitational force weakens rapidly as the distance between two objects increases."
+                },
+                {
+                  "id": "g8-sci-fld-4",
+                  "type": "mc",
+                  "prompt": "Which two factors determine the strength of gravity between two objects?",
+                  "choices": [
+                    "Their masses and the distance between them",
+                    "Their color and temperature",
+                    "Their wind speed and shape",
+                    "Their magnetic poles and volume"
+                  ],
+                  "answer": "Their masses and the distance between them",
+                  "explanation": "Gravity depends on how much mass the objects have and how far apart they are."
+                },
+                {
+                  "id": "g8-sci-fld-5",
+                  "type": "mc",
+                  "prompt": "Where is the magnetic field around a bar magnet strongest?",
+                  "choices": [
+                    "At the north and south poles",
+                    "Far away in the next room",
+                    "Only inside wooden tables",
+                    "Nowhere on the magnet"
+                  ],
+                  "answer": "At the north and south poles",
+                  "explanation": "Magnetic field lines are most concentrated at a magnet’s two poles, where force is strongest."
+                },
+                {
+                  "id": "g8-sci-fld-6",
+                  "type": "mc",
+                  "prompt": "How do a positive electric charge and a negative charge interact?",
+                  "choices": [
+                    "Opposite charges attract each other.",
+                    "Opposite charges repel each other.",
+                    "They have zero electric field.",
+                    "They turn into sound waves."
+                  ],
+                  "answer": "Opposite charges attract each other.",
+                  "explanation": "In electric fields, opposite charges (+ and −) pull toward each other while like charges repel."
+                },
+                {
+                  "id": "g8-sci-fld-7",
+                  "type": "mc",
+                  "prompt": "How do you build a simple electromagnet?",
+                  "choices": [
+                    "Wrap wire around iron and connect a battery",
+                    "Freeze a plastic spoon in ice",
+                    "Rub two wooden blocks together",
+                    "Shine a flashlight on glass"
+                  ],
+                  "answer": "Wrap wire around iron and connect a battery",
+                  "explanation": "Electric current flowing through a wire coil around an iron core creates a magnetic field."
+                },
+                {
+                  "id": "g8-sci-fld-8",
+                  "type": "mc",
+                  "prompt": "When you lift a backpack higher off the floor, what energy increases?",
+                  "choices": [
+                    "Gravitational potential energy",
+                    "Sound energy",
+                    "Nuclear energy",
+                    "Chemical rust"
+                  ],
+                  "answer": "Gravitational potential energy",
+                  "explanation": "Lifting an object higher against Earth’s gravity stores more gravitational potential energy in the field."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Forces & Fields] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Gravitational, Electric & Magnetic Force Fields\" (OH.8.PS.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-sci-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Gravity, Magnetism & Electric Force Fields",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Gravitational, Electric & Magnetic Force Fields\" (OH.8.PS.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions"
+              },
+              {
+                "id": "g8-sci-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Gravitational, Electric & Magnetic Force Fields.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-sci-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.8.PS.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Gravitational, Electric & Magnetic Force Fields.",
+              "Non-contact forces act across space through fields; field strength increases with mass or charge and decreases with distance.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is a force that acts on objects without touching them?\" → Answer: Non-contact field force. (Gravity, magnetism, and electric forces act across empty space through invisible force fields.)",
+            "links": [
+              {
+                "label": "YouTube: \"Forces & Fields\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20science%20Forces%20%26%20Fields%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Forces & Fields\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Forces%20%26%20Fields",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Forces & Fields",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Forces%20%26%20Fields",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-sci-u1-review",
+          "unitId": "g8-sci-u1",
+          "title": "Unit 1 Checkpoint Review: Forces, Motion & Fields",
+          "kind": "lesson_review",
+          "partOf": "Forces & Fields",
+          "estimatedMinutes": 12,
+          "videoUrl": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:forces-and-motion",
+          "videoTitle": "Unit 1 Science Review: Net Force & Force Fields",
+          "reading": "Complete this 6-question review covering net force, Newton’s laws, and gravitational/magnetic fields.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g8-sci-net-force",
+              "title": "Forces, Net Force & Balanced Motion",
+              "standard": "MS-PS2-2 / OH.8.PS.2",
+              "summary": "Net force is the combined push or pull on an object; unbalanced forces change speed or direction.",
+              "bank": [
+                {
+                  "id": "g8-sci-nf-1",
+                  "type": "mc",
+                  "prompt": "What is the total combined force acting on an object called?",
+                  "choices": [
+                    "Net force",
+                    "Mass",
+                    "Inertia",
+                    "Density"
+                  ],
+                  "answer": "Net force",
+                  "explanation": "Net force is the overall force left after combining all pushes and pulls on an object."
+                },
+                {
+                  "id": "g8-sci-nf-2",
+                  "type": "mc",
+                  "prompt": "Two students push a box right with 15 N each. Find net force.",
+                  "choices": [
+                    "30 N to the right",
+                    "0 N balanced",
+                    "15 N to the left",
+                    "225 N upward"
+                  ],
+                  "answer": "30 N to the right",
+                  "explanation": "Forces acting in the same direction add together: 15 N + 15 N = 30 N right."
+                },
+                {
+                  "id": "g8-sci-nf-3",
+                  "type": "mc",
+                  "prompt": "You push right with 20 N against 20 N left. What happens?",
+                  "choices": [
+                    "Net force is 0 N; motion stays unchanged.",
+                    "Net force is 40 N right.",
+                    "The object speeds up to the left.",
+                    "Gravity disappears."
+                  ],
+                  "answer": "Net force is 0 N; motion stays unchanged.",
+                  "explanation": "Equal forces in opposite directions cancel out (balanced forces), so net force is 0 N."
+                },
+                {
+                  "id": "g8-sci-nf-4",
+                  "type": "mc",
+                  "prompt": "What causes a moving hockey puck to slow down on rough ice?",
+                  "choices": [
+                    "Friction opposing the motion",
+                    "Balanced forces",
+                    "Zero gravity",
+                    "Magnetic attraction"
+                  ],
+                  "answer": "Friction opposing the motion",
+                  "explanation": "Friction is a contact force between surfaces that acts opposite to the direction of motion."
+                },
+                {
+                  "id": "g8-sci-nf-5",
+                  "type": "mc",
+                  "prompt": "According to F = m × a, what happens if force doubles?",
+                  "choices": [
+                    "Acceleration doubles for the same mass.",
+                    "Acceleration drops to zero.",
+                    "Mass doubles automatically.",
+                    "The object stops moving."
+                  ],
+                  "answer": "Acceleration doubles for the same mass.",
+                  "explanation": "In Newton’s Second Law (F = ma), doubling the net force on the same mass doubles acceleration."
+                },
+                {
+                  "id": "g8-sci-nf-6",
+                  "type": "mc",
+                  "prompt": "An object’s tendency to resist any change in motion is called:",
+                  "choices": [
+                    "Inertia",
+                    "Velocity",
+                    "Friction",
+                    "Compression"
+                  ],
+                  "answer": "Inertia",
+                  "explanation": "Inertia is the property of matter that keeps resting objects still and moving objects in motion."
+                },
+                {
+                  "id": "g8-sci-nf-7",
+                  "type": "mc",
+                  "prompt": "A 10 N force pulls right and 4 N pulls left. Net force?",
+                  "choices": [
+                    "6 N to the right",
+                    "14 N to the right",
+                    "6 N to the left",
+                    "40 N balanced"
+                  ],
+                  "answer": "6 N to the right",
+                  "explanation": "Subtract opposite forces: 10 N right minus 4 N left leaves 6 N to the right."
+                },
+                {
+                  "id": "g8-sci-nf-8",
+                  "type": "mc",
+                  "prompt": "In Newton’s Third Law, when a swimmer pushes water backward, the water:",
+                  "choices": [
+                    "Pushes the swimmer forward with equal force",
+                    "Applies zero force to the swimmer",
+                    "Pulls the swimmer backward",
+                    "Loses all mass"
+                  ],
+                  "answer": "Pushes the swimmer forward with equal force",
+                  "explanation": "Every action force has an equal and opposite reaction force pushing back on the swimmer."
+                }
+              ]
+            },
+            {
+              "id": "p-g8-sci-fields",
+              "title": "Gravitational, Electric & Magnetic Force Fields",
+              "standard": "OH.8.PS.1",
+              "summary": "Non-contact forces act across space through fields; field strength increases with mass or charge and decreases with distance.",
+              "bank": [
+                {
+                  "id": "g8-sci-fld-1",
+                  "type": "mc",
+                  "prompt": "What is a force that acts on objects without touching them?",
+                  "choices": [
+                    "Non-contact field force",
+                    "Sliding friction",
+                    "Rope tension",
+                    "Air resistance"
+                  ],
+                  "answer": "Non-contact field force",
+                  "explanation": "Gravity, magnetism, and electric forces act across empty space through invisible force fields."
+                },
+                {
+                  "id": "g8-sci-fld-2",
+                  "type": "mc",
+                  "prompt": "What happens when the north poles of two magnets come close?",
+                  "choices": [
+                    "They repel (push apart) each other.",
+                    "They attract and stick together.",
+                    "They melt from friction.",
+                    "Gravity turns off."
+                  ],
+                  "answer": "They repel (push apart) each other.",
+                  "explanation": "Like magnetic poles (north-north or south-south) repel each other across a magnetic field."
+                },
+                {
+                  "id": "g8-sci-fld-3",
+                  "type": "mc",
+                  "prompt": "How does distance affect the gravitational pull between two planets?",
+                  "choices": [
+                    "Greater distance makes gravitational pull weaker.",
+                    "Greater distance makes gravity stronger.",
+                    "Distance has no effect on gravity.",
+                    "Gravity only works when planets touch."
+                  ],
+                  "answer": "Greater distance makes gravitational pull weaker.",
+                  "explanation": "Gravitational force weakens rapidly as the distance between two objects increases."
+                },
+                {
+                  "id": "g8-sci-fld-4",
+                  "type": "mc",
+                  "prompt": "Which two factors determine the strength of gravity between two objects?",
+                  "choices": [
+                    "Their masses and the distance between them",
+                    "Their color and temperature",
+                    "Their wind speed and shape",
+                    "Their magnetic poles and volume"
+                  ],
+                  "answer": "Their masses and the distance between them",
+                  "explanation": "Gravity depends on how much mass the objects have and how far apart they are."
+                },
+                {
+                  "id": "g8-sci-fld-5",
+                  "type": "mc",
+                  "prompt": "Where is the magnetic field around a bar magnet strongest?",
+                  "choices": [
+                    "At the north and south poles",
+                    "Far away in the next room",
+                    "Only inside wooden tables",
+                    "Nowhere on the magnet"
+                  ],
+                  "answer": "At the north and south poles",
+                  "explanation": "Magnetic field lines are most concentrated at a magnet’s two poles, where force is strongest."
+                },
+                {
+                  "id": "g8-sci-fld-6",
+                  "type": "mc",
+                  "prompt": "How do a positive electric charge and a negative charge interact?",
+                  "choices": [
+                    "Opposite charges attract each other.",
+                    "Opposite charges repel each other.",
+                    "They have zero electric field.",
+                    "They turn into sound waves."
+                  ],
+                  "answer": "Opposite charges attract each other.",
+                  "explanation": "In electric fields, opposite charges (+ and −) pull toward each other while like charges repel."
+                },
+                {
+                  "id": "g8-sci-fld-7",
+                  "type": "mc",
+                  "prompt": "How do you build a simple electromagnet?",
+                  "choices": [
+                    "Wrap wire around iron and connect a battery",
+                    "Freeze a plastic spoon in ice",
+                    "Rub two wooden blocks together",
+                    "Shine a flashlight on glass"
+                  ],
+                  "answer": "Wrap wire around iron and connect a battery",
+                  "explanation": "Electric current flowing through a wire coil around an iron core creates a magnetic field."
+                },
+                {
+                  "id": "g8-sci-fld-8",
+                  "type": "mc",
+                  "prompt": "When you lift a backpack higher off the floor, what energy increases?",
+                  "choices": [
+                    "Gravitational potential energy",
+                    "Sound energy",
+                    "Nuclear energy",
+                    "Chemical rust"
+                  ],
+                  "answer": "Gravitational potential energy",
+                  "explanation": "Lifting an object higher against Earth’s gravity stores more gravitational potential energy in the field."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering Forces, Net Force & Balanced Motion & Gravitational, Electric & Magnetic Force Fields (MS-PS2-2 / OH.8.PS.2, OH.8.PS.1). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g8-sci-u1-review-step-review",
+                "type": "reading",
+                "title": "Review Principles: Forces, Net Force & Balanced Motion & Gravitational, Electric & Magnetic Force Fields",
+                "description": "Read the Core Concept Summary and Principle cards on this page (MS-PS2-2 / OH.8.PS.2, OH.8.PS.1) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g8-sci-u1-review-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 Science Review: Net Force & Force Fields",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Forces, Net Force & Balanced Motion & Gravitational, Electric & Magnetic Force Fields\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:forces-and-motion"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Forces, Net Force & Balanced Motion.",
+              "Net force is the combined push or pull on an object; unbalanced forces change speed or direction.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the total combined force acting on an object called?\" → Answer: Net force. (Net force is the overall force left after combining all pushes and pulls on an object.)",
+            "links": [
+              {
+                "label": "YouTube: \"Forces & Fields\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20science%20Forces%20%26%20Fields%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Forces & Fields\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Forces%20%26%20Fields",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Forces & Fields",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Forces%20%26%20Fields",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g8-sci-u2",
+      "title": "Unit 2: Earth’s Interior, Plate Tectonics & Rock Record",
+      "standards": [
+        "OH.8.ESS.1",
+        "OH.8.ESS.2",
+        "OH.8.ESS.3"
+      ],
+      "isOhioExtension": true,
+      "lessons": [
+        {
+          "id": "g8-sci-u2-l1",
+          "unitId": "g8-sci-u2",
+          "title": "Micro-Lesson 2A: Earth’s Interior Layers & Seismic Waves",
+          "kind": "lesson",
+          "partOf": "Dynamic Earth & Plate Tectonics",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-systems",
+          "videoTitle": "Khan Academy: Structure of the Earth & Convection",
+          "reading": "Earth has four main layers from outside in: the thin rocky crust, the thick hot mantle (where slow convection currents flow), the liquid iron-nickel outer core (which generates Earth’s magnetic field), and the solid inner core. Scientists map these layers by studying how earthquake seismic waves travel through Earth.",
+          "principles": [
+            {
+              "id": "p-g8-sci-earth-layers",
+              "title": "Earth’s Interior Layers & Seismic Waves",
+              "standard": "OH.8.ESS.1",
+              "summary": "Earth consists of the crust, mantle, liquid outer core, and solid inner core; seismic waves reveal internal layers.",
+              "bank": [
+                {
+                  "id": "g8-sci-el-1",
+                  "type": "mc",
+                  "prompt": "Which layer of Earth is the thin, rocky outer shell?",
+                  "choices": [
+                    "Crust",
+                    "Mantle",
+                    "Outer core",
+                    "Inner core"
+                  ],
+                  "answer": "Crust",
+                  "explanation": "The crust is Earth’s thin outermost layer of solid rock where continents and oceans sit."
+                },
+                {
+                  "id": "g8-sci-el-2",
+                  "type": "mc",
+                  "prompt": "What causes tectonic plates to slowly move across Earth’s surface?",
+                  "choices": [
+                    "Convection currents in the hot mantle",
+                    "Ocean waves hitting beaches",
+                    "Wind blowing across mountains",
+                    "Moonlight heating the crust"
+                  ],
+                  "answer": "Convection currents in the hot mantle",
+                  "explanation": "Hot mantle rock rises, cools, and sinks in slow convection loops that drag tectonic plates."
+                },
+                {
+                  "id": "g8-sci-el-3",
+                  "type": "mc",
+                  "prompt": "Which layer of Earth is made of liquid iron and nickel?",
+                  "choices": [
+                    "Outer core",
+                    "Crust",
+                    "Inner core",
+                    "Upper mantle"
+                  ],
+                  "answer": "Outer core",
+                  "explanation": "The outer core is molten liquid metal whose churning motion generates Earth’s magnetic field."
+                },
+                {
+                  "id": "g8-sci-el-4",
+                  "type": "mc",
+                  "prompt": "Why is Earth’s inner core solid despite extreme heat?",
+                  "choices": [
+                    "Immense pressure squeezes atoms into a solid.",
+                    "It is made of frozen water.",
+                    "Sunlight cannot reach the core.",
+                    "It has zero gravity."
+                  ],
+                  "answer": "Immense pressure squeezes atoms into a solid.",
+                  "explanation": "Crushing pressure at Earth’s center keeps the iron-nickel inner core solid even at extreme temperatures."
+                },
+                {
+                  "id": "g8-sci-el-5",
+                  "type": "mc",
+                  "prompt": "How do geologists know the outer core is liquid without drilling there?",
+                  "choices": [
+                    "S-waves from earthquakes cannot pass through liquid.",
+                    "Cameras floated to the center of Earth.",
+                    "Volcanoes erupt core ice.",
+                    "Satellites see through solid rock."
+                  ],
+                  "answer": "S-waves from earthquakes cannot pass through liquid.",
+                  "explanation": "Seismic shear waves (S-waves) stop at the outer core boundary because S-waves only travel through solids."
+                },
+                {
+                  "id": "g8-sci-el-6",
+                  "type": "mc",
+                  "prompt": "What rigid layer includes the crust and uppermost solid mantle?",
+                  "choices": [
+                    "Lithosphere",
+                    "Atmosphere",
+                    "Hydrosphere",
+                    "Inner core"
+                  ],
+                  "answer": "Lithosphere",
+                  "explanation": "The lithosphere is the rigid outer shell broken into tectonic plates."
+                },
+                {
+                  "id": "g8-sci-el-7",
+                  "type": "mc",
+                  "prompt": "Which layer makes up the largest portion of Earth’s volume?",
+                  "choices": [
+                    "Mantle",
+                    "Crust",
+                    "Inner core",
+                    "Soil layer"
+                  ],
+                  "answer": "Mantle",
+                  "explanation": "The thick rocky mantle between the crust and core makes up over 80% of Earth’s volume."
+                },
+                {
+                  "id": "g8-sci-el-8",
+                  "type": "mc",
+                  "prompt": "What generates Earth’s protective global magnetic field?",
+                  "choices": [
+                    "Swirling liquid iron in the outer core",
+                    "Trees growing in rainforests",
+                    "Sand dunes in deserts",
+                    "Clouds in the troposphere"
+                  ],
+                  "answer": "Swirling liquid iron in the outer core",
+                  "explanation": "Convection of electrically conducting liquid iron in the outer core creates Earth’s magnetic field."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Dynamic Earth & Plate Tectonics] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Earth’s Interior Layers & Seismic Waves\" (OH.8.ESS.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-sci-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Structure of the Earth & Convection",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Earth’s Interior Layers & Seismic Waves\" (OH.8.ESS.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-systems"
+              },
+              {
+                "id": "g8-sci-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Earth’s Interior Layers & Seismic Waves.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-sci-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.8.ESS.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Earth’s Interior Layers & Seismic Waves.",
+              "Earth consists of the crust, mantle, liquid outer core, and solid inner core; seismic waves reveal internal layers.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which layer of Earth is the thin, rocky outer shell?\" → Answer: Crust. (The crust is Earth’s thin outermost layer of solid rock where continents and oceans sit.)",
+            "links": [
+              {
+                "label": "YouTube: \"Dynamic Earth & Plate Tectonics\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20science%20Dynamic%20Earth%20%26%20Plate%20Tectonics%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Dynamic Earth & Plate Tectonics\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Dynamic%20Earth%20%26%20Plate%20Tectonics",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Dynamic Earth & Plate Tectonics",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Dynamic%20Earth%20%26%20Plate%20Tectonics",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-sci-u2-l2",
+          "unitId": "g8-sci-u2",
+          "title": "Micro-Lesson 2B: Plate Boundaries & the Geologic Rock Record",
+          "kind": "lesson",
+          "partOf": "Dynamic Earth & Plate Tectonics",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:plate-tectonics",
+          "videoTitle": "Khan Academy: Plate Tectonics & Fossil Evidence",
+          "reading": "Earth’s lithosphere is split into tectonic plates. Divergent boundaries pull apart (forming mid-ocean ridges), convergent boundaries collide (causing subduction trenches, volcanoes, or mountains), and transform boundaries slide past each other (causing earthquakes). In undisturbed sedimentary rock, bottom layers are oldest (Law of Superposition).",
+          "principles": [
+            {
+              "id": "p-g8-sci-tectonics",
+              "title": "Plate Boundaries, Seafloor Spreading & the Rock Record",
+              "standard": "OH.8.ESS.2 / OH.8.ESS.3",
+              "summary": "Divergent, convergent, and transform plate boundaries shape Earth’s crust through volcanoes, trenches, and faults.",
+              "bank": [
+                {
+                  "id": "g8-sci-tec-1",
+                  "type": "mc",
+                  "prompt": "What happens at a divergent boundary on the ocean floor?",
+                  "choices": [
+                    "Plates pull apart and magma forms new crust.",
+                    "Plates collide to build dry deserts.",
+                    "All crust disappears into space.",
+                    "Ocean water freezes into glaciers."
+                  ],
+                  "answer": "Plates pull apart and magma forms new crust.",
+                  "explanation": "At divergent boundaries (mid-ocean ridges), plates separate and rising magma cools into new oceanic crust."
+                },
+                {
+                  "id": "g8-sci-tec-2",
+                  "type": "mc",
+                  "prompt": "When a dense oceanic plate slides beneath a continental plate, it is:",
+                  "choices": [
+                    "Subduction",
+                    "Evaporation",
+                    "Deposition",
+                    "Photosynthesis"
+                  ],
+                  "answer": "Subduction",
+                  "explanation": "Subduction occurs when a denser oceanic plate sinks into the mantle beneath a lighter plate."
+                },
+                {
+                  "id": "g8-sci-tec-3",
+                  "type": "mc",
+                  "prompt": "Two plates grind horizontally past each other along the San Andreas Fault:",
+                  "choices": [
+                    "Transform boundary",
+                    "Divergent boundary",
+                    "Hot spot",
+                    "River delta"
+                  ],
+                  "answer": "Transform boundary",
+                  "explanation": "At a transform boundary, plates slide sideways past one another, causing frequent earthquakes."
+                },
+                {
+                  "id": "g8-sci-tec-4",
+                  "type": "mc",
+                  "prompt": "Matching fossils on South America and Africa support which idea?",
+                  "choices": [
+                    "Continental drift from an ancient supercontinent (Pangaea)",
+                    "Land bridges made of ice yesterday",
+                    "Reptiles flying across the Atlantic Ocean",
+                    "Continents never moving"
+                  ],
+                  "answer": "Continental drift from an ancient supercontinent (Pangaea)",
+                  "explanation": "Identical fossils and rock belts across separated continents show they were once joined together."
+                },
+                {
+                  "id": "g8-sci-tec-5",
+                  "type": "mc",
+                  "prompt": "Where is the youngest oceanic crust located on the seafloor?",
+                  "choices": [
+                    "Right along the center of mid-ocean ridges",
+                    "Deep inside continental mountains",
+                    "Only at the North Pole",
+                    "All seafloor rock is the same age"
+                  ],
+                  "answer": "Right along the center of mid-ocean ridges",
+                  "explanation": "New magma erupts at mid-ocean ridges, so crust gets older as you move farther from the ridge."
+                },
+                {
+                  "id": "g8-sci-tec-6",
+                  "type": "mc",
+                  "prompt": "What forms when two continental plates collide head-on?",
+                  "choices": [
+                    "High folded mountain ranges like the Himalayas",
+                    "Deep ocean trenches",
+                    "Mid-ocean ridges",
+                    "Flat coral atolls"
+                  ],
+                  "answer": "High folded mountain ranges like the Himalayas",
+                  "explanation": "Neither buoyant continental plate subducts easily, so the crust buckles upward into tall mountains."
+                },
+                {
+                  "id": "g8-sci-tec-7",
+                  "type": "mc",
+                  "prompt": "In undisturbed rock layers, what does the Law of Superposition state?",
+                  "choices": [
+                    "Bottom layers are oldest and top layers are youngest.",
+                    "Top layers are always the oldest.",
+                    "All layers formed on the same day.",
+                    "Fossils only form in magma."
+                  ],
+                  "answer": "Bottom layers are oldest and top layers are youngest.",
+                  "explanation": "Sedimentary layers stack from bottom to top over time, making lower layers older than upper layers."
+                },
+                {
+                  "id": "g8-sci-tec-8",
+                  "type": "mc",
+                  "prompt": "How do wide-ranging index fossils help geologists study rock layers?",
+                  "choices": [
+                    "They match the relative age of rocks across regions.",
+                    "They measure daily rainfall.",
+                    "They melt sedimentary rock into lava.",
+                    "They predict tomorrow’s weather."
+                  ],
+                  "answer": "They match the relative age of rocks across regions.",
+                  "explanation": "Index fossils come from species that lived briefly over wide areas, dating the rock layer."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Dynamic Earth & Plate Tectonics] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Plate Boundaries, Seafloor Spreading & the Rock Record\" (OH.8.ESS.2 / OH.8.ESS.3), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-sci-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Plate Tectonics & Fossil Evidence",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Plate Boundaries, Seafloor Spreading & the Rock Record\" (OH.8.ESS.2 / OH.8.ESS.3). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:plate-tectonics"
+              },
+              {
+                "id": "g8-sci-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Plate Boundaries, Seafloor Spreading & the Rock Record.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-sci-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.8.ESS.2 / OH.8.ESS.3)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Plate Boundaries, Seafloor Spreading & the Rock Record.",
+              "Divergent, convergent, and transform plate boundaries shape Earth’s crust through volcanoes, trenches, and faults.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What happens at a divergent boundary on the ocean floor?\" → Answer: Plates pull apart and magma forms new crust.. (At divergent boundaries (mid-ocean ridges), plates separate and rising magma cools into new oceanic crust.)",
+            "links": [
+              {
+                "label": "YouTube: \"Dynamic Earth & Plate Tectonics\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20science%20Dynamic%20Earth%20%26%20Plate%20Tectonics%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Dynamic Earth & Plate Tectonics\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Dynamic%20Earth%20%26%20Plate%20Tectonics",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Dynamic Earth & Plate Tectonics",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Dynamic%20Earth%20%26%20Plate%20Tectonics",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-sci-u2-test",
+          "unitId": "g8-sci-u2",
+          "title": "Unit 2 Exam: Earth’s Interior & Plate Tectonics",
+          "kind": "unit_test",
+          "partOf": "Dynamic Earth & Plate Tectonics",
+          "isOhioExtension": true,
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:plate-tectonics",
+          "videoTitle": "Unit 2 Earth Science Mastery Exam",
+          "reading": "This 8-question exam assesses Earth’s layers, mantle convection, plate boundaries, and rock strata.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g8-sci-earth-layers",
+              "title": "Earth’s Interior Layers & Seismic Waves",
+              "standard": "OH.8.ESS.1",
+              "summary": "Earth consists of the crust, mantle, liquid outer core, and solid inner core; seismic waves reveal internal layers.",
+              "bank": [
+                {
+                  "id": "g8-sci-el-1",
+                  "type": "mc",
+                  "prompt": "Which layer of Earth is the thin, rocky outer shell?",
+                  "choices": [
+                    "Crust",
+                    "Mantle",
+                    "Outer core",
+                    "Inner core"
+                  ],
+                  "answer": "Crust",
+                  "explanation": "The crust is Earth’s thin outermost layer of solid rock where continents and oceans sit."
+                },
+                {
+                  "id": "g8-sci-el-2",
+                  "type": "mc",
+                  "prompt": "What causes tectonic plates to slowly move across Earth’s surface?",
+                  "choices": [
+                    "Convection currents in the hot mantle",
+                    "Ocean waves hitting beaches",
+                    "Wind blowing across mountains",
+                    "Moonlight heating the crust"
+                  ],
+                  "answer": "Convection currents in the hot mantle",
+                  "explanation": "Hot mantle rock rises, cools, and sinks in slow convection loops that drag tectonic plates."
+                },
+                {
+                  "id": "g8-sci-el-3",
+                  "type": "mc",
+                  "prompt": "Which layer of Earth is made of liquid iron and nickel?",
+                  "choices": [
+                    "Outer core",
+                    "Crust",
+                    "Inner core",
+                    "Upper mantle"
+                  ],
+                  "answer": "Outer core",
+                  "explanation": "The outer core is molten liquid metal whose churning motion generates Earth’s magnetic field."
+                },
+                {
+                  "id": "g8-sci-el-4",
+                  "type": "mc",
+                  "prompt": "Why is Earth’s inner core solid despite extreme heat?",
+                  "choices": [
+                    "Immense pressure squeezes atoms into a solid.",
+                    "It is made of frozen water.",
+                    "Sunlight cannot reach the core.",
+                    "It has zero gravity."
+                  ],
+                  "answer": "Immense pressure squeezes atoms into a solid.",
+                  "explanation": "Crushing pressure at Earth’s center keeps the iron-nickel inner core solid even at extreme temperatures."
+                },
+                {
+                  "id": "g8-sci-el-5",
+                  "type": "mc",
+                  "prompt": "How do geologists know the outer core is liquid without drilling there?",
+                  "choices": [
+                    "S-waves from earthquakes cannot pass through liquid.",
+                    "Cameras floated to the center of Earth.",
+                    "Volcanoes erupt core ice.",
+                    "Satellites see through solid rock."
+                  ],
+                  "answer": "S-waves from earthquakes cannot pass through liquid.",
+                  "explanation": "Seismic shear waves (S-waves) stop at the outer core boundary because S-waves only travel through solids."
+                },
+                {
+                  "id": "g8-sci-el-6",
+                  "type": "mc",
+                  "prompt": "What rigid layer includes the crust and uppermost solid mantle?",
+                  "choices": [
+                    "Lithosphere",
+                    "Atmosphere",
+                    "Hydrosphere",
+                    "Inner core"
+                  ],
+                  "answer": "Lithosphere",
+                  "explanation": "The lithosphere is the rigid outer shell broken into tectonic plates."
+                },
+                {
+                  "id": "g8-sci-el-7",
+                  "type": "mc",
+                  "prompt": "Which layer makes up the largest portion of Earth’s volume?",
+                  "choices": [
+                    "Mantle",
+                    "Crust",
+                    "Inner core",
+                    "Soil layer"
+                  ],
+                  "answer": "Mantle",
+                  "explanation": "The thick rocky mantle between the crust and core makes up over 80% of Earth’s volume."
+                },
+                {
+                  "id": "g8-sci-el-8",
+                  "type": "mc",
+                  "prompt": "What generates Earth’s protective global magnetic field?",
+                  "choices": [
+                    "Swirling liquid iron in the outer core",
+                    "Trees growing in rainforests",
+                    "Sand dunes in deserts",
+                    "Clouds in the troposphere"
+                  ],
+                  "answer": "Swirling liquid iron in the outer core",
+                  "explanation": "Convection of electrically conducting liquid iron in the outer core creates Earth’s magnetic field."
+                }
+              ]
+            },
+            {
+              "id": "p-g8-sci-tectonics",
+              "title": "Plate Boundaries, Seafloor Spreading & the Rock Record",
+              "standard": "OH.8.ESS.2 / OH.8.ESS.3",
+              "summary": "Divergent, convergent, and transform plate boundaries shape Earth’s crust through volcanoes, trenches, and faults.",
+              "bank": [
+                {
+                  "id": "g8-sci-tec-1",
+                  "type": "mc",
+                  "prompt": "What happens at a divergent boundary on the ocean floor?",
+                  "choices": [
+                    "Plates pull apart and magma forms new crust.",
+                    "Plates collide to build dry deserts.",
+                    "All crust disappears into space.",
+                    "Ocean water freezes into glaciers."
+                  ],
+                  "answer": "Plates pull apart and magma forms new crust.",
+                  "explanation": "At divergent boundaries (mid-ocean ridges), plates separate and rising magma cools into new oceanic crust."
+                },
+                {
+                  "id": "g8-sci-tec-2",
+                  "type": "mc",
+                  "prompt": "When a dense oceanic plate slides beneath a continental plate, it is:",
+                  "choices": [
+                    "Subduction",
+                    "Evaporation",
+                    "Deposition",
+                    "Photosynthesis"
+                  ],
+                  "answer": "Subduction",
+                  "explanation": "Subduction occurs when a denser oceanic plate sinks into the mantle beneath a lighter plate."
+                },
+                {
+                  "id": "g8-sci-tec-3",
+                  "type": "mc",
+                  "prompt": "Two plates grind horizontally past each other along the San Andreas Fault:",
+                  "choices": [
+                    "Transform boundary",
+                    "Divergent boundary",
+                    "Hot spot",
+                    "River delta"
+                  ],
+                  "answer": "Transform boundary",
+                  "explanation": "At a transform boundary, plates slide sideways past one another, causing frequent earthquakes."
+                },
+                {
+                  "id": "g8-sci-tec-4",
+                  "type": "mc",
+                  "prompt": "Matching fossils on South America and Africa support which idea?",
+                  "choices": [
+                    "Continental drift from an ancient supercontinent (Pangaea)",
+                    "Land bridges made of ice yesterday",
+                    "Reptiles flying across the Atlantic Ocean",
+                    "Continents never moving"
+                  ],
+                  "answer": "Continental drift from an ancient supercontinent (Pangaea)",
+                  "explanation": "Identical fossils and rock belts across separated continents show they were once joined together."
+                },
+                {
+                  "id": "g8-sci-tec-5",
+                  "type": "mc",
+                  "prompt": "Where is the youngest oceanic crust located on the seafloor?",
+                  "choices": [
+                    "Right along the center of mid-ocean ridges",
+                    "Deep inside continental mountains",
+                    "Only at the North Pole",
+                    "All seafloor rock is the same age"
+                  ],
+                  "answer": "Right along the center of mid-ocean ridges",
+                  "explanation": "New magma erupts at mid-ocean ridges, so crust gets older as you move farther from the ridge."
+                },
+                {
+                  "id": "g8-sci-tec-6",
+                  "type": "mc",
+                  "prompt": "What forms when two continental plates collide head-on?",
+                  "choices": [
+                    "High folded mountain ranges like the Himalayas",
+                    "Deep ocean trenches",
+                    "Mid-ocean ridges",
+                    "Flat coral atolls"
+                  ],
+                  "answer": "High folded mountain ranges like the Himalayas",
+                  "explanation": "Neither buoyant continental plate subducts easily, so the crust buckles upward into tall mountains."
+                },
+                {
+                  "id": "g8-sci-tec-7",
+                  "type": "mc",
+                  "prompt": "In undisturbed rock layers, what does the Law of Superposition state?",
+                  "choices": [
+                    "Bottom layers are oldest and top layers are youngest.",
+                    "Top layers are always the oldest.",
+                    "All layers formed on the same day.",
+                    "Fossils only form in magma."
+                  ],
+                  "answer": "Bottom layers are oldest and top layers are youngest.",
+                  "explanation": "Sedimentary layers stack from bottom to top over time, making lower layers older than upper layers."
+                },
+                {
+                  "id": "g8-sci-tec-8",
+                  "type": "mc",
+                  "prompt": "How do wide-ranging index fossils help geologists study rock layers?",
+                  "choices": [
+                    "They match the relative age of rocks across regions.",
+                    "They measure daily rainfall.",
+                    "They melt sedimentary rock into lava.",
+                    "They predict tomorrow’s weather."
+                  ],
+                  "answer": "They match the relative age of rocks across regions.",
+                  "explanation": "Index fossils come from species that lived briefly over wide areas, dating the rock layer."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Earth’s Interior Layers & Seismic Waves & Plate Boundaries, Seafloor Spreading & the Rock Record (OH.8.ESS.1, OH.8.ESS.2 / OH.8.ESS.3). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g8-sci-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Earth’s Interior Layers & Seismic Waves & Plate Boundaries, Seafloor Spreading & the Rock Record",
+                "description": "Read the Core Concept Summary and Principle cards on this page (OH.8.ESS.1, OH.8.ESS.2 / OH.8.ESS.3) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g8-sci-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Earth Science Mastery Exam",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Earth’s Interior Layers & Seismic Waves & Plate Boundaries, Seafloor Spreading & the Rock Record\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:plate-tectonics"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Earth’s Interior Layers & Seismic Waves.",
+              "Earth consists of the crust, mantle, liquid outer core, and solid inner core; seismic waves reveal internal layers.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which layer of Earth is the thin, rocky outer shell?\" → Answer: Crust. (The crust is Earth’s thin outermost layer of solid rock where continents and oceans sit.)",
+            "links": [
+              {
+                "label": "YouTube: \"Dynamic Earth & Plate Tectonics\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20science%20Dynamic%20Earth%20%26%20Plate%20Tectonics%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Dynamic Earth & Plate Tectonics\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Dynamic%20Earth%20%26%20Plate%20Tectonics",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Dynamic Earth & Plate Tectonics",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Dynamic%20Earth%20%26%20Plate%20Tectonics",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g8-sci-u3",
+      "title": "Unit 3: Reproduction, Heredity & Natural Selection",
+      "standards": [
+        "MS-LS3-2",
+        "OH.8.LS.1",
+        "OH.8.LS.3"
+      ],
+      "lessons": [
+        {
+          "id": "g8-sci-u3-l1",
+          "unitId": "g8-sci-u3",
+          "title": "Micro-Lesson 3A: Mitosis vs. Meiosis, Punnett Squares & Natural Selection",
+          "kind": "lesson",
+          "partOf": "Genetics & Heredity",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation",
+          "videoTitle": "Khan Academy: Reproduction, Alleles & Punnett Squares",
+          "reading": "Asexual reproduction (mitosis) produces identical clones from one parent, while sexual reproduction (meiosis + fertilization) mixes alleles from two parents to create genetic variation. Dominant alleles (capital letters like T) mask recessive alleles (lowercase t), and Punnett squares predict offspring ratios.",
+          "principles": [
+            {
+              "id": "p-g8-sci-genetics",
+              "title": "Reproduction, Punnett Squares & Natural Selection",
+              "standard": "MS-LS3-2 / OH.8.LS.1 / OH.8.LS.3",
+              "summary": "Sexual reproduction creates genetic variation via meiosis; dominant and recessive alleles follow Mendelian inheritance.",
+              "bank": [
+                {
+                  "id": "g8-sci-gen-1",
+                  "type": "mc",
+                  "prompt": "How does asexual reproduction compare to sexual reproduction?",
+                  "choices": [
+                    "Asexual makes genetically identical offspring from one parent.",
+                    "Asexual combines DNA from two parents.",
+                    "Sexual makes exact clones of one parent.",
+                    "Neither passes DNA to offspring."
+                  ],
+                  "answer": "Asexual makes genetically identical offspring from one parent.",
+                  "explanation": "Asexual reproduction uses mitosis from one parent to produce genetically identical offspring."
+                },
+                {
+                  "id": "g8-sci-gen-2",
+                  "type": "mc",
+                  "prompt": "Which cell division produces sperm and egg cells with half the chromosomes?",
+                  "choices": [
+                    "Meiosis",
+                    "Mitosis",
+                    "Photosynthesis",
+                    "Respiration"
+                  ],
+                  "answer": "Meiosis",
+                  "explanation": "Meiosis cuts the chromosome number in half so fertilization restores a full set."
+                },
+                {
+                  "id": "g8-sci-gen-3",
+                  "type": "mc",
+                  "prompt": "In pea plants, tall (T) is dominant over short (t). Genotype Tt is:",
+                  "choices": [
+                    "Tall (heterozygous)",
+                    "Short (homozygous)",
+                    "Medium height",
+                    "Seedless"
+                  ],
+                  "answer": "Tall (heterozygous)",
+                  "explanation": "A dominant allele (T) masks the recessive allele (t) in a heterozygous (Tt) organism."
+                },
+                {
+                  "id": "g8-sci-gen-4",
+                  "type": "mc",
+                  "prompt": "Which genotype will show a recessive trait like blue eyes (b)?",
+                  "choices": [
+                    "bb (homozygous recessive)",
+                    "BB (homozygous dominant)",
+                    "Bb (heterozygous)",
+                    "Any genotype with B"
+                  ],
+                  "answer": "bb (homozygous recessive)",
+                  "explanation": "A recessive trait appears only when an organism inherits two recessive alleles (bb) and no dominant allele."
+                },
+                {
+                  "id": "g8-sci-gen-5",
+                  "type": "mc",
+                  "prompt": "Cross Tt × Tt in a Punnett square. What percent are tt?",
+                  "choices": [
+                    "25% (1 out of 4)",
+                    "75% (3 out of 4)",
+                    "100% (4 out of 4)",
+                    "0% (none)"
+                  ],
+                  "answer": "25% (1 out of 4)",
+                  "explanation": "Crossing Tt × Tt produces TT, Tt, Tt, and tt—giving a 1 in 4 (25%) chance of tt."
+                },
+                {
+                  "id": "g8-sci-gen-6",
+                  "type": "mc",
+                  "prompt": "What is the difference between an organism’s genotype and phenotype?",
+                  "choices": [
+                    "Genotype is allele letters; phenotype is observable traits.",
+                    "Phenotype is DNA code; genotype is diet.",
+                    "They mean the exact same thing.",
+                    "Only plants have a phenotype."
+                  ],
+                  "answer": "Genotype is allele letters; phenotype is observable traits.",
+                  "explanation": "Genotype is the genetic makeup (like Bb), while phenotype is the physical trait seen (like brown fur)."
+                },
+                {
+                  "id": "g8-sci-gen-7",
+                  "type": "mc",
+                  "prompt": "Why is genetic variation helpful when a species’ environment changes?",
+                  "choices": [
+                    "Some individuals may have traits that help them survive.",
+                    "Every individual dies at the exact same moment.",
+                    "Variation prevents all reproduction.",
+                    "Traits never affect survival."
+                  ],
+                  "answer": "Some individuals may have traits that help them survive.",
+                  "explanation": "In natural selection, individuals with helpful inherited traits survive better and pass those traits on."
+                },
+                {
+                  "id": "g8-sci-gen-8",
+                  "type": "mc",
+                  "prompt": "After tree bark darkened with soot, dark moths survived better. This shows:",
+                  "choices": [
+                    "Natural selection through camouflage",
+                    "Asexual cloning",
+                    "Plate tectonics",
+                    "Artificial weather"
+                  ],
+                  "answer": "Natural selection through camouflage",
+                  "explanation": "Predators spotted light moths more easily on dark bark, so dark moths survived and reproduced more."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Genetics & Heredity] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Reproduction, Punnett Squares & Natural Selection\" (MS-LS3-2 / OH.8.LS.1 / OH.8.LS.3), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-sci-u3-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Reproduction, Alleles & Punnett Squares",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Reproduction, Punnett Squares & Natural Selection\" (MS-LS3-2 / OH.8.LS.1 / OH.8.LS.3). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation"
+              },
+              {
+                "id": "g8-sci-u3-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Reproduction, Punnett Squares & Natural Selection.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-sci-u3-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (MS-LS3-2 / OH.8.LS.1 / OH.8.LS.3)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Reproduction, Punnett Squares & Natural Selection.",
+              "Sexual reproduction creates genetic variation via meiosis; dominant and recessive alleles follow Mendelian inheritance.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How does asexual reproduction compare to sexual reproduction?\" → Answer: Asexual makes genetically identical offspring from one parent.. (Asexual reproduction uses mitosis from one parent to produce genetically identical offspring.)",
+            "links": [
+              {
+                "label": "YouTube: \"Genetics & Heredity\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20science%20Genetics%20%26%20Heredity%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Genetics & Heredity\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Genetics%20%26%20Heredity",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Genetics & Heredity",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Genetics%20%26%20Heredity",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-sci-u3-test",
+          "unitId": "g8-sci-u3",
+          "title": "Unit 3 Exam: Genetics, Heredity & Natural Selection",
+          "kind": "unit_test",
+          "partOf": "Genetics & Heredity",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation",
+          "videoTitle": "Unit 3 Life Science Mastery Exam",
+          "reading": "Demonstrate mastery of sexual vs. asexual reproduction, genotypes, phenotypes, Punnett squares, and natural selection.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g8-sci-genetics",
+              "title": "Reproduction, Punnett Squares & Natural Selection",
+              "standard": "MS-LS3-2 / OH.8.LS.1 / OH.8.LS.3",
+              "summary": "Sexual reproduction creates genetic variation via meiosis; dominant and recessive alleles follow Mendelian inheritance.",
+              "bank": [
+                {
+                  "id": "g8-sci-gen-1",
+                  "type": "mc",
+                  "prompt": "How does asexual reproduction compare to sexual reproduction?",
+                  "choices": [
+                    "Asexual makes genetically identical offspring from one parent.",
+                    "Asexual combines DNA from two parents.",
+                    "Sexual makes exact clones of one parent.",
+                    "Neither passes DNA to offspring."
+                  ],
+                  "answer": "Asexual makes genetically identical offspring from one parent.",
+                  "explanation": "Asexual reproduction uses mitosis from one parent to produce genetically identical offspring."
+                },
+                {
+                  "id": "g8-sci-gen-2",
+                  "type": "mc",
+                  "prompt": "Which cell division produces sperm and egg cells with half the chromosomes?",
+                  "choices": [
+                    "Meiosis",
+                    "Mitosis",
+                    "Photosynthesis",
+                    "Respiration"
+                  ],
+                  "answer": "Meiosis",
+                  "explanation": "Meiosis cuts the chromosome number in half so fertilization restores a full set."
+                },
+                {
+                  "id": "g8-sci-gen-3",
+                  "type": "mc",
+                  "prompt": "In pea plants, tall (T) is dominant over short (t). Genotype Tt is:",
+                  "choices": [
+                    "Tall (heterozygous)",
+                    "Short (homozygous)",
+                    "Medium height",
+                    "Seedless"
+                  ],
+                  "answer": "Tall (heterozygous)",
+                  "explanation": "A dominant allele (T) masks the recessive allele (t) in a heterozygous (Tt) organism."
+                },
+                {
+                  "id": "g8-sci-gen-4",
+                  "type": "mc",
+                  "prompt": "Which genotype will show a recessive trait like blue eyes (b)?",
+                  "choices": [
+                    "bb (homozygous recessive)",
+                    "BB (homozygous dominant)",
+                    "Bb (heterozygous)",
+                    "Any genotype with B"
+                  ],
+                  "answer": "bb (homozygous recessive)",
+                  "explanation": "A recessive trait appears only when an organism inherits two recessive alleles (bb) and no dominant allele."
+                },
+                {
+                  "id": "g8-sci-gen-5",
+                  "type": "mc",
+                  "prompt": "Cross Tt × Tt in a Punnett square. What percent are tt?",
+                  "choices": [
+                    "25% (1 out of 4)",
+                    "75% (3 out of 4)",
+                    "100% (4 out of 4)",
+                    "0% (none)"
+                  ],
+                  "answer": "25% (1 out of 4)",
+                  "explanation": "Crossing Tt × Tt produces TT, Tt, Tt, and tt—giving a 1 in 4 (25%) chance of tt."
+                },
+                {
+                  "id": "g8-sci-gen-6",
+                  "type": "mc",
+                  "prompt": "What is the difference between an organism’s genotype and phenotype?",
+                  "choices": [
+                    "Genotype is allele letters; phenotype is observable traits.",
+                    "Phenotype is DNA code; genotype is diet.",
+                    "They mean the exact same thing.",
+                    "Only plants have a phenotype."
+                  ],
+                  "answer": "Genotype is allele letters; phenotype is observable traits.",
+                  "explanation": "Genotype is the genetic makeup (like Bb), while phenotype is the physical trait seen (like brown fur)."
+                },
+                {
+                  "id": "g8-sci-gen-7",
+                  "type": "mc",
+                  "prompt": "Why is genetic variation helpful when a species’ environment changes?",
+                  "choices": [
+                    "Some individuals may have traits that help them survive.",
+                    "Every individual dies at the exact same moment.",
+                    "Variation prevents all reproduction.",
+                    "Traits never affect survival."
+                  ],
+                  "answer": "Some individuals may have traits that help them survive.",
+                  "explanation": "In natural selection, individuals with helpful inherited traits survive better and pass those traits on."
+                },
+                {
+                  "id": "g8-sci-gen-8",
+                  "type": "mc",
+                  "prompt": "After tree bark darkened with soot, dark moths survived better. This shows:",
+                  "choices": [
+                    "Natural selection through camouflage",
+                    "Asexual cloning",
+                    "Plate tectonics",
+                    "Artificial weather"
+                  ],
+                  "answer": "Natural selection through camouflage",
+                  "explanation": "Predators spotted light moths more easily on dark bark, so dark moths survived and reproduced more."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Reproduction, Punnett Squares & Natural Selection (MS-LS3-2 / OH.8.LS.1 / OH.8.LS.3). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g8-sci-u3-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Reproduction, Punnett Squares & Natural Selection",
+                "description": "Read the Core Concept Summary and Principle cards on this page (MS-LS3-2 / OH.8.LS.1 / OH.8.LS.3) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g8-sci-u3-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 3 Life Science Mastery Exam",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Reproduction, Punnett Squares & Natural Selection\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Reproduction, Punnett Squares & Natural Selection.",
+              "Sexual reproduction creates genetic variation via meiosis; dominant and recessive alleles follow Mendelian inheritance.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How does asexual reproduction compare to sexual reproduction?\" → Answer: Asexual makes genetically identical offspring from one parent.. (Asexual reproduction uses mitosis from one parent to produce genetically identical offspring.)",
+            "links": [
+              {
+                "label": "YouTube: \"Genetics & Heredity\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20science%20Genetics%20%26%20Heredity%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Genetics & Heredity\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Genetics%20%26%20Heredity",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Genetics & Heredity",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Genetics%20%26%20Heredity",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

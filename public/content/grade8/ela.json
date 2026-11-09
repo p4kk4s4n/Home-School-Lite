@@ -1,0 +1,1719 @@
+{
+  "id": "g8-ela",
+  "subject": "ela",
+  "grade": 8,
+  "title": "Grade 8 English Language Arts",
+  "subtitle": "Theme, Dramatic Irony, Argument Evaluation, Verbals, Active Voice & Verb Moods",
+  "credits": 1,
+  "color": "#5b21b6",
+  "icon": "🖋️",
+  "units": [
+    {
+      "id": "g8-ela-u1",
+      "title": "Unit 1: Literary Theme, Dialogue & Dramatic Irony",
+      "standards": [
+        "RL.8.2",
+        "RL.8.3",
+        "RL.8.6"
+      ],
+      "lessons": [
+        {
+          "id": "g8-ela-u1-l1",
+          "unitId": "g8-ela-u1",
+          "title": "Micro-Lesson 1A: Theme Development & How Dialogue Propels Action",
+          "kind": "lesson",
+          "partOf": "Reading Literature",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-8th-reading-vocab",
+          "videoTitle": "Khan Academy: Analyzing Theme & Dialogue in Fiction",
+          "reading": "A story’s theme is its deeper message about life, shown through how characters grow when tested. Authors also use sharp lines of dialogue to propel action forward, reveal character traits, or force a turning-point decision.",
+          "principles": [
+            {
+              "id": "p-g8-ela-theme-dialogue",
+              "title": "Theme Development & How Dialogue Propels Action",
+              "standard": "RL.8.2 / RL.8.3",
+              "summary": "Theme develops through character choices; specific lines of dialogue propel action and reveal character traits.",
+              "bank": [
+                {
+                  "id": "g8-ela-td-1",
+                  "type": "mc",
+                  "passage": "Maya stared at the broken robotics trophy. \"We can blame the loose wire,\" Leo whispered, \"or we can tell Coach we dropped it and help rebuild it tonight.\" Maya picked up a wrench. \"Let’s call Coach.\"",
+                  "prompt": "How does Leo’s dialogue affect the plot in this passage?",
+                  "choices": [
+                    "It forces Maya to choose honesty and take action.",
+                    "It ends the story without a decision.",
+                    "It describes the weather outside the gym.",
+                    "It proves Leo hates building robots."
+                  ],
+                  "answer": "It forces Maya to choose honesty and take action.",
+                  "explanation": "Dialogue propels action when a character’s words push another character to make a key decision."
+                },
+                {
+                  "id": "g8-ela-td-2",
+                  "type": "mc",
+                  "passage": "At first, Eli hoarded his extra garden seeds so his tomatoes would win first prize alone. After a late frost ruined the neighborhood plots, Eli shared his seedlings with every neighbor.",
+                  "prompt": "Which statement best expresses the theme of this passage?",
+                  "choices": [
+                    "Sharing with your community matters more than winning alone.",
+                    "Tomatoes never grow after a spring frost.",
+                    "Contests should always be canceled.",
+                    "Seeds are too expensive to buy."
+                  ],
+                  "answer": "Sharing with your community matters more than winning alone.",
+                  "explanation": "A theme is the universal life lesson shown by how a character changes over the story."
+                },
+                {
+                  "id": "g8-ela-td-3",
+                  "type": "mc",
+                  "passage": "\"The river bridge is washing out!\" shouted Warden Hale, slamming the lantern on the desk. \"Saddle the fastest horse now!\"",
+                  "prompt": "What does Warden Hale’s dialogue do in this scene?",
+                  "choices": [
+                    "It creates urgency and launches the rescue mission.",
+                    "It slows the pace for a quiet nap.",
+                    "It explains how stone bridges are built.",
+                    "It shows Hale is calm and unconcerned."
+                  ],
+                  "answer": "It creates urgency and launches the rescue mission.",
+                  "explanation": "Urgent dialogue propels the plot forward by triggering immediate action from the characters."
+                },
+                {
+                  "id": "g8-ela-td-4",
+                  "type": "mc",
+                  "prompt": "What must an objective summary of a story leave out?",
+                  "choices": [
+                    "Personal opinions and judgments",
+                    "The main characters",
+                    "The central conflict",
+                    "How the conflict is resolved"
+                  ],
+                  "answer": "Personal opinions and judgments",
+                  "explanation": "An objective summary retells only the key plot events and central idea without personal bias."
+                },
+                {
+                  "id": "g8-ela-td-5",
+                  "type": "mc",
+                  "passage": "\"I don’t need a map,\" scoffed Devon, stuffing the compass into his pack. Ten minutes later, the trail vanished into thick fog.",
+                  "prompt": "What character trait does Devon’s dialogue reveal?",
+                  "choices": [
+                    "Overconfidence",
+                    "Extreme caution",
+                    "Shyness",
+                    "Generosity"
+                  ],
+                  "answer": "Overconfidence",
+                  "explanation": "Dismissing a map and compass before hiking into fog reveals Devon’s overconfidence."
+                },
+                {
+                  "id": "g8-ela-td-6",
+                  "type": "mc",
+                  "prompt": "How do authors usually develop a theme across a novel?",
+                  "choices": [
+                    "Through how characters respond to challenges and grow",
+                    "By listing dictionary definitions in the index",
+                    "By keeping every character unchanged",
+                    "By avoiding all conflict"
+                  ],
+                  "answer": "Through how characters respond to challenges and grow",
+                  "explanation": "Readers trace theme by watching what characters learn from their struggles and choices."
+                },
+                {
+                  "id": "g8-ela-td-7",
+                  "type": "mc",
+                  "passage": "\"If you sign that paper, the forest gets bulldozed tomorrow,\" Asha warned. Mayor Lin set her pen down and tore the contract in half.",
+                  "prompt": "How did Asha’s warning impact the plot?",
+                  "choices": [
+                    "It provoked Mayor Lin to reject the contract.",
+                    "It convinced Mayor Lin to sell the forest.",
+                    "It had no effect on Mayor Lin.",
+                    "It caused Asha to leave town."
+                  ],
+                  "answer": "It provoked Mayor Lin to reject the contract.",
+                  "explanation": "Asha’s dialogue directly caused the mayor’s turning-point decision."
+                },
+                {
+                  "id": "g8-ela-td-8",
+                  "type": "mc",
+                  "prompt": "Which statement is a full theme rather than just a one-word topic?",
+                  "choices": [
+                    "True courage means standing up for others despite fear.",
+                    "Courage",
+                    "A story about a knight",
+                    "Medieval castles"
+                  ],
+                  "answer": "True courage means standing up for others despite fear.",
+                  "explanation": "A topic is a single subject word like \"courage,\" whereas a theme is a complete message about life."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Reading Literature] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Theme Development & How Dialogue Propels Action\" (RL.8.2 / RL.8.3), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-ela-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Analyzing Theme & Dialogue in Fiction",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Theme Development & How Dialogue Propels Action\" (RL.8.2 / RL.8.3). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-8th-reading-vocab"
+              },
+              {
+                "id": "g8-ela-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Theme Development & How Dialogue Propels Action.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-ela-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (RL.8.2 / RL.8.3)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Theme Development & How Dialogue Propels Action.",
+              "Theme develops through character choices; specific lines of dialogue propel action and reveal character traits.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How does Leo’s dialogue affect the plot in this passage?\" → Answer: It forces Maya to choose honesty and take action.. (Dialogue propels action when a character’s words push another character to make a key decision.)",
+            "links": [
+              {
+                "label": "YouTube: \"Reading Literature\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20ela%20Reading%20Literature%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Reading Literature\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Reading%20Literature",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-ela-u1-l2",
+          "unitId": "g8-ela-u1",
+          "title": "Micro-Lesson 1B: Dramatic, Situational & Verbal Irony",
+          "kind": "lesson",
+          "partOf": "Reading Literature",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-8th-reading-vocab",
+          "videoTitle": "Khan Academy: Point of View & Dramatic Irony",
+          "reading": "Dramatic irony happens when the reader or audience knows a key secret that a character does not know—creating suspense or humor. Situational irony happens when an outcome is the exact opposite of what was expected, and verbal irony is saying the opposite of what you mean.",
+          "principles": [
+            {
+              "id": "p-g8-ela-irony-pov",
+              "title": "Dramatic, Situational & Verbal Irony",
+              "standard": "RL.8.6",
+              "summary": "Dramatic irony occurs when the audience knows a key truth that a character does not know, creating suspense or humor.",
+              "bank": [
+                {
+                  "id": "g8-ela-ir-1",
+                  "type": "mc",
+                  "prompt": "When does dramatic irony happen in a story or play?",
+                  "choices": [
+                    "The reader knows a secret that a character does not.",
+                    "Two characters agree on every fact.",
+                    "The narrator forgets the ending.",
+                    "A poem uses rhyming lines."
+                  ],
+                  "answer": "The reader knows a secret that a character does not.",
+                  "explanation": "Dramatic irony is the gap between what the audience knows and what a character believes."
+                },
+                {
+                  "id": "g8-ela-ir-2",
+                  "type": "mc",
+                  "passage": "In Chapter 1, the reader sees the detective hide a microphone inside the flower vase. In Chapter 2, the thief whispers his whole plan right next to the vase.",
+                  "prompt": "What effect does this dramatic irony create for the reader?",
+                  "choices": [
+                    "Suspense waiting for the thief to be caught",
+                    "Confusion about who the detective is",
+                    "Boredom because nothing is happening",
+                    "Anger at the flower shop"
+                  ],
+                  "answer": "Suspense waiting for the thief to be caught",
+                  "explanation": "Knowing the vase is bugged while the thief speaks freely builds tension and suspense."
+                },
+                {
+                  "id": "g8-ela-ir-3",
+                  "type": "mc",
+                  "prompt": "A fire station burns down while the crew is away. This is:",
+                  "choices": [
+                    "Situational irony",
+                    "Dramatic irony",
+                    "A simile",
+                    "Alliteration"
+                  ],
+                  "answer": "Situational irony",
+                  "explanation": "Situational irony happens when the actual outcome is the sharp opposite of what anyone would expect."
+                },
+                {
+                  "id": "g8-ela-ir-4",
+                  "type": "mc",
+                  "passage": "Looking out at the pouring sleet and howling wind, Marcus sighed, \"What a perfect day for a beach picnic.\"",
+                  "prompt": "Which type of irony is Marcus using?",
+                  "choices": [
+                    "Verbal irony",
+                    "Dramatic irony",
+                    "Historical nonfiction",
+                    "Stage directions"
+                  ],
+                  "answer": "Verbal irony",
+                  "explanation": "Verbal irony occurs when a speaker says the opposite of what they actually mean."
+                },
+                {
+                  "id": "g8-ela-ir-5",
+                  "type": "mc",
+                  "passage": "The kids hid behind the sofa with a birthday cake. When Mom walked in, she muttered, \"Everyone forgot my birthday this year.\"",
+                  "prompt": "Why does this scene use dramatic irony to create humor?",
+                  "choices": [
+                    "Readers know a surprise party hides behind her.",
+                    "Mom hates eating birthday cake.",
+                    "The kids forgot to buy candles.",
+                    "Nobody is inside the house."
+                  ],
+                  "answer": "Readers know a surprise party hides behind her.",
+                  "explanation": "The contrast between Mom’s belief and the reader’s knowledge of the hidden cake makes the moment lighthearted."
+                },
+                {
+                  "id": "g8-ela-ir-6",
+                  "type": "mc",
+                  "prompt": "How do authors create suspense using point of view?",
+                  "choices": [
+                    "By giving the reader information a character lacks",
+                    "By listing the alphabet backward",
+                    "By removing all verbs from sentences",
+                    "By telling the ending on page one"
+                  ],
+                  "answer": "By giving the reader information a character lacks",
+                  "explanation": "Shifting between what the audience sees and a character’s limited perspective builds anticipation."
+                },
+                {
+                  "id": "g8-ela-ir-7",
+                  "type": "mc",
+                  "passage": "A champion spelling-bee judge mispells the word \"champion\" on the award certificate.",
+                  "prompt": "Which literary device does this situation illustrate?",
+                  "choices": [
+                    "Situational irony",
+                    "Personification",
+                    "Hyperbole",
+                    "Onomatopoeia"
+                  ],
+                  "answer": "Situational irony",
+                  "explanation": "An expert in spelling making a simple spelling mistake is the opposite of what is expected."
+                },
+                {
+                  "id": "g8-ela-ir-8",
+                  "type": "mc",
+                  "prompt": "In Romeo and Juliet, the audience knows Juliet is asleep, not dead. This is:",
+                  "choices": [
+                    "Dramatic irony",
+                    "A biography",
+                    "First-person narration",
+                    "A metaphor"
+                  ],
+                  "answer": "Dramatic irony",
+                  "explanation": "Because the audience knows the truth while Romeo does not, the scene is a classic example of dramatic irony."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Reading Literature] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Dramatic, Situational & Verbal Irony\" (RL.8.6), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-ela-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Point of View & Dramatic Irony",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Dramatic, Situational & Verbal Irony\" (RL.8.6). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-8th-reading-vocab"
+              },
+              {
+                "id": "g8-ela-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Dramatic, Situational & Verbal Irony.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-ela-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (RL.8.6)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Dramatic, Situational & Verbal Irony.",
+              "Dramatic irony occurs when the audience knows a key truth that a character does not know, creating suspense or humor.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"When does dramatic irony happen in a story or play?\" → Answer: The reader knows a secret that a character does not.. (Dramatic irony is the gap between what the audience knows and what a character believes.)",
+            "links": [
+              {
+                "label": "YouTube: \"Reading Literature\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20ela%20Reading%20Literature%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Reading Literature\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Reading%20Literature",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-ela-u1-review",
+          "unitId": "g8-ela-u1",
+          "title": "Unit 1 Checkpoint Review: Theme, Dialogue & Irony",
+          "kind": "lesson_review",
+          "partOf": "Reading Literature",
+          "estimatedMinutes": 12,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-8th-reading-vocab",
+          "videoTitle": "Unit 1 ELA Review: Literary Analysis",
+          "reading": "Check your understanding of theme, objective summaries, dialogue, and irony in this 6-question review.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g8-ela-theme-dialogue",
+              "title": "Theme Development & How Dialogue Propels Action",
+              "standard": "RL.8.2 / RL.8.3",
+              "summary": "Theme develops through character choices; specific lines of dialogue propel action and reveal character traits.",
+              "bank": [
+                {
+                  "id": "g8-ela-td-1",
+                  "type": "mc",
+                  "passage": "Maya stared at the broken robotics trophy. \"We can blame the loose wire,\" Leo whispered, \"or we can tell Coach we dropped it and help rebuild it tonight.\" Maya picked up a wrench. \"Let’s call Coach.\"",
+                  "prompt": "How does Leo’s dialogue affect the plot in this passage?",
+                  "choices": [
+                    "It forces Maya to choose honesty and take action.",
+                    "It ends the story without a decision.",
+                    "It describes the weather outside the gym.",
+                    "It proves Leo hates building robots."
+                  ],
+                  "answer": "It forces Maya to choose honesty and take action.",
+                  "explanation": "Dialogue propels action when a character’s words push another character to make a key decision."
+                },
+                {
+                  "id": "g8-ela-td-2",
+                  "type": "mc",
+                  "passage": "At first, Eli hoarded his extra garden seeds so his tomatoes would win first prize alone. After a late frost ruined the neighborhood plots, Eli shared his seedlings with every neighbor.",
+                  "prompt": "Which statement best expresses the theme of this passage?",
+                  "choices": [
+                    "Sharing with your community matters more than winning alone.",
+                    "Tomatoes never grow after a spring frost.",
+                    "Contests should always be canceled.",
+                    "Seeds are too expensive to buy."
+                  ],
+                  "answer": "Sharing with your community matters more than winning alone.",
+                  "explanation": "A theme is the universal life lesson shown by how a character changes over the story."
+                },
+                {
+                  "id": "g8-ela-td-3",
+                  "type": "mc",
+                  "passage": "\"The river bridge is washing out!\" shouted Warden Hale, slamming the lantern on the desk. \"Saddle the fastest horse now!\"",
+                  "prompt": "What does Warden Hale’s dialogue do in this scene?",
+                  "choices": [
+                    "It creates urgency and launches the rescue mission.",
+                    "It slows the pace for a quiet nap.",
+                    "It explains how stone bridges are built.",
+                    "It shows Hale is calm and unconcerned."
+                  ],
+                  "answer": "It creates urgency and launches the rescue mission.",
+                  "explanation": "Urgent dialogue propels the plot forward by triggering immediate action from the characters."
+                },
+                {
+                  "id": "g8-ela-td-4",
+                  "type": "mc",
+                  "prompt": "What must an objective summary of a story leave out?",
+                  "choices": [
+                    "Personal opinions and judgments",
+                    "The main characters",
+                    "The central conflict",
+                    "How the conflict is resolved"
+                  ],
+                  "answer": "Personal opinions and judgments",
+                  "explanation": "An objective summary retells only the key plot events and central idea without personal bias."
+                },
+                {
+                  "id": "g8-ela-td-5",
+                  "type": "mc",
+                  "passage": "\"I don’t need a map,\" scoffed Devon, stuffing the compass into his pack. Ten minutes later, the trail vanished into thick fog.",
+                  "prompt": "What character trait does Devon’s dialogue reveal?",
+                  "choices": [
+                    "Overconfidence",
+                    "Extreme caution",
+                    "Shyness",
+                    "Generosity"
+                  ],
+                  "answer": "Overconfidence",
+                  "explanation": "Dismissing a map and compass before hiking into fog reveals Devon’s overconfidence."
+                },
+                {
+                  "id": "g8-ela-td-6",
+                  "type": "mc",
+                  "prompt": "How do authors usually develop a theme across a novel?",
+                  "choices": [
+                    "Through how characters respond to challenges and grow",
+                    "By listing dictionary definitions in the index",
+                    "By keeping every character unchanged",
+                    "By avoiding all conflict"
+                  ],
+                  "answer": "Through how characters respond to challenges and grow",
+                  "explanation": "Readers trace theme by watching what characters learn from their struggles and choices."
+                },
+                {
+                  "id": "g8-ela-td-7",
+                  "type": "mc",
+                  "passage": "\"If you sign that paper, the forest gets bulldozed tomorrow,\" Asha warned. Mayor Lin set her pen down and tore the contract in half.",
+                  "prompt": "How did Asha’s warning impact the plot?",
+                  "choices": [
+                    "It provoked Mayor Lin to reject the contract.",
+                    "It convinced Mayor Lin to sell the forest.",
+                    "It had no effect on Mayor Lin.",
+                    "It caused Asha to leave town."
+                  ],
+                  "answer": "It provoked Mayor Lin to reject the contract.",
+                  "explanation": "Asha’s dialogue directly caused the mayor’s turning-point decision."
+                },
+                {
+                  "id": "g8-ela-td-8",
+                  "type": "mc",
+                  "prompt": "Which statement is a full theme rather than just a one-word topic?",
+                  "choices": [
+                    "True courage means standing up for others despite fear.",
+                    "Courage",
+                    "A story about a knight",
+                    "Medieval castles"
+                  ],
+                  "answer": "True courage means standing up for others despite fear.",
+                  "explanation": "A topic is a single subject word like \"courage,\" whereas a theme is a complete message about life."
+                }
+              ]
+            },
+            {
+              "id": "p-g8-ela-irony-pov",
+              "title": "Dramatic, Situational & Verbal Irony",
+              "standard": "RL.8.6",
+              "summary": "Dramatic irony occurs when the audience knows a key truth that a character does not know, creating suspense or humor.",
+              "bank": [
+                {
+                  "id": "g8-ela-ir-1",
+                  "type": "mc",
+                  "prompt": "When does dramatic irony happen in a story or play?",
+                  "choices": [
+                    "The reader knows a secret that a character does not.",
+                    "Two characters agree on every fact.",
+                    "The narrator forgets the ending.",
+                    "A poem uses rhyming lines."
+                  ],
+                  "answer": "The reader knows a secret that a character does not.",
+                  "explanation": "Dramatic irony is the gap between what the audience knows and what a character believes."
+                },
+                {
+                  "id": "g8-ela-ir-2",
+                  "type": "mc",
+                  "passage": "In Chapter 1, the reader sees the detective hide a microphone inside the flower vase. In Chapter 2, the thief whispers his whole plan right next to the vase.",
+                  "prompt": "What effect does this dramatic irony create for the reader?",
+                  "choices": [
+                    "Suspense waiting for the thief to be caught",
+                    "Confusion about who the detective is",
+                    "Boredom because nothing is happening",
+                    "Anger at the flower shop"
+                  ],
+                  "answer": "Suspense waiting for the thief to be caught",
+                  "explanation": "Knowing the vase is bugged while the thief speaks freely builds tension and suspense."
+                },
+                {
+                  "id": "g8-ela-ir-3",
+                  "type": "mc",
+                  "prompt": "A fire station burns down while the crew is away. This is:",
+                  "choices": [
+                    "Situational irony",
+                    "Dramatic irony",
+                    "A simile",
+                    "Alliteration"
+                  ],
+                  "answer": "Situational irony",
+                  "explanation": "Situational irony happens when the actual outcome is the sharp opposite of what anyone would expect."
+                },
+                {
+                  "id": "g8-ela-ir-4",
+                  "type": "mc",
+                  "passage": "Looking out at the pouring sleet and howling wind, Marcus sighed, \"What a perfect day for a beach picnic.\"",
+                  "prompt": "Which type of irony is Marcus using?",
+                  "choices": [
+                    "Verbal irony",
+                    "Dramatic irony",
+                    "Historical nonfiction",
+                    "Stage directions"
+                  ],
+                  "answer": "Verbal irony",
+                  "explanation": "Verbal irony occurs when a speaker says the opposite of what they actually mean."
+                },
+                {
+                  "id": "g8-ela-ir-5",
+                  "type": "mc",
+                  "passage": "The kids hid behind the sofa with a birthday cake. When Mom walked in, she muttered, \"Everyone forgot my birthday this year.\"",
+                  "prompt": "Why does this scene use dramatic irony to create humor?",
+                  "choices": [
+                    "Readers know a surprise party hides behind her.",
+                    "Mom hates eating birthday cake.",
+                    "The kids forgot to buy candles.",
+                    "Nobody is inside the house."
+                  ],
+                  "answer": "Readers know a surprise party hides behind her.",
+                  "explanation": "The contrast between Mom’s belief and the reader’s knowledge of the hidden cake makes the moment lighthearted."
+                },
+                {
+                  "id": "g8-ela-ir-6",
+                  "type": "mc",
+                  "prompt": "How do authors create suspense using point of view?",
+                  "choices": [
+                    "By giving the reader information a character lacks",
+                    "By listing the alphabet backward",
+                    "By removing all verbs from sentences",
+                    "By telling the ending on page one"
+                  ],
+                  "answer": "By giving the reader information a character lacks",
+                  "explanation": "Shifting between what the audience sees and a character’s limited perspective builds anticipation."
+                },
+                {
+                  "id": "g8-ela-ir-7",
+                  "type": "mc",
+                  "passage": "A champion spelling-bee judge mispells the word \"champion\" on the award certificate.",
+                  "prompt": "Which literary device does this situation illustrate?",
+                  "choices": [
+                    "Situational irony",
+                    "Personification",
+                    "Hyperbole",
+                    "Onomatopoeia"
+                  ],
+                  "answer": "Situational irony",
+                  "explanation": "An expert in spelling making a simple spelling mistake is the opposite of what is expected."
+                },
+                {
+                  "id": "g8-ela-ir-8",
+                  "type": "mc",
+                  "prompt": "In Romeo and Juliet, the audience knows Juliet is asleep, not dead. This is:",
+                  "choices": [
+                    "Dramatic irony",
+                    "A biography",
+                    "First-person narration",
+                    "A metaphor"
+                  ],
+                  "answer": "Dramatic irony",
+                  "explanation": "Because the audience knows the truth while Romeo does not, the scene is a classic example of dramatic irony."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering Theme Development & How Dialogue Propels Action & Dramatic, Situational & Verbal Irony (RL.8.2 / RL.8.3, RL.8.6). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g8-ela-u1-review-step-review",
+                "type": "reading",
+                "title": "Review Principles: Theme Development & How Dialogue Propels Action & Dramatic, Situational & Verbal Irony",
+                "description": "Read the Core Concept Summary and Principle cards on this page (RL.8.2 / RL.8.3, RL.8.6) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g8-ela-u1-review-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 ELA Review: Literary Analysis",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Theme Development & How Dialogue Propels Action & Dramatic, Situational & Verbal Irony\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/ela/cc-8th-reading-vocab"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Theme Development & How Dialogue Propels Action.",
+              "Theme develops through character choices; specific lines of dialogue propel action and reveal character traits.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How does Leo’s dialogue affect the plot in this passage?\" → Answer: It forces Maya to choose honesty and take action.. (Dialogue propels action when a character’s words push another character to make a key decision.)",
+            "links": [
+              {
+                "label": "YouTube: \"Reading Literature\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20ela%20Reading%20Literature%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Reading Literature\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Reading%20Literature",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g8-ela-u2",
+      "title": "Unit 2: Evaluating Arguments, Verbals, Active Voice & Verb Moods",
+      "standards": [
+        "RI.8.8",
+        "RI.8.9",
+        "L.8.1",
+        "OH.L.8.1"
+      ],
+      "lessons": [
+        {
+          "id": "g8-ela-u2-l1",
+          "unitId": "g8-ela-u2",
+          "title": "Micro-Lesson 2A: Sound Reasoning & Conflicting Evidence",
+          "kind": "lesson",
+          "partOf": "Arguments & Grammar Conventions",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-8th-reading-vocab",
+          "videoTitle": "Khan Academy: Evaluating Arguments & Evidence",
+          "reading": "To evaluate an argument, ask three questions: (1) Is the reasoning logical and free of personal attacks? (2) Is the evidence relevant (directly connected to the claim)? (3) Is the evidence sufficient (backed by verified data rather than a single opinion)?",
+          "principles": [
+            {
+              "id": "p-g8-ela-arguments",
+              "title": "Evaluating Arguments, Sound Reasoning & Conflicting Evidence",
+              "standard": "RI.8.8 / RI.8.9",
+              "summary": "Strong arguments back claims with relevant, verifiable evidence and address conflicting viewpoints fairly.",
+              "bank": [
+                {
+                  "id": "g8-ela-arg-1",
+                  "type": "mc",
+                  "prompt": "What makes a piece of evidence relevant to an author’s claim?",
+                  "choices": [
+                    "It directly supports and proves the specific claim.",
+                    "It uses long, complicated words.",
+                    "It talks about an unrelated topic.",
+                    "It is based only on a rumor."
+                  ],
+                  "answer": "It directly supports and proves the specific claim.",
+                  "explanation": "Relevant evidence is directly connected to the claim and helps prove that the claim is true."
+                },
+                {
+                  "id": "g8-ela-arg-2",
+                  "type": "mc",
+                  "prompt": "Which source provides the strongest evidence for a claim about bike-lane safety?",
+                  "choices": [
+                    "A five-year city traffic study comparing crash rates",
+                    "One friend’s guess about bicycles",
+                    "A comic strip about a skateboard",
+                    "An ad selling sports cars"
+                  ],
+                  "answer": "A five-year city traffic study comparing crash rates",
+                  "explanation": "Verified data from a multi-year study provides sound, sufficient evidence rather than personal opinion."
+                },
+                {
+                  "id": "g8-ela-arg-3",
+                  "type": "mc",
+                  "passage": "Everyone in eighth grade knows that school should start at noon because mornings are boring.",
+                  "prompt": "Why is the reasoning in this sentence unsound?",
+                  "choices": [
+                    "It relies on exaggeration and opinion instead of facts.",
+                    "It cites too many scientific studies.",
+                    "It uses passive voice.",
+                    "It agrees with both sides."
+                  ],
+                  "answer": "It relies on exaggeration and opinion instead of facts.",
+                  "explanation": "Claiming \"everyone knows\" is a sweeping generalization without factual evidence."
+                },
+                {
+                  "id": "g8-ela-arg-4",
+                  "type": "mc",
+                  "prompt": "What is a counterclaim in an argumentative essay?",
+                  "choices": [
+                    "An opposing viewpoint that the writer addresses and refutes",
+                    "The title at the top of the page",
+                    "A list of spelling words",
+                    "A story with talking animals"
+                  ],
+                  "answer": "An opposing viewpoint that the writer addresses and refutes",
+                  "explanation": "Acknowledging and answering a counterclaim shows the writer has considered conflicting viewpoints."
+                },
+                {
+                  "id": "g8-ela-arg-5",
+                  "type": "mc",
+                  "passage": "Article A argues that solar panels save schools money using 10-year utility bills. Article B claims solar panels are too costly, citing only first-day installation fees.",
+                  "prompt": "How do these two texts disagree on the same topic?",
+                  "choices": [
+                    "They emphasize different cost timeframes to reach opposite conclusions.",
+                    "Both articles oppose solar energy.",
+                    "Neither article mentions money.",
+                    "They use the exact same facts."
+                  ],
+                  "answer": "They emphasize different cost timeframes to reach opposite conclusions.",
+                  "explanation": "Authors can present conflicting interpretations by focusing on long-term savings versus upfront cost."
+                },
+                {
+                  "id": "g8-ela-arg-6",
+                  "type": "mc",
+                  "prompt": "When is an author’s evidence considered \"sufficient\"?",
+                  "choices": [
+                    "When there is enough strong proof to convince readers",
+                    "When the author gives only one single anecdote",
+                    "When all facts are left out",
+                    "When the font size is large"
+                  ],
+                  "answer": "When there is enough strong proof to convince readers",
+                  "explanation": "Sufficient evidence means providing enough varied, reliable facts to thoroughly back the claim."
+                },
+                {
+                  "id": "g8-ela-arg-7",
+                  "type": "mc",
+                  "prompt": "Attacking a speaker’s clothes instead of their facts is an example of:",
+                  "choices": [
+                    "Irrelevant reasoning (personal attack)",
+                    "Sound scientific evidence",
+                    "A valid statistic",
+                    "An objective summary"
+                  ],
+                  "answer": "Irrelevant reasoning (personal attack)",
+                  "explanation": "Sound reasoning evaluates the evidence itself, not unrelated personal traits of the speaker."
+                },
+                {
+                  "id": "g8-ela-arg-8",
+                  "type": "mc",
+                  "prompt": "Why should readers compare two texts that present conflicting evidence?",
+                  "choices": [
+                    "To see which claim is backed by stronger, verified facts",
+                    "To memorize the page numbers",
+                    "To skip reading the conclusion",
+                    "To avoid forming an informed view"
+                  ],
+                  "answer": "To see which claim is backed by stronger, verified facts",
+                  "explanation": "Comparing conflicting texts helps readers weigh how each author uses evidence and spot weak reasoning."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Arguments & Grammar Conventions] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Evaluating Arguments, Sound Reasoning & Conflicting Evidence\" (RI.8.8 / RI.8.9), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-ela-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Evaluating Arguments & Evidence",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Evaluating Arguments, Sound Reasoning & Conflicting Evidence\" (RI.8.8 / RI.8.9). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-8th-reading-vocab"
+              },
+              {
+                "id": "g8-ela-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Evaluating Arguments, Sound Reasoning & Conflicting Evidence.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-ela-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (RI.8.8 / RI.8.9)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Evaluating Arguments, Sound Reasoning & Conflicting Evidence.",
+              "Strong arguments back claims with relevant, verifiable evidence and address conflicting viewpoints fairly.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What makes a piece of evidence relevant to an author’s claim?\" → Answer: It directly supports and proves the specific claim.. (Relevant evidence is directly connected to the claim and helps prove that the claim is true.)",
+            "links": [
+              {
+                "label": "YouTube: \"Arguments & Grammar Conventions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20ela%20Arguments%20%26%20Grammar%20Conventions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Arguments & Grammar Conventions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Arguments%20%26%20Grammar%20Conventions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-ela-u2-l2",
+          "unitId": "g8-ela-u2",
+          "title": "Micro-Lesson 2B: Verbals (Gerunds, Participles & Infinitives)",
+          "kind": "lesson",
+          "partOf": "Arguments & Grammar Conventions",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/grammar/parts-of-speech-the-verb",
+          "videoTitle": "Khan Academy: Intro to Verbals (Gerunds, Participles, Infinitives)",
+          "reading": "A verbal is a verb form that acts as another part of speech. A gerund ends in -ing and acts as a noun (\"Swimming is fun\"). A participle ends in -ing or -ed/-en and acts as an adjective (\"the barking dog\"). An infinitive is \"to\" + base verb (\"to study\").",
+          "principles": [
+            {
+              "id": "p-g8-ela-verbals",
+              "title": "Verbals: Gerunds, Participles & Infinitives",
+              "standard": "L.8.1a / OH.L.8.1",
+              "summary": "A gerund (-ing) acts as a noun, a participle acts as an adjective, and an infinitive (to + verb) acts as a noun, adjective, or adverb.",
+              "bank": [
+                {
+                  "id": "g8-ela-vb-1",
+                  "type": "mc",
+                  "prompt": "In \"Swimming builds endurance,\" how does the word \"Swimming\" function?",
+                  "choices": [
+                    "Gerund (verb form acting as a noun)",
+                    "Participle (adjective)",
+                    "Infinitive",
+                    "Preposition"
+                  ],
+                  "answer": "Gerund (verb form acting as a noun)",
+                  "explanation": "A gerund ends in -ing and functions as a noun—here, \"Swimming\" is the subject of the sentence."
+                },
+                {
+                  "id": "g8-ela-vb-2",
+                  "type": "mc",
+                  "prompt": "In \"The barking dog woke the street,\" what is \"barking\"?",
+                  "choices": [
+                    "Participle (verb form describing a noun)",
+                    "Gerund (subject noun)",
+                    "Infinitive",
+                    "Conjunction"
+                  ],
+                  "answer": "Participle (verb form describing a noun)",
+                  "explanation": "A participle is a verb form used as an adjective; here \"barking\" describes the noun \"dog.\""
+                },
+                {
+                  "id": "g8-ela-vb-3",
+                  "type": "mc",
+                  "prompt": "Identify the infinitive in: \"Elena plans to study astronomy.\"",
+                  "choices": [
+                    "to study",
+                    "Elena plans",
+                    "astronomy",
+                    "plans to"
+                  ],
+                  "answer": "to study",
+                  "explanation": "An infinitive is formed with \"to\" plus the base form of a verb (to study)."
+                },
+                {
+                  "id": "g8-ela-vb-4",
+                  "type": "mc",
+                  "prompt": "In \"Reading mystery novels is Noah’s favorite hobby,\" what is \"Reading\"?",
+                  "choices": [
+                    "A gerund acting as a noun",
+                    "A past participle",
+                    "An adverb",
+                    "A conjunction"
+                  ],
+                  "answer": "A gerund acting as a noun",
+                  "explanation": "\"Reading mystery novels\" acts as the noun subject of the verb \"is,\" making \"Reading\" a gerund."
+                },
+                {
+                  "id": "g8-ela-vb-5",
+                  "type": "mc",
+                  "prompt": "In \"The shattered window needed repair,\" what is \"shattered\"?",
+                  "choices": [
+                    "A past participle acting as an adjective",
+                    "A gerund acting as a noun",
+                    "An infinitive",
+                    "A pronoun"
+                  ],
+                  "answer": "A past participle acting as an adjective",
+                  "explanation": "Past participles (often ending in -ed or -en) describe nouns, like \"shattered\" describing \"window.\""
+                },
+                {
+                  "id": "g8-ela-vb-6",
+                  "type": "mc",
+                  "prompt": "Which sentence contains an infinitive phrase?",
+                  "choices": [
+                    "Liam practiced every afternoon to make the varsity team.",
+                    "Running down the hill, Liam smiled.",
+                    "Baking bread fills the kitchen with warmth.",
+                    " Liam went to the store after school."
+                  ],
+                  "answer": "Liam practiced every afternoon to make the varsity team.",
+                  "explanation": "\"To make\" is an infinitive (\"to\" + base verb); \"to the store\" is a prepositional phrase (\"to\" + noun)."
+                },
+                {
+                  "id": "g8-ela-vb-7",
+                  "type": "mc",
+                  "prompt": "How can you tell a gerund apart from a present participle?",
+                  "choices": [
+                    "Gerunds act as nouns; participles act as adjectives.",
+                    "A gerund never ends in -ing.",
+                    "A participle always starts with the word \"to.\"",
+                    "There is no difference between them."
+                  ],
+                  "answer": "Gerunds act as nouns; participles act as adjectives.",
+                  "explanation": "Both end in -ing, but gerunds name things (nouns) while participles describe nouns (adjectives)."
+                },
+                {
+                  "id": "g8-ela-vb-8",
+                  "type": "mc",
+                  "prompt": "In \"She enjoys painting landscapes,\" what role does \"painting\" play?",
+                  "choices": [
+                    "Gerund (direct object noun)",
+                    "Participle (adjective)",
+                    "Main verb",
+                    "Interjection"
+                  ],
+                  "answer": "Gerund (direct object noun)",
+                  "explanation": "\"Painting\" receives the action of \"enjoys\" as a noun (direct object), so it is a gerund."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Arguments & Grammar Conventions] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Verbals: Gerunds, Participles & Infinitives\" (L.8.1a / OH.L.8.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-ela-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Intro to Verbals (Gerunds, Participles, Infinitives)",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Verbals: Gerunds, Participles & Infinitives\" (L.8.1a / OH.L.8.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/grammar/parts-of-speech-the-verb"
+              },
+              {
+                "id": "g8-ela-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Verbals: Gerunds, Participles & Infinitives.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-ela-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (L.8.1a / OH.L.8.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Verbals: Gerunds, Participles & Infinitives.",
+              "A gerund (-ing) acts as a noun, a participle acts as an adjective, and an infinitive (to + verb) acts as a noun, adjective, or adverb.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"In \"Swimming builds endurance,\" how does the word \"Swimming\" function?\" → Answer: Gerund (verb form acting as a noun). (A gerund ends in -ing and functions as a noun—here, \"Swimming\" is the subject of the sentence.)",
+            "links": [
+              {
+                "label": "YouTube: \"Arguments & Grammar Conventions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20ela%20Arguments%20%26%20Grammar%20Conventions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Arguments & Grammar Conventions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Arguments%20%26%20Grammar%20Conventions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-ela-u2-l3",
+          "unitId": "g8-ela-u2",
+          "title": "Micro-Lesson 2C: Active vs. Passive Voice & Verb Moods",
+          "kind": "lesson",
+          "partOf": "Arguments & Grammar Conventions",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/grammar/syntax-conventions-of-standard-english",
+          "videoTitle": "Khan Academy: Active and Passive Voice & Verb Moods",
+          "reading": "In active voice, the subject does the action (\"Maya scored the goal\"); in passive voice, the subject receives the action (\"The goal was scored by Maya\"). Verb moods show attitude: indicative (fact), imperative (command), interrogative (question), conditional (\"if... will\"), and subjunctive (\"If I were...\").",
+          "principles": [
+            {
+              "id": "p-g8-ela-voice-mood",
+              "title": "Active vs. Passive Voice & Verb Moods",
+              "standard": "L.8.1b / L.8.1c / OH.L.8.1",
+              "summary": "In active voice the subject performs the action; verb moods include indicative, imperative, interrogative, conditional, and subjunctive.",
+              "bank": [
+                {
+                  "id": "g8-ela-vm-1",
+                  "type": "mc",
+                  "prompt": "Which sentence is written in the active voice?",
+                  "choices": [
+                    "The chef prepared a fresh soup.",
+                    "A fresh soup was prepared by the chef.",
+                    "The carrot was chopped by hand.",
+                    "Dinner was served at six."
+                  ],
+                  "answer": "The chef prepared a fresh soup.",
+                  "explanation": "In active voice, the subject (\"The chef\") directly performs the action (\"prepared\")."
+                },
+                {
+                  "id": "g8-ela-vm-2",
+                  "type": "mc",
+                  "prompt": "Rewrite in active voice: \"The winning goal was scored by Maya.\"",
+                  "choices": [
+                    "Maya scored the winning goal.",
+                    "The goal was scored by Maya quickly.",
+                    "Scoring was done by Maya.",
+                    "Was the goal scored by Maya?"
+                  ],
+                  "answer": "Maya scored the winning goal.",
+                  "explanation": "Make the doer of the action (\"Maya\") the subject of the sentence to switch to active voice."
+                },
+                {
+                  "id": "g8-ela-vm-3",
+                  "type": "mc",
+                  "prompt": "What verb mood gives a direct command: \"Close the lab door.\"?",
+                  "choices": [
+                    "Imperative mood",
+                    "Interrogative mood",
+                    "Subjunctive mood",
+                    "Conditional mood"
+                  ],
+                  "answer": "Imperative mood",
+                  "explanation": "The imperative mood gives a direct command or request, usually with an implied \"you\" subject."
+                },
+                {
+                  "id": "g8-ela-vm-4",
+                  "type": "mc",
+                  "prompt": "Identify the verb mood: \"If it rains, the game will move indoors.\"",
+                  "choices": [
+                    "Conditional mood",
+                    "Imperative mood",
+                    "Interrogative mood",
+                    "Passive voice"
+                  ],
+                  "answer": "Conditional mood",
+                  "explanation": "The conditional mood states an outcome that depends on a specific condition (\"If... then will...\")."
+                },
+                {
+                  "id": "g8-ela-vm-5",
+                  "type": "mc",
+                  "prompt": "Identify the verb mood: \"If I were captain, I would listen first.\"",
+                  "choices": [
+                    "Subjunctive mood",
+                    "Indicative mood",
+                    "Imperative mood",
+                    "Interrogative mood"
+                  ],
+                  "answer": "Subjunctive mood",
+                  "explanation": "The subjunctive mood (\"If I were...\") expresses a wish, requirement, or situation contrary to fact."
+                },
+                {
+                  "id": "g8-ela-vm-6",
+                  "type": "mc",
+                  "prompt": "What verb mood asks a question: \"Have you checked the microscope?\"",
+                  "choices": [
+                    "Interrogative mood",
+                    "Indicative mood",
+                    "Imperative mood",
+                    "Subjunctive mood"
+                  ],
+                  "answer": "Interrogative mood",
+                  "explanation": "The interrogative mood asks a direct question and ends with a question mark."
+                },
+                {
+                  "id": "g8-ela-vm-7",
+                  "type": "mc",
+                  "prompt": "Which sentence corrects an inappropriate shift in verb voice?",
+                  "choices": [
+                    "Lucas drafted the poster, and Ava painted the border.",
+                    "Lucas drafted it, and the border was painted.",
+                    "The poster was drafted, and Ava painted it.",
+                    "Drafting the poster, the border was painted."
+                  ],
+                  "answer": "Lucas drafted the poster, and Ava painted the border.",
+                  "explanation": "Keep verb voice consistent across clauses—both clauses here use clear active voice."
+                },
+                {
+                  "id": "g8-ela-vm-8",
+                  "type": "mc",
+                  "prompt": "What verb mood states a plain fact: \"Lake Erie borders northern Ohio.\"?",
+                  "choices": [
+                    "Indicative mood",
+                    "Subjunctive mood",
+                    "Imperative mood",
+                    "Conditional mood"
+                  ],
+                  "answer": "Indicative mood",
+                  "explanation": "The indicative mood is used for ordinary statements of fact or opinion."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Arguments & Grammar Conventions] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Active vs. Passive Voice & Verb Moods\" (L.8.1b / L.8.1c / OH.L.8.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-ela-u2-l3-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Active and Passive Voice & Verb Moods",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Active vs. Passive Voice & Verb Moods\" (L.8.1b / L.8.1c / OH.L.8.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/grammar/syntax-conventions-of-standard-english"
+              },
+              {
+                "id": "g8-ela-u2-l3-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Active vs. Passive Voice & Verb Moods.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-ela-u2-l3-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (L.8.1b / L.8.1c / OH.L.8.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Active vs. Passive Voice & Verb Moods.",
+              "In active voice the subject performs the action; verb moods include indicative, imperative, interrogative, conditional, and subjunctive.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which sentence is written in the active voice?\" → Answer: The chef prepared a fresh soup.. (In active voice, the subject (\"The chef\") directly performs the action (\"prepared\").)",
+            "links": [
+              {
+                "label": "YouTube: \"Arguments & Grammar Conventions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20ela%20Arguments%20%26%20Grammar%20Conventions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Arguments & Grammar Conventions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Arguments%20%26%20Grammar%20Conventions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-ela-u2-test",
+          "unitId": "g8-ela-u2",
+          "title": "Unit 2 Exam: Arguments, Verbals, Voice & Moods",
+          "kind": "unit_test",
+          "partOf": "Arguments & Grammar Conventions",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/humanities/grammar/syntax-conventions-of-standard-english",
+          "videoTitle": "Unit 2 ELA Mastery Exam",
+          "reading": "Complete this 8-question exam covering argument evaluation, gerunds, participles, infinitives, active/passive voice, and verb moods.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g8-ela-arguments",
+              "title": "Evaluating Arguments, Sound Reasoning & Conflicting Evidence",
+              "standard": "RI.8.8 / RI.8.9",
+              "summary": "Strong arguments back claims with relevant, verifiable evidence and address conflicting viewpoints fairly.",
+              "bank": [
+                {
+                  "id": "g8-ela-arg-1",
+                  "type": "mc",
+                  "prompt": "What makes a piece of evidence relevant to an author’s claim?",
+                  "choices": [
+                    "It directly supports and proves the specific claim.",
+                    "It uses long, complicated words.",
+                    "It talks about an unrelated topic.",
+                    "It is based only on a rumor."
+                  ],
+                  "answer": "It directly supports and proves the specific claim.",
+                  "explanation": "Relevant evidence is directly connected to the claim and helps prove that the claim is true."
+                },
+                {
+                  "id": "g8-ela-arg-2",
+                  "type": "mc",
+                  "prompt": "Which source provides the strongest evidence for a claim about bike-lane safety?",
+                  "choices": [
+                    "A five-year city traffic study comparing crash rates",
+                    "One friend’s guess about bicycles",
+                    "A comic strip about a skateboard",
+                    "An ad selling sports cars"
+                  ],
+                  "answer": "A five-year city traffic study comparing crash rates",
+                  "explanation": "Verified data from a multi-year study provides sound, sufficient evidence rather than personal opinion."
+                },
+                {
+                  "id": "g8-ela-arg-3",
+                  "type": "mc",
+                  "passage": "Everyone in eighth grade knows that school should start at noon because mornings are boring.",
+                  "prompt": "Why is the reasoning in this sentence unsound?",
+                  "choices": [
+                    "It relies on exaggeration and opinion instead of facts.",
+                    "It cites too many scientific studies.",
+                    "It uses passive voice.",
+                    "It agrees with both sides."
+                  ],
+                  "answer": "It relies on exaggeration and opinion instead of facts.",
+                  "explanation": "Claiming \"everyone knows\" is a sweeping generalization without factual evidence."
+                },
+                {
+                  "id": "g8-ela-arg-4",
+                  "type": "mc",
+                  "prompt": "What is a counterclaim in an argumentative essay?",
+                  "choices": [
+                    "An opposing viewpoint that the writer addresses and refutes",
+                    "The title at the top of the page",
+                    "A list of spelling words",
+                    "A story with talking animals"
+                  ],
+                  "answer": "An opposing viewpoint that the writer addresses and refutes",
+                  "explanation": "Acknowledging and answering a counterclaim shows the writer has considered conflicting viewpoints."
+                },
+                {
+                  "id": "g8-ela-arg-5",
+                  "type": "mc",
+                  "passage": "Article A argues that solar panels save schools money using 10-year utility bills. Article B claims solar panels are too costly, citing only first-day installation fees.",
+                  "prompt": "How do these two texts disagree on the same topic?",
+                  "choices": [
+                    "They emphasize different cost timeframes to reach opposite conclusions.",
+                    "Both articles oppose solar energy.",
+                    "Neither article mentions money.",
+                    "They use the exact same facts."
+                  ],
+                  "answer": "They emphasize different cost timeframes to reach opposite conclusions.",
+                  "explanation": "Authors can present conflicting interpretations by focusing on long-term savings versus upfront cost."
+                },
+                {
+                  "id": "g8-ela-arg-6",
+                  "type": "mc",
+                  "prompt": "When is an author’s evidence considered \"sufficient\"?",
+                  "choices": [
+                    "When there is enough strong proof to convince readers",
+                    "When the author gives only one single anecdote",
+                    "When all facts are left out",
+                    "When the font size is large"
+                  ],
+                  "answer": "When there is enough strong proof to convince readers",
+                  "explanation": "Sufficient evidence means providing enough varied, reliable facts to thoroughly back the claim."
+                },
+                {
+                  "id": "g8-ela-arg-7",
+                  "type": "mc",
+                  "prompt": "Attacking a speaker’s clothes instead of their facts is an example of:",
+                  "choices": [
+                    "Irrelevant reasoning (personal attack)",
+                    "Sound scientific evidence",
+                    "A valid statistic",
+                    "An objective summary"
+                  ],
+                  "answer": "Irrelevant reasoning (personal attack)",
+                  "explanation": "Sound reasoning evaluates the evidence itself, not unrelated personal traits of the speaker."
+                },
+                {
+                  "id": "g8-ela-arg-8",
+                  "type": "mc",
+                  "prompt": "Why should readers compare two texts that present conflicting evidence?",
+                  "choices": [
+                    "To see which claim is backed by stronger, verified facts",
+                    "To memorize the page numbers",
+                    "To skip reading the conclusion",
+                    "To avoid forming an informed view"
+                  ],
+                  "answer": "To see which claim is backed by stronger, verified facts",
+                  "explanation": "Comparing conflicting texts helps readers weigh how each author uses evidence and spot weak reasoning."
+                }
+              ]
+            },
+            {
+              "id": "p-g8-ela-verbals",
+              "title": "Verbals: Gerunds, Participles & Infinitives",
+              "standard": "L.8.1a / OH.L.8.1",
+              "summary": "A gerund (-ing) acts as a noun, a participle acts as an adjective, and an infinitive (to + verb) acts as a noun, adjective, or adverb.",
+              "bank": [
+                {
+                  "id": "g8-ela-vb-1",
+                  "type": "mc",
+                  "prompt": "In \"Swimming builds endurance,\" how does the word \"Swimming\" function?",
+                  "choices": [
+                    "Gerund (verb form acting as a noun)",
+                    "Participle (adjective)",
+                    "Infinitive",
+                    "Preposition"
+                  ],
+                  "answer": "Gerund (verb form acting as a noun)",
+                  "explanation": "A gerund ends in -ing and functions as a noun—here, \"Swimming\" is the subject of the sentence."
+                },
+                {
+                  "id": "g8-ela-vb-2",
+                  "type": "mc",
+                  "prompt": "In \"The barking dog woke the street,\" what is \"barking\"?",
+                  "choices": [
+                    "Participle (verb form describing a noun)",
+                    "Gerund (subject noun)",
+                    "Infinitive",
+                    "Conjunction"
+                  ],
+                  "answer": "Participle (verb form describing a noun)",
+                  "explanation": "A participle is a verb form used as an adjective; here \"barking\" describes the noun \"dog.\""
+                },
+                {
+                  "id": "g8-ela-vb-3",
+                  "type": "mc",
+                  "prompt": "Identify the infinitive in: \"Elena plans to study astronomy.\"",
+                  "choices": [
+                    "to study",
+                    "Elena plans",
+                    "astronomy",
+                    "plans to"
+                  ],
+                  "answer": "to study",
+                  "explanation": "An infinitive is formed with \"to\" plus the base form of a verb (to study)."
+                },
+                {
+                  "id": "g8-ela-vb-4",
+                  "type": "mc",
+                  "prompt": "In \"Reading mystery novels is Noah’s favorite hobby,\" what is \"Reading\"?",
+                  "choices": [
+                    "A gerund acting as a noun",
+                    "A past participle",
+                    "An adverb",
+                    "A conjunction"
+                  ],
+                  "answer": "A gerund acting as a noun",
+                  "explanation": "\"Reading mystery novels\" acts as the noun subject of the verb \"is,\" making \"Reading\" a gerund."
+                },
+                {
+                  "id": "g8-ela-vb-5",
+                  "type": "mc",
+                  "prompt": "In \"The shattered window needed repair,\" what is \"shattered\"?",
+                  "choices": [
+                    "A past participle acting as an adjective",
+                    "A gerund acting as a noun",
+                    "An infinitive",
+                    "A pronoun"
+                  ],
+                  "answer": "A past participle acting as an adjective",
+                  "explanation": "Past participles (often ending in -ed or -en) describe nouns, like \"shattered\" describing \"window.\""
+                },
+                {
+                  "id": "g8-ela-vb-6",
+                  "type": "mc",
+                  "prompt": "Which sentence contains an infinitive phrase?",
+                  "choices": [
+                    "Liam practiced every afternoon to make the varsity team.",
+                    "Running down the hill, Liam smiled.",
+                    "Baking bread fills the kitchen with warmth.",
+                    " Liam went to the store after school."
+                  ],
+                  "answer": "Liam practiced every afternoon to make the varsity team.",
+                  "explanation": "\"To make\" is an infinitive (\"to\" + base verb); \"to the store\" is a prepositional phrase (\"to\" + noun)."
+                },
+                {
+                  "id": "g8-ela-vb-7",
+                  "type": "mc",
+                  "prompt": "How can you tell a gerund apart from a present participle?",
+                  "choices": [
+                    "Gerunds act as nouns; participles act as adjectives.",
+                    "A gerund never ends in -ing.",
+                    "A participle always starts with the word \"to.\"",
+                    "There is no difference between them."
+                  ],
+                  "answer": "Gerunds act as nouns; participles act as adjectives.",
+                  "explanation": "Both end in -ing, but gerunds name things (nouns) while participles describe nouns (adjectives)."
+                },
+                {
+                  "id": "g8-ela-vb-8",
+                  "type": "mc",
+                  "prompt": "In \"She enjoys painting landscapes,\" what role does \"painting\" play?",
+                  "choices": [
+                    "Gerund (direct object noun)",
+                    "Participle (adjective)",
+                    "Main verb",
+                    "Interjection"
+                  ],
+                  "answer": "Gerund (direct object noun)",
+                  "explanation": "\"Painting\" receives the action of \"enjoys\" as a noun (direct object), so it is a gerund."
+                }
+              ]
+            },
+            {
+              "id": "p-g8-ela-voice-mood",
+              "title": "Active vs. Passive Voice & Verb Moods",
+              "standard": "L.8.1b / L.8.1c / OH.L.8.1",
+              "summary": "In active voice the subject performs the action; verb moods include indicative, imperative, interrogative, conditional, and subjunctive.",
+              "bank": [
+                {
+                  "id": "g8-ela-vm-1",
+                  "type": "mc",
+                  "prompt": "Which sentence is written in the active voice?",
+                  "choices": [
+                    "The chef prepared a fresh soup.",
+                    "A fresh soup was prepared by the chef.",
+                    "The carrot was chopped by hand.",
+                    "Dinner was served at six."
+                  ],
+                  "answer": "The chef prepared a fresh soup.",
+                  "explanation": "In active voice, the subject (\"The chef\") directly performs the action (\"prepared\")."
+                },
+                {
+                  "id": "g8-ela-vm-2",
+                  "type": "mc",
+                  "prompt": "Rewrite in active voice: \"The winning goal was scored by Maya.\"",
+                  "choices": [
+                    "Maya scored the winning goal.",
+                    "The goal was scored by Maya quickly.",
+                    "Scoring was done by Maya.",
+                    "Was the goal scored by Maya?"
+                  ],
+                  "answer": "Maya scored the winning goal.",
+                  "explanation": "Make the doer of the action (\"Maya\") the subject of the sentence to switch to active voice."
+                },
+                {
+                  "id": "g8-ela-vm-3",
+                  "type": "mc",
+                  "prompt": "What verb mood gives a direct command: \"Close the lab door.\"?",
+                  "choices": [
+                    "Imperative mood",
+                    "Interrogative mood",
+                    "Subjunctive mood",
+                    "Conditional mood"
+                  ],
+                  "answer": "Imperative mood",
+                  "explanation": "The imperative mood gives a direct command or request, usually with an implied \"you\" subject."
+                },
+                {
+                  "id": "g8-ela-vm-4",
+                  "type": "mc",
+                  "prompt": "Identify the verb mood: \"If it rains, the game will move indoors.\"",
+                  "choices": [
+                    "Conditional mood",
+                    "Imperative mood",
+                    "Interrogative mood",
+                    "Passive voice"
+                  ],
+                  "answer": "Conditional mood",
+                  "explanation": "The conditional mood states an outcome that depends on a specific condition (\"If... then will...\")."
+                },
+                {
+                  "id": "g8-ela-vm-5",
+                  "type": "mc",
+                  "prompt": "Identify the verb mood: \"If I were captain, I would listen first.\"",
+                  "choices": [
+                    "Subjunctive mood",
+                    "Indicative mood",
+                    "Imperative mood",
+                    "Interrogative mood"
+                  ],
+                  "answer": "Subjunctive mood",
+                  "explanation": "The subjunctive mood (\"If I were...\") expresses a wish, requirement, or situation contrary to fact."
+                },
+                {
+                  "id": "g8-ela-vm-6",
+                  "type": "mc",
+                  "prompt": "What verb mood asks a question: \"Have you checked the microscope?\"",
+                  "choices": [
+                    "Interrogative mood",
+                    "Indicative mood",
+                    "Imperative mood",
+                    "Subjunctive mood"
+                  ],
+                  "answer": "Interrogative mood",
+                  "explanation": "The interrogative mood asks a direct question and ends with a question mark."
+                },
+                {
+                  "id": "g8-ela-vm-7",
+                  "type": "mc",
+                  "prompt": "Which sentence corrects an inappropriate shift in verb voice?",
+                  "choices": [
+                    "Lucas drafted the poster, and Ava painted the border.",
+                    "Lucas drafted it, and the border was painted.",
+                    "The poster was drafted, and Ava painted it.",
+                    "Drafting the poster, the border was painted."
+                  ],
+                  "answer": "Lucas drafted the poster, and Ava painted the border.",
+                  "explanation": "Keep verb voice consistent across clauses—both clauses here use clear active voice."
+                },
+                {
+                  "id": "g8-ela-vm-8",
+                  "type": "mc",
+                  "prompt": "What verb mood states a plain fact: \"Lake Erie borders northern Ohio.\"?",
+                  "choices": [
+                    "Indicative mood",
+                    "Subjunctive mood",
+                    "Imperative mood",
+                    "Conditional mood"
+                  ],
+                  "answer": "Indicative mood",
+                  "explanation": "The indicative mood is used for ordinary statements of fact or opinion."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Evaluating Arguments, Sound Reasoning & Conflicting Evidence & Verbals: Gerunds, Participles & Infinitives & Active vs. Passive Voice & Verb Moods (RI.8.8 / RI.8.9, L.8.1a / OH.L.8.1, L.8.1b / L.8.1c / OH.L.8.1). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g8-ela-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Evaluating Arguments, Sound Reasoning & Conflicting Evidence & Verbals: Gerunds, Participles & Infinitives & Active vs. Passive Voice & Verb Moods",
+                "description": "Read the Core Concept Summary and Principle cards on this page (RI.8.8 / RI.8.9, L.8.1a / OH.L.8.1, L.8.1b / L.8.1c / OH.L.8.1) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g8-ela-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 ELA Mastery Exam",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Evaluating Arguments, Sound Reasoning & Conflicting Evidence & Verbals: Gerunds, Participles & Infinitives & Active vs. Passive Voice & Verb Moods\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/grammar/syntax-conventions-of-standard-english"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Evaluating Arguments, Sound Reasoning & Conflicting Evidence.",
+              "Strong arguments back claims with relevant, verifiable evidence and address conflicting viewpoints fairly.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What makes a piece of evidence relevant to an author’s claim?\" → Answer: It directly supports and proves the specific claim.. (Relevant evidence is directly connected to the claim and helps prove that the claim is true.)",
+            "links": [
+              {
+                "label": "YouTube: \"Arguments & Grammar Conventions\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20ela%20Arguments%20%26%20Grammar%20Conventions%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Arguments & Grammar Conventions\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Arguments%20%26%20Grammar%20Conventions",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

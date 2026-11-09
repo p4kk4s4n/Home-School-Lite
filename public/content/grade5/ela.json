@@ -1,0 +1,2030 @@
+{
+  "id": "g5-ela",
+  "subject": "ela",
+  "grade": 5,
+  "title": "Grade 5 English Language Arts",
+  "subtitle": "Theme, Text Evidence, Informational Structure, Word Roots & Grammar",
+  "credits": 1,
+  "color": "#7c3aed",
+  "icon": "📖",
+  "units": [
+    {
+      "id": "g5-ela-u1",
+      "title": "Unit 1: Reading Literature & Informational Text",
+      "standards": [
+        "RL.5.1",
+        "RL.5.2",
+        "RI.5.2",
+        "RI.5.5",
+        "RI.5.8"
+      ],
+      "lessons": [
+        {
+          "id": "g5-ela-u1-l1",
+          "unitId": "g5-ela-u1",
+          "title": "Quoting Text Evidence, Inferences & Theme",
+          "kind": "lesson",
+          "partOf": "Reading Comprehension",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-5th-reading-vocab",
+          "videoTitle": "Khan Academy: Quoting Evidence & Finding Theme",
+          "reading": "Strong readers quote exact details from a passage to prove an inference. The theme of a story is its central life lesson—what the characters learn through challenges and choices.",
+          "principles": [
+            {
+              "id": "p-g5-ela-thm",
+              "title": "Text Evidence, Inferences, and Theme",
+              "standard": "RL.5.1",
+              "summary": "Quote accurately from a text to support inferences and determine theme.",
+              "bank": [
+                {
+                  "id": "g5-ela-thm-1",
+                  "type": "mc",
+                  "passage": "Maya practiced her violin for twenty minutes every evening, even when the notes sounded squeaky. By the spring concert, she played her solo smoothly.",
+                  "prompt": "What is the theme of this passage?",
+                  "choices": [
+                    "Steady practice leads to improvement",
+                    "Violins are too hard to play",
+                    "Concerts only happen in spring",
+                    "Talent needs no effort"
+                  ],
+                  "answer": "Steady practice leads to improvement",
+                  "explanation": "Theme is the life lesson of a story; Maya’s daily effort helped her succeed."
+                },
+                {
+                  "id": "g5-ela-thm-2",
+                  "type": "mc",
+                  "passage": "Leo noticed the new student sitting alone at lunch. Leo walked over, smiled, and asked, \"Want to join our table?\"",
+                  "prompt": "Which trait best describes Leo based on the text?",
+                  "choices": [
+                    "Welcoming",
+                    "Selfish",
+                    "Forgetful",
+                    "Timid"
+                  ],
+                  "answer": "Welcoming",
+                  "explanation": "Text evidence shows Leo kindly invited a lonely student to sit with him."
+                },
+                {
+                  "id": "g5-ela-thm-3",
+                  "type": "mc",
+                  "passage": "The heavy rain flooded the trail. Eli checked his map and led his sister along the high ridge so their boots stayed dry.",
+                  "prompt": "Which detail proves Eli is a careful problem solver?",
+                  "choices": [
+                    "He checked his map and took high ground",
+                    "It rained heavily on the trail",
+                    "He wore boots outside",
+                    "He has a sister"
+                  ],
+                  "answer": "He checked his map and took high ground",
+                  "explanation": "Strong text evidence directly supports the claim with specific actions from the passage."
+                },
+                {
+                  "id": "g5-ela-thm-4",
+                  "type": "mc",
+                  "prompt": "What is an inference when reading a story?",
+                  "choices": [
+                    "A conclusion based on text clues and experience",
+                    "The title printed on the cover",
+                    "A list of chapter numbers",
+                    "A random guess without clues"
+                  ],
+                  "answer": "A conclusion based on text clues and experience",
+                  "explanation": "An inference combines details in the text with what you already know to figure out unstated ideas."
+                },
+                {
+                  "id": "g5-ela-thm-5",
+                  "type": "mc",
+                  "passage": "Cara wanted to ride the tall roller coaster, while her brother Ben preferred the calm ferris wheel. They agreed to ride one together first.",
+                  "prompt": "How do Cara and Ben differ in this story?",
+                  "choices": [
+                    "Cara likes fast thrills; Ben likes calm rides",
+                    "Neither likes amusement parks",
+                    "Both are afraid of heights",
+                    "Ben loves fast roller coasters"
+                  ],
+                  "answer": "Cara likes fast thrills; Ben likes calm rides",
+                  "explanation": "Comparing characters shows how their feelings or choices are alike and different."
+                },
+                {
+                  "id": "g5-ela-thm-6",
+                  "type": "mc",
+                  "prompt": "Why do readers use quotation marks when citing text evidence?",
+                  "choices": [
+                    "To show the exact words from the author",
+                    "To make up new facts",
+                    "To change the story’s ending",
+                    "To skip reading the passage"
+                  ],
+                  "answer": "To show the exact words from the author",
+                  "explanation": "Quotation marks enclose a direct quote copied word-for-word from the text."
+                },
+                {
+                  "id": "g5-ela-thm-7",
+                  "type": "mc",
+                  "passage": "When the team lost the final game, Captain Sam shook every player’s hand and said, \"We played hard and learned a lot today.\"",
+                  "prompt": "What theme does Sam’s response show?",
+                  "choices": [
+                    "Good sportsmanship matters win or lose",
+                    "Winning is the only thing that counts",
+                    "Never play team sports",
+                    "Blame others for losing"
+                  ],
+                  "answer": "Good sportsmanship matters win or lose",
+                  "explanation": "Sam’s encouraging words after a loss show the lesson of good sportsmanship."
+                },
+                {
+                  "id": "g5-ela-thm-8",
+                  "type": "mc",
+                  "passage": "Mira stared at her empty bird feeder. Tiny footprints in the snow led straight to a plump squirrel under the pine tree.",
+                  "prompt": "What can the reader infer happened to the birdseed?",
+                  "choices": [
+                    "The squirrel ate the birdseed",
+                    "The wind blew the feeder away",
+                    "Mira forgot to buy a feeder",
+                    "Snow melted the seeds"
+                  ],
+                  "answer": "The squirrel ate the birdseed",
+                  "explanation": "The empty feeder and footprints leading to a plump squirrel are clues that support this inference."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Reading Comprehension] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Text Evidence, Inferences, and Theme\" (RL.5.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-ela-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Quoting Evidence & Finding Theme",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Text Evidence, Inferences, and Theme\" (RL.5.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-5th-reading-vocab"
+              },
+              {
+                "id": "g5-ela-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Text Evidence, Inferences, and Theme.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-ela-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (RL.5.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Text Evidence, Inferences, and Theme.",
+              "Quote accurately from a text to support inferences and determine theme.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the theme of this passage?\" → Answer: Steady practice leads to improvement. (Theme is the life lesson of a story; Maya’s daily effort helped her succeed.)",
+            "links": [
+              {
+                "label": "YouTube: \"Reading Comprehension\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20ela%20Reading%20Comprehension%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Reading Comprehension\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Reading%20Comprehension",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-ela-u1-l2",
+          "unitId": "g5-ela-u1",
+          "title": "Main Idea, Text Structure & Author’s Evidence",
+          "kind": "lesson",
+          "partOf": "Reading Comprehension",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-5th-reading-vocab",
+          "videoTitle": "Khan Academy: Informational Text Structures & Evidence",
+          "reading": "Informational texts organize ideas using structures such as cause/effect, compare/contrast, problem/solution, or sequence. Authors support their main claims with facts, statistics, and examples.",
+          "principles": [
+            {
+              "id": "p-g5-ela-inf",
+              "title": "Main Idea, Text Structure, and Supporting Evidence",
+              "standard": "RI.5.2",
+              "summary": "Identify main ideas, informational text structures, and supporting evidence.",
+              "bank": [
+                {
+                  "id": "g5-ela-inf-1",
+                  "type": "mc",
+                  "passage": "Honeybees pollinate apple, almond, and berry crops. They also make honey and beeswax. Because of their work, farms grow far more food.",
+                  "prompt": "What is the main idea of this passage?",
+                  "choices": [
+                    "Honeybees are helpful insects that support food crops",
+                    "Almonds grow on trees",
+                    "Beeswax is yellow",
+                    "Farms only grow apples"
+                  ],
+                  "answer": "Honeybees are helpful insects that support food crops",
+                  "explanation": "The main idea is the central point that all supporting details in the paragraph explain."
+                },
+                {
+                  "id": "g5-ela-inf-2",
+                  "type": "mc",
+                  "passage": "Because heavy snow blocked the mountain pass, road crews closed the highway for six hours until snowplows cleared the lanes.",
+                  "prompt": "Which text structure does this passage use?",
+                  "choices": [
+                    "Cause and effect",
+                    "Chronological biography",
+                    "Poetry stanza",
+                    "Fairy tale dialogue"
+                  ],
+                  "answer": "Cause and effect",
+                  "explanation": "Cause and effect explains why something happened (heavy snow) and what resulted (road closure)."
+                },
+                {
+                  "id": "g5-ela-inf-3",
+                  "type": "mc",
+                  "passage": "Both frogs and toads are amphibians. However, frogs have smooth, wet skin and long jumping legs, while toads have dry, bumpy skin.",
+                  "prompt": "How is the information in this passage organized?",
+                  "choices": [
+                    "Compare and contrast",
+                    "Problem and solution",
+                    "Step-by-step recipe",
+                    "Alphabetical list"
+                  ],
+                  "answer": "Compare and contrast",
+                  "explanation": "Compare and contrast shows how two topics (frogs and toads) are alike and different."
+                },
+                {
+                  "id": "g5-ela-inf-4",
+                  "type": "mc",
+                  "passage": "Plastic bottles litter city parks. To solve this problem, the town installed recycling bins and refillable water stations near every playground.",
+                  "prompt": "Which text structure does the author use here?",
+                  "choices": [
+                    "Problem and solution",
+                    "Compare and contrast",
+                    "First-person fiction",
+                    "Rhyme scheme"
+                  ],
+                  "answer": "Problem and solution",
+                  "explanation": "Problem and solution states an issue (litter) and explains actions taken to fix it."
+                },
+                {
+                  "id": "g5-ela-inf-5",
+                  "type": "mc",
+                  "passage": "First, gather two slices of bread and peanut butter. Next, spread peanut butter on one slice. Finally, press the slices together.",
+                  "prompt": "Which text structure is used in this passage?",
+                  "choices": [
+                    "Sequence (chronological order)",
+                    "Compare and contrast",
+                    "Cause and effect",
+                    "Debate"
+                  ],
+                  "answer": "Sequence (chronological order)",
+                  "explanation": "Signal words like \"First,\" \"Next,\" and \"Finally\" show steps in sequence order."
+                },
+                {
+                  "id": "g5-ela-inf-6",
+                  "type": "mc",
+                  "passage": "Wearing a bike helmet protects your head. Studies show helmets reduce serious head injuries by more than half during falls.",
+                  "prompt": "What evidence supports the author’s claim about bike helmets?",
+                  "choices": [
+                    "Studies show helmets cut head injuries in half",
+                    "Bikes have two wheels",
+                    "Helmets come in bright colors",
+                    "Parks have paved bike paths"
+                  ],
+                  "answer": "Studies show helmets cut head injuries in half",
+                  "explanation": "Authors use facts and study results as evidence to prove their claim is true."
+                },
+                {
+                  "id": "g5-ela-inf-7",
+                  "type": "mc",
+                  "prompt": "Which signal words often show a compare-and-contrast text structure?",
+                  "choices": [
+                    "Both, similarly, however, on the other hand",
+                    "Once upon a time",
+                    "First, second, third, last",
+                    "Dear Sir or Madam"
+                  ],
+                  "answer": "Both, similarly, however, on the other hand",
+                  "explanation": "Words like \"both\" and \"however\" signal similarities and differences between two subjects."
+                },
+                {
+                  "id": "g5-ela-inf-8",
+                  "type": "mc",
+                  "prompt": "What should a good summary of an informational article include?",
+                  "choices": [
+                    "The main idea and key supporting details",
+                    "Every single word from the article",
+                    "Made-up characters",
+                    "Only the last word of the page"
+                  ],
+                  "answer": "The main idea and key supporting details",
+                  "explanation": "A summary briefly states the main idea and the most important details in your own words."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Reading Comprehension] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Main Idea, Text Structure, and Supporting Evidence\" (RI.5.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-ela-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Informational Text Structures & Evidence",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Main Idea, Text Structure, and Supporting Evidence\" (RI.5.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-5th-reading-vocab"
+              },
+              {
+                "id": "g5-ela-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Main Idea, Text Structure, and Supporting Evidence.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-ela-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (RI.5.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Main Idea, Text Structure, and Supporting Evidence.",
+              "Identify main ideas, informational text structures, and supporting evidence.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the main idea of this passage?\" → Answer: Honeybees are helpful insects that support food crops. (The main idea is the central point that all supporting details in the paragraph explain.)",
+            "links": [
+              {
+                "label": "YouTube: \"Reading Comprehension\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20ela%20Reading%20Comprehension%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Reading Comprehension\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Reading%20Comprehension",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-ela-u1-rev",
+          "unitId": "g5-ela-u1",
+          "title": "Review: Literature & Informational Reading",
+          "kind": "lesson_review",
+          "partOf": "Reading Comprehension",
+          "estimatedMinutes": 10,
+          "questionCount": 6,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-5th-reading-vocab",
+          "videoTitle": "Review: Theme, Text Structure & Evidence",
+          "reading": "Review how to cite evidence for themes in stories and identify text structures in informational passages.",
+          "principles": [
+            {
+              "id": "p-g5-ela-thm",
+              "title": "Text Evidence, Inferences, and Theme",
+              "standard": "RL.5.1",
+              "summary": "Use text clues to infer meaning and find the theme.",
+              "bank": [
+                {
+                  "id": "g5-ela-thm-1",
+                  "type": "mc",
+                  "passage": "Maya practiced her violin for twenty minutes every evening, even when the notes sounded squeaky. By the spring concert, she played her solo smoothly.",
+                  "prompt": "What is the theme of this passage?",
+                  "choices": [
+                    "Steady practice leads to improvement",
+                    "Violins are too hard to play",
+                    "Concerts only happen in spring",
+                    "Talent needs no effort"
+                  ],
+                  "answer": "Steady practice leads to improvement",
+                  "explanation": "Theme is the life lesson of a story; Maya’s daily effort helped her succeed."
+                },
+                {
+                  "id": "g5-ela-thm-2",
+                  "type": "mc",
+                  "passage": "Leo noticed the new student sitting alone at lunch. Leo walked over, smiled, and asked, \"Want to join our table?\"",
+                  "prompt": "Which trait best describes Leo based on the text?",
+                  "choices": [
+                    "Welcoming",
+                    "Selfish",
+                    "Forgetful",
+                    "Timid"
+                  ],
+                  "answer": "Welcoming",
+                  "explanation": "Text evidence shows Leo kindly invited a lonely student to sit with him."
+                },
+                {
+                  "id": "g5-ela-thm-3",
+                  "type": "mc",
+                  "passage": "The heavy rain flooded the trail. Eli checked his map and led his sister along the high ridge so their boots stayed dry.",
+                  "prompt": "Which detail proves Eli is a careful problem solver?",
+                  "choices": [
+                    "He checked his map and took high ground",
+                    "It rained heavily on the trail",
+                    "He wore boots outside",
+                    "He has a sister"
+                  ],
+                  "answer": "He checked his map and took high ground",
+                  "explanation": "Strong text evidence directly supports the claim with specific actions from the passage."
+                },
+                {
+                  "id": "g5-ela-thm-4",
+                  "type": "mc",
+                  "prompt": "What is an inference when reading a story?",
+                  "choices": [
+                    "A conclusion based on text clues and experience",
+                    "The title printed on the cover",
+                    "A list of chapter numbers",
+                    "A random guess without clues"
+                  ],
+                  "answer": "A conclusion based on text clues and experience",
+                  "explanation": "An inference combines details in the text with what you already know to figure out unstated ideas."
+                },
+                {
+                  "id": "g5-ela-thm-5",
+                  "type": "mc",
+                  "passage": "Cara wanted to ride the tall roller coaster, while her brother Ben preferred the calm ferris wheel. They agreed to ride one together first.",
+                  "prompt": "How do Cara and Ben differ in this story?",
+                  "choices": [
+                    "Cara likes fast thrills; Ben likes calm rides",
+                    "Neither likes amusement parks",
+                    "Both are afraid of heights",
+                    "Ben loves fast roller coasters"
+                  ],
+                  "answer": "Cara likes fast thrills; Ben likes calm rides",
+                  "explanation": "Comparing characters shows how their feelings or choices are alike and different."
+                },
+                {
+                  "id": "g5-ela-thm-6",
+                  "type": "mc",
+                  "prompt": "Why do readers use quotation marks when citing text evidence?",
+                  "choices": [
+                    "To show the exact words from the author",
+                    "To make up new facts",
+                    "To change the story’s ending",
+                    "To skip reading the passage"
+                  ],
+                  "answer": "To show the exact words from the author",
+                  "explanation": "Quotation marks enclose a direct quote copied word-for-word from the text."
+                },
+                {
+                  "id": "g5-ela-thm-7",
+                  "type": "mc",
+                  "passage": "When the team lost the final game, Captain Sam shook every player’s hand and said, \"We played hard and learned a lot today.\"",
+                  "prompt": "What theme does Sam’s response show?",
+                  "choices": [
+                    "Good sportsmanship matters win or lose",
+                    "Winning is the only thing that counts",
+                    "Never play team sports",
+                    "Blame others for losing"
+                  ],
+                  "answer": "Good sportsmanship matters win or lose",
+                  "explanation": "Sam’s encouraging words after a loss show the lesson of good sportsmanship."
+                },
+                {
+                  "id": "g5-ela-thm-8",
+                  "type": "mc",
+                  "passage": "Mira stared at her empty bird feeder. Tiny footprints in the snow led straight to a plump squirrel under the pine tree.",
+                  "prompt": "What can the reader infer happened to the birdseed?",
+                  "choices": [
+                    "The squirrel ate the birdseed",
+                    "The wind blew the feeder away",
+                    "Mira forgot to buy a feeder",
+                    "Snow melted the seeds"
+                  ],
+                  "answer": "The squirrel ate the birdseed",
+                  "explanation": "The empty feeder and footprints leading to a plump squirrel are clues that support this inference."
+                }
+              ]
+            },
+            {
+              "id": "p-g5-ela-inf",
+              "title": "Main Idea, Text Structure, and Supporting Evidence",
+              "standard": "RI.5.2",
+              "summary": "Recognize text structures and evidence supporting an author’s point.",
+              "bank": [
+                {
+                  "id": "g5-ela-inf-1",
+                  "type": "mc",
+                  "passage": "Honeybees pollinate apple, almond, and berry crops. They also make honey and beeswax. Because of their work, farms grow far more food.",
+                  "prompt": "What is the main idea of this passage?",
+                  "choices": [
+                    "Honeybees are helpful insects that support food crops",
+                    "Almonds grow on trees",
+                    "Beeswax is yellow",
+                    "Farms only grow apples"
+                  ],
+                  "answer": "Honeybees are helpful insects that support food crops",
+                  "explanation": "The main idea is the central point that all supporting details in the paragraph explain."
+                },
+                {
+                  "id": "g5-ela-inf-2",
+                  "type": "mc",
+                  "passage": "Because heavy snow blocked the mountain pass, road crews closed the highway for six hours until snowplows cleared the lanes.",
+                  "prompt": "Which text structure does this passage use?",
+                  "choices": [
+                    "Cause and effect",
+                    "Chronological biography",
+                    "Poetry stanza",
+                    "Fairy tale dialogue"
+                  ],
+                  "answer": "Cause and effect",
+                  "explanation": "Cause and effect explains why something happened (heavy snow) and what resulted (road closure)."
+                },
+                {
+                  "id": "g5-ela-inf-3",
+                  "type": "mc",
+                  "passage": "Both frogs and toads are amphibians. However, frogs have smooth, wet skin and long jumping legs, while toads have dry, bumpy skin.",
+                  "prompt": "How is the information in this passage organized?",
+                  "choices": [
+                    "Compare and contrast",
+                    "Problem and solution",
+                    "Step-by-step recipe",
+                    "Alphabetical list"
+                  ],
+                  "answer": "Compare and contrast",
+                  "explanation": "Compare and contrast shows how two topics (frogs and toads) are alike and different."
+                },
+                {
+                  "id": "g5-ela-inf-4",
+                  "type": "mc",
+                  "passage": "Plastic bottles litter city parks. To solve this problem, the town installed recycling bins and refillable water stations near every playground.",
+                  "prompt": "Which text structure does the author use here?",
+                  "choices": [
+                    "Problem and solution",
+                    "Compare and contrast",
+                    "First-person fiction",
+                    "Rhyme scheme"
+                  ],
+                  "answer": "Problem and solution",
+                  "explanation": "Problem and solution states an issue (litter) and explains actions taken to fix it."
+                },
+                {
+                  "id": "g5-ela-inf-5",
+                  "type": "mc",
+                  "passage": "First, gather two slices of bread and peanut butter. Next, spread peanut butter on one slice. Finally, press the slices together.",
+                  "prompt": "Which text structure is used in this passage?",
+                  "choices": [
+                    "Sequence (chronological order)",
+                    "Compare and contrast",
+                    "Cause and effect",
+                    "Debate"
+                  ],
+                  "answer": "Sequence (chronological order)",
+                  "explanation": "Signal words like \"First,\" \"Next,\" and \"Finally\" show steps in sequence order."
+                },
+                {
+                  "id": "g5-ela-inf-6",
+                  "type": "mc",
+                  "passage": "Wearing a bike helmet protects your head. Studies show helmets reduce serious head injuries by more than half during falls.",
+                  "prompt": "What evidence supports the author’s claim about bike helmets?",
+                  "choices": [
+                    "Studies show helmets cut head injuries in half",
+                    "Bikes have two wheels",
+                    "Helmets come in bright colors",
+                    "Parks have paved bike paths"
+                  ],
+                  "answer": "Studies show helmets cut head injuries in half",
+                  "explanation": "Authors use facts and study results as evidence to prove their claim is true."
+                },
+                {
+                  "id": "g5-ela-inf-7",
+                  "type": "mc",
+                  "prompt": "Which signal words often show a compare-and-contrast text structure?",
+                  "choices": [
+                    "Both, similarly, however, on the other hand",
+                    "Once upon a time",
+                    "First, second, third, last",
+                    "Dear Sir or Madam"
+                  ],
+                  "answer": "Both, similarly, however, on the other hand",
+                  "explanation": "Words like \"both\" and \"however\" signal similarities and differences between two subjects."
+                },
+                {
+                  "id": "g5-ela-inf-8",
+                  "type": "mc",
+                  "prompt": "What should a good summary of an informational article include?",
+                  "choices": [
+                    "The main idea and key supporting details",
+                    "Every single word from the article",
+                    "Made-up characters",
+                    "Only the last word of the page"
+                  ],
+                  "answer": "The main idea and key supporting details",
+                  "explanation": "A summary briefly states the main idea and the most important details in your own words."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering Text Evidence, Inferences, and Theme & Main Idea, Text Structure, and Supporting Evidence (RL.5.1, RI.5.2). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g5-ela-u1-rev-step-review",
+                "type": "reading",
+                "title": "Review Principles: Text Evidence, Inferences, and Theme & Main Idea, Text Structure, and Supporting Evidence",
+                "description": "Read the Core Concept Summary and Principle cards on this page (RL.5.1, RI.5.2) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g5-ela-u1-rev-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Review: Theme, Text Structure & Evidence",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Text Evidence, Inferences, and Theme & Main Idea, Text Structure, and Supporting Evidence\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/ela/cc-5th-reading-vocab"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Text Evidence, Inferences, and Theme.",
+              "Use text clues to infer meaning and find the theme.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the theme of this passage?\" → Answer: Steady practice leads to improvement. (Theme is the life lesson of a story; Maya’s daily effort helped her succeed.)",
+            "links": [
+              {
+                "label": "YouTube: \"Reading Comprehension\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20ela%20Reading%20Comprehension%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Reading Comprehension\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Reading%20Comprehension",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-ela-u1-test",
+          "unitId": "g5-ela-u1",
+          "title": "Unit 1 Exam: Reading Literature & Informational Texts",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "questionCount": 8,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-5th-reading-vocab",
+          "videoTitle": "Unit 1 Exam Review: Reading Comprehension",
+          "reading": "Demonstrate mastery of quoting text evidence, finding theme, comparing characters, and analyzing informational text structures.",
+          "principles": [
+            {
+              "id": "p-g5-ela-thm",
+              "title": "Text Evidence, Inferences, and Theme",
+              "standard": "RL.5.2",
+              "summary": "Determine theme and support inferences with text evidence.",
+              "bank": [
+                {
+                  "id": "g5-ela-thm-1",
+                  "type": "mc",
+                  "passage": "Maya practiced her violin for twenty minutes every evening, even when the notes sounded squeaky. By the spring concert, she played her solo smoothly.",
+                  "prompt": "What is the theme of this passage?",
+                  "choices": [
+                    "Steady practice leads to improvement",
+                    "Violins are too hard to play",
+                    "Concerts only happen in spring",
+                    "Talent needs no effort"
+                  ],
+                  "answer": "Steady practice leads to improvement",
+                  "explanation": "Theme is the life lesson of a story; Maya’s daily effort helped her succeed."
+                },
+                {
+                  "id": "g5-ela-thm-2",
+                  "type": "mc",
+                  "passage": "Leo noticed the new student sitting alone at lunch. Leo walked over, smiled, and asked, \"Want to join our table?\"",
+                  "prompt": "Which trait best describes Leo based on the text?",
+                  "choices": [
+                    "Welcoming",
+                    "Selfish",
+                    "Forgetful",
+                    "Timid"
+                  ],
+                  "answer": "Welcoming",
+                  "explanation": "Text evidence shows Leo kindly invited a lonely student to sit with him."
+                },
+                {
+                  "id": "g5-ela-thm-3",
+                  "type": "mc",
+                  "passage": "The heavy rain flooded the trail. Eli checked his map and led his sister along the high ridge so their boots stayed dry.",
+                  "prompt": "Which detail proves Eli is a careful problem solver?",
+                  "choices": [
+                    "He checked his map and took high ground",
+                    "It rained heavily on the trail",
+                    "He wore boots outside",
+                    "He has a sister"
+                  ],
+                  "answer": "He checked his map and took high ground",
+                  "explanation": "Strong text evidence directly supports the claim with specific actions from the passage."
+                },
+                {
+                  "id": "g5-ela-thm-4",
+                  "type": "mc",
+                  "prompt": "What is an inference when reading a story?",
+                  "choices": [
+                    "A conclusion based on text clues and experience",
+                    "The title printed on the cover",
+                    "A list of chapter numbers",
+                    "A random guess without clues"
+                  ],
+                  "answer": "A conclusion based on text clues and experience",
+                  "explanation": "An inference combines details in the text with what you already know to figure out unstated ideas."
+                },
+                {
+                  "id": "g5-ela-thm-5",
+                  "type": "mc",
+                  "passage": "Cara wanted to ride the tall roller coaster, while her brother Ben preferred the calm ferris wheel. They agreed to ride one together first.",
+                  "prompt": "How do Cara and Ben differ in this story?",
+                  "choices": [
+                    "Cara likes fast thrills; Ben likes calm rides",
+                    "Neither likes amusement parks",
+                    "Both are afraid of heights",
+                    "Ben loves fast roller coasters"
+                  ],
+                  "answer": "Cara likes fast thrills; Ben likes calm rides",
+                  "explanation": "Comparing characters shows how their feelings or choices are alike and different."
+                },
+                {
+                  "id": "g5-ela-thm-6",
+                  "type": "mc",
+                  "prompt": "Why do readers use quotation marks when citing text evidence?",
+                  "choices": [
+                    "To show the exact words from the author",
+                    "To make up new facts",
+                    "To change the story’s ending",
+                    "To skip reading the passage"
+                  ],
+                  "answer": "To show the exact words from the author",
+                  "explanation": "Quotation marks enclose a direct quote copied word-for-word from the text."
+                },
+                {
+                  "id": "g5-ela-thm-7",
+                  "type": "mc",
+                  "passage": "When the team lost the final game, Captain Sam shook every player’s hand and said, \"We played hard and learned a lot today.\"",
+                  "prompt": "What theme does Sam’s response show?",
+                  "choices": [
+                    "Good sportsmanship matters win or lose",
+                    "Winning is the only thing that counts",
+                    "Never play team sports",
+                    "Blame others for losing"
+                  ],
+                  "answer": "Good sportsmanship matters win or lose",
+                  "explanation": "Sam’s encouraging words after a loss show the lesson of good sportsmanship."
+                },
+                {
+                  "id": "g5-ela-thm-8",
+                  "type": "mc",
+                  "passage": "Mira stared at her empty bird feeder. Tiny footprints in the snow led straight to a plump squirrel under the pine tree.",
+                  "prompt": "What can the reader infer happened to the birdseed?",
+                  "choices": [
+                    "The squirrel ate the birdseed",
+                    "The wind blew the feeder away",
+                    "Mira forgot to buy a feeder",
+                    "Snow melted the seeds"
+                  ],
+                  "answer": "The squirrel ate the birdseed",
+                  "explanation": "The empty feeder and footprints leading to a plump squirrel are clues that support this inference."
+                }
+              ]
+            },
+            {
+              "id": "p-g5-ela-inf",
+              "title": "Main Idea, Text Structure, and Supporting Evidence",
+              "standard": "RI.5.8",
+              "summary": "Identify main ideas, text structures, and author evidence.",
+              "bank": [
+                {
+                  "id": "g5-ela-inf-1",
+                  "type": "mc",
+                  "passage": "Honeybees pollinate apple, almond, and berry crops. They also make honey and beeswax. Because of their work, farms grow far more food.",
+                  "prompt": "What is the main idea of this passage?",
+                  "choices": [
+                    "Honeybees are helpful insects that support food crops",
+                    "Almonds grow on trees",
+                    "Beeswax is yellow",
+                    "Farms only grow apples"
+                  ],
+                  "answer": "Honeybees are helpful insects that support food crops",
+                  "explanation": "The main idea is the central point that all supporting details in the paragraph explain."
+                },
+                {
+                  "id": "g5-ela-inf-2",
+                  "type": "mc",
+                  "passage": "Because heavy snow blocked the mountain pass, road crews closed the highway for six hours until snowplows cleared the lanes.",
+                  "prompt": "Which text structure does this passage use?",
+                  "choices": [
+                    "Cause and effect",
+                    "Chronological biography",
+                    "Poetry stanza",
+                    "Fairy tale dialogue"
+                  ],
+                  "answer": "Cause and effect",
+                  "explanation": "Cause and effect explains why something happened (heavy snow) and what resulted (road closure)."
+                },
+                {
+                  "id": "g5-ela-inf-3",
+                  "type": "mc",
+                  "passage": "Both frogs and toads are amphibians. However, frogs have smooth, wet skin and long jumping legs, while toads have dry, bumpy skin.",
+                  "prompt": "How is the information in this passage organized?",
+                  "choices": [
+                    "Compare and contrast",
+                    "Problem and solution",
+                    "Step-by-step recipe",
+                    "Alphabetical list"
+                  ],
+                  "answer": "Compare and contrast",
+                  "explanation": "Compare and contrast shows how two topics (frogs and toads) are alike and different."
+                },
+                {
+                  "id": "g5-ela-inf-4",
+                  "type": "mc",
+                  "passage": "Plastic bottles litter city parks. To solve this problem, the town installed recycling bins and refillable water stations near every playground.",
+                  "prompt": "Which text structure does the author use here?",
+                  "choices": [
+                    "Problem and solution",
+                    "Compare and contrast",
+                    "First-person fiction",
+                    "Rhyme scheme"
+                  ],
+                  "answer": "Problem and solution",
+                  "explanation": "Problem and solution states an issue (litter) and explains actions taken to fix it."
+                },
+                {
+                  "id": "g5-ela-inf-5",
+                  "type": "mc",
+                  "passage": "First, gather two slices of bread and peanut butter. Next, spread peanut butter on one slice. Finally, press the slices together.",
+                  "prompt": "Which text structure is used in this passage?",
+                  "choices": [
+                    "Sequence (chronological order)",
+                    "Compare and contrast",
+                    "Cause and effect",
+                    "Debate"
+                  ],
+                  "answer": "Sequence (chronological order)",
+                  "explanation": "Signal words like \"First,\" \"Next,\" and \"Finally\" show steps in sequence order."
+                },
+                {
+                  "id": "g5-ela-inf-6",
+                  "type": "mc",
+                  "passage": "Wearing a bike helmet protects your head. Studies show helmets reduce serious head injuries by more than half during falls.",
+                  "prompt": "What evidence supports the author’s claim about bike helmets?",
+                  "choices": [
+                    "Studies show helmets cut head injuries in half",
+                    "Bikes have two wheels",
+                    "Helmets come in bright colors",
+                    "Parks have paved bike paths"
+                  ],
+                  "answer": "Studies show helmets cut head injuries in half",
+                  "explanation": "Authors use facts and study results as evidence to prove their claim is true."
+                },
+                {
+                  "id": "g5-ela-inf-7",
+                  "type": "mc",
+                  "prompt": "Which signal words often show a compare-and-contrast text structure?",
+                  "choices": [
+                    "Both, similarly, however, on the other hand",
+                    "Once upon a time",
+                    "First, second, third, last",
+                    "Dear Sir or Madam"
+                  ],
+                  "answer": "Both, similarly, however, on the other hand",
+                  "explanation": "Words like \"both\" and \"however\" signal similarities and differences between two subjects."
+                },
+                {
+                  "id": "g5-ela-inf-8",
+                  "type": "mc",
+                  "prompt": "What should a good summary of an informational article include?",
+                  "choices": [
+                    "The main idea and key supporting details",
+                    "Every single word from the article",
+                    "Made-up characters",
+                    "Only the last word of the page"
+                  ],
+                  "answer": "The main idea and key supporting details",
+                  "explanation": "A summary briefly states the main idea and the most important details in your own words."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Text Evidence, Inferences, and Theme & Main Idea, Text Structure, and Supporting Evidence (RL.5.2, RI.5.8). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g5-ela-u1-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Text Evidence, Inferences, and Theme & Main Idea, Text Structure, and Supporting Evidence",
+                "description": "Read the Core Concept Summary and Principle cards on this page (RL.5.2, RI.5.8) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g5-ela-u1-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 Exam Review: Reading Comprehension",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Text Evidence, Inferences, and Theme & Main Idea, Text Structure, and Supporting Evidence\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/ela/cc-5th-reading-vocab"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Text Evidence, Inferences, and Theme.",
+              "Determine theme and support inferences with text evidence.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the theme of this passage?\" → Answer: Steady practice leads to improvement. (Theme is the life lesson of a story; Maya’s daily effort helped her succeed.)",
+            "links": [
+              {
+                "label": "YouTube: \"Reading Literature & Informational Texts\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20ela%20Reading%20Literature%20%26%20Informational%20Texts%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Reading Literature & Informational Texts\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Reading%20Literature%20%26%20Informational%20Texts",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g5-ela-u2",
+      "title": "Unit 2: Figurative Language, Word Roots & Grammar",
+      "standards": [
+        "L.5.5",
+        "OH.L.5.4",
+        "L.5.1",
+        "L.5.2"
+      ],
+      "lessons": [
+        {
+          "id": "g5-ela-u2-l1",
+          "unitId": "g5-ela-u2",
+          "title": "Similes, Metaphors, Personification & Idioms",
+          "kind": "lesson",
+          "partOf": "Language & Word Study",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-5th-reading-vocab",
+          "videoTitle": "Khan Academy: Figurative Language & Idioms",
+          "reading": "Similes compare two things using \"like\" or \"as.\" Metaphors compare directly without \"like\" or \"as.\" Personification gives human actions to non-human things, and idioms/adages carry non-literal meanings.",
+          "principles": [
+            {
+              "id": "p-g5-ela-fig",
+              "title": "Figurative Language, Idioms, and Adages",
+              "standard": "L.5.5",
+              "summary": "Interpret similes, metaphors, personification, idioms, and proverbs.",
+              "bank": [
+                {
+                  "id": "g5-ela-fig-1",
+                  "type": "mc",
+                  "prompt": "What type of figurative language is \"The lake was a shining mirror\"?",
+                  "choices": [
+                    "Metaphor",
+                    "Simile",
+                    "Alliteration",
+                    "Idiom"
+                  ],
+                  "answer": "Metaphor",
+                  "explanation": "A metaphor compares two things directly without using \"like\" or \"as.\""
+                },
+                {
+                  "id": "g5-ela-fig-2",
+                  "type": "mc",
+                  "prompt": "What type of figurative language is \"Her hands were as cold as ice\"?",
+                  "choices": [
+                    "Simile",
+                    "Metaphor",
+                    "Personification",
+                    "Onomatopoeia"
+                  ],
+                  "answer": "Simile",
+                  "explanation": "A simile compares two things using the word \"like\" or \"as.\""
+                },
+                {
+                  "id": "g5-ela-fig-3",
+                  "type": "mc",
+                  "prompt": "What does the idiom \"spill the beans\" mean?",
+                  "choices": [
+                    "Tell a secret by mistake",
+                    "Cook dinner on the stove",
+                    "Plant a vegetable garden",
+                    "Clean the kitchen floor"
+                  ],
+                  "answer": "Tell a secret by mistake",
+                  "explanation": "An idiom is an expression whose figurative meaning differs from the literal words."
+                },
+                {
+                  "id": "g5-ela-fig-4",
+                  "type": "mc",
+                  "prompt": "Which sentence uses personification?",
+                  "choices": [
+                    "The autumn wind whispered through the trees.",
+                    "The wind blew at ten miles per hour.",
+                    "Leaves fell on the grass.",
+                    "The tree is forty feet tall."
+                  ],
+                  "answer": "The autumn wind whispered through the trees.",
+                  "explanation": "Personification gives human actions or feelings (like whispering) to non-human things."
+                },
+                {
+                  "id": "g5-ela-fig-5",
+                  "type": "mc",
+                  "prompt": "What does the adage \"Actions speak louder than words\" mean?",
+                  "choices": [
+                    "Your actions matter more than your words",
+                    "Shouting is the best way to talk",
+                    "Never speak in a library",
+                    "Words are louder than drums"
+                  ],
+                  "answer": "Your actions matter more than your words",
+                  "explanation": "An adage or proverb is a traditional saying that shares a common truth or piece of advice."
+                },
+                {
+                  "id": "g5-ela-fig-6",
+                  "type": "mc",
+                  "prompt": "What does the idiom \"under the weather\" mean?",
+                  "choices": [
+                    "Feeling slightly sick or tired",
+                    "Standing under an umbrella",
+                    "Watching a weather forecast",
+                    "Flying above the clouds"
+                  ],
+                  "answer": "Feeling slightly sick or tired",
+                  "explanation": "The idiom \"under the weather\" means feeling unwell."
+                },
+                {
+                  "id": "g5-ela-fig-7",
+                  "type": "mc",
+                  "prompt": "What does the metaphor \"The classroom was a beehive of activity\" mean?",
+                  "choices": [
+                    "Students were busy working everywhere",
+                    "Bees lived inside the desks",
+                    "The room was completely empty",
+                    "Everyone was asleep"
+                  ],
+                  "answer": "Students were busy working everywhere",
+                  "explanation": "Comparing the classroom to a beehive shows that everyone was actively working."
+                },
+                {
+                  "id": "g5-ela-fig-8",
+                  "type": "mc",
+                  "prompt": "Which sentence contains a simile?",
+                  "choices": [
+                    "The kitten crept like a shadow across the rug.",
+                    "The kitten is a tiny tiger.",
+                    "The kitten purred softly.",
+                    "The rug was soft and warm."
+                  ],
+                  "answer": "The kitten crept like a shadow across the rug.",
+                  "explanation": "Using \"like\" to compare the kitten to a shadow makes this a simile."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Language & Word Study] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Figurative Language, Idioms, and Adages\" (L.5.5), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-ela-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Figurative Language & Idioms",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Figurative Language, Idioms, and Adages\" (L.5.5). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-5th-reading-vocab"
+              },
+              {
+                "id": "g5-ela-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Figurative Language, Idioms, and Adages.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-ela-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (L.5.5)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Figurative Language, Idioms, and Adages.",
+              "Interpret similes, metaphors, personification, idioms, and proverbs.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What type of figurative language is \"The lake was a shining mirror\"?\" → Answer: Metaphor. (A metaphor compares two things directly without using \"like\" or \"as.\")",
+            "links": [
+              {
+                "label": "YouTube: \"Language & Word Study\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20ela%20Language%20%26%20Word%20Study%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Language & Word Study\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Language%20%26%20Word%20Study",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-ela-u2-l2",
+          "unitId": "g5-ela-u2",
+          "title": "Greek & Latin Roots, Prefixes & Context Clues",
+          "kind": "lesson",
+          "partOf": "Language & Word Study",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/ela/cc-5th-reading-vocab",
+          "videoTitle": "Khan Academy: Greek & Latin Roots and Affixes",
+          "reading": "Common Greek and Latin roots unlock unfamiliar words: tele (far), photo (light), bio (life), port (carry), and spect (look). Combine root meanings with prefixes like pre- (before) and suffixes like -less (without).",
+          "principles": [
+            {
+              "id": "p-g5-ela-rt",
+              "title": "Greek/Latin Roots, Affixes, and Context Clues",
+              "standard": "OH.L.5.4",
+              "summary": "Use Greek and Latin roots, prefixes, suffixes, and context clues to define words.",
+              "bank": [
+                {
+                  "id": "g5-ela-rt-1",
+                  "type": "mc",
+                  "prompt": "What does the Greek root \"tele\" (as in telescope) mean?",
+                  "choices": [
+                    "Far or distant",
+                    "Tiny",
+                    "Underground",
+                    "Cold"
+                  ],
+                  "answer": "Far or distant",
+                  "explanation": "The Greek root \"tele\" means far away, so a telescope helps you see distant stars."
+                },
+                {
+                  "id": "g5-ela-rt-2",
+                  "type": "mc",
+                  "prompt": "What does the Latin root \"port\" (as in transport) mean?",
+                  "choices": [
+                    "To carry",
+                    "To write",
+                    "To sleep",
+                    "To freeze"
+                  ],
+                  "answer": "To carry",
+                  "explanation": "The Latin root \"port\" means to carry; \"transport\" means to carry across from one place to another."
+                },
+                {
+                  "id": "g5-ela-rt-3",
+                  "type": "mc",
+                  "prompt": "What does the Greek root \"photo\" (as in photograph) mean?",
+                  "choices": [
+                    "Light",
+                    "Sound",
+                    "Water",
+                    "Stone"
+                  ],
+                  "answer": "Light",
+                  "explanation": "The Greek root \"photo\" means light, used in words like photograph and photosynthesis."
+                },
+                {
+                  "id": "g5-ela-rt-4",
+                  "type": "mc",
+                  "prompt": "What does the prefix \"pre-\" mean in the word \"preview\"?",
+                  "choices": [
+                    "Before",
+                    "After",
+                    "Never",
+                    "Against"
+                  ],
+                  "answer": "Before",
+                  "explanation": "The prefix \"pre-\" means before, so \"preview\" means to view beforehand."
+                },
+                {
+                  "id": "g5-ela-rt-5",
+                  "type": "mc",
+                  "prompt": "What does the suffix \"-less\" mean in the word \"fearless\"?",
+                  "choices": [
+                    "Without",
+                    "Full of",
+                    "Able to",
+                    "One who"
+                  ],
+                  "answer": "Without",
+                  "explanation": "The suffix \"-less\" means without, so \"fearless\" means without fear."
+                },
+                {
+                  "id": "g5-ela-rt-6",
+                  "type": "mc",
+                  "prompt": "What does the Greek root \"bio\" (as in biology) mean?",
+                  "choices": [
+                    "Life",
+                    "Rock",
+                    "Fire",
+                    "Number"
+                  ],
+                  "answer": "Life",
+                  "explanation": "The Greek root \"bio\" means life; biology is the study of living things."
+                },
+                {
+                  "id": "g5-ela-rt-7",
+                  "type": "mc",
+                  "prompt": "What does the Latin root \"spect\" (as in inspect) mean?",
+                  "choices": [
+                    "To look or see",
+                    "To run fast",
+                    "To build",
+                    "To hide"
+                  ],
+                  "answer": "To look or see",
+                  "explanation": "The Latin root \"spect\" means to look; to inspect means to look closely at something."
+                },
+                {
+                  "id": "g5-ela-rt-8",
+                  "type": "mc",
+                  "prompt": "The arid desert had no rain. What does \"arid\" mean?",
+                  "choices": [
+                    "Very dry",
+                    "Freezing cold",
+                    "Flooded",
+                    "Loud"
+                  ],
+                  "answer": "Very dry",
+                  "explanation": "The context clue \"no rain\" tells the reader that \"arid\" means very dry."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Language & Word Study] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Greek/Latin Roots, Affixes, and Context Clues\" (OH.L.5.4), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-ela-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Greek & Latin Roots and Affixes",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Greek/Latin Roots, Affixes, and Context Clues\" (OH.L.5.4). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/ela/cc-5th-reading-vocab"
+              },
+              {
+                "id": "g5-ela-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Greek/Latin Roots, Affixes, and Context Clues.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-ela-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.L.5.4)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Greek/Latin Roots, Affixes, and Context Clues.",
+              "Use Greek and Latin roots, prefixes, suffixes, and context clues to define words.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What does the Greek root \"tele\" (as in telescope) mean?\" → Answer: Far or distant. (The Greek root \"tele\" means far away, so a telescope helps you see distant stars.)",
+            "links": [
+              {
+                "label": "YouTube: \"Language & Word Study\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20ela%20Language%20%26%20Word%20Study%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Language & Word Study\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Language%20%26%20Word%20Study",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-ela-u2-l3",
+          "unitId": "g5-ela-u2",
+          "title": "Perfect Verb Tenses, Conjunctions & Titles",
+          "kind": "lesson",
+          "partOf": "Language & Word Study",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/grammar",
+          "videoTitle": "Khan Academy: Perfect Verb Tenses & Conjunctions",
+          "reading": "Perfect verb tenses use has/have/had + a past participle (e.g., \"She has finished\"). Correlative conjunctions work in pairs (either/or, neither/nor). Italicize book titles and put short story or poem titles in quotation marks.",
+          "principles": [
+            {
+              "id": "p-g5-ela-grm",
+              "title": "Verb Tenses, Conjunctions, Commas, and Titles",
+              "standard": "L.5.1",
+              "summary": "Use perfect verb tenses, correlative conjunctions, introductory commas, and title formatting.",
+              "bank": [
+                {
+                  "id": "g5-ela-grm-1",
+                  "type": "mc",
+                  "prompt": "Which sentence uses the present perfect verb tense correctly?",
+                  "choices": [
+                    "She has finished her science project.",
+                    "She will finish her project tomorrow.",
+                    "She finishes her project yesterday.",
+                    "She finishing her project now."
+                  ],
+                  "answer": "She has finished her science project.",
+                  "explanation": "Present perfect tense uses \"has\" or \"have\" plus a past participle (has finished)."
+                },
+                {
+                  "id": "g5-ela-grm-2",
+                  "type": "mc",
+                  "prompt": "Which pair of words is a correlative conjunction?",
+                  "choices": [
+                    "Either / or",
+                    "Run / jump",
+                    "Quickly / slowly",
+                    "Under / over"
+                  ],
+                  "answer": "Either / or",
+                  "explanation": "Correlative conjunctions work in pairs, such as \"either/or,\" \"neither/nor,\" and \"both/and.\""
+                },
+                {
+                  "id": "g5-ela-grm-3",
+                  "type": "mc",
+                  "prompt": "Choose the correct word: \"Neither the coach ___ the players were late.\"",
+                  "choices": [
+                    "nor",
+                    "or",
+                    "but",
+                    "and"
+                  ],
+                  "answer": "nor",
+                  "explanation": "\"Neither\" always pairs with the correlative conjunction \"nor.\""
+                },
+                {
+                  "id": "g5-ela-grm-4",
+                  "type": "mc",
+                  "prompt": "Where does a comma belong in \"Yes I would love to help\"?",
+                  "choices": [
+                    "After the introductory word \"Yes\"",
+                    "Between \"would\" and \"love\"",
+                    "After the word \"to\"",
+                    "No comma is needed"
+                  ],
+                  "answer": "After the introductory word \"Yes\"",
+                  "explanation": "Use a comma to set off introductory words like \"Yes,\" \"No,\" or \"Well\" at the start of a sentence."
+                },
+                {
+                  "id": "g5-ela-grm-5",
+                  "type": "mc",
+                  "prompt": "How should the title of a full-length book be formatted?",
+                  "choices": [
+                    "Italicized (or underlined when handwritten)",
+                    "Written in all lowercase letters",
+                    "Hidden in parentheses",
+                    "Crossed out"
+                  ],
+                  "answer": "Italicized (or underlined when handwritten)",
+                  "explanation": "Titles of long works like books, movies, and newspapers are italicized or underlined."
+                },
+                {
+                  "id": "g5-ela-grm-6",
+                  "type": "mc",
+                  "prompt": "How should the title of a short poem or short story be punctuated?",
+                  "choices": [
+                    "Placed inside quotation marks",
+                    "Written without capital letters",
+                    "Followed by three question marks",
+                    "Underlined twice"
+                  ],
+                  "answer": "Placed inside quotation marks",
+                  "explanation": "Use quotation marks around titles of short works like poems, articles, songs, and short stories."
+                },
+                {
+                  "id": "g5-ela-grm-7",
+                  "type": "mc",
+                  "prompt": "Which sentence has an inappropriate shift in verb tense?",
+                  "choices": [
+                    "Sam walked to the door and opens it.",
+                    "Sam walked to the door and opened it.",
+                    "Sam walks to the door and opens it.",
+                    "Sam will walk to the door and open it."
+                  ],
+                  "answer": "Sam walked to the door and opens it.",
+                  "explanation": "Verbs describing actions at the same time should stay in the same tense (walked / opened)."
+                },
+                {
+                  "id": "g5-ela-grm-8",
+                  "type": "mc",
+                  "prompt": "What part of speech is \"Wait!\" in \"Wait! Watch out!\"?",
+                  "choices": [
+                    "Interjection",
+                    "Preposition",
+                    "Pronoun",
+                    "Adjective"
+                  ],
+                  "answer": "Interjection",
+                  "explanation": "An interjection is a word or phrase that expresses strong or sudden emotion."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Language & Word Study] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Verb Tenses, Conjunctions, Commas, and Titles\" (L.5.1), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g5-ela-u2-l3-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Perfect Verb Tenses & Conjunctions",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Verb Tenses, Conjunctions, Commas, and Titles\" (L.5.1). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/grammar"
+              },
+              {
+                "id": "g5-ela-u2-l3-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Verb Tenses, Conjunctions, Commas, and Titles.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g5-ela-u2-l3-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (L.5.1)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Verb Tenses, Conjunctions, Commas, and Titles.",
+              "Use perfect verb tenses, correlative conjunctions, introductory commas, and title formatting.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which sentence uses the present perfect verb tense correctly?\" → Answer: She has finished her science project.. (Present perfect tense uses \"has\" or \"have\" plus a past participle (has finished).)",
+            "links": [
+              {
+                "label": "YouTube: \"Language & Word Study\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20ela%20Language%20%26%20Word%20Study%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Language & Word Study\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Language%20%26%20Word%20Study",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g5-ela-u2-test",
+          "unitId": "g5-ela-u2",
+          "title": "Unit 2 Exam: Figurative Language, Roots & Grammar",
+          "kind": "unit_test",
+          "estimatedMinutes": 15,
+          "questionCount": 8,
+          "videoUrl": "https://www.khanacademy.org/humanities/grammar",
+          "videoTitle": "Unit 2 Exam Review: Vocabulary & Grammar Conventions",
+          "reading": "Complete the Unit 2 Exam on similes, metaphors, idioms, Greek and Latin roots, verb tenses, conjunctions, and punctuation.",
+          "principles": [
+            {
+              "id": "p-g5-ela-fig",
+              "title": "Figurative Language, Idioms, and Adages",
+              "standard": "L.5.5",
+              "summary": "Identify and explain similes, metaphors, idioms, and adages.",
+              "bank": [
+                {
+                  "id": "g5-ela-fig-1",
+                  "type": "mc",
+                  "prompt": "What type of figurative language is \"The lake was a shining mirror\"?",
+                  "choices": [
+                    "Metaphor",
+                    "Simile",
+                    "Alliteration",
+                    "Idiom"
+                  ],
+                  "answer": "Metaphor",
+                  "explanation": "A metaphor compares two things directly without using \"like\" or \"as.\""
+                },
+                {
+                  "id": "g5-ela-fig-2",
+                  "type": "mc",
+                  "prompt": "What type of figurative language is \"Her hands were as cold as ice\"?",
+                  "choices": [
+                    "Simile",
+                    "Metaphor",
+                    "Personification",
+                    "Onomatopoeia"
+                  ],
+                  "answer": "Simile",
+                  "explanation": "A simile compares two things using the word \"like\" or \"as.\""
+                },
+                {
+                  "id": "g5-ela-fig-3",
+                  "type": "mc",
+                  "prompt": "What does the idiom \"spill the beans\" mean?",
+                  "choices": [
+                    "Tell a secret by mistake",
+                    "Cook dinner on the stove",
+                    "Plant a vegetable garden",
+                    "Clean the kitchen floor"
+                  ],
+                  "answer": "Tell a secret by mistake",
+                  "explanation": "An idiom is an expression whose figurative meaning differs from the literal words."
+                },
+                {
+                  "id": "g5-ela-fig-4",
+                  "type": "mc",
+                  "prompt": "Which sentence uses personification?",
+                  "choices": [
+                    "The autumn wind whispered through the trees.",
+                    "The wind blew at ten miles per hour.",
+                    "Leaves fell on the grass.",
+                    "The tree is forty feet tall."
+                  ],
+                  "answer": "The autumn wind whispered through the trees.",
+                  "explanation": "Personification gives human actions or feelings (like whispering) to non-human things."
+                },
+                {
+                  "id": "g5-ela-fig-5",
+                  "type": "mc",
+                  "prompt": "What does the adage \"Actions speak louder than words\" mean?",
+                  "choices": [
+                    "Your actions matter more than your words",
+                    "Shouting is the best way to talk",
+                    "Never speak in a library",
+                    "Words are louder than drums"
+                  ],
+                  "answer": "Your actions matter more than your words",
+                  "explanation": "An adage or proverb is a traditional saying that shares a common truth or piece of advice."
+                },
+                {
+                  "id": "g5-ela-fig-6",
+                  "type": "mc",
+                  "prompt": "What does the idiom \"under the weather\" mean?",
+                  "choices": [
+                    "Feeling slightly sick or tired",
+                    "Standing under an umbrella",
+                    "Watching a weather forecast",
+                    "Flying above the clouds"
+                  ],
+                  "answer": "Feeling slightly sick or tired",
+                  "explanation": "The idiom \"under the weather\" means feeling unwell."
+                },
+                {
+                  "id": "g5-ela-fig-7",
+                  "type": "mc",
+                  "prompt": "What does the metaphor \"The classroom was a beehive of activity\" mean?",
+                  "choices": [
+                    "Students were busy working everywhere",
+                    "Bees lived inside the desks",
+                    "The room was completely empty",
+                    "Everyone was asleep"
+                  ],
+                  "answer": "Students were busy working everywhere",
+                  "explanation": "Comparing the classroom to a beehive shows that everyone was actively working."
+                },
+                {
+                  "id": "g5-ela-fig-8",
+                  "type": "mc",
+                  "prompt": "Which sentence contains a simile?",
+                  "choices": [
+                    "The kitten crept like a shadow across the rug.",
+                    "The kitten is a tiny tiger.",
+                    "The kitten purred softly.",
+                    "The rug was soft and warm."
+                  ],
+                  "answer": "The kitten crept like a shadow across the rug.",
+                  "explanation": "Using \"like\" to compare the kitten to a shadow makes this a simile."
+                }
+              ]
+            },
+            {
+              "id": "p-g5-ela-rt",
+              "title": "Greek/Latin Roots, Affixes, and Context Clues",
+              "standard": "OH.L.5.4",
+              "summary": "Decode words using roots, prefixes, suffixes, and context.",
+              "bank": [
+                {
+                  "id": "g5-ela-rt-1",
+                  "type": "mc",
+                  "prompt": "What does the Greek root \"tele\" (as in telescope) mean?",
+                  "choices": [
+                    "Far or distant",
+                    "Tiny",
+                    "Underground",
+                    "Cold"
+                  ],
+                  "answer": "Far or distant",
+                  "explanation": "The Greek root \"tele\" means far away, so a telescope helps you see distant stars."
+                },
+                {
+                  "id": "g5-ela-rt-2",
+                  "type": "mc",
+                  "prompt": "What does the Latin root \"port\" (as in transport) mean?",
+                  "choices": [
+                    "To carry",
+                    "To write",
+                    "To sleep",
+                    "To freeze"
+                  ],
+                  "answer": "To carry",
+                  "explanation": "The Latin root \"port\" means to carry; \"transport\" means to carry across from one place to another."
+                },
+                {
+                  "id": "g5-ela-rt-3",
+                  "type": "mc",
+                  "prompt": "What does the Greek root \"photo\" (as in photograph) mean?",
+                  "choices": [
+                    "Light",
+                    "Sound",
+                    "Water",
+                    "Stone"
+                  ],
+                  "answer": "Light",
+                  "explanation": "The Greek root \"photo\" means light, used in words like photograph and photosynthesis."
+                },
+                {
+                  "id": "g5-ela-rt-4",
+                  "type": "mc",
+                  "prompt": "What does the prefix \"pre-\" mean in the word \"preview\"?",
+                  "choices": [
+                    "Before",
+                    "After",
+                    "Never",
+                    "Against"
+                  ],
+                  "answer": "Before",
+                  "explanation": "The prefix \"pre-\" means before, so \"preview\" means to view beforehand."
+                },
+                {
+                  "id": "g5-ela-rt-5",
+                  "type": "mc",
+                  "prompt": "What does the suffix \"-less\" mean in the word \"fearless\"?",
+                  "choices": [
+                    "Without",
+                    "Full of",
+                    "Able to",
+                    "One who"
+                  ],
+                  "answer": "Without",
+                  "explanation": "The suffix \"-less\" means without, so \"fearless\" means without fear."
+                },
+                {
+                  "id": "g5-ela-rt-6",
+                  "type": "mc",
+                  "prompt": "What does the Greek root \"bio\" (as in biology) mean?",
+                  "choices": [
+                    "Life",
+                    "Rock",
+                    "Fire",
+                    "Number"
+                  ],
+                  "answer": "Life",
+                  "explanation": "The Greek root \"bio\" means life; biology is the study of living things."
+                },
+                {
+                  "id": "g5-ela-rt-7",
+                  "type": "mc",
+                  "prompt": "What does the Latin root \"spect\" (as in inspect) mean?",
+                  "choices": [
+                    "To look or see",
+                    "To run fast",
+                    "To build",
+                    "To hide"
+                  ],
+                  "answer": "To look or see",
+                  "explanation": "The Latin root \"spect\" means to look; to inspect means to look closely at something."
+                },
+                {
+                  "id": "g5-ela-rt-8",
+                  "type": "mc",
+                  "prompt": "The arid desert had no rain. What does \"arid\" mean?",
+                  "choices": [
+                    "Very dry",
+                    "Freezing cold",
+                    "Flooded",
+                    "Loud"
+                  ],
+                  "answer": "Very dry",
+                  "explanation": "The context clue \"no rain\" tells the reader that \"arid\" means very dry."
+                }
+              ]
+            },
+            {
+              "id": "p-g5-ela-grm",
+              "title": "Verb Tenses, Conjunctions, Commas, and Titles",
+              "standard": "L.5.1",
+              "summary": "Apply Grade 5 grammar and punctuation conventions.",
+              "bank": [
+                {
+                  "id": "g5-ela-grm-1",
+                  "type": "mc",
+                  "prompt": "Which sentence uses the present perfect verb tense correctly?",
+                  "choices": [
+                    "She has finished her science project.",
+                    "She will finish her project tomorrow.",
+                    "She finishes her project yesterday.",
+                    "She finishing her project now."
+                  ],
+                  "answer": "She has finished her science project.",
+                  "explanation": "Present perfect tense uses \"has\" or \"have\" plus a past participle (has finished)."
+                },
+                {
+                  "id": "g5-ela-grm-2",
+                  "type": "mc",
+                  "prompt": "Which pair of words is a correlative conjunction?",
+                  "choices": [
+                    "Either / or",
+                    "Run / jump",
+                    "Quickly / slowly",
+                    "Under / over"
+                  ],
+                  "answer": "Either / or",
+                  "explanation": "Correlative conjunctions work in pairs, such as \"either/or,\" \"neither/nor,\" and \"both/and.\""
+                },
+                {
+                  "id": "g5-ela-grm-3",
+                  "type": "mc",
+                  "prompt": "Choose the correct word: \"Neither the coach ___ the players were late.\"",
+                  "choices": [
+                    "nor",
+                    "or",
+                    "but",
+                    "and"
+                  ],
+                  "answer": "nor",
+                  "explanation": "\"Neither\" always pairs with the correlative conjunction \"nor.\""
+                },
+                {
+                  "id": "g5-ela-grm-4",
+                  "type": "mc",
+                  "prompt": "Where does a comma belong in \"Yes I would love to help\"?",
+                  "choices": [
+                    "After the introductory word \"Yes\"",
+                    "Between \"would\" and \"love\"",
+                    "After the word \"to\"",
+                    "No comma is needed"
+                  ],
+                  "answer": "After the introductory word \"Yes\"",
+                  "explanation": "Use a comma to set off introductory words like \"Yes,\" \"No,\" or \"Well\" at the start of a sentence."
+                },
+                {
+                  "id": "g5-ela-grm-5",
+                  "type": "mc",
+                  "prompt": "How should the title of a full-length book be formatted?",
+                  "choices": [
+                    "Italicized (or underlined when handwritten)",
+                    "Written in all lowercase letters",
+                    "Hidden in parentheses",
+                    "Crossed out"
+                  ],
+                  "answer": "Italicized (or underlined when handwritten)",
+                  "explanation": "Titles of long works like books, movies, and newspapers are italicized or underlined."
+                },
+                {
+                  "id": "g5-ela-grm-6",
+                  "type": "mc",
+                  "prompt": "How should the title of a short poem or short story be punctuated?",
+                  "choices": [
+                    "Placed inside quotation marks",
+                    "Written without capital letters",
+                    "Followed by three question marks",
+                    "Underlined twice"
+                  ],
+                  "answer": "Placed inside quotation marks",
+                  "explanation": "Use quotation marks around titles of short works like poems, articles, songs, and short stories."
+                },
+                {
+                  "id": "g5-ela-grm-7",
+                  "type": "mc",
+                  "prompt": "Which sentence has an inappropriate shift in verb tense?",
+                  "choices": [
+                    "Sam walked to the door and opens it.",
+                    "Sam walked to the door and opened it.",
+                    "Sam walks to the door and opens it.",
+                    "Sam will walk to the door and open it."
+                  ],
+                  "answer": "Sam walked to the door and opens it.",
+                  "explanation": "Verbs describing actions at the same time should stay in the same tense (walked / opened)."
+                },
+                {
+                  "id": "g5-ela-grm-8",
+                  "type": "mc",
+                  "prompt": "What part of speech is \"Wait!\" in \"Wait! Watch out!\"?",
+                  "choices": [
+                    "Interjection",
+                    "Preposition",
+                    "Pronoun",
+                    "Adjective"
+                  ],
+                  "answer": "Interjection",
+                  "explanation": "An interjection is a word or phrase that expresses strong or sudden emotion."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Figurative Language, Idioms, and Adages & Greek/Latin Roots, Affixes, and Context Clues & Verb Tenses, Conjunctions, Commas, and Titles (L.5.5, OH.L.5.4, L.5.1). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g5-ela-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Figurative Language, Idioms, and Adages & Greek/Latin Roots, Affixes, and Context Clues & Verb Tenses, Conjunctions, Commas, and Titles",
+                "description": "Read the Core Concept Summary and Principle cards on this page (L.5.5, OH.L.5.4, L.5.1) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g5-ela-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Exam Review: Vocabulary & Grammar Conventions",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Figurative Language, Idioms, and Adages & Greek/Latin Roots, Affixes, and Context Clues & Verb Tenses, Conjunctions, Commas, and Titles\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/grammar"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Figurative Language, Idioms, and Adages.",
+              "Identify and explain similes, metaphors, idioms, and adages.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What type of figurative language is \"The lake was a shining mirror\"?\" → Answer: Metaphor. (A metaphor compares two things directly without using \"like\" or \"as.\")",
+            "links": [
+              {
+                "label": "YouTube: \"Figurative Language, Roots & Grammar\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%205%20ela%20Figurative%20Language%2C%20Roots%20%26%20Grammar%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Figurative Language, Roots & Grammar\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%205%20Figurative%20Language%2C%20Roots%20%26%20Grammar",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Reading Rockets: Accessible Reading & Comprehension Strategies",
+                "url": "https://www.readingrockets.org/topics/comprehension",
+                "kind": "article",
+                "provider": "Reading Rockets",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

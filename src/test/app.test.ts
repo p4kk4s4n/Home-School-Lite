@@ -7,6 +7,11 @@ import {
   getCoursesForGrade,
   getLessonAssignment,
 } from '../lib/curriculum'
+import { lintQuestionItem } from '../lib/plainLanguage'
+import { getLessonRemediation, getRemediationTier } from '../lib/remediation'
+import { MATH_GENERATORS } from '../lib/mathGenerators'
+import { createRng } from '../lib/random'
+import { SUPPORTED_GRADES } from '../types'
 import {
   computeCourseGrade,
   computeGpaReport,
@@ -59,23 +64,151 @@ import {
 } from '../lib/update'
 
 // Ensure public/content/*.json files are emitted and stay synchronized with ALL_COURSES
-describe('Content Catalog & JSON Emission', () => {
-  it('validates public/content/index.json and grade4/grade6 subject courses', () => {
+describe('Content Catalog, Plain-Language Standard, Ohio Opt-Out & Remediation', () => {
+  it('validates public/content/index.json and all 20 courses across Grades 4, 5, 6, 7 & 8', () => {
     expect(contentIndex.appId).toBe(APP_ID)
-    expect(contentIndex.courses).toHaveLength(ALL_COURSES.length)
+    expect(contentIndex.courses).toHaveLength(20)
+    expect(ALL_COURSES).toHaveLength(20)
 
-    expect(getCoursesForGrade(4).map((c) => c.subject).sort()).toEqual([
-      'ela',
-      'math',
-      'science',
-      'social',
-    ])
-    expect(getCoursesForGrade(6).map((c) => c.subject).sort()).toEqual([
-      'ela',
-      'math',
-      'science',
-      'social',
-    ])
+    for (const grade of SUPPORTED_GRADES) {
+      expect(getCoursesForGrade(grade).map((c) => c.subject).sort()).toEqual([
+        'ela',
+        'math',
+        'science',
+        'social',
+      ])
+    }
+  })
+
+  it('enforces Plain-Language Standard across all 20 courses (bank questions and math generators)', () => {
+    const violations: string[] = []
+
+    for (const course of ALL_COURSES) {
+      for (const unit of course.units) {
+        for (const lesson of unit.lessons) {
+          for (const principle of lesson.principles) {
+            if (principle.bank) {
+              for (const item of principle.bank) {
+                const issues = lintQuestionItem(item)
+                if (issues.length > 0) {
+                  violations.push(
+                    `[${course.id} > ${lesson.id} > ${item.id}] ${issues.join('; ')} (prompt: "${item.prompt}")`
+                  )
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    for (const [genId, genFn] of Object.entries(MATH_GENERATORS)) {
+      for (let i = 1; i <= 30; i++) {
+        const rng = createRng(i * 997)
+        const generated = genFn(rng, genId, genId)
+        const issues = lintQuestionItem(generated)
+        if (issues.length > 0) {
+          violations.push(
+            `[Generator ${genId} sample #${i}] ${issues.join('; ')} (prompt: "${generated.prompt}")`
+          )
+          break
+        }
+      }
+    }
+
+    expect(violations).toEqual([])
+
+    // Also verify buildQuizAttempt succeeds for every single lesson across all 20 courses
+    for (const course of ALL_COURSES) {
+      for (const unit of course.units) {
+        for (const lesson of unit.lessons) {
+          const questions = buildQuizAttempt({
+            lesson,
+            seed: 12345,
+            priorAttempts: [],
+            questionCount: lesson.questionCount ?? 5,
+          })
+          expect(questions.length).toBeGreaterThanOrEqual(4)
+        }
+      }
+    }
+  })
+
+  it('supports opting out of Ohio State Curriculum extensions in getCoursesForGrade', () => {
+    for (const grade of SUPPORTED_GRADES) {
+      const withOhio = getCoursesForGrade(grade, true)
+      const withoutOhio = getCoursesForGrade(grade, false)
+
+      const countLessons = (courses: typeof withOhio) =>
+        courses.reduce(
+          (sum, c) =>
+            sum + c.units.reduce((uSum, u) => uSum + u.lessons.length, 0),
+          0
+        )
+
+      expect(countLessons(withOhio)).toBeGreaterThan(countLessons(withoutOhio))
+
+      for (const course of withoutOhio) {
+        for (const unit of course.units) {
+          for (const lesson of unit.lessons) {
+            expect(lesson.isOhioExtension).toBeFalsy()
+          }
+        }
+      }
+    }
+  })
+
+  it('computes remediation tiers and requires Parent PIN on external remediation links', () => {
+    const course = getCourseById('g5-math')!
+    const lesson = course.units[0].lessons[0]
+    const remediation = getLessonRemediation(lesson, course.subject, course.grade)
+
+    expect(remediation.simpleSteps.length).toBeGreaterThanOrEqual(2)
+    expect(remediation.links.length).toBeGreaterThanOrEqual(2)
+    for (const link of remediation.links) {
+      expect(link.requiresParentPin).toBe(true)
+    }
+
+    expect(getRemediationTier([], 80)).toBe(0)
+    const failedOnce = [
+      {
+        id: 'f1',
+        studentId: 's1',
+        courseId: course.id,
+        unitId: lesson.unitId,
+        lessonId: lesson.id,
+        kind: 'lesson' as const,
+        attemptNumber: 1,
+        seed: 1,
+        scorePercent: 60,
+        correctCount: 3,
+        totalCount: 5,
+        passed: false,
+        questionFingerprints: [],
+        missedPrincipleIds: [],
+        completedAt: '2026-11-09T00:00:00Z',
+      },
+    ]
+    expect(getRemediationTier(failedOnce, 80)).toBe(1)
+    expect(
+      getRemediationTier(
+        [
+          ...failedOnce,
+          { ...failedOnce[0], id: 'f2', attemptNumber: 2 },
+        ],
+        80
+      )
+    ).toBe(2)
+    expect(
+      getRemediationTier(
+        [
+          ...failedOnce,
+          { ...failedOnce[0], id: 'f2', attemptNumber: 2 },
+          { ...failedOnce[0], id: 'f3', attemptNumber: 3 },
+        ],
+        80
+      )
+    ).toBe(3)
   })
 })
 
@@ -364,15 +497,21 @@ describe('Sequential Unlock Progress, Student Grade Switching & Backup Round-Tri
       missedPrincipleIds: [],
     })
 
-    // Switch student to Grade 6 in settings
-    const switched = await updateStudent(student.id, { grade: 6 })
-    expect(switched.grade).toBe(6)
-    expect(getCoursesForGrade(switched.grade).map((c) => c.id).sort()).toEqual([
-      'g6-ela',
-      'g6-math',
-      'g6-science',
-      'g6-social',
-    ])
+    // Switch student across Grades 5, 6, 7, and 8 in settings
+    for (const targetGrade of [5, 6, 7, 8] as const) {
+      const switched = await updateStudent(student.id, { grade: targetGrade })
+      expect(switched.grade).toBe(targetGrade)
+      expect(getCoursesForGrade(switched.grade).map((c) => c.id).sort()).toEqual([
+        `g${targetGrade}-ela`,
+        `g${targetGrade}-math`,
+        `g${targetGrade}-science`,
+        `g${targetGrade}-social`,
+      ])
+    }
+
+    // Verify getStudents() preserves Grade 8 (does not coerce to 4)
+    const reloadedStudents = await getStudents()
+    expect(reloadedStudents.find((s) => s.id === student.id)?.grade).toBe(8)
 
     // Switch back to Grade 4 and verify the Grade 4 attempt is still intact
     await updateStudent(student.id, { grade: 4 })

@@ -3,7 +3,7 @@
   "subject": "science",
   "grade": 6,
   "title": "Grade 6 Science",
-  "subtitle": "Cell Biology, Organ Systems, Plate Tectonics, Weather/Climate & Thermal Energy",
+  "subtitle": "Cells, Organ Systems, Plate Tectonics, Ohio Rocks & Minerals, and Thermal Energy",
   "credits": 1,
   "color": "#059669",
   "icon": "⚛",
@@ -20,184 +20,742 @@
         {
           "id": "g6-sci-u1-l1",
           "unitId": "g6-sci-u1",
-          "title": "Lesson 1: Cell Theory, Organelles & Plant vs. Animal Cells",
+          "title": "Cell Theory & Organelles (Part 1 of 2)",
+          "partOf": "Cells & Body Systems",
           "kind": "lesson",
-          "estimatedMinutes": 22,
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms",
-          "videoTitle": "Khan Academy Middle School Biology: Cells and Organelles",
-          "reading": "All living things are composed of one or more cells—the basic unit of life. Inside eukaryotic cells, specialized organelles carry out vital functions: the nucleus stores DNA and directs cell activities; mitochondria perform cellular respiration to release ATP energy; the cell membrane regulates what enters and leaves; and plant cells additionally possess a rigid cell wall and chloroplasts for photosynthesis.",
+          "videoTitle": "Khan Academy: Cell Parts and Functions",
+          "reading": "All living things are made of cells. The nucleus holds DNA, mitochondria release energy, and the cell membrane controls what enters and exits. Plant cells also have chloroplasts for sunlight and a stiff cell wall.",
           "principles": [
             {
               "id": "p-g6-sci-cells",
-              "title": "Cell Organelles and Plant vs. Animal Cell Differences",
+              "title": "Cell Organelles and Plant vs. Animal Cells",
               "standard": "MS-LS1-2",
-              "summary": "Identify functions of the nucleus, mitochondria, chloroplasts, cell wall, and cell membrane.",
+              "summary": "Identify the jobs of the nucleus, mitochondria, chloroplasts, cell wall, and membrane.",
               "bank": [
                 {
-                  "id": "c1",
+                  "id": "g6-sci-c1",
                   "type": "mc",
-                  "prompt": "Which organelle is known as the \"powerhouse of the cell\" because it converts glucose into usable cellular energy (ATP)?",
+                  "prompt": "Which organelle makes usable energy (ATP) for the cell?",
                   "choices": [
                     "Mitochondria",
                     "Ribosome",
-                    "Golgi apparatus",
-                    "Cell wall"
+                    "Cell wall",
+                    "Vacuole"
                   ],
                   "answer": "Mitochondria",
-                  "explanation": "Mitochondria carry out cellular respiration, breaking down sugar molecules to release energy for the cell."
+                  "explanation": "Mitochondria are the powerhouses of the cell. They break down sugar to release usable energy."
                 },
                 {
-                  "id": "c2",
+                  "id": "g6-sci-c2",
                   "type": "mc",
-                  "prompt": "Which two structures are present in PLANT cells but NOT in animal cells?",
+                  "prompt": "Which two structures are found in plant cells only?",
                   "choices": [
-                    "Chloroplasts and a rigid cell wall",
+                    "Chloroplasts and cell wall",
                     "Nucleus and mitochondria",
                     "Cell membrane and cytoplasm",
-                    "Ribosomes and DNA"
+                    "Ribosomes and vacuoles"
                   ],
-                  "answer": "Chloroplasts and a rigid cell wall",
-                  "explanation": "Plant cells have chloroplasts to capture sunlight for photosynthesis and a cellulose cell wall for structural support."
+                  "answer": "Chloroplasts and cell wall",
+                  "explanation": "Plant cells have chloroplasts to capture sunlight and a stiff cell wall for support."
                 },
                 {
-                  "id": "c3",
+                  "id": "g6-sci-c3",
                   "type": "mc",
-                  "prompt": "What is the main role of the selectively permeable cell membrane?",
+                  "prompt": "What is the main job of the cell membrane?",
                   "choices": [
-                    "Controlling which substances enter and exit the cell to maintain homeostasis",
-                    "Manufacturing sunlight inside the cell",
-                    "Storing all genetic chromosomes",
-                    "Giving oak trees rigid woody bark"
+                    "Control what enters and leaves the cell",
+                    "Make food from sunlight",
+                    "Store all genetic DNA",
+                    "Give plant stems stiff bark"
                   ],
-                  "answer": "Controlling which substances enter and exit the cell to maintain homeostasis",
-                  "explanation": "The cell membrane acts as a selective gatekeeper, letting nutrients and water in while exporting wastes."
+                  "answer": "Control what enters and leaves the cell",
+                  "explanation": "The cell membrane is a selective barrier that lets water and nutrients in while keeping waste out."
                 },
                 {
-                  "id": "c4",
+                  "id": "g6-sci-c4",
                   "type": "mc",
-                  "prompt": "Where is the hereditary genetic material (DNA) housed in a eukaryotic cell?",
+                  "prompt": "Where is DNA stored inside a plant or animal cell?",
                   "choices": [
                     "Inside the nucleus",
                     "Outside the cell wall",
                     "Inside the vacuole",
-                    "In the lipid bilayer"
+                    "On the outer membrane"
                   ],
                   "answer": "Inside the nucleus",
-                  "explanation": "In eukaryotic cells, chromosomes made of DNA are enclosed inside the membrane-bound nucleus."
+                  "explanation": "The nucleus is the control center of a eukaryotic cell and holds the DNA."
                 },
                 {
-                  "id": "c5",
+                  "id": "g6-sci-c5",
                   "type": "mc",
-                  "prompt": "Which statement is a fundamental part of modern Cell Theory?",
+                  "prompt": "What does modern Cell Theory state about all living things?",
                   "choices": [
-                    "All living organisms are made of one or more cells, and all cells come from pre-existing cells.",
-                    "Only animals are made of cells; plants are made of minerals.",
-                    "Cells spontaneously generate from nonliving dust every day.",
-                    "All cells are large enough to see without a microscope."
+                    "All living things are made of cells",
+                    "Only animals are made of cells",
+                    "New cells form from nonliving dust",
+                    "Every cell is visible without a microscope"
                   ],
-                  "answer": "All living organisms are made of one or more cells, and all cells come from pre-existing cells.",
-                  "explanation": "Cell theory states that cells are the basic unit of life, all organisms consist of cells, and cells arise from existing cells."
+                  "answer": "All living things are made of cells",
+                  "explanation": "Cell theory states that all living things are made of cells, and cells come from existing cells."
                 },
                 {
-                  "id": "c6",
+                  "id": "g6-sci-c6",
                   "type": "mc",
-                  "prompt": "In what order is biological organization arranged from SIMPLEST to MOST COMPLEX in multicellular organisms?",
+                  "prompt": "Which organelle captures sunlight to make sugar in plants?",
                   "choices": [
-                    "Cell → Tissue → Organ → Organ System → Organism",
-                    "Organ → Cell → Tissue → Organism → Organ System",
-                    "Tissue → Cell → Organ System → Organ → Organism",
-                    "Organism → Organ System → Organ → Tissue → Cell"
+                    "Chloroplast",
+                    "Mitochondria",
+                    "Nucleus",
+                    "Lysosome"
                   ],
-                  "answer": "Cell → Tissue → Organ → Organ System → Organism",
-                  "explanation": "Similar cells form tissues, tissues combine into organs, organs work together in organ systems, making up the organism."
+                  "answer": "Chloroplast",
+                  "explanation": "Chloroplasts contain green chlorophyll and carry out photosynthesis to make sugar from sunlight."
                 },
                 {
-                  "id": "c7",
+                  "id": "g6-sci-c7",
                   "type": "mc",
-                  "prompt": "Why do plant cells have a single large central vacuole?",
+                  "prompt": "Why do plant cells have a large central vacuole?",
                   "choices": [
-                    "To store water and maintain turgor pressure so the plant stays upright",
-                    "To pump blood through the stem",
+                    "To store water and keep stems upright",
+                    "To pump blood through leaves",
                     "To digest insects",
-                    "To help the plant walk toward light"
+                    "To help roots walk"
                   ],
-                  "answer": "To store water and maintain turgor pressure so the plant stays upright",
-                  "explanation": "When full of water, the central vacuole presses outward against the cell wall (turgor pressure), keeping stems crisp."
+                  "answer": "To store water and keep stems upright",
+                  "explanation": "A full central vacuole pushes against the cell wall so the plant stands tall instead of wilting."
                 },
                 {
-                  "id": "c8",
+                  "id": "g6-sci-c8",
                   "type": "mc",
-                  "prompt": "How do the respiratory and circulatory systems work together in the human body?",
+                  "prompt": "What is the jelly-like fluid that fills a cell?",
                   "choices": [
-                    "The lungs take in oxygen and transfer it to the blood, which the heart pumps to body cells.",
-                    "The lungs pump blood while the heart digests food.",
-                    "The circulatory system only carries carbon dioxide and never oxygen.",
-                    "They operate completely independently without interacting."
+                    "Cytoplasm",
+                    "Chlorophyll",
+                    "Cellulose",
+                    "Cartilage"
                   ],
-                  "answer": "The lungs take in oxygen and transfer it to the blood, which the heart pumps to body cells.",
-                  "explanation": "Alveoli in the lungs diffuse oxygen into capillaries, and the cardiovascular system delivers that oxygen to every cell."
+                  "answer": "Cytoplasm",
+                  "explanation": "Cytoplasm is the jelly-like fluid inside the cell membrane that holds the organelles in place."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Cells & Body Systems] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Cell Organelles and Plant vs. Animal Cells\" (MS-LS1-2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-sci-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Cell Parts and Functions",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Cell Organelles and Plant vs. Animal Cells\" (MS-LS1-2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms"
+              },
+              {
+                "id": "g6-sci-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Cell Organelles and Plant vs. Animal Cells.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-sci-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (MS-LS1-2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Cell Organelles and Plant vs. Animal Cells.",
+              "Identify the jobs of the nucleus, mitochondria, chloroplasts, cell wall, and membrane.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which organelle makes usable energy (ATP) for the cell?\" → Answer: Mitochondria. (Mitochondria are the powerhouses of the cell. They break down sugar to release usable energy.)",
+            "links": [
+              {
+                "label": "YouTube: \"Cells & Body Systems\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20science%20Cells%20%26%20Body%20Systems%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Cells & Body Systems\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Cells%20%26%20Body%20Systems",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Cells & Body Systems",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Cells%20%26%20Body%20Systems",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g6-sci-u1-l2",
+          "unitId": "g6-sci-u1",
+          "title": "Tissues, Organs & Body Systems (Part 2 of 2)",
+          "partOf": "Cells & Body Systems",
+          "kind": "lesson",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms",
+          "videoTitle": "Khan Academy: Organization in the Human Body",
+          "reading": "Cells group into tissues, tissues form organs (like the heart and lungs), and organs team up in organ systems. Body systems work together to keep internal conditions stable (homeostasis).",
+          "principles": [
+            {
+              "id": "p-g6-sci-body",
+              "title": "Levels of Organization and Interacting Body Systems",
+              "standard": "MS-LS1-3",
+              "summary": "Order cell → tissue → organ → system and explain how systems cooperate.",
+              "bank": [
+                {
+                  "id": "g6-sci-b1",
+                  "type": "mc",
+                  "prompt": "What is the correct order from simplest to most complex?",
+                  "choices": [
+                    "Cell, tissue, organ, organ system",
+                    "Organ, cell, tissue, organ system",
+                    "Tissue, cell, organ, organ system",
+                    "Organ system, organ, tissue, cell"
+                  ],
+                  "answer": "Cell, tissue, organ, organ system",
+                  "explanation": "Similar cells form a tissue, tissues form an organ, and organs work together in an organ system."
+                },
+                {
+                  "id": "g6-sci-b2",
+                  "type": "mc",
+                  "prompt": "How do the lungs and heart work together?",
+                  "choices": [
+                    "Lungs bring in oxygen; blood carries it",
+                    "Lungs pump blood; heart breathes air",
+                    "Blood carries only carbon dioxide",
+                    "They never interact inside the body"
+                  ],
+                  "answer": "Lungs bring in oxygen; blood carries it",
+                  "explanation": "The respiratory system takes in oxygen, and the circulatory system pumps that oxygen to body cells."
+                },
+                {
+                  "id": "g6-sci-b3",
+                  "type": "mc",
+                  "prompt": "What is a group of similar cells working together called?",
+                  "choices": [
+                    "A tissue",
+                    "An organ system",
+                    "An organism",
+                    "An organelle"
+                  ],
+                  "answer": "A tissue",
+                  "explanation": "A tissue is a group of similar cells that perform a shared job, such as muscle tissue."
+                },
+                {
+                  "id": "g6-sci-b4",
+                  "type": "mc",
+                  "prompt": "Which body system breaks food down into nutrients?",
+                  "choices": [
+                    "Digestive system",
+                    "Skeletal system",
+                    "Nervous system",
+                    "Respiratory system"
+                  ],
+                  "answer": "Digestive system",
+                  "explanation": "The digestive system breaks food into small nutrient molecules that the blood can absorb."
+                },
+                {
+                  "id": "g6-sci-b5",
+                  "type": "mc",
+                  "prompt": "Which two systems work together to move your arm?",
+                  "choices": [
+                    "Muscular and skeletal systems",
+                    "Digestive and excretory systems",
+                    "Immune and endocrine systems",
+                    "Integumentary and urinary systems"
+                  ],
+                  "answer": "Muscular and skeletal systems",
+                  "explanation": "Muscles pull on bones at joints so the muscular and skeletal systems produce body movement."
+                },
+                {
+                  "id": "g6-sci-b6",
+                  "type": "mc",
+                  "prompt": "Which organ system sends electrical signals from the brain?",
+                  "choices": [
+                    "Nervous system",
+                    "Digestive system",
+                    "Circulatory system",
+                    "Skeletal system"
+                  ],
+                  "answer": "Nervous system",
+                  "explanation": "The nervous system uses the brain, spinal cord, and nerves to send fast messages through the body."
+                },
+                {
+                  "id": "g6-sci-b7",
+                  "type": "mc",
+                  "prompt": "What is the heart classified as in biological organization?",
+                  "choices": [
+                    "An organ",
+                    "A single cell",
+                    "An organelle",
+                    "A whole organism"
+                  ],
+                  "answer": "An organ",
+                  "explanation": "An organ is a structure made of different tissues working together, such as the heart or stomach."
+                },
+                {
+                  "id": "g6-sci-b8",
+                  "type": "mc",
+                  "prompt": "What does homeostasis mean in a living organism?",
+                  "choices": [
+                    "Keeping stable internal body conditions",
+                    "Growing taller every single hour",
+                    "Sleeping through the winter months",
+                    "Making food from sunlight"
+                  ],
+                  "answer": "Keeping stable internal body conditions",
+                  "explanation": "Homeostasis is the maintenance of stable internal conditions, like body temperature and water balance."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Cells & Body Systems] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Levels of Organization and Interacting Body Systems\" (MS-LS1-3), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-sci-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Organization in the Human Body",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Levels of Organization and Interacting Body Systems\" (MS-LS1-3). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms"
+              },
+              {
+                "id": "g6-sci-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Levels of Organization and Interacting Body Systems.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-sci-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (MS-LS1-3)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Levels of Organization and Interacting Body Systems.",
+              "Order cell → tissue → organ → system and explain how systems cooperate.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What is the correct order from simplest to most complex?\" → Answer: Cell, tissue, organ, organ system. (Similar cells form a tissue, tissues form an organ, and organs work together in an organ system.)",
+            "links": [
+              {
+                "label": "YouTube: \"Cells & Body Systems\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20science%20Cells%20%26%20Body%20Systems%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Cells & Body Systems\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Cells%20%26%20Body%20Systems",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Cells & Body Systems",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Cells%20%26%20Body%20Systems",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g6-sci-u1-test",
+          "unitId": "g6-sci-u1",
+          "title": "Unit 1 Review: Cells & Body Systems",
+          "kind": "lesson_review",
+          "estimatedMinutes": 12,
+          "videoUrl": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms",
+          "videoTitle": "Review: Cells, Organelles & Organ Systems",
+          "reading": "Review cell organelles and human body organization before moving to Earth Science.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g6-sci-cells",
+              "title": "Cell Organelles and Plant vs. Animal Cells",
+              "standard": "MS-LS1-2",
+              "summary": "Identify key cell organelles and their functions.",
+              "bank": [
+                {
+                  "id": "g6-sci-c1",
+                  "type": "mc",
+                  "prompt": "Which organelle makes usable energy (ATP) for the cell?",
+                  "choices": [
+                    "Mitochondria",
+                    "Ribosome",
+                    "Cell wall",
+                    "Vacuole"
+                  ],
+                  "answer": "Mitochondria",
+                  "explanation": "Mitochondria are the powerhouses of the cell. They break down sugar to release usable energy."
+                },
+                {
+                  "id": "g6-sci-c2",
+                  "type": "mc",
+                  "prompt": "Which two structures are found in plant cells only?",
+                  "choices": [
+                    "Chloroplasts and cell wall",
+                    "Nucleus and mitochondria",
+                    "Cell membrane and cytoplasm",
+                    "Ribosomes and vacuoles"
+                  ],
+                  "answer": "Chloroplasts and cell wall",
+                  "explanation": "Plant cells have chloroplasts to capture sunlight and a stiff cell wall for support."
+                },
+                {
+                  "id": "g6-sci-c3",
+                  "type": "mc",
+                  "prompt": "What is the main job of the cell membrane?",
+                  "choices": [
+                    "Control what enters and leaves the cell",
+                    "Make food from sunlight",
+                    "Store all genetic DNA",
+                    "Give plant stems stiff bark"
+                  ],
+                  "answer": "Control what enters and leaves the cell",
+                  "explanation": "The cell membrane is a selective barrier that lets water and nutrients in while keeping waste out."
+                },
+                {
+                  "id": "g6-sci-c4",
+                  "type": "mc",
+                  "prompt": "Where is DNA stored inside a plant or animal cell?",
+                  "choices": [
+                    "Inside the nucleus",
+                    "Outside the cell wall",
+                    "Inside the vacuole",
+                    "On the outer membrane"
+                  ],
+                  "answer": "Inside the nucleus",
+                  "explanation": "The nucleus is the control center of a eukaryotic cell and holds the DNA."
+                },
+                {
+                  "id": "g6-sci-c5",
+                  "type": "mc",
+                  "prompt": "What does modern Cell Theory state about all living things?",
+                  "choices": [
+                    "All living things are made of cells",
+                    "Only animals are made of cells",
+                    "New cells form from nonliving dust",
+                    "Every cell is visible without a microscope"
+                  ],
+                  "answer": "All living things are made of cells",
+                  "explanation": "Cell theory states that all living things are made of cells, and cells come from existing cells."
+                },
+                {
+                  "id": "g6-sci-c6",
+                  "type": "mc",
+                  "prompt": "Which organelle captures sunlight to make sugar in plants?",
+                  "choices": [
+                    "Chloroplast",
+                    "Mitochondria",
+                    "Nucleus",
+                    "Lysosome"
+                  ],
+                  "answer": "Chloroplast",
+                  "explanation": "Chloroplasts contain green chlorophyll and carry out photosynthesis to make sugar from sunlight."
+                },
+                {
+                  "id": "g6-sci-c7",
+                  "type": "mc",
+                  "prompt": "Why do plant cells have a large central vacuole?",
+                  "choices": [
+                    "To store water and keep stems upright",
+                    "To pump blood through leaves",
+                    "To digest insects",
+                    "To help roots walk"
+                  ],
+                  "answer": "To store water and keep stems upright",
+                  "explanation": "A full central vacuole pushes against the cell wall so the plant stands tall instead of wilting."
+                },
+                {
+                  "id": "g6-sci-c8",
+                  "type": "mc",
+                  "prompt": "What is the jelly-like fluid that fills a cell?",
+                  "choices": [
+                    "Cytoplasm",
+                    "Chlorophyll",
+                    "Cellulose",
+                    "Cartilage"
+                  ],
+                  "answer": "Cytoplasm",
+                  "explanation": "Cytoplasm is the jelly-like fluid inside the cell membrane that holds the organelles in place."
+                }
+              ]
+            },
+            {
+              "id": "p-g6-sci-body",
+              "title": "Levels of Organization and Interacting Body Systems",
+              "standard": "MS-LS1-3",
+              "summary": "Trace biological organization from cells to organ systems.",
+              "bank": [
+                {
+                  "id": "g6-sci-b1",
+                  "type": "mc",
+                  "prompt": "What is the correct order from simplest to most complex?",
+                  "choices": [
+                    "Cell, tissue, organ, organ system",
+                    "Organ, cell, tissue, organ system",
+                    "Tissue, cell, organ, organ system",
+                    "Organ system, organ, tissue, cell"
+                  ],
+                  "answer": "Cell, tissue, organ, organ system",
+                  "explanation": "Similar cells form a tissue, tissues form an organ, and organs work together in an organ system."
+                },
+                {
+                  "id": "g6-sci-b2",
+                  "type": "mc",
+                  "prompt": "How do the lungs and heart work together?",
+                  "choices": [
+                    "Lungs bring in oxygen; blood carries it",
+                    "Lungs pump blood; heart breathes air",
+                    "Blood carries only carbon dioxide",
+                    "They never interact inside the body"
+                  ],
+                  "answer": "Lungs bring in oxygen; blood carries it",
+                  "explanation": "The respiratory system takes in oxygen, and the circulatory system pumps that oxygen to body cells."
+                },
+                {
+                  "id": "g6-sci-b3",
+                  "type": "mc",
+                  "prompt": "What is a group of similar cells working together called?",
+                  "choices": [
+                    "A tissue",
+                    "An organ system",
+                    "An organism",
+                    "An organelle"
+                  ],
+                  "answer": "A tissue",
+                  "explanation": "A tissue is a group of similar cells that perform a shared job, such as muscle tissue."
+                },
+                {
+                  "id": "g6-sci-b4",
+                  "type": "mc",
+                  "prompt": "Which body system breaks food down into nutrients?",
+                  "choices": [
+                    "Digestive system",
+                    "Skeletal system",
+                    "Nervous system",
+                    "Respiratory system"
+                  ],
+                  "answer": "Digestive system",
+                  "explanation": "The digestive system breaks food into small nutrient molecules that the blood can absorb."
+                },
+                {
+                  "id": "g6-sci-b5",
+                  "type": "mc",
+                  "prompt": "Which two systems work together to move your arm?",
+                  "choices": [
+                    "Muscular and skeletal systems",
+                    "Digestive and excretory systems",
+                    "Immune and endocrine systems",
+                    "Integumentary and urinary systems"
+                  ],
+                  "answer": "Muscular and skeletal systems",
+                  "explanation": "Muscles pull on bones at joints so the muscular and skeletal systems produce body movement."
+                },
+                {
+                  "id": "g6-sci-b6",
+                  "type": "mc",
+                  "prompt": "Which organ system sends electrical signals from the brain?",
+                  "choices": [
+                    "Nervous system",
+                    "Digestive system",
+                    "Circulatory system",
+                    "Skeletal system"
+                  ],
+                  "answer": "Nervous system",
+                  "explanation": "The nervous system uses the brain, spinal cord, and nerves to send fast messages through the body."
+                },
+                {
+                  "id": "g6-sci-b7",
+                  "type": "mc",
+                  "prompt": "What is the heart classified as in biological organization?",
+                  "choices": [
+                    "An organ",
+                    "A single cell",
+                    "An organelle",
+                    "A whole organism"
+                  ],
+                  "answer": "An organ",
+                  "explanation": "An organ is a structure made of different tissues working together, such as the heart or stomach."
+                },
+                {
+                  "id": "g6-sci-b8",
+                  "type": "mc",
+                  "prompt": "What does homeostasis mean in a living organism?",
+                  "choices": [
+                    "Keeping stable internal body conditions",
+                    "Growing taller every single hour",
+                    "Sleeping through the winter months",
+                    "Making food from sunlight"
+                  ],
+                  "answer": "Keeping stable internal body conditions",
+                  "explanation": "Homeostasis is the maintenance of stable internal conditions, like body temperature and water balance."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering Cell Organelles and Plant vs. Animal Cells & Levels of Organization and Interacting Body Systems (MS-LS1-2, MS-LS1-3). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g6-sci-u1-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Cell Organelles and Plant vs. Animal Cells & Levels of Organization and Interacting Body Systems",
+                "description": "Read the Core Concept Summary and Principle cards on this page (MS-LS1-2, MS-LS1-3) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g6-sci-u1-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Review: Cells, Organelles & Organ Systems",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Cell Organelles and Plant vs. Animal Cells & Levels of Organization and Interacting Body Systems\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Cell Organelles and Plant vs. Animal Cells.",
+              "Identify key cell organelles and their functions.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Which organelle makes usable energy (ATP) for the cell?\" → Answer: Mitochondria. (Mitochondria are the powerhouses of the cell. They break down sugar to release usable energy.)",
+            "links": [
+              {
+                "label": "YouTube: \"Unit 1 Review: Cells & Body Systems\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20science%20Unit%201%20Review%3A%20Cells%20%26%20Body%20Systems%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Unit 1 Review: Cells & Body Systems\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Unit%201%20Review%3A%20Cells%20%26%20Body%20Systems",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Unit 1 Review: Cells & Body Systems",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Unit%201%20Review%3A%20Cells%20%26%20Body%20Systems",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     },
     {
       "id": "g6-sci-u2",
-      "title": "Unit 2: Plate Tectonics, Water Cycle & Thermal Energy Transfer",
+      "title": "Unit 2: Plate Tectonics, Ohio Rocks/Minerals & Thermal Energy",
       "standards": [
         "MS-ESS2-2",
-        "MS-ESS2-4",
+        "OH.6.ESS.1",
+        "OH.6.ESS.2",
+        "OH.6.ESS.4",
         "MS-PS3-3"
       ],
+      "isOhioExtension": true,
       "lessons": [
         {
           "id": "g6-sci-u2-l1",
           "unitId": "g6-sci-u2",
-          "title": "Lesson 1: Plate Tectonics, Convection Currents & Earth’s Interior",
+          "title": "Plate Tectonics & Mantle Convection (Part 1 of 3)",
+          "partOf": "Earth Systems & Energy",
           "kind": "lesson",
-          "estimatedMinutes": 22,
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:plate-tectonics",
-          "videoTitle": "Khan Academy Earth Science: Plate Tectonics & Mantle Convection",
-          "reading": "Earth’s rigid outer shell (the lithosphere) is broken into tectonic plates that float atop the hot, slowly flowing asthenosphere (upper mantle). Convection currents driven by heat from Earth’s core move these plates. Plates pull apart at divergent boundaries (creating mid-ocean ridges), collide at convergent boundaries (forming mountain ranges and subduction trenches), and slide past each other at transform boundaries (causing frequent earthquakes).",
+          "videoTitle": "Khan Academy: Plate Boundaries",
+          "reading": "Convection currents in the hot mantle slowly move Earth’s plates. Plates pull apart at divergent boundaries, collide at convergent boundaries, and slide sideways at transform boundaries.",
           "principles": [
             {
               "id": "p-g6-sci-plates",
               "title": "Tectonic Plate Boundaries and Mantle Convection",
               "standard": "MS-ESS2-2",
-              "summary": "Distinguish convergent, divergent, and transform boundaries and the role of mantle convection.",
+              "summary": "Distinguish convergent, divergent, and transform plate boundaries.",
               "bank": [
                 {
-                  "id": "pt1",
+                  "id": "g6-sci-pt1",
                   "type": "mc",
-                  "prompt": "What is the primary driving force that causes Earth’s tectonic plates to move slowly over millions of years?",
+                  "prompt": "What force inside Earth moves tectonic plates?",
                   "choices": [
-                    "Convection currents of heated rock rising and cooler rock sinking in the mantle",
+                    "Convection currents in the mantle",
                     "Ocean tides pulling on beaches",
-                    "Wind blowing against mountain peaks",
-                    "Solar flares striking the North Pole"
+                    "Wind blowing against mountains",
+                    "Sunlight warming the topsoil"
                   ],
-                  "answer": "Convection currents of heated rock rising and cooler rock sinking in the mantle",
-                  "explanation": "Heat from Earth’s core drives slow thermal convection currents in the mantle that drag tectonic plates along."
+                  "answer": "Convection currents in the mantle",
+                  "explanation": "Hot rock rises and cooler rock sinks in the mantle. These convection currents slowly move tectonic plates."
                 },
                 {
-                  "id": "pt2",
+                  "id": "g6-sci-pt2",
                   "type": "mc",
-                  "prompt": "At a DIVERGENT plate boundary on the ocean floor, two tectonic plates move apart and magma rises to form a:",
+                  "prompt": "What forms when two oceanic plates pull apart?",
                   "choices": [
-                    "Mid-ocean ridge and new oceanic crust",
-                    "Deep desert canyon",
-                    "Glacier",
-                    "Hurricane"
+                    "A mid-ocean ridge",
+                    "A desert canyon",
+                    "A continental glacier",
+                    "A tropical hurricane"
                   ],
-                  "answer": "Mid-ocean ridge and new oceanic crust",
-                  "explanation": "Seafloor spreading at divergent boundaries creates underwater mountain chains called mid-ocean ridges."
+                  "answer": "A mid-ocean ridge",
+                  "explanation": "At a divergent boundary underwater, plates separate and magma rises to form a mid-ocean ridge."
                 },
                 {
-                  "id": "pt3",
+                  "id": "g6-sci-pt3",
                   "type": "mc",
-                  "prompt": "The Himalayan Mountains (including Mount Everest) formed when the Indian Plate collided head-on with the Eurasian Plate. What kind of boundary is this?",
+                  "prompt": "Which plate boundary built the Himalayan Mountains?",
                   "choices": [
                     "Convergent boundary",
                     "Divergent boundary",
@@ -205,97 +763,382 @@
                     "Atmospheric boundary"
                   ],
                   "answer": "Convergent boundary",
-                  "explanation": "When two continental plates collide at a convergent boundary, the crust buckles upward into towering mountain ranges."
+                  "explanation": "At a convergent boundary, two continental plates collide and push crust upward into mountains."
                 },
                 {
-                  "id": "pt4",
+                  "id": "g6-sci-pt4",
                   "type": "mc",
-                  "prompt": "At the San Andreas Fault in California, two plates grind horizontally past each other in opposite directions, causing frequent earthquakes. This is a:",
+                  "prompt": "How do plates move at the San Andreas Fault?",
                   "choices": [
-                    "Transform boundary",
-                    "Divergent boundary",
-                    "Subduction zone",
-                    "Hotspot island"
+                    "They slide horizontally past each other",
+                    "They pull far apart underwater",
+                    "One plate melts into space",
+                    "They stay completely still forever"
                   ],
-                  "answer": "Transform boundary",
-                  "explanation": "Plates sliding laterally past one another form a transform fault boundary."
+                  "answer": "They slide horizontally past each other",
+                  "explanation": "At a transform boundary, two plates grind sideways past each other and cause frequent earthquakes."
                 },
                 {
-                  "id": "pt5",
+                  "id": "g6-sci-pt5",
                   "type": "mc",
-                  "prompt": "Which pieces of evidence did Alfred Wegener use to support his hypothesis of Continental Drift?",
+                  "prompt": "What evidence supported Wegener’s Continental Drift idea?",
                   "choices": [
-                    "Matching continental coastlines, identical fossils on separate continents, and matching rock formations",
-                    "Satellite GPS measurements taken in 1850",
-                    "Ocean temperatures at the equator",
-                    "Phases of the Moon"
+                    "Matching coastlines and matching fossils across oceans",
+                    "Satellite photos taken in 1850",
+                    "Daily changes in moon phases",
+                    "Warm ocean water at the equator"
                   ],
-                  "answer": "Matching continental coastlines, identical fossils on separate continents, and matching rock formations",
-                  "explanation": "Wegener pointed to puzzle-like continent shapes (South America and Africa), Mesosaurus/Glossopteris fossils, and matching rock belts."
+                  "answer": "Matching coastlines and matching fossils across oceans",
+                  "explanation": "Continental drift is supported by puzzle-fit coastlines and identical fossils found on separate continents."
                 },
                 {
-                  "id": "pt6",
+                  "id": "g6-sci-pt6",
                   "type": "mc",
-                  "prompt": "When a dense oceanic plate collides with a less dense continental plate, the oceanic plate sinks beneath it into the mantle in a process called:",
+                  "prompt": "What happens during subduction at a plate boundary?",
                   "choices": [
-                    "Subduction",
-                    "Evaporation",
-                    "Deposition",
-                    "Condensation"
+                    "A dense oceanic plate sinks into the mantle",
+                    "Rainwater evaporates into clouds",
+                    "Rivers drop sand at a delta",
+                    "Two clouds collide in a storm"
                   ],
-                  "answer": "Subduction",
-                  "explanation": "Denser oceanic lithosphere subducts beneath continental lithosphere, forming deep ocean trenches and volcanic arcs."
+                  "answer": "A dense oceanic plate sinks into the mantle",
+                  "explanation": "Subduction occurs when a denser oceanic plate slides beneath a lighter plate into the mantle."
+                },
+                {
+                  "id": "g6-sci-pt7",
+                  "type": "mc",
+                  "prompt": "Which layer of Earth is broken into tectonic plates?",
+                  "choices": [
+                    "The lithosphere",
+                    "The inner core",
+                    "The outer core",
+                    "The troposphere"
+                  ],
+                  "answer": "The lithosphere",
+                  "explanation": "The lithosphere is Earth’s rigid outer shell of crust and upper mantle broken into plates."
+                },
+                {
+                  "id": "g6-sci-pt8",
+                  "type": "mc",
+                  "prompt": "Why does the Pacific Ring of Fire have many volcanoes?",
+                  "choices": [
+                    "It sits along active subduction zones",
+                    "The equator heats the Pacific floor",
+                    "Meteorites hit the Pacific daily",
+                    "Icebergs melt along the coast"
+                  ],
+                  "answer": "It sits along active subduction zones",
+                  "explanation": "Subduction zones around the Pacific Plate melt rock into magma, creating volcanoes and earthquakes."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Earth Systems & Energy] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Tectonic Plate Boundaries and Mantle Convection\" (MS-ESS2-2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-sci-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Plate Boundaries",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Tectonic Plate Boundaries and Mantle Convection\" (MS-ESS2-2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:plate-tectonics"
+              },
+              {
+                "id": "g6-sci-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Tectonic Plate Boundaries and Mantle Convection.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-sci-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (MS-ESS2-2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Tectonic Plate Boundaries and Mantle Convection.",
+              "Distinguish convergent, divergent, and transform plate boundaries.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What force inside Earth moves tectonic plates?\" → Answer: Convection currents in the mantle. (Hot rock rises and cooler rock sinks in the mantle. These convection currents slowly move tectonic plates.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Systems & Energy\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20science%20Earth%20Systems%20%26%20Energy%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Systems & Energy\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Earth%20Systems%20%26%20Energy",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Systems & Energy",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Systems%20%26%20Energy",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g6-sci-u2-l2",
           "unitId": "g6-sci-u2",
-          "title": "Lesson 2: Thermal Energy Transfer (Conduction, Convection, Radiation) & Water Cycle",
+          "title": "Ohio Earth Science: Minerals, Rock Cycle & Soil (Part 2 of 3)",
+          "partOf": "Earth Systems & Energy",
           "kind": "lesson",
-          "estimatedMinutes": 22,
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-materials-and-systems",
+          "videoTitle": "Khan Academy: The Rock Cycle & Minerals (OH.6.ESS.1-4)",
+          "reading": "Minerals are identified by properties like hardness and streak. Igneous rock cools from magma, sedimentary rock (like Ohio limestone) compacts from layers of sediment, and metamorphic rock changes under heat and pressure.",
+          "principles": [
+            {
+              "id": "p-g6-sci-rocks-ohio",
+              "title": "Minerals, Igneous/Sedimentary/Metamorphic Rocks & Soil",
+              "standard": "OH.6.ESS.2",
+              "summary": "Classify igneous, sedimentary, and metamorphic rocks, mineral hardness, and soil humus.",
+              "bank": [
+                {
+                  "id": "g6-sci-rk1",
+                  "type": "mc",
+                  "prompt": "How do igneous rocks form?",
+                  "choices": [
+                    "Cooling and hardening of magma or lava",
+                    "Gluing sand grains under ocean water",
+                    "Decay of fallen autumn leaves",
+                    "Freezing of rainwater in winter"
+                  ],
+                  "answer": "Cooling and hardening of magma or lava",
+                  "explanation": "Igneous rock forms when melted rock (magma underground or lava on the surface) cools and solidifies."
+                },
+                {
+                  "id": "g6-sci-rk2",
+                  "type": "mc",
+                  "prompt": "How do sedimentary rocks like Ohio limestone form?",
+                  "choices": [
+                    "Layers of sediment compact and cement together",
+                    "Lava cools rapidly in midair",
+                    "Pure iron melts in the core",
+                    "Lightning strikes a sandy beach"
+                  ],
+                  "answer": "Layers of sediment compact and cement together",
+                  "explanation": "Sedimentary rock forms when layers of sediment or shells are pressed and cemented together over time."
+                },
+                {
+                  "id": "g6-sci-rk3",
+                  "type": "mc",
+                  "prompt": "What turns existing rock into metamorphic rock?",
+                  "choices": [
+                    "Intense heat and pressure without melting",
+                    "Gentle rain and cool wind",
+                    "Plant roots growing in soil",
+                    "Freezing and thawing of ice"
+                  ],
+                  "answer": "Intense heat and pressure without melting",
+                  "explanation": "Metamorphic rock forms deep underground when heat and pressure change a rock’s structure without melting it."
+                },
+                {
+                  "id": "g6-sci-rk4",
+                  "type": "mc",
+                  "prompt": "Which mineral property is tested using the Mohs scale?",
+                  "choices": [
+                    "Hardness (resistance to scratching)",
+                    "Magnetic pull",
+                    "Radioactive decay",
+                    "Boiling temperature"
+                  ],
+                  "answer": "Hardness (resistance to scratching)",
+                  "explanation": "The Mohs hardness scale ranks minerals from 1 (talc) to 10 (diamond) by scratch resistance."
+                },
+                {
+                  "id": "g6-sci-rk5",
+                  "type": "mc",
+                  "prompt": "What does a mineral’s streak test show?",
+                  "choices": [
+                    "The color of its powdered form",
+                    "How fast the mineral dissolves",
+                    "The weight of the crystal",
+                    "The age of the mountain"
+                  ],
+                  "answer": "The color of its powdered form",
+                  "explanation": "Streak is the color of a mineral’s powder left on an unglazed porcelain plate."
+                },
+                {
+                  "id": "g6-sci-rk6",
+                  "type": "mc",
+                  "prompt": "Why do intrusive igneous rocks have large crystals?",
+                  "choices": [
+                    "Magma cools slowly deep underground",
+                    "Lava cools instantly in cold water",
+                    "Wind polishes the rock surface",
+                    "Rivers wash away small grains"
+                  ],
+                  "answer": "Magma cools slowly deep underground",
+                  "explanation": "Slow cooling underground gives mineral crystals plenty of time to grow large, as in granite."
+                },
+                {
+                  "id": "g6-sci-rk7",
+                  "type": "mc",
+                  "prompt": "Which rock type most often contains ancient fossils?",
+                  "choices": [
+                    "Sedimentary rock",
+                    "Intrusive igneous rock",
+                    "Volcanic glass",
+                    "Liquid magma"
+                  ],
+                  "answer": "Sedimentary rock",
+                  "explanation": "Sedimentary rock forms in layers at cooler surface temperatures that preserve shells and bones as fossils."
+                },
+                {
+                  "id": "g6-sci-rk8",
+                  "type": "mc",
+                  "prompt": "What is humus in topsoil?",
+                  "choices": [
+                    "Decayed organic matter from plants and animals",
+                    "Melted granite from a volcano",
+                    "Pure salt crystals from the sea",
+                    "Solid bedrock deep underground"
+                  ],
+                  "answer": "Decayed organic matter from plants and animals",
+                  "explanation": "Humus is dark, nutrient-rich organic material formed from decomposed leaves and organisms in soil."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Earth Systems & Energy] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Minerals, Igneous/Sedimentary/Metamorphic Rocks & Soil\" (OH.6.ESS.2), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-sci-u2-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: The Rock Cycle & Minerals (OH.6.ESS.1-4)",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Minerals, Igneous/Sedimentary/Metamorphic Rocks & Soil\" (OH.6.ESS.2). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:earth-materials-and-systems"
+              },
+              {
+                "id": "g6-sci-u2-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Minerals, Igneous/Sedimentary/Metamorphic Rocks & Soil.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-sci-u2-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.6.ESS.2)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Minerals, Igneous/Sedimentary/Metamorphic Rocks & Soil.",
+              "Classify igneous, sedimentary, and metamorphic rocks, mineral hardness, and soil humus.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"How do igneous rocks form?\" → Answer: Cooling and hardening of magma or lava. (Igneous rock forms when melted rock (magma underground or lava on the surface) cools and solidifies.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Systems & Energy\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20science%20Earth%20Systems%20%26%20Energy%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Systems & Energy\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Earth%20Systems%20%26%20Energy",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Systems & Energy",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Systems%20%26%20Energy",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g6-sci-u2-l3",
+          "unitId": "g6-sci-u2",
+          "title": "Thermal Energy Transfer & Water Cycle (Part 3 of 3)",
+          "partOf": "Earth Systems & Energy",
+          "kind": "lesson",
+          "estimatedMinutes": 10,
           "videoUrl": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy",
-          "videoTitle": "Thermal Energy Transfer & The Global Water Cycle",
-          "reading": "Thermal energy always flows spontaneously from warmer objects to cooler objects by three mechanisms: Conduction (direct particle-to-particle contact, such as a metal spoon in hot soup), Convection (circulation of warm, less-dense fluids rising and cooler, denser fluids sinking in liquids and gases), and Radiation (electromagnetic waves traveling through space, such as sunlight warming Earth). Solar radiation and gravity together drive the global water cycle.",
+          "videoTitle": "Khan Academy: Conduction, Convection & Radiation",
+          "reading": "Heat flows from warmer to cooler objects by conduction (touch), convection (fluid circulation), and radiation (waves through space). Sunlight and gravity power the global water cycle.",
           "principles": [
             {
               "id": "p-g6-sci-thermal",
               "title": "Conduction, Convection, Radiation & Water Cycle Drivers",
               "standard": "MS-PS3-3",
-              "summary": "Identify conduction, convection, and radiation, and explain how solar energy and gravity power the water cycle.",
+              "summary": "Identify conduction, convection, radiation, and water cycle forces.",
               "bank": [
                 {
-                  "id": "th1",
+                  "id": "g6-sci-th1",
                   "type": "mc",
-                  "prompt": "A metal spoon left resting in a pot of boiling soup quickly becomes hot at the handle. How did heat travel up the solid spoon?",
+                  "prompt": "A spoon in hot soup gets warm by which process?",
                   "choices": [
                     "Conduction",
                     "Convection",
                     "Radiation",
-                    "Transpiration"
+                    "Evaporation"
                   ],
                   "answer": "Conduction",
-                  "explanation": "Conduction transfers thermal energy through direct collisions between vibrating atoms in a solid."
+                  "explanation": "Conduction is heat transfer through direct contact between touching particles in a solid."
                 },
                 {
-                  "id": "th2",
+                  "id": "g6-sci-th2",
                   "type": "mc",
-                  "prompt": "How does thermal energy from the Sun travel through the vacuum of outer space to warm Earth?",
+                  "prompt": "How does heat from the Sun travel through space?",
                   "choices": [
-                    "Radiation (electromagnetic waves)",
-                    "Conduction through air",
-                    "Convection of ocean water",
-                    "Friction"
+                    "Radiation",
+                    "Conduction",
+                    "Convection",
+                    "Condensation"
                   ],
-                  "answer": "Radiation (electromagnetic waves)",
-                  "explanation": "Only electromagnetic radiation can transfer energy across empty space without a matter medium."
+                  "answer": "Radiation",
+                  "explanation": "Radiation transfers energy as electromagnetic waves that can travel across empty space."
                 },
                 {
-                  "id": "th3",
+                  "id": "g6-sci-th3",
                   "type": "mc",
-                  "prompt": "In a heated room or a pot of water on a stove, warm fluid becomes less dense and rises while cooler, denser fluid sinks. This circular transfer is:",
+                  "prompt": "Warm water rises and cool water sinks by which process?",
                   "choices": [
                     "Convection",
                     "Conduction",
@@ -303,61 +1146,154 @@
                     "Sublimation"
                   ],
                   "answer": "Convection",
-                  "explanation": "Convection is heat transfer by the bulk movement of fluids (liquids or gases) due to density differences."
+                  "explanation": "Convection transfers heat by the circulation of warm, less-dense fluid rising and cool fluid sinking."
                 },
                 {
-                  "id": "th4",
+                  "id": "g6-sci-th4",
                   "type": "mc",
-                  "prompt": "Which two fundamental forces/energy sources drive the continuous movement of water through Earth’s water cycle?",
+                  "prompt": "What two forces drive Earth’s global water cycle?",
                   "choices": [
-                    "Energy from the Sun (driving evaporation) and gravity (pulling precipitation and runoff down)",
-                    "Magnetism and lunar eclipses",
-                    "Geothermal geysers and earthquakes",
-                    "Tectonic subduction and friction"
+                    "Solar energy and gravity",
+                    "Magnetism and moon phases",
+                    "Earthquakes and geysers",
+                    "Wind turbines and tides"
                   ],
-                  "answer": "Energy from the Sun (driving evaporation) and gravity (pulling precipitation and runoff down)",
-                  "explanation": "Solar radiation evaporates water into vapor, and gravity pulls condensed rain/snow back to Earth and down rivers."
+                  "answer": "Solar energy and gravity",
+                  "explanation": "Sunlight powers evaporation into the air, and gravity pulls rain and river runoff back down."
                 },
                 {
-                  "id": "th5",
+                  "id": "g6-sci-th5",
                   "type": "mc",
-                  "prompt": "In which direction does thermal energy naturally flow when two objects at different temperatures touch?",
+                  "prompt": "Which way does thermal energy naturally flow?",
                   "choices": [
-                    "From the warmer object to the cooler object until they reach thermal equilibrium",
-                    "From the colder object into the hotter object",
-                    "Only upward against gravity",
-                    "Thermal energy never moves between objects"
+                    "From warmer objects to cooler objects",
+                    "From cooler objects to warmer objects",
+                    "Only upward away from Earth",
+                    "Heat never moves between objects"
                   ],
-                  "answer": "From the warmer object to the cooler object until they reach thermal equilibrium",
-                  "explanation": "By the Second Law of Thermodynamics, heat flows spontaneously from higher temperature to lower temperature."
+                  "answer": "From warmer objects to cooler objects",
+                  "explanation": "Thermal energy always flows from a higher-temperature object to a lower-temperature object."
                 },
                 {
-                  "id": "th6",
+                  "id": "g6-sci-th6",
                   "type": "mc",
-                  "prompt": "Why do insulated thermoses and winter jackets use trapped air pockets or foam?",
+                  "prompt": "Why do winter coats trap pockets of air?",
                   "choices": [
-                    "Because trapped air is a thermal insulator that slows down heat transfer by conduction and convection",
-                    "Because foam creates new heat out of nothing",
-                    "Because metal conducts heat too slowly",
-                    "To make the jacket heavier"
+                    "Trapped air is a thermal insulator",
+                    "Air pockets create brand-new heat",
+                    "Metal is lighter than feathers",
+                    "Air makes the coat conduct heat faster"
                   ],
-                  "answer": "Because trapped air is a thermal insulator that slows down heat transfer by conduction and convection",
-                  "explanation": "Insulators resist thermal energy flow, keeping hot drinks hot and body heat inside."
+                  "answer": "Trapped air is a thermal insulator",
+                  "explanation": "A thermal insulator slows down heat transfer so your body warmth stays inside the coat."
+                },
+                {
+                  "id": "g6-sci-th7",
+                  "type": "mc",
+                  "prompt": "What happens when water vapor cools high in the sky?",
+                  "choices": [
+                    "It condenses into liquid cloud droplets",
+                    "It boils into hotter steam",
+                    "It turns into solid granite",
+                    "It disappears from the water cycle"
+                  ],
+                  "answer": "It condenses into liquid cloud droplets",
+                  "explanation": "Condensation is the change of water vapor gas into liquid droplets when air cools."
+                },
+                {
+                  "id": "g6-sci-th8",
+                  "type": "mc",
+                  "prompt": "Which material is the best thermal conductor for a pan?",
+                  "choices": [
+                    "Copper metal",
+                    "Styrofoam cup",
+                    "Dry wood",
+                    "Wool mittens"
+                  ],
+                  "answer": "Copper metal",
+                  "explanation": "Metals like copper and aluminum are thermal conductors that let heat pass through quickly."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "[Earth Systems & Energy] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Conduction, Convection, Radiation & Water Cycle Drivers\" (MS-PS3-3), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g6-sci-u2-l3-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Conduction, Convection & Radiation",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Conduction, Convection, Radiation & Water Cycle Drivers\" (MS-PS3-3). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy"
+              },
+              {
+                "id": "g6-sci-u2-l3-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Conduction, Convection, Radiation & Water Cycle Drivers.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g6-sci-u2-l3-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (MS-PS3-3)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Conduction, Convection, Radiation & Water Cycle Drivers.",
+              "Identify conduction, convection, radiation, and water cycle forces.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"A spoon in hot soup gets warm by which process?\" → Answer: Conduction. (Conduction is heat transfer through direct contact between touching particles in a solid.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Systems & Energy\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20science%20Earth%20Systems%20%26%20Energy%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Systems & Energy\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Earth%20Systems%20%26%20Energy",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Systems & Energy",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Systems%20%26%20Energy",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         },
         {
           "id": "g6-sci-u2-test",
           "unitId": "g6-sci-u2",
-          "title": "Unit 2 Exam: Earth Systems & Thermal Energy",
+          "title": "Unit 2 Exam: Earth Systems, Rocks & Thermal Energy",
           "kind": "unit_test",
-          "estimatedMinutes": 25,
+          "isOhioExtension": true,
+          "estimatedMinutes": 15,
           "videoUrl": "https://www.khanacademy.org/science/middle-school-earth-and-space-science",
-          "videoTitle": "Grade 6 Science Comprehensive Review",
-          "reading": "Review plate tectonics, thermal transfer, and the water cycle for the Unit 2 Exam.",
-          "questionCount": 6,
+          "videoTitle": "Unit 2 Comprehensive Science Exam",
+          "reading": "Demonstrate mastery of plate tectonics, the rock cycle, and heat transfer.",
+          "questionCount": 8,
           "principles": [
             {
               "id": "p-g6-sci-plates",
@@ -366,43 +1302,220 @@
               "summary": "Analyze geological features formed at plate boundaries.",
               "bank": [
                 {
-                  "id": "s6ut1",
+                  "id": "g6-sci-pt1",
                   "type": "mc",
-                  "prompt": "New oceanic crust is continuously created by rising magma at which tectonic feature?",
+                  "prompt": "What force inside Earth moves tectonic plates?",
                   "choices": [
-                    "Mid-ocean ridges (divergent boundaries)",
-                    "Transform faults",
-                    "Deep-sea subduction trenches",
-                    "Continental interiors"
+                    "Convection currents in the mantle",
+                    "Ocean tides pulling on beaches",
+                    "Wind blowing against mountains",
+                    "Sunlight warming the topsoil"
                   ],
-                  "answer": "Mid-ocean ridges (divergent boundaries)",
-                  "explanation": "At divergent boundaries underwater, plates pull apart and magma solidifies into new oceanic crust."
+                  "answer": "Convection currents in the mantle",
+                  "explanation": "Hot rock rises and cooler rock sinks in the mantle. These convection currents slowly move tectonic plates."
                 },
                 {
-                  "id": "s6ut2",
+                  "id": "g6-sci-pt2",
                   "type": "mc",
-                  "prompt": "Why are most of the world’s active volcanoes and earthquakes concentrated along the \"Ring of Fire\" around the Pacific Ocean?",
+                  "prompt": "What forms when two oceanic plates pull apart?",
                   "choices": [
-                    "It traces the boundaries where the Pacific Plate converges and subducts beneath surrounding plates.",
-                    "The equator runs in a circle around the Pacific.",
-                    "Meteorites strike the Pacific shoreline more often.",
-                    "Ocean water is warmer near volcanoes."
+                    "A mid-ocean ridge",
+                    "A desert canyon",
+                    "A continental glacier",
+                    "A tropical hurricane"
                   ],
-                  "answer": "It traces the boundaries where the Pacific Plate converges and subducts beneath surrounding plates.",
-                  "explanation": "Active subduction zones around the Pacific Rim generate intense seismic and volcanic activity."
+                  "answer": "A mid-ocean ridge",
+                  "explanation": "At a divergent boundary underwater, plates separate and magma rises to form a mid-ocean ridge."
                 },
                 {
-                  "id": "s6ut3",
+                  "id": "g6-sci-pt3",
                   "type": "mc",
-                  "prompt": "Which layer of Earth is composed of hot, semi-solid rock that flows slowly by convection?",
+                  "prompt": "Which plate boundary built the Himalayan Mountains?",
                   "choices": [
-                    "The mantle (asthenosphere)",
-                    "The outer atmosphere",
-                    "The continental crust",
-                    "The ocean floor"
+                    "Convergent boundary",
+                    "Divergent boundary",
+                    "Transform boundary",
+                    "Atmospheric boundary"
                   ],
-                  "answer": "The mantle (asthenosphere)",
-                  "explanation": "The mantle lies beneath the crust and convects slowly over geologic time."
+                  "answer": "Convergent boundary",
+                  "explanation": "At a convergent boundary, two continental plates collide and push crust upward into mountains."
+                },
+                {
+                  "id": "g6-sci-pt4",
+                  "type": "mc",
+                  "prompt": "How do plates move at the San Andreas Fault?",
+                  "choices": [
+                    "They slide horizontally past each other",
+                    "They pull far apart underwater",
+                    "One plate melts into space",
+                    "They stay completely still forever"
+                  ],
+                  "answer": "They slide horizontally past each other",
+                  "explanation": "At a transform boundary, two plates grind sideways past each other and cause frequent earthquakes."
+                },
+                {
+                  "id": "g6-sci-pt5",
+                  "type": "mc",
+                  "prompt": "What evidence supported Wegener’s Continental Drift idea?",
+                  "choices": [
+                    "Matching coastlines and matching fossils across oceans",
+                    "Satellite photos taken in 1850",
+                    "Daily changes in moon phases",
+                    "Warm ocean water at the equator"
+                  ],
+                  "answer": "Matching coastlines and matching fossils across oceans",
+                  "explanation": "Continental drift is supported by puzzle-fit coastlines and identical fossils found on separate continents."
+                },
+                {
+                  "id": "g6-sci-pt6",
+                  "type": "mc",
+                  "prompt": "What happens during subduction at a plate boundary?",
+                  "choices": [
+                    "A dense oceanic plate sinks into the mantle",
+                    "Rainwater evaporates into clouds",
+                    "Rivers drop sand at a delta",
+                    "Two clouds collide in a storm"
+                  ],
+                  "answer": "A dense oceanic plate sinks into the mantle",
+                  "explanation": "Subduction occurs when a denser oceanic plate slides beneath a lighter plate into the mantle."
+                },
+                {
+                  "id": "g6-sci-pt7",
+                  "type": "mc",
+                  "prompt": "Which layer of Earth is broken into tectonic plates?",
+                  "choices": [
+                    "The lithosphere",
+                    "The inner core",
+                    "The outer core",
+                    "The troposphere"
+                  ],
+                  "answer": "The lithosphere",
+                  "explanation": "The lithosphere is Earth’s rigid outer shell of crust and upper mantle broken into plates."
+                },
+                {
+                  "id": "g6-sci-pt8",
+                  "type": "mc",
+                  "prompt": "Why does the Pacific Ring of Fire have many volcanoes?",
+                  "choices": [
+                    "It sits along active subduction zones",
+                    "The equator heats the Pacific floor",
+                    "Meteorites hit the Pacific daily",
+                    "Icebergs melt along the coast"
+                  ],
+                  "answer": "It sits along active subduction zones",
+                  "explanation": "Subduction zones around the Pacific Plate melt rock into magma, creating volcanoes and earthquakes."
+                }
+              ]
+            },
+            {
+              "id": "p-g6-sci-rocks-ohio",
+              "title": "Minerals, Igneous/Sedimentary/Metamorphic Rocks & Soil",
+              "standard": "OH.6.ESS.2",
+              "summary": "Identify rock types, mineral tests, and soil formation.",
+              "bank": [
+                {
+                  "id": "g6-sci-rk1",
+                  "type": "mc",
+                  "prompt": "How do igneous rocks form?",
+                  "choices": [
+                    "Cooling and hardening of magma or lava",
+                    "Gluing sand grains under ocean water",
+                    "Decay of fallen autumn leaves",
+                    "Freezing of rainwater in winter"
+                  ],
+                  "answer": "Cooling and hardening of magma or lava",
+                  "explanation": "Igneous rock forms when melted rock (magma underground or lava on the surface) cools and solidifies."
+                },
+                {
+                  "id": "g6-sci-rk2",
+                  "type": "mc",
+                  "prompt": "How do sedimentary rocks like Ohio limestone form?",
+                  "choices": [
+                    "Layers of sediment compact and cement together",
+                    "Lava cools rapidly in midair",
+                    "Pure iron melts in the core",
+                    "Lightning strikes a sandy beach"
+                  ],
+                  "answer": "Layers of sediment compact and cement together",
+                  "explanation": "Sedimentary rock forms when layers of sediment or shells are pressed and cemented together over time."
+                },
+                {
+                  "id": "g6-sci-rk3",
+                  "type": "mc",
+                  "prompt": "What turns existing rock into metamorphic rock?",
+                  "choices": [
+                    "Intense heat and pressure without melting",
+                    "Gentle rain and cool wind",
+                    "Plant roots growing in soil",
+                    "Freezing and thawing of ice"
+                  ],
+                  "answer": "Intense heat and pressure without melting",
+                  "explanation": "Metamorphic rock forms deep underground when heat and pressure change a rock’s structure without melting it."
+                },
+                {
+                  "id": "g6-sci-rk4",
+                  "type": "mc",
+                  "prompt": "Which mineral property is tested using the Mohs scale?",
+                  "choices": [
+                    "Hardness (resistance to scratching)",
+                    "Magnetic pull",
+                    "Radioactive decay",
+                    "Boiling temperature"
+                  ],
+                  "answer": "Hardness (resistance to scratching)",
+                  "explanation": "The Mohs hardness scale ranks minerals from 1 (talc) to 10 (diamond) by scratch resistance."
+                },
+                {
+                  "id": "g6-sci-rk5",
+                  "type": "mc",
+                  "prompt": "What does a mineral’s streak test show?",
+                  "choices": [
+                    "The color of its powdered form",
+                    "How fast the mineral dissolves",
+                    "The weight of the crystal",
+                    "The age of the mountain"
+                  ],
+                  "answer": "The color of its powdered form",
+                  "explanation": "Streak is the color of a mineral’s powder left on an unglazed porcelain plate."
+                },
+                {
+                  "id": "g6-sci-rk6",
+                  "type": "mc",
+                  "prompt": "Why do intrusive igneous rocks have large crystals?",
+                  "choices": [
+                    "Magma cools slowly deep underground",
+                    "Lava cools instantly in cold water",
+                    "Wind polishes the rock surface",
+                    "Rivers wash away small grains"
+                  ],
+                  "answer": "Magma cools slowly deep underground",
+                  "explanation": "Slow cooling underground gives mineral crystals plenty of time to grow large, as in granite."
+                },
+                {
+                  "id": "g6-sci-rk7",
+                  "type": "mc",
+                  "prompt": "Which rock type most often contains ancient fossils?",
+                  "choices": [
+                    "Sedimentary rock",
+                    "Intrusive igneous rock",
+                    "Volcanic glass",
+                    "Liquid magma"
+                  ],
+                  "answer": "Sedimentary rock",
+                  "explanation": "Sedimentary rock forms in layers at cooler surface temperatures that preserve shells and bones as fossils."
+                },
+                {
+                  "id": "g6-sci-rk8",
+                  "type": "mc",
+                  "prompt": "What is humus in topsoil?",
+                  "choices": [
+                    "Decayed organic matter from plants and animals",
+                    "Melted granite from a volcano",
+                    "Pure salt crystals from the sea",
+                    "Solid bedrock deep underground"
+                  ],
+                  "answer": "Decayed organic matter from plants and animals",
+                  "explanation": "Humus is dark, nutrient-rich organic material formed from decomposed leaves and organisms in soil."
                 }
               ]
             },
@@ -410,50 +1523,174 @@
               "id": "p-g6-sci-thermal",
               "title": "Conduction, Convection, Radiation & Water Cycle Drivers",
               "standard": "MS-PS3-3",
-              "summary": "Apply thermal transfer concepts and water cycle mechanics.",
+              "summary": "Apply thermal energy transfer and water cycle concepts.",
               "bank": [
                 {
-                  "id": "s6ut4",
+                  "id": "g6-sci-th1",
                   "type": "mc",
-                  "prompt": "As water vapor rises high into the cooler troposphere, it cools and changes from a gas into tiny liquid cloud droplets. This process is:",
+                  "prompt": "A spoon in hot soup gets warm by which process?",
                   "choices": [
-                    "Condensation",
-                    "Evaporation",
-                    "Precipitation",
-                    "Runoff"
+                    "Conduction",
+                    "Convection",
+                    "Radiation",
+                    "Evaporation"
                   ],
-                  "answer": "Condensation",
-                  "explanation": "Cooling water vapor loses thermal energy and condenses into liquid droplets that form clouds."
+                  "answer": "Conduction",
+                  "explanation": "Conduction is heat transfer through direct contact between touching particles in a solid."
                 },
                 {
-                  "id": "s6ut5",
+                  "id": "g6-sci-th2",
                   "type": "mc",
-                  "prompt": "A sea breeze blows from the cool ocean toward the warm land during a sunny afternoon primarily because of:",
+                  "prompt": "How does heat from the Sun travel through space?",
                   "choices": [
-                    "Convection: air over the warm land heats up, becomes less dense, and rises, drawing cooler ocean air inward",
-                    "Conduction through solid granite",
-                    "Gravity pulling air sideways",
-                    "Ocean waves pushing the wind"
+                    "Radiation",
+                    "Conduction",
+                    "Convection",
+                    "Condensation"
                   ],
-                  "answer": "Convection: air over the warm land heats up, becomes less dense, and rises, drawing cooler ocean air inward",
-                  "explanation": "Unequal heating of land and water creates a convection cell known as a sea breeze."
+                  "answer": "Radiation",
+                  "explanation": "Radiation transfers energy as electromagnetic waves that can travel across empty space."
                 },
                 {
-                  "id": "s6ut6",
+                  "id": "g6-sci-th3",
                   "type": "mc",
-                  "prompt": "Which material is the BEST thermal conductor for cooking food quickly on a stove?",
+                  "prompt": "Warm water rises and cool water sinks by which process?",
                   "choices": [
-                    "Copper or aluminum metal",
-                    "Styrofoam",
+                    "Convection",
+                    "Conduction",
+                    "Radiation",
+                    "Sublimation"
+                  ],
+                  "answer": "Convection",
+                  "explanation": "Convection transfers heat by the circulation of warm, less-dense fluid rising and cool fluid sinking."
+                },
+                {
+                  "id": "g6-sci-th4",
+                  "type": "mc",
+                  "prompt": "What two forces drive Earth’s global water cycle?",
+                  "choices": [
+                    "Solar energy and gravity",
+                    "Magnetism and moon phases",
+                    "Earthquakes and geysers",
+                    "Wind turbines and tides"
+                  ],
+                  "answer": "Solar energy and gravity",
+                  "explanation": "Sunlight powers evaporation into the air, and gravity pulls rain and river runoff back down."
+                },
+                {
+                  "id": "g6-sci-th5",
+                  "type": "mc",
+                  "prompt": "Which way does thermal energy naturally flow?",
+                  "choices": [
+                    "From warmer objects to cooler objects",
+                    "From cooler objects to warmer objects",
+                    "Only upward away from Earth",
+                    "Heat never moves between objects"
+                  ],
+                  "answer": "From warmer objects to cooler objects",
+                  "explanation": "Thermal energy always flows from a higher-temperature object to a lower-temperature object."
+                },
+                {
+                  "id": "g6-sci-th6",
+                  "type": "mc",
+                  "prompt": "Why do winter coats trap pockets of air?",
+                  "choices": [
+                    "Trapped air is a thermal insulator",
+                    "Air pockets create brand-new heat",
+                    "Metal is lighter than feathers",
+                    "Air makes the coat conduct heat faster"
+                  ],
+                  "answer": "Trapped air is a thermal insulator",
+                  "explanation": "A thermal insulator slows down heat transfer so your body warmth stays inside the coat."
+                },
+                {
+                  "id": "g6-sci-th7",
+                  "type": "mc",
+                  "prompt": "What happens when water vapor cools high in the sky?",
+                  "choices": [
+                    "It condenses into liquid cloud droplets",
+                    "It boils into hotter steam",
+                    "It turns into solid granite",
+                    "It disappears from the water cycle"
+                  ],
+                  "answer": "It condenses into liquid cloud droplets",
+                  "explanation": "Condensation is the change of water vapor gas into liquid droplets when air cools."
+                },
+                {
+                  "id": "g6-sci-th8",
+                  "type": "mc",
+                  "prompt": "Which material is the best thermal conductor for a pan?",
+                  "choices": [
+                    "Copper metal",
+                    "Styrofoam cup",
                     "Dry wood",
-                    "Wool fabric"
+                    "Wool mittens"
                   ],
-                  "answer": "Copper or aluminum metal",
-                  "explanation": "Metals have free-moving electrons that transfer thermal energy rapidly by conduction."
+                  "answer": "Copper metal",
+                  "explanation": "Metals like copper and aluminum are thermal conductors that let heat pass through quickly."
                 }
               ]
             }
-          ]
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering Tectonic Plate Boundaries and Mantle Convection & Minerals, Igneous/Sedimentary/Metamorphic Rocks & Soil & Conduction, Convection, Radiation & Water Cycle Drivers (MS-ESS2-2, OH.6.ESS.2, MS-PS3-3). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g6-sci-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: Tectonic Plate Boundaries and Mantle Convection & Minerals, Igneous/Sedimentary/Metamorphic Rocks & Soil & Conduction, Convection, Radiation & Water Cycle Drivers",
+                "description": "Read the Core Concept Summary and Principle cards on this page (MS-ESS2-2, OH.6.ESS.2, MS-PS3-3) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g6-sci-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 Comprehensive Science Exam",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"Tectonic Plate Boundaries and Mantle Convection & Minerals, Igneous/Sedimentary/Metamorphic Rocks & Soil & Conduction, Convection, Radiation & Water Cycle Drivers\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/science/middle-school-earth-and-space-science"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Tectonic Plate Boundaries and Mantle Convection.",
+              "Analyze geological features formed at plate boundaries.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What force inside Earth moves tectonic plates?\" → Answer: Convection currents in the mantle. (Hot rock rises and cooler rock sinks in the mantle. These convection currents slowly move tectonic plates.)",
+            "links": [
+              {
+                "label": "YouTube: \"Earth Systems, Rocks & Thermal Energy\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%206%20science%20Earth%20Systems%2C%20Rocks%20%26%20Thermal%20Energy%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Earth Systems, Rocks & Thermal Energy\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%206%20Earth%20Systems%2C%20Rocks%20%26%20Thermal%20Energy",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Visual Science — Earth Systems, Rocks & Thermal Energy",
+                "url": "https://www.youtube.com/results?search_query=Crash%20Course%20Kids%20SciShow%20Earth%20Systems%2C%20Rocks%20%26%20Thermal%20Energy",
+                "kind": "video",
+                "provider": "Visual Science (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
         }
       ]
     }

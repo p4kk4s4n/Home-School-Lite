@@ -1,0 +1,1204 @@
+{
+  "id": "g8-social",
+  "subject": "social",
+  "grade": 8,
+  "title": "Grade 8 U.S. & Ohio Studies (1763–1877)",
+  "subtitle": "American Revolution, U.S. Constitution, Northwest Ordinance, Civil War & Reconstruction",
+  "credits": 1,
+  "color": "#9a3412",
+  "icon": "🗽",
+  "units": [
+    {
+      "id": "g8-soc-u1",
+      "title": "Unit 1: American Revolution, Constitution & Northwest Ordinance",
+      "standards": [
+        "OH.8.SS.5",
+        "OH.8.SS.7",
+        "OH.8.SS.8"
+      ],
+      "isOhioExtension": true,
+      "lessons": [
+        {
+          "id": "g8-soc-u1-l1",
+          "unitId": "g8-soc-u1",
+          "title": "Micro-Lesson 1A: The American Revolution & Declaration of Independence",
+          "kind": "lesson",
+          "partOf": "Founding the Republic",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-history/road-to-revolution",
+          "videoTitle": "Khan Academy: The Declaration of Independence & Revolutionary War",
+          "reading": "After the French and Indian War, Britain taxed the American colonies without giving them representation in Parliament. On July 4, 1776, the Continental Congress adopted Thomas Jefferson’s Declaration of Independence, proclaiming natural rights to \"Life, Liberty and the pursuit of Happiness\" and government by consent of the governed.",
+          "principles": [
+            {
+              "id": "p-g8-soc-revolution",
+              "title": "The American Revolution & Declaration of Independence",
+              "standard": "OH.8.SS.5 / OH.8.SS.6",
+              "summary": "Colonists protested British taxation without representation and declared independence in 1776 based on natural rights.",
+              "bank": [
+                {
+                  "id": "g8-soc-rev-1",
+                  "type": "mc",
+                  "prompt": "Why did American colonists protest the Stamp Act and Tea Act?",
+                  "choices": [
+                    "Parliament taxed them without colonial representation.",
+                    "They wanted higher taxes on paper.",
+                    "They opposed all trade with Europe.",
+                    "They wanted a French king."
+                  ],
+                  "answer": "Parliament taxed them without colonial representation.",
+                  "explanation": "Colonists argued that Britain’s Parliament could not tax them fairly without elected colonial representatives."
+                },
+                {
+                  "id": "g8-soc-rev-2",
+                  "type": "mc",
+                  "prompt": "Who was the primary author of the Declaration of Independence in 1776?",
+                  "choices": [
+                    "Thomas Jefferson",
+                    "Abraham Lincoln",
+                    "Alexander Hamilton",
+                    "King George III"
+                  ],
+                  "answer": "Thomas Jefferson",
+                  "explanation": "Thomas Jefferson drafted the Declaration of Independence, adopted by the Continental Congress on July 4, 1776."
+                },
+                {
+                  "id": "g8-soc-rev-3",
+                  "type": "mc",
+                  "prompt": "Which three unalienable rights are named in the Declaration of Independence?",
+                  "choices": [
+                    "Life, Liberty, and the pursuit of Happiness",
+                    "Voting, Taxation, and Monarchy",
+                    "Land, Gold, and Trade",
+                    "Speech, Press, and Assembly"
+                  ],
+                  "answer": "Life, Liberty, and the pursuit of Happiness",
+                  "explanation": "The Declaration states that all people have natural rights including life, liberty, and the pursuit of happiness."
+                },
+                {
+                  "id": "g8-soc-rev-4",
+                  "type": "mc",
+                  "prompt": "According to the Declaration, where do governments get their rightful power?",
+                  "choices": [
+                    "From the consent of the governed (the people)",
+                    "From royal birthright alone",
+                    "From military conquest",
+                    "From foreign treaties"
+                  ],
+                  "answer": "From the consent of the governed (the people)",
+                  "explanation": "Popular sovereignty means government authority comes from the agreement and vote of the people."
+                },
+                {
+                  "id": "g8-soc-rev-5",
+                  "type": "mc",
+                  "prompt": "Which 1777 battle convinced France to ally with the United States?",
+                  "choices": [
+                    "Battle of Saratoga",
+                    "Battle of Gettysburg",
+                    "Fort Sumter",
+                    "Alamo"
+                  ],
+                  "answer": "Battle of Saratoga",
+                  "explanation": "The American victory at Saratoga proved the Continental Army could win, bringing France into the war."
+                },
+                {
+                  "id": "g8-soc-rev-6",
+                  "type": "mc",
+                  "prompt": "Which 1781 victory effectively ended major fighting in the Revolutionary War?",
+                  "choices": [
+                    "Battle of Yorktown",
+                    "Lexington and Concord",
+                    "Bunker Hill",
+                    "Antietam"
+                  ],
+                  "answer": "Battle of Yorktown",
+                  "explanation": "Washington’s army and the French fleet trapped British General Cornwallis at Yorktown, Virginia, in 1781."
+                },
+                {
+                  "id": "g8-soc-rev-7",
+                  "type": "mc",
+                  "prompt": "What did Thomas Paine’s 1776 pamphlet Common Sense urge colonists to do?",
+                  "choices": [
+                    "Declare complete independence from Britain",
+                    "Apologize to King George III",
+                    "Pay triple taxes on tea",
+                    "Return to Europe"
+                  ],
+                  "answer": "Declare complete independence from Britain",
+                  "explanation": "Common Sense used plain language to persuade thousands of colonists to support independence."
+                },
+                {
+                  "id": "g8-soc-rev-8",
+                  "type": "mc",
+                  "prompt": "What did the Treaty of Paris (1783) accomplish?",
+                  "choices": [
+                    "Britain recognized the United States as an independent nation.",
+                    "It wrote the Bill of Rights.",
+                    "It started the War of 1812.",
+                    "It abolished all state governments."
+                  ],
+                  "answer": "Britain recognized the United States as an independent nation.",
+                  "explanation": "The 1783 Treaty of Paris officially ended the Revolutionary War and recognized U.S. independence."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Founding the Republic] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"The American Revolution & Declaration of Independence\" (OH.8.SS.5 / OH.8.SS.6), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-soc-u1-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: The Declaration of Independence & Revolutionary War",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"The American Revolution & Declaration of Independence\" (OH.8.SS.5 / OH.8.SS.6). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/us-history/road-to-revolution"
+              },
+              {
+                "id": "g8-soc-u1-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to The American Revolution & Declaration of Independence.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-soc-u1-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.8.SS.5 / OH.8.SS.6)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: The American Revolution & Declaration of Independence.",
+              "Colonists protested British taxation without representation and declared independence in 1776 based on natural rights.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Why did American colonists protest the Stamp Act and Tea Act?\" → Answer: Parliament taxed them without colonial representation.. (Colonists argued that Britain’s Parliament could not tax them fairly without elected colonial representatives.)",
+            "links": [
+              {
+                "label": "YouTube: \"Founding the Republic\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20social%20Founding%20the%20Republic%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Founding the Republic\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Founding%20the%20Republic",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Founding the Republic",
+                "url": "https://www.youtube.com/results?search_query=Founding%20the%20Republic%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-soc-u1-l2",
+          "unitId": "g8-soc-u1",
+          "title": "Micro-Lesson 1B: The U.S. Constitution, Bill of Rights & Northwest Ordinance",
+          "kind": "lesson",
+          "partOf": "Founding the Republic",
+          "isOhioExtension": true,
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-history/road-to-revolution/creating-a-nation",
+          "videoTitle": "Khan Academy: The Constitutional Convention & Bill of Rights",
+          "reading": "In 1787, framers replaced the weak Articles of Confederation with the U.S. Constitution, creating federalism, three branches of government, and checks and balances. The Bill of Rights (1791) protected individual liberties, while the Northwest Ordinance of 1787 banned slavery in the Northwest Territory and set the path for Ohio statehood (1803).",
+          "principles": [
+            {
+              "id": "p-g8-soc-constitution-ohio",
+              "title": "U.S. Constitution, Bill of Rights & the Northwest Ordinance",
+              "standard": "OH.8.SS.7 / OH.8.SS.8 / OH.8.SS.9",
+              "summary": "The Constitution replaced the weak Articles of Confederation; the Bill of Rights protects liberties, and the Northwest Ordinance shaped Ohio.",
+              "bank": [
+                {
+                  "id": "g8-soc-con-1",
+                  "type": "mc",
+                  "prompt": "Why did the Articles of Confederation fail as America’s first government?",
+                  "choices": [
+                    "Congress was too weak to tax or enforce laws.",
+                    "It gave the president absolute royal power.",
+                    "It banned all state governments.",
+                    "It created too many federal courts."
+                  ],
+                  "answer": "Congress was too weak to tax or enforce laws.",
+                  "explanation": "Under the Articles, Congress lacked power to levy taxes or regulate trade, leading to the 1787 Constitutional Convention."
+                },
+                {
+                  "id": "g8-soc-con-2",
+                  "type": "mc",
+                  "prompt": "How does the U.S. Constitution prevent any one branch from becoming a tyranny?",
+                  "choices": [
+                    "Separation of powers with checks and balances",
+                    "Giving Congress control over courts and the presidency",
+                    "Eliminating elections",
+                    "Letting states ignore federal treaties"
+                  ],
+                  "answer": "Separation of powers with checks and balances",
+                  "explanation": "Dividing power among legislative, executive, and judicial branches lets each branch check the others."
+                },
+                {
+                  "id": "g8-soc-con-3",
+                  "type": "mc",
+                  "prompt": "What are the first ten amendments to the U.S. Constitution called?",
+                  "choices": [
+                    "The Bill of Rights",
+                    "The Articles of Confederation",
+                    "The Federalist Papers",
+                    "The Emancipation Proclamation"
+                  ],
+                  "answer": "The Bill of Rights",
+                  "explanation": "Ratified in 1791, the Bill of Rights guarantees individual freedoms such as speech, religion, and fair trials."
+                },
+                {
+                  "id": "g8-soc-con-4",
+                  "type": "mc",
+                  "prompt": "Which five freedoms are protected by the First Amendment?",
+                  "choices": [
+                    "Religion, speech, press, assembly, and petition",
+                    "Jury trial, bail, taxes, roads, and coinage",
+                    "Voting, presidency, treaties, tariffs, and banking",
+                    "Property, travel, farming, hunting, and fishing"
+                  ],
+                  "answer": "Religion, speech, press, assembly, and petition",
+                  "explanation": "The First Amendment protects freedom of religion, speech, the press, peaceful assembly, and petitioning government."
+                },
+                {
+                  "id": "g8-soc-con-5",
+                  "type": "mc",
+                  "prompt": "How did the Northwest Ordinance of 1787 directly affect Ohio?",
+                  "choices": [
+                    "It set Ohio’s statehood path and banned slavery.",
+                    "It sold Ohio back to Great Britain.",
+                    "It made slavery mandatory in the Northwest Territory.",
+                    "It banned public schools in Ohio."
+                  ],
+                  "answer": "It set Ohio’s statehood path and banned slavery.",
+                  "explanation": "The Northwest Ordinance created rules for admitting new states like Ohio (1803), encouraged education, and banned slavery in the territory."
+                },
+                {
+                  "id": "g8-soc-con-6",
+                  "type": "mc",
+                  "prompt": "What is federalism under the U.S. Constitution?",
+                  "choices": [
+                    "Sharing power between the national and state governments",
+                    "Rule by a single king or queen",
+                    "Abolishing all state legislatures",
+                    "Giving all power to foreign allies"
+                  ],
+                  "answer": "Sharing power between the national and state governments",
+                  "explanation": "Federalism divides governing authority between the federal government in Washington and the individual states."
+                },
+                {
+                  "id": "g8-soc-con-7",
+                  "type": "mc",
+                  "prompt": "What did the Great Compromise at the 1787 Convention create?",
+                  "choices": [
+                    "A two-house Congress: the Senate and House of Representatives",
+                    "A single-house parliament",
+                    "Twelve presidents serving at once",
+                    "No legislative branch"
+                  ],
+                  "answer": "A two-house Congress: the Senate and House of Representatives",
+                  "explanation": "The Great Compromise balanced equal state representation in the Senate with population-based representation in the House."
+                },
+                {
+                  "id": "g8-soc-con-8",
+                  "type": "mc",
+                  "prompt": "Why did Anti-Federalists initially oppose ratifying the Constitution?",
+                  "choices": [
+                    "It lacked a Bill of Rights to protect citizens’ liberties.",
+                    "It made the central government too weak.",
+                    "It kept King George III in charge.",
+                    "It outlawed farming."
+                  ],
+                  "answer": "It lacked a Bill of Rights to protect citizens’ liberties.",
+                  "explanation": "Anti-Federalists insisted on adding a Bill of Rights so the federal government could not infringe on personal freedoms."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Founding the Republic] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"U.S. Constitution, Bill of Rights & the Northwest Ordinance\" (OH.8.SS.7 / OH.8.SS.8 / OH.8.SS.9), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-soc-u1-l2-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: The Constitutional Convention & Bill of Rights",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"U.S. Constitution, Bill of Rights & the Northwest Ordinance\" (OH.8.SS.7 / OH.8.SS.8 / OH.8.SS.9). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/us-history/road-to-revolution/creating-a-nation"
+              },
+              {
+                "id": "g8-soc-u1-l2-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to U.S. Constitution, Bill of Rights & the Northwest Ordinance.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-soc-u1-l2-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.8.SS.7 / OH.8.SS.8 / OH.8.SS.9)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: U.S. Constitution, Bill of Rights & the Northwest Ordinance.",
+              "The Constitution replaced the weak Articles of Confederation; the Bill of Rights protects liberties, and the Northwest Ordinance shaped Ohio.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Why did the Articles of Confederation fail as America’s first government?\" → Answer: Congress was too weak to tax or enforce laws.. (Under the Articles, Congress lacked power to levy taxes or regulate trade, leading to the 1787 Constitutional Convention.)",
+            "links": [
+              {
+                "label": "YouTube: \"Founding the Republic\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20social%20Founding%20the%20Republic%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Founding the Republic\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Founding%20the%20Republic",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Founding the Republic",
+                "url": "https://www.youtube.com/results?search_query=Founding%20the%20Republic%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-soc-u1-review",
+          "unitId": "g8-soc-u1",
+          "title": "Unit 1 Checkpoint Review: Revolution, Constitution & Ohio Statehood",
+          "kind": "lesson_review",
+          "partOf": "Founding the Republic",
+          "isOhioExtension": true,
+          "estimatedMinutes": 12,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-history/road-to-revolution/creating-a-nation",
+          "videoTitle": "Unit 1 U.S. History Checkpoint Review",
+          "reading": "Review the Declaration of Independence, the Constitution, the Bill of Rights, and the Northwest Ordinance in this 6-question check.",
+          "questionCount": 6,
+          "principles": [
+            {
+              "id": "p-g8-soc-revolution",
+              "title": "The American Revolution & Declaration of Independence",
+              "standard": "OH.8.SS.5 / OH.8.SS.6",
+              "summary": "Colonists protested British taxation without representation and declared independence in 1776 based on natural rights.",
+              "bank": [
+                {
+                  "id": "g8-soc-rev-1",
+                  "type": "mc",
+                  "prompt": "Why did American colonists protest the Stamp Act and Tea Act?",
+                  "choices": [
+                    "Parliament taxed them without colonial representation.",
+                    "They wanted higher taxes on paper.",
+                    "They opposed all trade with Europe.",
+                    "They wanted a French king."
+                  ],
+                  "answer": "Parliament taxed them without colonial representation.",
+                  "explanation": "Colonists argued that Britain’s Parliament could not tax them fairly without elected colonial representatives."
+                },
+                {
+                  "id": "g8-soc-rev-2",
+                  "type": "mc",
+                  "prompt": "Who was the primary author of the Declaration of Independence in 1776?",
+                  "choices": [
+                    "Thomas Jefferson",
+                    "Abraham Lincoln",
+                    "Alexander Hamilton",
+                    "King George III"
+                  ],
+                  "answer": "Thomas Jefferson",
+                  "explanation": "Thomas Jefferson drafted the Declaration of Independence, adopted by the Continental Congress on July 4, 1776."
+                },
+                {
+                  "id": "g8-soc-rev-3",
+                  "type": "mc",
+                  "prompt": "Which three unalienable rights are named in the Declaration of Independence?",
+                  "choices": [
+                    "Life, Liberty, and the pursuit of Happiness",
+                    "Voting, Taxation, and Monarchy",
+                    "Land, Gold, and Trade",
+                    "Speech, Press, and Assembly"
+                  ],
+                  "answer": "Life, Liberty, and the pursuit of Happiness",
+                  "explanation": "The Declaration states that all people have natural rights including life, liberty, and the pursuit of happiness."
+                },
+                {
+                  "id": "g8-soc-rev-4",
+                  "type": "mc",
+                  "prompt": "According to the Declaration, where do governments get their rightful power?",
+                  "choices": [
+                    "From the consent of the governed (the people)",
+                    "From royal birthright alone",
+                    "From military conquest",
+                    "From foreign treaties"
+                  ],
+                  "answer": "From the consent of the governed (the people)",
+                  "explanation": "Popular sovereignty means government authority comes from the agreement and vote of the people."
+                },
+                {
+                  "id": "g8-soc-rev-5",
+                  "type": "mc",
+                  "prompt": "Which 1777 battle convinced France to ally with the United States?",
+                  "choices": [
+                    "Battle of Saratoga",
+                    "Battle of Gettysburg",
+                    "Fort Sumter",
+                    "Alamo"
+                  ],
+                  "answer": "Battle of Saratoga",
+                  "explanation": "The American victory at Saratoga proved the Continental Army could win, bringing France into the war."
+                },
+                {
+                  "id": "g8-soc-rev-6",
+                  "type": "mc",
+                  "prompt": "Which 1781 victory effectively ended major fighting in the Revolutionary War?",
+                  "choices": [
+                    "Battle of Yorktown",
+                    "Lexington and Concord",
+                    "Bunker Hill",
+                    "Antietam"
+                  ],
+                  "answer": "Battle of Yorktown",
+                  "explanation": "Washington’s army and the French fleet trapped British General Cornwallis at Yorktown, Virginia, in 1781."
+                },
+                {
+                  "id": "g8-soc-rev-7",
+                  "type": "mc",
+                  "prompt": "What did Thomas Paine’s 1776 pamphlet Common Sense urge colonists to do?",
+                  "choices": [
+                    "Declare complete independence from Britain",
+                    "Apologize to King George III",
+                    "Pay triple taxes on tea",
+                    "Return to Europe"
+                  ],
+                  "answer": "Declare complete independence from Britain",
+                  "explanation": "Common Sense used plain language to persuade thousands of colonists to support independence."
+                },
+                {
+                  "id": "g8-soc-rev-8",
+                  "type": "mc",
+                  "prompt": "What did the Treaty of Paris (1783) accomplish?",
+                  "choices": [
+                    "Britain recognized the United States as an independent nation.",
+                    "It wrote the Bill of Rights.",
+                    "It started the War of 1812.",
+                    "It abolished all state governments."
+                  ],
+                  "answer": "Britain recognized the United States as an independent nation.",
+                  "explanation": "The 1783 Treaty of Paris officially ended the Revolutionary War and recognized U.S. independence."
+                }
+              ]
+            },
+            {
+              "id": "p-g8-soc-constitution-ohio",
+              "title": "U.S. Constitution, Bill of Rights & the Northwest Ordinance",
+              "standard": "OH.8.SS.7 / OH.8.SS.8 / OH.8.SS.9",
+              "summary": "The Constitution replaced the weak Articles of Confederation; the Bill of Rights protects liberties, and the Northwest Ordinance shaped Ohio.",
+              "bank": [
+                {
+                  "id": "g8-soc-con-1",
+                  "type": "mc",
+                  "prompt": "Why did the Articles of Confederation fail as America’s first government?",
+                  "choices": [
+                    "Congress was too weak to tax or enforce laws.",
+                    "It gave the president absolute royal power.",
+                    "It banned all state governments.",
+                    "It created too many federal courts."
+                  ],
+                  "answer": "Congress was too weak to tax or enforce laws.",
+                  "explanation": "Under the Articles, Congress lacked power to levy taxes or regulate trade, leading to the 1787 Constitutional Convention."
+                },
+                {
+                  "id": "g8-soc-con-2",
+                  "type": "mc",
+                  "prompt": "How does the U.S. Constitution prevent any one branch from becoming a tyranny?",
+                  "choices": [
+                    "Separation of powers with checks and balances",
+                    "Giving Congress control over courts and the presidency",
+                    "Eliminating elections",
+                    "Letting states ignore federal treaties"
+                  ],
+                  "answer": "Separation of powers with checks and balances",
+                  "explanation": "Dividing power among legislative, executive, and judicial branches lets each branch check the others."
+                },
+                {
+                  "id": "g8-soc-con-3",
+                  "type": "mc",
+                  "prompt": "What are the first ten amendments to the U.S. Constitution called?",
+                  "choices": [
+                    "The Bill of Rights",
+                    "The Articles of Confederation",
+                    "The Federalist Papers",
+                    "The Emancipation Proclamation"
+                  ],
+                  "answer": "The Bill of Rights",
+                  "explanation": "Ratified in 1791, the Bill of Rights guarantees individual freedoms such as speech, religion, and fair trials."
+                },
+                {
+                  "id": "g8-soc-con-4",
+                  "type": "mc",
+                  "prompt": "Which five freedoms are protected by the First Amendment?",
+                  "choices": [
+                    "Religion, speech, press, assembly, and petition",
+                    "Jury trial, bail, taxes, roads, and coinage",
+                    "Voting, presidency, treaties, tariffs, and banking",
+                    "Property, travel, farming, hunting, and fishing"
+                  ],
+                  "answer": "Religion, speech, press, assembly, and petition",
+                  "explanation": "The First Amendment protects freedom of religion, speech, the press, peaceful assembly, and petitioning government."
+                },
+                {
+                  "id": "g8-soc-con-5",
+                  "type": "mc",
+                  "prompt": "How did the Northwest Ordinance of 1787 directly affect Ohio?",
+                  "choices": [
+                    "It set Ohio’s statehood path and banned slavery.",
+                    "It sold Ohio back to Great Britain.",
+                    "It made slavery mandatory in the Northwest Territory.",
+                    "It banned public schools in Ohio."
+                  ],
+                  "answer": "It set Ohio’s statehood path and banned slavery.",
+                  "explanation": "The Northwest Ordinance created rules for admitting new states like Ohio (1803), encouraged education, and banned slavery in the territory."
+                },
+                {
+                  "id": "g8-soc-con-6",
+                  "type": "mc",
+                  "prompt": "What is federalism under the U.S. Constitution?",
+                  "choices": [
+                    "Sharing power between the national and state governments",
+                    "Rule by a single king or queen",
+                    "Abolishing all state legislatures",
+                    "Giving all power to foreign allies"
+                  ],
+                  "answer": "Sharing power between the national and state governments",
+                  "explanation": "Federalism divides governing authority between the federal government in Washington and the individual states."
+                },
+                {
+                  "id": "g8-soc-con-7",
+                  "type": "mc",
+                  "prompt": "What did the Great Compromise at the 1787 Convention create?",
+                  "choices": [
+                    "A two-house Congress: the Senate and House of Representatives",
+                    "A single-house parliament",
+                    "Twelve presidents serving at once",
+                    "No legislative branch"
+                  ],
+                  "answer": "A two-house Congress: the Senate and House of Representatives",
+                  "explanation": "The Great Compromise balanced equal state representation in the Senate with population-based representation in the House."
+                },
+                {
+                  "id": "g8-soc-con-8",
+                  "type": "mc",
+                  "prompt": "Why did Anti-Federalists initially oppose ratifying the Constitution?",
+                  "choices": [
+                    "It lacked a Bill of Rights to protect citizens’ liberties.",
+                    "It made the central government too weak.",
+                    "It kept King George III in charge.",
+                    "It outlawed farming."
+                  ],
+                  "answer": "It lacked a Bill of Rights to protect citizens’ liberties.",
+                  "explanation": "Anti-Federalists insisted on adding a Bill of Rights so the federal government could not infringe on personal freedoms."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Topic Review covering The American Revolution & Declaration of Independence & U.S. Constitution, Bill of Rights & the Northwest Ordinance (OH.8.SS.5 / OH.8.SS.6, OH.8.SS.7 / OH.8.SS.8 / OH.8.SS.9). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g8-soc-u1-review-step-review",
+                "type": "reading",
+                "title": "Review Principles: The American Revolution & Declaration of Independence & U.S. Constitution, Bill of Rights & the Northwest Ordinance",
+                "description": "Read the Core Concept Summary and Principle cards on this page (OH.8.SS.5 / OH.8.SS.6, OH.8.SS.7 / OH.8.SS.8 / OH.8.SS.9) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g8-soc-u1-review-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 1 U.S. History Checkpoint Review",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"The American Revolution & Declaration of Independence & U.S. Constitution, Bill of Rights & the Northwest Ordinance\" (1 activity, ~5 min), then return here for your Topic Review.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/us-history/road-to-revolution/creating-a-nation"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: The American Revolution & Declaration of Independence.",
+              "Colonists protested British taxation without representation and declared independence in 1776 based on natural rights.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Why did American colonists protest the Stamp Act and Tea Act?\" → Answer: Parliament taxed them without colonial representation.. (Colonists argued that Britain’s Parliament could not tax them fairly without elected colonial representatives.)",
+            "links": [
+              {
+                "label": "YouTube: \"Founding the Republic\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20social%20Founding%20the%20Republic%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Founding the Republic\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Founding%20the%20Republic",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Founding the Republic",
+                "url": "https://www.youtube.com/results?search_query=Founding%20the%20Republic%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "g8-soc-u2",
+      "title": "Unit 2: Abolition, the Civil War & Reconstruction",
+      "standards": [
+        "OH.8.SS.11",
+        "OH.8.SS.12",
+        "OH.8.SS.13"
+      ],
+      "lessons": [
+        {
+          "id": "g8-soc-u2-l1",
+          "unitId": "g8-soc-u2",
+          "title": "Micro-Lesson 2A: Abolition, Underground Railroad & the Civil War",
+          "kind": "lesson",
+          "partOf": "Civil War & Reconstruction",
+          "estimatedMinutes": 10,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-history/civil-war-era",
+          "videoTitle": "Khan Academy: Abolition, Gettysburg & the Emancipation Proclamation",
+          "reading": "Disputes over expanding slavery into western territories divided the nation. Abolitionists like Frederick Douglass and conductors on Ohio’s Underground Railroad fought slavery. During the Civil War (1861–1865), President Lincoln issued the Emancipation Proclamation (1863), and after the Union won, the 13th, 14th, and 15th Amendments abolished slavery and protected citizenship and voting rights.",
+          "principles": [
+            {
+              "id": "p-g8-soc-civil-war",
+              "title": "Westward Expansion, Abolition, Civil War & Reconstruction",
+              "standard": "OH.8.SS.11 / OH.8.SS.12 / OH.8.SS.13",
+              "summary": "Disputes over the expansion of slavery led to the Civil War (1861–1865); the 13th, 14th, and 15th Amendments reshaped the nation.",
+              "bank": [
+                {
+                  "id": "g8-soc-cw-1",
+                  "type": "mc",
+                  "prompt": "What central issue divided the North and South before the Civil War?",
+                  "choices": [
+                    "Slavery and its expansion into western territories",
+                    "Whether to speak English or French",
+                    "Building ships versus airplanes",
+                    "Returning to British rule"
+                  ],
+                  "answer": "Slavery and its expansion into western territories",
+                  "explanation": "Moral, economic, and political conflicts over slavery—especially in new western lands—drove sectional division."
+                },
+                {
+                  "id": "g8-soc-cw-2",
+                  "type": "mc",
+                  "prompt": "What role did Ohio play in the Underground Railroad?",
+                  "choices": [
+                    "Safe-house routes helping freedom seekers reach Canada",
+                    "A steam locomotive factory in Texas",
+                    "A Confederate military base",
+                    "A gold-mining tunnel in California"
+                  ],
+                  "answer": "Safe-house routes helping freedom seekers reach Canada",
+                  "explanation": "Bounded by the Ohio River and Lake Erie, Ohio had many abolitionist conductors and routes on the Underground Railroad."
+                },
+                {
+                  "id": "g8-soc-cw-3",
+                  "type": "mc",
+                  "prompt": "What did Abraham Lincoln’s 1863 Emancipation Proclamation declare?",
+                  "choices": [
+                    "Enslaved people in rebelling Confederate states were free.",
+                    "The Civil War was canceled.",
+                    "Women gained the right to vote in 1863.",
+                    "Slavery was expanded into Ohio."
+                  ],
+                  "answer": "Enslaved people in rebelling Confederate states were free.",
+                  "explanation": "The Emancipation Proclamation declared freedom for enslaved people in Confederate territory and made ending slavery a war goal."
+                },
+                {
+                  "id": "g8-soc-cw-4",
+                  "type": "mc",
+                  "prompt": "Which 1863 battle in Pennsylvania was a major turning point for the Union?",
+                  "choices": [
+                    "Battle of Gettysburg",
+                    "Battle of Saratoga",
+                    "Battle of Yorktown",
+                    "Lexington"
+                  ],
+                  "answer": "Battle of Gettysburg",
+                  "explanation": "The Union victory at Gettysburg halted General Lee’s northern invasion and was followed by Lincoln’s Gettysburg Address."
+                },
+                {
+                  "id": "g8-soc-cw-5",
+                  "type": "mc",
+                  "prompt": "What did the 13th Amendment to the Constitution accomplish in 1865?",
+                  "choices": [
+                    "It abolished slavery throughout the entire United States.",
+                    "It lowered the voting age to 18.",
+                    "It created the income tax.",
+                    "It purchased the Louisiana Territory."
+                  ],
+                  "answer": "It abolished slavery throughout the entire United States.",
+                  "explanation": "Ratified in 1865, the 13th Amendment permanently outlawed slavery across the nation."
+                },
+                {
+                  "id": "g8-soc-cw-6",
+                  "type": "mc",
+                  "prompt": "What did the 14th Amendment guarantee during Reconstruction?",
+                  "choices": [
+                    "Birthright citizenship and equal protection under the law",
+                    "Only landowners could vote",
+                    "States could ignore the Bill of Rights",
+                    "Presidential term limits"
+                  ],
+                  "answer": "Birthright citizenship and equal protection under the law",
+                  "explanation": "The 14th Amendment defined national citizenship for all persons born in the U.S. and required equal protection of the laws."
+                },
+                {
+                  "id": "g8-soc-cw-7",
+                  "type": "mc",
+                  "prompt": "What right did the 15th Amendment protect?",
+                  "choices": [
+                    "Voting rights could not be denied based on race.",
+                    "Freedom to print newspapers",
+                    "Quartering of soldiers",
+                    "State tariffs on cotton"
+                  ],
+                  "answer": "Voting rights could not be denied based on race.",
+                  "explanation": "The 15th Amendment prohibited states from denying a citizen the right to vote on account of race, color, or previous servitude."
+                },
+                {
+                  "id": "g8-soc-cw-8",
+                  "type": "mc",
+                  "prompt": "Who was Frederick Douglass?",
+                  "choices": [
+                    "A formerly enslaved abolitionist writer and speaker for equality",
+                    "The president of the Confederacy",
+                    "The British commander at Yorktown",
+                    "The governor of Virginia"
+                  ],
+                  "answer": "A formerly enslaved abolitionist writer and speaker for equality",
+                  "explanation": "Frederick Douglass escaped slavery and became a leading abolitionist author, orator, and advisor to President Lincoln."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "[Civil War & Reconstruction] Micro-Lesson Scope (~10 min total): Complete ONLY the 3 bite-sized steps below for \"Westward Expansion, Abolition, Civil War & Reconstruction\" (OH.8.SS.11 / OH.8.SS.12 / OH.8.SS.13), then return to this tab for your randomized Mastery Check.",
+            "steps": [
+              {
+                "id": "g8-soc-u2-l1-step-1-video",
+                "type": "video",
+                "title": "Step 1: Watch 1 Short Video — Khan Academy: Abolition, Gettysburg & the Emancipation Proclamation",
+                "description": "Open the linked Khan Academy resource and watch the single video matching \"Westward Expansion, Abolition, Civil War & Reconstruction\" (OH.8.SS.11 / OH.8.SS.12 / OH.8.SS.13). Stop after that 1 video and return here.",
+                "estimatedMinutes": 5,
+                "url": "https://www.khanacademy.org/humanities/us-history/civil-war-era"
+              },
+              {
+                "id": "g8-soc-u2-l1-step-2-reading",
+                "type": "reading",
+                "title": "Step 2: Read Core Concept Notes",
+                "description": "Read the Core Concept Explanation on this page and check how each rule applies to Westward Expansion, Abolition, Civil War & Reconstruction.",
+                "estimatedMinutes": 3
+              },
+              {
+                "id": "g8-soc-u2-l1-step-3-principles",
+                "type": "practice",
+                "title": "Step 3: Review Principle Cards (OH.8.SS.11 / OH.8.SS.12 / OH.8.SS.13)",
+                "description": "Check each Principle Card below before unlocking the 5-question randomized Mastery Check.",
+                "estimatedMinutes": 3
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: Westward Expansion, Abolition, Civil War & Reconstruction.",
+              "Disputes over the expansion of slavery led to the Civil War (1861–1865); the 13th, 14th, and 15th Amendments reshaped the nation.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"What central issue divided the North and South before the Civil War?\" → Answer: Slavery and its expansion into western territories. (Moral, economic, and political conflicts over slavery—especially in new western lands—drove sectional division.)",
+            "links": [
+              {
+                "label": "YouTube: \"Civil War & Reconstruction\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20social%20Civil%20War%20%26%20Reconstruction%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Civil War & Reconstruction\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Civil%20War%20%26%20Reconstruction",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Civil War & Reconstruction",
+                "url": "https://www.youtube.com/results?search_query=Civil%20War%20%26%20Reconstruction%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        },
+        {
+          "id": "g8-soc-u2-test",
+          "unitId": "g8-soc-u2",
+          "title": "Unit 2 Exam: Founding Principles, Civil War & Reconstruction",
+          "kind": "unit_test",
+          "partOf": "Civil War & Reconstruction",
+          "estimatedMinutes": 15,
+          "videoUrl": "https://www.khanacademy.org/humanities/us-history/civil-war-era",
+          "videoTitle": "Unit 2 U.S. History Mastery Exam",
+          "reading": "Complete this 8-question exam covering the Abolitionist movement, Underground Railroad in Ohio, Civil War turning points, and the Reconstruction Amendments.",
+          "questionCount": 8,
+          "principles": [
+            {
+              "id": "p-g8-soc-constitution-ohio",
+              "title": "U.S. Constitution, Bill of Rights & the Northwest Ordinance",
+              "standard": "OH.8.SS.7 / OH.8.SS.8 / OH.8.SS.9",
+              "summary": "The Constitution replaced the weak Articles of Confederation; the Bill of Rights protects liberties, and the Northwest Ordinance shaped Ohio.",
+              "bank": [
+                {
+                  "id": "g8-soc-con-1",
+                  "type": "mc",
+                  "prompt": "Why did the Articles of Confederation fail as America’s first government?",
+                  "choices": [
+                    "Congress was too weak to tax or enforce laws.",
+                    "It gave the president absolute royal power.",
+                    "It banned all state governments.",
+                    "It created too many federal courts."
+                  ],
+                  "answer": "Congress was too weak to tax or enforce laws.",
+                  "explanation": "Under the Articles, Congress lacked power to levy taxes or regulate trade, leading to the 1787 Constitutional Convention."
+                },
+                {
+                  "id": "g8-soc-con-2",
+                  "type": "mc",
+                  "prompt": "How does the U.S. Constitution prevent any one branch from becoming a tyranny?",
+                  "choices": [
+                    "Separation of powers with checks and balances",
+                    "Giving Congress control over courts and the presidency",
+                    "Eliminating elections",
+                    "Letting states ignore federal treaties"
+                  ],
+                  "answer": "Separation of powers with checks and balances",
+                  "explanation": "Dividing power among legislative, executive, and judicial branches lets each branch check the others."
+                },
+                {
+                  "id": "g8-soc-con-3",
+                  "type": "mc",
+                  "prompt": "What are the first ten amendments to the U.S. Constitution called?",
+                  "choices": [
+                    "The Bill of Rights",
+                    "The Articles of Confederation",
+                    "The Federalist Papers",
+                    "The Emancipation Proclamation"
+                  ],
+                  "answer": "The Bill of Rights",
+                  "explanation": "Ratified in 1791, the Bill of Rights guarantees individual freedoms such as speech, religion, and fair trials."
+                },
+                {
+                  "id": "g8-soc-con-4",
+                  "type": "mc",
+                  "prompt": "Which five freedoms are protected by the First Amendment?",
+                  "choices": [
+                    "Religion, speech, press, assembly, and petition",
+                    "Jury trial, bail, taxes, roads, and coinage",
+                    "Voting, presidency, treaties, tariffs, and banking",
+                    "Property, travel, farming, hunting, and fishing"
+                  ],
+                  "answer": "Religion, speech, press, assembly, and petition",
+                  "explanation": "The First Amendment protects freedom of religion, speech, the press, peaceful assembly, and petitioning government."
+                },
+                {
+                  "id": "g8-soc-con-5",
+                  "type": "mc",
+                  "prompt": "How did the Northwest Ordinance of 1787 directly affect Ohio?",
+                  "choices": [
+                    "It set Ohio’s statehood path and banned slavery.",
+                    "It sold Ohio back to Great Britain.",
+                    "It made slavery mandatory in the Northwest Territory.",
+                    "It banned public schools in Ohio."
+                  ],
+                  "answer": "It set Ohio’s statehood path and banned slavery.",
+                  "explanation": "The Northwest Ordinance created rules for admitting new states like Ohio (1803), encouraged education, and banned slavery in the territory."
+                },
+                {
+                  "id": "g8-soc-con-6",
+                  "type": "mc",
+                  "prompt": "What is federalism under the U.S. Constitution?",
+                  "choices": [
+                    "Sharing power between the national and state governments",
+                    "Rule by a single king or queen",
+                    "Abolishing all state legislatures",
+                    "Giving all power to foreign allies"
+                  ],
+                  "answer": "Sharing power between the national and state governments",
+                  "explanation": "Federalism divides governing authority between the federal government in Washington and the individual states."
+                },
+                {
+                  "id": "g8-soc-con-7",
+                  "type": "mc",
+                  "prompt": "What did the Great Compromise at the 1787 Convention create?",
+                  "choices": [
+                    "A two-house Congress: the Senate and House of Representatives",
+                    "A single-house parliament",
+                    "Twelve presidents serving at once",
+                    "No legislative branch"
+                  ],
+                  "answer": "A two-house Congress: the Senate and House of Representatives",
+                  "explanation": "The Great Compromise balanced equal state representation in the Senate with population-based representation in the House."
+                },
+                {
+                  "id": "g8-soc-con-8",
+                  "type": "mc",
+                  "prompt": "Why did Anti-Federalists initially oppose ratifying the Constitution?",
+                  "choices": [
+                    "It lacked a Bill of Rights to protect citizens’ liberties.",
+                    "It made the central government too weak.",
+                    "It kept King George III in charge.",
+                    "It outlawed farming."
+                  ],
+                  "answer": "It lacked a Bill of Rights to protect citizens’ liberties.",
+                  "explanation": "Anti-Federalists insisted on adding a Bill of Rights so the federal government could not infringe on personal freedoms."
+                }
+              ]
+            },
+            {
+              "id": "p-g8-soc-civil-war",
+              "title": "Westward Expansion, Abolition, Civil War & Reconstruction",
+              "standard": "OH.8.SS.11 / OH.8.SS.12 / OH.8.SS.13",
+              "summary": "Disputes over the expansion of slavery led to the Civil War (1861–1865); the 13th, 14th, and 15th Amendments reshaped the nation.",
+              "bank": [
+                {
+                  "id": "g8-soc-cw-1",
+                  "type": "mc",
+                  "prompt": "What central issue divided the North and South before the Civil War?",
+                  "choices": [
+                    "Slavery and its expansion into western territories",
+                    "Whether to speak English or French",
+                    "Building ships versus airplanes",
+                    "Returning to British rule"
+                  ],
+                  "answer": "Slavery and its expansion into western territories",
+                  "explanation": "Moral, economic, and political conflicts over slavery—especially in new western lands—drove sectional division."
+                },
+                {
+                  "id": "g8-soc-cw-2",
+                  "type": "mc",
+                  "prompt": "What role did Ohio play in the Underground Railroad?",
+                  "choices": [
+                    "Safe-house routes helping freedom seekers reach Canada",
+                    "A steam locomotive factory in Texas",
+                    "A Confederate military base",
+                    "A gold-mining tunnel in California"
+                  ],
+                  "answer": "Safe-house routes helping freedom seekers reach Canada",
+                  "explanation": "Bounded by the Ohio River and Lake Erie, Ohio had many abolitionist conductors and routes on the Underground Railroad."
+                },
+                {
+                  "id": "g8-soc-cw-3",
+                  "type": "mc",
+                  "prompt": "What did Abraham Lincoln’s 1863 Emancipation Proclamation declare?",
+                  "choices": [
+                    "Enslaved people in rebelling Confederate states were free.",
+                    "The Civil War was canceled.",
+                    "Women gained the right to vote in 1863.",
+                    "Slavery was expanded into Ohio."
+                  ],
+                  "answer": "Enslaved people in rebelling Confederate states were free.",
+                  "explanation": "The Emancipation Proclamation declared freedom for enslaved people in Confederate territory and made ending slavery a war goal."
+                },
+                {
+                  "id": "g8-soc-cw-4",
+                  "type": "mc",
+                  "prompt": "Which 1863 battle in Pennsylvania was a major turning point for the Union?",
+                  "choices": [
+                    "Battle of Gettysburg",
+                    "Battle of Saratoga",
+                    "Battle of Yorktown",
+                    "Lexington"
+                  ],
+                  "answer": "Battle of Gettysburg",
+                  "explanation": "The Union victory at Gettysburg halted General Lee’s northern invasion and was followed by Lincoln’s Gettysburg Address."
+                },
+                {
+                  "id": "g8-soc-cw-5",
+                  "type": "mc",
+                  "prompt": "What did the 13th Amendment to the Constitution accomplish in 1865?",
+                  "choices": [
+                    "It abolished slavery throughout the entire United States.",
+                    "It lowered the voting age to 18.",
+                    "It created the income tax.",
+                    "It purchased the Louisiana Territory."
+                  ],
+                  "answer": "It abolished slavery throughout the entire United States.",
+                  "explanation": "Ratified in 1865, the 13th Amendment permanently outlawed slavery across the nation."
+                },
+                {
+                  "id": "g8-soc-cw-6",
+                  "type": "mc",
+                  "prompt": "What did the 14th Amendment guarantee during Reconstruction?",
+                  "choices": [
+                    "Birthright citizenship and equal protection under the law",
+                    "Only landowners could vote",
+                    "States could ignore the Bill of Rights",
+                    "Presidential term limits"
+                  ],
+                  "answer": "Birthright citizenship and equal protection under the law",
+                  "explanation": "The 14th Amendment defined national citizenship for all persons born in the U.S. and required equal protection of the laws."
+                },
+                {
+                  "id": "g8-soc-cw-7",
+                  "type": "mc",
+                  "prompt": "What right did the 15th Amendment protect?",
+                  "choices": [
+                    "Voting rights could not be denied based on race.",
+                    "Freedom to print newspapers",
+                    "Quartering of soldiers",
+                    "State tariffs on cotton"
+                  ],
+                  "answer": "Voting rights could not be denied based on race.",
+                  "explanation": "The 15th Amendment prohibited states from denying a citizen the right to vote on account of race, color, or previous servitude."
+                },
+                {
+                  "id": "g8-soc-cw-8",
+                  "type": "mc",
+                  "prompt": "Who was Frederick Douglass?",
+                  "choices": [
+                    "A formerly enslaved abolitionist writer and speaker for equality",
+                    "The president of the Confederacy",
+                    "The British commander at Yorktown",
+                    "The governor of Virginia"
+                  ],
+                  "answer": "A formerly enslaved abolitionist writer and speaker for equality",
+                  "explanation": "Frederick Douglass escaped slavery and became a leading abolitionist author, orator, and advisor to President Lincoln."
+                }
+              ]
+            }
+          ],
+          "assignment": {
+            "scopeSummary": "Scope: Unit Exam covering U.S. Constitution, Bill of Rights & the Northwest Ordinance & Westward Expansion, Abolition, Civil War & Reconstruction (OH.8.SS.7 / OH.8.SS.8 / OH.8.SS.9, OH.8.SS.11 / OH.8.SS.12 / OH.8.SS.13). Review the concept summaries below—do NOT complete an entire external unit on Khan Academy before starting this check.",
+            "steps": [
+              {
+                "id": "g8-soc-u2-test-step-review",
+                "type": "reading",
+                "title": "Review Principles: U.S. Constitution, Bill of Rights & the Northwest Ordinance & Westward Expansion, Abolition, Civil War & Reconstruction",
+                "description": "Read the Core Concept Summary and Principle cards on this page (OH.8.SS.7 / OH.8.SS.8 / OH.8.SS.9, OH.8.SS.11 / OH.8.SS.12 / OH.8.SS.13) to refresh rules and key terms.",
+                "estimatedMinutes": 4
+              },
+              {
+                "id": "g8-soc-u2-test-step-video",
+                "type": "video",
+                "title": "Optional Refresher: Unit 2 U.S. History Mastery Exam",
+                "description": "If any rule feels rusty, watch ONLY the single introductory video for \"U.S. Constitution, Bill of Rights & the Northwest Ordinance & Westward Expansion, Abolition, Civil War & Reconstruction\" (1 activity, ~5 min), then return here for your Unit Exam.",
+                "estimatedMinutes": 6,
+                "url": "https://www.khanacademy.org/humanities/us-history/civil-war-era"
+              }
+            ]
+          },
+          "remediation": {
+            "simpleSteps": [
+              "Focus on one rule: U.S. Constitution, Bill of Rights & the Northwest Ordinance.",
+              "The Constitution replaced the weak Articles of Confederation; the Bill of Rights protects liberties, and the Northwest Ordinance shaped Ohio.",
+              "Cross out two choices that do not match the rule.",
+              "Check your answer against the key word in the question."
+            ],
+            "workedExample": "Example: \"Why did the Articles of Confederation fail as America’s first government?\" → Answer: Congress was too weak to tax or enforce laws.. (Under the Articles, Congress lacked power to levy taxes or regulate trade, leading to the 1787 Constitutional Convention.)",
+            "links": [
+              {
+                "label": "YouTube: \"Civil War & Reconstruction\" (Slow Step-by-Step Visual Guide)",
+                "url": "https://www.youtube.com/results?search_query=grade%208%20social%20Civil%20War%20%26%20Reconstruction%20step%20by%20step%20slow%20for%20kids",
+                "kind": "video",
+                "provider": "YouTube Guided Search",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Khan Academy: \"Civil War & Reconstruction\" Alternate Video & Hints",
+                "url": "https://www.khanacademy.org/search?page_search_query=grade%208%20Civil%20War%20%26%20Reconstruction",
+                "kind": "practice",
+                "provider": "Khan Academy",
+                "requiresParentPin": true
+              },
+              {
+                "label": "YouTube: Animated History — Civil War & Reconstruction",
+                "url": "https://www.youtube.com/results?search_query=Civil%20War%20%26%20Reconstruction%20history%20for%20kids%20simple%20animated",
+                "kind": "video",
+                "provider": "Animated History (YouTube)",
+                "requiresParentPin": true
+              },
+              {
+                "label": "Understood.org: Learning Differences & Multisensory Study Tips",
+                "url": "https://www.understood.org/",
+                "kind": "article",
+                "provider": "Understood.org",
+                "requiresParentPin": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
