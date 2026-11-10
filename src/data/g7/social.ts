@@ -1134,7 +1134,53 @@ export const G7_SOCIAL_COURSE: Course = {
     },
     {
       id: 'g7-soc-u7',
-      title: 'Unit 7: Explore World Civilizations Through Interactive Simulations & Virtual Artifacts',
+      title: 'Unit 7: Grade 7 World Studies Course Challenge',
+      standards: ['OH.7.SS.1', 'OH.7.SS.2', 'OH.7.SS.3', 'OH.7.SS.4', 'OH.7.SS.6', 'OH.7.SS.8'],
+      lessons: [
+        {
+          id: 'g7-soc-u7-l1',
+          unitId: 'g7-soc-u7',
+          title: 'Lesson 1: Classical Civilizations Synthesis: Greece and Rome',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge Part 1',
+          estimatedMinutes: 15,
+          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/v/classical-world-synthesis',
+          videoTitle: 'Khan Academy: Classical Greece and Rome Synthesis',
+          reading:
+            'Synthesize classical political systems, comparing Athenian direct citizen democracy with Roman republican representation, written Twelve Tables law, and lasting architectural innovations.',
+          principles: [G7_SOC_GREECE_PRINCIPLE, G7_SOC_ROME_PRINCIPLE],
+        },
+        {
+          id: 'g7-soc-u7-l2',
+          unitId: 'g7-soc-u7',
+          title: 'Lesson 2: Medieval & Early Modern Civilizations Synthesis',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge Part 2',
+          estimatedMinutes: 15,
+          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/v/medieval-and-renaissance-synthesis',
+          videoTitle: 'Khan Academy: Medieval and Renaissance Synthesis',
+          reading:
+            'Connect feudal lord-vassal loyalty oaths, manorial agriculture, Magna Carta legal limits, Renaissance humanism, and Gutenberg’s movable-type communications revolution.',
+          principles: [G7_SOC_MEDIEVAL_PRINCIPLE, G7_SOC_RENAISSANCE_PRINCIPLE],
+        },
+        {
+          id: 'g7-soc-u7-l3',
+          unitId: 'g7-soc-u7',
+          title: 'Lesson 3: Global Empires & Ohio Democratic Roots Capstone',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge Part 3',
+          estimatedMinutes: 15,
+          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/v/global-networks-and-civics-synthesis',
+          videoTitle: 'Khan Academy: Global Trade and Democratic Roots Synthesis',
+          reading:
+            'Review trans-Saharan gold-salt commerce, Islamic scholarly contributions, the Columbian Exchange, and classical democratic foundations embodied in Ohio’s constitution and civics.',
+          principles: [G7_SOC_GLOBAL_PRINCIPLE, G7_SOC_OHIO_DEMOCRACY_PRINCIPLE],
+        },
+      ],
+    },
+    {
+      id: 'g7-soc-u8',
+      title: 'Unit 8: Explore World Civilizations Through Interactive Simulations & Virtual Artifacts',
       kind: 'explore',
       standards: ['OH.7.SS.Explore'],
       lessons: [],
@@ -1198,8 +1244,8 @@ export const G7_SOCIAL_COURSE: Course = {
       ],
     },
     {
-      id: 'g7-soc-u8',
-      title: 'Unit 8: Teacher Resources & Standards Alignment',
+      id: 'g7-soc-u9',
+      title: 'Unit 9: Teacher Resources & Standards Alignment',
       kind: 'teacher_resources',
       standards: ['OH.7.SS.Teacher'],
       lessons: [],
@@ -1220,7 +1266,7 @@ export const G7_SOCIAL_COURSE: Course = {
 - **Week 26**: Quarter 2 & 3 Medieval & Early Modern Checkpoint
 - **Weeks 27–31**: Unit 5 — West African Empires & Global Trade Networks (OH.7.SS.8, OH.7.SS.11)
 - **Weeks 32–34**: Unit 6 — Classical Roots of Ohio & American Democracy (OH.7.SS.1, OH.7.SS.18)
-- **Weeks 35–36**: Unit 7 — Capstone Historical Simulation Presentations & Portfolio Defense`,
+- **Weeks 35–36**: Unit 7 — Grade 7 World Studies Course Challenge & Simulation Presentations`,
         },
         {
           id: 'g7-soc-res-standards',

@@ -247,6 +247,63 @@ const G7_ELA_GRAMMAR_PRINCIPLE: Principle = {
   ],
 }
 
+const G7_ELA_WRITING_PRINCIPLE: Principle = {
+  id: 'p-g7-ela-writing',
+  title: 'Argumentative Claims, Evidence & Writing Craft',
+  standard: 'W.7.1 / W.7.2',
+  summary: 'Effective argumentative essays state clear thesis claims, cite evidence, and address counterclaims.',
+  bank: [
+    {
+      id: 'g7-ela-wri-1',
+      prompt: 'What makes a strong thesis statement for an essay?',
+      type: 'mc',
+      choices: ['It states a clear, defensible argument', 'It asks an open-ended vague question', 'It lists every fact in the library', 'It repeats the title five times'],
+      answer: 'It states a clear, defensible argument',
+      explanation: 'A thesis statement must take a clear position that can be supported with facts and logical reasoning.',
+    },
+    {
+      id: 'g7-ela-wri-2',
+      prompt: 'How should a writer introduce a direct quotation in text?',
+      type: 'mc',
+      choices: ['Use an introductory signal phrase and comma', 'Drop the quotation with no explanation', 'Paste the quote inside parentheses only', 'Replace the author’s name with numbers'],
+      answer: 'Use an introductory signal phrase and comma',
+      explanation: 'Signal phrases attribute quotations to their authors and smoothly integrate evidence into the paragraph.',
+    },
+    {
+      id: 'g7-ela-wri-3',
+      prompt: 'What is the purpose of a transitional word like "furthermore"?',
+      type: 'mc',
+      choices: ['To add additional supporting evidence or ideas', 'To contradict the previous sentence', 'To end the entire essay immediately', 'To introduce an opposing counterclaim'],
+      answer: 'To add additional supporting evidence or ideas',
+      explanation: 'Transitional words like furthermore and additionally connect related supporting evidence together.',
+    },
+    {
+      id: 'g7-ela-wri-4',
+      prompt: 'How should a writer handle an opposing counterclaim in an essay?',
+      type: 'mc',
+      choices: ['Acknowledge it fairly and refute it with evidence', 'Pretend that no other opinions exist', 'Insult the people who hold that view', 'Delete the original thesis statement'],
+      answer: 'Acknowledge it fairly and refute it with evidence',
+      explanation: 'Addressing counterclaims demonstrates balance and strengthens the author’s overall position.',
+    },
+    {
+      id: 'g7-ela-wri-5',
+      prompt: 'What belongs in the concluding paragraph of an argumentative essay?',
+      type: 'mc',
+      choices: ['A restated thesis and synthesis of arguments', 'Brand new claims that were never mentioned', 'A list of dictionary vocabulary definitions', 'Personal gossip about the classroom'],
+      answer: 'A restated thesis and synthesis of arguments',
+      explanation: 'Conclusions synthesize the essay’s primary arguments and reinforce why the claim matters.',
+    },
+    {
+      id: 'g7-ela-wri-6',
+      prompt: 'Why must authors cite sources when quoting external research?',
+      type: 'mc',
+      choices: ['To give credit and avoid plagiarism', 'To make the essay twice as long', 'To hide where the facts came from', 'To confuse the reader with footnotes'],
+      answer: 'To give credit and avoid plagiarism',
+      explanation: 'Citations attribute credit to original authors and allow readers to verify source accuracy.',
+    },
+  ],
+}
+
 export const G7_ELA_COURSE: Course = {
   id: 'g7-ela',
   subject: 'ela',
@@ -289,6 +346,32 @@ export const G7_ELA_COURSE: Course = {
             'A theme is a universal observation about human nature or life. Track how characters grow from beginning to climax, and summarize the plot without subjective commentary.',
           principles: [G7_ELA_THEME_PRINCIPLE],
         },
+        {
+          id: 'g7-ela-u1-l3',
+          unitId: 'g7-ela-u1',
+          title: 'Lesson 3: Character Conflict & Moral Dilemmas',
+          kind: 'lesson',
+          partOf: 'Character Conflict',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-7th-reading-vocab/x79555c88b0a9dfec:reading-literature/x79555c88b0a9dfec:conflict/v/conflict-reading',
+          videoTitle: 'Khan Academy: Conflict and Character Choices',
+          reading:
+            'Internal and external conflicts force characters into moral decisions. Analyze how choices under pressure reveal core virtues, flaws, and the underlying theme.',
+          principles: [G7_ELA_THEME_PRINCIPLE],
+        },
+        {
+          id: 'g7-ela-u1-l4',
+          unitId: 'g7-ela-u1',
+          title: 'Lesson 4: Unit 1 Review & Literary Analysis Check',
+          kind: 'lesson_review',
+          partOf: 'Unit Review',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-7th-reading-vocab/x79555c88b0a9dfec:reading-literature/x79555c88b0a9dfec:review/v/literary-review',
+          videoTitle: 'Khan Academy: Reading Literature Review',
+          reading:
+            'Review key standards: identifying universal themes, distinguishing theme from topic, analyzing setting impacts on plot, and writing concise objective summaries.',
+          principles: [G7_ELA_THEME_PRINCIPLE],
+        },
       ],
     },
 
@@ -327,6 +410,34 @@ export const G7_ELA_COURSE: Course = {
             'Compare a fictional portrayal of a time, place, or character to historical accounts of the same period to understand how authors adapt history for emotional resonance.',
           principles: [G7_ELA_POV_PRINCIPLE],
         },
+        {
+          id: 'g7-ela-u2-l3',
+          unitId: 'g7-ela-u2',
+          title: 'Lesson 3: Narrative Perspective & Cultural Context',
+          kind: 'lesson',
+          isOhioExtension: true,
+          partOf: 'Narrative Perspective',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-7th-reading-vocab/x79555c88b0a9dfec:reading-literature/x79555c88b0a9dfec:narrative-perspective/v/perspective-reading',
+          videoTitle: 'Khan Academy: First Person and Omniscient Narrators',
+          reading:
+            'Examine how first-person intimacy or third-person omniscient objectivity alters how readers experience historical events and evaluate narrator reliability.',
+          principles: [G7_ELA_POV_PRINCIPLE],
+        },
+        {
+          id: 'g7-ela-u2-l4',
+          unitId: 'g7-ela-u2',
+          title: 'Lesson 4: Unit 2 Review & Perspective Check',
+          kind: 'lesson_review',
+          isOhioExtension: true,
+          partOf: 'Unit Review',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-7th-reading-vocab/x79555c88b0a9dfec:reading-literature/x79555c88b0a9dfec:review/v/perspective-review',
+          videoTitle: 'Khan Academy: Perspective and Historical Fiction Review',
+          reading:
+            'Synthesize how historical novelists craft realistic dialogue and emotional subtext while remaining anchored to documented historical turning points.',
+          principles: [G7_ELA_POV_PRINCIPLE],
+        },
       ],
     },
 
@@ -360,6 +471,32 @@ export const G7_ELA_COURSE: Course = {
           videoTitle: 'Khan Academy: Text Structure and Rhetorical Purpose',
           reading:
             'Examine whether an author organizes information chronologically, comparatively, or argumentatively to advance a specific point of view or persuade the audience.',
+          principles: [G7_ELA_ARGUMENT_PRINCIPLE],
+        },
+        {
+          id: 'g7-ela-u3-l3',
+          unitId: 'g7-ela-u3',
+          title: 'Lesson 3: Supporting Details & Objective Nonfiction Summaries',
+          kind: 'lesson',
+          partOf: 'Nonfiction Summaries',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-7th-reading-vocab/x79555c88b0a9dfec:reading-informational-text/x79555c88b0a9dfec:summaries/v/nonfiction-summaries',
+          videoTitle: 'Khan Academy: Objective Summaries of Nonfiction',
+          reading:
+            'Distinguish major supporting facts from incidental trivia. Write an objective nonfiction summary that conveys central claims without editorial personal reaction.',
+          principles: [G7_ELA_ARGUMENT_PRINCIPLE],
+        },
+        {
+          id: 'g7-ela-u3-l4',
+          unitId: 'g7-ela-u3',
+          title: 'Lesson 4: Unit 3 Review & Informational Analysis Check',
+          kind: 'lesson_review',
+          partOf: 'Unit Review',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-7th-reading-vocab/x79555c88b0a9dfec:reading-informational-text/x79555c88b0a9dfec:review/v/informational-review',
+          videoTitle: 'Khan Academy: Informational Text Review',
+          reading:
+            'Review key informational text standards: locating dual central ideas, analyzing structural frameworks, and producing concise objective summaries.',
           principles: [G7_ELA_ARGUMENT_PRINCIPLE],
         },
       ],
@@ -397,6 +534,32 @@ export const G7_ELA_COURSE: Course = {
             'Examine author qualifications, publication intent, date of research, and independent corroboration to separate reliable academic evidence from biased hearsay.',
           principles: [G7_ELA_ARGUMENT_PRINCIPLE],
         },
+        {
+          id: 'g7-ela-u4-l3',
+          unitId: 'g7-ela-u4',
+          title: 'Lesson 3: Logical Fallacies & Soundness of Reasoning',
+          kind: 'lesson',
+          partOf: 'Logical Fallacies',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-7th-reading-vocab/x79555c88b0a9dfec:reading-informational-text/x79555c88b0a9dfec:evaluating-arguments/v/fallacies-reading',
+          videoTitle: 'Khan Academy: Identifying Logical Fallacies',
+          reading:
+            'Identify faulty reasoning such as ad hominem attacks, hasty generalizations, and false dilemmas that weaken an author’s persuasive credibility.',
+          principles: [G7_ELA_ARGUMENT_PRINCIPLE],
+        },
+        {
+          id: 'g7-ela-u4-l4',
+          unitId: 'g7-ela-u4',
+          title: 'Lesson 4: Unit 4 Review & Argument Evaluation Check',
+          kind: 'lesson_review',
+          partOf: 'Unit Review',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-7th-reading-vocab/x79555c88b0a9dfec:reading-informational-text/x79555c88b0a9dfec:review/v/evaluating-arguments-review',
+          videoTitle: 'Khan Academy: Evaluating Arguments Review',
+          reading:
+            'Review criteria for sound arguments: relevant empirical data, anticipation of opposing views, logical reasoning free of fallacies, and verified expert citations.',
+          principles: [G7_ELA_ARGUMENT_PRINCIPLE],
+        },
       ],
     },
 
@@ -430,6 +593,32 @@ export const G7_ELA_COURSE: Course = {
           videoTitle: 'Khan Academy: Avoiding Misplaced and Dangling Modifiers',
           reading:
             'Place modifying phrases directly adjacent to the target noun they describe to prevent unintentional, humorous, or confusing syntax ambiguities.',
+          principles: [G7_ELA_GRAMMAR_PRINCIPLE],
+        },
+        {
+          id: 'g7-ela-u5-l3',
+          unitId: 'g7-ela-u5',
+          title: 'Lesson 3: Subordinating Conjunctions & Complex Sentences',
+          kind: 'lesson',
+          partOf: 'Complex Sentences',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/grammar/syntax-sentences-and-clauses/phrases-and-clauses/v/complex-sentences',
+          videoTitle: 'Khan Academy: Building Complex Sentences',
+          reading:
+            'Master subordinating conjunctions (since, while, whereas, unless) to weave independent and dependent clauses into varied, expressive complex sentences.',
+          principles: [G7_ELA_GRAMMAR_PRINCIPLE],
+        },
+        {
+          id: 'g7-ela-u5-l4',
+          unitId: 'g7-ela-u5',
+          title: 'Lesson 4: Unit 5 Review & Sentence Structure Check',
+          kind: 'lesson_review',
+          partOf: 'Unit Review',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/grammar/syntax-sentences-and-clauses/v/syntax-review',
+          videoTitle: 'Khan Academy: Syntax and Sentence Structure Review',
+          reading:
+            'Review sentence mechanics: distinguishing clauses from phrases, repairing dangling participles, and using punctuation to separate introductory dependent clauses.',
           principles: [G7_ELA_GRAMMAR_PRINCIPLE],
         },
       ],
@@ -467,13 +656,148 @@ export const G7_ELA_COURSE: Course = {
             'Denotation is the exact dictionary definition; connotation is the emotional feeling or social association attached to a word (e.g. thrifty vs. cheap).',
           principles: [G7_ELA_GRAMMAR_PRINCIPLE],
         },
+        {
+          id: 'g7-ela-u6-l3',
+          unitId: 'g7-ela-u6',
+          title: 'Lesson 3: Figurative Language: Metaphor, Analogy & Irony',
+          kind: 'lesson',
+          partOf: 'Figurative Language',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-7th-reading-vocab/x79555c88b0a9dfec:vocabulary/x79555c88b0a9dfec:figurative-language/v/figurative-reading',
+          videoTitle: 'Khan Academy: Interpreting Figures of Speech',
+          reading:
+            'Analyze how extended metaphors, vivid analogies, and dramatic irony enrich literary narrative texture and underscore an author’s nuanced messaging.',
+          principles: [G7_ELA_GRAMMAR_PRINCIPLE],
+        },
+        {
+          id: 'g7-ela-u6-l4',
+          unitId: 'g7-ela-u6',
+          title: 'Lesson 4: Unit 6 Review & Vocabulary Nuance Check',
+          kind: 'lesson_review',
+          partOf: 'Unit Review',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-7th-reading-vocab/x79555c88b0a9dfec:vocabulary/x79555c88b0a9dfec:review/v/vocab-review',
+          videoTitle: 'Khan Academy: Vocabulary and Roots Review',
+          reading:
+            'Review classical root families, deciphering unfamiliar terminology from context clues, and selecting words with precise positive or negative connotations.',
+          principles: [G7_ELA_GRAMMAR_PRINCIPLE],
+        },
       ],
     },
 
-    // UNIT 7: Explore ELA Through Creative Projects (enrichment)
+    // UNIT 7: Writing Workshop: Argumentative Claims & Evidence
     {
       id: 'g7-ela-u7',
-      title: 'Unit 7: Explore ELA Through Creative Projects',
+      title: 'Unit 7: Writing Workshop: Argumentative Claims & Evidence',
+      standards: ['W.7.1', 'W.7.2'],
+      lessons: [
+        {
+          id: 'g7-ela-u7-l1',
+          unitId: 'g7-ela-u7',
+          title: 'Lesson 1: Developing a Precise Thesis Claim',
+          kind: 'lesson',
+          partOf: 'Thesis Development',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition/writing-essays/v/developing-a-thesis',
+          videoTitle: 'Khan Academy: Developing a Precise Thesis',
+          reading:
+            'A compelling argumentative thesis takes a clear, defensible position on an issue and previews the major logical grounds supporting the claim.',
+          principles: [G7_ELA_WRITING_PRINCIPLE],
+        },
+        {
+          id: 'g7-ela-u7-l2',
+          unitId: 'g7-ela-u7',
+          title: 'Lesson 2: Integrating Textual Evidence & Quotations',
+          kind: 'lesson',
+          partOf: 'Evidence Integration',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition/writing-essays/v/integrating-evidence',
+          videoTitle: 'Khan Academy: Integrating Quotes and Evidence',
+          reading:
+            'Smoothly embed direct quotations and data using signal phrases, formal attribution, and parenthetical citations to maintain narrative flow and academic integrity.',
+          principles: [G7_ELA_WRITING_PRINCIPLE],
+        },
+        {
+          id: 'g7-ela-u7-l3',
+          unitId: 'g7-ela-u7',
+          title: 'Lesson 3: Acknowledging and Refuting Counterclaims',
+          kind: 'lesson',
+          partOf: 'Counterclaim & Rebuttal',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition/writing-essays/v/counterclaims',
+          videoTitle: 'Khan Academy: Addressing Opposing Counterclaims',
+          reading:
+            'Strengthen your thesis by fairly presenting the strongest alternative perspective, followed by a factual rebuttal that exposes flaws in the opposing premise.',
+          principles: [G7_ELA_WRITING_PRINCIPLE],
+        },
+        {
+          id: 'g7-ela-u7-l4',
+          unitId: 'g7-ela-u7',
+          title: 'Lesson 4: Unit 7 Review & Argumentative Writing Synthesis',
+          kind: 'lesson_review',
+          partOf: 'Unit Review',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition/writing-essays/v/argument-review',
+          videoTitle: 'Khan Academy: Argumentative Writing Synthesis Review',
+          reading:
+            'Review essay organization: introduction with thesis, body paragraphs with evidence and commentary, balanced counterclaim rebuttal, and impactful conclusion.',
+          principles: [G7_ELA_WRITING_PRINCIPLE],
+        },
+      ],
+    },
+
+    // UNIT 8: Grade 7 ELA Course Challenge
+    {
+      id: 'g7-ela-u8',
+      title: 'Unit 8: Grade 7 ELA Course Challenge',
+      standards: ['RL.7', 'RI.7', 'W.7', 'L.7'],
+      lessons: [
+        {
+          id: 'g7-ela-u8-l1',
+          unitId: 'g7-ela-u8',
+          title: 'Lesson 1: Reading Literature & Figurative Language Synthesis',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge Part 1',
+          estimatedMinutes: 15,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-7th-reading-vocab/x79555c88b0a9dfec:course-challenge/v/lit-synthesis',
+          videoTitle: 'Khan Academy: Grade 7 Literature Synthesis',
+          reading:
+            'Synthesize literary themes, setting influences, narrator perspective, and figurative language across complex passages.',
+          principles: [G7_ELA_THEME_PRINCIPLE, G7_ELA_POV_PRINCIPLE],
+        },
+        {
+          id: 'g7-ela-u8-l2',
+          unitId: 'g7-ela-u8',
+          title: 'Lesson 2: Informational Text & Source Evaluation Synthesis',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge Part 2',
+          estimatedMinutes: 15,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-7th-reading-vocab/x79555c88b0a9dfec:course-challenge/v/info-synthesis',
+          videoTitle: 'Khan Academy: Grade 7 Nonfiction Synthesis',
+          reading:
+            'Demonstrate mastery in determining dual central ideas, analyzing rhetorical text structure, and evaluating source credibility.',
+          principles: [G7_ELA_ARGUMENT_PRINCIPLE],
+        },
+        {
+          id: 'g7-ela-u8-l3',
+          unitId: 'g7-ela-u8',
+          title: 'Lesson 3: Language Conventions & Argumentative Writing Capstone',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge Part 3',
+          estimatedMinutes: 15,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-7th-reading-vocab/x79555c88b0a9dfec:course-challenge/v/writing-synthesis',
+          videoTitle: 'Khan Academy: Grade 7 Language and Writing Capstone',
+          reading:
+            'Apply advanced knowledge of independent and dependent clauses, misplaced modifier correction, classical root etymology, and argumentative thesis development.',
+          principles: [G7_ELA_GRAMMAR_PRINCIPLE, G7_ELA_WRITING_PRINCIPLE],
+        },
+      ],
+    },
+
+    // UNIT 9: Explore ELA Through Creative Projects (enrichment)
+    {
+      id: 'g7-ela-u9',
+      title: 'Unit 9: Explore ELA Through Creative Projects',
       kind: 'explore',
       standards: ['W.7.1', 'SL.7.4', 'RL.7.7'],
       lessons: [],
@@ -526,10 +850,10 @@ export const G7_ELA_COURSE: Course = {
       ],
     },
 
-    // UNIT 8: Teacher Resources & Pacing
+    // UNIT 10: Teacher Resources & Pacing
     {
-      id: 'g7-ela-u8',
-      title: 'Unit 8: Teacher Resources & Pacing',
+      id: 'g7-ela-u10',
+      title: 'Unit 10: Teacher Resources & Pacing',
       kind: 'teacher_resources',
       standards: ['RL.7', 'RI.7', 'W.7', 'L.7'],
       lessons: [],
@@ -549,8 +873,9 @@ export const G7_ELA_COURSE: Course = {
 - **Weeks 16–21**: Unit 4 — Evaluating Arguments & Credibility of Sources (RI.7.8)
 - **Weeks 22–26**: Unit 5 — Grammar: Clauses, Phrases & Misplaced Modifiers (L.7.1)
 - **Week 27**: Quarter 2 & 3 Language and Conventions Assessment
-- **Weeks 28–32**: Unit 6 — Vocabulary: Greek/Latin Etymology & Nuance (L.7.4, L.7.5)
-- **Weeks 33–36**: Unit 7 — Capstone Podcast Debate Presentations & Writing Portfolios`,
+- **Weeks 28–31**: Unit 6 — Vocabulary: Greek/Latin Etymology & Nuance (L.7.4, L.7.5)
+- **Weeks 32–34**: Unit 7 — Writing Workshop: Argumentative Claims & Evidence (W.7.1, W.7.2)
+- **Weeks 35–36**: Unit 8 — Grade 7 ELA Course Challenge & Capstone Debates`,
         },
         {
           id: 'g7-ela-res-rubric',
