@@ -66,7 +66,12 @@ export function computeLessonEffectiveScore(
 ): number | null {
   if (!lessonAttempts || lessonAttempts.length === 0) return null
 
-  const sorted = [...lessonAttempts].sort((a, b) => a.attemptNumber - b.attemptNumber)
+  const validAttempts = lessonAttempts.filter(
+    (a) => typeof a.scorePercent === 'number' && !Number.isNaN(a.scorePercent)
+  )
+  if (validAttempts.length === 0) return null
+
+  const sorted = [...validAttempts].sort((a, b) => a.attemptNumber - b.attemptNumber)
   const masteryAttempt = sorted.find(
     (a) => a.passed || a.scorePercent >= settings.masteryThreshold
   )
@@ -75,11 +80,13 @@ export function computeLessonEffectiveScore(
     const extraRetries = Math.max(0, masteryAttempt.attemptNumber - 1)
     const penalty = extraRetries * (settings.retryPenaltyPercent || 0)
     const penalized = masteryAttempt.scorePercent - penalty
-    return Math.max(settings.masteryThreshold, Math.min(100, Number(penalized.toFixed(2))))
+    const finalScore = Math.max(settings.masteryThreshold, Math.min(100, Number(penalized.toFixed(2))))
+    return Number.isNaN(finalScore) ? null : finalScore
   }
 
-  const best = Math.max(...sorted.map((a) => a.scorePercent))
-  return Number(best.toFixed(2))
+  const scores = sorted.map((a) => a.scorePercent)
+  const best = Math.max(...scores)
+  return Number.isNaN(best) ? null : Number(best.toFixed(2))
 }
 
 export function computeCourseGrade(

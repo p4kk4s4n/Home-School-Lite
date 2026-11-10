@@ -1,5 +1,6 @@
 import React from 'react'
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { ErrorBoundary } from './components/ErrorBoundary'
 import { Layout } from './components/Layout'
 import { AppProvider, useApp } from './context/AppContext'
 import { CoursePage } from './pages/CoursePage'
@@ -23,18 +24,34 @@ const AppRoutes: React.FC = () => {
   }
 
   return (
-    <Layout>
-      <Routes>
-        <Route path="/" element={<DashboardPage />} />
-        <Route path="/course/:courseId" element={<CoursePage />} />
-        <Route path="/course/:courseId/lesson/:lessonId" element={<LessonPage />} />
-        <Route path="/tracker" element={<TrackerPage />} />
-        <Route path="/grades" element={<GradesPage />} />
-        <Route path="/family" element={<FamilyPage />} />
-        <Route path="/settings" element={<SettingsPage />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-    </Layout>
+    <ErrorBoundary fallbackTitle="Application View Error">
+      <Layout>
+        <Routes>
+          <Route path="/" element={<DashboardPage />} />
+          <Route
+            path="/course/:courseId"
+            element={
+              <ErrorBoundary fallbackTitle="Course Map Error">
+                <CoursePage />
+              </ErrorBoundary>
+            }
+          />
+          <Route
+            path="/course/:courseId/lesson/:lessonId"
+            element={
+              <ErrorBoundary fallbackTitle="Lesson View Error">
+                <LessonPage />
+              </ErrorBoundary>
+            }
+          />
+          <Route path="/tracker" element={<TrackerPage />} />
+          <Route path="/grades" element={<GradesPage />} />
+          <Route path="/family" element={<FamilyPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Layout>
+    </ErrorBoundary>
   )
 }
 

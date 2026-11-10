@@ -53,14 +53,15 @@ export const CoursePage: React.FC = () => {
     return computeCourseGrade(course, attempts, settings)
   }, [course, attempts, settings])
 
-  // Load completed explore item IDs from namespaced localStorage
+  // Load completed explore item IDs from namespaced localStorage safely
   useEffect(() => {
     if (!activeStudent || !course) return
     const key = `explore:${activeStudent.id}:${course.id}`
     const raw = getLocalItem(key)
     if (raw) {
       try {
-        setCompletedExploreIds(JSON.parse(raw))
+        const parsed = JSON.parse(raw)
+        setCompletedExploreIds(Array.isArray(parsed) ? parsed : [])
       } catch {
         setCompletedExploreIds([])
       }
@@ -72,9 +73,10 @@ export const CoursePage: React.FC = () => {
   const toggleExploreDone = (itemId: string) => {
     if (!activeStudent || !course) return
     setCompletedExploreIds((prev) => {
-      const next = prev.includes(itemId)
-        ? prev.filter((id) => id !== itemId)
-        : [...prev, itemId]
+      const safePrev = Array.isArray(prev) ? prev : []
+      const next = safePrev.includes(itemId)
+        ? safePrev.filter((id) => id !== itemId)
+        : [...safePrev, itemId]
       const key = `explore:${activeStudent.id}:${course.id}`
       setLocalItem(key, JSON.stringify(next))
       return next
@@ -98,10 +100,13 @@ export const CoursePage: React.FC = () => {
 
   if (!course || !progress || !gradeSummary) {
     return (
-      <div className="card">
+      <div className="card" style={{ maxWidth: '640px', margin: '2rem auto', textAlign: 'center' }}>
         <h2>Course not found</h2>
+        <p className="muted" style={{ margin: '0.5rem 0 1.25rem 0' }}>
+          The requested course ID could not be loaded or is not enrolled for your student.
+        </p>
         <Link to="/" className="btn btn-primary">
-          Back to Dashboard
+          ← Back to Student Dashboard
         </Link>
       </div>
     )
@@ -358,7 +363,7 @@ export const CoursePage: React.FC = () => {
               <div>
                 <h2>{unit.title}</h2>
                 <div className="standards-tags">
-                  {unit.standards.map((std) => (
+                  {(unit.standards || []).map((std) => (
                     <span key={std} className="std-tag">
                       Standard: {std}
                     </span>
@@ -408,7 +413,7 @@ export const CoursePage: React.FC = () => {
                         <span>•</span>
                         <span>
                           Principles:{' '}
-                          {lesson.principles.map((p) => p.title).join(', ')}
+                          {(lesson.principles || []).map((p) => p.title || p.id).join(', ')}
                         </span>
                       </div>
                     </div>

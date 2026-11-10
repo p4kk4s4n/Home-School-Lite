@@ -1387,16 +1387,34 @@ code {
 }
 
 @media print {
+  .no-print,
   .topbar,
   .app-footer,
-  .btn {
+  .btn,
+  .breadcrumb-row,
+  .mode-tabs,
+  .pin-gate-card {
     display: none !important;
   }
-  body {
-    background: #fff;
+  body, .main-container, .page-stack {
+    background: #fff !important;
+    color: #000 !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   .card {
-    box-shadow: none;
-    border: 1px solid #000;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .worksheet-container {
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+  .worksheet-q-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 }

@@ -67,11 +67,14 @@ export function computeCourseProgress(
       const masteryAttempt = attempts.find(
         (a) => a.passed || a.scorePercent >= masteryThreshold
       )
+      const validAttempts = attempts.filter(
+        (a) => typeof a.scorePercent === 'number' && !Number.isNaN(a.scorePercent)
+      )
       const isMastered = Boolean(masteryAttempt)
       const bestScore =
-        attempts.length > 0 ? Math.max(...attempts.map((a) => a.scorePercent)) : null
+        validAttempts.length > 0 ? Math.max(...validAttempts.map((a) => a.scorePercent)) : null
       const lastScore =
-        attempts.length > 0 ? attempts[attempts.length - 1].scorePercent : null
+        validAttempts.length > 0 ? validAttempts[validAttempts.length - 1].scorePercent : null
 
       let status: LessonStatus
       if (isMastered) {
