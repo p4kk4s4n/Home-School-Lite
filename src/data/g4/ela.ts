@@ -476,6 +476,32 @@ export const G4_ELA_COURSE: Course = {
             'When an author does not say something directly, use your background knowledge and clues in the text to make a logical inference.',
           principles: [G4_ELA_MAIN_IDEA_PRINCIPLE],
         },
+        {
+          id: 'g4-ela-u1-l3',
+          unitId: 'g4-ela-u1',
+          title: 'Lesson 3: Quoting Accurately from Informational Text',
+          kind: 'lesson',
+          partOf: 'Quoting Evidence',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab/x4487f94e:reading-informational-text/x4487f94e:text-evidence/v/citing-evidence-reading',
+          videoTitle: 'Khan Academy: Citing Text Evidence',
+          reading:
+            'When referring to a text, quote directly or cite specific facts and paragraphs to support your analysis and inferences.',
+          principles: [G4_ELA_MAIN_IDEA_PRINCIPLE],
+        },
+        {
+          id: 'g4-ela-u1-l4',
+          unitId: 'g4-ela-u1',
+          title: 'Quiz 1: Main Ideas & Inferences Check',
+          kind: 'lesson_review',
+          partOf: 'Unit Review',
+          estimatedMinutes: 12,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab/x4487f94e:reading-informational-text',
+          videoTitle: 'Informational Text Review',
+          reading:
+            'Review assessment on identifying central main ideas, citing strong supporting details, and drawing logical inferences.',
+          principles: [G4_ELA_MAIN_IDEA_PRINCIPLE],
+        },
       ],
     },
 
@@ -511,6 +537,32 @@ export const G4_ELA_COURSE: Course = {
             'Compare and contrast highlights similarities and differences. Problem and solution introduces a challenge and details how it is solved.',
           principles: [G4_ELA_STRUCTURE_PRINCIPLE],
         },
+        {
+          id: 'g4-ela-u2-l3',
+          unitId: 'g4-ela-u2',
+          title: 'Lesson 3: Text Features: Headings, Sidebars & Timelines',
+          kind: 'lesson',
+          partOf: 'Text Features',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab/x4487f94e:reading-informational-text/x4487f94e:text-features/v/text-features-reading',
+          videoTitle: 'Khan Academy: Informational Text Features',
+          reading:
+            'Headings, bold words, sidebars, charts, and timelines guide readers to find key information efficiently in non-fiction texts.',
+          principles: [G4_ELA_STRUCTURE_PRINCIPLE],
+        },
+        {
+          id: 'g4-ela-u2-l4',
+          unitId: 'g4-ela-u2',
+          title: 'Quiz 2: Text Structures & Features Review',
+          kind: 'lesson_review',
+          partOf: 'Unit Review',
+          estimatedMinutes: 12,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab/x4487f94e:reading-informational-text',
+          videoTitle: 'Text Structures Review',
+          reading:
+            'Review assessment on identifying chronological order, cause and effect, comparison, problem/solution, and text features.',
+          principles: [G4_ELA_STRUCTURE_PRINCIPLE],
+        },
       ],
     },
 
@@ -518,7 +570,7 @@ export const G4_ELA_COURSE: Course = {
     {
       id: 'g4-ela-u3',
       title: 'Unit 3: Literature, Characters & Central Themes',
-      standards: ['RL.4.2', 'RL.4.3'],
+      standards: ['RL.4.2', 'RL.4.3', 'RL.4.6'],
       lessons: [
         {
           id: 'g4-ela-u3-l1',
@@ -544,6 +596,32 @@ export const G4_ELA_COURSE: Course = {
           videoTitle: 'Khan Academy: Finding the Theme',
           reading:
             'A theme is the universal message or life lesson taught by the narrative, such as kindness, honesty, or perseverance.',
+          principles: [G4_ELA_THEME_PRINCIPLE],
+        },
+        {
+          id: 'g4-ela-u3-l3',
+          unitId: 'g4-ela-u3',
+          title: 'Lesson 3: Points of View: First-Person vs Third-Person',
+          kind: 'lesson',
+          partOf: 'Point of View',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab/x4487f94e:reading-literature/x4487f94e:point-of-view/v/point-of-view-reading',
+          videoTitle: 'Khan Academy: Points of View in Stories',
+          reading:
+            'Compare and contrast first-person narration (I, me, my) with third-person narration (he, she, they) to evaluate character perspective.',
+          principles: [G4_ELA_THEME_PRINCIPLE],
+        },
+        {
+          id: 'g4-ela-u3-l4',
+          unitId: 'g4-ela-u3',
+          title: 'Quiz 3: Literary Elements & Theme Review',
+          kind: 'lesson_review',
+          partOf: 'Unit Review',
+          estimatedMinutes: 12,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab/x4487f94e:reading-literature',
+          videoTitle: 'Literature Review',
+          reading:
+            'Review assessment on character motivations, identifying underlying themes in fables and stories, and narrator point of view.',
           principles: [G4_ELA_THEME_PRINCIPLE],
         },
       ],
@@ -581,6 +659,32 @@ export const G4_ELA_COURSE: Course = {
             'Ohio folklore and history, such as stories of Johnny Appleseed and the Wright brothers, illustrate enduring themes of innovation, service, and resilience.',
           principles: [G4_ELA_SUMMARY_PRINCIPLE],
         },
+        {
+          id: 'g4-ela-u4-l3',
+          unitId: 'g4-ela-u4',
+          title: 'Lesson 3: Primary and Secondary Source Accounts',
+          kind: 'lesson',
+          partOf: 'Historical Sources',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab/x4487f94e:reading-informational-text/x4487f94e:primary-and-secondary-sources/v/primary-sources-reading',
+          videoTitle: 'Khan Academy: Primary and Secondary Sources',
+          reading:
+            'Compare a firsthand account (such as a pioneer journal) and a secondhand account (such as a modern history textbook) of the same historical event.',
+          principles: [G4_ELA_SUMMARY_PRINCIPLE],
+        },
+        {
+          id: 'g4-ela-u4-l4',
+          unitId: 'g4-ela-u4',
+          title: 'Quiz 4: Summaries & Regional Literature Review',
+          kind: 'lesson_review',
+          partOf: 'Unit Review',
+          estimatedMinutes: 12,
+          videoUrl: 'https://www.ohiohistory.org',
+          videoTitle: 'Ohio Literature Quiz Review',
+          reading:
+            'Review assessment on drafting neutral summaries, identifying factual versus opinion statements, and analyzing historical regional narratives.',
+          principles: [G4_ELA_SUMMARY_PRINCIPLE],
+        },
       ],
     },
 
@@ -614,6 +718,32 @@ export const G4_ELA_COURSE: Course = {
           videoTitle: 'Khan Academy: Using Context Clues',
           reading:
             'Context clues are words and phrases near an unfamiliar vocabulary word that provide synonyms, antonyms, or definitions to help you determine meaning.',
+          principles: [G4_ELA_FIG_PRINCIPLE],
+        },
+        {
+          id: 'g4-ela-u5-l3',
+          unitId: 'g4-ela-u5',
+          title: 'Lesson 3: Common Adages, Proverbs & Personification',
+          kind: 'lesson',
+          partOf: 'Adages & Personification',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab/x4487f94e:vocabulary/x4487f94e:figurative-language/v/idioms-proverbs-adages',
+          videoTitle: 'Khan Academy: Idioms and Proverbs',
+          reading:
+            'Proverbs and adages express traditional wisdom (e.g. A stitch in time saves nine). Personification gives human qualities to non-human objects.',
+          principles: [G4_ELA_FIG_PRINCIPLE],
+        },
+        {
+          id: 'g4-ela-u5-l4',
+          unitId: 'g4-ela-u5',
+          title: 'Quiz 5: Figurative Language & Vocabulary Review',
+          kind: 'lesson_review',
+          partOf: 'Unit Review',
+          estimatedMinutes: 12,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab/x4487f94e:vocabulary',
+          videoTitle: 'Figurative Language Quiz Review',
+          reading:
+            'Review assessment on identifying similes, metaphors, idioms, proverbs, and determining vocabulary meaning using sentence context.',
           principles: [G4_ELA_FIG_PRINCIPLE],
         },
       ],
@@ -651,6 +781,32 @@ export const G4_ELA_COURSE: Course = {
             'Homophones sound identical but differ in spelling and meaning (there, their, they’re). Prefixes (un-, re-) and suffixes (-ful, -less) transform word meanings.',
           principles: [G4_ELA_GRAMMAR_PRINCIPLE],
         },
+        {
+          id: 'g4-ela-u6-l3',
+          unitId: 'g4-ela-u6',
+          title: 'Lesson 3: Relative Pronouns & Prepositional Phrases',
+          kind: 'lesson',
+          partOf: 'Pronouns & Prepositions',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/grammar/parts-of-speech-the-pronoun/relative-pronouns/v/relative-pronouns',
+          videoTitle: 'Khan Academy: Relative Pronouns',
+          reading:
+            'Use relative pronouns (who, whose, whom, which, that) and relative adverbs (where, when, why) to connect descriptive clauses smoothly.',
+          principles: [G4_ELA_GRAMMAR_PRINCIPLE],
+        },
+        {
+          id: 'g4-ela-u6-l4',
+          unitId: 'g4-ela-u6',
+          title: 'Quiz 6: Grammar & Sentence Conventions Review',
+          kind: 'lesson_review',
+          partOf: 'Unit Review',
+          estimatedMinutes: 12,
+          videoUrl: 'https://www.khanacademy.org/humanities/grammar',
+          videoTitle: 'Grammar Quiz Review',
+          reading:
+            'Review assessment on resolving sentence fragments and run-on sentences, choosing correct homophones, and applying relative pronouns.',
+          principles: [G4_ELA_GRAMMAR_PRINCIPLE],
+        },
       ],
     },
 
@@ -686,13 +842,87 @@ export const G4_ELA_COURSE: Course = {
             'Use dialogue to show character voice. Place quotation marks around spoken words with punctuation inside, and use sensory details to bring settings to life.',
           principles: [G4_ELA_WRITING_PRINCIPLE],
         },
+        {
+          id: 'g4-ela-u7-l3',
+          unitId: 'g4-ela-u7',
+          title: 'Lesson 3: Informative Reports & Grouping Ideas',
+          kind: 'lesson',
+          partOf: 'Informational Writing',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab/x4487f94e:writing/x4487f94e:informative-writing/v/informative-writing-intro',
+          videoTitle: 'Khan Academy: Informative Report Writing',
+          reading:
+            'Write informative and explanatory texts to examine a topic and convey ideas clearly, grouping related information into paragraphs with headings.',
+          principles: [G4_ELA_WRITING_PRINCIPLE],
+        },
+        {
+          id: 'g4-ela-u7-l4',
+          unitId: 'g4-ela-u7',
+          title: 'Unit 7 Test: Multi-Genre Writing Craft Mastery',
+          kind: 'lesson_review',
+          partOf: 'Unit Review',
+          estimatedMinutes: 15,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab/x4487f94e:writing',
+          videoTitle: 'Writing Craft Exam Review',
+          reading:
+            'Comprehensive assessment on opinion thesis statements, informational paragraph transitions, and punctuated narrative dialogue.',
+          principles: [G4_ELA_WRITING_PRINCIPLE],
+        },
       ],
     },
 
-    // UNIT 8: Explore ELA Through Creative Projects (enrichment)
+    // UNIT 8: Course Challenge
     {
       id: 'g4-ela-u8',
-      title: 'Unit 8: Explore ELA Through Creative Projects',
+      title: 'Unit 8: Grade 4 ELA Course Challenge',
+      standards: ['RL.4', 'RI.4', 'W.4', 'L.4'],
+      lessons: [
+        {
+          id: 'g4-ela-u8-l1',
+          unitId: 'g4-ela-u8',
+          title: 'Reading & Literature Capstone Review',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge',
+          estimatedMinutes: 15,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab',
+          videoTitle: 'Reading Literature Capstone Review',
+          reading:
+            'Spiral review covering main idea identification, textual inferences, story themes, and informational text structures.',
+          principles: [G4_ELA_MAIN_IDEA_PRINCIPLE, G4_ELA_THEME_PRINCIPLE],
+        },
+        {
+          id: 'g4-ela-u8-l2',
+          unitId: 'g4-ela-u8',
+          title: 'Language & Writing Capstone Review',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge',
+          estimatedMinutes: 15,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab',
+          videoTitle: 'Language and Writing Capstone Review',
+          reading:
+            'Spiral review covering figurative similes and metaphors, context clues, sentence boundaries, and opinion essay craft.',
+          principles: [G4_ELA_FIG_PRINCIPLE, G4_ELA_WRITING_PRINCIPLE],
+        },
+        {
+          id: 'g4-ela-u8-l3',
+          unitId: 'g4-ela-u8',
+          title: 'Grade 4 ELA Comprehensive Course Challenge',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge',
+          estimatedMinutes: 20,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-4th-reading-vocab',
+          videoTitle: 'Grade 4 ELA Final Exam',
+          reading:
+            'Final capstone evaluation across all Grade 4 English Language Arts standards.',
+          principles: [G4_ELA_MAIN_IDEA_PRINCIPLE, G4_ELA_GRAMMAR_PRINCIPLE],
+        },
+      ],
+    },
+
+    // UNIT 9: Explore ELA Through Creative Projects (enrichment)
+    {
+      id: 'g4-ela-u9',
+      title: 'Unit 9: Explore ELA Through Creative Projects',
       kind: 'explore',
       standards: ['RL.4.7', 'W.4.4', 'SL.4.5'],
       lessons: [],
@@ -745,10 +975,10 @@ export const G4_ELA_COURSE: Course = {
       ],
     },
 
-    // UNIT 9: Teacher Resources & Pacing
+    // UNIT 10: Teacher Resources & Pacing
     {
-      id: 'g4-ela-u9',
-      title: 'Unit 9: Teacher Resources & Pacing',
+      id: 'g4-ela-u10',
+      title: 'Unit 10: Teacher Resources & Pacing',
       kind: 'teacher_resources',
       standards: ['RL.4', 'RI.4', 'W.4', 'L.4'],
       lessons: [],
