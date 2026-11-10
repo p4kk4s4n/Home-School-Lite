@@ -95,6 +95,9 @@ export function computeCourseGrade(
   let completedLessons = 0
 
   for (const unit of course.units) {
+    if (unit.kind === 'explore' || unit.kind === 'teacher_resources') {
+      continue
+    }
     for (const lesson of unit.lessons) {
       totalLessons++
       const attempts = courseAttempts.filter((a) => a.lessonId === lesson.id)

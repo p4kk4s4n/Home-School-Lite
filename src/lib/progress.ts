@@ -56,6 +56,9 @@ export function computeCourseProgress(
   let masteredCount = 0
 
   for (const unit of course.units) {
+    if (unit.kind === 'explore' || unit.kind === 'teacher_resources') {
+      continue
+    }
     for (const lesson of unit.lessons) {
       const attempts = courseAttempts
         .filter((a) => a.lessonId === lesson.id)

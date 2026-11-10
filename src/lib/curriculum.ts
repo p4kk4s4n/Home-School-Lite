@@ -74,7 +74,7 @@ function enrichCourseAssignments(courses: Course[]): Course[] {
     ...course,
     units: course.units.map((unit) => ({
       ...unit,
-      lessons: unit.lessons.map((lesson) => ({
+      lessons: (unit.lessons || []).map((lesson) => ({
         ...lesson,
         assignment: getLessonAssignment(lesson),
         remediation: getLessonRemediation(lesson, course.subject, course.grade),
@@ -89,6 +89,12 @@ export function filterCourseForOhio(course: Course, includeOhio: boolean): Cours
   }
   const filteredUnits: Unit[] = []
   for (const unit of course.units) {
+    if (unit.kind === 'explore' || unit.kind === 'teacher_resources') {
+      if (!unit.isOhioExtension) {
+        filteredUnits.push(unit)
+      }
+      continue
+    }
     const regularLessons = unit.lessons.filter(
       (l) => l.kind === 'lesson' && !l.isOhioExtension
     )

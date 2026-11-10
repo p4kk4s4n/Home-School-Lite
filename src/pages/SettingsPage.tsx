@@ -29,12 +29,14 @@ export const SettingsPage: React.FC = () => {
     promptInstallPwa,
   } = useApp()
 
-  // Top navigation tabs: Settings & Controls vs. Daily Learning Guide
-  const [activeTab, setActiveTab] = useState<'settings' | 'instructions'>('settings')
+  // Top navigation tabs: Settings & Controls vs. Daily Learning Guide vs. Teacher Resources
+  const [activeTab, setActiveTab] = useState<'settings' | 'instructions' | 'teacher_resources'>('settings')
 
   // Progress reset & attempt deletion state
   const [selectedStudentId, setSelectedStudentId] = useState<string>(() => activeStudent?.id ?? '')
   const [selectedCourseId, setSelectedCourseId] = useState<string>('')
+  const [teacherCourseId, setTeacherCourseId] = useState<string>('')
+  const [teacherUnitFilter, setTeacherUnitFilter] = useState<string>('all')
 
   const [installPromptMsg, setInstallPromptMsg] = useState('')
   const [pinInput, setPinInput] = useState('')
@@ -53,6 +55,26 @@ export const SettingsPage: React.FC = () => {
     if (!targetStudent) return []
     return getCoursesForGrade(targetStudent.grade, settings.includeOhioAdjustments ?? true)
   }, [targetStudent, settings.includeOhioAdjustments])
+
+  // Active course for teacher resources
+  const activeTeacherCourseId = teacherCourseId || targetCourses[0]?.id || ''
+  const activeTeacherCourse = useMemo(() => {
+    return targetCourses.find((c) => c.id === activeTeacherCourseId) ?? targetCourses[0] ?? null
+  }, [targetCourses, activeTeacherCourseId])
+
+  const teacherCoreUnits = useMemo(() => {
+    if (!activeTeacherCourse) return []
+    return activeTeacherCourse.units.filter((u) => u.kind !== 'explore' && u.kind !== 'teacher_resources')
+  }, [activeTeacherCourse])
+
+  const teacherResourceUnit = useMemo(() => {
+    if (!activeTeacherCourse) return null
+    return activeTeacherCourse.units.find((u) => u.kind === 'teacher_resources') ?? null
+  }, [activeTeacherCourse])
+
+  const totalCoreLessonsInTeacherCourse = useMemo(() => {
+    return teacherCoreUnits.reduce((acc, u) => acc + u.lessons.length, 0)
+  }, [teacherCoreUnits])
 
   // Active course for lesson deletion
   const activeTargetCourseId = selectedCourseId || targetCourses[0]?.id || ''
@@ -172,7 +194,7 @@ export const SettingsPage: React.FC = () => {
         </div>
       )}
 
-      {/* TOP TABS: SETTINGS VS. DAILY INSTRUCTIONS */}
+      {/* TOP TABS: SETTINGS VS. DAILY INSTRUCTIONS VS. TEACHER RESOURCES */}
       <div className="mode-tabs" style={{ marginBottom: '1rem' }}>
         <button
           type="button"
@@ -187,6 +209,13 @@ export const SettingsPage: React.FC = () => {
           onClick={() => setActiveTab('instructions')}
         >
           📖 Daily Learning Guide &amp; Instructions
+        </button>
+        <button
+          type="button"
+          className={`mode-tab ${activeTab === 'teacher_resources' ? 'active' : ''}`}
+          onClick={() => setActiveTab('teacher_resources')}
+        >
+          📚 Teacher Resources &amp; Pacing
         </button>
       </div>
 
@@ -419,6 +448,316 @@ export const SettingsPage: React.FC = () => {
               </button>
             </div>
           </section>
+        </div>
+      ) : activeTab === 'teacher_resources' ? (
+        /* ========================================================================= */
+        /* TEACHER RESOURCES TAB (PARENT PIN PROTECTED)                              */
+        /* ========================================================================= */
+        <div className="page-stack">
+          {!isParentUnlocked ? (
+            <section className="card pin-gate-card">
+              <h2>🔒 Teacher Resources Portal (PIN Protected)</h2>
+              <p className="muted">
+                Pacing guides, answer keys, printable worksheets, and curriculum rubrics are intended for parents and instructors. Enter your Parent PIN to unlock.{' '}
+                <strong>(Default PIN: 1234)</strong>
+              </p>
+              <form onSubmit={handleUnlock} className="pin-form">
+                <input
+                  type="password"
+                  className="input pin-input"
+                  placeholder="Enter PIN (1234)"
+                  value={pinInput}
+                  onChange={(e) => setPinInput(e.target.value)}
+                  aria-label="Parent PIN"
+                />
+                <button type="submit" className="btn btn-primary">
+                  Unlock Teacher Portal
+                </button>
+              </form>
+              {pinError && <p className="text-danger">{pinError}</p>}
+            </section>
+          ) : (
+            <>
+              {/* HEADER & COURSE PICKER */}
+              <section className="card">
+                <div className="section-header">
+                  <div>
+                    <span className="course-subject-tag">PARENT EDUCATOR DASHBOARD</span>
+                    <h2>Teacher Resources, Pacing Guides &amp; Answer Keys</h2>
+                    <p className="muted">
+                      Full curriculum maps, answer keys with step-by-step explanations, printable guides, and Ohio/National standards crosswalks.
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    className="btn btn-secondary btn-sm"
+                    onClick={lockParent}
+                  >
+                    🔒 Lock Parent Portal
+                  </button>
+                </div>
+
+                <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
+                  <label className="field-label" style={{ minWidth: '280px', margin: 0 }}>
+                    Select Subject / Course:
+                    <select
+                      className="input"
+                      value={activeTeacherCourse?.id ?? ''}
+                      onChange={(e) => setTeacherCourseId(e.target.value)}
+                      style={{ marginTop: '0.35rem' }}
+                    >
+                      {targetCourses.map((c) => (
+                        <option key={c.id} value={c.id}>
+                          {c.title} ({c.grade}th Grade)
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  {targetStudent && (
+                    <div style={{ fontSize: '0.9rem', color: 'var(--muted)', paddingTop: '1.25rem' }}>
+                      Viewing resources for: <strong>{targetStudent.name}</strong> (Grade {targetStudent.grade})
+                    </div>
+                  )}
+                </div>
+              </section>
+
+              {activeTeacherCourse && (
+                <>
+                  {/* SECTION 1: COURSE PACING & TIMELINE */}
+                  <section className="card">
+                    <div className="section-header">
+                      <div>
+                        <span className="badge badge-primary">PACING CALCULATOR</span>
+                        <h2>36-Week Pacing Guide: {activeTeacherCourse.title}</h2>
+                        <p className="muted-sm">
+                          Total Core Units: <strong>{teacherCoreUnits.length}</strong> • Total Core Lessons &amp; Checks: <strong>{totalCoreLessonsInTeacherCourse}</strong>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="principles-grid" style={{ marginTop: '0.75rem' }}>
+                      <div className="card" style={{ background: 'var(--surface-alt)', border: '1px solid var(--border)' }}>
+                        <span className="stat-label">Target School Year End</span>
+                        <strong style={{ fontSize: '1.25rem', color: 'var(--primary-bright)' }}>
+                          {targetStudent?.targetEndDate ? new Date(targetStudent.targetEndDate).toLocaleDateString() : 'June 15'}
+                        </strong>
+                        <p className="muted-sm" style={{ marginTop: '0.25rem' }}>
+                          Configured in student settings
+                        </p>
+                      </div>
+                      <div className="card" style={{ background: 'var(--surface-alt)', border: '1px solid var(--border)' }}>
+                        <span className="stat-label">Recommended Pace</span>
+                        <strong style={{ fontSize: '1.25rem', color: 'var(--success)' }}>
+                          ~{Math.max(1, Math.round(totalCoreLessonsInTeacherCourse / 36 * 10) / 10)} Lessons / Week
+                        </strong>
+                        <p className="muted-sm" style={{ marginTop: '0.25rem' }}>
+                          Keeps student on track for complete mastery
+                        </p>
+                      </div>
+                      <div className="card" style={{ background: 'var(--surface-alt)', border: '1px solid var(--border)' }}>
+                        <span className="stat-label">Daily Study Time</span>
+                        <strong style={{ fontSize: '1.25rem', color: 'var(--accent)' }}>
+                          10–15 Minutes / Day
+                        </strong>
+                        <p className="muted-sm" style={{ marginTop: '0.25rem' }}>
+                          Micro-lesson + 5-question mastery check
+                        </p>
+                      </div>
+                    </div>
+
+                    <div style={{ marginTop: '1.25rem', overflowX: 'auto' }}>
+                      <table className="student-list" style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem' }}>
+                        <thead>
+                          <tr style={{ textAlign: 'left', borderBottom: '2px solid var(--border)' }}>
+                            <th style={{ padding: '0.5rem' }}>Unit</th>
+                            <th style={{ padding: '0.5rem' }}>Title</th>
+                            <th style={{ padding: '0.5rem' }}>Lessons</th>
+                            <th style={{ padding: '0.5rem' }}>Standards Covered</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {teacherCoreUnits.map((u, idx) => (
+                            <tr key={u.id} style={{ borderBottom: '1px solid var(--border)' }}>
+                              <td style={{ padding: '0.5rem', fontWeight: 600 }}>Unit {idx + 1}</td>
+                              <td style={{ padding: '0.5rem' }}>{u.title}</td>
+                              <td style={{ padding: '0.5rem' }}>{u.lessons.length} lessons</td>
+                              <td style={{ padding: '0.5rem' }}>
+                                <span className="muted-sm">{u.standards.join(', ')}</span>
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+
+                  {/* SECTION 2: CURATED TEACHER RESOURCE UNITS & PRINTABLES */}
+                  {teacherResourceUnit && (teacherResourceUnit.resources || []).length > 0 && (
+                    <section className="card">
+                      <div className="section-header">
+                        <div>
+                          <span className="badge badge-warning">PRINTABLES &amp; GUIDES</span>
+                          <h2>Curriculum Resources &amp; Printable Aids</h2>
+                        </div>
+                      </div>
+
+                      <div className="student-list" style={{ marginTop: '0.75rem' }}>
+                        {(teacherResourceUnit.resources || []).map((res) => (
+                          <div
+                            key={res.id}
+                            className="student-row"
+                            style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', padding: '1rem', background: 'var(--surface-alt)' }}
+                          >
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+                              <div>
+                                <strong style={{ fontSize: '1.05rem' }}>{res.title}</strong>
+                                <span className="badge badge-neutral" style={{ marginLeft: '0.5rem', textTransform: 'capitalize' }}>
+                                  {res.kind.replace('_', ' ')}
+                                </span>
+                              </div>
+                              {res.url && (
+                                <a
+                                  href={res.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="btn btn-secondary btn-sm"
+                                >
+                                  Open External Link ↗
+                                </a>
+                              )}
+                            </div>
+                            <p className="muted-sm" style={{ margin: 0 }}>
+                              {res.description}
+                            </p>
+                            {res.body && (
+                              <div
+                                style={{
+                                  background: 'var(--surface)',
+                                  padding: '0.75rem 1rem',
+                                  borderRadius: '6px',
+                                  fontSize: '0.88rem',
+                                  lineHeight: '1.6',
+                                  whiteSpace: 'pre-wrap',
+                                  border: '1px solid var(--border)',
+                                  marginTop: '0.4rem',
+                                }}
+                              >
+                                {res.body}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </section>
+                  )}
+
+                  {/* SECTION 3: ANSWER KEYS WITH STEP-BY-STEP RATIONALES */}
+                  <section className="card">
+                    <div className="section-header">
+                      <div>
+                        <span className="badge badge-success">ANSWER KEYS</span>
+                        <h2>Lesson Answer Keys &amp; Worked Solutions</h2>
+                        <p className="muted-sm">
+                          Sample questions, correct solutions, and full pedagogical explanations for every lesson and exam in this course.
+                        </p>
+                      </div>
+
+                      <div>
+                        <select
+                          className="input"
+                          value={teacherUnitFilter}
+                          onChange={(e) => setTeacherUnitFilter(e.target.value)}
+                          style={{ maxWidth: '240px' }}
+                        >
+                          <option value="all">All Units ({teacherCoreUnits.length})</option>
+                          {teacherCoreUnits.map((u) => (
+                            <option key={u.id} value={u.id}>
+                              {u.title}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                    </div>
+
+                    <div className="student-list" style={{ marginTop: '1rem' }}>
+                      {teacherCoreUnits
+                        .filter((u) => teacherUnitFilter === 'all' || u.id === teacherUnitFilter)
+                        .map((unit) => (
+                          <div key={unit.id} style={{ marginBottom: '1.5rem' }}>
+                            <h3 style={{ borderBottom: '2px solid var(--border)', paddingBottom: '0.4rem', marginBottom: '0.75rem' }}>
+                              {unit.title}
+                            </h3>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                              {unit.lessons.map((lesson) => (
+                                <details
+                                  key={lesson.id}
+                                  style={{
+                                    background: 'var(--surface-alt)',
+                                    padding: '0.75rem 1rem',
+                                    borderRadius: '8px',
+                                    border: '1px solid var(--border)',
+                                  }}
+                                >
+                                  <summary style={{ cursor: 'pointer', fontWeight: 600 }}>
+                                    <span>{lesson.title}</span>
+                                    <span className="muted-sm" style={{ marginLeft: '0.5rem' }}>
+                                      ({lesson.principles.map((p) => p.standard).join(', ')})
+                                      {lesson.kind === 'unit_test' && ' • Unit Exam'}
+                                    </span>
+                                  </summary>
+
+                                  <div style={{ marginTop: '0.75rem', paddingTop: '0.5rem', borderTop: '1px solid var(--border)' }}>
+                                    <p className="muted-sm" style={{ marginBottom: '0.5rem' }}>
+                                      <strong>Core Concept:</strong> {lesson.reading}
+                                    </p>
+
+                                    {lesson.principles.map((p) => (
+                                      <div key={p.id} style={{ marginTop: '0.6rem' }}>
+                                        <div style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--primary-bright)' }}>
+                                          Principle: {p.title} ({p.standard})
+                                        </div>
+
+                                        {p.bank && p.bank.length > 0 ? (
+                                          <div style={{ marginTop: '0.4rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                                            {p.bank.slice(0, 3).map((item, idx) => (
+                                              <div
+                                                key={item.id}
+                                                style={{
+                                                  background: 'var(--surface)',
+                                                  padding: '0.5rem 0.75rem',
+                                                  borderRadius: '6px',
+                                                  fontSize: '0.85rem',
+                                                }}
+                                              >
+                                                <div><strong>Q{idx + 1}:</strong> {item.prompt}</div>
+                                                <div style={{ color: 'var(--success)', marginTop: '0.2rem' }}>
+                                                  <strong>Correct Answer:</strong> {item.answer}
+                                                </div>
+                                                <div className="muted-sm" style={{ marginTop: '0.2rem' }}>
+                                                  <strong>Step-by-step Solution:</strong> {item.explanation}
+                                                </div>
+                                              </div>
+                                            ))}
+                                          </div>
+                                        ) : p.generatorId ? (
+                                          <div className="muted-sm" style={{ marginTop: '0.35rem', fontStyle: 'italic' }}>
+                                            Algorithmic Generator [{p.generatorId}]: Generates unlimited randomized numerical questions with automatic step-by-step solutions during mastery checks.
+                                          </div>
+                                        ) : null}
+                                      </div>
+                                    ))}
+                                  </div>
+                                </details>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                    </div>
+                  </section>
+                </>
+              )}
+            </>
+          )}
         </div>
       ) : (
         /* ========================================================================= */

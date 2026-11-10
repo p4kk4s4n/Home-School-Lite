@@ -70,6 +70,48 @@ export interface Principle {
 
 export type LessonKind = 'lesson' | 'lesson_review' | 'unit_test'
 
+export type UnitKind = 'core' | 'explore' | 'teacher_resources'
+
+export type ExploreItemType =
+  | 'simulation'
+  | 'video'
+  | 'experiment'
+  | 'project'
+  | 'reading'
+  | 'game'
+  | 'virtual_tour'
+
+export interface ExploreItem {
+  id: string
+  title: string
+  type: ExploreItemType
+  description: string
+  url?: string
+  estimatedMinutes: number
+  materials?: string[]
+  steps?: string[]
+  reflectionPrompt?: string
+  requiresParentPin?: boolean
+}
+
+export type TeacherResourceKind =
+  | 'pacing_guide'
+  | 'answer_key'
+  | 'standards_map'
+  | 'printable'
+  | 'discussion_guide'
+  | 'assessment_rubric'
+  | 'link'
+
+export interface TeacherResource {
+  id: string
+  title: string
+  kind: TeacherResourceKind
+  description: string
+  url?: string
+  body?: string
+}
+
 export interface Lesson {
   id: string
   unitId: string
@@ -92,6 +134,9 @@ export interface Unit {
   title: string
   standards: string[]
   isOhioExtension?: boolean
+  kind?: UnitKind
+  exploreItems?: ExploreItem[]
+  resources?: TeacherResource[]
   lessons: Lesson[]
 }
 

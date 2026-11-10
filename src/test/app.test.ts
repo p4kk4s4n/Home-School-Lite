@@ -96,7 +96,7 @@ describe('Content Catalog, Plain-Language Standard, Ohio Opt-Out & Remediation',
                 const issues = lintQuestionItem(item)
                 if (issues.length > 0) {
                   violations.push(
-                    `[${course.id} > ${lesson.id} > ${item.id}] ${issues.join('; ')} (prompt: "${item.prompt}")`
+                    `[${course.id} > ${lesson.id} > ${item.id}] ${issues.map((i) => i.message).join('; ')} (prompt: "${item.prompt}")`
                   )
                 }
               }
@@ -113,7 +113,7 @@ describe('Content Catalog, Plain-Language Standard, Ohio Opt-Out & Remediation',
         const issues = lintQuestionItem(generated)
         if (issues.length > 0) {
           violations.push(
-            `[Generator ${genId} sample #${i}] ${issues.join('; ')} (prompt: "${generated.prompt}")`
+            `[Generator ${genId} sample #${i}] ${issues.map((it) => it.message).join('; ')} (prompt: "${generated.prompt}")`
           )
           break
         }
@@ -1092,5 +1092,57 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
     expect(mergeRes.mergedAttempts).toBe(0)
     const finalAttempts = await getStudentAttempts(student.id)
     expect(finalAttempts).toHaveLength(0)
+  })
+
+  it('validates Grade 6 full course expansion, Explore units isolation, and Teacher Resources', () => {
+    const g6Math = getCourseById('g6-math')
+    const g6Science = getCourseById('g6-science')
+    const g6Ela = getCourseById('g6-ela')
+    const g6Social = getCourseById('g6-social')
+
+    expect(g6Math).toBeDefined()
+    expect(g6Science).toBeDefined()
+    expect(g6Ela).toBeDefined()
+    expect(g6Social).toBeDefined()
+
+    // 1. Validate full unit progressions matching Khan scope
+    expect(g6Math!.units.length).toBeGreaterThanOrEqual(12)
+    expect(g6Science!.units.length).toBeGreaterThanOrEqual(11)
+    expect(g6Ela!.units.length).toBeGreaterThanOrEqual(5)
+    expect(g6Social!.units.length).toBeGreaterThanOrEqual(6)
+
+    // 2. Validate Explore units exist across all 4 subjects
+    const mathExplore = g6Math!.units.find((u) => u.kind === 'explore')
+    const sciExplore = g6Science!.units.find((u) => u.kind === 'explore')
+    const elaExplore = g6Ela!.units.find((u) => u.kind === 'explore')
+    const socExplore = g6Social!.units.find((u) => u.kind === 'explore')
+
+    expect(mathExplore?.exploreItems?.length).toBeGreaterThanOrEqual(4)
+    expect(sciExplore?.exploreItems?.length).toBeGreaterThanOrEqual(4)
+    expect(elaExplore?.exploreItems?.length).toBeGreaterThanOrEqual(3)
+    expect(socExplore?.exploreItems?.length).toBeGreaterThanOrEqual(4)
+
+    // Verify simulations and experiments are present
+    const sciTypes = sciExplore!.exploreItems!.map((i) => i.type)
+    expect(sciTypes).toContain('simulation')
+    expect(sciTypes).toContain('experiment')
+
+    // 3. Verify Explore and Teacher Resource units are excluded from grading and course progress
+    const mockProgress = computeCourseProgress(g6Science!, [], 80)
+    // Progress items should only contain core lessons, not explore or teacher units
+    for (const item of mockProgress.items) {
+      expect(item.unit.kind).not.toBe('explore')
+      expect(item.unit.kind).not.toBe('teacher_resources')
+    }
+
+    const mockGrade = computeCourseGrade(g6Science!, [], DEFAULT_SETTINGS)
+    expect(mockGrade.totalLessons).toBe(mockProgress.totalCount)
+
+    // 4. Validate Teacher Resources exist for parents
+    const mathTeacher = g6Math!.units.find((u) => u.kind === 'teacher_resources')
+    const sciTeacher = g6Science!.units.find((u) => u.kind === 'teacher_resources')
+    expect(mathTeacher?.resources?.length).toBeGreaterThanOrEqual(2)
+    expect(sciTeacher?.resources?.length).toBeGreaterThanOrEqual(2)
+    expect(mathTeacher?.resources?.some((r) => r.kind === 'pacing_guide')).toBe(true)
   })
 })

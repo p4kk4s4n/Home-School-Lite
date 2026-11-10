@@ -1,0 +1,560 @@
+import { Course, QuestionBankItem } from '../../types'
+
+const ELA_INFO_BANK: QuestionBankItem[] = [
+  {
+    id: 'g6-ela-inf1',
+    type: 'mc',
+    prompt: 'What is the central idea of an informational text?',
+    choices: [
+      'The primary point or main argument of the author',
+      'The chronological order of minor supporting details',
+      'The rhyming pattern used in paragraph sentences',
+      'The dictionary definition of difficult vocabulary',
+    ],
+    answer: 'The primary point or main argument of the author',
+    explanation: 'The central idea is the main overarching message that connects all key details in an article.',
+  },
+  {
+    id: 'g6-ela-inf2',
+    type: 'mc',
+    prompt: 'Which sentence provides the strongest factual evidence to support a claim?',
+    choices: [
+      'NASA satellite data shows forest cover declined by 3%.',
+      'Many people believe trees are pretty in autumn.',
+      'I think planting trees is fun on weekends.',
+      'Someone told me that forests might be getting smaller.',
+    ],
+    answer: 'NASA satellite data shows forest cover declined by 3%.',
+    explanation: 'Strong evidence cites verifiable data, credible organizations, and measurable facts.',
+  },
+  {
+    id: 'g6-ela-inf3',
+    type: 'mc',
+    prompt: 'Which text structure explains why an event happened and what resulted?',
+    choices: ['Cause and effect', 'Chronological timeline', 'Problem and solution', 'Compare and contrast'],
+    answer: 'Cause and effect',
+    explanation: 'Cause and effect text structure links actions or events to their specific outcomes.',
+  },
+  {
+    id: 'g6-ela-inf4',
+    type: 'mc',
+    prompt: 'What belongs in an objective summary of an informational article?',
+    choices: [
+      'Main facts and central ideas only, without personal opinions',
+      'Personal opinions and feelings about the topic',
+      'Every minor example and quote word-for-word',
+      'Predictions about fictional characters',
+    ],
+    answer: 'Main facts and central ideas only, without personal opinions',
+    explanation: 'An objective summary remains neutral and focuses only on central facts without personal bias.',
+  },
+  {
+    id: 'g6-ela-inf5',
+    type: 'mc',
+    prompt: 'How does an author’s point of view affect an informational text?',
+    choices: [
+      'It influences which facts and perspectives are highlighted',
+      'It changes the font size automatically',
+      'It removes all punctuation from sentences',
+      'It forces the text to rhyme',
+    ],
+    answer: 'It influences which facts and perspectives are highlighted',
+    explanation: 'An author’s perspective shapes tone, word choice, and which details are emphasized.',
+  },
+  {
+    id: 'g6-ela-inf6',
+    type: 'mc',
+    prompt: 'What signal words often indicate a compare-and-contrast text structure?',
+    choices: ['Similarly, however, and on the other hand', 'First, next, and finally', 'Because, therefore, and as a result', 'For example, such as, and namely'],
+    answer: 'Similarly, however, and on the other hand',
+    explanation: 'Words like "similarly" and "however" indicate similarities and differences between subjects.',
+  },
+  {
+    id: 'g6-ela-inf7',
+    type: 'mc',
+    prompt: 'What is the purpose of subheadings in an informational article?',
+    choices: [
+      'To organize the text into clear topical sections',
+      'To provide the author’s home address',
+      'To tell fictional jokes',
+      'To replace all photographs',
+    ],
+    answer: 'To organize the text into clear topical sections',
+    explanation: 'Subheadings guide the reader by previewing the main concept covered in the next section.',
+  },
+  {
+    id: 'g6-ela-inf8',
+    type: 'mc',
+    prompt: 'What does "citing evidence" mean when analyzing a text?',
+    choices: [
+      'Referring directly to specific quotes or facts from the text',
+      'Guessing what the author meant without reading',
+      'Rewriting the story as a poem',
+      'Checking word counts in paragraphs',
+    ],
+    answer: 'Referring directly to specific quotes or facts from the text',
+    explanation: 'Citing evidence means referencing exact facts, statements, or lines from the text to prove an answer.',
+  },
+]
+
+const ELA_LIT_BANK: QuestionBankItem[] = [
+  {
+    id: 'g6-ela-lit1',
+    type: 'mc',
+    prompt: 'What is the literary theme of a fictional story?',
+    choices: [
+      'The deeper life lesson or universal message in a story',
+      'The time and geographic location where the story happens',
+      'The physical appearance of the main antagonist',
+      'The title printed on the front cover',
+    ],
+    answer: 'The deeper life lesson or universal message in a story',
+    explanation: 'Theme is the underlying message or insight about human nature that the author explores.',
+  },
+  {
+    id: 'g6-ela-lit2',
+    type: 'mc',
+    prompt: '"The classroom was a bustling beehive of activity." What figure of speech is this?',
+    choices: ['Metaphor', 'Simile', 'Hyperbole', 'Onomatopoeia'],
+    answer: 'Metaphor',
+    explanation: 'A metaphor directly compares two different things without using "like" or "as".',
+  },
+  {
+    id: 'g6-ela-lit3',
+    type: 'mc',
+    prompt: '"Her laughter was like music on a quiet morning." What figure of speech is this?',
+    choices: ['Simile', 'Personification', 'Metaphor', 'Idiom'],
+    answer: 'Simile',
+    explanation: 'A simile compares two things using the connecting words "like" or "as".',
+  },
+  {
+    id: 'g6-ela-lit4',
+    type: 'mc',
+    prompt: 'What happens at the climax of a fictional narrative plot?',
+    choices: [
+      'The turning point of highest tension or conflict',
+      'The very first sentence introducing characters',
+      'The final resolution where all conflicts end',
+      'The list of chapter titles',
+    ],
+    answer: 'The turning point of highest tension or conflict',
+    explanation: 'The climax is the critical moment of peak action where the protagonist confronts the main conflict.',
+  },
+  {
+    id: 'g6-ela-lit5',
+    type: 'mc',
+    prompt: 'In a story written in first-person point of view, what pronouns appear in the narration?',
+    choices: ['I, me, my, and we', 'He, she, they, and them', 'You, your, and yours', 'It, its, and itself'],
+    answer: 'I, me, my, and we',
+    explanation: 'First-person narration is told from the perspective of a character inside the story using "I" and "me".',
+  },
+  {
+    id: 'g6-ela-lit6',
+    type: 'mc',
+    prompt: '"The old wooden floorboards groaned with every step." What figure of speech is this?',
+    choices: ['Personification', 'Alliteration', 'Irony', 'Understatement'],
+    answer: 'Personification',
+    explanation: 'Personification gives human qualities or actions (groaning) to nonhuman objects.',
+  },
+  {
+    id: 'g6-ela-lit7',
+    type: 'mc',
+    prompt: 'How does a dynamic character differ from a static character?',
+    choices: [
+      'A dynamic character grows and changes throughout the story',
+      'A dynamic character has no dialogue',
+      'A static character changes completely in every chapter',
+      'A dynamic character always stays identical',
+    ],
+    answer: 'A dynamic character grows and changes throughout the story',
+    explanation: 'Dynamic characters experience personal growth, maturity, or perspective shifts across the narrative.',
+  },
+  {
+    id: 'g6-ela-lit8',
+    type: 'mc',
+    prompt: 'What is foreshadowing in storytelling?',
+    choices: [
+      'Hints or clues that suggest events that will happen later',
+      'A description of what characters ate for breakfast',
+      'The historical copyright date of the book',
+      'The map printed inside the book cover',
+    ],
+    answer: 'Hints or clues that suggest events that will happen later',
+    explanation: 'Foreshadowing builds anticipation by planting subtle clues about upcoming story events.',
+  },
+]
+
+const ELA_GRAMMAR_BANK: QuestionBankItem[] = [
+  {
+    id: 'g6-ela-grm1',
+    type: 'mc',
+    prompt: 'Which sentence uses the subjective pronoun correctly?',
+    choices: [
+      'Maya and I volunteered at the animal shelter.',
+      'Maya and me volunteered at the animal shelter.',
+      'Her and me volunteered at the shelter.',
+      'Us volunteered at the animal shelter.',
+    ],
+    answer: 'Maya and I volunteered at the animal shelter.',
+    explanation: 'Use the subject pronoun "I" when performing the action of the verb (Maya and I volunteered).',
+  },
+  {
+    id: 'g6-ela-grm2',
+    type: 'mc',
+    prompt: 'Which word correctly completes: "The students placed _____ backpacks in the cubbies."',
+    choices: ['their', 'there', 'they’re', 'theirs'],
+    answer: 'their',
+    explanation: '"Their" is the possessive pronoun showing ownership by the students.',
+  },
+  {
+    id: 'g6-ela-grm3',
+    type: 'mc',
+    prompt: 'What is a pronoun antecedent?',
+    choices: [
+      'The specific noun that a pronoun replaces or refers to',
+      'The punctuation mark at the end of a sentence',
+      'An adverb that modifies a verb',
+      'A preposition showing direction',
+    ],
+    answer: 'The specific noun that a pronoun replaces or refers to',
+    explanation: 'An antecedent is the noun to which a pronoun refers (e.g., in "Lucas lost his keys," "Lucas" is the antecedent of "his").',
+  },
+  {
+    id: 'g6-ela-grm4',
+    type: 'mc',
+    prompt: 'What Greek root word means "sound" or "voice"?',
+    choices: ['phon', 'bio', 'geo', 'chron'],
+    answer: 'phon',
+    explanation: 'The Greek root "phon" means sound (telephone, microphone, phonics).',
+  },
+  {
+    id: 'g6-ela-grm5',
+    type: 'mc',
+    prompt: 'Which sentence correctly uses commas in a series?',
+    choices: [
+      'We packed apples, sandwiches, and juice boxes for lunch.',
+      'We packed, apples sandwiches and juice boxes, for lunch.',
+      'We packed apples sandwiches, and, juice boxes for lunch.',
+      'We packed apples, and sandwiches, and juice boxes for lunch.',
+    ],
+    answer: 'We packed apples, sandwiches, and juice boxes for lunch.',
+    explanation: 'Items in a list are separated by commas, with a coordinating conjunction before the final item.',
+  },
+  {
+    id: 'g6-ela-grm6',
+    type: 'mc',
+    prompt: 'What Latin root word means "to write"?',
+    choices: ['script / scrib', 'port', 'aud', 'vis'],
+    answer: 'script / scrib',
+    explanation: 'The Latin root "scrib" or "script" means to write (manuscript, scribe, describe).',
+  },
+  {
+    id: 'g6-ela-grm7',
+    type: 'mc',
+    prompt: 'What is a run-on sentence?',
+    choices: [
+      'Two independent sentences joined without proper punctuation',
+      'A sentence that contains more than 10 words',
+      'A sentence with an exclamation mark',
+      'A sentence that begins with a verb',
+    ],
+    answer: 'Two independent sentences joined without proper punctuation',
+    explanation: 'Run-ons happen when independent clauses are fused without a semicolon or comma with a conjunction.',
+  },
+  {
+    id: 'g6-ela-grm8',
+    type: 'mc',
+    prompt: 'Which word has the most positive connotation?',
+    choices: ['Economical', 'Cheap', 'Stingy', 'Penniless'],
+    answer: 'Economical',
+    explanation: '"Economical" carries a positive association of being sensible with money, whereas "cheap" or "stingy" is negative.',
+  },
+]
+
+export const G6_ELA_COURSE: Course = {
+  id: 'g6-ela',
+  subject: 'ela',
+  grade: 6,
+  title: 'Grade 6 Language Arts',
+  subtitle: 'Informational Texts, Literary Analysis, Argumentative Writing & Grammar',
+  credits: 1.0,
+  color: '#8b5cf6',
+  icon: '📚',
+  units: [
+    // UNIT 1: INFORMATIONAL TEXTS
+    {
+      id: 'g6-ela-u1',
+      title: 'Unit 1: Reading Informational Texts',
+      standards: ['CCSS.ELA-LITERACY.RI.6.1', 'CCSS.ELA-LITERACY.RI.6.2', 'CCSS.ELA-LITERACY.RI.6.5'],
+      lessons: [
+        {
+          id: 'g6-ela-u1-l1',
+          unitId: 'g6-ela-u1',
+          title: 'Central Ideas and Citing Evidence',
+          estimatedMinutes: 12,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-6th-reading-vocab/x631d87f7:cc-6th-reading-informational-text/x631d87f7:close-reading-informational-text/v/identifying-central-idea',
+          videoTitle: 'Finding Central Idea in Informational Texts',
+          reading: 'The central idea is what a nonfiction text is mostly about. Good readers cite text evidence—exact quotes, statistics, or facts from the text—to support their conclusions about the central idea.',
+          principles: [
+            {
+              id: 'p-g6-ela-central-idea',
+              title: 'Central Idea and Textual Evidence',
+              standard: 'RI.6.1',
+              summary: 'Cite textual evidence to support analysis of what the text says explicitly as well as inferences drawn from the text.',
+              bank: ELA_INFO_BANK,
+            },
+          ],
+        },
+        {
+          id: 'g6-ela-u1-l2',
+          unitId: 'g6-ela-u1',
+          title: 'Unit 1 Test: Informational Texts',
+          kind: 'unit_test',
+          estimatedMinutes: 15,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-6th-reading-vocab/x631d87f7:cc-6th-reading-informational-text',
+          videoTitle: 'Informational Text Test Practice',
+          reading: 'Unit exam testing central ideas, evidence citation, text structures (cause/effect, compare/contrast), and objective summaries.',
+          principles: [
+            {
+              id: 'p-g6-ela-info-exam',
+              title: 'Informational Reading Analysis',
+              standard: 'RI.6.2',
+              summary: 'Determine a central idea of a text and how it is conveyed through particular details.',
+              bank: ELA_INFO_BANK,
+            },
+          ],
+        },
+      ],
+    },
+
+    // UNIT 2: LITERATURE AND STORY CRAFT
+    {
+      id: 'g6-ela-u2',
+      title: 'Unit 2: Reading Literature & Story Craft',
+      standards: ['CCSS.ELA-LITERACY.RL.6.2', 'CCSS.ELA-LITERACY.RL.6.3', 'CCSS.ELA-LITERACY.RL.6.4'],
+      lessons: [
+        {
+          id: 'g6-ela-u2-l1',
+          unitId: 'g6-ela-u2',
+          title: 'Theme, Plot Climax & Figurative Language',
+          estimatedMinutes: 12,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-6th-reading-vocab/x631d87f7:cc-6th-reading-literature/x631d87f7:theme-and-point-of-view/v/theme-in-literature',
+          videoTitle: 'Theme and Character in Literature',
+          reading: 'Themes are universal insights about life explored through character choices and conflicts. Authors enrich stories using figurative language such as similes, metaphors, and personification.',
+          principles: [
+            {
+              id: 'p-g6-ela-lit-theme',
+              title: 'Theme and Figurative Language',
+              standard: 'RL.6.2',
+              summary: 'Determine a theme or central idea of a text and how it is conveyed through particular details.',
+              bank: ELA_LIT_BANK,
+            },
+          ],
+        },
+        {
+          id: 'g6-ela-u2-l2',
+          unitId: 'g6-ela-u2',
+          title: 'Unit 2 Test: Reading Literature',
+          kind: 'unit_test',
+          estimatedMinutes: 15,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-6th-reading-vocab/x631d87f7:cc-6th-reading-literature',
+          videoTitle: 'Literature Test Practice',
+          reading: 'Unit exam testing theme identification, figurative language (metaphors, similes, personification), character development, and narrative point of view.',
+          principles: [
+            {
+              id: 'p-g6-ela-lit-exam',
+              title: 'Literature Analysis',
+              standard: 'RL.6.3',
+              summary: 'Describe how a particular story’s plot unfolds in a series of episodes as well as how the characters respond or change.',
+              bank: ELA_LIT_BANK,
+            },
+          ],
+        },
+      ],
+    },
+
+    // UNIT 3: WRITING ARGUMENTATIVE TEXTS
+    {
+      id: 'g6-ela-u3',
+      title: 'Unit 3: Writing Argumentative Texts',
+      standards: ['CCSS.ELA-LITERACY.W.6.1'],
+      lessons: [
+        {
+          id: 'g6-ela-u3-l1',
+          unitId: 'g6-ela-u3',
+          title: 'Claims, Evidence & Counterclaims',
+          estimatedMinutes: 12,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-6th-reading-vocab/x631d87f7:cc-6th-reading-informational-text/x631d87f7:arguments-and-claims/v/identifying-claims',
+          videoTitle: 'Argumentative Claims and Evidence',
+          reading: 'An argument introduces a clear claim, supports it with logical reasons and verified textual evidence, acknowledges opposing viewpoints (counterclaims), and concludes with impact.',
+          principles: [
+            {
+              id: 'p-g6-ela-arg-writing',
+              title: 'Argumentative Structure and Evidence',
+              standard: 'W.6.1',
+              summary: 'Write arguments to support claims with clear reasons and relevant evidence.',
+              bank: ELA_INFO_BANK,
+            },
+          ],
+        },
+        {
+          id: 'g6-ela-u3-l2',
+          unitId: 'g6-ela-u3',
+          title: 'Unit 3 Test: Argumentative Writing',
+          kind: 'unit_test',
+          estimatedMinutes: 15,
+          videoUrl: 'https://www.khanacademy.org/ela/cc-6th-reading-vocab',
+          videoTitle: 'Argumentative Writing Review',
+          reading: 'Unit exam testing claims, credible evidence verification, and distinguishing fact from opinion.',
+          principles: [
+            {
+              id: 'p-g6-ela-arg-exam',
+              title: 'Argumentative Mastery',
+              standard: 'W.6.1',
+              summary: 'Evaluate arguments and claims in texts.',
+              bank: ELA_INFO_BANK,
+            },
+          ],
+        },
+      ],
+    },
+
+    // UNIT 4: GRAMMAR & CONVENTIONS
+    {
+      id: 'g6-ela-u4',
+      title: 'Unit 4: Grammar, Mechanics & Word Roots',
+      standards: ['CCSS.ELA-LITERACY.L.6.1', 'CCSS.ELA-LITERACY.L.6.2', 'CCSS.ELA-LITERACY.L.6.4'],
+      lessons: [
+        {
+          id: 'g6-ela-u4-l1',
+          unitId: 'g6-ela-u4',
+          title: 'Pronouns, Roots & Punctuation',
+          estimatedMinutes: 12,
+          videoUrl: 'https://www.khanacademy.org/humanities/grammar/parts-of-speech-the-pronoun/pronoun-cases/v/pronoun-cases-syntax',
+          videoTitle: 'Pronoun Cases and Antecedents',
+          reading: 'Mastering grammar requires using proper pronoun cases (subjective vs. objective), identifying antecedents, decoding Greek and Latin roots, and using commas accurately.',
+          principles: [
+            {
+              id: 'p-g6-ela-grammar-core',
+              title: 'Pronoun Cases, Roots and Mechanics',
+              standard: 'L.6.1',
+              summary: 'Demonstrate command of the conventions of standard English grammar and usage.',
+              bank: ELA_GRAMMAR_BANK,
+            },
+          ],
+        },
+        {
+          id: 'g6-ela-u4-l2',
+          unitId: 'g6-ela-u4',
+          title: 'Unit 4 Test: Grammar and Language Conventions',
+          kind: 'unit_test',
+          estimatedMinutes: 15,
+          videoUrl: 'https://www.khanacademy.org/humanities/grammar',
+          videoTitle: 'Grammar and Conventions Test Practice',
+          reading: 'Unit exam testing pronoun cases, antecedents, roots (phon, scrib), and comma mechanics.',
+          principles: [
+            {
+              id: 'p-g6-ela-grm-exam',
+              title: 'Conventions Mastery',
+              standard: 'L.6.1',
+              summary: 'Check of grammar, punctuation, and word roots.',
+              bank: ELA_GRAMMAR_BANK,
+            },
+          ],
+        },
+      ],
+    },
+
+    // UNIT 5: EXPLORE ELA THROUGH PODCASTS & STORY LABS (UNGRADED)
+    {
+      id: 'g6-ela-u5-explore',
+      title: 'Unit 5: Explore ELA Through Story Labs, Podcasts & Projects',
+      standards: ['CCSS.ELA Speaking, Listening & Creative Writing'],
+      kind: 'explore',
+      lessons: [],
+      exploreItems: [
+        {
+          id: 'exp-e6-debate-podcast',
+          title: 'Podcast Lab: Smash Boom Best (Debate Analysis)',
+          type: 'video',
+          description: 'Listen to a fun kid-friendly debate episode (like Lava vs. Quicksand) and evaluate which speaker used the strongest evidence.',
+          url: 'https://www.smashboom.org/',
+          estimatedMinutes: 20,
+          requiresParentPin: false,
+          reflectionPrompt: 'Which debate judge was more persuasive, and which specific piece of evidence convinced you?',
+        },
+        {
+          id: 'exp-e6-microfiction',
+          title: 'Creative Writing: The 100-Word Micro-Fiction Challenge',
+          type: 'project',
+          description: 'Write an entire complete story—with character, conflict, climax, and resolution—in exactly 100 words.',
+          estimatedMinutes: 20,
+          materials: ['Paper & pencil or word processor', 'Word count tool'],
+          steps: [
+            'Brainstorm a compelling character dilemma (e.g. an astronaut trapped outside an airlock).',
+            'Draft the story without worrying about length.',
+            'Edit and trim ruthlessly until the final word count is precisely 100 words.',
+          ],
+          reflectionPrompt: 'How did the strict 100-word limit change which descriptive words you selected?',
+        },
+        {
+          id: 'exp-e6-audiobook-storyline',
+          title: 'Storyline Online: Celebrated Read-Aloud Experience',
+          type: 'video',
+          description: 'Watch award-winning actors read illustrated children’s literature with expressive voice acting and musical scores.',
+          url: 'https://storylineonline.net/',
+          estimatedMinutes: 15,
+          requiresParentPin: false,
+        },
+        {
+          id: 'exp-e6-book-trailer',
+          title: 'Digital Book Trailer Storyboard Project',
+          type: 'project',
+          description: 'Design a 6-frame movie-style trailer storyboard for your favorite independent reading book.',
+          estimatedMinutes: 30,
+          materials: ['Drawing paper & colored pencils', 'Index cards'],
+          steps: [
+            'Pick a book you loved reading recently.',
+            'Create 6 storyboard panels showing: The Hook, The Character, The Setting, The Rising Action, The Dilemma, and The Call-to-Read.',
+            'Do NOT spoil the ending!',
+          ],
+        },
+      ],
+    },
+
+    // UNIT 6: TEACHER RESOURCES
+    {
+      id: 'g6-ela-u6-teacher',
+      title: 'Unit 6: Teacher Resources',
+      standards: ['Teacher Reference'],
+      kind: 'teacher_resources',
+      lessons: [],
+      resources: [
+        {
+          id: 'tr-e6-pacing',
+          title: 'Grade 6 ELA 36-Week Pacing Guide',
+          kind: 'pacing_guide',
+          description: 'Weekly schedule integrating informational reading, literature novels, writing workshops, and vocabulary.',
+          body: `### Grade 6 ELA 36-Week Curriculum Map
+- **Weeks 1–6**: Informational Texts & Evidence Citation
+- **Weeks 7–12**: Narrative Fiction & Novel Study 1
+- **Weeks 13–18**: Argumentative Essay Workshop
+- **Weeks 19–24**: Informational Research Report
+- **Weeks 25–30**: Poetry, Drama & Novel Study 2
+- **Weeks 31–36**: Grammar Conventions, Etymology Roots & Creative Writing Portfolio`,
+        },
+        {
+          id: 'tr-e6-rubric',
+          title: 'Argumentative & Informative Writing Rubrics',
+          kind: 'assessment_rubric',
+          description: 'Grading rubrics covering Claim, Evidence, Organization, Conventions, and Word Choice.',
+          body: `### 4-Point Writing Assessment Rubric
+- **Claim / Focus (4 pts)**: Clear, compelling thesis sustained throughout the piece.
+- **Evidence & Citation (4 pts)**: Accurate, relevant textual evidence with cited sources.
+- **Organization (4 pts)**: Logical transitions between paragraphs; impactful conclusion.
+- **Conventions (4 pts)**: Few or no errors in pronouns, punctuation, spelling, or run-ons.`,
+        },
+      ],
+    },
+  ],
+}

@@ -1295,6 +1295,242 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
     return MATH_GENERATORS['g6.stats-median'](rng, principleId, principleTitle)
   },
 
+  'g6.ratios-part-whole': (rng, principleId, principleTitle) => {
+    const a = randInt(rng, 2, 7)
+    const b = randInt(rng, 3, 8)
+    const total = a + b
+    const ans = `${a}:${total}`
+    const choices = buildChoices(ans, [`${b}:${total}`, `${a}:${b}`, `${total}:${a}`, `${b}:${a}`], rng)
+    return {
+      id: `${principleId}-${a}-${b}-pw`,
+      fingerprint: `${principleId}:${a}:${b}:pw`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `There are ${a} blue and ${b} red marbles. Find the ratio: blue to total.`,
+      choices,
+      answer: ans,
+      explanation: `Add blue and red for total marbles: ${a} + ${b} = ${total}. The ratio of blue to total is ${a}:${total}.`,
+    }
+  },
+
+  'g6.ratios-tables': (rng, principleId, principleTitle) => {
+    const unitRate = randInt(rng, 3, 12)
+    const countA = randInt(rng, 2, 5)
+    const countB = randInt(rng, 6, 9)
+    const valB = unitRate * countB
+    const ans = `$${valB}`
+    const choices = buildChoices(ans, [`$${unitRate * (countB - 1)}`, `$${unitRate * (countB + 1)}`, `$${valB + 10}`, `$${valB - 5}`], rng)
+    return {
+      id: `${principleId}-${unitRate}-${countB}-tbl`,
+      fingerprint: `${principleId}:${unitRate}:${countB}:tbl`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `If ${countA} notebooks cost $${unitRate * countA}, how much will ${countB} notebooks cost at the same rate?`,
+      choices,
+      answer: ans,
+      explanation: `Find the cost per notebook: $${unitRate * countA} ÷ ${countA} = $${unitRate} per notebook. Multiply by ${countB}: ${countB} × $${unitRate} = ${ans}.`,
+    }
+  },
+
+  'g6.decimal-multiplication': (rng, principleId, principleTitle) => {
+    const aInt = randInt(rng, 12, 45)
+    const bInt = randInt(rng, 3, 9)
+    const a = aInt / 10
+    const b = bInt / 10
+    const prod = Number((a * b).toFixed(2))
+    const ans = prod.toFixed(2)
+    const choices = buildChoices(ans, [
+      (prod * 10).toFixed(2),
+      (prod / 10).toFixed(3),
+      (prod + 0.5).toFixed(2),
+      (prod - 0.2).toFixed(2),
+    ], rng)
+    return {
+      id: `${principleId}-${aInt}-${bInt}-dec`,
+      fingerprint: `${principleId}:${aInt}:${bInt}:dec`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Calculate: ${a.toFixed(1)} × ${b.toFixed(1)}`,
+      choices,
+      answer: ans,
+      explanation: `Multiply ${aInt} × ${bInt} = ${aInt * bInt}. Count 2 decimal places total: ${ans}.`,
+    }
+  },
+
+  'g6.factors-gcf-lcm': (rng, principleId, principleTitle) => {
+    const askGcf = rng() < 0.5
+    const factor = randInt(rng, 2, 6)
+    const m1 = randInt(rng, 2, 5)
+    const m2 = randInt(rng, m1 + 1, 7)
+    const n1 = factor * m1
+    const n2 = factor * m2
+    const gcfVal = factor * gcd(m1, m2)
+    const lcmVal = (n1 * n2) / gcfVal
+
+    if (askGcf) {
+      const ans = String(gcfVal)
+      const choices = buildChoices(ans, [gcfVal * 2, gcfVal + 1, Math.max(1, gcfVal - 1), gcfVal * 3], rng)
+      return {
+        id: `${principleId}-${n1}-${n2}-gcf`,
+        fingerprint: `${principleId}:${n1}:${n2}:gcf`,
+        principleId,
+        principleTitle,
+        type: 'mc',
+        prompt: `Find the Greatest Common Factor (GCF) of ${n1} and ${n2}.`,
+        choices,
+        answer: ans,
+        explanation: `The largest factor that divides evenly into both ${n1} and ${n2} is ${gcfVal}.`,
+      }
+    }
+    const ans = String(lcmVal)
+    const choices = buildChoices(ans, [lcmVal * 2, lcmVal / 2, lcmVal + factor, lcmVal - factor], rng)
+    return {
+      id: `${principleId}-${n1}-${n2}-lcm`,
+      fingerprint: `${principleId}:${n1}:${n2}:lcm`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the Least Common Multiple (LCM) of ${n1} and ${n2}.`,
+      choices,
+      answer: ans,
+      explanation: `The smallest positive multiple shared by both ${n1} and ${n2} is ${lcmVal}.`,
+    }
+  },
+
+  'g6.expressions-distributive': (rng, principleId, principleTitle) => {
+    const a = randInt(rng, 3, 8)
+    const b = randInt(rng, 2, 9)
+    const ans = `${a}x + ${a * b}`
+    const choices = buildChoices(ans, [`${a}x + ${b}`, `${a}x - ${a * b}`, `${a + b}x`, `${a * b}x`], rng)
+    return {
+      id: `${principleId}-${a}-${b}-dist`,
+      fingerprint: `${principleId}:${a}:${b}:dist`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Use the distributive property to expand: ${a}(x + ${b})`,
+      choices,
+      answer: ans,
+      explanation: `Multiply ${a} by each term inside the parentheses: (${a} × x) + (${a} × ${b}) = ${ans}.`,
+    }
+  },
+
+  'g6.equations-inequalities': (rng, principleId, principleTitle) => {
+    const c = randInt(rng, 2, 6)
+    const val = randInt(rng, 3, 9)
+    const product = c * val
+    const ans = `x ≤ ${val}`
+    const choices = buildChoices(ans, [`x < ${val}`, `x ≥ ${val}`, `x > ${val}`, `x ≤ ${val + 1}`], rng)
+    return {
+      id: `${principleId}-${c}-${product}-ineq`,
+      fingerprint: `${principleId}:${c}:${product}:ineq`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Solve the inequality: ${c}x ≤ ${product}`,
+      choices,
+      answer: ans,
+      explanation: `Divide both sides by ${c}: x ≤ ${product} ÷ ${c}, so ${ans}.`,
+    }
+  },
+
+  'g6.geometry-parallelogram': (rng, principleId, principleTitle) => {
+    const base = randInt(rng, 6, 16)
+    const height = randInt(rng, 4, 12)
+    const area = base * height
+    const ans = `${area} sq cm`
+    const choices = buildChoices(ans, [`${area / 2} sq cm`, `${area * 2} sq cm`, `${area + base} sq cm`, `${(base + height) * 2} sq cm`], rng)
+    return {
+      id: `${principleId}-${base}-${height}-pll`,
+      fingerprint: `${principleId}:${base}:${height}:pll`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the area of a parallelogram with base ${base} cm and height ${height} cm.`,
+      choices,
+      answer: ans,
+      explanation: `Area of a parallelogram = base × height = ${base} × ${height} = ${ans}.`,
+    }
+  },
+
+  'g6.geometry-surface-area': (rng, principleId, principleTitle) => {
+    const l = randInt(rng, 3, 8)
+    const w = randInt(rng, 2, 5)
+    const h = randInt(rng, 4, 7)
+    const sa = 2 * (l * w + l * h + w * h)
+    const vol = l * w * h
+    const ans = `${sa} sq units`
+    const choices = buildChoices(ans, [`${vol} sq units`, `${sa - 10} sq units`, `${sa + 12} sq units`, `${sa / 2} sq units`], rng)
+    return {
+      id: `${principleId}-${l}-${w}-${h}-sa`,
+      fingerprint: `${principleId}:${l}:${w}:${h}:sa`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the surface area of a box with length ${l}, width ${w}, and height ${h}.`,
+      choices,
+      answer: ans,
+      explanation: `Surface Area = 2(lw + lh + wh) = 2(${l * w} + ${l * h} + ${w * h}) = 2(${l * w + l * h + w * h}) = ${ans}.`,
+    }
+  },
+
+  'g6.coords-quadrants': (rng, principleId, principleTitle) => {
+    const quad = randInt(rng, 1, 4)
+    let x = randInt(rng, 1, 9)
+    let y = randInt(rng, 1, 9)
+    let expectedQuad = 'Quadrant I'
+    if (quad === 2) {
+      x = -x
+      expectedQuad = 'Quadrant II'
+    } else if (quad === 3) {
+      x = -x
+      y = -y
+      expectedQuad = 'Quadrant III'
+    } else if (quad === 4) {
+      y = -y
+      expectedQuad = 'Quadrant IV'
+    }
+    const choices = ['Quadrant I', 'Quadrant II', 'Quadrant III', 'Quadrant IV']
+    return {
+      id: `${principleId}-${x}-${y}-quad`,
+      fingerprint: `${principleId}:${x}:${y}:quad`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `In which quadrant of the coordinate plane is the point (${x}, ${y}) located?`,
+      choices,
+      answer: expectedQuad,
+      explanation: `Point (${x}, ${y}) has ${x > 0 ? 'positive x' : 'negative x'} and ${y > 0 ? 'positive y' : 'negative y'}, which places it in ${expectedQuad}.`,
+    }
+  },
+
+  'g6.stats-range-iqr': (rng, principleId, principleTitle) => {
+    const minVal = randInt(rng, 10, 25)
+    const spread = randInt(rng, 15, 35)
+    const maxVal = minVal + spread
+    const n2 = randInt(rng, minVal + 2, minVal + 10)
+    const n3 = randInt(rng, n2 + 1, maxVal - 5)
+    const n4 = randInt(rng, n3 + 1, maxVal - 1)
+    const nums = [minVal, n2, n3, n4, maxVal]
+    const rangeVal = maxVal - minVal
+    const ans = String(rangeVal)
+    const choices = buildChoices(ans, [rangeVal + 5, rangeVal - 3, maxVal, minVal], rng)
+    return {
+      id: `${principleId}-${nums.join('_')}-rng`,
+      fingerprint: `${principleId}:${nums.join(',')}:rng`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Find the range of this dataset: ${nums.join(', ')}`,
+      choices,
+      answer: ans,
+      explanation: `Range = maximum value minus minimum value: ${maxVal} - ${minVal} = ${rangeVal}.`,
+    }
+  },
+
   // =========================================================================
   // GRADE 7 MATH GENERATORS (Plain-Language Micro-Lesson Standard)
   // =========================================================================
