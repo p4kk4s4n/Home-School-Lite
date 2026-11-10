@@ -1,0 +1,663 @@
+import { Course, Principle } from '../../types'
+
+// Principles for Grade 5 Social Studies
+const G5_SOC_GEO_PRINCIPLE: Principle = {
+  id: 'p-g5-soc-geo',
+  title: 'Western Hemisphere Geography, Coordinates & Climates',
+  standard: 'C3.D2.Geo.1.3-5',
+  summary: 'Latitude/longitude pinpoint locations; physical geography and climates vary across the Western Hemisphere.',
+  bank: [
+    {
+      id: 'g5-soc-geo-1',
+      type: 'mc',
+      prompt: 'What do lines of latitude measure on a globe or map?',
+      choices: ['Distance north or south of the Equator', 'Distance east or west of the Prime Meridian', 'Height of mountains in feet', 'Depth of the ocean floor'],
+      answer: 'Distance north or south of the Equator',
+      explanation: 'Parallels of latitude run east-west and measure degrees north or south of the Equator.',
+    },
+    {
+      id: 'g5-soc-geo-2',
+      type: 'mc',
+      prompt: 'What do lines of longitude measure on a globe or map?',
+      choices: ['Distance east or west of the Prime Meridian', 'Distance north or south of the Equator', 'Daily rainfall totals', 'Population density'],
+      answer: 'Distance east or west of the Prime Meridian',
+      explanation: 'Meridians of longitude run from pole to pole and measure degrees east or west of the Prime Meridian.',
+    },
+    {
+      id: 'g5-soc-geo-3',
+      type: 'mc',
+      prompt: 'How does climate generally change as you travel closer to the Equator?',
+      choices: ['Temperatures become warmer year-round', 'Temperatures become freezing all year', 'Sunlight disappears for six months', 'Blizzards happen every day'],
+      answer: 'Temperatures become warmer year-round',
+      explanation: 'Low latitudes near the Equator receive direct sunlight all year, creating warm tropical climates.',
+    },
+    {
+      id: 'g5-soc-geo-4',
+      type: 'mc',
+      prompt: 'Which two continents make up the majority of the Western Hemisphere landmass?',
+      choices: ['North America and South America', 'Europe and Asia', 'Africa and Australia', 'Antarctica and Europe'],
+      answer: 'North America and South America',
+      explanation: 'The Western Hemisphere consists primarily of North and South America and surrounding oceans.',
+    },
+    {
+      id: 'g5-soc-geo-5',
+      type: 'mc',
+      prompt: 'Which mountain range extends along the western spine of South America?',
+      choices: ['The Andes Mountains', 'The Rocky Mountains', 'The Alps', 'The Himalayas'],
+      answer: 'The Andes Mountains',
+      explanation: 'The Andes Mountains form the world’s longest continental mountain range along western South America.',
+    },
+    {
+      id: 'g5-soc-geo-6',
+      type: 'mc',
+      prompt: 'Which major river system carries the largest volume of water in South America?',
+      choices: ['The Amazon River', 'The Mississippi River', 'The Nile River', 'The Ohio River'],
+      answer: 'The Amazon River',
+      explanation: 'The Amazon River basin drains vast tropical rainforests and carries more water than any other river.',
+    },
+  ],
+}
+
+const G5_SOC_ANCIENT_PRINCIPLE: Principle = {
+  id: 'p-g5-soc-ancient',
+  title: 'Maya, Aztec, Inca & Mound-Building Civilizations',
+  standard: 'OH.5.SS.1',
+  summary: 'Complex pre-Columbian civilizations developed advanced agriculture, architecture, calendars, and roads.',
+  bank: [
+    {
+      id: 'g5-soc-anc-1',
+      type: 'mc',
+      prompt: 'Which civilization built stone pyramids and a 365-day calendar in Central America?',
+      choices: ['The Maya', 'The Inca', 'The Vikings', 'The Iroquois'],
+      answer: 'The Maya',
+      explanation: 'The Maya civilization developed hieroglyphic writing, astronomy, and stone pyramids in Mesoamerica.',
+    },
+    {
+      id: 'g5-soc-anc-2',
+      type: 'mc',
+      prompt: 'What was the island capital city of the Aztec Empire in Mexico?',
+      choices: ['Tenochtitlan', 'Cuzco', 'Jamestown', 'Plymouth'],
+      answer: 'Tenochtitlan',
+      explanation: 'The Aztecs built their grand capital, Tenochtitlan, on an island in Lake Texcoco.',
+    },
+    {
+      id: 'g5-soc-anc-3',
+      type: 'mc',
+      prompt: 'How did the Aztecs grow crops on shallow lake beds?',
+      choices: ['Floating garden islands called chinampas', 'Glass greenhouses', 'Steel tractors', 'Desert windmills'],
+      answer: 'Floating garden islands called chinampas',
+      explanation: 'Chinampas were fertile, man-made garden beds built in shallow lake water around Tenochtitlan.',
+    },
+    {
+      id: 'g5-soc-anc-4',
+      type: 'mc',
+      prompt: 'Where did the Inca Empire build its road network and terraced farms?',
+      choices: ['The Andes Mountains of South America', 'The Great Plains of North America', 'The Arctic tundra', 'The islands of Hawaii'],
+      answer: 'The Andes Mountains of South America',
+      explanation: 'The Inca carved step-like terraces into steep Andes mountainsides and connected their empire with stone roads.',
+    },
+    {
+      id: 'g5-soc-anc-5',
+      type: 'mc',
+      prompt: 'Why did the Inca cut flat steps (terraces) into steep mountain slopes?',
+      choices: ['To create flat farmland and stop erosion', 'To park wagons', 'To catch ocean fish', 'To melt snow into lava'],
+      answer: 'To create flat farmland and stop erosion',
+      explanation: 'Terrace farming kept soil and water in place so crops could grow on steep mountainsides.',
+    },
+    {
+      id: 'g5-soc-anc-6',
+      type: 'mc',
+      prompt: 'What knotted cords did the Inca use to record numbers and supplies?',
+      choices: ['Quipu', 'Papyrus', 'Wampum', 'Telegraph'],
+      answer: 'Quipu',
+      explanation: 'A quipu was a system of colored, knotted strings used by the Inca to keep numerical records.',
+    },
+  ],
+}
+
+const G5_SOC_CULTURES_PRINCIPLE: Principle = {
+  id: 'p-g5-soc-cultures',
+  title: 'Indigenous Cultures & Adaptations in North America',
+  standard: 'C3.D2.His.2.3-5',
+  summary: 'Indigenous nations adapted to varied regional environments (Plains tipis, Eastern longhouses, Southwest pueblos).',
+  bank: [
+    {
+      id: 'g5-soc-wd-1',
+      type: 'mc',
+      prompt: 'What were the "Three Sisters" crops grown by Eastern Woodland peoples?',
+      choices: ['Corn, beans, and squash', 'Wheat, rice, and oats', 'Apples, oranges, and bananas', 'Cotton, tea, and coffee'],
+      answer: 'Corn, beans, and squash',
+      explanation: 'Corn, beans, and squash were planted together because corn stalks supported beans and squash shaded the soil.',
+    },
+    {
+      id: 'g5-soc-wd-2',
+      type: 'mc',
+      prompt: 'What type of multi-family bark homes did the Haudenosaunee (Iroquois) build?',
+      choices: ['Longhouses', 'Igloos', 'Adobe apartments', 'Grass huts'],
+      answer: 'Longhouses',
+      explanation: 'Eastern Woodland Haudenosaunee families lived in long wooden frames covered with elm bark called longhouses.',
+    },
+    {
+      id: 'g5-soc-wd-3',
+      type: 'mc',
+      prompt: 'Why did Great Plains nations build portable tipis?',
+      choices: ['Tipis were easy to move while following bison', 'Tipis were built from heavy stone blocks', 'Tipis floated on the ocean', 'Tipis were carved inside caves'],
+      answer: 'Tipis were easy to move while following bison',
+      explanation: 'Plains nations used portable cone-shaped tipis made of poles and bison hides during seasonal hunts.',
+    },
+    {
+      id: 'g5-soc-wd-4',
+      type: 'mc',
+      prompt: 'How did Ancestral Pueblo peoples in the arid Southwest water their crops?',
+      choices: ['Irrigation canals that directed scarce water', 'Melting polar icebergs', 'Daily tropical monsoons', 'Ocean saltwater pipes'],
+      answer: 'Irrigation canals that directed scarce water',
+      explanation: 'Southwest peoples adapted to dry desert climates by building irrigation ditches and adobe homes.',
+    },
+    {
+      id: 'g5-soc-wd-5',
+      type: 'mc',
+      prompt: 'What natural resource was most important to Pacific Northwest Coast cultures?',
+      choices: ['Cedar trees and ocean salmon', 'Desert cactus', 'Prairie sod', 'Arctic seal blubber'],
+      answer: 'Cedar trees and ocean salmon',
+      explanation: 'Pacific Northwest nations used giant cedar trees for plank houses and canoes and fished for salmon.',
+    },
+    {
+      id: 'g5-soc-wd-6',
+      type: 'mc',
+      prompt: 'What was the Great Law of Peace of the Haudenosaunee Confederacy?',
+      choices: ['A democratic constitution uniting five nations', 'A declaration of war on all neighbors', 'A tax code for European traders', 'A map of ocean trade routes'],
+      answer: 'A democratic constitution uniting five nations',
+      explanation: 'The Haudenosaunee Confederacy established a participatory democratic council that inspired later American democracy.',
+    },
+  ],
+}
+
+const G5_SOC_COLONIES_PRINCIPLE: Principle = {
+  id: 'p-g5-soc-colonies',
+  title: 'Columbian Exchange, Early Colonies & American Revolution',
+  standard: 'C3.D2.His.1.3-5',
+  summary: 'The Columbian exchange altered global diets; British colonies established self-government leading to 1776.',
+  bank: [
+    {
+      id: 'g5-soc-col-1',
+      type: 'mc',
+      prompt: 'What was the Columbian Exchange?',
+      choices: ['Exchange of plants, animals, and goods across oceans', 'A railroad across South America', 'A treaty between Ohio and Canada', 'A gold coin used in Boston'],
+      answer: 'Exchange of plants, animals, and goods across oceans',
+      explanation: 'The Columbian Exchange moved crops, livestock, people, and diseases between the Americas and Afro-Eurasia.',
+    },
+    {
+      id: 'g5-soc-col-2',
+      type: 'mc',
+      prompt: 'What was the first permanent English settlement in North America (1607)?',
+      choices: ['Jamestown, Virginia', 'Plymouth, Massachusetts', 'St. Augustine', 'Quebec'],
+      answer: 'Jamestown, Virginia',
+      explanation: 'English colonists founded Jamestown in Virginia in 1607 as their first permanent settlement.',
+    },
+    {
+      id: 'g5-soc-col-3',
+      type: 'mc',
+      prompt: 'Why did the Pilgrims sign the Mayflower Compact in 1620?',
+      choices: ['To agree on fair laws and self-government', 'To declare war on France', 'To buy land in California', 'To ban farming in New England'],
+      answer: 'To agree on fair laws and self-government',
+      explanation: 'The Mayflower Compact was an early agreement establishing self-government in Plymouth Colony.',
+    },
+    {
+      id: 'g5-soc-col-4',
+      type: 'mc',
+      prompt: 'Why did American colonists protest British taxes like the Stamp Act?',
+      choices: ['They had no elected representatives in Parliament', 'They wanted higher taxes on tea', 'They wanted to return to England', 'They disliked using paper money'],
+      answer: 'They had no elected representatives in Parliament',
+      explanation: 'Colonists argued "no taxation without representation" because they had no voice in the British Parliament.',
+    },
+    {
+      id: 'g5-soc-col-5',
+      type: 'mc',
+      prompt: 'Who was the primary author of the Declaration of Independence in 1776?',
+      choices: ['Thomas Jefferson', 'King George III', 'Abraham Lincoln', 'Christopher Columbus'],
+      answer: 'Thomas Jefferson',
+      explanation: 'Thomas Jefferson wrote the Declaration of Independence explaining why the colonies broke away from Britain.',
+    },
+    {
+      id: 'g5-soc-col-6',
+      type: 'mc',
+      prompt: 'According to the Declaration of Independence, what are people’s natural rights?',
+      choices: ['Life, liberty, and the pursuit of happiness', 'Free gold and silver', 'Rule by a king forever', 'No laws or courts'],
+      answer: 'Life, liberty, and the pursuit of happiness',
+      explanation: 'The Declaration states that all people have natural rights to life, liberty, and the pursuit of happiness.',
+    },
+  ],
+}
+
+const G5_SOC_ECON_PRINCIPLE: Principle = {
+  id: 'p-g5-soc-econ',
+  title: 'Productive Resources, Specialization & Trade in the Americas',
+  standard: 'C3.D2.Eco.1.3-5',
+  summary: 'Regions combine natural, human, and capital resources to specialize and trade across the Americas.',
+  bank: [
+    {
+      id: 'g5-soc-ec-1',
+      type: 'mc',
+      prompt: 'In economics, what is "opportunity cost"?',
+      choices: ['The next best choice you give up when deciding', 'The price tag printed on a toy', 'Money saved in a piggy bank', 'A free gift from a friend'],
+      answer: 'The next best choice you give up when deciding',
+      explanation: 'Opportunity cost is the value of the second-best option you give up when you make a choice.',
+    },
+    {
+      id: 'g5-soc-ec-2',
+      type: 'mc',
+      prompt: 'What are capital resources in a bakery business?',
+      choices: ['Ovens, mixing bowls, and baking pans', 'Wheat flour and fresh water', 'The bakers and decorators', 'The store customers'],
+      answer: 'Ovens, mixing bowls, and baking pans',
+      explanation: 'Capital resources are man-made goods, tools, and equipment used to produce other goods and services.',
+    },
+    {
+      id: 'g5-soc-ec-3',
+      type: 'mc',
+      prompt: 'What does economic specialization mean for a country or region?',
+      choices: ['Focusing on producing goods they make best', 'Making every single product locally', 'Banning all trade with neighbors', 'Closing all businesses'],
+      answer: 'Focusing on producing goods they make best',
+      explanation: 'Specialization occurs when regions produce goods best suited to their resources and trade for others.',
+    },
+    {
+      id: 'g5-soc-ec-4',
+      type: 'mc',
+      prompt: 'Why do nations in North and South America trade with each other?',
+      choices: ['To obtain resources and goods they do not produce easily', 'To spend money needlessly', 'Because trade is legally required', 'To make goods more expensive'],
+      answer: 'To obtain resources and goods they do not produce easily',
+      explanation: 'Trade allows countries to access raw materials, food, and manufactured items they lack.',
+    },
+    {
+      id: 'g5-soc-ec-5',
+      type: 'mc',
+      prompt: 'What happens in a market when the supply of a good is lower than demand?',
+      choices: ['Prices tend to rise due to scarcity.', 'Prices immediately drop to zero.', 'Sellers throw the items away.', 'Nobody wants the good anymore.'],
+      answer: 'Prices tend to rise due to scarcity.',
+      explanation: 'When buyers compete for scarce goods, prices rise until supply and demand balance.',
+    },
+    {
+      id: 'g5-soc-ec-6',
+      type: 'mc',
+      prompt: 'Fertile farmland, timber forests, and freshwater are examples of what resource?',
+      choices: ['Natural resources', 'Capital resources', 'Human resources', 'Financial loans'],
+      answer: 'Natural resources',
+      explanation: 'Natural resources are raw materials provided by the environment without human manufacture.',
+    },
+  ],
+}
+
+export const G5_SOCIAL_COURSE: Course = {
+  id: 'g5-social',
+  subject: 'social',
+  grade: 5,
+  title: 'Grade 5 Social Studies',
+  subtitle: 'Western Hemisphere Geography, Early Civilizations, Indigenous Peoples, Exploration & Economics',
+  credits: 1.0,
+  color: '#d97706',
+  icon: '🌎',
+  units: [
+    // UNIT 1: Western Hemisphere Geography & Coordinates
+    {
+      id: 'g5-soc-u1',
+      title: 'Unit 1: Western Hemisphere Geography & Coordinates',
+      standards: ['C3.D2.Geo.1.3-5', 'C3.D2.Geo.2.3-5'],
+      lessons: [
+        {
+          id: 'g5-soc-u1-l1',
+          unitId: 'g5-soc-u1',
+          title: 'Lesson 1: Hemispheres, Latitude & Longitude',
+          kind: 'lesson',
+          partOf: 'Map Coordinates',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings/intro-to-history/v/latitude-and-longitude',
+          videoTitle: 'Khan Academy: Latitude and Longitude Grids',
+          reading:
+            'The Western Hemisphere includes North and South America. Latitude lines measure degrees north/south of the Equator, and longitude measures degrees east/west of the Prime Meridian.',
+          principles: [G5_SOC_GEO_PRINCIPLE],
+        },
+        {
+          id: 'g5-soc-u1-l2',
+          unitId: 'g5-soc-u1',
+          title: 'Lesson 2: Major Landforms & River Systems of the Americas',
+          kind: 'lesson',
+          partOf: 'Physical Geography',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/colonial-north-america/early-colonies/v/us-geography-and-landforms',
+          videoTitle: 'Khan Academy: Physical Geography of the Americas',
+          reading:
+            'From the Rocky Mountains and Great Lakes in the north to the Andes Mountains and Amazon rainforest in the south, diverse landforms shape regional climates and human settlement.',
+          principles: [G5_SOC_GEO_PRINCIPLE],
+        },
+      ],
+    },
+
+    // UNIT 2: Ohio Extension: Ancient American Civilizations (Maya, Aztec, Inca)
+    {
+      id: 'g5-soc-u2',
+      title: 'Unit 2: Early Civilizations: Maya, Aztec & Inca',
+      isOhioExtension: true,
+      standards: ['OH.5.SS.1'],
+      lessons: [
+        {
+          id: 'g5-soc-u2-l1',
+          unitId: 'g5-soc-u2',
+          title: 'Lesson 1: Maya Astronomy, Pyramids & Aztec Chinampas',
+          kind: 'lesson',
+          isOhioExtension: true,
+          partOf: 'Mesoamerican Civilizations',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/maya-aztec-and-inca/v/maya-civilization',
+          videoTitle: 'Khan Academy: Maya & Aztec Civilizations',
+          reading:
+            'The Maya built astronomical observatories and accurate calendars. The Aztecs constructed the island capital of Tenochtitlan and fed their empire using floating chinampas.',
+          principles: [G5_SOC_ANCIENT_PRINCIPLE],
+        },
+        {
+          id: 'g5-soc-u2-l2',
+          unitId: 'g5-soc-u2',
+          title: 'Lesson 2: The Inca Empire: Andes Roads, Terraces & Quipu',
+          kind: 'lesson',
+          isOhioExtension: true,
+          partOf: 'Andean Civilizations',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/maya-aztec-and-inca/v/inca-empire',
+          videoTitle: 'Khan Academy: The Inca Empire and Andean Innovations',
+          reading:
+            'The Inca engineered 25,000 miles of mountain roads, farmed on steep terraced hillsides, and managed imperial record-keeping using knotted quipu cords.',
+          principles: [G5_SOC_ANCIENT_PRINCIPLE],
+        },
+      ],
+    },
+
+    // UNIT 3: Indigenous Cultures of North America
+    {
+      id: 'g5-soc-u3',
+      title: 'Unit 3: Indigenous Nations of North America',
+      standards: ['C3.D2.His.2.3-5'],
+      lessons: [
+        {
+          id: 'g5-soc-u3-l1',
+          unitId: 'g5-soc-u3',
+          title: 'Lesson 1: Eastern Woodlands, Three Sisters & Longhouses',
+          kind: 'lesson',
+          partOf: 'Eastern Woodlands',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/colonial-north-america/early-colonies/v/native-americans-before-contact',
+          videoTitle: 'Khan Academy: Indigenous Cultures Before 1492',
+          reading:
+            'Eastern Woodland nations planted corn, beans, and squash (the Three Sisters) and lived in communal bark longhouses governed by councils like the Haudenosaunee.',
+          principles: [G5_SOC_CULTURES_PRINCIPLE],
+        },
+        {
+          id: 'g5-soc-u3-l2',
+          unitId: 'g5-soc-u3',
+          title: 'Lesson 2: Plains Bison Hunters & Southwest Pueblos',
+          kind: 'lesson',
+          partOf: 'Plains & Southwest',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/colonial-north-america/early-colonies/v/the-plains-and-southwest-native-peoples',
+          videoTitle: 'Khan Academy: Plains and Southwest Native Cultures',
+          reading:
+            'Plains tribes utilized every part of the bison and lived in portable hide tipis. Southwest Ancestral Puebloans built multi-story adobe villages and sophisticated irrigation canals.',
+          principles: [G5_SOC_CULTURES_PRINCIPLE],
+        },
+      ],
+    },
+
+    // UNIT 4: Columbian Exchange & Age of Exploration
+    {
+      id: 'g5-soc-u4',
+      title: 'Unit 4: European Exploration & The Columbian Exchange',
+      standards: ['C3.D2.His.1.3-5'],
+      lessons: [
+        {
+          id: 'g5-soc-u4-l1',
+          unitId: 'g5-soc-u4',
+          title: 'Lesson 1: Cross-Oceanic Transfer of Crops & Livestock',
+          kind: 'lesson',
+          partOf: 'Columbian Exchange',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/colonial-north-america/early-colonies/v/the-columbian-exchange',
+          videoTitle: 'Khan Academy: The Columbian Exchange',
+          reading:
+            'The Columbian Exchange transferred American crops (potatoes, corn, tomatoes) to the Old World and brought European horses, cattle, wheat, and devastating diseases to the Americas.',
+          principles: [G5_SOC_COLONIES_PRINCIPLE],
+        },
+        {
+          id: 'g5-soc-u4-l2',
+          unitId: 'g5-soc-u4',
+          title: 'Lesson 2: Spanish, French & English Imperial Claims',
+          kind: 'lesson',
+          partOf: 'European Exploration',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/colonial-north-america/early-colonies/v/spanish-colonization',
+          videoTitle: 'Khan Academy: European Colonization in the Americas',
+          reading:
+            'Spain built missions and mines in Central and South America, France established fur-trading outposts along the St. Lawrence and Mississippi, and England colonized the Atlantic coast.',
+          principles: [G5_SOC_COLONIES_PRINCIPLE],
+        },
+      ],
+    },
+
+    // UNIT 5: Early Colonies & Foundations of Self-Government
+    {
+      id: 'g5-soc-u5',
+      title: 'Unit 5: Early Colonies & Self-Government',
+      standards: ['C3.D2.Civ.1.3-5', 'C3.D2.His.1.3-5'],
+      lessons: [
+        {
+          id: 'g5-soc-u5-l1',
+          unitId: 'g5-soc-u5',
+          title: 'Lesson 1: Jamestown 1607 & The Virginia House of Burgesses',
+          kind: 'lesson',
+          partOf: 'Jamestown Settlement',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/colonial-north-america/early-colonies/v/jamestown',
+          videoTitle: 'Khan Academy: Jamestown and Early Colonization',
+          reading:
+            'Founded in 1607, Jamestown survived difficult beginnings through tobacco cultivation and created the House of Burgesses, the first elected legislative assembly in America.',
+          principles: [G5_SOC_COLONIES_PRINCIPLE],
+        },
+        {
+          id: 'g5-soc-u5-l2',
+          unitId: 'g5-soc-u5',
+          title: 'Lesson 2: Plymouth 1620 & The Mayflower Compact',
+          kind: 'lesson',
+          partOf: 'Mayflower Compact',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/colonial-north-america/early-colonies/v/plymouth-colony-and-the-mayflower-compact',
+          videoTitle: 'Khan Academy: Plymouth Colony and the Mayflower Compact',
+          reading:
+            'Pilgrim colonists signed the Mayflower Compact in 1620, binding themselves into a civil body politic and creating an early model for democratic self-government.',
+          principles: [G5_SOC_COLONIES_PRINCIPLE],
+        },
+      ],
+    },
+
+    // UNIT 6: American Revolution & Principles of Democracy
+    {
+      id: 'g5-soc-u6',
+      title: 'Unit 6: The American Revolution & Declaration of Independence',
+      standards: ['C3.D2.Civ.2.3-5', 'C3.D2.His.3.3-5'],
+      lessons: [
+        {
+          id: 'g5-soc-u6-l1',
+          unitId: 'g5-soc-u6',
+          title: 'Lesson 1: Colonial Protests & "No Taxation Without Representation"',
+          kind: 'lesson',
+          partOf: 'Road to Revolution',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution/the-american-revolution/v/the-stamp-act-and-sons-of-liberty',
+          videoTitle: 'Khan Academy: Causes of the American Revolution',
+          reading:
+            'Colonists resisted British parliamentary acts like the Stamp Act and Tea Act because they had no elected representatives, uniting in boycotts and continental congresses.',
+          principles: [G5_SOC_COLONIES_PRINCIPLE],
+        },
+        {
+          id: 'g5-soc-u6-l2',
+          unitId: 'g5-soc-u6',
+          title: 'Lesson 2: The Declaration of 1776 & Natural Rights',
+          kind: 'lesson',
+          partOf: 'Declaration of Independence',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution/the-american-revolution/v/the-declaration-of-independence',
+          videoTitle: 'Khan Academy: The Declaration of Independence',
+          reading:
+            'Drafted by Thomas Jefferson in 1776, the Declaration asserted that governments derive their just powers from the consent of the governed to protect natural rights.',
+          principles: [G5_SOC_COLONIES_PRINCIPLE],
+        },
+      ],
+    },
+
+    // UNIT 7: Western Hemisphere Economics & Trade
+    {
+      id: 'g5-soc-u7',
+      title: 'Unit 7: Economics: Productive Resources & Specialization',
+      standards: ['C3.D2.Eco.1.3-5', 'C3.D2.Eco.3.3-5'],
+      lessons: [
+        {
+          id: 'g5-soc-u7-l1',
+          unitId: 'g5-soc-u7',
+          title: 'Lesson 1: Natural, Human & Capital Productive Resources',
+          kind: 'lesson',
+          partOf: 'Productive Resources',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/microeconomics/basic-economic-concepts-gen-micro/scarcity-and-choice/v/factors-of-production',
+          videoTitle: 'Khan Academy: Productive Resources and Scarcity',
+          reading:
+            'Goods and services require natural resources (raw materials), human resources (labor and skills), and capital resources (tools, buildings, and technology).',
+          principles: [G5_SOC_ECON_PRINCIPLE],
+        },
+        {
+          id: 'g5-soc-u7-l2',
+          unitId: 'g5-soc-u7',
+          title: 'Lesson 2: Regional Specialization & Interdependence',
+          kind: 'lesson',
+          partOf: 'Specialization & Trade',
+          estimatedMinutes: 10,
+          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/microeconomics/basic-economic-concepts-gen-micro/comparative-advantage-and-the-gains-from-trade/v/specialization-and-trade',
+          videoTitle: 'Khan Academy: Specialization and Trade in the Americas',
+          reading:
+            'Countries in the Americas specialize in goods they produce efficiently (e.g. coffee, wheat, electronics) and trade with one another to satisfy economic wants.',
+          principles: [G5_SOC_ECON_PRINCIPLE],
+        },
+      ],
+    },
+
+    // UNIT 8: Explore Western Hemisphere Projects (enrichment)
+    {
+      id: 'g5-soc-u8',
+      title: 'Unit 8: Explore Western Hemisphere History & Culture Projects',
+      kind: 'explore',
+      standards: ['OH.5.SS.1', 'C3.D2.Geo.2.3-5'],
+      lessons: [],
+      exploreItems: [
+        {
+          id: 'g5-soc-exp-machu-picchu',
+          title: 'Virtual 3D Field Trip: Machu Picchu Citadel in Peru',
+          type: 'virtual_tour',
+          description:
+            'Explore high-altitude panoramic 360-degree photography of the Inca citadel of Machu Picchu, observing agricultural terraces and precision stone masonry.',
+          url: 'https://artsandculture.google.com/partner/machu-picchu',
+          estimatedMinutes: 20,
+          reflectionPrompt: 'How did Inca builders fit giant granite stones together without mortar so tightly that a blade of grass cannot pass?',
+          requiresParentPin: false,
+        },
+        {
+          id: 'g5-soc-exp-maya-math',
+          title: 'Mesoamerican Math Lab: Writing Numbers in Maya Vigesimal',
+          type: 'hands_on',
+          description:
+            'Learn the Maya base-20 numbering system using shells (0), dots (1), and bars (5). Write your birth date and solve three addition problems using Maya numerals.',
+          estimatedMinutes: 25,
+          materials: ['Blank paper and pencil', 'Beans or beads for dots, toothpicks for bars (optional)'],
+          steps: [
+            'Learn the symbols: a shell = 0, a dot = 1, a horizontal bar = 5.',
+            'Combine bars and dots to represent numbers from 1 through 19.',
+            'Write your current age using Maya symbols.',
+            'Solve (3 bars + 2 dots) + (1 bar + 4 dots) = ?',
+          ],
+          reflectionPrompt: 'Why was the Maya invention of the number zero so revolutionary in world mathematics?',
+          requiresParentPin: false,
+        },
+        {
+          id: 'g5-soc-exp-columbian-pantry',
+          title: 'Culinary History Investigation: The Columbian Exchange Pantry',
+          type: 'project',
+          description:
+            'Inspect your home kitchen pantry or refrigerator. Categorize at least 8 foods as native to the Americas (pre-1492) or introduced from Europe, Africa, or Asia.',
+          estimatedMinutes: 25,
+          materials: ['Kitchen pantry items', 'Notebook or classification chart'],
+          steps: [
+            'Make a two-column chart: "Native to the Americas" and "Introduced from Afro-Eurasia".',
+            'Find corn, potatoes, tomatoes, chocolate, or peppers (Americas).',
+            'Find wheat bread, rice, apples, beef/dairy, or citrus fruits (Afro-Eurasia).',
+            'Notice how modern meals combine ingredients from both hemispheres.',
+          ],
+          reflectionPrompt: 'What would pizza or tacos taste like without the Columbian Exchange?',
+          requiresParentPin: false,
+        },
+      ],
+    },
+
+    // UNIT 9: Teacher Resources & Pacing
+    {
+      id: 'g5-soc-u9',
+      title: 'Unit 9: Teacher Resources & Pacing',
+      kind: 'teacher_resources',
+      standards: ['OH.5.SS', 'C3.Framework'],
+      lessons: [],
+      resources: [
+        {
+          id: 'g5-soc-res-pacing',
+          title: 'Grade 5 Social Studies 36-Week Pacing Guide',
+          kind: 'pacing_guide',
+          description:
+            'Curriculum sequence aligning Western Hemisphere geography, early American civilizations, colonial history, and economics.',
+          body: `## Grade 5 Social Studies Pacing Guide (36 Weeks)
+
+- **Weeks 1–4**: Unit 1 — Western Hemisphere Geography & Coordinates (C3.Geo.1-2)
+- **Weeks 5–9**: Unit 2 — Early Civilizations: Maya, Aztec & Inca (OH.5.SS.1)
+- **Weeks 10–13**: Unit 3 — Indigenous Nations of North America (C3.His.2)
+- **Week 14**: Quarter 1 Geography & Ancient Civilizations Assessment
+- **Weeks 15–18**: Unit 4 — European Exploration & Columbian Exchange (C3.His.1)
+- **Weeks 19–23**: Unit 5 — Early Colonies & Self-Government (C3.Civ.1)
+- **Weeks 24–28**: Unit 6 — American Revolution & Declaration of 1776 (C3.Civ.2)
+- **Week 29**: Quarter 2 & 3 Colonial and Revolutionary Checkpoint
+- **Weeks 30–34**: Unit 7 — Economics: Resources, Specialization & Trade (C3.Eco.1-3)
+- **Weeks 35–36**: Unit 8 — Capstone Machu Picchu Tours & Cultural Presentations`,
+        },
+        {
+          id: 'g5-soc-res-standards',
+          title: 'Ohio Learning Standards for Social Studies: Grade 5 Crosswalk',
+          kind: 'standards_map',
+          description:
+            'Crosswalk between Home-School-Lite units and Ohio Grade 5 Content Statements for the Western Hemisphere.',
+          body: `| Unit | Ohio Content Statement | Core Competencies |
+|---|---|---|
+| Unit 1 | Geography 4-6 | Western Hemisphere map grids, latitude/longitude, physical features |
+| Unit 2 | History 1 | Maya, Aztec, Inca civilizations, agriculture, quipu, calendars |
+| Unit 3 | History 2 | Environmental adaptations of American Indian cultures |
+| Unit 4 | History 3 | Columbian Exchange, ecological and cultural consequences |
+| Unit 5 | Government 9-10 | Mayflower Compact, colonial self-government, rule of law |
+| Unit 6 | Government 11-12 | Declaration of Independence, natural rights, constitutional democracy |
+| Unit 7 | Economics 13-16 | Productive resources, specialization, market trade in the Americas |`,
+        },
+        {
+          id: 'g5-soc-res-primary',
+          title: 'Western Hemisphere Primary Source Document Study Pack',
+          kind: 'printable',
+          description:
+            'Annotated primary source excerpts from the Mayflower Compact and Thomas Jefferson’s Declaration of Independence.',
+          body: `## Primary Source Spotlight: The Declaration of Independence (1776)
+
+> "We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.--That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed..."
+
+### Analysis Questions for Discussion:
+1. What does Thomas Jefferson say is the main purpose of government?
+2. Where does a government get its power according to the Declaration?`,
+        },
+      ],
+    },
+  ],
+}

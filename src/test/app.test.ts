@@ -1196,4 +1196,50 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
     expect(sciTeacher?.resources?.length).toBeGreaterThanOrEqual(2)
     expect(mathTeacher?.resources?.some((r) => r.kind === 'pacing_guide')).toBe(true)
   })
+
+  it('validates Grade 5 full course expansion, Explore units isolation, and Teacher Resources', () => {
+    const g5Math = getCourseById('g5-math')
+    const g5Science = getCourseById('g5-science')
+    const g5Ela = getCourseById('g5-ela')
+    const g5Social = getCourseById('g5-social')
+
+    expect(g5Math).toBeDefined()
+    expect(g5Science).toBeDefined()
+    expect(g5Ela).toBeDefined()
+    expect(g5Social).toBeDefined()
+
+    // 1. Validate full unit progressions matching Khan/standards scope
+    expect(g5Math!.units.length).toBeGreaterThanOrEqual(11)
+    expect(g5Science!.units.length).toBeGreaterThanOrEqual(8)
+    expect(g5Ela!.units.length).toBeGreaterThanOrEqual(7)
+    expect(g5Social!.units.length).toBeGreaterThanOrEqual(8)
+
+    // 2. Validate Explore units exist for all 4 subjects
+    const mathExplore = g5Math!.units.find((u) => u.kind === 'explore')
+    const sciExplore = g5Science!.units.find((u) => u.kind === 'explore')
+    const elaExplore = g5Ela!.units.find((u) => u.kind === 'explore')
+    const socExplore = g5Social!.units.find((u) => u.kind === 'explore')
+
+    expect(mathExplore?.exploreItems?.length).toBeGreaterThanOrEqual(4)
+    expect(sciExplore?.exploreItems?.length).toBeGreaterThanOrEqual(4)
+    expect(elaExplore?.exploreItems?.length).toBeGreaterThanOrEqual(3)
+    expect(socExplore?.exploreItems?.length).toBeGreaterThanOrEqual(3)
+
+    // 3. Verify Explore and Teacher Resource units are excluded from grading and course progress
+    const mockProgress = computeCourseProgress(g5Science!, [], 80)
+    for (const item of mockProgress.items) {
+      expect(item.unit.kind).not.toBe('explore')
+      expect(item.unit.kind).not.toBe('teacher_resources')
+    }
+
+    const mockGrade = computeCourseGrade(g5Science!, [], DEFAULT_SETTINGS)
+    expect(mockGrade.totalLessons).toBe(mockProgress.totalCount)
+
+    // 4. Validate Teacher Resources exist for parents
+    const mathTeacher = g5Math!.units.find((u) => u.kind === 'teacher_resources')
+    const sciTeacher = g5Science!.units.find((u) => u.kind === 'teacher_resources')
+    expect(mathTeacher?.resources?.length).toBeGreaterThanOrEqual(2)
+    expect(sciTeacher?.resources?.length).toBeGreaterThanOrEqual(2)
+    expect(mathTeacher?.resources?.some((r) => r.kind === 'pacing_guide')).toBe(true)
+  })
 })
