@@ -877,10 +877,61 @@ export const G8_SOCIAL_COURSE: Course = {
       ],
     },
 
-    // UNIT 6: Explore Historical Archives Through Interactive 3D Artifacts
+    // UNIT 6: Grade 8 U.S. Studies Course Challenge
     {
       id: 'g8-soc-u6',
-      title: 'Unit 6: Explore Historical Archives Through Interactive 3D Artifacts',
+      title: 'Unit 6: Grade 8 U.S. Studies Course Challenge',
+      standards: ['OH.8.SS.5', 'OH.8.SS.7', 'OH.8.SS.10', 'OH.8.SS.11', 'OH.8.SS.12'],
+      lessons: [
+        {
+          id: 'g8-soc-u6-l1',
+          unitId: 'g8-soc-u6',
+          title: 'Lesson 1: Early Republic & Revolutionary Foundations Synthesis',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge Part 1',
+          estimatedMinutes: 15,
+          videoUrl:
+            'https://www.khanacademy.org/humanities/us-history/road-to-revolution/v/early-republic-synthesis',
+          videoTitle: 'Khan Academy: American Revolution & Constitution Synthesis',
+          reading:
+            'Synthesize colonial resistance, Enlightenment natural rights in the Declaration of Independence, federalism checks and balances, and Northwest Ordinance liberties.',
+          principles: [P_G8_SOC_REVOLUTION, P_G8_SOC_CONSTITUTION_OHIO],
+        },
+        {
+          id: 'g8-soc-u6-l2',
+          unitId: 'g8-soc-u6',
+          title: 'Lesson 2: Westward Migration & Sectional Division Synthesis',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge Part 2',
+          estimatedMinutes: 15,
+          videoUrl:
+            'https://www.khanacademy.org/humanities/us-history/civil-war-era/v/expansion-and-sectionalism-synthesis',
+          videoTitle: 'Khan Academy: Westward Expansion & Sectionalism Synthesis',
+          reading:
+            'Trace territorial growth from the Louisiana Purchase to California, analyzing how disputes over slavery’s expansion fractured political parties and fueled regional crises.',
+          principles: [P_G8_SOC_WESTWARD_EXPANSION, P_G8_SOC_SECTIONALISM],
+        },
+        {
+          id: 'g8-soc-u6-l3',
+          unitId: 'g8-soc-u6',
+          title: 'Lesson 3: Civil War, Reconstruction & Ohio Heritage Capstone',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge Part 3',
+          estimatedMinutes: 15,
+          videoUrl:
+            'https://www.khanacademy.org/humanities/us-history/civil-war-era/v/civil-war-capstone',
+          videoTitle: 'Khan Academy: Civil War and Reconstruction Capstone',
+          reading:
+            'Evaluate wartime strategies, Ohio’s Underground Railroad network, the Emancipation Proclamation, and the transformative constitutional impact of the 13th, 14th, and 15th Amendments.',
+          principles: [P_G8_SOC_CIVIL_WAR],
+        },
+      ],
+    },
+
+    // UNIT 7: Explore Historical Archives Through Interactive 3D Artifacts
+    {
+      id: 'g8-soc-u7',
+      title: 'Unit 7: Explore Historical Archives Through Interactive 3D Artifacts',
       kind: 'explore',
       standards: ['OH.8.SS.Explore'],
       lessons: [],
@@ -932,10 +983,10 @@ export const G8_SOCIAL_COURSE: Course = {
       ],
     },
 
-    // UNIT 7: Teacher Resources & Standards Alignment
+    // UNIT 8: Teacher Resources & Standards Alignment
     {
-      id: 'g8-soc-u7',
-      title: 'Unit 7: Teacher Resources & Standards Alignment',
+      id: 'g8-soc-u8',
+      title: 'Unit 8: Teacher Resources & Standards Alignment',
       kind: 'teacher_resources',
       standards: ['OH.8.SS', 'C3.Framework'],
       lessons: [],
@@ -955,7 +1006,7 @@ export const G8_SOCIAL_COURSE: Course = {
 - **Weeks 21–26**: Unit 4 — Sectionalism, Slavery & the Road to Civil War (OH.8.SS.11)
 - **Week 27**: Quarter 2 & 3 Expansion and Sectional Crisis Checkpoint
 - **Weeks 28–33**: Unit 5 — The American Civil War & Reconstruction (OH.8.SS.12-13)
-- **Weeks 34–36**: Unit 6 — Capstone Historical Archive Inquiry & Defense Presentations`,
+- **Weeks 34–36**: Unit 6 — Grade 8 U.S. Studies Course Challenge & Historical Archive Inquiry`,
         },
         {
           id: 'g8-soc-res-standards',

@@ -615,7 +615,21 @@ export const G8_ELA_COURSE: Course = {
         {
           id: 'g8-ela-u2-l3',
           unitId: 'g8-ela-u2',
-          title: 'Lesson 3: Unit 2 Checkpoint Review: Irony & Perspective',
+          title: 'Lesson 3: Point of View & Manipulating Reader Suspense',
+          kind: 'lesson',
+          partOf: 'Suspense Point of View',
+          estimatedMinutes: 10,
+          videoUrl:
+            'https://www.khanacademy.org/ela/cc-8th-reading-vocab/x2288544e3f3a02a9:close-reading-literature/x2288544e3f3a02a9:point-of-view/v/point-of-view-suspense',
+          videoTitle: 'Khan Academy: Point of View and Suspense',
+          reading:
+            'Authors control perspective to manipulate tension, either by revealing character thoughts through third-person omniscience or limiting knowledge to a single narrator.',
+          principles: [P_G8_ELA_IRONY_POV],
+        },
+        {
+          id: 'g8-ela-u2-l4',
+          unitId: 'g8-ela-u2',
+          title: 'Lesson 4: Unit 2 Checkpoint Review: Irony & Perspective',
           kind: 'lesson_review',
           partOf: 'Irony Review',
           estimatedMinutes: 12,
@@ -852,21 +866,35 @@ export const G8_ELA_COURSE: Course = {
         {
           id: 'g8-ela-u6-l2',
           unitId: 'g8-ela-u6',
-          title: 'Lesson 2: Structuring an Evidence-Based Argumentative Essay',
+          title: 'Lesson 2: Developing a Defensible Argumentative Thesis & Evidence',
           kind: 'lesson',
-          partOf: 'Argumentative Writing',
+          partOf: 'Argumentative Thesis',
           estimatedMinutes: 10,
           videoUrl:
             'https://www.khanacademy.org/ela/cc-8th-reading-vocab/x2288544e3f3a02a9:close-reading-informational-text/v/argumentative-writing',
           videoTitle: 'Khan Academy: Argumentative Essay Structure',
           reading:
-            'Structure argumentative essays with a clear thesis claim, body paragraphs with topic sentences and cited evidence, a counter-argument rebuttal, and a call to action.',
+            'Structure argumentative essays with a clear thesis claim, body paragraphs with topic sentences and cited evidence, and logical paragraph transitions.',
           principles: [P_G8_ELA_ARGUMENTS],
         },
         {
           id: 'g8-ela-u6-l3',
           unitId: 'g8-ela-u6',
-          title: 'Lesson 3: Unit 6 Checkpoint Review: Writing Studio',
+          title: 'Lesson 3: Addressing Counterclaims & Logical Fallacy Rebuttals',
+          kind: 'lesson',
+          partOf: 'Counterclaim & Rebuttal',
+          estimatedMinutes: 10,
+          videoUrl:
+            'https://www.khanacademy.org/ela/cc-8th-reading-vocab/x2288544e3f3a02a9:close-reading-informational-text/v/counterclaims',
+          videoTitle: 'Khan Academy: Handling Counterclaims and Rebuttals',
+          reading:
+            'Strengthen argumentative persuasion by objectively representing the strongest counter-argument, followed by a factual rebuttal exposing flaws in opposing premises.',
+          principles: [P_G8_ELA_ARGUMENTS],
+        },
+        {
+          id: 'g8-ela-u6-l4',
+          unitId: 'g8-ela-u6',
+          title: 'Lesson 4: Unit 6 Checkpoint Review: Writing Studio',
           kind: 'lesson_review',
           partOf: 'Writing Review',
           estimatedMinutes: 12,
@@ -880,10 +908,61 @@ export const G8_ELA_COURSE: Course = {
       ],
     },
 
-    // UNIT 7: Explore Literary Worlds Through Audio Dramas & Rhetoric Labs
+    // UNIT 7: Grade 8 ELA Course Challenge
     {
       id: 'g8-ela-u7',
-      title: 'Unit 7: Explore Literary Worlds Through Audio Dramas & Rhetoric Labs',
+      title: 'Unit 7: Grade 8 ELA Course Challenge',
+      standards: ['RL.8', 'RI.8', 'W.8', 'L.8'],
+      lessons: [
+        {
+          id: 'g8-ela-u7-l1',
+          unitId: 'g8-ela-u7',
+          title: 'Lesson 1: Literature, Theme & Irony Synthesis',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge Part 1',
+          estimatedMinutes: 15,
+          videoUrl:
+            'https://www.khanacademy.org/ela/cc-8th-reading-vocab/x2288544e3f3a02a9:course-challenge/v/lit-irony-synthesis',
+          videoTitle: 'Khan Academy: Grade 8 Literature & Irony Synthesis',
+          reading:
+            'Synthesize theme development, dialogue propelling dramatic action, and dramatic/situational/verbal irony in complex fiction.',
+          principles: [P_G8_ELA_THEME_DIALOGUE, P_G8_ELA_IRONY_POV],
+        },
+        {
+          id: 'g8-ela-u7-l2',
+          unitId: 'g8-ela-u7',
+          title: 'Lesson 2: Informational Text & Argument Evaluation Synthesis',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge Part 2',
+          estimatedMinutes: 15,
+          videoUrl:
+            'https://www.khanacademy.org/ela/cc-8th-reading-vocab/x2288544e3f3a02a9:course-challenge/v/info-argument-synthesis',
+          videoTitle: 'Khan Academy: Grade 8 Argument Analysis Synthesis',
+          reading:
+            'Demonstrate mastery in evaluating evidentiary relevance, assessing source credibility, spotting fallacies, and resolving conflicting texts.',
+          principles: [P_G8_ELA_ARGUMENTS],
+        },
+        {
+          id: 'g8-ela-u7-l3',
+          unitId: 'g8-ela-u7',
+          title: 'Lesson 3: Grammar Conventions & Verbals Capstone',
+          kind: 'lesson_review',
+          partOf: 'Course Challenge Part 3',
+          estimatedMinutes: 15,
+          videoUrl:
+            'https://www.khanacademy.org/ela/cc-8th-reading-vocab/x2288544e3f3a02a9:course-challenge/v/grammar-verbals-capstone',
+          videoTitle: 'Khan Academy: Grade 8 Language & Verbals Capstone',
+          reading:
+            'Apply advanced knowledge of gerunds, participles, infinitives, active/passive voice shifts, and conditional/subjunctive verb moods.',
+          principles: [P_G8_ELA_VERBALS, P_G8_ELA_VOICE_MOOD],
+        },
+      ],
+    },
+
+    // UNIT 8: Explore Literary Worlds Through Audio Dramas & Rhetoric Labs
+    {
+      id: 'g8-ela-u8',
+      title: 'Unit 8: Explore Literary Worlds Through Audio Dramas & Rhetoric Labs',
       kind: 'explore',
       standards: ['RL.8.Explore', 'RI.8.Explore'],
       lessons: [],
@@ -925,10 +1004,10 @@ export const G8_ELA_COURSE: Course = {
       ],
     },
 
-    // UNIT 8: Teacher Resources & Pacing
+    // UNIT 9: Teacher Resources & Pacing
     {
-      id: 'g8-ela-u8',
-      title: 'Unit 8: Teacher Resources & Pacing',
+      id: 'g8-ela-u9',
+      title: 'Unit 9: Teacher Resources & Pacing',
       kind: 'teacher_resources',
       standards: ['OH.8.ELA', 'CCSS.8.ELA'],
       lessons: [],
@@ -949,7 +1028,7 @@ export const G8_ELA_COURSE: Course = {
 - **Week 24**: Quarter 2 & 3 Informational and Grammar Checkpoint
 - **Weeks 25–29**: Unit 5 — Grammar & Style: Verb Voice & Mood (L.8.1b-c)
 - **Weeks 30–33**: Unit 6 — Narrative & Argumentative Writing Studio (W.8.1-3)
-- **Weeks 34–36**: Unit 7 — Capstone Rhetorical Speech Analysis & Audio Drama Presentations`,
+- **Weeks 34–36**: Unit 7 — Grade 8 ELA Course Challenge & Capstone Speech Presentations`,
         },
         {
           id: 'g8-ela-res-standards',
