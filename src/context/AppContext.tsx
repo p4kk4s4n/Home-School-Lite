@@ -74,6 +74,10 @@ interface AppContextValue {
   syncingFamily: boolean
   lastSyncResult: SyncStatusResult | null
   triggerFamilySync: () => Promise<SyncStatusResult>
+  // PWA Install / Shortcut Prompt
+  canInstallPwa: boolean
+  isStandalone: boolean
+  promptInstallPwa: () => Promise<'accepted' | 'dismissed' | 'unavailable'>
 }
 
 const AppContext = createContext<AppContextValue | null>(null)
@@ -106,6 +110,51 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [checkingUpdate, setCheckingUpdate] = useState(false)
   const [syncingFamily, setSyncingFamily] = useState(false)
   const [lastSyncResult, setLastSyncResult] = useState<SyncStatusResult | null>(null)
+
+  // Native PWA beforeinstallprompt capture & standalone detection
+  const [deferredInstallPrompt, setDeferredInstallPrompt] = useState<any>(null)
+  const [isStandalone, setIsStandalone] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return false
+    return (
+      window.matchMedia('(display-mode: standalone)').matches ||
+      (window.navigator as any).standalone === true ||
+      document.referrer.includes('android-app://')
+    )
+  })
+
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (e: Event) => {
+      e.preventDefault()
+      setDeferredInstallPrompt(e)
+    }
+
+    const handleAppInstalled = () => {
+      setDeferredInstallPrompt(null)
+      setIsStandalone(true)
+    }
+
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
+    window.addEventListener('appinstalled', handleAppInstalled)
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
+      window.removeEventListener('appinstalled', handleAppInstalled)
+    }
+  }, [])
+
+  const promptInstallPwa = useCallback(async (): Promise<'accepted' | 'dismissed' | 'unavailable'> => {
+    if (!deferredInstallPrompt) {
+      return 'unavailable'
+    }
+    try {
+      await deferredInstallPrompt.prompt()
+      const choiceResult = await deferredInstallPrompt.userChoice
+      setDeferredInstallPrompt(null)
+      return choiceResult.outcome === 'accepted' ? 'accepted' : 'dismissed'
+    } catch {
+      return 'unavailable'
+    }
+  }, [deferredInstallPrompt])
 
   const quizInProgressRef = useRef(isQuizInProgress)
   quizInProgressRef.current = isQuizInProgress
@@ -444,6 +493,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       syncingFamily,
       lastSyncResult,
       triggerFamilySync,
+      canInstallPwa: !!deferredInstallPrompt,
+      isStandalone,
+      promptInstallPwa,
     }),
     [
       loading,
@@ -471,6 +523,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       syncingFamily,
       lastSyncResult,
       triggerFamilySync,
+      deferredInstallPrompt,
+      isStandalone,
+      promptInstallPwa,
     ]
   )
 

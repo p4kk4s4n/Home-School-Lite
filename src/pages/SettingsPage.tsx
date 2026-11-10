@@ -20,7 +20,12 @@ export const SettingsPage: React.FC = () => {
     checkingUpdate,
     triggerUpdateCheck,
     applyUpdateNow,
+    canInstallPwa,
+    isStandalone,
+    promptInstallPwa,
   } = useApp()
+
+  const [installPromptMsg, setInstallPromptMsg] = useState('')
 
   const [pinInput, setPinInput] = useState('')
   const [pinError, setPinError] = useState('')
@@ -510,23 +515,64 @@ export const SettingsPage: React.FC = () => {
           </div>
 
           <div className="settings-panel version-diagnostics">
-            <h4>Mobile Install &amp; Same-Origin Isolation Identity</h4>
+            <h4>Install App &amp; Mobile Shortcut</h4>
             <p className="muted-sm">
-              Configured so installing this PWA from <code>p4kk4s4n.github.io</code> never collides with or blocks any sibling app on the same domain:
+              Add Home-School-Lite directly to your phone or desktop home screen as an independent app.
             </p>
-            <div className="diag-row">
-              <span>Manifest Unique ID:</span>
-              <code>/Home-School-Lite/?app={APP_ID}</code>
-            </div>
-            <div className="diag-row">
-              <span>PWA &amp; SW Scope:</span>
-              <code>{APP_SCOPE}</code>
-            </div>
-            <div className="diag-row">
-              <span>IndexedDB &amp; Prefixes:</span>
-              <code>
-                db="{APP_ID}" • cache="{CACHE_PREFIX}*" • ls="{STORAGE_PREFIX}*"
-              </code>
+
+            {isStandalone ? (
+              <div style={{ marginTop: '0.75rem' }}>
+                <span className="badge badge-success">✓ Installed &amp; Running in Standalone Mode</span>
+                <p className="muted-sm" style={{ marginTop: '0.5rem' }}>
+                  This app is currently running in full-screen standalone mode with isolated IndexedDB storage.
+                </p>
+              </div>
+            ) : (
+              <div style={{ marginTop: '0.75rem' }}>
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  onClick={async () => {
+                    setInstallPromptMsg('')
+                    const outcome = await promptInstallPwa()
+                    if (outcome === 'accepted') {
+                      setStatusMsg('App install accepted! Look for HomeSchool Lite on your home screen.')
+                    } else if (outcome === 'dismissed') {
+                      setInstallPromptMsg('Install prompt was dismissed.')
+                    } else {
+                      // Browser did not fire beforeinstallprompt (e.g. iOS Safari or already installed)
+                      setInstallPromptMsg(
+                        'To install: On Android Chrome, tap the menu (⋮) → "Install app". On iOS Safari, tap the Share button (⎋) → "Add to Home Screen".'
+                      )
+                    }
+                  }}
+                >
+                  📲 Install App / Add to Home Screen
+                </button>
+                {installPromptMsg && (
+                  <p className="muted-sm" style={{ marginTop: '0.65rem', color: 'var(--accent)' }}>
+                    {installPromptMsg}
+                  </p>
+                )}
+              </div>
+            )}
+
+            <div style={{ marginTop: '1.25rem', paddingTop: '0.75rem', borderTop: '1px solid var(--border)' }}>
+              <span className="muted-sm"><strong>Same-Origin Isolation Identity:</strong></span>
+              <div className="diag-row" style={{ marginTop: '0.35rem' }}>
+                <span>Manifest Unique ID:</span>
+                <code>/Home-School-Lite/?app={APP_ID}</code>
+              </div>
+              <div className="diag-row">
+                <span>PWA &amp; SW Scope:</span>
+                <code>{APP_SCOPE}</code>
+              </div>
+              <div className="diag-row">
+                <span>IndexedDB &amp; Prefixes:</span>
+                <code>
+                  db="{APP_ID}" • cache="{CACHE_PREFIX}*" • ls="{STORAGE_PREFIX}*"
+                </code>
+              </div>
             </div>
           </div>
         </div>
