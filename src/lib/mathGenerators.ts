@@ -541,6 +541,119 @@ export const MATH_GENERATORS: Record<string, MathGeneratorFn> = {
     }
   },
 
+  'g4.factors-primes': (rng, principleId, principleTitle) => {
+    const primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]
+    const composites = [4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21, 24, 25, 27, 28]
+    const askPrime = rng() < 0.5
+    if (askPrime) {
+      const p = primes[randInt(rng, 0, primes.length - 1)]
+      const wrong = shuffle(composites, rng).slice(0, 3)
+      const choices = shuffle([String(p), ...wrong.map(String)], rng)
+      return {
+        id: `${principleId}-prime-${p}`,
+        fingerprint: `${principleId}:prime:${p}`,
+        principleId,
+        principleTitle,
+        type: 'mc',
+        prompt: 'Which number is prime?',
+        choices,
+        answer: String(p),
+        explanation: `${p} is prime because its only factors are 1 and ${p}.`,
+      }
+    } else {
+      const c = composites[randInt(rng, 0, composites.length - 1)]
+      const wrong = shuffle(primes, rng).slice(0, 3)
+      const choices = shuffle([String(c), ...wrong.map(String)], rng)
+      return {
+        id: `${principleId}-comp-${c}`,
+        fingerprint: `${principleId}:comp:${c}`,
+        principleId,
+        principleTitle,
+        type: 'mc',
+        prompt: 'Which number is composite?',
+        choices,
+        answer: String(c),
+        explanation: `${c} is composite because it has more than two factors.`,
+      }
+    }
+  },
+
+  'g4.fraction-mult-whole': (rng, principleId, principleTitle) => {
+    const whole = randInt(rng, 2, 6)
+    const num = randInt(rng, 1, 3)
+    const den = randInt(rng, 4, 8)
+    const prodNum = whole * num
+    const ans = `${prodNum}/${den}`
+    const wrong1 = `${prodNum}/${den * whole}`
+    const wrong2 = `${whole + num}/${den}`
+    const wrong3 = `${num}/${den}`
+    const choices = buildChoices(ans, [wrong1, wrong2, wrong3], rng)
+    return {
+      id: `${principleId}-${whole}x${num}_${den}`,
+      fingerprint: `${principleId}:${whole}:${num}/${den}`,
+      principleId,
+      principleTitle,
+      type: 'mc',
+      prompt: `Multiply ${whole} × (${num}/${den}). What is the product?`,
+      choices,
+      answer: ans,
+      explanation: `Multiply the whole number by the numerator: ${whole} × ${num} = ${prodNum}, keeping denominator ${den}.`,
+    }
+  },
+
+  'g4.measurement-units': (rng, principleId, principleTitle) => {
+    const kind = randInt(rng, 1, 3)
+    if (kind === 1) {
+      const feet = randInt(rng, 2, 7)
+      const inches = feet * 12
+      const ans = `${inches} inches`
+      const choices = buildChoices(ans, [`${feet * 10} inches`, `${inches + 6} inches`, `${feet * 14} inches`], rng)
+      return {
+        id: `${principleId}-ft-in-${feet}`,
+        fingerprint: `${principleId}:ft-in:${feet}`,
+        principleId,
+        principleTitle,
+        type: 'mc',
+        prompt: `How many inches are in ${feet} feet?`,
+        choices,
+        answer: ans,
+        explanation: `There are 12 inches in 1 foot. ${feet} × 12 = ${inches} inches.`,
+      }
+    } else if (kind === 2) {
+      const kg = randInt(rng, 2, 8)
+      const g = kg * 1000
+      const ans = `${g.toLocaleString('en-US')} g`
+      const choices = buildChoices(ans, [`${(kg * 100).toLocaleString('en-US')} g`, `${(g + 500).toLocaleString('en-US')} g`, `${(kg * 10).toLocaleString('en-US')} g`], rng)
+      return {
+        id: `${principleId}-kg-g-${kg}`,
+        fingerprint: `${principleId}:kg-g:${kg}`,
+        principleId,
+        principleTitle,
+        type: 'mc',
+        prompt: `How many grams are in ${kg} kilograms?`,
+        choices,
+        answer: ans,
+        explanation: `1 kilogram equals 1,000 grams. ${kg} × 1,000 = ${g.toLocaleString('en-US')} grams.`,
+      }
+    } else {
+      const hours = randInt(rng, 2, 6)
+      const mins = hours * 60
+      const ans = `${mins} minutes`
+      const choices = buildChoices(ans, [`${hours * 100} minutes`, `${mins + 30} minutes`, `${hours * 50} minutes`], rng)
+      return {
+        id: `${principleId}-hr-min-${hours}`,
+        fingerprint: `${principleId}:hr-min:${hours}`,
+        principleId,
+        principleTitle,
+        type: 'mc',
+        prompt: `How many minutes are in ${hours} hours?`,
+        choices,
+        answer: ans,
+        explanation: `1 hour equals 60 minutes. ${hours} × 60 = ${mins} minutes.`,
+      }
+    }
+  },
+
   // =========================================================================
   // GRADE 5 MATH GENERATORS (Plain-Language Micro-Lesson Standard)
   // =========================================================================

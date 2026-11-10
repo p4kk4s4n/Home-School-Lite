@@ -80,6 +80,7 @@ export type ExploreItemType =
   | 'reading'
   | 'game'
   | 'virtual_tour'
+  | 'hands_on'
 
 export interface ExploreItem {
   id: string

@@ -13,6 +13,7 @@ function getExploreIcon(type: ExploreItem['type']): string {
     case 'simulation':
       return '🔬'
     case 'experiment':
+    case 'hands_on':
       return '🧪'
     case 'video':
       return '🎬'

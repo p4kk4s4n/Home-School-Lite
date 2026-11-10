@@ -1145,4 +1145,55 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
     expect(sciTeacher?.resources?.length).toBeGreaterThanOrEqual(2)
     expect(mathTeacher?.resources?.some((r) => r.kind === 'pacing_guide')).toBe(true)
   })
+
+  it('validates Grade 4 full course expansion, Explore units isolation, and Teacher Resources', () => {
+    const g4Math = getCourseById('g4-math')
+    const g4Science = getCourseById('g4-science')
+    const g4Ela = getCourseById('g4-ela')
+    const g4Social = getCourseById('g4-social')
+
+    expect(g4Math).toBeDefined()
+    expect(g4Science).toBeDefined()
+    expect(g4Ela).toBeDefined()
+    expect(g4Social).toBeDefined()
+
+    // 1. Validate full unit progressions matching Khan/standards scope
+    expect(g4Math!.units.length).toBeGreaterThanOrEqual(13)
+    expect(g4Science!.units.length).toBeGreaterThanOrEqual(9)
+    expect(g4Ela!.units.length).toBeGreaterThanOrEqual(8)
+    expect(g4Social!.units.length).toBeGreaterThanOrEqual(9)
+
+    // 2. Validate Explore units exist for all 4 subjects
+    const mathExplore = g4Math!.units.find((u) => u.kind === 'explore')
+    const sciExplore = g4Science!.units.find((u) => u.kind === 'explore')
+    const elaExplore = g4Ela!.units.find((u) => u.kind === 'explore')
+    const socExplore = g4Social!.units.find((u) => u.kind === 'explore')
+
+    expect(mathExplore?.exploreItems?.length).toBeGreaterThanOrEqual(4)
+    expect(sciExplore?.exploreItems?.length).toBeGreaterThanOrEqual(4)
+    expect(elaExplore?.exploreItems?.length).toBeGreaterThanOrEqual(3)
+    expect(socExplore?.exploreItems?.length).toBeGreaterThanOrEqual(3)
+
+    // Verify simulations and hands_on labs are present
+    const sciTypes = sciExplore!.exploreItems!.map((i) => i.type)
+    expect(sciTypes).toContain('simulation')
+    expect(sciTypes).toContain('hands_on')
+
+    // 3. Verify Explore and Teacher Resource units are excluded from grading and course progress
+    const mockProgress = computeCourseProgress(g4Science!, [], 80)
+    for (const item of mockProgress.items) {
+      expect(item.unit.kind).not.toBe('explore')
+      expect(item.unit.kind).not.toBe('teacher_resources')
+    }
+
+    const mockGrade = computeCourseGrade(g4Science!, [], DEFAULT_SETTINGS)
+    expect(mockGrade.totalLessons).toBe(mockProgress.totalCount)
+
+    // 4. Validate Teacher Resources exist for parents
+    const mathTeacher = g4Math!.units.find((u) => u.kind === 'teacher_resources')
+    const sciTeacher = g4Science!.units.find((u) => u.kind === 'teacher_resources')
+    expect(mathTeacher?.resources?.length).toBeGreaterThanOrEqual(2)
+    expect(sciTeacher?.resources?.length).toBeGreaterThanOrEqual(2)
+    expect(mathTeacher?.resources?.some((r) => r.kind === 'pacing_guide')).toBe(true)
+  })
 })
