@@ -1323,7 +1323,25 @@ export const FamilyPage: React.FC = () => {
             </div>
 
             <div className="settings-panel">
-              <h3 style={{ marginTop: 0 }}>5. How to Reset / Recover</h3>
+              <h3 style={{ marginTop: 0 }}>5. Mobile Installation Troubleshooting ("Already Installed" or "Could Not Open")</h3>
+              <p className="muted-sm">
+                If your phone or tablet says the app is <em>"already installed"</em> or says <em>"could not open"</em> when you try to launch it:
+              </p>
+              <ol style={{ paddingLeft: '1.25rem', lineHeight: '1.8' }}>
+                <li>
+                  <strong>Uninstall lingering Android package:</strong> Go to your phone's <strong>Settings &rarr; Apps &rarr; See all apps</strong>. Find <strong>HomeSchool Lite</strong> and tap <strong>Uninstall</strong> (do not merely drag the icon off your home screen).
+                </li>
+                <li>
+                  <strong>Clear Chrome site data:</strong> In Chrome on your phone, open <code>https://p4kk4s4n.github.io/Home-School-Lite/</code>. Tap the padlock/tune icon on the left side of the address bar &rarr; <strong>Cookies and site data</strong> &rarr; tap the trash can (<strong>Clear data</strong>).
+                </li>
+                <li>
+                  <strong>Re-install fresh:</strong> Reload the page, tap Chrome menu (<code>⋮</code>) &rarr; <strong>Install app</strong>. The app installs cleanly as a standalone app with full offline support.
+                </li>
+              </ol>
+            </div>
+
+            <div className="settings-panel">
+              <h3 style={{ marginTop: 0 }}>6. How to Reset / Recover</h3>
               <p className="muted-sm">
                 If anything gets confused or you want a fresh start, simply click <strong>"Disconnect This Device"</strong> on the Parent tab. This returns your device to clean standalone mode without deleting your local student records.
               </p>

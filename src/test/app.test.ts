@@ -537,12 +537,19 @@ describe('Sequential Unlock Progress, Student Grade Switching & Backup Round-Tri
 })
 
 describe('Unique Mobile PWA Identity, Same-Origin Isolation & Auto-Update Checker', () => {
-  it('enforces unique manifest id, start_url, and scope under /Home-School-Lite/', () => {
+  it('enforces unique manifest id, start_url, scope, and PNG raster icons for Android WebAPKs', () => {
     const manifest = JSON.parse(manifestRaw)
     expect(manifest.id).toBe('/Home-School-Lite/?app=home-school-lite')
     expect(manifest.start_url).toBe('/Home-School-Lite/?source=pwa')
     expect(manifest.scope).toBe('/Home-School-Lite/')
     expect(APP_SCOPE).toBe('/Home-School-Lite/')
+
+    // Android WebAPK minting requires 192x192 and 512x512 PNG icons with maskable support
+    const pngIcons = manifest.icons.filter((i: any) => i.type === 'image/png')
+    expect(pngIcons.length).toBeGreaterThanOrEqual(2)
+    expect(pngIcons.some((i: any) => i.sizes === '192x192')).toBe(true)
+    expect(pngIcons.some((i: any) => i.sizes === '512x512')).toBe(true)
+    expect(pngIcons.some((i: any) => i.purpose === 'maskable')).toBe(true)
   })
 
   it('enforces hsl: prefix on all localStorage keys', () => {
