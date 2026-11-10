@@ -11,6 +11,8 @@ import { ALL_COURSES, getCoursesForGrade } from '../lib/curriculum'
 import {
   createStudent,
   DEFAULT_SETTINGS,
+  deleteAttempt,
+  deleteLessonAttempts,
   deleteStudent,
   ensureEnrollmentsForGrade,
   getAllAttempts,
@@ -18,6 +20,7 @@ import {
   getStudentAttempts,
   getStudents,
   recordQuizAttempt,
+  resetStudentProgress,
   saveSettings,
   updateStudent,
 } from '../lib/db'
@@ -58,6 +61,13 @@ interface AppContextValue {
     >
   ) => Promise<void>
   removeStudent: (studentId: string) => Promise<void>
+  deleteAttempt: (attemptId: string) => Promise<void>
+  deleteLessonAttempts: (
+    studentId: string,
+    courseId: string,
+    lessonId: string
+  ) => Promise<number>
+  resetStudentProgress: (studentId: string) => Promise<number>
   submitAttempt: (
     input: Omit<AttemptRecord, 'id' | 'attemptNumber' | 'completedAt'>
   ) => Promise<AttemptRecord>
@@ -324,6 +334,53 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     [refreshStateFromDb, settings.familySync?.enabled]
   )
 
+  const deleteAttemptItem = useCallback(
+    async (attemptId: string) => {
+      await deleteAttempt(attemptId)
+      await refreshStateFromDb()
+      if (settings.familySync?.enabled) {
+        try {
+          await pushFamilyCircleToCloud()
+        } catch {
+          // background sync push
+        }
+      }
+    },
+    [refreshStateFromDb, settings.familySync?.enabled]
+  )
+
+  const deleteLessonAttemptsForStudent = useCallback(
+    async (studentId: string, courseId: string, lessonId: string) => {
+      const count = await deleteLessonAttempts(studentId, courseId, lessonId)
+      await refreshStateFromDb()
+      if (settings.familySync?.enabled) {
+        try {
+          await pushFamilyCircleToCloud()
+        } catch {
+          // background sync push
+        }
+      }
+      return count
+    },
+    [refreshStateFromDb, settings.familySync?.enabled]
+  )
+
+  const resetProgressForStudent = useCallback(
+    async (studentId: string) => {
+      const count = await resetStudentProgress(studentId)
+      await refreshStateFromDb()
+      if (settings.familySync?.enabled) {
+        try {
+          await pushFamilyCircleToCloud()
+        } catch {
+          // background sync push
+        }
+      }
+      return count
+    },
+    [refreshStateFromDb, settings.familySync?.enabled]
+  )
+
   const submitAttempt = useCallback(
     async (input: Omit<AttemptRecord, 'id' | 'attemptNumber' | 'completedAt'>) => {
       const record = await recordQuizAttempt(input)
@@ -481,6 +538,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       addStudent,
       editStudent,
       removeStudent,
+      deleteAttempt: deleteAttemptItem,
+      deleteLessonAttempts: deleteLessonAttemptsForStudent,
+      resetStudentProgress: resetProgressForStudent,
       submitAttempt,
       updateAppSettings,
       unlockParent,
@@ -511,6 +571,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       addStudent,
       editStudent,
       removeStudent,
+      deleteAttemptItem,
+      deleteLessonAttemptsForStudent,
+      resetProgressForStudent,
       submitAttempt,
       updateAppSettings,
       unlockParent,

@@ -208,6 +208,11 @@ export async function ensureEnrollmentsForGrade(
   return existing
 }
 
+export async function getStudentEnrollments(studentId: string): Promise<Enrollment[]> {
+  const db = await getDb()
+  return db.getAllFromIndex('enrollments', 'by-student', studentId)
+}
+
 export async function createStudent(input: {
   id?: string
   name: string
@@ -280,9 +285,71 @@ export async function deleteStudent(studentId: string): Promise<void> {
   })
 }
 
-export async function getStudentEnrollments(studentId: string): Promise<Enrollment[]> {
+export async function deleteAttempt(attemptId: string): Promise<void> {
   const db = await getDb()
-  return db.getAllFromIndex('enrollments', 'by-student', studentId)
+  await db.delete('attempts', attemptId)
+
+  // Tombstone attemptId in settings so cloud sync does not resurrect it
+  const settings = await getSettings()
+  const deletedSet = new Set(settings.deletedAttemptIds || [])
+  deletedSet.add(attemptId)
+  await saveSettings({
+    deletedAttemptIds: Array.from(deletedSet),
+    updatedAt: new Date().toISOString(),
+  })
+}
+
+export async function deleteLessonAttempts(
+  studentId: string,
+  courseId: string,
+  lessonId: string
+): Promise<number> {
+  const db = await getDb()
+  const all = await db.getAllFromIndex('attempts', 'by-student', studentId)
+  const matching = all.filter(
+    (a) => a.courseId === courseId && a.lessonId === lessonId
+  )
+  if (matching.length === 0) return 0
+
+  const settings = await getSettings()
+  const deletedSet = new Set(settings.deletedAttemptIds || [])
+
+  const tx = db.transaction('attempts', 'readwrite')
+  for (const a of matching) {
+    deletedSet.add(a.id)
+    await tx.objectStore('attempts').delete(a.id)
+  }
+  await tx.done
+
+  await saveSettings({
+    deletedAttemptIds: Array.from(deletedSet),
+    updatedAt: new Date().toISOString(),
+  })
+
+  return matching.length
+}
+
+export async function resetStudentProgress(studentId: string): Promise<number> {
+  const db = await getDb()
+  const all = await db.getAllFromIndex('attempts', 'by-student', studentId)
+  if (all.length === 0) return 0
+
+  const settings = await getSettings()
+  const deletedSet = new Set(settings.deletedAttemptIds || [])
+
+  const tx = db.transaction('attempts', 'readwrite')
+  for (const a of all) {
+    deletedSet.add(a.id)
+    await tx.objectStore('attempts').delete(a.id)
+  }
+  await tx.done
+
+  await saveSettings({
+    deletedAttemptIds: Array.from(deletedSet),
+    updatedAt: new Date().toISOString(),
+  })
+
+  return all.length
 }
 
 export async function getStudentAttempts(studentId: string): Promise<AttemptRecord[]> {
@@ -351,6 +418,7 @@ export async function exportBackupData(): Promise<BackupPayload> {
     familyCode: settings.familySync?.familyCode || undefined,
     exportedAt: new Date().toISOString(),
     deletedStudentIds: settings.deletedStudentIds || [],
+    deletedAttemptIds: settings.deletedAttemptIds || [],
     students,
     enrollments,
     attempts,
@@ -446,11 +514,16 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
     getSettings(),
   ])
 
-  // Collect all tombstoned (deleted) student IDs to prevent resurrection
+  // Collect all tombstoned (deleted) student IDs and attempt IDs to prevent resurrection
   const allDeletedIds = new Set<string>([
     ...(localSettings.deletedStudentIds || []),
     ...(remote.deletedStudentIds || []),
     ...(remote.settings?.deletedStudentIds || []),
+  ])
+  const allDeletedAttemptIds = new Set<string>([
+    ...(localSettings.deletedAttemptIds || []),
+    ...(remote.deletedAttemptIds || []),
+    ...(remote.settings?.deletedAttemptIds || []),
   ])
 
   // 1. Merge Students (by id, last-writer-wins on updatedAt, max streakDays, excluding deleted)
@@ -490,15 +563,15 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
     }
   }
 
-  // 2. Merge Attempts (immutable union by id, excluding deleted students)
+  // 2. Merge Attempts (immutable union by id, excluding deleted students and deleted attempts)
   const attemptMap = new Map<string, AttemptRecord>()
   for (const a of localAttempts) {
-    if (!allDeletedIds.has(a.studentId)) {
+    if (!allDeletedIds.has(a.studentId) && !allDeletedAttemptIds.has(a.id)) {
       attemptMap.set(a.id, a)
     }
   }
   for (const a of remote.attempts ?? []) {
-    if (allDeletedIds.has(a.studentId)) {
+    if (allDeletedIds.has(a.studentId) || allDeletedAttemptIds.has(a.id)) {
       continue
     }
     const prev = attemptMap.get(a.id)
@@ -564,6 +637,7 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
   let mergedSettings: AppSettings = {
     ...localSettings,
     deletedStudentIds: Array.from(allDeletedIds),
+    deletedAttemptIds: Array.from(allDeletedAttemptIds),
     connectedParents: mergedConnectedParents,
   }
   if (remote.settings) {
@@ -586,6 +660,7 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
           localSettings.includeOhioAdjustments ??
           true,
         deletedStudentIds: Array.from(allDeletedIds),
+        deletedAttemptIds: Array.from(allDeletedAttemptIds),
         connectedParents: mergedConnectedParents,
         updatedAt: remote.settings.updatedAt,
         familySync: {
@@ -597,6 +672,7 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
       mergedSettings = {
         ...localSettings,
         deletedStudentIds: Array.from(allDeletedIds),
+        deletedAttemptIds: Array.from(allDeletedAttemptIds),
         connectedParents: mergedConnectedParents,
         familySync: {
           ...localSettings.familySync!,
@@ -607,9 +683,12 @@ export async function mergeFamilyPayload(rawRemote: unknown): Promise<{
   }
 
   const tx = db.transaction(['students', 'enrollments', 'attempts', 'settings'], 'readwrite')
-  // Explicitly purge any deleted student IDs from local object stores
+  // Explicitly purge any deleted student IDs and deleted attempt IDs from local object stores
   for (const delId of allDeletedIds) {
     await tx.objectStore('students').delete(delId)
+  }
+  for (const delAttId of allDeletedAttemptIds) {
+    await tx.objectStore('attempts').delete(delAttId)
   }
   for (const s of studentMap.values()) {
     await tx.objectStore('students').put(s)

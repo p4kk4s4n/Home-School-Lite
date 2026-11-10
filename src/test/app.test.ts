@@ -23,6 +23,8 @@ import { buildQuizAttempt } from '../lib/quizBuilder'
 import {
   createStudent,
   DEFAULT_SETTINGS,
+  deleteAttempt,
+  deleteLessonAttempts,
   deleteStudent,
   exportBackupData,
   getSettings,
@@ -33,6 +35,7 @@ import {
   mergeFamilyPayload,
   recordQuizAttempt,
   resetDbConnectionForTests,
+  resetStudentProgress,
   saveSettings,
   updateStudent,
 } from '../lib/db'
@@ -995,5 +998,99 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
     expect(p2Settings.familySync?.deviceRole).toBe('parent')
     expect(p2Settings.familySync?.parentName).toBe("Dad's Phone")
     expect((await getStudents()).map((s) => s.name)).toContain('Charlie')
+  })
+
+  it('supports parental controls: deleting individual attempts, deleting lesson completions, and resetting student progress', async () => {
+    await resetDbConnectionForTests()
+    const student = await createStudent({ name: 'Daisy', avatar: '🌸', grade: 4 })
+
+    // Record 3 attempts across 2 lessons
+    const a1 = await recordQuizAttempt({
+      studentId: student.id,
+      courseId: 'g4-math',
+      unitId: 'g4-math-u1',
+      lessonId: 'g4-math-u1-l1',
+      kind: 'lesson',
+      seed: 101,
+      scorePercent: 60,
+      correctCount: 3,
+      totalCount: 5,
+      passed: false,
+      questionFingerprints: ['fp-1'],
+      missedPrincipleIds: ['p1'],
+    })
+
+    const a2 = await recordQuizAttempt({
+      studentId: student.id,
+      courseId: 'g4-math',
+      unitId: 'g4-math-u1',
+      lessonId: 'g4-math-u1-l1',
+      kind: 'lesson',
+      seed: 102,
+      scorePercent: 100,
+      correctCount: 5,
+      totalCount: 5,
+      passed: true,
+      questionFingerprints: ['fp-2'],
+      missedPrincipleIds: [],
+    })
+
+    const a3 = await recordQuizAttempt({
+      studentId: student.id,
+      courseId: 'g4-math',
+      unitId: 'g4-math-u1',
+      lessonId: 'g4-math-u1-l2',
+      kind: 'lesson',
+      seed: 103,
+      scorePercent: 80,
+      correctCount: 4,
+      totalCount: 5,
+      passed: true,
+      questionFingerprints: ['fp-3'],
+      missedPrincipleIds: [],
+    })
+
+    let attempts = await getStudentAttempts(student.id)
+    expect(attempts).toHaveLength(3)
+
+    // 1. Delete a single attempt (a1)
+    await deleteAttempt(a1.id)
+    attempts = await getStudentAttempts(student.id)
+    expect(attempts).toHaveLength(2)
+    expect(attempts.map((a) => a.id)).not.toContain(a1.id)
+    let settings = await getSettings()
+    expect(settings.deletedAttemptIds).toContain(a1.id)
+
+    // 2. Delete all attempts for a specific lesson (lesson l1)
+    const count = await deleteLessonAttempts(student.id, 'g4-math', 'g4-math-u1-l1')
+    expect(count).toBe(1) // Only a2 was left for l1
+    attempts = await getStudentAttempts(student.id)
+    expect(attempts).toHaveLength(1)
+    expect(attempts[0].id).toBe(a3.id)
+    settings = await getSettings()
+    expect(settings.deletedAttemptIds).toContain(a2.id)
+
+    // 3. Reset entire student progress
+    const resetCount = await resetStudentProgress(student.id)
+    expect(resetCount).toBe(1) // a3 was left
+    attempts = await getStudentAttempts(student.id)
+    expect(attempts).toHaveLength(0)
+    settings = await getSettings()
+    expect(settings.deletedAttemptIds).toContain(a3.id)
+
+    // 4. Multi-device sync does NOT resurrect deleted attempts
+    const remotePayload: Partial<BackupPayload> = {
+      app: APP_ID,
+      schemaVersion: 1,
+      students: [student],
+      attempts: [a1, a2, a3], // Cloud still has old attempts
+      deletedAttemptIds: [a1.id],
+    }
+
+    const mergeRes = await mergeFamilyPayload(remotePayload)
+    // All 3 attempts were tombstoned in local settings (deletedAttemptIds), so none should be resurrected
+    expect(mergeRes.mergedAttempts).toBe(0)
+    const finalAttempts = await getStudentAttempts(student.id)
+    expect(finalAttempts).toHaveLength(0)
   })
 })

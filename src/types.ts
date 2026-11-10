@@ -184,6 +184,7 @@ export interface AppSettings {
   lastUpdateCheck?: string
   updatedAt?: string
   deletedStudentIds?: string[]
+  deletedAttemptIds?: string[]
   connectedParents?: ConnectedParentDevice[]
   familySync?: FamilySyncConfig
 }
@@ -194,6 +195,7 @@ export interface BackupPayload {
   familyCode?: string
   exportedAt: string
   deletedStudentIds?: string[]
+  deletedAttemptIds?: string[]
   students: Student[]
   enrollments: Enrollment[]
   attempts: AttemptRecord[]

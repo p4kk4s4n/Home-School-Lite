@@ -31,6 +31,8 @@ export const FamilyPage: React.FC = () => {
     editStudent,
     addStudent,
     removeStudent,
+    deleteAttempt,
+    resetStudentProgress,
     reloadAllData,
     syncingFamily,
     triggerFamilySync,
@@ -1020,6 +1022,23 @@ export const FamilyPage: React.FC = () => {
                     {inspectedSummary.student.name} (Grade {inspectedSummary.student.grade})
                   </h2>
                 </div>
+                {isParentUnlocked && inspectedSummary.stuAttempts.length > 0 && (
+                  <button
+                    type="button"
+                    className="btn btn-danger btn-sm"
+                    onClick={async () => {
+                      const ok = window.confirm(
+                        `Reset ALL quiz attempts and progress for ${inspectedSummary.student.name}?\n\nThis will permanently delete all ${inspectedSummary.stuAttempts.length} attempt(s) and reset their course mastery back to 0%. This change will sync to all connected devices.`
+                      )
+                      if (!ok) return
+                      setInspectAttemptId(null)
+                      await resetStudentProgress(inspectedSummary.student.id)
+                      setStatusMsg(`Reset all progress for ${inspectedSummary.student.name}.`)
+                    }}
+                  >
+                    🔄 Reset Student Progress ({inspectedSummary.student.name})
+                  </button>
+                )}
               </div>
 
               {inspectedSummary.stuAttempts.length === 0 ? (
@@ -1038,30 +1057,72 @@ export const FamilyPage: React.FC = () => {
                           : null
                         const isSelected = inspectedAttempt?.id === att.id
                         return (
-                          <button
+                          <div
                             key={att.id}
-                            type="button"
                             className={`student-row ${isSelected ? 'active' : ''}`}
-                            onClick={() => setInspectAttemptId(att.id)}
+                            style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
                           >
-                            <div className="student-row-info">
-                              <strong>
-                                {foundLesson?.lesson.title ?? att.lessonId} (Attempt #
-                                {att.attemptNumber})
-                              </strong>
-                              <span>
-                                {course?.title ?? att.courseId} •{' '}
-                                {new Date(att.completedAt).toLocaleString()}
-                              </span>
-                            </div>
-                            <span
-                              className={`badge ${
-                                att.passed ? 'badge-success' : 'badge-warning'
-                              }`}
+                            <button
+                              type="button"
+                              style={{
+                                background: 'transparent',
+                                border: 'none',
+                                textAlign: 'left',
+                                flex: 1,
+                                cursor: 'pointer',
+                                padding: 0,
+                                color: 'inherit',
+                              }}
+                              onClick={() => setInspectAttemptId(att.id)}
                             >
-                              {att.scorePercent}% ({att.correctCount}/{att.totalCount})
-                            </span>
-                          </button>
+                              <div className="student-row-info">
+                                <strong>
+                                  {foundLesson?.lesson.title ?? att.lessonId} (Attempt #
+                                  {att.attemptNumber})
+                                </strong>
+                                <span>
+                                  {course?.title ?? att.courseId} •{' '}
+                                  {new Date(att.completedAt).toLocaleString()}
+                                </span>
+                              </div>
+                            </button>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                              <span
+                                className={`badge ${
+                                  att.passed ? 'badge-success' : 'badge-warning'
+                                }`}
+                              >
+                                {att.scorePercent}% ({att.correctCount}/{att.totalCount})
+                              </span>
+                              {isParentUnlocked && (
+                                <button
+                                  type="button"
+                                  className="btn-icon"
+                                  title="Delete this attempt"
+                                  style={{
+                                    color: 'var(--danger)',
+                                    cursor: 'pointer',
+                                    fontSize: '0.95rem',
+                                    padding: '0.2rem 0.4rem',
+                                  }}
+                                  onClick={async (e) => {
+                                    e.stopPropagation()
+                                    const ok = window.confirm(
+                                      `Delete Attempt #${att.attemptNumber} (${att.scorePercent}%) for ${foundLesson?.lesson.title ?? att.lessonId}?\n\nThis cannot be undone and will update all synced family devices.`
+                                    )
+                                    if (!ok) return
+                                    if (inspectAttemptId === att.id) {
+                                      setInspectAttemptId(null)
+                                    }
+                                    await deleteAttempt(att.id)
+                                    setStatusMsg(`Deleted Attempt #${att.attemptNumber}.`)
+                                  }}
+                                >
+                                  🗑️
+                                </button>
+                              )}
+                            </div>
+                          </div>
                         )
                       })}
                     </div>
@@ -1070,11 +1131,29 @@ export const FamilyPage: React.FC = () => {
                   <div>
                     {inspectedAttempt ? (
                       <>
-                        <h3>
-                          Question-by-Question Review — Attempt #
-                          {inspectedAttempt.attemptNumber} ({inspectedAttempt.scorePercent}
-                          %)
-                        </h3>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+                          <h3 style={{ margin: 0 }}>
+                            Review — Attempt #{inspectedAttempt.attemptNumber} ({inspectedAttempt.scorePercent}%)
+                          </h3>
+                          {isParentUnlocked && (
+                            <button
+                              type="button"
+                              className="btn btn-danger btn-sm"
+                              onClick={async () => {
+                                const ok = window.confirm(
+                                  `Delete Attempt #${inspectedAttempt.attemptNumber} (${inspectedAttempt.scorePercent}%)?\n\nThis cannot be undone and will update all synced family devices.`
+                                )
+                                if (!ok) return
+                                const toDeleteId = inspectedAttempt.id
+                                setInspectAttemptId(null)
+                                await deleteAttempt(toDeleteId)
+                                setStatusMsg(`Deleted Attempt #${inspectedAttempt.attemptNumber}.`)
+                              }}
+                            >
+                              🗑️ Delete This Attempt
+                            </button>
+                          )}
+                        </div>
                         {inspectedAttempt.reviewItems &&
                         inspectedAttempt.reviewItems.length > 0 ? (
                           <div className="questions-stack">
