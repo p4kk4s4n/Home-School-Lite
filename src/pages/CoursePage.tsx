@@ -340,6 +340,37 @@ export const CoursePage: React.FC = () => {
             </div>
             <h1>{course.title}</h1>
             <p className="muted">{course.subtitle}</p>
+            {course.externalCourseLinks && course.externalCourseLinks.length > 0 && (
+              <div
+                style={{
+                  display: 'flex',
+                  gap: '0.45rem',
+                  flexWrap: 'wrap',
+                  marginTop: '0.65rem',
+                }}
+              >
+                {course.externalCourseLinks.map((link, idx) => (
+                  <a
+                    key={idx}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-sm btn-secondary"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.35rem',
+                      borderColor: 'var(--accent)',
+                      color: 'var(--accent)',
+                    }}
+                    title={`Open ${link.label} on Khan Academy`}
+                  >
+                    <span>↗</span>
+                    <span>{link.label}</span>
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 

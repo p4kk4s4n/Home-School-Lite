@@ -150,6 +150,40 @@ export const DashboardPage: React.FC = () => {
                     </span>
                     <h3>{course.title}</h3>
                     <p>{course.subtitle}</p>
+                    {course.externalCourseLinks && course.externalCourseLinks.length > 0 && (
+                      <div
+                        style={{
+                          display: 'flex',
+                          gap: '0.35rem',
+                          flexWrap: 'wrap',
+                          marginTop: '0.45rem',
+                        }}
+                      >
+                        {course.externalCourseLinks.map((link, idx) => (
+                          <a
+                            key={idx}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-sm btn-secondary"
+                            style={{
+                              padding: '0.15rem 0.45rem',
+                              fontSize: '0.74rem',
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '0.25rem',
+                              borderColor: 'var(--accent)',
+                              color: 'var(--accent)',
+                            }}
+                            title={`Open ${link.label} on Khan Academy`}
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <span>↗</span>
+                            <span>{link.label}</span>
+                          </a>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
 

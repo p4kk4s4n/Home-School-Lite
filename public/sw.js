@@ -2,7 +2,7 @@
 // Strictly scoped to /Home-School-Lite/ and only touches caches prefixed with "hsl-"
 const APP_SCOPE = '/Home-School-Lite/';
 const CACHE_PREFIX = 'hsl-';
-const CACHE_VERSION = 'hsl-v1.12.0-runtime';
+const CACHE_VERSION = 'hsl-v1.13.0-runtime';
 
 const PRECACHE_URLS = [
   '/Home-School-Lite/',

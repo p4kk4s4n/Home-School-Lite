@@ -144,6 +144,11 @@ export interface Unit {
   lessons: Lesson[]
 }
 
+export interface ExternalCourseLink {
+  label: string
+  url: string
+}
+
 export interface Course {
   id: string
   subject: SubjectId
@@ -153,6 +158,7 @@ export interface Course {
   credits: number
   color: string
   icon: string
+  externalCourseLinks?: ExternalCourseLink[]
   units: Unit[]
 }
 

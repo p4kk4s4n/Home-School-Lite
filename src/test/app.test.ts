@@ -1372,6 +1372,21 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
     expect(g7Sci).toBeDefined()
     expect(g8Sci).toBeDefined()
 
+    // 0. Grade 7 and 8 Titles and External Course Links to Khan Academy
+    expect(g7Sci.title).toBe('Middle school Earth and space science || Middle school chemistry')
+    expect(g7Sci.externalCourseLinks).toHaveLength(2)
+    expect(g7Sci.externalCourseLinks?.[0].url).toBe(
+      'https://www.khanacademy.org/science/middle-school-earth-and-space-science'
+    )
+    expect(g7Sci.externalCourseLinks?.[1].url).toBe(
+      'https://www.khanacademy.org/science/ms-chemistry'
+    )
+
+    expect(g8Sci.title).toBe('Middle school physics')
+    expect(g8Sci.externalCourseLinks).toHaveLength(2)
+    expect(g8Sci.externalCourseLinks?.[0].url).toBe('https://www.khanacademy.org/science/ms-physics')
+    expect(g8Sci.externalCourseLinks?.[1].url).toBe('https://www.khanacademy.org/science/physics')
+
     // 1. Grade 7 Science has Earth & Space Science (Units 1-5) followed by Chemistry (Units 6-9)
     expect(g7Sci.units[0].title).toContain('Earth in space')
     expect(g7Sci.units[1].title).toContain('Earth-Sun-moon')
