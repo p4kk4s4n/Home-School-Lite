@@ -1449,5 +1449,32 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
     const puppyLesson = suppOhio?.lessons.find((l) => l.activity?.id === 'act-puppy-litter')
     expect(puppyLesson).toBeDefined()
     expect(puppyLesson?.activity?.title).toBe('Why do puppies in the same litter look different?')
+
+    // 5. Canonical Middle School Physics & Earth/Chemistry URL integrity checks
+    // Verify Grade 8 Core Units 1-5 strictly link to ms-physics and never to Cambridge O Level
+    for (const coreUnit of g8Sci.units.slice(0, 5)) {
+      for (const lesson of coreUnit.lessons) {
+        expect(lesson.videoUrl).toBeDefined()
+        expect(lesson.videoUrl).toContain('https://www.khanacademy.org/science/ms-physics')
+        expect(lesson.videoUrl).not.toContain('cambridge')
+        expect(lesson.videoUrl).not.toContain('describing-motion')
+      }
+    }
+    // Verify Unit 1 Lesson 1 specifically has the verified speed-and-velocity canonical endpoint
+    expect(g8Sci.units[0].lessons[0].videoUrl).toBe(
+      'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:motion/v/speed-and-velocity'
+    )
+
+    // Verify Grade 7 lessons strictly link to middle-school-earth-and-space-science and ms-chemistry
+    for (const coreUnit of g7Sci.units.slice(0, 5)) {
+      for (const lesson of coreUnit.lessons) {
+        expect(lesson.videoUrl).toContain('https://www.khanacademy.org/science/middle-school-earth-and-space-science')
+      }
+    }
+    for (const coreUnit of g7Sci.units.slice(5, 9)) {
+      for (const lesson of coreUnit.lessons) {
+        expect(lesson.videoUrl).toContain('https://www.khanacademy.org/science/ms-chemistry')
+      }
+    }
   })
 })

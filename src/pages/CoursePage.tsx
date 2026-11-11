@@ -704,6 +704,27 @@ export const CoursePage: React.FC = () => {
               >
                 📖 Unit Textbook &amp; Search
               </button>
+              {(() => {
+                const khanUrl = unit.lessons?.find((l) => l.videoUrl?.includes('khanacademy.org'))?.videoUrl
+                if (!khanUrl) return null
+                return (
+                  <a
+                    href={khanUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-secondary btn-sm"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.3rem',
+                      color: 'var(--accent)',
+                    }}
+                    title={`Open ${unit.title} on Khan Academy`}
+                  >
+                    <span>↗ Khan Unit</span>
+                  </a>
+                )
+              })()}
             </div>
 
             {!isCollapsed && (

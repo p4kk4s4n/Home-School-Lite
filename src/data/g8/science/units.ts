@@ -32,8 +32,8 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Motion and forces',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:describing-motion/v/describing-motion',
-        videoTitle: 'Describing Motion: Speed, Velocity & Reference Frames',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:motion/v/speed-and-velocity',
+        videoTitle: 'Speed and Velocity: Describing Motion',
         reading: 'Motion is always relative to a reference frame. Speed measures distance divided by time, while velocity specifies both speed and direction of motion.',
         principles: [
           {
@@ -52,8 +52,8 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Motion and forces',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:acceleration/v/acceleration',
-        videoTitle: 'Acceleration and Motion Graphs',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces',
+        videoTitle: 'Motion & Forces: Acceleration & Graphs',
         reading: 'Acceleration is any change in velocity (speeding up, slowing down, or turning). On a position-time graph, slope represents velocity.',
         principles: [
           {
@@ -72,8 +72,8 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Motion and forces',
         estimatedMinutes: 25,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:forces-and-net-force/v/balanced-unbalanced-forces',
-        videoTitle: 'Net Force and Free-Body Force Diagrams',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:connecting-motion-and-forces/a/forces-and-acceleration',
+        videoTitle: 'Net Force & Acceleration: Free-Body Diagrams',
         reading: 'Forces are pushes or pulls measured in Newtons. Balanced forces result in a net force of 0 N, preserving constant motion. Unbalanced forces cause acceleration.',
         activity: {
           id: 'act-skydiver',
@@ -108,7 +108,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Motion and forces',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:newtons-laws/v/newtons-first-law',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces',
         videoTitle: 'Newton’s First and Second Laws',
         reading: 'Newton’s First Law states objects resist changes in motion (inertia). Newton’s Second Law ($F = ma$) proves acceleration is directly proportional to force and inversely proportional to mass.',
         principles: [
@@ -128,7 +128,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Motion and forces',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:newtons-third-law/v/newtons-third-law',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces',
         videoTitle: 'Newton’s Third Law and Collisions',
         reading: 'For every action force, there is an equal and opposite reaction force acting on the other object. In collisions, both objects experience equal force in opposite directions.',
         principles: [
@@ -198,7 +198,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Non-contact interactions',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions/x1baed5db7c1bb50b:gravity/v/gravity-distance-mass',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions',
         videoTitle: 'Gravity: Mass and Distance',
         reading: 'Gravity is an attractive non-contact force acting across space between all objects with mass. Gravitational attraction strengthens with greater mass and weakens with distance.',
         principles: [
@@ -218,7 +218,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Non-contact interactions',
         estimatedMinutes: 25,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions/x1baed5db7c1bb50b:electric-forces/v/electric-charge-forces',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions',
         videoTitle: 'Electric Charges and Fields',
         reading: 'Opposite electrical charges attract while like charges repel. An invisible electric field surrounds charged particles, exerting force across distance without physical touching.',
         activity: {
@@ -255,7 +255,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         partOf: 'Non-contact interactions',
         isOhioExtension: true,
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions/x1baed5db7c1bb50b:magnetic-forces/v/magnets-magnetic-fields',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions',
         videoTitle: 'Magnetic Poles and Electromagnets',
         reading: 'Magnetic poles always come in pairs (North and South). Running electric current through coiled wire creates an electromagnet whose strength increases with more wire turns.',
         principles: [
@@ -325,7 +325,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Energy',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy/x1baed5db7c1bb50b:kinetic-energy/v/kinetic-energy',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy',
         videoTitle: 'Kinetic Energy, Mass, and Speed',
         reading: 'Kinetic energy is energy of motion ($KE = \\frac{1}{2}mv^2$). Kinetic energy is proportional to mass and to the square of speed, meaning doubling speed quadruples kinetic energy.',
         principles: [
@@ -345,7 +345,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Energy',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy/x1baed5db7c1bb50b:potential-energy/v/potential-energy',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy',
         videoTitle: 'Gravitational and Elastic Potential Energy',
         reading: 'Potential energy is stored energy of position. Higher elevations store gravitational potential energy, while stretched springs store elastic potential energy.',
         principles: [
@@ -365,7 +365,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Energy',
         estimatedMinutes: 25,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy/x1baed5db7c1bb50b:conservation-of-energy/v/conservation-of-energy',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy',
         videoTitle: 'Conservation of Energy and Dissipation',
         reading: 'Energy cannot be created or destroyed. In real-world systems, friction converts mechanical kinetic and potential energy into thermal energy and acoustic vibrations.',
         activity: {
@@ -451,7 +451,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Waves',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves/x1baed5db7c1bb50b:wave-properties/v/wave-properties',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves',
         videoTitle: 'Wave Properties: Amplitude and Frequency',
         reading: 'A wave repeats in space and time, transferring energy without transferring matter. Amplitude relates to wave energy and loudness; frequency relates to pitch.',
         principles: [
@@ -471,7 +471,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Waves',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves/x1baed5db7c1bb50b:sound-waves/v/sound-waves',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves',
         videoTitle: 'Mechanical Sound Waves and Matter',
         reading: 'Sound is a mechanical longitudinal wave requiring physical matter to vibrate. Sound travels faster through denser solids and cannot travel through empty space.',
         principles: [
@@ -491,7 +491,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Waves',
         estimatedMinutes: 25,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves/x1baed5db7c1bb50b:light-waves/v/light-waves-reflection',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves',
         videoTitle: 'Light Waves, Reflection, and Refraction',
         reading: 'Light waves are electromagnetic waves that travel through vacuums at $300,000\\text{ km/s}$. Materials reflect, absorb, or transmit light; refraction bends light across media boundaries.',
         activity: {
@@ -527,7 +527,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Waves',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves/x1baed5db7c1bb50b:digital-signals/v/analog-vs-digital-signals',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves',
         videoTitle: 'Digital vs. Analog Signals',
         reading: 'Digital signals encode information as binary pulses (0s and 1s) that resist noise degradation, making digital transmission far more reliable than continuous analog waves.',
         principles: [
@@ -750,7 +750,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         isSupplemental: true,
         isOhioExtension: true,
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere/x87d03b443efbea42:earth-interior/v/earth-layers',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere',
         videoTitle: 'Earth’s Interior and Seismic S-Waves',
         reading: 'Earth has a solid crust, convective rocky mantle, liquid metal outer core, and dense solid inner core. S-waves stop at the outer core because shear waves cannot travel through liquids.',
         principles: [
@@ -772,7 +772,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         isSupplemental: true,
         isOhioExtension: true,
         estimatedMinutes: 25,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere/x87d03b443efbea42:geologic-time-scale/v/geologic-time',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere',
         videoTitle: 'Geologic Strata, Radiometric Dating, and Fossils',
         reading: 'Sedimentary layers stack with oldest strata at the bottom. Transitional fossils demonstrate macroevolutionary lineages across deep geologic time.',
         activity: {

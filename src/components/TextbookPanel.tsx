@@ -476,6 +476,29 @@ export const TextbookPanel: React.FC<TextbookPanelProps> = ({
                 </option>
               ))}
             </select>
+            {(() => {
+              const khanUrl = currentUnit.lessons?.find((l) => l.videoUrl?.includes('khanacademy.org'))?.videoUrl
+              if (!khanUrl) return null
+              return (
+                <a
+                  href={khanUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary btn-sm"
+                  style={{
+                    fontSize: '0.78rem',
+                    padding: '0.2rem 0.45rem',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.25rem',
+                    color: 'var(--accent)',
+                  }}
+                  title="Open this unit on Khan Academy"
+                >
+                  <span>↗ Khan Unit</span>
+                </a>
+              )
+            })()}
           </div>
         </div>
         <button

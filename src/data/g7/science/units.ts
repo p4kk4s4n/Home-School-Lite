@@ -20,7 +20,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Earth in space',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:earth-in-space/x87d03b443efbea42:the-solar-system/v/the-solar-system',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:earth-in-space',
         videoTitle: 'The Solar System & Planetary Orbits',
         reading: 'Our solar system consists of the Sun, eight planets, dwarf planets, moons, asteroids, and comets. Gravity holds each celestial body in an elliptical orbit around the Sun.',
         principles: [
@@ -40,7 +40,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Earth in space',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:earth-in-space/x87d03b443efbea42:gravity-and-orbits/v/gravity-and-orbits',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:earth-in-space',
         videoTitle: 'Gravity and Orbits in the Solar System',
         reading: 'Gravitational force depends on the masses of objects and the distance between them. Greater mass increases gravitational pull, while greater distance weakens it.',
         principles: [
@@ -60,7 +60,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Earth in space',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:earth-in-space/x87d03b443efbea42:scale-of-the-solar-system/v/scale-of-the-solar-system',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:earth-in-space',
         videoTitle: 'Scale of the Solar System & Galaxy',
         reading: 'Astronomical distances are vast. The solar system is part of the Milky Way galaxy, which contains hundreds of billions of stars and planetary systems.',
         principles: [
@@ -130,7 +130,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Earth-Sun-moon system',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-earth-sun-moon-system/x87d03b443efbea42:seasons-on-earth/v/seasons',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-earth-sun-moon-system',
         videoTitle: 'Earth’s Tilt and the Changing Seasons',
         reading: 'Earth’s 23.5-degree axial tilt remains fixed as Earth revolves around the Sun. When a hemisphere leans toward the Sun, solar rays strike at a direct angle, producing summer.',
         principles: [
@@ -150,7 +150,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Earth-Sun-moon system',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-earth-sun-moon-system/x87d03b443efbea42:phases-of-the-moon/v/moon-phases',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-earth-sun-moon-system',
         videoTitle: 'Phases of the Moon Explained',
         reading: 'Half of the Moon is always illuminated by sunlight. As the Moon revolves around Earth every 29.5 days, we see different proportions of its illuminated half.',
         principles: [
@@ -171,7 +171,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         partOf: 'Earth-Sun-moon system',
         isOhioExtension: true,
         estimatedMinutes: 25,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-earth-sun-moon-system/x87d03b443efbea42:eclipses-and-tides/v/eclipses',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-earth-sun-moon-system',
         videoTitle: 'Solar & Lunar Eclipses and Ocean Tides',
         reading: 'Solar eclipses occur when the Moon passes directly between Sun and Earth. Lunar eclipses occur when Earth casts its shadow across the full Moon. Gravitational attraction creates ocean tidal bulges.',
         activity: {
@@ -257,7 +257,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Weather and climate',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:weather-and-climate/x87d03b443efbea42:the-water-cycle/v/the-water-cycle',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:weather-and-climate',
         videoTitle: 'The Water Cycle Driven by Sun & Gravity',
         reading: 'Solar radiation evaporates water into atmospheric vapor. As warm moist air rises and cools, condensation forms clouds, and gravity pulls precipitation back to Earth.',
         principles: [
@@ -277,7 +277,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Weather and climate',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:weather-and-climate/x87d03b443efbea42:weather-patterns/v/air-masses-fronts',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:weather-and-climate',
         videoTitle: 'Air Masses and Weather Fronts',
         reading: 'Air masses with distinct temperature and humidity collide along weather fronts. Cold fronts wedge under warm air to spark storms, while high-pressure systems bring clear skies.',
         principles: [
@@ -297,7 +297,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Weather and climate',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:weather-and-climate/x87d03b443efbea42:climate-and-ocean-currents/v/ocean-currents-climate',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:weather-and-climate',
         videoTitle: 'Ocean Currents and Global Climate',
         reading: 'Unequal heating across latitudes drives global wind belts deflected by the Coriolis effect. Ocean currents transport massive amounts of thermal energy, moderating coastal climates.',
         principles: [
@@ -367,7 +367,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'The geosphere',
         estimatedMinutes: 25,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere/x87d03b443efbea42:the-rock-cycle/v/the-rock-cycle',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere',
         videoTitle: 'The Rock Cycle and Weathering Processes',
         reading: 'Igneous, sedimentary, and metamorphic rocks cycle continuously through melting, cooling, weathering, erosion, deposition, and heat and pressure.',
         activity: {
@@ -403,7 +403,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'The geosphere',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere/x87d03b443efbea42:plate-tectonics/v/plate-tectonics',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere',
         videoTitle: 'Plate Tectonics & Continental Drift',
         reading: 'Thermal convection currents in Earth’s mantle move rigid tectonic plates. Boundaries form mountains (convergent), mid-ocean ridges (divergent), and fault lines (transform).',
         principles: [
@@ -423,7 +423,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'The geosphere',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere/x87d03b443efbea42:geologic-time-scale/v/geologic-time',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere',
         videoTitle: 'Rock Strata and the Geologic Time Scale',
         reading: 'The Law of Superposition states lower undisturbed sedimentary layers are older than upper layers. Index fossils help geologists determine relative ages across continents.',
         principles: [
@@ -493,7 +493,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Earth and society',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:earth-and-society/x87d03b443efbea42:natural-resources/v/natural-resources',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:earth-and-society',
         videoTitle: 'Distribution of Natural Resources and Hazards',
         reading: 'Minerals, fossil fuels, and groundwater are distributed unevenly as a result of past geological events. Scientists monitor weather and tectonic data to forecast natural hazards.',
         principles: [
@@ -513,7 +513,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Earth and society',
         estimatedMinutes: 25,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:earth-and-society/x87d03b443efbea42:human-impacts/v/human-impact-earth',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:earth-and-society',
         videoTitle: 'Human Impacts on Ecosystems and Conservation',
         reading: 'Growing human populations consume resources, produce waste, and modify landscapes. Sustainable agricultural and recycling practices reduce environmental footprints.',
         activity: {
@@ -549,7 +549,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Earth and society',
         estimatedMinutes: 25,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:earth-and-society/x87d03b443efbea42:global-climate-change/v/greenhouse-effect',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:earth-and-society',
         videoTitle: 'The Greenhouse Effect and Climate Change',
         reading: 'Greenhouse gases like carbon dioxide and methane absorb thermal infrared radiation and reradiate warmth. Burning fossil fuels increases atmospheric CO2, causing global climate shifts.',
         activity: {
@@ -639,7 +639,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Classifying matter',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:classifying-matter/x83571d44005c24e0:atoms-and-elements/v/atoms-and-elements',
+        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:classifying-matter',
         videoTitle: 'Atoms, Elements, and Molecules',
         reading: 'Matter is made of submicroscopic particles called atoms. An element contains only one atom type, while compounds bond multiple elements in fixed ratios.',
         principles: [
@@ -659,7 +659,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Classifying matter',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:classifying-matter/x83571d44005c24e0:pure-substances-and-mixtures/v/mixtures-and-solutions',
+        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:classifying-matter',
         videoTitle: 'Pure Substances and Mixtures',
         reading: 'Pure substances have fixed chemical compositions. Mixtures combine two or more substances physically without bonding, allowing separation by filtration or evaporation.',
         principles: [
@@ -679,7 +679,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Classifying matter',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:classifying-matter/x83571d44005c24e0:states-of-matter/v/states-of-matter',
+        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:classifying-matter',
         videoTitle: 'States of Matter and Particle Motion',
         reading: 'Solids, liquids, and gases differ in particle spacing and kinetic energy. Adding thermal energy causes melting or vaporization as particles overcome attractive forces.',
         principles: [
@@ -749,7 +749,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Physical properties of matter',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:physical-properties-of-matter/x83571d44005c24e0:density/v/density',
+        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:physical-properties-of-matter',
         videoTitle: 'Mass, Volume, and Density',
         reading: 'Density is a characteristic physical property defined by mass divided by volume ($D = m/V$). Density does not change regardless of sample size.',
         principles: [
@@ -769,7 +769,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Physical properties of matter',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:physical-properties-of-matter/x83571d44005c24e0:identifying-matter/v/properties-of-matter',
+        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:physical-properties-of-matter',
         videoTitle: 'Characteristic Physical Properties',
         reading: 'Physical properties like melting point, boiling point, electrical conductivity, and solubility identify pure substances without altering their chemical identity.',
         principles: [
@@ -790,7 +790,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         partOf: 'Physical properties of matter',
         isOhioExtension: true,
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:physical-properties-of-matter/x83571d44005c24e0:periodic-table/v/periodic-table',
+        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:physical-properties-of-matter',
         videoTitle: 'Periodic Table Groups & Properties',
         reading: 'The periodic table organizes elements by increasing atomic number. Columns (groups) share similar chemical properties and valence electron counts.',
         principles: [
@@ -860,7 +860,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Chemical changes',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:chemical-changes/x83571d44005c24e0:evidence-of-chemical-reactions/v/chemical-reactions',
+        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:chemical-changes',
         videoTitle: 'Evidence of Chemical Reactions',
         reading: 'A physical change alters form without creating new substances. A chemical reaction rearranges atoms, forming new products evidenced by gas, color change, or precipitates.',
         principles: [
@@ -880,7 +880,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Chemical changes',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:chemical-changes/x83571d44005c24e0:conservation-of-mass/v/conservation-of-mass',
+        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:chemical-changes',
         videoTitle: 'Conservation of Mass and Atoms',
         reading: 'In a chemical reaction, reactant atoms break existing bonds and form new products. Total mass and number of atoms remain strictly conserved.',
         principles: [
@@ -900,7 +900,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Chemical changes',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:chemical-changes/x83571d44005c24e0:synthetic-materials/v/synthetic-materials',
+        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:chemical-changes',
         videoTitle: 'Synthetic Materials from Natural Resources',
         reading: 'Synthetic materials like plastics, synthetic fibers, and medicines are chemically synthesized from natural raw materials such as petroleum, sand, and plant extracts.',
         principles: [
@@ -970,7 +970,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Thermal energy and heat',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:thermal-energy-and-heat/x83571d44005c24e0:temperature-and-thermal-energy/v/temperature-thermal-energy',
+        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:thermal-energy-and-heat',
         videoTitle: 'Temperature and Thermal Energy',
         reading: 'Temperature measures the average kinetic energy of particles in a sample. Total thermal energy depends on temperature, state of matter, and total mass of the object.',
         principles: [
@@ -990,7 +990,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Thermal energy and heat',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:thermal-energy-and-heat/x83571d44005c24e0:heat-transfer/v/heat-transfer',
+        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:thermal-energy-and-heat',
         videoTitle: 'Methods of Heat Transfer',
         reading: 'Heat flows spontaneously from warmer to cooler objects via direct contact (conduction), fluid circulation (convection), and electromagnetic waves (radiation).',
         principles: [
@@ -1010,7 +1010,7 @@ export const G7_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Thermal energy and heat',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:thermal-energy-and-heat/x83571d44005c24e0:thermal-energy-design/v/thermal-energy-devices',
+        videoUrl: 'https://www.khanacademy.org/science/ms-chemistry/x83571d44005c24e0:thermal-energy-and-heat',
         videoTitle: 'Endothermic & Exothermic Energy Changes',
         reading: 'Exothermic reactions release thermal energy, while endothermic reactions absorb heat. Engineers design thermal packs, insulators, and heat sinks based on these principles.',
         principles: [
