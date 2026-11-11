@@ -146,14 +146,14 @@ describe('TextbookPanel Component', () => {
 
     // Principle title
     expect(screen.getByText(lesson.principles[0].title)).toBeDefined()
-    expect(screen.getByText(lesson.principles[0].summary)).toBeDefined()
+    expect(screen.getAllByText(lesson.principles[0].summary).length).toBeGreaterThan(0)
 
     // Non-spoiling worked example
     expect(screen.getAllByText(/Practice Worked Example/).length).toBeGreaterThan(0)
     expect(screen.queryByText(activeQuizFingerprint)).toBeNull()
   })
 
-  it('renders Tab 2 with unit search and filters lessons by keyword', () => {
+  it('renders Tab 2 with unit search, fully fleshed out lesson guides, and refreshable worked examples', () => {
     render(
       <TextbookPanel
         course={course}
@@ -175,6 +175,45 @@ describe('TextbookPanel Component', () => {
     // Search for a specific lesson title
     fireEvent.change(searchInput, { target: { value: 'Equivalent' } })
     expect(screen.getAllByText(/Equivalent/i).length).toBeGreaterThan(0)
+
+    // Clear search so all lessons in unit render
+    fireEvent.change(searchInput, { target: { value: '' } })
+
+    // Verify Tab 2 dropdowns are fully fleshed out with Core Concept Explanation, Step-by-Step Rule Guide, and Key Principles
+    expect(screen.getAllByText(/Core Concept Explanation/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/Step-by-Step Rule Guide/i).length).toBeGreaterThan(0)
+    expect(screen.getAllByText(/Key Principles & Worked Examples/i).length).toBeGreaterThan(0)
+
+    // Verify Practice Worked Examples and Fresh Example buttons are present in Tab 2
+    const freshButtons = screen.getAllByRole('button', { name: /🎲 Fresh Example/i })
+    expect(freshButtons.length).toBeGreaterThan(0)
+
+    // Click Fresh Example button and verify it stays active
+    fireEvent.click(freshButtons[0])
+    expect(screen.getAllByText(/Practice Worked Example/).length).toBeGreaterThan(0)
+  })
+
+  it('switches units via the textbook header unit selector', () => {
+    const onSelectUnitMock = vi.fn()
+    render(
+      <TextbookPanel
+        course={course}
+        unit={unit}
+        lesson={lesson}
+        isOpen={true}
+        onClose={vi.fn()}
+        onSelectUnit={onSelectUnitMock}
+      />
+    )
+
+    const unitSelect = screen.getByRole('combobox', { name: /Select Unit in Textbook/i })
+    expect(unitSelect).toBeDefined()
+
+    // Switch to Unit 2
+    const unit2 = course.units[1]
+    fireEvent.change(unitSelect, { target: { value: unit2.id } })
+
+    expect(onSelectUnitMock).toHaveBeenCalledWith(unit2)
   })
 })
 

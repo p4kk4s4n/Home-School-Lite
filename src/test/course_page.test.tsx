@@ -158,4 +158,46 @@ describe('CoursePage - Course Map for All Grades and Subjects', () => {
     const completed = getExploreCompletedProgress(mockStudent.id, 'g6-math')
     expect(completed.length).toBe(1)
   })
+
+  it('allows opening and searching the textbook for future locked units and locked lessons directly from the Course Map', () => {
+    render(
+      <MemoryRouter initialEntries={['/course/g6-math']}>
+        <ErrorBoundary fallbackTitle="Course Map Error">
+          <Routes>
+            <Route path="/course/:courseId" element={<CoursePage />} />
+          </Routes>
+        </ErrorBoundary>
+      </MemoryRouter>
+    )
+
+    // Ensure Course Map has rendered
+    expect(screen.getByRole('heading', { level: 1, name: 'Grade 6 Mathematics' })).toBeDefined()
+
+    // Find all "📖 Unit Textbook & Search" buttons across all units (including locked future units)
+    const unitTextbookButtons = screen.getAllByRole('button', { name: /Unit Textbook & Search/i })
+    expect(unitTextbookButtons.length).toBeGreaterThanOrEqual(5)
+
+    // Click "Unit Textbook & Search" on a future unit (e.g. Unit 3)
+    fireEvent.click(unitTextbookButtons[2])
+
+    // Verify TextbookPanel opened
+    expect(screen.getByText('Interactive Textbook')).toBeDefined()
+    expect(screen.getByPlaceholderText(/Search all concepts/i)).toBeDefined()
+
+    // Close textbook
+    const closeBtn = screen.getByRole('button', { name: /Close Textbook/i })
+    fireEvent.click(closeBtn)
+    expect(screen.queryByText('Interactive Textbook')).toBeNull()
+
+    // Find all "📖 Guide" buttons on lesson rows (including locked future lessons)
+    const lessonGuideButtons = screen.getAllByRole('button', { name: /^📖 Guide$/i })
+    expect(lessonGuideButtons.length).toBeGreaterThan(10)
+
+    // Click Guide on a locked lesson
+    fireEvent.click(lessonGuideButtons[5])
+
+    // Verify TextbookPanel opened to This Lesson Guide
+    expect(screen.getByText('Interactive Textbook')).toBeDefined()
+    expect(screen.getByText(/Core Concept Explanation/i)).toBeDefined()
+  })
 })

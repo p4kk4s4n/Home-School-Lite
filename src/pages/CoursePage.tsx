@@ -1,12 +1,14 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { ParentPinModal } from '../components/ParentPinModal'
+import { TextbookPanel } from '../components/TextbookPanel'
 import { useApp } from '../context/AppContext'
 import { getCourseById } from '../lib/curriculum'
 import { computeCourseGrade, computeLessonEffectiveScore } from '../lib/grading'
 import { computeCourseProgress } from '../lib/progress'
+import { getLessonRemediation } from '../lib/remediation'
 import { getExploreCompletedProgress, saveExploreCompletedProgress } from '../lib/storage'
-import { ExploreItem, RemediationLink } from '../types'
+import { ExploreItem, Lesson, RemediationLink, Unit } from '../types'
 
 function getExploreIcon(type: ExploreItem['type']): string {
   switch (type) {
@@ -35,6 +37,32 @@ export const CoursePage: React.FC = () => {
 
   const [pendingPinLink, setPendingPinLink] = useState<RemediationLink | null>(null)
   const [completedExploreIds, setCompletedExploreIds] = useState<string[]>([])
+  const [textbookState, setTextbookState] = useState<{
+    isOpen: boolean
+    unit: Unit
+    lesson: Lesson
+    initialTab: 'lesson' | 'unit'
+  } | null>(null)
+
+  const openUnitTextbook = (u: Unit) => {
+    const firstLesson = u.lessons[0]
+    if (!firstLesson) return
+    setTextbookState({
+      isOpen: true,
+      unit: u,
+      lesson: firstLesson,
+      initialTab: 'unit',
+    })
+  }
+
+  const openLessonTextbook = (u: Unit, l: Lesson) => {
+    setTextbookState({
+      isOpen: true,
+      unit: u,
+      lesson: l,
+      initialTab: 'lesson',
+    })
+  }
 
   const includeOhio = settings.includeOhioAdjustments ?? true
 
@@ -101,15 +129,16 @@ export const CoursePage: React.FC = () => {
   }
 
   return (
-    <div className="page-stack">
-      <ParentPinModal
-        link={pendingPinLink}
-        onClose={() => setPendingPinLink(null)}
-        onApproved={(approvedLink) => {
-          setPendingPinLink(null)
-          window.open(approvedLink.url, '_blank', 'noopener,noreferrer')
-        }}
-      />
+    <div className={`lesson-workspace-grid ${textbookState?.isOpen ? 'with-textbook' : ''}`}>
+      <div className="page-stack">
+        <ParentPinModal
+          link={pendingPinLink}
+          onClose={() => setPendingPinLink(null)}
+          onApproved={(approvedLink) => {
+            setPendingPinLink(null)
+            window.open(approvedLink.url, '_blank', 'noopener,noreferrer')
+          }}
+        />
 
       <div className="breadcrumb-row">
         <Link to="/" className="breadcrumb-link">
@@ -358,6 +387,14 @@ export const CoursePage: React.FC = () => {
                   ))}
                 </div>
               </div>
+              <button
+                type="button"
+                className="btn btn-secondary btn-sm"
+                onClick={() => openUnitTextbook(unit)}
+                title={`Open Interactive Textbook for ${unit.title}`}
+              >
+                📖 Unit Textbook &amp; Search
+              </button>
             </div>
 
             <div className="lesson-list">
@@ -420,7 +457,16 @@ export const CoursePage: React.FC = () => {
                       )}
                     </div>
 
-                    <div className="lesson-row-action">
+                    <div className="lesson-row-action" style={{ display: 'flex', gap: '0.4rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                      <button
+                        type="button"
+                        className="btn btn-secondary btn-sm"
+                        onClick={() => openLessonTextbook(unit, lesson)}
+                        title={`Read Textbook Guide for ${lesson.title}`}
+                        style={{ padding: '0.35rem 0.65rem' }}
+                      >
+                        📖 Guide
+                      </button>
                       {isLocked ? (
                         <button className="btn btn-secondary btn-sm" disabled>
                           🔒 Master Prior Step
@@ -447,6 +493,52 @@ export const CoursePage: React.FC = () => {
           </section>
         )
       })}
+      </div>
+
+      {textbookState?.isOpen && (
+        <>
+          <div
+            className="textbook-backdrop"
+            onClick={() => setTextbookState(null)}
+            aria-hidden="true"
+          />
+          <TextbookPanel
+            course={course}
+            unit={textbookState.unit}
+            lesson={textbookState.lesson}
+            remediation={
+              textbookState.lesson.remediation ??
+              getLessonRemediation(textbookState.lesson, course.subject, course.grade)
+            }
+            initialTab={textbookState.initialTab}
+            isOpen={textbookState.isOpen}
+            onClose={() => setTextbookState(null)}
+            onSelectUnit={(newUnit) => {
+              setTextbookState((prev) =>
+                prev
+                  ? {
+                      ...prev,
+                      unit: newUnit,
+                      lesson: newUnit.lessons[0] ?? prev.lesson,
+                    }
+                  : null
+              )
+            }}
+            onSelectLesson={(newLesson, inUnit) => {
+              setTextbookState((prev) =>
+                prev
+                  ? {
+                      ...prev,
+                      unit: inUnit,
+                      lesson: newLesson,
+                      initialTab: 'lesson',
+                    }
+                  : null
+              )
+            }}
+          />
+        </>
+      )}
     </div>
   )
 }
