@@ -5,7 +5,7 @@ import { useApp } from '../context/AppContext'
 import { getCourseById } from '../lib/curriculum'
 import { computeCourseGrade, computeLessonEffectiveScore } from '../lib/grading'
 import { computeCourseProgress } from '../lib/progress'
-import { getLocalItem, setLocalItem } from '../lib/storage'
+import { getExploreCompletedProgress, saveExploreCompletedProgress } from '../lib/storage'
 import { ExploreItem, RemediationLink } from '../types'
 
 function getExploreIcon(type: ExploreItem['type']): string {
@@ -56,18 +56,7 @@ export const CoursePage: React.FC = () => {
   // Load completed explore item IDs from namespaced localStorage safely
   useEffect(() => {
     if (!activeStudent || !course) return
-    const key = `explore:${activeStudent.id}:${course.id}`
-    const raw = getLocalItem(key)
-    if (raw) {
-      try {
-        const parsed = JSON.parse(raw)
-        setCompletedExploreIds(Array.isArray(parsed) ? parsed : [])
-      } catch {
-        setCompletedExploreIds([])
-      }
-    } else {
-      setCompletedExploreIds([])
-    }
+    setCompletedExploreIds(getExploreCompletedProgress(activeStudent.id, course.id))
   }, [activeStudent?.id, course?.id])
 
   const toggleExploreDone = (itemId: string) => {
@@ -77,8 +66,7 @@ export const CoursePage: React.FC = () => {
       const next = safePrev.includes(itemId)
         ? safePrev.filter((id) => id !== itemId)
         : [...safePrev, itemId]
-      const key = `explore:${activeStudent.id}:${course.id}`
-      setLocalItem(key, JSON.stringify(next))
+      saveExploreCompletedProgress(activeStudent.id, course.id, next)
       return next
     })
   }

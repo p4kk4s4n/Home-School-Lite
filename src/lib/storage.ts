@@ -8,6 +8,7 @@ export const STORAGE_KEYS = {
   PARENT_UNLOCKED_UNTIL: 'hsl:parentUnlockedUntil',
   DISMISSED_VERSION: 'hsl:dismissedVersion',
   CHECKLIST_PREFIX: 'hsl:checklist:',
+  EXPLORE_PREFIX: 'hsl:explore:',
 } as const
 
 export function assertNamespacedKey(key: string): void {
@@ -62,4 +63,44 @@ export function saveLessonChecklistProgress(
 ): void {
   const key = `${STORAGE_KEYS.CHECKLIST_PREFIX}${studentId}:${lessonId}`
   setLocalItem(key, JSON.stringify(Array.from(new Set(completedStepIds))))
+}
+
+export function getExploreCompletedProgress(studentId: string, courseId: string): string[] {
+  const key = `${STORAGE_KEYS.EXPLORE_PREFIX}${studentId}:${courseId}`
+  let raw: string | null = null
+  try {
+    raw = getLocalItem(key)
+  } catch {
+    raw = null
+  }
+  // Seamless migration for legacy un-prefixed key if present
+  if (!raw) {
+    try {
+      const legacyKey = `explore:${studentId}:${courseId}`
+      const legacyRaw = window.localStorage.getItem(legacyKey)
+      if (legacyRaw) {
+        raw = legacyRaw
+        setLocalItem(key, legacyRaw)
+        window.localStorage.removeItem(legacyKey)
+      }
+    } catch {
+      // Ignore
+    }
+  }
+  if (!raw) return []
+  try {
+    const parsed = JSON.parse(raw)
+    return Array.isArray(parsed) ? parsed : []
+  } catch {
+    return []
+  }
+}
+
+export function saveExploreCompletedProgress(
+  studentId: string,
+  courseId: string,
+  completedExploreIds: string[]
+): void {
+  const key = `${STORAGE_KEYS.EXPLORE_PREFIX}${studentId}:${courseId}`
+  setLocalItem(key, JSON.stringify(Array.from(new Set(completedExploreIds))))
 }

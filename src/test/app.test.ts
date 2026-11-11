@@ -44,7 +44,9 @@ import {
   APP_SCOPE,
   assertNamespacedKey,
   CACHE_PREFIX,
+  getExploreCompletedProgress,
   getLessonChecklistProgress,
+  saveExploreCompletedProgress,
   saveLessonChecklistProgress,
   STORAGE_KEYS,
   STORAGE_PREFIX,
@@ -561,6 +563,34 @@ describe('Unique Mobile PWA Identity, Same-Origin Isolation & Auto-Update Checke
       expect(() => assertNamespacedKey(key)).not.toThrow()
     }
     expect(() => assertNamespacedKey('settings')).toThrow(/Storage isolation violation/)
+  })
+
+  it('safely stores and migrates explore completed progress with hsl: prefix', () => {
+    const studentId = 'stu-test-storage-isolation'
+    const courseId = 'g6-science'
+    
+    // Initially empty
+    expect(getExploreCompletedProgress(studentId, courseId)).toEqual([])
+
+    // Save items
+    saveExploreCompletedProgress(studentId, courseId, ['item-1', 'item-2'])
+    expect(getExploreCompletedProgress(studentId, courseId)).toEqual(['item-1', 'item-2'])
+
+    // Verify raw key in localStorage starts with hsl:explore:
+    const rawKey = `${STORAGE_KEYS.EXPLORE_PREFIX}${studentId}:${courseId}`
+    expect(rawKey.startsWith('hsl:explore:')).toBe(true)
+    expect(window.localStorage.getItem(rawKey)).toBe(JSON.stringify(['item-1', 'item-2']))
+
+    // Verify un-prefixed legacy migration
+    const legacyKey = `explore:stu-legacy:g6-science`
+    window.localStorage.setItem(legacyKey, JSON.stringify(['sim-cells', 'sim-microscope']))
+    const migrated = getExploreCompletedProgress('stu-legacy', 'g6-science')
+    expect(migrated).toEqual(['sim-cells', 'sim-microscope'])
+    // Confirm legacy key was cleaned up and migrated to hsl: prefix
+    expect(window.localStorage.getItem(legacyKey)).toBeNull()
+    expect(window.localStorage.getItem('hsl:explore:stu-legacy:g6-science')).toBe(
+      JSON.stringify(['sim-cells', 'sim-microscope'])
+    )
   })
 
   it('cleans ONLY hsl-* caches and never deletes sibling app caches on the same origin', async () => {
