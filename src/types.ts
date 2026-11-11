@@ -219,6 +219,7 @@ export interface AppSettings {
   appId: 'home-school-lite'
   parentPin: string
   masteryThreshold: number
+  masteryQuestionCount?: number
   retryPenaltyPercent: number
   lessonWeight: number
   unitTestWeight: number

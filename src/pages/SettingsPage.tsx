@@ -1494,6 +1494,49 @@ export const SettingsPage: React.FC = () => {
                       </span>
                     </label>
 
+                    {/* MASTERY QUESTION COUNT TOGGLE */}
+                    <div style={{ marginTop: '1.15rem' }}>
+                      <span className="field-label">
+                        Mastery Quiz Question Count: <strong>{settings.masteryQuestionCount ?? 8} Questions</strong> (Default 8)
+                      </span>
+                      <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', margin: '0.4rem 0 0.5rem' }}>
+                        {[5, 8, 10, 12, 15].map((count) => {
+                          const isSelected = (settings.masteryQuestionCount ?? 8) === count
+                          return (
+                            <button
+                              key={count}
+                              type="button"
+                              className={`btn btn-sm ${isSelected ? 'btn-primary' : 'btn-secondary'}`}
+                              onClick={() => void updateAppSettings({ masteryQuestionCount: count })}
+                            >
+                              {count} Qs {count === 8 ? '(Default)' : count === 5 ? '(Min)' : ''}
+                            </button>
+                          )
+                        })}
+                      </div>
+                      <input
+                        type="range"
+                        min={5}
+                        max={15}
+                        step={1}
+                        value={settings.masteryQuestionCount ?? 8}
+                        onChange={(e) =>
+                          void updateAppSettings({
+                            masteryQuestionCount: Math.max(5, Number(e.target.value)),
+                          })
+                        }
+                      />
+                      <div className="muted-sm" style={{ marginTop: '0.3rem', lineHeight: 1.5 }}>
+                        Regular Lessons: <strong>{settings.masteryQuestionCount ?? 8} questions</strong> • Unit Exams: <strong>{(settings.masteryQuestionCount ?? 8) + 3} questions</strong> (+3 exam bonus).
+                        <br />
+                        At {settings.masteryThreshold}% threshold, students must answer{' '}
+                        <strong>
+                          {Math.ceil((settings.masteryThreshold / 100) * (settings.masteryQuestionCount ?? 8))} of {settings.masteryQuestionCount ?? 8}
+                        </strong>{' '}
+                        questions correctly to advance.
+                      </div>
+                    </div>
+
                     <label className="field-label" style={{ marginTop: '1rem' }}>
                       Retry Penalty per Extra Attempt: <strong>{settings.retryPenaltyPercent}%</strong>
                       <input

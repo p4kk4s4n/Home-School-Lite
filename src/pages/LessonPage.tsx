@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ParentPinModal } from '../components/ParentPinModal'
+import { TextbookPanel } from '../components/TextbookPanel'
 import { useApp } from '../context/AppContext'
 import {
   findLessonInCourse,
@@ -89,10 +90,18 @@ export const LessonPage: React.FC = () => {
   const [pendingPinLink, setPendingPinLink] = useState<RemediationLink | null>(
     null
   )
+  const [isTextbookOpen, setIsTextbookOpen] = useState(false)
+  const [highlightedPrincipleId, setHighlightedPrincipleId] = useState<string | null>(null)
+
+  const handleReviewPrinciple = (principleId: string) => {
+    setHighlightedPrincipleId(principleId)
+    setIsTextbookOpen(true)
+  }
 
   // Load checklist state & reset view when navigating to a different lesson or student
   useEffect(() => {
     setMode('study')
+    setHighlightedPrincipleId(null)
     setFocusPrincipleIds(
       lastAttempt && !lastAttempt.passed ? lastAttempt.missedPrincipleIds : []
     )
@@ -170,19 +179,36 @@ export const LessonPage: React.FC = () => {
     allChecklistDone ||
     priorAttempts.length > 0
 
+  const configuredCount = Math.max(5, settings.masteryQuestionCount ?? 8)
+  const expectedQuestionCount = useMemo(() => {
+    if (lesson?.questionCount) {
+      return lesson.questionCount
+    }
+    if (lesson?.kind === 'unit_test') {
+      return configuredCount + 3 // bonus for unit exams
+    }
+    if (lesson?.kind === 'lesson_review') {
+      return Math.max(configuredCount, 6)
+    }
+    return configuredCount
+  }, [lesson?.questionCount, lesson?.kind, configuredCount])
+
   const startFreshQuiz = (missedFocus: string[] = []) => {
-    if (!canStartQuiz) return
+    if (!canStartQuiz || !lesson) return
     const nextSeed =
       ((Date.now() + (priorAttempts.length + 1) * 7919) ^
         hashString(
           `${lesson.id}-attempt-${priorAttempts.length + 1}-${Math.random()}`
         )) >>>
       0
+    const unitPrinciples = (unit.lessons || []).flatMap((l) => l.principles || [])
     const built = buildQuizAttempt({
       lesson,
       seed: nextSeed,
       priorAttempts,
+      questionCount: expectedQuestionCount,
       focusPrincipleIds: missedFocus,
+      unitPrinciples,
     })
     setSeed(nextSeed)
     setFocusPrincipleIds(missedFocus)
@@ -260,10 +286,6 @@ export const LessonPage: React.FC = () => {
       setSubmitting(false)
     }
   }
-
-  const expectedQuestionCount =
-    lesson.questionCount ??
-    (lesson.kind === 'unit_test' ? 8 : lesson.kind === 'lesson_review' ? 6 : 5)
 
   const renderRemediationSupport = (tier: 0 | 1 | 2 | 3) => {
     if (tier === 0) return null
@@ -370,7 +392,28 @@ export const LessonPage: React.FC = () => {
         </span>
       </div>
 
-      <section className="card lesson-header-card">
+      {isTextbookOpen && (
+        <div
+          className="textbook-backdrop"
+          onClick={() => setIsTextbookOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
+      {/* FLOATING TEXTBOOK TOGGLE PILL */}
+      <button
+        type="button"
+        className="textbook-floating-pill"
+        onClick={() => setIsTextbookOpen((prev) => !prev)}
+        aria-label="Toggle Interactive Textbook Side Panel"
+      >
+        <span>📖</span>
+        <span>{isTextbookOpen ? 'Hide Textbook' : 'Textbook'}</span>
+      </button>
+
+      <div className={`lesson-workspace-grid ${isTextbookOpen ? 'with-textbook' : ''}`}>
+        <div className="lesson-workspace-main">
+          <section className="card lesson-header-card">
         <div className="lesson-header-top">
           <div>
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
@@ -426,6 +469,14 @@ export const LessonPage: React.FC = () => {
                 {latestResult.scorePercent}%)
               </button>
             )}
+            <button
+              type="button"
+              className={`mode-tab ${isTextbookOpen ? 'active' : ''}`}
+              onClick={() => setIsTextbookOpen((prev) => !prev)}
+              title="Open Interactive Textbook Side Panel to review concepts on the fly"
+            >
+              📖 {isTextbookOpen ? 'Hide Textbook' : 'Textbook Side Panel'}
+            </button>
           </div>
         </div>
       </section>
@@ -618,13 +669,23 @@ export const LessonPage: React.FC = () => {
                 your answers.
               </p>
             </div>
-            <button
-              type="button"
-              className="btn btn-secondary btn-sm"
-              onClick={() => setMode('study')}
-            >
-              ← Review Lesson Notes
-            </button>
+            <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+              <button
+                type="button"
+                className={`btn btn-sm ${isTextbookOpen ? 'btn-primary' : 'btn-secondary'}`}
+                onClick={() => setIsTextbookOpen((prev) => !prev)}
+                title="Toggle Interactive Textbook Side Panel"
+              >
+                📖 {isTextbookOpen ? 'Hide Textbook' : 'Textbook Reference'}
+              </button>
+              <button
+                type="button"
+                className="btn btn-secondary btn-sm"
+                onClick={() => setMode('study')}
+              >
+                ← Review Lesson Notes
+              </button>
+            </div>
           </div>
 
           <div className="questions-stack">
@@ -636,7 +697,17 @@ export const LessonPage: React.FC = () => {
                     <span className="question-number">
                       Question {idx + 1} of {quizQuestions.length}
                     </span>
-                    <span className="std-tag">{q.principleTitle}</span>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                      <span className="std-tag">{q.principleTitle}</span>
+                      <button
+                        type="button"
+                        className="btn-review-concept"
+                        onClick={() => handleReviewPrinciple(q.principleId)}
+                        title="Review this concept and worked examples in the textbook side panel"
+                      >
+                        💡 Review Concept
+                      </button>
+                    </div>
                   </div>
 
                   {q.passage && (
@@ -851,6 +922,19 @@ export const LessonPage: React.FC = () => {
           </div>
         </section>
       )}
+        </div>
+
+        <TextbookPanel
+          course={course}
+          unit={unit}
+          lesson={lesson}
+          remediation={remediation}
+          activeQuizFingerprints={quizQuestions.map((q) => q.fingerprint)}
+          highlightedPrincipleId={highlightedPrincipleId}
+          isOpen={isTextbookOpen}
+          onClose={() => setIsTextbookOpen(false)}
+        />
+      </div>
     </div>
   )
 }

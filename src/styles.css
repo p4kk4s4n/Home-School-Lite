@@ -1386,6 +1386,187 @@ code {
   background-color: #eff6ff;
 }
 
+/* ========================================================================= */
+/* IN-LESSON INTERACTIVE TEXTBOOK SIDE PANEL & WORKSPACE LAYOUT              */
+/* ========================================================================= */
+
+.lesson-workspace-grid {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .lesson-workspace-grid.with-textbook {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 420px;
+    gap: 1.5rem;
+    align-items: start;
+  }
+}
+
+.textbook-panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  z-index: 100;
+}
+
+@media (min-width: 1024px) {
+  .textbook-panel {
+    position: sticky;
+    top: 1rem;
+    max-height: calc(100vh - 2rem);
+  }
+}
+
+@media (max-width: 1023px) {
+  .textbook-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 88vw;
+    max-width: 440px;
+    border-radius: 0;
+    border-left: 2px solid var(--primary-bright);
+    box-shadow: -6px 0 24px rgba(0, 0, 0, 0.25);
+    z-index: 1050;
+  }
+
+  .textbook-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 1040;
+  }
+}
+
+.textbook-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  background: var(--surface-alt);
+  border-bottom: 1px solid var(--border);
+  gap: 0.5rem;
+}
+
+.textbook-tabs {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.textbook-tab {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface-alt);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: center;
+}
+
+.textbook-tab.active {
+  background: var(--primary-bright);
+  color: #fff;
+  border-color: var(--primary-bright);
+}
+
+.textbook-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.textbook-section {
+  margin-bottom: 1.25rem;
+}
+
+.textbook-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary-bright);
+  margin: 0 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.textbook-chips-row {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--border);
+}
+
+.chip-active {
+  background: var(--warning) !important;
+  color: #78350f !important;
+  font-weight: 700 !important;
+  border-color: var(--warning) !important;
+}
+
+.textbook-floating-pill {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.15rem;
+  border-radius: 9999px;
+  background: var(--primary-bright);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.textbook-floating-pill:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.btn-review-concept {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--primary-bright);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-review-concept:hover {
+  background: var(--primary-bright);
+  color: #fff;
+  border-color: var(--primary-bright);
+}
+
 @media print {
   .no-print,
   .topbar,

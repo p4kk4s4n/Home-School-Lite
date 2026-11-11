@@ -8,6 +8,7 @@ export interface BuildQuizOptions {
   priorAttempts?: AttemptRecord[]
   questionCount?: number
   focusPrincipleIds?: string[]
+  unitPrinciples?: Principle[]
 }
 
 /**
@@ -20,8 +21,9 @@ export function buildQuizAttempt(options: BuildQuizOptions): GeneratedQuestion[]
     lesson,
     seed,
     priorAttempts = [],
-    questionCount = lesson.questionCount ?? (lesson.kind === 'unit_test' ? 8 : 5),
+    questionCount = lesson.questionCount ?? (lesson.kind === 'unit_test' ? 11 : 8),
     focusPrincipleIds = [],
+    unitPrinciples = [],
   } = options
 
   const rng = createRng(seed)
@@ -61,7 +63,8 @@ export function buildQuizAttempt(options: BuildQuizOptions): GeneratedQuestion[]
   let pIndex = 0
   let safetyCounter = 0
 
-  while (result.length < questionCount && safetyCounter < questionCount * 20) {
+  // Pass 1: Sample from lesson principles
+  while (result.length < questionCount && safetyCounter < questionCount * 25) {
     safetyCounter++
     const principle = prioritizedPrinciples[pIndex % prioritizedPrinciples.length]
     pIndex++
@@ -70,6 +73,57 @@ export function buildQuizAttempt(options: BuildQuizOptions): GeneratedQuestion[]
     if (question) {
       chosenFingerprints.add(question.fingerprint)
       result.push(question)
+    }
+  }
+
+  // Pass 2: If still under questionCount, draw supplementary questions from sibling unit principles
+  if (result.length < questionCount && unitPrinciples && unitPrinciples.length > 0) {
+    const siblingPrinciples = shuffle(
+      unitPrinciples.filter((up) => !principles.some((p) => p.id === up.id)),
+      rng
+    )
+    let sIdx = 0
+    let sSafety = 0
+    while (result.length < questionCount && siblingPrinciples.length > 0 && sSafety < questionCount * 25) {
+      sSafety++
+      const p = siblingPrinciples[sIdx % siblingPrinciples.length]
+      sIdx++
+      const q = sampleFromPrinciple(p, rng, seenOrder, chosenFingerprints)
+      if (q) {
+        chosenFingerprints.add(q.fingerprint)
+        result.push(q)
+      }
+    }
+  }
+
+  // Pass 3: If still under questionCount (e.g., small single-principle bank), generate fresh variants
+  let repeatSafety = 0
+  while (result.length < questionCount && repeatSafety < questionCount * 30) {
+    repeatSafety++
+    const p = prioritizedPrinciples[repeatSafety % prioritizedPrinciples.length]
+    if (p.generatorId && MATH_GENERATORS[p.generatorId]) {
+      const genFn = MATH_GENERATORS[p.generatorId]
+      const q = genFn(rng, p.id, p.title)
+      const fp = `${q.fingerprint}#v${repeatSafety}`
+      if (!chosenFingerprints.has(fp)) {
+        chosenFingerprints.add(fp)
+        result.push({ ...q, fingerprint: fp })
+      }
+    } else if (p.bank && p.bank.length > 0) {
+      const item = p.bank[repeatSafety % p.bank.length]
+      const fp = `${p.id}:${item.id}#v${repeatSafety}`
+      if (!chosenFingerprints.has(fp)) {
+        chosenFingerprints.add(fp)
+        result.push({
+          ...item,
+          choices: item.choices ? shuffle(item.choices, rng) : undefined,
+          fingerprint: fp,
+          principleId: p.id,
+          principleTitle: p.title,
+        })
+      }
+    } else {
+      break
     }
   }
 

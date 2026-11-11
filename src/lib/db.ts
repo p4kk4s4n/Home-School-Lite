@@ -54,6 +54,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   appId: APP_ID,
   parentPin: '1234',
   masteryThreshold: 80,
+  masteryQuestionCount: 8,
   retryPenaltyPercent: 0,
   lessonWeight: 60,
   unitTestWeight: 40,
