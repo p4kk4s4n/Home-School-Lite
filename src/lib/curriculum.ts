@@ -89,10 +89,11 @@ export function filterCourseForOhio(course: Course, includeOhio: boolean): Cours
   }
   const filteredUnits: Unit[] = []
   for (const unit of course.units) {
+    if (unit.isOhioExtension) {
+      continue
+    }
     if (unit.kind === 'explore' || unit.kind === 'teacher_resources') {
-      if (!unit.isOhioExtension) {
-        filteredUnits.push(unit)
-      }
+      filteredUnits.push(unit)
       continue
     }
     const regularLessons = unit.lessons.filter(

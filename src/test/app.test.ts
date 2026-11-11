@@ -1364,4 +1364,75 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
     expect(sciTeacher?.resources?.length).toBeGreaterThanOrEqual(2)
     expect(mathTeacher?.resources?.some((r) => r.kind === 'pacing_guide')).toBe(true)
   })
+
+  it('validates Grade 7 and 8 Science realignment, Supplemental Units unlock behavior, and hands-on activities', () => {
+    const g7Sci = getCourseById('g7-science')!
+    const g8Sci = getCourseById('g8-science')!
+
+    expect(g7Sci).toBeDefined()
+    expect(g8Sci).toBeDefined()
+
+    // 1. Grade 7 Science has Earth & Space Science (Units 1-5) followed by Chemistry (Units 6-9)
+    expect(g7Sci.units[0].title).toContain('Earth in space')
+    expect(g7Sci.units[1].title).toContain('Earth-Sun-moon')
+    expect(g7Sci.units[2].title).toContain('Weather and climate')
+    expect(g7Sci.units[3].title).toContain('geosphere')
+    expect(g7Sci.units[4].title).toContain('Earth and society')
+    expect(g7Sci.units[5].title).toContain('Classifying matter')
+    expect(g7Sci.units[6].title).toContain('Physical properties')
+    expect(g7Sci.units[7].title).toContain('Chemical changes')
+    expect(g7Sci.units[8].title).toContain('Thermal energy')
+
+    // Verify activities are attached to relevant lessons
+    const eclipseLesson = g7Sci.units[1].lessons.find((l) => l.activity?.id === 'act-eclipse')
+    expect(eclipseLesson).toBeDefined()
+    expect(eclipseLesson?.activity?.title).toBe('What happens during a solar or lunar eclipse?')
+
+    const weatheringLesson = g7Sci.units[3].lessons.find((l) => l.activity?.id === 'act-weathering')
+    expect(weatheringLesson).toBeDefined()
+    expect(weatheringLesson?.activity?.title).toBe('How does weathering affect natural landscapes over time?')
+
+    const climateLesson = g7Sci.units[4].lessons.find((l) => l.activity?.id === 'act-climate')
+    expect(climateLesson).toBeDefined()
+    expect(climateLesson?.activity?.title).toBe('How and why is Earth’s climate changing?')
+
+    // 2. Grade 8 Science has Middle School Physics core + Supplemental Archive + Supplemental Ohio Heredity
+    expect(g8Sci.units[0].title).toContain('Motion and forces')
+    expect(g8Sci.units[1].title).toContain('Non-contact interactions')
+    expect(g8Sci.units[2].title).toContain('Energy')
+    expect(g8Sci.units[3].title).toContain('Waves')
+    expect(g8Sci.units[4].title).toContain('Course Challenge: Middle School Physics')
+
+    const suppKinematics = g8Sci.units.find((u) => u.id === 'g8-sci-u6')
+    const suppCircuits = g8Sci.units.find((u) => u.id === 'g8-sci-u7')
+    const suppOhio = g8Sci.units.find((u) => u.id === 'g8-sci-u8')
+
+    expect(suppKinematics?.isSupplemental).toBe(true)
+    expect(suppCircuits?.isSupplemental).toBe(true)
+    expect(suppOhio?.isSupplemental).toBe(true)
+
+    // 3. Supplemental units must be immediately unlocked (status: 'available') even with ZERO prior attempts
+    const initialProgress = computeCourseProgress(g8Sci, [], 80)
+    expect(initialProgress.nextLesson?.lesson.id).toBe(g8Sci.units[0].lessons[0].id)
+
+    // Verify supplemental unit lessons are available immediately
+    const suppLessons = initialProgress.items.filter((i) => i.unit.isSupplemental)
+    expect(suppLessons.length).toBeGreaterThanOrEqual(7)
+    for (const item of suppLessons) {
+      expect(item.status).toBe('available')
+    }
+
+    // 4. Verify Grade 8 Physics activities
+    const skydiverLesson = g8Sci.units[0].lessons.find((l) => l.activity?.id === 'act-skydiver')
+    expect(skydiverLesson).toBeDefined()
+    expect(skydiverLesson?.activity?.title).toBe('How can a skydiver fall safely?')
+
+    const beeLesson = g8Sci.units[1].lessons.find((l) => l.activity?.id === 'act-bees')
+    expect(beeLesson).toBeDefined()
+    expect(beeLesson?.activity?.title).toBe('How do bees pick up pollen in flowers?')
+
+    const puppyLesson = suppOhio?.lessons.find((l) => l.activity?.id === 'act-puppy-litter')
+    expect(puppyLesson).toBeDefined()
+    expect(puppyLesson?.activity?.title).toBe('Why do puppies in the same litter look different?')
+  })
 })

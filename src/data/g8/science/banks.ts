@@ -174,6 +174,57 @@ export const G8_SCI_FIELDS_BANK: QuestionBankItem[] = [
   },
 ]
 
+export const G8_SCI_ENERGY_BANK: QuestionBankItem[] = [
+  {
+    id: 'g8-sci-en-1',
+    type: 'mc',
+    prompt: 'What type of energy does a moving baseball possess?',
+    choices: ['Kinetic energy', 'Gravitational potential energy only', 'Nuclear energy', 'Chemical bond energy'],
+    answer: 'Kinetic energy',
+    explanation: 'Kinetic energy is the energy an object possesses due to its motion ($KE = \\frac{1}{2}mv^2$).',
+  },
+  {
+    id: 'g8-sci-en-2',
+    type: 'mc',
+    prompt: 'What happens to an object’s kinetic energy if its speed doubles?',
+    choices: ['Kinetic energy quadruples', 'Kinetic energy doubles', 'Kinetic energy cuts in half', 'Kinetic energy stays identical'],
+    answer: 'Kinetic energy quadruples',
+    explanation: 'Because kinetic energy is proportional to the square of velocity ($v^2$), doubling speed quadruples KE.',
+  },
+  {
+    id: 'g8-sci-en-3',
+    type: 'mc',
+    prompt: 'What happens to the potential energy of a roller coaster at its peak?',
+    choices: ['Gravitational potential energy reaches maximum', 'Kinetic energy reaches maximum', 'Potential energy drops to zero', 'All energy is destroyed'],
+    answer: 'Gravitational potential energy reaches maximum',
+    explanation: 'At maximum height, gravitational potential energy ($PE = mgh$) is at its peak before converting to kinetic energy.',
+  },
+  {
+    id: 'g8-sci-en-4',
+    type: 'mc',
+    prompt: 'According to the Law of Conservation of Energy, what can happen to energy?',
+    choices: ['Energy transforms into different forms without loss', 'Energy is created by machines', 'Energy is destroyed by friction permanently', 'Energy turns into mass only'],
+    answer: 'Energy transforms into different forms without loss',
+    explanation: 'Energy cannot be created or destroyed; it only transforms between kinetic, potential, thermal, and radiant forms.',
+  },
+  {
+    id: 'g8-sci-en-5',
+    type: 'mc',
+    prompt: 'Why does a bouncing basketball eventually come to a complete stop?',
+    choices: ['Mechanical energy converts into thermal and acoustic energy', 'Gravity stops pulling downward', 'The ball loses all its mass', 'Kinetic energy vanishes into space'],
+    answer: 'Mechanical energy converts into thermal and acoustic energy',
+    explanation: 'With each impact, friction and compression convert mechanical energy into heat and sound until motion stops.',
+  },
+  {
+    id: 'g8-sci-en-6',
+    type: 'mc',
+    prompt: 'What type of energy is stored inside a stretched rubber band?',
+    choices: ['Elastic potential energy', 'Chemical energy', 'Electrical current energy', 'Thermal radiant energy'],
+    answer: 'Elastic potential energy',
+    explanation: 'Elastic potential energy is stored when materials are stretched, compressed, or distorted from their resting state.',
+  },
+]
+
 export const G8_SCI_WAVES_BANK: QuestionBankItem[] = [
   {
     id: 'g8-sci-wav-1',
@@ -222,6 +273,76 @@ export const G8_SCI_WAVES_BANK: QuestionBankItem[] = [
     choices: ['Wavelength or frequency', 'Brightness or amplitude', 'Travel speed in glass', 'Source temperature alone'],
     answer: 'Wavelength or frequency',
     explanation: 'Different wavelengths of visible light correspond to different colors seen by the eye.',
+  },
+]
+
+export const G8_SCI_ARCHIVE_KINEMATICS_BANK: QuestionBankItem[] = [
+  {
+    id: 'g8-sci-kin-1',
+    type: 'mc',
+    prompt: 'A car travels 150 meters in 5 seconds. What is its average speed?',
+    choices: ['30 meters per second', '750 meters per second', '25 meters per second', '10 meters per second'],
+    answer: '30 meters per second',
+    explanation: 'Speed equals distance divided by time: $150\\text{ m} / 5\\text{ s} = 30\\text{ m/s}$.',
+  },
+  {
+    id: 'g8-sci-kin-2',
+    type: 'mc',
+    prompt: 'What is the acceleration due to gravity near Earth’s surface in free fall?',
+    choices: ['About 9.8 meters per second squared', 'About 300 meters per second', 'Zero meters per second squared', '98 meters per second squared'],
+    answer: 'About 9.8 meters per second squared',
+    explanation: 'In the absence of air drag, all objects accelerate downward at approximately $9.8\\text{ m/s}^2$.',
+  },
+  {
+    id: 'g8-sci-kin-3',
+    type: 'mc',
+    prompt: 'How is momentum calculated for a moving object?',
+    choices: ['Multiply mass by velocity', 'Divide mass by velocity', 'Add mass and velocity', 'Multiply force by distance'],
+    answer: 'Multiply mass by velocity',
+    explanation: 'Linear momentum is defined as the product of mass and velocity ($p = mv$).',
+  },
+  {
+    id: 'g8-sci-kin-4',
+    type: 'mc',
+    prompt: 'What happens to total momentum during an isolated collision between two carts?',
+    choices: ['Total momentum is conserved', 'Total momentum doubles quickly', 'Total momentum drops to zero', 'Momentum turns into mass'],
+    answer: 'Total momentum is conserved',
+    explanation: 'In a closed system with no external forces, total momentum before collision equals total momentum after.',
+  },
+]
+
+export const G8_SCI_ARCHIVE_CIRCUITS_BANK: QuestionBankItem[] = [
+  {
+    id: 'g8-sci-cir-1',
+    type: 'mc',
+    prompt: 'How much work is done lifting a 10 N box by 2 meters?',
+    choices: ['20 Joules', '5 Joules', '12 Joules', '0.2 Joules'],
+    answer: '20 Joules',
+    explanation: 'Work is force multiplied by distance: $W = F \\times d = 10\\text{ N} \\times 2\\text{ m} = 20\\text{ J}$.',
+  },
+  {
+    id: 'g8-sci-cir-2',
+    type: 'mc',
+    prompt: 'According to Ohm’s Law (V = I × R), what happens if voltage increases?',
+    choices: ['Current increases for a constant resistance', 'Resistance drops to zero', 'Current drops to zero', 'The wire freezes'],
+    answer: 'Current increases for a constant resistance',
+    explanation: 'Current is directly proportional to voltage when electrical resistance remains constant.',
+  },
+  {
+    id: 'g8-sci-cir-3',
+    type: 'mc',
+    prompt: 'What is the rate at which electrical energy is transferred called?',
+    choices: ['Electric power (Watts)', 'Resistance (Ohms)', 'Voltage (Volts)', 'Current (Amperes)'],
+    answer: 'Electric power (Watts)',
+    explanation: 'Electrical power measures the rate of energy consumption ($P = VI$) in Joules per second or Watts.',
+  },
+  {
+    id: 'g8-sci-cir-4',
+    type: 'mc',
+    prompt: 'What optical phenomenon bends light waves as they enter water from air?',
+    choices: ['Refraction', 'Reflection', 'Absorption', 'Diffraction'],
+    answer: 'Refraction',
+    explanation: 'Refraction is the bending of light caused by a change in speed when entering a medium of different optical density.',
   },
 ]
 

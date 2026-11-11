@@ -134,7 +134,21 @@ export const TextbookPanel: React.FC<TextbookPanelProps> = ({
           p.summary.toLowerCase().includes(q) ||
           p.standard.toLowerCase().includes(q)
       )
-      return matchesTitle || matchesReading || matchesSteps || matchesWorked || matchesPrinciples
+      const matchesActivity = Boolean(
+        l.activity &&
+          (l.activity.title.toLowerCase().includes(q) ||
+            l.activity.description.toLowerCase().includes(q) ||
+            l.activity.steps?.some((s) => s.toLowerCase().includes(q)) ||
+            l.activity.materials?.some((m) => m.toLowerCase().includes(q)))
+      )
+      return (
+        matchesTitle ||
+        matchesReading ||
+        matchesSteps ||
+        matchesWorked ||
+        matchesPrinciples ||
+        matchesActivity
+      )
     })
   }, [currentUnit.lessons, searchQuery, course.subject, course.grade])
 
@@ -344,6 +358,81 @@ export const TextbookPanel: React.FC<TextbookPanelProps> = ({
             })}
           </div>
         </div>
+
+        {/* SECTION 4: HANDS-ON SUPPLEMENTAL INQUIRY ACTIVITY */}
+        {targetLesson.activity && (
+          <div className="textbook-section" style={{ marginTop: '1.25rem' }}>
+            <h4 className="textbook-section-title">
+              <span>🧪</span> Hands-on Activity: {targetLesson.activity.title}
+            </h4>
+            <div
+              className="card"
+              style={{
+                background: 'var(--surface-alt)',
+                borderLeft: '4px solid var(--accent)',
+                padding: '0.85rem',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.65rem',
+              }}
+            >
+              <div>
+                <div style={{ display: 'flex', gap: '0.45rem', alignItems: 'center', marginBottom: '0.35rem', flexWrap: 'wrap' }}>
+                  <span className="badge badge-primary" style={{ textTransform: 'capitalize' }}>
+                    {targetLesson.activity.type}
+                  </span>
+                  <span className="muted-sm">⏱ {targetLesson.activity.estimatedMinutes} min</span>
+                </div>
+                <p style={{ margin: 0, fontSize: '0.88rem', lineHeight: 1.5 }}>
+                  {targetLesson.activity.description}
+                </p>
+              </div>
+
+              {targetLesson.activity.materials && targetLesson.activity.materials.length > 0 && (
+                <div
+                  style={{
+                    background: 'var(--surface)',
+                    padding: '0.45rem 0.65rem',
+                    borderRadius: '6px',
+                    fontSize: '0.83rem',
+                    border: '1px solid var(--border)',
+                  }}
+                >
+                  <strong>📦 Materials Needed:</strong> {targetLesson.activity.materials.join(', ')}
+                </div>
+              )}
+
+              {targetLesson.activity.steps && targetLesson.activity.steps.length > 0 && (
+                <div style={{ fontSize: '0.86rem' }}>
+                  <strong style={{ color: 'var(--primary-bright)' }}>Investigation Steps:</strong>
+                  <ol style={{ paddingLeft: '1.25rem', margin: '0.35rem 0 0', lineHeight: 1.6 }}>
+                    {targetLesson.activity.steps.map((step, idx) => (
+                      <li key={idx} style={{ marginBottom: '0.25rem' }}>
+                        {step}
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              )}
+
+              {targetLesson.activity.reflectionPrompt && (
+                <div
+                  style={{
+                    fontSize: '0.83rem',
+                    fontStyle: 'italic',
+                    color: 'var(--muted)',
+                    background: 'var(--surface)',
+                    padding: '0.45rem 0.65rem',
+                    borderRadius: '6px',
+                    borderLeft: '3px solid var(--warning)',
+                  }}
+                >
+                  💭 <strong>Discussion / Journal Prompt:</strong> {targetLesson.activity.reflectionPrompt}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </div>
     )
   }

@@ -1,8 +1,11 @@
-import { Unit, Principle } from '../../../types'
+import { Unit } from '../../../types'
 import {
   G8_SCI_FORCES_BANK,
   G8_SCI_FIELDS_BANK,
+  G8_SCI_ENERGY_BANK,
   G8_SCI_WAVES_BANK,
+  G8_SCI_ARCHIVE_KINEMATICS_BANK,
+  G8_SCI_ARCHIVE_CIRCUITS_BANK,
   G8_SCI_EARTH_LAYERS_BANK,
   G8_SCI_TECTONICS_BANK,
   G8_SCI_GEOLOGIC_TIME_BANK,
@@ -10,801 +13,981 @@ import {
   G8_SCI_EVOLUTION_BANK,
 } from './banks'
 
-// Principles
-const P_G8_SCI_NET_FORCE: Principle = {
-  id: 'p-g8-sci-net-force',
-  title: 'Forces, Net Force & Balanced Motion',
-  standard: 'MS-PS2-2 / OH.8.PS.2',
-  summary: 'Net force is the combined push or pull on an object; unbalanced forces change speed or direction.',
-  bank: G8_SCI_FORCES_BANK,
-}
-
-const P_G8_SCI_FIELDS: Principle = {
-  id: 'p-g8-sci-fields',
-  title: 'Gravitational, Electric & Magnetic Force Fields',
-  standard: 'MS-PS2-3 / MS-PS2-5 / OH.8.PS.1',
-  summary: 'Non-contact forces act across space through fields; field strength increases with mass or charge and decreases with distance.',
-  bank: G8_SCI_FIELDS_BANK,
-}
-
-const P_G8_SCI_WAVES: Principle = {
-  id: 'p-g8-sci-waves',
-  title: 'Waves, Electromagnetic Spectrum & Digital Signals',
-  standard: 'MS-PS4-1 / MS-PS4-2 / MS-PS4-3',
-  summary: 'Waves transmit energy via frequency and amplitude; electromagnetic waves travel in vacuums; digital signals reliably encode data.',
-  bank: G8_SCI_WAVES_BANK,
-}
-
-const P_G8_SCI_EARTH_LAYERS: Principle = {
-  id: 'p-g8-sci-earth-layers',
-  title: 'Earth’s Interior Layers & Seismic Waves',
-  standard: 'OH.8.ESS.1',
-  summary: 'Earth consists of the crust, mantle, liquid outer core, and solid inner core; seismic waves reveal internal layers.',
-  bank: G8_SCI_EARTH_LAYERS_BANK,
-}
-
-const P_G8_SCI_TECTONICS: Principle = {
-  id: 'p-g8-sci-tectonics',
-  title: 'Plate Boundaries, Seafloor Spreading & Continental Drift',
-  standard: 'OH.8.ESS.2 / OH.8.ESS.3',
-  summary: 'Divergent, convergent, and transform plate boundaries shape Earth’s crust through volcanoes, trenches, and faults.',
-  bank: G8_SCI_TECTONICS_BANK,
-}
-
-const P_G8_SCI_GEOLOGIC_TIME: Principle = {
-  id: 'p-g8-sci-geologic-time',
-  title: 'Geologic Time, Rock Strata & Index Fossils',
-  standard: 'MS-ESS1-4 / OH.8.ESS.3',
-  summary: 'Rock strata and index fossils establish relative geologic age, while radiometric isotopes provide absolute numeric dates.',
-  bank: G8_SCI_GEOLOGIC_TIME_BANK,
-}
-
-const P_G8_SCI_GENETICS: Principle = {
-  id: 'p-g8-sci-genetics',
-  title: 'Reproduction, Meiosis & Punnett Square Heredity',
-  standard: 'MS-LS3-2 / OH.8.LS.1',
-  summary: 'Sexual reproduction creates genetic variation via meiosis; dominant and recessive alleles follow Mendelian inheritance patterns.',
-  bank: G8_SCI_HEREDITY_BANK,
-}
-
-const P_G8_SCI_EVOLUTION: Principle = {
-  id: 'p-g8-sci-evolution',
-  title: 'Natural Selection, Mutations & Evolutionary Evidence',
-  standard: 'MS-LS4-1 / MS-LS4-2 / OH.8.LS.3',
-  summary: 'Natural selection acts on heritable mutations; homologous anatomical structures and the fossil record document evolutionary change.',
-  bank: G8_SCI_EVOLUTION_BANK,
-}
-
 export const G8_SCIENCE_UNITS: Unit[] = [
-  // UNIT 1: Forces, Net Force & Newton’s Laws of Motion
+  // =========================================================================
+  // CORE SEQUENCE: KHAN ACADEMY MIDDLE SCHOOL PHYSICS (UNITS 1–5)
+  // =========================================================================
+
+  // UNIT 1: Motion and forces (MS-PS2-1, MS-PS2-2, OH.8.PS.2)
   {
     id: 'g8-sci-u1',
-    title: 'Unit 1: Forces, Net Force & Newton’s Laws of Motion',
+    title: 'Unit 1: Motion and forces',
     standards: ['MS-PS2-1', 'MS-PS2-2', 'OH.8.PS.2'],
+    kind: 'core',
     lessons: [
       {
         id: 'g8-sci-u1-l1',
         unitId: 'g8-sci-u1',
-        title: 'Lesson 1: Balanced & Unbalanced Forces and Net Force',
+        title: 'Position, Reference Frames, Speed & Velocity',
         kind: 'lesson',
-        partOf: 'Forces & Net Force',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/middle-school-physics/forces-and-motion-ms/unbalanced-forces-and-motion/v/balanced-and-unbalanced-forces',
-        videoTitle: 'Khan Academy: Balanced and Unbalanced Forces',
-        reading:
-          'Forces are pushes or pulls measured in newtons (N). When forces balance, net force is zero and motion does not change. Unbalanced forces cause acceleration.',
-        principles: [P_G8_SCI_NET_FORCE],
+        partOf: 'Motion and forces',
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:describing-motion/v/describing-motion',
+        videoTitle: 'Describing Motion: Speed, Velocity & Reference Frames',
+        reading: 'Motion is always relative to a reference frame. Speed measures distance divided by time, while velocity specifies both speed and direction of motion.',
+        principles: [
+          {
+            id: 'g8-sci-p-mot-1',
+            title: 'Reference Frames & Velocity',
+            standard: 'MS-PS2-2',
+            summary: 'Motion is described relative to a chosen reference frame, combining speed with direction to define velocity.',
+            bank: [G8_SCI_FORCES_BANK[0], G8_SCI_FORCES_BANK[5]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u1-l2',
         unitId: 'g8-sci-u1',
-        title: 'Lesson 2: Newton’s First Law & Inertia',
+        title: 'Acceleration & Interpreting Motion Graphs',
         kind: 'lesson',
-        partOf: 'Newton’s First Law',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/physics/forces-newtons-laws/newtons-laws-of-motion/v/newton-s-first-law-of-motion',
-        videoTitle: 'Khan Academy: Newton’s First Law of Motion',
-        reading:
-          'Newton’s First Law states that an object at rest remains at rest, and an object in motion continues at constant velocity unless acted upon by a net external force.',
-        principles: [P_G8_SCI_NET_FORCE],
+        partOf: 'Motion and forces',
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:acceleration/v/acceleration',
+        videoTitle: 'Acceleration and Motion Graphs',
+        reading: 'Acceleration is any change in velocity (speeding up, slowing down, or turning). On a position-time graph, slope represents velocity.',
+        principles: [
+          {
+            id: 'g8-sci-p-mot-2',
+            title: 'Acceleration & Motion Graphs',
+            standard: 'MS-PS2-2',
+            summary: 'Acceleration measures rate of velocity change, visible as slope on velocity-time graphs.',
+            bank: [G8_SCI_FORCES_BANK[4], G8_SCI_FORCES_BANK[5]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u1-l3',
         unitId: 'g8-sci-u1',
-        title: 'Lesson 3: Newton’s Second Law: F = m × a',
+        title: 'Force Diagrams, Net Force & Balanced Forces',
         kind: 'lesson',
-        partOf: 'Newton’s Second Law',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/physics/forces-newtons-laws/newtons-laws-of-motion/v/newton-s-second-law-of-motion',
-        videoTitle: 'Khan Academy: Newton’s Second Law of Motion',
-        reading:
-          'Acceleration depends directly on net force and inversely on mass: F = ma. Doubling force on an object doubles acceleration, while doubling mass cuts acceleration in half.',
-        principles: [P_G8_SCI_NET_FORCE],
+        partOf: 'Motion and forces',
+        estimatedMinutes: 25,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:forces-and-net-force/v/balanced-unbalanced-forces',
+        videoTitle: 'Net Force and Free-Body Force Diagrams',
+        reading: 'Forces are pushes or pulls measured in Newtons. Balanced forces result in a net force of 0 N, preserving constant motion. Unbalanced forces cause acceleration.',
+        activity: {
+          id: 'act-skydiver',
+          title: 'How can a skydiver fall safely?',
+          type: 'experiment',
+          description: 'Investigate how surface area, mass, and air resistance interact to produce terminal velocity where gravitational pull balances upward aerodynamic drag.',
+          estimatedMinutes: 30,
+          materials: ['8 to 10 fluted coffee filters', 'Stopwatch or smartphone timer', 'Measuring tape or 2-meter stick'],
+          steps: [
+            'Drop a single open coffee filter from a height of 2 meters. Time how many seconds it takes to reach the floor.',
+            'Nest 2 coffee filters together (doubling mass while keeping surface area identical). Drop from 2 meters and time.',
+            'Repeat with 4 nested filters and 8 nested filters. Record 3 drop trials for each mass condition.',
+            'Calculate average fall velocity for each mass condition and graph mass versus terminal velocity.',
+            'Draw a free-body force diagram showing downward gravity ($F_g$) and upward air resistance ($F_{\\text{drag}}$) at terminal velocity.',
+          ],
+          reflectionPrompt: 'When a skydiver deploys a parachute, how does the sudden increase in surface area change the net force and acceleration before reaching a new, safer terminal velocity?',
+        },
+        principles: [
+          {
+            id: 'g8-sci-p-mot-3',
+            title: 'Net Force & Balanced Forces',
+            standard: 'MS-PS2-2, OH.8.PS.2',
+            summary: 'Net force determines whether an object remains at constant velocity or accelerates.',
+            bank: [G8_SCI_FORCES_BANK[0], G8_SCI_FORCES_BANK[1], G8_SCI_FORCES_BANK[2], G8_SCI_FORCES_BANK[6]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u1-l4',
         unitId: 'g8-sci-u1',
-        title: 'Lesson 4: Newton’s Third Law: Action-Reaction Pairs',
+        title: 'Newton’s First & Second Laws of Motion (F = ma)',
         kind: 'lesson',
-        partOf: 'Newton’s Third Law',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/physics/forces-newtons-laws/newtons-laws-of-motion/v/newton-s-third-law-of-motion',
-        videoTitle: 'Khan Academy: Newton’s Third Law of Motion',
-        reading:
-          'For every action force, there is an equal and opposite reaction force. Forces always occur in pairs acting on two distinct interacting objects.',
-        principles: [P_G8_SCI_NET_FORCE],
+        partOf: 'Motion and forces',
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:newtons-laws/v/newtons-first-law',
+        videoTitle: 'Newton’s First and Second Laws',
+        reading: 'Newton’s First Law states objects resist changes in motion (inertia). Newton’s Second Law ($F = ma$) proves acceleration is directly proportional to force and inversely proportional to mass.',
+        principles: [
+          {
+            id: 'g8-sci-p-mot-4',
+            title: 'Inertia & Newton’s Second Law',
+            standard: 'MS-PS2-2',
+            summary: 'Inertia resists motion changes; accelerating a larger mass requires proportionally greater net force ($F = ma$).',
+            bank: [G8_SCI_FORCES_BANK[3], G8_SCI_FORCES_BANK[4], G8_SCI_FORCES_BANK[5]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u1-l5',
         unitId: 'g8-sci-u1',
-        title: 'Lesson 5: Unit 1 Checkpoint Review: Forces & Motion',
+        title: 'Newton’s Third Law & Action-Reaction in Collisions',
+        kind: 'lesson',
+        partOf: 'Motion and forces',
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:newtons-third-law/v/newtons-third-law',
+        videoTitle: 'Newton’s Third Law and Collisions',
+        reading: 'For every action force, there is an equal and opposite reaction force acting on the other object. In collisions, both objects experience equal force in opposite directions.',
+        principles: [
+          {
+            id: 'g8-sci-p-mot-5',
+            title: 'Action-Reaction & Collisions',
+            standard: 'MS-PS2-1',
+            summary: 'Forces always occur in matched action-reaction pairs acting on different colliding objects.',
+            bank: [G8_SCI_FORCES_BANK[7], G8_SCI_FORCES_BANK[1]],
+          },
+        ],
+      },
+      {
+        id: 'g8-sci-u1-rev',
+        unitId: 'g8-sci-u1',
+        title: 'Quiz: Motion and Forces Check',
         kind: 'lesson_review',
-        partOf: 'Forces Review',
-        estimatedMinutes: 12,
-        videoUrl:
-          'https://www.khanacademy.org/science/middle-school-physics/forces-and-motion-ms/v/forces-review',
-        videoTitle: 'Khan Academy: Newton’s Laws Review',
-        reading:
-          'Review net force calculations, vector balance, friction, inertia, F = ma problem solving, and action-reaction pairings.',
-        principles: [P_G8_SCI_NET_FORCE],
+        partOf: 'Motion and forces',
+        estimatedMinutes: 15,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces',
+        videoTitle: 'Motion and Forces Review',
+        reading: 'Review reference frames, velocity graphs, net force calculations, inertia, and Newton’s three laws of motion.',
+        principles: [
+          {
+            id: 'g8-sci-p-mot-rev',
+            title: 'Motion & Forces Review',
+            standard: 'MS-PS2-1, MS-PS2-2',
+            summary: 'Review balanced forces, acceleration calculations, and collision dynamics.',
+            bank: G8_SCI_FORCES_BANK,
+          },
+        ],
+      },
+      {
+        id: 'g8-sci-u1-exam',
+        unitId: 'g8-sci-u1',
+        title: 'Unit 1 Exam: Motion and forces',
+        kind: 'unit_test',
+        partOf: 'Motion and forces',
+        estimatedMinutes: 25,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces',
+        videoTitle: 'Motion and Forces Exam',
+        reading: 'Comprehensive assessment on force diagrams, balanced forces, Newton’s laws, and collision physics.',
+        principles: [
+          {
+            id: 'g8-sci-p-mot-exam',
+            title: 'Motion & Forces Mastery',
+            standard: 'MS-PS2-1, MS-PS2-2, OH.8.PS.2',
+            summary: 'Demonstrate mastery of net forces, inertia, $F = ma$, and action-reaction pairs.',
+            bank: G8_SCI_FORCES_BANK,
+          },
+        ],
       },
     ],
   },
 
-  // UNIT 2: Non-Contact Forces & Force Fields
+  // UNIT 2: Non-contact interactions (MS-PS2-3, MS-PS2-4, MS-PS2-5, OH.8.PS.1)
   {
     id: 'g8-sci-u2',
-    title: 'Unit 2: Gravitational, Electric & Magnetic Force Fields',
-    standards: ['MS-PS2-3', 'MS-PS2-5', 'OH.8.PS.1'],
+    title: 'Unit 2: Non-contact interactions',
+    standards: ['MS-PS2-3', 'MS-PS2-4', 'MS-PS2-5', 'OH.8.PS.1'],
+    kind: 'core',
     lessons: [
       {
         id: 'g8-sci-u2-l1',
         unitId: 'g8-sci-u2',
-        title: 'Lesson 1: Gravitational Fields & Planetary Mass',
+        title: 'Gravitational Forces: Mass & Distance Relationships',
         kind: 'lesson',
-        partOf: 'Gravity & Distance',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/physics/forces-newtons-laws/gravity/v/introduction-to-gravity',
-        videoTitle: 'Khan Academy: Introduction to Gravity and Gravitational Fields',
-        reading:
-          'Gravity is a non-contact attractive force between masses. Field strength increases with greater mass and decreases rapidly as distance between objects expands.',
-        principles: [P_G8_SCI_FIELDS],
+        partOf: 'Non-contact interactions',
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions/x1baed5db7c1bb50b:gravity/v/gravity-distance-mass',
+        videoTitle: 'Gravity: Mass and Distance',
+        reading: 'Gravity is an attractive non-contact force acting across space between all objects with mass. Gravitational attraction strengthens with greater mass and weakens with distance.',
+        principles: [
+          {
+            id: 'g8-sci-p-fld-1',
+            title: 'Gravitational Fields & Mass',
+            standard: 'MS-PS2-4',
+            summary: 'Gravitational attraction depends directly on object masses and inversely on the distance separating them.',
+            bank: [G8_SCI_FIELDS_BANK[0], G8_SCI_FIELDS_BANK[1], G8_SCI_FIELDS_BANK[5]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u2-l2',
         unitId: 'g8-sci-u2',
-        title: 'Lesson 2: Electric Fields & Static Charges',
+        title: 'Electric Forces, Static Charge & Electric Fields',
         kind: 'lesson',
-        partOf: 'Electric Fields',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/physics/electric-charge-electric-force-and-voltage/charge-electric-force/v/charge-and-electric-force-intro',
-        videoTitle: 'Khan Academy: Electric Charges and Electric Force Fields',
-        reading:
-          'Objects with like electrical charges repel while opposite charges attract. Electric fields permeate the space around charged particles, exerting non-contact forces.',
-        principles: [P_G8_SCI_FIELDS],
+        partOf: 'Non-contact interactions',
+        estimatedMinutes: 25,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions/x1baed5db7c1bb50b:electric-forces/v/electric-charge-forces',
+        videoTitle: 'Electric Charges and Fields',
+        reading: 'Opposite electrical charges attract while like charges repel. An invisible electric field surrounds charged particles, exerting force across distance without physical touching.',
+        activity: {
+          id: 'act-bees',
+          title: 'How do bees pick up pollen in flowers?',
+          type: 'experiment',
+          description: 'Model electrostatic induction to discover how flying bees accumulate positive charge by friction with air and pull neutral or negatively charged flower pollen grains across empty space.',
+          estimatedMinutes: 25,
+          materials: ['Latex balloon', 'Wool cloth or hair', 'Ground black pepper or turmeric', 'Paper plate'],
+          steps: [
+            'Scatter half a teaspoon of ground black pepper evenly across the center of a dry paper plate.',
+            'Inflate the balloon and tie it off. Rub the balloon vigorously against a wool cloth (or clean hair) for 20 seconds to build static charge.',
+            'Slowly lower the balloon toward the pepper, stopping 2 to 3 cm above the plate.',
+            'Watch closely: notice pepper grains standing upright and jumping through the air to stick onto the balloon.',
+            'Draw a diagram illustrating charge separation and field lines between the charged balloon and induced dipole grains.',
+          ],
+          reflectionPrompt: 'Why do pollen grains leap onto a flying bee even if the bee never directly bumps into the flower’s stamen?',
+        },
+        principles: [
+          {
+            id: 'g8-sci-p-fld-2',
+            title: 'Electric Charges & Fields',
+            standard: 'MS-PS2-3',
+            summary: 'Electric forces act across distance through fields, attracting opposite charges and repelling like charges.',
+            bank: [G8_SCI_FIELDS_BANK[2], G8_SCI_FIELDS_BANK[6], G8_SCI_FIELDS_BANK[7]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u2-l3',
         unitId: 'g8-sci-u2',
-        title: 'Lesson 3: Magnetic Fields & Electromagnetism',
+        title: 'Magnetic Forces, Poles & Electromagnets',
         kind: 'lesson',
-        partOf: 'Magnetic Fields',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/physics/magnetic-forces-and-magnetic-fields/magnets-magnetic-fields/v/introduction-to-magnetism',
-        videoTitle: 'Khan Academy: Magnetic Fields and Electromagnets',
-        reading:
-          'Magnetic field lines exit the north pole and enter the south pole of magnets. Running electric current through a wire coil creates an adjustable electromagnet.',
-        principles: [P_G8_SCI_FIELDS],
+        partOf: 'Non-contact interactions',
+        isOhioExtension: true,
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions/x1baed5db7c1bb50b:magnetic-forces/v/magnets-magnetic-fields',
+        videoTitle: 'Magnetic Poles and Electromagnets',
+        reading: 'Magnetic poles always come in pairs (North and South). Running electric current through coiled wire creates an electromagnet whose strength increases with more wire turns.',
+        principles: [
+          {
+            id: 'g8-sci-p-fld-3',
+            title: 'Magnetic Fields & Electromagnetism',
+            standard: 'MS-PS2-5, OH.8.PS.1',
+            summary: 'Magnetic fields exert forces on magnets and moving charges; electromagnets convert electricity into magnetism.',
+            bank: [G8_SCI_FIELDS_BANK[3], G8_SCI_FIELDS_BANK[4]],
+          },
+        ],
       },
       {
-        id: 'g8-sci-u2-l4',
+        id: 'g8-sci-u2-rev',
         unitId: 'g8-sci-u2',
-        title: 'Lesson 4: Unit 2 Checkpoint Review: Force Fields',
+        title: 'Quiz: Non-Contact Interactions Check',
         kind: 'lesson_review',
-        partOf: 'Fields Review',
-        estimatedMinutes: 12,
-        videoUrl:
-          'https://www.khanacademy.org/science/physics/magnetic-forces-and-magnetic-fields/v/force-fields-review',
-        videoTitle: 'Khan Academy: Non-Contact Forces Review',
-        reading:
-          'Synthesize field interactions: inverse distance relationships, charge attraction/repulsion, and electromagnetic strength factors.',
-        principles: [P_G8_SCI_FIELDS],
+        partOf: 'Non-contact interactions',
+        estimatedMinutes: 15,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions',
+        videoTitle: 'Non-Contact Forces Review',
+        reading: 'Synthesize how gravitational, electric, and magnetic fields exert forces across space without physical contact.',
+        principles: [
+          {
+            id: 'g8-sci-p-fld-rev',
+            title: 'Field Forces Review',
+            standard: 'MS-PS2-5',
+            summary: 'Review gravity, electric charge attraction, and magnetic induction.',
+            bank: G8_SCI_FIELDS_BANK,
+          },
+        ],
+      },
+      {
+        id: 'g8-sci-u2-exam',
+        unitId: 'g8-sci-u2',
+        title: 'Unit 2 Exam: Non-contact interactions',
+        kind: 'unit_test',
+        partOf: 'Non-contact interactions',
+        estimatedMinutes: 25,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions',
+        videoTitle: 'Non-Contact Interactions Exam',
+        reading: 'Comprehensive assessment on gravity, electrostatic charges, magnetic poles, and field strength factors.',
+        principles: [
+          {
+            id: 'g8-sci-p-fld-exam',
+            title: 'Non-Contact Mastery',
+            standard: 'MS-PS2-3, MS-PS2-4, MS-PS2-5',
+            summary: 'Demonstrate mastery of gravitational mass/distance relationships, static charges, and magnetic fields.',
+            bank: G8_SCI_FIELDS_BANK,
+          },
+        ],
       },
     ],
   },
 
-  // UNIT 3: Waves & Digital Information Transfer
+  // UNIT 3: Energy (MS-PS3-1, MS-PS3-2, MS-PS3-3, MS-PS3-4, MS-PS3-5)
   {
     id: 'g8-sci-u3',
-    title: 'Unit 3: Waves & Digital Information Transfer',
-    standards: ['MS-PS4-1', 'MS-PS4-2', 'MS-PS4-3'],
+    title: 'Unit 3: Energy',
+    standards: ['MS-PS3-1', 'MS-PS3-2', 'MS-PS3-3', 'MS-PS3-4', 'MS-PS3-5'],
+    kind: 'core',
     lessons: [
       {
         id: 'g8-sci-u3-l1',
         unitId: 'g8-sci-u3',
-        title: 'Lesson 1: Wave Properties: Amplitude, Wavelength & Frequency',
+        title: 'Kinetic Energy & How Mass & Speed Affect It',
         kind: 'lesson',
-        partOf: 'Wave Mechanics',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/middle-school-physics/waves-and-information/v/introduction-to-waves',
-        videoTitle: 'Khan Academy: Introduction to Waves',
-        reading:
-          'A wave transfers energy through oscillations. Amplitude reflects wave energy and loudness; frequency measures wave cycles passing per second; wavelength is distance between peaks.',
-        principles: [P_G8_SCI_WAVES],
+        partOf: 'Energy',
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy/x1baed5db7c1bb50b:kinetic-energy/v/kinetic-energy',
+        videoTitle: 'Kinetic Energy, Mass, and Speed',
+        reading: 'Kinetic energy is energy of motion ($KE = \\frac{1}{2}mv^2$). Kinetic energy is proportional to mass and to the square of speed, meaning doubling speed quadruples kinetic energy.',
+        principles: [
+          {
+            id: 'g8-sci-p-en-1',
+            title: 'Kinetic Energy & Velocity Squared',
+            standard: 'MS-PS3-1',
+            summary: 'Kinetic energy depends on mass and velocity squared; speed changes have exponential impacts on motion energy.',
+            bank: [G8_SCI_ENERGY_BANK[0], G8_SCI_ENERGY_BANK[1]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u3-l2',
         unitId: 'g8-sci-u3',
-        title: 'Lesson 2: Mechanical Sound Waves vs. Electromagnetic Light Waves',
+        title: 'Potential Energy in Gravitational & Elastic Systems',
         kind: 'lesson',
-        partOf: 'Sound vs Light',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/middle-school-physics/waves-and-information/v/sound-properties',
-        videoTitle: 'Khan Academy: Sound Waves vs Light Waves',
-        reading:
-          'Sound is a mechanical longitudinal wave requiring physical matter to propagate. Light is an electromagnetic transverse wave that travels freely through vacuums.',
-        principles: [P_G8_SCI_WAVES],
+        partOf: 'Energy',
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy/x1baed5db7c1bb50b:potential-energy/v/potential-energy',
+        videoTitle: 'Gravitational and Elastic Potential Energy',
+        reading: 'Potential energy is stored energy of position. Higher elevations store gravitational potential energy, while stretched springs store elastic potential energy.',
+        principles: [
+          {
+            id: 'g8-sci-p-en-2',
+            title: 'Potential Energy of Position',
+            standard: 'MS-PS3-2',
+            summary: 'Objects store potential energy based on relative position in gravitational, elastic, or magnetic fields.',
+            bank: [G8_SCI_ENERGY_BANK[2], G8_SCI_ENERGY_BANK[5]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u3-l3',
         unitId: 'g8-sci-u3',
-        title: 'Lesson 3: The Electromagnetic Spectrum & Wave Energy',
+        title: 'Conservation of Energy & Thermal Transfer',
         kind: 'lesson',
-        partOf: 'EM Spectrum',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/physics/light-and-optics/electromagnetic-waves-and-the-electromagnetic-spectrum/v/electromagnetic-spectrum',
-        videoTitle: 'Khan Academy: The Electromagnetic Spectrum',
-        reading:
-          'The electromagnetic spectrum ranges from low-energy radio waves to visible light and high-energy gamma rays. Higher frequency waves carry higher energy.',
-        principles: [P_G8_SCI_WAVES],
+        partOf: 'Energy',
+        estimatedMinutes: 25,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy/x1baed5db7c1bb50b:conservation-of-energy/v/conservation-of-energy',
+        videoTitle: 'Conservation of Energy and Dissipation',
+        reading: 'Energy cannot be created or destroyed. In real-world systems, friction converts mechanical kinetic and potential energy into thermal energy and acoustic vibrations.',
+        activity: {
+          id: 'act-basketball',
+          title: 'Why doesn’t a basketball bounce forever?',
+          type: 'experiment',
+          description: 'Measure bounce heights and calculate kinetic energy lost to thermal energy and sound during elastic collisions with various floor surfaces.',
+          estimatedMinutes: 30,
+          materials: ['Basketball or tennis ball', 'Meter stick or measuring tape', 'Different surfaces: hard tile/concrete, wood, and rug/carpet'],
+          steps: [
+            'Tape a meter stick vertically against a wall.',
+            'Hold the ball so its bottom aligns with the 100 cm mark. Release cleanly without pushing.',
+            'Observe and record the rebound height of the first bounce (use phone video if helpful).',
+            'Repeat 3 times each from 100 cm, 150 cm, and 200 cm release heights.',
+            'Test on a hard floor versus a carpeted floor. Calculate the percentage of rebound height retained.',
+          ],
+          reflectionPrompt: 'Trace the complete energy pathway: Gravitational potential energy → Kinetic energy → Elastic compression → Thermal energy and sound upon impact.',
+        },
+        principles: [
+          {
+            id: 'g8-sci-p-en-3',
+            title: 'Conservation & Thermal Dissipation',
+            standard: 'MS-PS3-5',
+            summary: 'Total energy is conserved as mechanical energy transforms into thermal energy during non-ideal collisions.',
+            bank: [G8_SCI_ENERGY_BANK[3], G8_SCI_ENERGY_BANK[4]],
+          },
+        ],
       },
       {
-        id: 'g8-sci-u3-l4',
+        id: 'g8-sci-u3-rev',
         unitId: 'g8-sci-u3',
-        title: 'Lesson 4: Digital Binary Signals vs. Analog Wave Transmission',
+        title: 'Quiz: Energy Check',
         kind: 'lesson_review',
-        partOf: 'Digital Signals',
-        estimatedMinutes: 12,
-        videoUrl:
-          'https://www.khanacademy.org/science/middle-school-physics/waves-and-information/v/digital-vs-analog',
-        videoTitle: 'Khan Academy: Digital Signals and Data Encoding',
-        reading:
-          'Digital communication converts information into discrete binary pulses (0s and 1s), which resist noise and signal degradation far better than continuous analog waves.',
-        principles: [P_G8_SCI_WAVES],
+        partOf: 'Energy',
+        estimatedMinutes: 15,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy',
+        videoTitle: 'Energy Review',
+        reading: 'Review kinetic energy relationships, potential energy positions, and energy transformations.',
+        principles: [
+          {
+            id: 'g8-sci-p-en-rev',
+            title: 'Energy Concepts Review',
+            standard: 'MS-PS3-1, MS-PS3-2',
+            summary: 'Review kinetic-potential energy conversions and conservation laws.',
+            bank: G8_SCI_ENERGY_BANK,
+          },
+        ],
+      },
+      {
+        id: 'g8-sci-u3-exam',
+        unitId: 'g8-sci-u3',
+        title: 'Unit 3 Exam: Energy',
+        kind: 'unit_test',
+        partOf: 'Energy',
+        estimatedMinutes: 25,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy',
+        videoTitle: 'Energy Mastery Exam',
+        reading: 'Comprehensive assessment on kinetic energy formulas, potential energy storage, and energy conservation.',
+        principles: [
+          {
+            id: 'g8-sci-p-en-exam',
+            title: 'Energy Mastery',
+            standard: 'MS-PS3-1, MS-PS3-2, MS-PS3-5',
+            summary: 'Demonstrate mastery of kinetic and potential energy relationships and thermal energy dissipation.',
+            bank: G8_SCI_ENERGY_BANK,
+          },
+        ],
       },
     ],
   },
 
-  // UNIT 4: Earth’s Interior Layers & Seismic Waves
+  // UNIT 4: Waves (MS-PS4-1, MS-PS4-2, MS-PS4-3)
   {
     id: 'g8-sci-u4',
-    title: 'Unit 4: Earth’s Interior Layers & Seismic Waves',
-    standards: ['OH.8.ESS.1'],
+    title: 'Unit 4: Waves',
+    standards: ['MS-PS4-1', 'MS-PS4-2', 'MS-PS4-3'],
+    kind: 'core',
     lessons: [
       {
         id: 'g8-sci-u4-l1',
         unitId: 'g8-sci-u4',
-        title: 'Lesson 1: Earth’s Layered Structure: Crust, Mantle, Cores',
+        title: 'Wave Properties: Amplitude, Wavelength & Frequency',
         kind: 'lesson',
-        partOf: 'Earth Interior Layers',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/cosmology-and-astronomy/earth-history-topic/plate-techtonics/v/structure-of-the-earth',
-        videoTitle: 'Khan Academy: Structure of the Earth',
-        reading:
-          'Earth is organized into distinct density layers: thin rocky crust, semi-solid churning mantle, molten iron-nickel outer core, and dense solid iron inner core.',
-        principles: [P_G8_SCI_EARTH_LAYERS],
+        partOf: 'Waves',
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves/x1baed5db7c1bb50b:wave-properties/v/wave-properties',
+        videoTitle: 'Wave Properties: Amplitude and Frequency',
+        reading: 'A wave repeats in space and time, transferring energy without transferring matter. Amplitude relates to wave energy and loudness; frequency relates to pitch.',
+        principles: [
+          {
+            id: 'g8-sci-p-wav-1',
+            title: 'Amplitude & Frequency Properties',
+            standard: 'MS-PS4-1',
+            summary: 'Amplitude measures energy intensity, while frequency and wavelength have an inverse relationship.',
+            bank: [G8_SCI_WAVES_BANK[0], G8_SCI_WAVES_BANK[1]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u4-l2',
         unitId: 'g8-sci-u4',
-        title: 'Lesson 2: Mantle Convection & Thermal Dynamics',
+        title: 'Mechanical Sound Waves & Transmission Through Media',
         kind: 'lesson',
-        partOf: 'Mantle Convection',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/cosmology-and-astronomy/earth-history-topic/plate-techtonics/v/plate-tectonics-convection-in-the-mantle',
-        videoTitle: 'Khan Academy: Thermal Convection in Earth’s Mantle',
-        reading:
-          'Deep radioactive decay heats the lower mantle. Heated ductile rock becomes less dense, slowly buoying toward the crust and driving lithospheric plate movement.',
-        principles: [P_G8_SCI_EARTH_LAYERS],
+        partOf: 'Waves',
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves/x1baed5db7c1bb50b:sound-waves/v/sound-waves',
+        videoTitle: 'Mechanical Sound Waves and Matter',
+        reading: 'Sound is a mechanical longitudinal wave requiring physical matter to vibrate. Sound travels faster through denser solids and cannot travel through empty space.',
+        principles: [
+          {
+            id: 'g8-sci-p-wav-2',
+            title: 'Mechanical Waves & Vacuum Limits',
+            standard: 'MS-PS4-2',
+            summary: 'Sound requires a material medium to propagate and cannot travel through a vacuum.',
+            bank: [G8_SCI_WAVES_BANK[2], G8_SCI_WAVES_BANK[0]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u4-l3',
         unitId: 'g8-sci-u4',
-        title: 'Lesson 3: Seismic Waves: P-Waves, S-Waves & Core Shadow Zones',
+        title: 'Electromagnetic Light Waves: Reflection & Refraction',
         kind: 'lesson',
-        partOf: 'Seismic Wave Probing',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/cosmology-and-astronomy/earth-history-topic/seismic-waves/v/seismic-waves',
-        videoTitle: 'Khan Academy: Seismic Waves and Earth’s Interior',
-        reading:
-          'Primary compressional waves (P-waves) travel through both solids and liquids. Secondary shear waves (S-waves) cannot travel through liquids, revealing Earth’s liquid outer core.',
-        principles: [P_G8_SCI_EARTH_LAYERS],
+        partOf: 'Waves',
+        estimatedMinutes: 25,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves/x1baed5db7c1bb50b:light-waves/v/light-waves-reflection',
+        videoTitle: 'Light Waves, Reflection, and Refraction',
+        reading: 'Light waves are electromagnetic waves that travel through vacuums at $300,000\\text{ km/s}$. Materials reflect, absorb, or transmit light; refraction bends light across media boundaries.',
+        activity: {
+          id: 'act-light-art',
+          title: 'How can light interactions be used to create art?',
+          type: 'hands_on',
+          description: 'Explore transmission, absorption, reflection, and diffraction using compact discs, prisms, and primary color filters to design optical art.',
+          estimatedMinutes: 30,
+          materials: ['Flashlight or phone light', 'Old compact disc (CD)', 'Prism or glass of water', 'Cellophane sheets (red, green, blue)', 'White paper screen'],
+          steps: [
+            'Shine a flashlight against the shiny data tracks of a CD onto white paper to produce a bright rainbow diffraction pattern.',
+            'Place red, green, and blue cellophane filters in front of the flashlight beam. Observe how each filter absorbs specific wavelengths.',
+            'Overlap red and green light on the paper screen to demonstrate additive color mixing.',
+            'Place a prism in the sunlight to demonstrate refraction and dispersion of white light into the continuous visible spectrum.',
+            'Create a stained-glass optical art mosaic using overlapping colored filters on clear plastic.',
+          ],
+          reflectionPrompt: 'Why does a red filter look red to our eyes, and what happens when you shine pure blue light onto a red filter?',
+        },
+        principles: [
+          {
+            id: 'g8-sci-p-wav-3',
+            title: 'Electromagnetic Spectrum & Light Waves',
+            standard: 'MS-PS4-2',
+            summary: 'Electromagnetic waves travel through vacuums; wavelengths correspond to visible colors.',
+            bank: [G8_SCI_WAVES_BANK[3], G8_SCI_WAVES_BANK[5]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u4-l4',
         unitId: 'g8-sci-u4',
-        title: 'Lesson 4: Unit 4 Checkpoint Review: Earth’s Interior',
+        title: 'Analog vs. Digital Signals in Communication',
+        kind: 'lesson',
+        partOf: 'Waves',
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves/x1baed5db7c1bb50b:digital-signals/v/analog-vs-digital-signals',
+        videoTitle: 'Digital vs. Analog Signals',
+        reading: 'Digital signals encode information as binary pulses (0s and 1s) that resist noise degradation, making digital transmission far more reliable than continuous analog waves.',
+        principles: [
+          {
+            id: 'g8-sci-p-wav-4',
+            title: 'Digital Signal Reliability',
+            standard: 'MS-PS4-3',
+            summary: 'Digital binary pulses allow high-fidelity transmission and noise filtration in modern communication.',
+            bank: [G8_SCI_WAVES_BANK[4], G8_SCI_WAVES_BANK[1]],
+          },
+        ],
+      },
+      {
+        id: 'g8-sci-u4-rev',
+        unitId: 'g8-sci-u4',
+        title: 'Quiz: Waves Check',
         kind: 'lesson_review',
-        partOf: 'Earth Interior Review',
-        estimatedMinutes: 12,
-        videoUrl:
-          'https://www.khanacademy.org/science/cosmology-and-astronomy/earth-history-topic/v/earth-layers-review',
-        videoTitle: 'Khan Academy: Earth Layers Review',
-        reading:
-          'Review Earth’s density stratification, lithosphere/asthenosphere mechanics, seismic wave refraction, and magnetosphere generation.',
-        principles: [P_G8_SCI_EARTH_LAYERS],
+        partOf: 'Waves',
+        estimatedMinutes: 15,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves',
+        videoTitle: 'Waves Concept Review',
+        reading: 'Review wave amplitudes, frequencies, mechanical vs. electromagnetic wave properties, and digital communication.',
+        principles: [
+          {
+            id: 'g8-sci-p-wav-rev',
+            title: 'Waves Review',
+            standard: 'MS-PS4-1, MS-PS4-2',
+            summary: 'Review amplitude, frequency, mechanical sound, light spectra, and digital signals.',
+            bank: G8_SCI_WAVES_BANK,
+          },
+        ],
+      },
+      {
+        id: 'g8-sci-u4-exam',
+        unitId: 'g8-sci-u4',
+        title: 'Unit 4 Exam: Waves',
+        kind: 'unit_test',
+        partOf: 'Waves',
+        estimatedMinutes: 25,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves',
+        videoTitle: 'Waves Mastery Exam',
+        reading: 'Comprehensive assessment on mechanical waves, light reflection/refraction, electromagnetic frequencies, and digital signals.',
+        principles: [
+          {
+            id: 'g8-sci-p-wav-exam',
+            title: 'Waves Mastery',
+            standard: 'MS-PS4-1, MS-PS4-2, MS-PS4-3',
+            summary: 'Demonstrate mastery of wave properties, media transmission, light optics, and digital signals.',
+            bank: G8_SCI_WAVES_BANK,
+          },
+        ],
       },
     ],
   },
 
-  // UNIT 5: Plate Tectonics & Seismic Activity
+  // UNIT 5: Course Challenge: Middle School Physics
   {
     id: 'g8-sci-u5',
-    title: 'Unit 5: Plate Tectonics & Seismic Activity',
-    standards: ['OH.8.ESS.2', 'OH.8.ESS.3'],
-    isOhioExtension: true,
+    title: 'Unit 5: Course Challenge: Middle School Physics',
+    standards: ['MS-PS2', 'MS-PS3', 'MS-PS4'],
+    kind: 'core',
     lessons: [
       {
-        id: 'g8-sci-u5-l1',
+        id: 'g8-sci-u5-challenge',
         unitId: 'g8-sci-u5',
-        title: 'Lesson 1: Divergent Boundaries & Seafloor Spreading',
-        kind: 'lesson',
-        partOf: 'Divergent Boundaries',
-        isOhioExtension: true,
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/cosmology-and-astronomy/earth-history-topic/plate-techtonics/v/seafloor-spreading-and-magnetic-striping',
-        videoTitle: 'Khan Academy: Seafloor Spreading & Magnetic Striping',
-        reading:
-          'At divergent boundaries along mid-ocean ridges, tectonic plates pull apart. Upwelling basalt magma solidifies, recording geomagnetic reversals in expanding crust.',
-        principles: [P_G8_SCI_TECTONICS],
-      },
-      {
-        id: 'g8-sci-u5-l2',
-        unitId: 'g8-sci-u5',
-        title: 'Lesson 2: Convergent Boundaries, Subduction & Mountains',
-        kind: 'lesson',
-        partOf: 'Convergent Boundaries',
-        isOhioExtension: true,
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/cosmology-and-astronomy/earth-history-topic/plate-techtonics/v/convergent-plate-boundaries',
-        videoTitle: 'Khan Academy: Convergent Plate Boundaries and Subduction',
-        reading:
-          'Dense oceanic slabs subduct beneath lighter continental plates, carving deep trenches and fueling volcanic arcs. Colliding continental plates crumple into mountain belts.',
-        principles: [P_G8_SCI_TECTONICS],
-      },
-      {
-        id: 'g8-sci-u5-l3',
-        unitId: 'g8-sci-u5',
-        title: 'Lesson 3: Transform Faults, Seismic Hazards & Ohio Geology',
-        kind: 'lesson',
-        partOf: 'Transform Faults & Ohio Rock Record',
-        isOhioExtension: true,
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/cosmology-and-astronomy/earth-history-topic/plate-techtonics/v/transform-boundaries-and-earthquakes',
-        videoTitle: 'Khan Academy: Transform Boundaries and Seismic Hazards',
-        reading:
-          'Plates slide past each other along transform faults, accumulating strain until brittle slip releases seismic energy. Ohio’s sedimentary bedrock preserves ancient Paleozoic marine fossils.',
-        principles: [P_G8_SCI_TECTONICS],
-      },
-      {
-        id: 'g8-sci-u5-l4',
-        unitId: 'g8-sci-u5',
-        title: 'Lesson 4: Unit 5 Checkpoint Review: Plate Tectonics',
-        kind: 'lesson_review',
-        partOf: 'Tectonics Review',
-        isOhioExtension: true,
-        estimatedMinutes: 12,
-        videoUrl:
-          'https://www.khanacademy.org/science/cosmology-and-astronomy/earth-history-topic/v/plate-tectonics-review',
-        videoTitle: 'Khan Academy: Plate Tectonics and Geology Review',
-        reading:
-          'Review boundary classification, continental drift evidence (Pangaea), relative fossil dating via superposition, and regional seismic fault networks.',
-        principles: [P_G8_SCI_TECTONICS],
+        title: 'Course Challenge: Middle School Physics',
+        kind: 'unit_test',
+        partOf: 'Course Challenge',
+        estimatedMinutes: 35,
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics',
+        videoTitle: 'Middle School Physics Course Challenge',
+        reading: 'Comprehensive capstone exam assessing mastery of motion, net forces, Newton’s laws, non-contact fields, energy conservation, and wave properties.',
+        principles: [
+          {
+            id: 'g8-sci-p-challenge',
+            title: 'Middle School Physics Mastery',
+            standard: 'MS-PS2, MS-PS3, MS-PS4',
+            summary: 'Synthesize motion, force diagrams, non-contact fields, kinetic/potential energy, and wave optics.',
+            bank: [
+              ...G8_SCI_FORCES_BANK,
+              ...G8_SCI_FIELDS_BANK,
+              ...G8_SCI_ENERGY_BANK,
+              ...G8_SCI_WAVES_BANK,
+            ],
+          },
+        ],
       },
     ],
   },
 
-  // UNIT 6: Geologic Time, Fossils & Earth History
+  // =========================================================================
+  // SUPPLEMENTAL SEQUENCE: PHYSICS ARCHIVE (UNITS 6–7, ALWAYS UNLOCKED)
+  // =========================================================================
+
+  // UNIT 6: Supplemental Physics Archive — Kinematics & Quantitative Dynamics (isSupplemental: true)
   {
     id: 'g8-sci-u6',
-    title: 'Unit 6: Geologic Time, Fossils & Earth History',
-    standards: ['MS-ESS1-4', 'OH.8.ESS.3'],
+    title: 'Unit 6: Supplemental: Physics Archive — Kinematics & Quantitative Dynamics',
+    standards: ['Physics Library Archive', 'Quantitative Dynamics'],
+    kind: 'core',
+    isSupplemental: true,
     lessons: [
       {
         id: 'g8-sci-u6-l1',
         unitId: 'g8-sci-u6',
-        title: 'Lesson 1: The Law of Superposition & Relative Age Dating',
+        title: 'Kinematic Equations & Free-Fall Acceleration (g = 9.8 m/s²)',
         kind: 'lesson',
-        partOf: 'Relative Dating',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/middle-school-earth-and-space-science/geologic-time/v/relative-dating-principles',
-        videoTitle: 'Khan Academy: Relative Dating and Rock Layers',
-        reading:
-          'Sedimentary strata accumulate in horizontal beds where bottom layers are oldest and top layers youngest, allowing geologists to sequence past events.',
-        principles: [P_G8_SCI_GEOLOGIC_TIME],
+        partOf: 'Supplemental: Physics Archive',
+        isSupplemental: true,
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/physics/one-dimensional-motion/acceleration-tutorial/v/acceleration',
+        videoTitle: 'One-Dimensional Kinematics & Free Fall',
+        reading: 'Quantitative kinematics connects displacement, initial velocity, final velocity, constant acceleration, and time ($v = v_0 + at$, $d = v_0t + \\frac{1}{2}at^2$).',
+        principles: [
+          {
+            id: 'g8-sci-p-kin-1',
+            title: 'Kinematics & Free Fall Calculations',
+            standard: 'High School Physics Intro',
+            summary: 'Calculate velocity, displacement, and acceleration under constant gravitational acceleration ($9.8\\text{ m/s}^2$).',
+            bank: [G8_SCI_ARCHIVE_KINEMATICS_BANK[0], G8_SCI_ARCHIVE_KINEMATICS_BANK[1]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u6-l2',
         unitId: 'g8-sci-u6',
-        title: 'Lesson 2: Index Fossils & Correlating Distant Strata',
+        title: 'Momentum, Impulse & Elastic vs. Inelastic Collisions',
         kind: 'lesson',
-        partOf: 'Index Fossils',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/middle-school-earth-and-space-science/geologic-time/v/index-fossils',
-        videoTitle: 'Khan Academy: Index Fossils and Biostratigraphy',
-        reading:
-          'Index fossils represent organisms that were geographically widespread but existed for relatively brief periods, enabling precise time correlation across separated continents.',
-        principles: [P_G8_SCI_GEOLOGIC_TIME],
-      },
-      {
-        id: 'g8-sci-u6-l3',
-        unitId: 'g8-sci-u6',
-        title: 'Lesson 3: Radiometric Dating & Absolute Age Calculation',
-        kind: 'lesson',
-        partOf: 'Radiometric Dating',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/middle-school-earth-and-space-science/geologic-time/v/radiometric-dating',
-        videoTitle: 'Khan Academy: Radioactive Isotopes and Half-Lives',
-        reading:
-          'Radioactive parent isotopes decay into stable daughter isotopes at constant rates called half-lives. Comparing ratios gives the rock’s exact numeric age in millions of years.',
-        principles: [P_G8_SCI_GEOLOGIC_TIME],
-      },
-      {
-        id: 'g8-sci-u6-l4',
-        unitId: 'g8-sci-u6',
-        title: 'Lesson 4: Unit 6 Review & Geologic History Check',
-        kind: 'lesson_review',
-        partOf: 'Geologic Time Review',
-        estimatedMinutes: 12,
-        videoUrl:
-          'https://www.khanacademy.org/science/middle-school-earth-and-space-science/geologic-time/v/geologic-time-review',
-        videoTitle: 'Khan Academy: Geologic Time Scale Review',
-        reading:
-          'Review unconformities, fossil succession, major geologic eras (Paleozoic, Mesozoic, Cenozoic), and catastrophic mass extinction boundaries.',
-        principles: [P_G8_SCI_GEOLOGIC_TIME],
+        partOf: 'Supplemental: Physics Archive',
+        isSupplemental: true,
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/physics/linear-momentum/momentum-tutorial/v/introduction-to-momentum',
+        videoTitle: 'Linear Momentum and Impulse',
+        reading: 'Momentum ($p = mv$) measures mass in motion. Impulse ($J = F\\Delta t$) equals change in momentum, explaining why airbags save lives by lengthening impact time.',
+        principles: [
+          {
+            id: 'g8-sci-p-kin-2',
+            title: 'Conservation of Linear Momentum',
+            standard: 'High School Physics Intro',
+            summary: 'Total momentum is conserved in isolated collisions; impulse equals force times contact duration.',
+            bank: [G8_SCI_ARCHIVE_KINEMATICS_BANK[2], G8_SCI_ARCHIVE_KINEMATICS_BANK[3]],
+          },
+        ],
       },
     ],
   },
 
-  // UNIT 7: Genetics, Speciation & Heredity
+  // UNIT 7: Supplemental Physics Archive — Work, Power, Circuits & Optics (isSupplemental: true)
   {
     id: 'g8-sci-u7',
-    title: 'Unit 7: Genetics, Heredity & Punnett Squares',
-    standards: ['MS-LS3-2', 'OH.8.LS.1'],
+    title: 'Unit 7: Supplemental: Physics Archive — Work, Power, Circuits & Optics',
+    standards: ['Physics Library Archive', 'Work & Electrical Circuits'],
+    kind: 'core',
+    isSupplemental: true,
     lessons: [
       {
         id: 'g8-sci-u7-l1',
         unitId: 'g8-sci-u7',
-        title: 'Lesson 1: Asexual vs. Sexual Reproduction & Meiosis',
+        title: 'Work (W = Fd), Mechanical Power & Simple Machines',
         kind: 'lesson',
-        partOf: 'Cell Division & Reproduction',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/high-school-biology/hs-reproduction-and-cell-division/hs-meiosis/v/meiosis',
-        videoTitle: 'Khan Academy: Meiosis and Genetic Variation',
-        reading:
-          'Asexual reproduction yields genetically identical clones through mitosis. Sexual reproduction produces haploid gametes through meiosis, combining alleles to create genetic variation.',
-        principles: [P_G8_SCI_GENETICS],
+        partOf: 'Supplemental: Physics Archive',
+        isSupplemental: true,
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/physics/work-and-energy/work-and-energy-tutorial/v/introduction-to-work',
+        videoTitle: 'Work and Power in Physics',
+        reading: 'Work is force applied across a distance ($W = Fd$). Power measures the rate at which work is accomplished in Watts ($P = W/t$). Simple machines multiply force by extending distance.',
+        principles: [
+          {
+            id: 'g8-sci-p-cir-1',
+            title: 'Work & Power Formulas',
+            standard: 'High School Physics Intro',
+            summary: 'Work equals force times displacement; mechanical power is the time rate of doing work.',
+            bank: [G8_SCI_ARCHIVE_CIRCUITS_BANK[0], G8_SCI_ARCHIVE_CIRCUITS_BANK[2]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u7-l2',
         unitId: 'g8-sci-u7',
-        title: 'Lesson 2: Mendelian Genetics: Dominant & Recessive Alleles',
+        title: 'Electric Current, Voltage, Resistance & Ohm’s Law (V = IR)',
         kind: 'lesson',
-        partOf: 'Mendelian Genetics',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/high-school-biology/hs-classical-genetics/hs-introduction-to-heredity/v/alleles-and-genes',
-        videoTitle: 'Khan Academy: Alleles, Genes and Dominance',
-        reading:
-          'Genes exist in alternative forms called alleles. A dominant allele expresses its phenotype even when heterozygous (Tt), while a recessive trait requires two homozygous alleles (tt).',
-        principles: [P_G8_SCI_GENETICS],
-      },
-      {
-        id: 'g8-sci-u7-l3',
-        unitId: 'g8-sci-u7',
-        title: 'Lesson 3: Punnett Squares & Genotypic Probabilities',
-        kind: 'lesson',
-        partOf: 'Punnett Squares',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/high-school-biology/hs-classical-genetics/hs-introduction-to-heredity/v/punnett-squares',
-        videoTitle: 'Khan Academy: Punnett Squares and Monohybrid Crosses',
-        reading:
-          'Punnett squares map parental gamete combinations to calculate offspring genotype and phenotype probabilities. A heterozygous cross (Tt × Tt) produces a 3:1 dominant phenotype ratio.',
-        principles: [P_G8_SCI_GENETICS],
-      },
-      {
-        id: 'g8-sci-u7-l4',
-        unitId: 'g8-sci-u7',
-        title: 'Lesson 4: Inherited Traits vs. Environmental Influences',
-        kind: 'lesson',
-        partOf: 'Trait Variation',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/high-school-biology/hs-classical-genetics/hs-introduction-to-heredity/v/environmental-effects-on-phenotype',
-        videoTitle: 'Khan Academy: Environmental Effects on Traits',
-        reading:
-          'While DNA encodes baseline traits, environmental factors such as nutrition, climate, and sunlight actively modify physical phenotypes and organism growth.',
-        principles: [P_G8_SCI_GENETICS],
-      },
-      {
-        id: 'g8-sci-u7-l5',
-        unitId: 'g8-sci-u7',
-        title: 'Lesson 5: Unit 7 Checkpoint Review: Genetics & Heredity',
-        kind: 'lesson_review',
-        partOf: 'Genetics Review',
-        estimatedMinutes: 12,
-        videoUrl:
-          'https://www.khanacademy.org/science/high-school-biology/hs-classical-genetics/v/genetics-review',
-        videoTitle: 'Khan Academy: Genetics and Punnett Squares Review',
-        reading:
-          'Synthesize genetic mechanisms: meiosis chromosome distribution, homozygous vs heterozygous distinctions, and calculating monohybrid cross probabilities.',
-        principles: [P_G8_SCI_GENETICS],
+        partOf: 'Supplemental: Physics Archive',
+        isSupplemental: true,
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/physics/circuits-topic/circuits-library/v/circuits-part-1',
+        videoTitle: 'Circuits, Resistance, and Ohm’s Law',
+        reading: 'Ohm’s Law ($V = IR$) relates electrical potential difference (Voltage), charge flow rate (Current), and opposition to current (Resistance). Refraction bends light across media.',
+        principles: [
+          {
+            id: 'g8-sci-p-cir-2',
+            title: 'Ohm’s Law & Geometric Optics',
+            standard: 'High School Physics Intro',
+            summary: 'Ohm’s law governs circuit currents, while refractive index governs light bending at optical boundaries.',
+            bank: [G8_SCI_ARCHIVE_CIRCUITS_BANK[1], G8_SCI_ARCHIVE_CIRCUITS_BANK[3]],
+          },
+        ],
       },
     ],
   },
 
-  // UNIT 8: Natural Selection & Biological Evolution
+  // =========================================================================
+  // SUPPLEMENTAL SEQUENCE: OHIO GRADE 8 HEREDITY & EARTH INTERIOR (UNIT 8, ALWAYS UNLOCKED)
+  // =========================================================================
+
+  // UNIT 8: Supplemental Ohio Grade 8 Heredity & Earth Interior (isSupplemental: true, isOhioExtension: true)
   {
     id: 'g8-sci-u8',
-    title: 'Unit 8: Natural Selection & Biological Evolution',
-    standards: ['MS-LS4-1', 'MS-LS4-2', 'OH.8.LS.3'],
+    title: 'Unit 8: Supplemental: Ohio Grade 8 Heredity & Earth Interior',
+    standards: ['OH.8.ESS.1', 'OH.8.ESS.2', 'OH.8.LS.1', 'OH.8.LS.2', 'OH.8.LS.3'],
+    kind: 'core',
+    isSupplemental: true,
+    isOhioExtension: true,
     lessons: [
       {
         id: 'g8-sci-u8-l1',
         unitId: 'g8-sci-u8',
-        title: 'Lesson 1: Natural Selection & Camouflage Adaptations',
+        title: 'Earth’s Interior, Seismic Waves & Mantle Convection',
         kind: 'lesson',
-        partOf: 'Natural Selection',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/high-school-biology/hs-evolution/hs-evolution-and-natural-selection/v/natural-selection-and-the-owl-butterfly',
-        videoTitle: 'Khan Academy: Natural Selection and Adaptation',
-        reading:
-          'In changing environments, individuals with advantageous heritable traits experience higher survival and reproductive success, shifting population allele frequencies over generations.',
-        principles: [P_G8_SCI_EVOLUTION],
+        partOf: 'Ohio Earth & Life Science',
+        isSupplemental: true,
+        isOhioExtension: true,
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere/x87d03b443efbea42:earth-interior/v/earth-layers',
+        videoTitle: 'Earth’s Interior and Seismic S-Waves',
+        reading: 'Earth has a solid crust, convective rocky mantle, liquid metal outer core, and dense solid inner core. S-waves stop at the outer core because shear waves cannot travel through liquids.',
+        principles: [
+          {
+            id: 'g8-sci-p-oh-1',
+            title: 'Earth’s Layers & Magnetic Dynamo',
+            standard: 'OH.8.ESS.1',
+            summary: 'Convection of liquid iron in the outer core generates Earth’s magnetic field, shielding our atmosphere.',
+            bank: [G8_SCI_EARTH_LAYERS_BANK[0], G8_SCI_EARTH_LAYERS_BANK[2], G8_SCI_EARTH_LAYERS_BANK[4], G8_SCI_EARTH_LAYERS_BANK[7]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u8-l2',
         unitId: 'g8-sci-u8',
-        title: 'Lesson 2: Genetic Mutations as the Source of Novel Traits',
+        title: 'Relative & Absolute Dating, Geologic Strata & Index Fossils',
         kind: 'lesson',
-        partOf: 'Mutations',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/high-school-biology/hs-molecular-genetics/hs-mutations/v/mutations-and-genetic-variation',
-        videoTitle: 'Khan Academy: Genetic Mutations and Variation',
-        reading:
-          'Random mutations in germline DNA introduce new alleles into populations. Helpful mutations increase fitness, while harmful mutations are selected against.',
-        principles: [P_G8_SCI_EVOLUTION],
+        partOf: 'Ohio Earth & Life Science',
+        isSupplemental: true,
+        isOhioExtension: true,
+        estimatedMinutes: 25,
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere/x87d03b443efbea42:geologic-time-scale/v/geologic-time',
+        videoTitle: 'Geologic Strata, Radiometric Dating, and Fossils',
+        reading: 'Sedimentary layers stack with oldest strata at the bottom. Transitional fossils demonstrate macroevolutionary lineages across deep geologic time.',
+        activity: {
+          id: 'act-fossils-whale',
+          title: 'How can we use skeletons and fossils to understand whale evolution?',
+          type: 'hands_on',
+          description: 'Compare skeletal fossil diagrams of Pakicetus, Ambulocetus, Basilosaurus, and modern baleen whales to trace the evolutionary transition from land mammals to aquatic whales.',
+          estimatedMinutes: 30,
+          materials: ['Transitional whale fossil cards', 'Ruler', 'Anatomy colored pencils'],
+          steps: [
+            'Examine the skull of Pakicetus (50 million years ago): note nostril placement at the tip of the snout.',
+            'Examine Ambulocetus (walking whale): observe webbed feet, heavy tail, and skull with nostrils migrating upward.',
+            'Examine Basilosaurus (37 million years ago): note vestigial reduced hind limbs detached from the spine.',
+            'Compare the forelimb bone pattern (1 upper arm bone, 2 forearm bones, wrist bones, digits) in a modern whale flipper to a human arm.',
+            'Chart how vestigial pelvic bones provide physical evidence of land-dwelling ancestry.',
+          ],
+          reflectionPrompt: 'Why do modern baleen whales still develop tiny internal pelvis and femur bones even though they have no external legs?',
+        },
+        principles: [
+          {
+            id: 'g8-sci-p-oh-2',
+            title: 'Geologic Dating & Homologous Structures',
+            standard: 'OH.8.ESS.2, OH.8.LS.3',
+            summary: 'Fossil strata and homologous bone structures document transitional evolutionary stages across deep time.',
+            bank: [G8_SCI_GEOLOGIC_TIME_BANK[0], G8_SCI_GEOLOGIC_TIME_BANK[1], G8_SCI_EVOLUTION_BANK[2], G8_SCI_EVOLUTION_BANK[5]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u8-l3',
         unitId: 'g8-sci-u8',
-        title: 'Lesson 3: Evidence for Evolution: Anatomy & Fossil Lines',
+        title: 'Asexual vs. Sexual Reproduction & Meiosis',
         kind: 'lesson',
-        partOf: 'Evolution Evidence',
-        estimatedMinutes: 10,
-        videoUrl:
-          'https://www.khanacademy.org/science/high-school-biology/hs-evolution/hs-evidence-of-evolution/v/evidence-for-evolution',
-        videoTitle: 'Khan Academy: Evidence for Evolution',
-        reading:
-          'Homologous bone structures across mammals and transitional fossil sequences provide compelling empirical evidence of descent with modification from common ancestors.',
-        principles: [P_G8_SCI_EVOLUTION],
+        partOf: 'Ohio Earth & Life Science',
+        isSupplemental: true,
+        isOhioExtension: true,
+        estimatedMinutes: 20,
+        videoUrl: 'https://www.khanacademy.org/science/high-school-biology/hs-reproduction-and-cell-division/hs-meiosis/v/comparing-mitosis-and-meiosis',
+        videoTitle: 'Reproduction and Meiosis',
+        reading: 'Asexual reproduction produces genetically identical clones from one parent. Sexual reproduction uses meiosis to produce gametes with half the chromosome number, generating genetic diversity.',
+        principles: [
+          {
+            id: 'g8-sci-p-oh-3',
+            title: 'Reproduction Modes & Chromosomes',
+            standard: 'OH.8.LS.1',
+            summary: 'Asexual reproduction clones parent DNA, while sexual meiosis recombines alleles for genetic variation.',
+            bank: [G8_SCI_HEREDITY_BANK[0], G8_SCI_HEREDITY_BANK[1]],
+          },
+        ],
       },
       {
         id: 'g8-sci-u8-l4',
         unitId: 'g8-sci-u8',
-        title: 'Lesson 4: Artificial Selection vs. Natural Selection',
-        kind: 'lesson_review',
-        partOf: 'Artificial Selection',
-        estimatedMinutes: 12,
-        videoUrl:
-          'https://www.khanacademy.org/science/high-school-biology/hs-evolution/hs-evolution-and-natural-selection/v/artificial-selection',
-        videoTitle: 'Khan Academy: Artificial Selection and Selective Breeding',
-        reading:
-          'Review human-directed selective breeding in crops and domestic animals, comparing intentional artificial selection to environmental natural selection.',
-        principles: [P_G8_SCI_EVOLUTION],
+        title: 'Mendelian Genetics, Punnett Squares & Pedigrees',
+        kind: 'lesson',
+        partOf: 'Ohio Earth & Life Science',
+        isSupplemental: true,
+        isOhioExtension: true,
+        estimatedMinutes: 25,
+        videoUrl: 'https://www.khanacademy.org/science/high-school-biology/hs-classical-genetics/hs-introduction-to-heredity/v/punnett-square-fun',
+        videoTitle: 'Mendelian Genetics and Punnett Squares',
+        reading: 'Alleles are dominant or recessive variants of a gene. A Punnett square predicts probability ratios for heterozygous ($Bb$) and homozygous ($BB$ or $bb$) offspring.',
+        activity: {
+          id: 'act-puppy-litter',
+          title: 'Why do puppies in the same litter look different?',
+          type: 'hands_on',
+          description: 'Model independent assortment and random fertilization using a two-gene coin flip simulation to explore phenotypic variation among sibling puppies.',
+          estimatedMinutes: 30,
+          materials: ['2 coins', 'Masking tape and marker to label coin faces (B/b for fur, E/e for ears)', 'Puppy pedigree tally sheet'],
+          steps: [
+            'Label coin 1 with allele B (dominant black fur) on one side and b (recessive brown fur) on the other.',
+            'Label coin 2 with allele E (erect ears) on one side and e (floppy ears) on the other.',
+            'Flip both coins 40 times to simulate 40 puppy genotypes from heterozygous parents ($BbEe$).',
+            'Record the genotype and resulting phenotype for each trial.',
+            'Calculate the experimental percentage of puppies with each trait combination and compare to expected 9:3:3:1 Mendelian ratios.',
+          ],
+          reflectionPrompt: 'How does the random combination of parental alleles during fertilization explain why biological siblings from the same parents look distinct?',
+        },
+        principles: [
+          {
+            id: 'g8-sci-p-oh-4',
+            title: 'Punnett Squares & Allele Ratios',
+            standard: 'OH.8.LS.2',
+            summary: 'Dominant alleles mask recessive alleles in heterozygous genotypes; Punnett squares calculate trait probabilities.',
+            bank: [G8_SCI_HEREDITY_BANK[2], G8_SCI_HEREDITY_BANK[3], G8_SCI_HEREDITY_BANK[4], G8_SCI_HEREDITY_BANK[5]],
+          },
+        ],
+      },
+      {
+        id: 'g8-sci-u8-l5',
+        unitId: 'g8-sci-u8',
+        title: 'DNA Mutations, Genetic Variation & Natural Selection',
+        kind: 'lesson',
+        partOf: 'Ohio Earth & Life Science',
+        isSupplemental: true,
+        isOhioExtension: true,
+        estimatedMinutes: 25,
+        videoUrl: 'https://www.khanacademy.org/science/high-school-biology/hs-evolution/hs-evolution-and-natural-selection/v/natural-selection-and-the-owl-butterfly',
+        videoTitle: 'Mutations and Natural Selection',
+        reading: 'Random DNA mutations produce novel traits. In changing environments, individuals with advantageous adaptations survive and reproduce more successfully (natural selection).',
+        activity: {
+          id: 'act-dna-disorders',
+          title: 'Why do some mutations cause genetic disorders?',
+          type: 'hands_on',
+          description: 'Investigate how single base substitutions, insertions, and deletions in DNA codons alter translated amino acid chains and cause disorders like sickle cell anemia.',
+          estimatedMinutes: 30,
+          materials: ['Printable mRNA codon wheel', 'Colored paper strips or beads (representing adenine, thymine, guanine, cytosine)'],
+          steps: [
+            'Write out the normal hemoglobin DNA sequence: CTC (coding for Glutamic acid).',
+            'Simulate a point substitution mutation where A replaces T: CAC (coding for Valine, the sickle cell mutation).',
+            'Compare the chemical properties: Glutamic acid is hydrophilic (water-soluble), while Valine is hydrophobic (clumps in water).',
+            'Simulate a frameshift deletion by removing one nucleotide. Transcribe the downstream codons to observe how all subsequent amino acids shift.',
+            'Summarize the difference between silent, missense, and frameshift mutations.',
+          ],
+          reflectionPrompt: 'Why does a frameshift insertion or deletion mutation generally cause much more severe protein disruption than a single base substitution?',
+        },
+        principles: [
+          {
+            id: 'g8-sci-p-oh-5',
+            title: 'Mutations & Natural Selection',
+            standard: 'OH.8.LS.3',
+            summary: 'DNA mutations introduce genetic variation; natural selection favors traits that enhance survival and reproduction.',
+            bank: [G8_SCI_HEREDITY_BANK[6], G8_SCI_HEREDITY_BANK[7], G8_SCI_EVOLUTION_BANK[0], G8_SCI_EVOLUTION_BANK[1]],
+          },
+        ],
       },
     ],
   },
 
-  // UNIT 9: Grade 8 Science Course Challenge
+  // =========================================================================
+  // ENRICHMENT & TEACHER RESOURCES
+  // =========================================================================
+
+  // UNIT 9: Explore Physics & Life Science Through Simulations (kind: 'explore')
   {
     id: 'g8-sci-u9',
-    title: 'Unit 9: Grade 8 Science Course Challenge',
-    standards: ['MS-PS', 'MS-ESS', 'MS-LS'],
-    lessons: [
-      {
-        id: 'g8-sci-u9-l1',
-        unitId: 'g8-sci-u9',
-        title: 'Lesson 1: Physical Science & Force Fields Synthesis',
-        kind: 'lesson_review',
-        partOf: 'Course Challenge Part 1',
-        estimatedMinutes: 15,
-        videoUrl:
-          'https://www.khanacademy.org/science/middle-school-physics/v/physical-science-synthesis',
-        videoTitle: 'Khan Academy: Grade 8 Physical Science Synthesis',
-        reading:
-          'Synthesize Newton’s three laws of motion, net force calculations, non-contact gravitational/magnetic fields, and wave energy properties.',
-        principles: [P_G8_SCI_NET_FORCE, P_G8_SCI_FIELDS, P_G8_SCI_WAVES],
-      },
-      {
-        id: 'g8-sci-u9-l2',
-        unitId: 'g8-sci-u9',
-        title: 'Lesson 2: Earth Systems, Plate Tectonics & Rock History',
-        kind: 'lesson_review',
-        partOf: 'Course Challenge Part 2',
-        estimatedMinutes: 15,
-        videoUrl:
-          'https://www.khanacademy.org/science/middle-school-earth-and-space-science/v/earth-systems-synthesis',
-        videoTitle: 'Khan Academy: Grade 8 Earth Science Synthesis',
-        reading:
-          'Synthesize Earth’s interior layers, seismic P/S waves, mantle convection, plate boundary tectonics, and stratigraphic relative dating.',
-        principles: [P_G8_SCI_EARTH_LAYERS, P_G8_SCI_TECTONICS, P_G8_SCI_GEOLOGIC_TIME],
-      },
-      {
-        id: 'g8-sci-u9-l3',
-        unitId: 'g8-sci-u9',
-        title: 'Lesson 3: Heredity, Genetics & Natural Selection Capstone',
-        kind: 'lesson_review',
-        partOf: 'Course Challenge Part 3',
-        estimatedMinutes: 15,
-        videoUrl:
-          'https://www.khanacademy.org/science/high-school-biology/v/genetics-evolution-capstone',
-        videoTitle: 'Khan Academy: Grade 8 Genetics & Evolution Capstone',
-        reading:
-          'Complete capstone review of meiosis, Punnett square inheritance probabilities, DNA mutations, and natural selection driving speciation.',
-        principles: [P_G8_SCI_GENETICS, P_G8_SCI_EVOLUTION],
-      },
-    ],
-  },
-
-  // UNIT 10: Explore Science Through Interactive Simulations
-  {
-    id: 'g8-sci-u10',
-    title: 'Unit 10: Explore Science Through Interactive Simulations',
+    title: 'Unit 9: Explore Physics & Life Science Through Simulations',
+    standards: ['NGSS Practices', 'PhET Interactive Simulations'],
     kind: 'explore',
-    standards: ['MS-PS.Explore', 'MS-ESS.Explore', 'MS-LS.Explore'],
-    lessons: [],
     exploreItems: [
       {
-        id: 'g8-sci-exp-forces-motion',
-        title: 'PhET Forces and Motion: Net Force & Acceleration Lab',
+        id: 'g8-exp-forces',
+        title: 'PhET: Forces and Motion: Basics',
         type: 'simulation',
-        description:
-          'Tug of war and crate pushing simulation to test balanced vs. unbalanced forces, friction coefficients, and acceleration.',
+        description: 'Experiment with tug-of-war net forces, friction, and acceleration to visualize Newton’s first and second laws.',
         url: 'https://phet.colorado.edu/en/simulations/forces-and-motion-basics',
         estimatedMinutes: 20,
-        requiresParentPin: true,
-        reflectionPrompt: 'What happens to the speed of the cart once applied pulling forces exactly balance friction?',
+        requiresParentPin: false,
       },
       {
-        id: 'g8-sci-exp-gravity-orbits',
-        title: 'PhET Gravity and Orbits: Planetary Field Dynamics',
+        id: 'g8-exp-skate',
+        title: 'PhET: Energy Skate Park: Basics',
         type: 'simulation',
-        description:
-          'Adjust the mass of the Sun, Earth, and space station to visualize gravitational field vectors and orbital trajectories.',
-        url: 'https://phet.colorado.edu/en/simulations/gravity-and-orbits',
+        description: 'Observe real-time bar graphs converting kinetic energy into gravitational potential energy and thermal friction on skate tracks.',
+        url: 'https://phet.colorado.edu/en/simulations/energy-skate-park-basics',
         estimatedMinutes: 20,
-        requiresParentPin: true,
-        reflectionPrompt: 'What happens to Earth’s orbit if the Sun’s mass doubles? If distance doubles?',
+        requiresParentPin: false,
       },
       {
-        id: 'g8-sci-exp-plate-tectonics',
-        title: 'PhET Plate Tectonics: Crust Density & Subduction',
+        id: 'g8-exp-balloons',
+        title: 'PhET: Balloons and Static Electricity',
         type: 'simulation',
-        description:
-          'Adjust lithosphere temperature, density, and plate thickness to observe convergent subduction, mountain folding, and trench formation.',
-        url: 'https://phet.colorado.edu/en/simulations/plate-tectonics',
+        description: 'Rub balloons on a sweater to transfer electrons and observe non-contact attractive and repulsive electric fields.',
+        url: 'https://phet.colorado.edu/en/simulations/balloons-and-static-electricity',
         estimatedMinutes: 20,
-        requiresParentPin: true,
-        reflectionPrompt: 'Why does older oceanic crust subduct more readily than newly cooled oceanic crust?',
+        requiresParentPin: false,
       },
       {
-        id: 'g8-sci-exp-punnett-lab',
-        title: 'Coin-Toss Mendelian Heredity Simulation Lab',
-        type: 'hands_on',
-        description:
-          'Toss two coins 50 times (Heads = dominant allele T, Tails = recessive allele t) to model meiosis, gamete union, and observe 3:1 phenotypic ratios.',
+        id: 'g8-exp-wave',
+        title: 'PhET: Wave on a String',
+        type: 'simulation',
+        description: 'Vibrate a rope end to adjust amplitude, frequency, and tension, exploring how wave properties interact.',
+        url: 'https://phet.colorado.edu/en/simulations/wave-on-a-string',
+        estimatedMinutes: 20,
+        requiresParentPin: false,
+      },
+      {
+        id: 'g8-exp-natural-sel',
+        title: 'PhET: Natural Selection Bunny Simulation',
+        type: 'simulation',
+        description: 'Introduce wolves, changing arctic environments, and fur color mutations to observe natural selection in real time.',
+        url: 'https://phet.colorado.edu/en/simulations/natural-selection',
         estimatedMinutes: 25,
         requiresParentPin: false,
-        materials: ['Two coins (pennies or quarters)', 'Data table', 'Pencil'],
-        reflectionPrompt: 'How closely did your 50 simulated coin tosses match the theoretical 25% tt Punnett expectation?',
-      },
-      {
-        id: 'g8-sci-exp-usgs-faults',
-        title: 'USGS Real-Time Earthquake & Plate Boundary Map',
-        type: 'virtual_tour',
-        description:
-          'Explore real-time seismic event feeds across the Pacific Ring of Fire and North American transform fault lines.',
-        url: 'https://earthquake.usgs.gov/earthquakes/map/',
-        estimatedMinutes: 20,
-        requiresParentPin: true,
-        reflectionPrompt: 'What geographic patterns do you notice when comparing global earthquake clusters against plate boundary lines?',
       },
     ],
+    lessons: [],
   },
 
-  // UNIT 11: Teacher Resources & Standards Alignment
+  // UNIT 10: Teacher Resources (kind: 'teacher_resources')
   {
-    id: 'g8-sci-u11',
-    title: 'Unit 11: Teacher Resources & Standards Alignment',
+    id: 'g8-sci-u10',
+    title: 'Unit 10: Teacher Resources',
+    standards: ['Parent Portal Guide', 'Pacing & Standards Alignment'],
     kind: 'teacher_resources',
-    standards: ['OH.8.Science', 'NGSS.MS'],
-    lessons: [],
     resources: [
       {
-        id: 'g8-sci-res-pacing',
-        title: 'Grade 8 Science 36-Week Pacing Guide',
+        id: 'g8-tr-pacing',
+        title: 'Yearlong Pacing Guide: Middle School Physics & Supplemental Extensions',
         kind: 'pacing_guide',
-        description:
-          'Full-year curriculum sequence coordinating physical forces, non-contact fields, Earth interior dynamics, tectonics, and genetics.',
-        body: `## Grade 8 Science Pacing Guide (36 Weeks)
-
-- **Weeks 1–5**: Unit 1 — Forces, Net Force & Newton’s Laws (MS-PS2-1, MS-PS2-2, OH.8.PS.2)
-- **Weeks 6–9**: Unit 2 — Gravitational, Electric & Magnetic Force Fields (OH.8.PS.1)
-- **Weeks 10–13**: Unit 3 — Waves & Digital Information Transfer (MS-PS4-1, MS-PS4-2, MS-PS4-3)
-- **Week 14**: Quarter 1 Physical Science Assessment
-- **Weeks 15–18**: Unit 4 — Earth’s Interior Layers & Seismic Waves (OH.8.ESS.1)
-- **Weeks 19–23**: Unit 5 — Plate Tectonics & Seismic Activity (OH.8.ESS.2, OH.8.ESS.3)
-- **Weeks 24–27**: Unit 6 — Geologic Time, Fossils & Earth History (MS-ESS1-4)
-- **Week 28**: Quarter 2 & 3 Earth and Space Science Checkpoint
-- **Weeks 29–32**: Unit 7 — Genetics, Heredity & Punnett Squares (MS-LS3-2, OH.8.LS.1)
-- **Weeks 33–34**: Unit 8 — Natural Selection & Biological Evolution (MS-LS4-1, OH.8.LS.3)
-- **Weeks 35–36**: Unit 9 — Grade 8 Science Course Challenge & Capstone Inquiry Defense`,
+        description: '36-week recommended progression allocating Weeks 1–26 to Middle School Physics (Units 1–5) and Weeks 27–36 to Supplemental Physics Archive and Ohio Heredity.',
       },
       {
-        id: 'g8-sci-res-standards',
-        title: 'Grade 8 Ohio & Next Generation Science Standards Crosswalk',
+        id: 'g8-tr-keys',
+        title: 'Mastery Answer Keys & Step-by-Step Explanations',
+        kind: 'answer_key',
+        description: 'Complete solutions, Newton’s law calculations, and genetics Punnett square rationales for all Grade 8 quizzes and exams.',
+      },
+      {
+        id: 'g8-tr-standards',
+        title: 'NGSS & Ohio Physical Science Standards Crosswalk Map',
         kind: 'standards_map',
-        description:
-          'Standards alignment crosswalk connecting Home-School-Lite units to Ohio Grade 8 Science expectations.',
-        body: `| Unit | Ohio Standard | Core Scientific Concept |
-|---|---|---|
-| Unit 1 | OH.8.PS.2 | Forces, friction, net force vectors, Newton’s laws of motion |
-| Unit 2 | OH.8.PS.1 | Non-contact fields, inverse-square gravity, electromagnetism |
-| Unit 3 | MS-PS4-1..3 | Amplitude, frequency, light vs sound, digital binary encoding |
-| Unit 4 | OH.8.ESS.1 | Earth layers, mantle convection currents, seismic body waves |
-| Unit 5 | OH.8.ESS.2, 3 | Plate boundaries, seafloor spreading, relative dating, Ohio geology |
-| Unit 6 | MS-ESS1-4 | Law of superposition, index fossils, radiometric absolute dating |
-| Unit 7 | OH.8.LS.1 | Meiosis genetic variation, Punnett square inheritance |
-| Unit 8 | OH.8.LS.3 | Natural selection, camouflage, mutations, homologous anatomy |`,
-      },
-      {
-        id: 'g8-sci-res-safety',
-        title: 'Middle School Physical & Earth Science Lab Safety Protocols',
-        kind: 'printable',
-        description:
-          'Laboratory protocols covering physics projectile safety, electrical circuit setup, and geological specimen handling.',
-        body: `## Middle School Laboratory Safety Rules
-
-1. **Eye Protection**: Wear impact-resistant goggles during force and motion kinetic trials.
-2. **Electrical Safety**: Disconnect batteries promptly after testing electromagnets to avoid wire overheating.
-3. **Specimen Care**: Handle rock specimens carefully; wash hands thoroughly after studying mineral samples.
-4. **Clean Workspaces**: Maintain clear floor aisles free of rolling weights, balls, or pull cords.
-5. **Supervisor Oversight**: Never launch projectile or spring mechanisms without adult supervisor approval.`,
+        description: 'Detailed alignment mapping each micro-lesson to NGSS (MS-PS2, MS-PS3, MS-PS4) and Ohio Academic Content Standards.',
       },
     ],
+    lessons: [],
   },
 ]

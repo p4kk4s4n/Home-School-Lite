@@ -76,10 +76,15 @@ export function computeCourseProgress(
       const lastScore =
         validAttempts.length > 0 ? validAttempts[validAttempts.length - 1].scorePercent : null
 
+      const isSupplemental = Boolean(unit.isSupplemental || lesson.isSupplemental)
+
       let status: LessonStatus
       if (isMastered) {
         status = 'mastered'
         masteredCount++
+      } else if (isSupplemental) {
+        // Supplemental lessons are never locked by prerequisite mastery; always accessible on demand
+        status = attempts.length > 0 ? 'in_progress' : 'available'
       } else if (previousMastered) {
         status = attempts.length > 0 ? 'in_progress' : 'available'
       } else {
@@ -97,7 +102,9 @@ export function computeCourseProgress(
         masteredAt: masteryAttempt?.completedAt,
       })
 
-      previousMastered = isMastered
+      if (!isSupplemental) {
+        previousMastered = isMastered
+      }
     }
   }
 
@@ -105,7 +112,14 @@ export function computeCourseProgress(
   const percentComplete =
     totalCount > 0 ? Math.round((masteredCount / totalCount) * 100) : 0
   const nextLesson =
-    items.find((i) => i.status === 'in_progress' || i.status === 'available') ?? null
+    items.find(
+      (i) =>
+        !i.unit.isSupplemental &&
+        !i.lesson.isSupplemental &&
+        (i.status === 'in_progress' || i.status === 'available')
+    ) ??
+    items.find((i) => i.status === 'in_progress' || i.status === 'available') ??
+    null
 
   return {
     course,

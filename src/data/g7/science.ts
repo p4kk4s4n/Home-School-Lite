@@ -6,7 +6,7 @@ export const G7_SCIENCE_COURSE: Course = {
   subject: 'science',
   grade: 7,
   title: 'Grade 7 Science',
-  subtitle: 'Conservation of Matter, Periodic Table, Hydrosphere, Earth-Moon-Sun Systems & Ecology',
+  subtitle: 'Middle School Earth and Space Science & Middle School Chemistry',
   credits: 1.0,
   color: '#059669',
   icon: '🧪',

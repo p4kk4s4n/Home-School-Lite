@@ -120,6 +120,7 @@ export interface Lesson {
   kind?: LessonKind
   partOf?: string
   isOhioExtension?: boolean
+  isSupplemental?: boolean
   estimatedMinutes: number
   videoUrl: string
   videoTitle: string
@@ -128,6 +129,7 @@ export interface Lesson {
   questionCount?: number
   assignment?: LessonAssignment
   remediation?: Remediation
+  activity?: ExploreItem
 }
 
 export interface Unit {
@@ -135,6 +137,7 @@ export interface Unit {
   title: string
   standards: string[]
   isOhioExtension?: boolean
+  isSupplemental?: boolean
   kind?: UnitKind
   exploreItems?: ExploreItem[]
   resources?: TeacherResource[]

@@ -45,6 +45,22 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:cells-and-organisms/x24c4e73582d09141:cell-parts-and-their-functions/v/plant-cells-vs-animal-cells',
         videoTitle: 'Plant Cells vs Animal Cells',
         reading: 'Plant cells have rigid cellulose walls, large central vacuoles, and chloroplasts for photosynthesis. Animal cells have flexible membranes and lack chloroplasts and cell walls.',
+        activity: {
+          id: 'act-plants-wilt',
+          title: 'Why do plants wilt when they don’t get enough water?',
+          type: 'experiment',
+          description: 'Investigate osmosis and vacuole turgor pressure by placing crisp celery stalks into fresh water with food coloring versus concentrated salt water.',
+          estimatedMinutes: 25,
+          materials: ['2 fresh celery stalks with leaves', '2 clear cups', 'Water', 'Table salt', 'Food coloring (red or blue)'],
+          steps: [
+            'Fill cup 1 with tap water and 10 drops of food coloring.',
+            'Fill cup 2 with water, 3 tablespoons of dissolved salt, and food coloring.',
+            'Place a freshly cut celery stalk upright into each cup.',
+            'Observe after 2 hours and 24 hours: note crispness, leaf droop, and dye elevation.',
+            'Slice the stalk crosswise to observe colored xylem tubes.',
+          ],
+          reflectionPrompt: 'How does high turgor pressure inside plant cell vacuoles keep non-woody plant stems standing upright against gravity?',
+        },
         principles: [
           {
             id: 'p-g6-sci-cell-compare',
@@ -342,6 +358,22 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:matter-and-energy-in-organisms/x24c4e73582d09141:cellular-respiration/v/cellular-respiration-overview',
         videoTitle: 'Cellular Respiration Overview',
         reading: 'Inside mitochondria, oxygen combines with glucose to release energy stored in chemical bonds. This reaction produces ATP energy along with carbon dioxide and water.',
+        activity: {
+          id: 'act-respiration-fitness',
+          title: 'How can measuring cellular respiration help us reach a fitness goal?',
+          type: 'experiment',
+          description: 'Measure breathing rate and pulse before, during, and after exercise to analyze how cellular respiration increases to meet working muscle ATP demands.',
+          estimatedMinutes: 25,
+          materials: ['Stopwatch or phone timer', 'Heart rate monitor or radial wrist pulse tracker'],
+          steps: [
+            'Sit quietly for 3 minutes. Record baseline resting pulse (beats per minute) and breathing rate (breaths per minute).',
+            'Perform jumping jacks or high knees for 2 minutes.',
+            'Immediately measure pulse and breathing rate.',
+            'Record pulse recovery every 60 seconds until returning to baseline.',
+            'Graph heart rate recovery curve over 5 minutes.',
+          ],
+          reflectionPrompt: 'Why do muscle cells require more oxygen and glucose during intense exercise, and how does cardiovascular training improve cellular respiration efficiency?',
+        },
         principles: [
           {
             id: 'p-g6-sci-resp-chem',
@@ -445,6 +477,22 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:interactions-in-ecosystems/x24c4e73582d09141:biotic-and-abiotic-factors/v/biotic-and-abiotic-factors',
         videoTitle: 'Biotic and Abiotic Factors',
         reading: 'An ecosystem combines all living organisms (biotic factors like trees, insects, and bacteria) with all nonliving parts of the physical environment (abiotic factors like sunlight, temperature, rocks, and water).',
+        activity: {
+          id: 'act-ecosystem-health',
+          title: 'What evidence can scientists use to tell if an ecosystem is healthy?',
+          type: 'hands_on',
+          description: 'Conduct a mini biodiversity quadrat survey to sample plant and invertebrate species richness and analyze abiotic health indicators.',
+          estimatedMinutes: 30,
+          materials: ['1-meter string loop or hula hoop', 'Magnifying glass', 'Species observation tally sheet'],
+          steps: [
+            'Place your 1-meter string loop on a patch of outdoor grass, garden, or park soil.',
+            'Carefully count each unique type of plant, insect, or fungus visible inside the boundary.',
+            'Record abiotic factors: soil moisture, sunlight exposure, and temperature.',
+            'Calculate a simple biodiversity ratio: number of unique species divided by total individuals.',
+            'Compare a high-diversity lawn patch with a low-diversity gravel or paved border.',
+          ],
+          reflectionPrompt: 'Why is high species biodiversity a stronger indicator of ecosystem stability than simply having a large population of just one species?',
+        },
         principles: [
           {
             id: 'p-g6-sci-biotic-abiotic',
@@ -463,6 +511,21 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:interactions-in-ecosystems/x24c4e73582d09141:population-growth-and-carrying-capacity/v/carrying-capacity-and-limiting-factors',
         videoTitle: 'Carrying Capacity and Limiting Factors',
         reading: 'Limiting factors such as food, shelter, and water set an ecosystem’s carrying capacity. When resources decline, population birth rates drop and mortality rises.',
+        activity: {
+          id: 'act-limited-resources',
+          title: 'How do limited resources impact populations that live near us?',
+          type: 'project',
+          description: 'Model how availability of food, water, and nesting space sets an ecosystem carrying capacity through an "Oh Deer!" population simulation.',
+          estimatedMinutes: 25,
+          materials: ['Coin or counter markers', 'Population graphing grid'],
+          steps: [
+            'Assign 10 starting deer and 10 habitat resources (food, water, shelter).',
+            'Flip coins to model drought years (loss of 5 water units) versus lush rainy seasons.',
+            'Track deer births when resources exceed population and deer deaths when population exceeds resources.',
+            'Graph deer population over 15 simulated years to observe cyclical oscillation around carrying capacity.',
+          ],
+          reflectionPrompt: 'What happens to a population when its numbers overshoot its habitat’s carrying capacity?',
+        },
         principles: [
           {
             id: 'p-g6-sci-carrying-cap',
@@ -584,6 +647,22 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:matter-and-energy-in-ecosystems/x24c4e73582d09141:energy-flow-in-ecosystems/v/energy-pyramids-and-trophic-levels',
         videoTitle: 'Energy Pyramids and Trophic Levels',
         reading: 'Energy flows one-way through ecosystems: from the sun to producers, then primary, secondary, and apex consumers. Only about 10% of energy transfers up each trophic level.',
+        activity: {
+          id: 'act-food-web-disturbed',
+          title: 'What happens when a food web is disturbed?',
+          type: 'hands_on',
+          description: 'Simulate a trophic cascade and food web interconnectivity using a yarn web or tower blocks to explore how removing an apex predator impacts producers and herbivores.',
+          estimatedMinutes: 25,
+          materials: ['Ball of yarn or wooden tower blocks', 'Organism role cards (sun, grass, rabbit, fox, hawk)'],
+          steps: [
+            'Assign family or class members different roles in a forest food web.',
+            'Pass yarn from producers to herbivores to carnivores, forming a tight interconnected web.',
+            'Simulate a disease or overhunting that eliminates the apex predator (hawk).',
+            'Tug on the hawk’s yarn: notice every connected species feels the tension or slack.',
+            'Explain how herbivore overpopulation leads to overgrazing and loss of producer vegetation.',
+          ],
+          reflectionPrompt: 'How does the reintroduction of wolves to Yellowstone National Park demonstrate that top predators protect riverbanks and plant biodiversity?',
+        },
         principles: [
           {
             id: 'p-g6-sci-trophic-energy',

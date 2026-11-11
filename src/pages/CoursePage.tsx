@@ -39,6 +39,11 @@ export const CoursePage: React.FC = () => {
   const [completedExploreIds, setCompletedExploreIds] = useState<string[]>([])
   const [collapsedUnitIds, setCollapsedUnitIds] = useState<Record<string, boolean>>({})
   const [unitFilter, setUnitFilter] = useState<'all' | 'in_progress' | 'mastered'>('all')
+  const [selectedActivity, setSelectedActivity] = useState<{
+    activity: ExploreItem
+    lesson: Lesson
+    unit: Unit
+  } | null>(null)
   const [textbookState, setTextbookState] = useState<{
     isOpen: boolean
     unit: Unit
@@ -205,6 +210,113 @@ export const CoursePage: React.FC = () => {
             window.open(approvedLink.url, '_blank', 'noopener,noreferrer')
           }}
         />
+
+        {selectedActivity && (
+          <div
+            className="modal-overlay"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Hands-on Activity Guide"
+            onClick={() => setSelectedActivity(null)}
+          >
+            <div
+              className="modal-card"
+              style={{ maxWidth: '640px', width: '92%' }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.75rem', gap: '0.75rem' }}>
+                <div>
+                  <div style={{ display: 'flex', gap: '0.4rem', alignItems: 'center', marginBottom: '0.25rem', flexWrap: 'wrap' }}>
+                    <span className="badge badge-primary" style={{ textTransform: 'capitalize' }}>
+                      {selectedActivity.activity.type}
+                    </span>
+                    <span className="muted-sm">⏱ {selectedActivity.activity.estimatedMinutes} min</span>
+                  </div>
+                  <h3 style={{ margin: 0 }}>🧪 {selectedActivity.activity.title}</h3>
+                </div>
+                <button
+                  type="button"
+                  className="btn btn-secondary btn-sm"
+                  onClick={() => setSelectedActivity(null)}
+                  aria-label="Close dialog"
+                >
+                  ✕
+                </button>
+              </div>
+
+              <p style={{ margin: '0.5rem 0 0.85rem', lineHeight: 1.5, fontSize: '0.92rem' }}>
+                {selectedActivity.activity.description}
+              </p>
+
+              {selectedActivity.activity.materials && selectedActivity.activity.materials.length > 0 && (
+                <div
+                  style={{
+                    background: 'var(--surface-alt)',
+                    padding: '0.65rem 0.85rem',
+                    borderRadius: '6px',
+                    border: '1px solid var(--border)',
+                    marginBottom: '0.85rem',
+                    fontSize: '0.88rem',
+                  }}
+                >
+                  <strong>📦 Materials Needed:</strong> {selectedActivity.activity.materials.join(', ')}
+                </div>
+              )}
+
+              {selectedActivity.activity.steps && selectedActivity.activity.steps.length > 0 && (
+                <div style={{ marginBottom: '0.85rem', fontSize: '0.88rem' }}>
+                  <strong style={{ color: 'var(--primary-bright)' }}>Investigation Procedure:</strong>
+                  <ol style={{ paddingLeft: '1.25rem', marginTop: '0.35rem', lineHeight: 1.6 }}>
+                    {selectedActivity.activity.steps.map((s, idx) => (
+                      <li key={idx} style={{ marginBottom: '0.35rem' }}>
+                        {s}
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              )}
+
+              {selectedActivity.activity.reflectionPrompt && (
+                <div
+                  style={{
+                    fontSize: '0.85rem',
+                    fontStyle: 'italic',
+                    color: 'var(--muted)',
+                    background: 'var(--surface-alt)',
+                    padding: '0.55rem 0.85rem',
+                    borderRadius: '6px',
+                    borderLeft: '4px solid var(--warning)',
+                    marginBottom: '1rem',
+                  }}
+                >
+                  💭 <strong>Discussion / Journal Prompt:</strong> {selectedActivity.activity.reflectionPrompt}
+                </div>
+              )}
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem', marginTop: '1rem' }}>
+                <button
+                  type="button"
+                  className="btn btn-secondary btn-sm"
+                  onClick={() => {
+                    const u = selectedActivity.unit
+                    const l = selectedActivity.lesson
+                    setSelectedActivity(null)
+                    openLessonTextbook(u, l)
+                  }}
+                >
+                  📖 Open Lesson in Textbook
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-primary btn-sm"
+                  onClick={() => setSelectedActivity(null)}
+                >
+                  Close Guide
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
 
       <div className="breadcrumb-row">
         <Link to="/" className="breadcrumb-link">
@@ -521,6 +633,18 @@ export const CoursePage: React.FC = () => {
                     {isCollapsed ? '▸' : '▾'}
                   </span>
                   <h2 style={{ margin: 0 }}>{unit.title}</h2>
+                  {unit.isSupplemental && (
+                    <span
+                      className="badge badge-accent"
+                      style={{
+                        background: 'rgba(234, 179, 8, 0.15)',
+                        color: 'var(--accent)',
+                        border: '1px solid var(--accent)',
+                      }}
+                    >
+                      🌟 Supplemental • Always Unlocked (Optional)
+                    </span>
+                  )}
                   <span
                     className={`badge ${
                       isUnitMastered
@@ -580,6 +704,9 @@ export const CoursePage: React.FC = () => {
                           </span>
                         )}
                         <strong>{lesson.title}</strong>
+                        {lesson.isSupplemental && (
+                          <span className="badge badge-neutral">Supplemental</span>
+                        )}
                         {lesson.kind === 'lesson_review' && (
                           <span className="badge badge-warning">Review Check</span>
                         )}
@@ -598,6 +725,28 @@ export const CoursePage: React.FC = () => {
                           {(lesson.principles || []).map((p) => p.title || p.id).join(', ')}
                         </span>
                       </div>
+                      {lesson.activity && (
+                        <div style={{ marginTop: '0.4rem' }}>
+                          <button
+                            type="button"
+                            className="btn btn-sm btn-secondary"
+                            style={{
+                              padding: '0.2rem 0.6rem',
+                              fontSize: '0.78rem',
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '0.35rem',
+                              borderColor: 'var(--accent)',
+                              color: 'var(--accent)',
+                            }}
+                            onClick={() => setSelectedActivity({ activity: lesson.activity!, lesson, unit })}
+                            title={`Open hands-on inquiry activity: ${lesson.activity.title}`}
+                          >
+                            <span>🧪</span>
+                            <strong>Activity:</strong> {lesson.activity.title}
+                          </button>
+                        </div>
+                      )}
                     </div>
 
                     <div className="lesson-row-score">
