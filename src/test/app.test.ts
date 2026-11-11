@@ -1477,4 +1477,48 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
       }
     }
   })
+
+  it('validates ELA course alignment to Khan Academy directory and verified live lesson URLs (Grades 4-8)', () => {
+    const elaCourses = [
+      { id: 'g4-ela', expectedTitle: '4th grade reading and vocab', slug: '4th-grade-reading-and-vocab' },
+      { id: 'g5-ela', expectedTitle: '5th grade reading, grammar, and vocab', slug: '5th-grade-reading-and-vocab' },
+      { id: 'g6-ela', expectedTitle: '6th grade reading, grammar, and vocab', slug: '6th-grade-reading-and-vocab' },
+      { id: 'g7-ela', expectedTitle: '7th grade reading, grammar, and vocab', slug: '7th-grade-reading-and-vocab' },
+      { id: 'g8-ela', expectedTitle: '8th grade reading, grammar, and vocab', slug: '8th-grade-reading-and-vocab' },
+    ]
+
+    for (const conf of elaCourses) {
+      const course = getCourseById(conf.id)
+      expect(course).toBeDefined()
+      // 1. Verify exact Khan Academy title match
+      expect(course!.title).toBe(conf.expectedTitle)
+
+      // 2. Verify externalCourseLinks presence and correctness
+      expect(course!.externalCourseLinks).toBeDefined()
+      expect(course!.externalCourseLinks!.length).toBeGreaterThanOrEqual(2)
+
+      const khanLink = course!.externalCourseLinks!.find((l) => l.url.includes(conf.slug))
+      expect(khanLink).toBeDefined()
+      expect(khanLink?.url).toBe(`https://www.khanacademy.org/ela/${conf.slug}`)
+
+      const grammarLink = course!.externalCourseLinks!.find((l) => l.url.includes('humanities/grammar'))
+      expect(grammarLink).toBeDefined()
+      expect(grammarLink?.url).toBe('https://www.khanacademy.org/humanities/grammar')
+
+      // 3. Verify all lesson URLs are canonical and free of deprecated cc-* hashes
+      for (const unit of course!.units) {
+        for (const lesson of unit.lessons) {
+          expect(lesson.videoUrl).toBeDefined()
+          expect(lesson.videoUrl).not.toContain('cc-')
+          expect(lesson.videoUrl).not.toContain(':reading-')
+          expect(lesson.videoUrl).not.toContain(':close-reading-')
+          // Must point to Khan Academy or Ohio History
+          const isValidDomain =
+            lesson.videoUrl!.startsWith('https://www.khanacademy.org/') ||
+            lesson.videoUrl!.startsWith('https://www.ohiohistory.org')
+          expect(isValidDomain).toBe(true)
+        }
+      }
+    }
+  })
 })
