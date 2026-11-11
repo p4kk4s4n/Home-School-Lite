@@ -35,7 +35,17 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
     window.location.hash = '#/'
   }
 
-  handleReload = () => {
+  handleReload = async () => {
+    try {
+      if ('serviceWorker' in navigator) {
+        const registrations = await navigator.serviceWorker.getRegistrations()
+        for (const reg of registrations) {
+          await reg.update()
+        }
+      }
+    } catch {
+      // Ignore
+    }
     window.location.reload()
   }
 

@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react'
+import { PrintablesStudio } from '../components/PrintablesStudio'
 import { useApp } from '../context/AppContext'
 import { findLessonInCourse, getCoursesForGrade } from '../lib/curriculum'
 import { exportBackupData, importBackupData } from '../lib/db'
@@ -832,65 +833,11 @@ export const SettingsPage: React.FC = () => {
                     </div>
                   </section>
 
-                  {/* SECTION 3: CURATED TEACHER RESOURCE UNITS & PRINTABLES */}
-                  {teacherResourceUnit && (teacherResourceUnit.resources || []).length > 0 && (
-                    <section className="card">
-                      <div className="section-header">
-                        <div>
-                          <span className="badge badge-warning">PRINTABLES &amp; GUIDES</span>
-                          <h2>Curriculum Resources &amp; Printable Aids</h2>
-                        </div>
-                      </div>
-
-                      <div className="student-list" style={{ marginTop: '0.75rem' }}>
-                        {(teacherResourceUnit.resources || []).map((res) => (
-                          <div
-                            key={res.id}
-                            className="student-row"
-                            style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', padding: '1rem', background: 'var(--surface-alt)' }}
-                          >
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
-                              <div>
-                                <strong style={{ fontSize: '1.05rem' }}>{res.title}</strong>
-                                <span className="badge badge-neutral" style={{ marginLeft: '0.5rem', textTransform: 'capitalize' }}>
-                                  {res.kind.replace('_', ' ')}
-                                </span>
-                              </div>
-                              {res.url && (
-                                <a
-                                  href={res.url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="btn btn-secondary btn-sm"
-                                >
-                                  Open External Link ↗
-                                </a>
-                              )}
-                            </div>
-                            <p className="muted-sm" style={{ margin: 0 }}>
-                              {res.description}
-                            </p>
-                            {res.body && (
-                              <div
-                                style={{
-                                  background: 'var(--surface)',
-                                  padding: '0.75rem 1rem',
-                                  borderRadius: '6px',
-                                  fontSize: '0.88rem',
-                                  lineHeight: '1.6',
-                                  whiteSpace: 'pre-wrap',
-                                  border: '1px solid var(--border)',
-                                  marginTop: '0.4rem',
-                                }}
-                              >
-                                {res.body}
-                              </div>
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    </section>
-                  )}
+                  {/* SECTION 3: PRINTABLES & GUIDES STUDIO GLOW-UP */}
+                  <PrintablesStudio
+                    course={activeTeacherCourse}
+                    student={targetStudent}
+                  />
 
                   {/* SECTION 3: ANSWER KEYS WITH STEP-BY-STEP RATIONALES */}
                   <section className="card">

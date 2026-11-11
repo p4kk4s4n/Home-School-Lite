@@ -1567,6 +1567,90 @@ code {
   border-color: var(--primary-bright);
 }
 
+/* ========================================================================= */
+/* PRINTABLES & GUIDES STUDIO GLOW-UP STYLES                                 */
+/* ========================================================================= */
+
+.printables-nav-tabs {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.printables-nav-tab {
+  flex: 1;
+  min-width: 240px;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.85rem 1.15rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s ease;
+}
+
+.printables-nav-tab:hover {
+  border-color: var(--primary-bright);
+  transform: translateY(-1px);
+}
+
+.printables-nav-tab.active {
+  border-color: var(--primary-bright);
+  background: rgba(59, 130, 246, 0.08);
+  box-shadow: 0 0 0 1px var(--primary-bright);
+}
+
+.printables-nav-tab span {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.printables-nav-tab strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.printables-nav-tab small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-top: 0.15rem;
+}
+
+.resource-card-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formatted-md-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  margin: 0.65rem 0;
+  background: var(--surface);
+}
+
+.formatted-md-table th {
+  background: var(--surface-alt);
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  text-align: left;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.formatted-md-table td {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
 @media print {
   .no-print,
   .topbar,
@@ -1574,7 +1658,10 @@ code {
   .btn,
   .breadcrumb-row,
   .mode-tabs,
-  .pin-gate-card {
+  .pin-gate-card,
+  .textbook-panel,
+  .textbook-floating-pill,
+  .textbook-backdrop {
     display: none !important;
   }
   body, .main-container, .page-stack {
@@ -1582,6 +1669,7 @@ code {
     color: #000 !important;
     padding: 0 !important;
     margin: 0 !important;
+    width: 100% !important;
   }
   .card {
     box-shadow: none !important;
@@ -1589,10 +1677,13 @@ code {
     padding: 0 !important;
     margin: 0 !important;
   }
-  .worksheet-container {
+  .worksheet-container,
+  .printable-sheet-preview,
+  .resource-doc-card {
     border: none !important;
     padding: 0 !important;
     background: transparent !important;
+    box-shadow: none !important;
   }
   .worksheet-q-item {
     page-break-inside: avoid;

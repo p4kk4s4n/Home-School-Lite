@@ -17,28 +17,52 @@ export function assertNamespacedKey(key: string): void {
   }
 }
 
+/**
+ * Ensures any key is strictly scoped with the `hsl:` prefix.
+ * If an un-prefixed key is passed, auto-prefixes it to guarantee isolation
+ * without crashing the UI.
+ */
+function resolveSafeKey(key: string): string {
+  if (key.startsWith(STORAGE_PREFIX)) return key
+  return `${STORAGE_PREFIX}${key}`
+}
+
 export function getLocalItem(key: string): string | null {
-  assertNamespacedKey(key)
+  const safeKey = resolveSafeKey(key)
   try {
-    return window.localStorage.getItem(key)
+    const val = window.localStorage.getItem(safeKey)
+    if (val !== null) return val
+    // If an un-prefixed legacy key is present, migrate it to the namespaced key
+    if (safeKey !== key) {
+      const legacyVal = window.localStorage.getItem(key)
+      if (legacyVal !== null) {
+        window.localStorage.setItem(safeKey, legacyVal)
+        window.localStorage.removeItem(key)
+        return legacyVal
+      }
+    }
+    return null
   } catch {
     return null
   }
 }
 
 export function setLocalItem(key: string, value: string): void {
-  assertNamespacedKey(key)
+  const safeKey = resolveSafeKey(key)
   try {
-    window.localStorage.setItem(key, value)
+    window.localStorage.setItem(safeKey, value)
   } catch {
     // Ignore storage quota errors
   }
 }
 
 export function removeLocalItem(key: string): void {
-  assertNamespacedKey(key)
+  const safeKey = resolveSafeKey(key)
   try {
-    window.localStorage.removeItem(key)
+    window.localStorage.removeItem(safeKey)
+    if (safeKey !== key) {
+      window.localStorage.removeItem(key)
+    }
   } catch {
     // Ignore
   }
