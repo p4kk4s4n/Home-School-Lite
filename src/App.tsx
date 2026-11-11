@@ -9,6 +9,7 @@ import { FamilyPage } from './pages/FamilyPage'
 import { GradesPage } from './pages/GradesPage'
 import { LessonPage } from './pages/LessonPage'
 import { SettingsPage } from './pages/SettingsPage'
+import { TeacherResourcesPage } from './pages/TeacherResourcesPage'
 import { TrackerPage } from './pages/TrackerPage'
 
 const AppRoutes: React.FC = () => {
@@ -47,6 +48,8 @@ const AppRoutes: React.FC = () => {
           <Route path="/tracker" element={<TrackerPage />} />
           <Route path="/grades" element={<GradesPage />} />
           <Route path="/family" element={<FamilyPage />} />
+          <Route path="/teacher-resources" element={<TeacherResourcesPage />} />
+          <Route path="/resources" element={<Navigate to="/teacher-resources" replace />} />
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

@@ -1,11 +1,10 @@
 import React, { useMemo, useState } from 'react'
-import { PrintablesStudio } from '../components/PrintablesStudio'
+import { Link } from 'react-router-dom'
 import { useApp } from '../context/AppContext'
 import { findLessonInCourse, getCoursesForGrade } from '../lib/curriculum'
 import { exportBackupData, importBackupData } from '../lib/db'
 import { APP_ID, APP_SCOPE, CACHE_PREFIX, STORAGE_PREFIX } from '../lib/storage'
-import { generatePrincipleSamples, generateWorksheet } from '../lib/worksheetGenerator'
-import { GradeLevel, Principle, SUPPORTED_GRADES } from '../types'
+import { GradeLevel, SUPPORTED_GRADES } from '../types'
 
 export const SettingsPage: React.FC = () => {
   const {
@@ -31,14 +30,12 @@ export const SettingsPage: React.FC = () => {
     promptInstallPwa,
   } = useApp()
 
-  // Top navigation tabs: Settings & Controls vs. Daily Learning Guide vs. Teacher Resources
-  const [activeTab, setActiveTab] = useState<'settings' | 'instructions' | 'teacher_resources'>('settings')
+  // Top navigation tabs: Settings & Controls vs. Daily Learning Guide
+  const [activeTab, setActiveTab] = useState<'settings' | 'instructions'>('settings')
 
   // Progress reset & attempt deletion state
   const [selectedStudentId, setSelectedStudentId] = useState<string>(() => activeStudent?.id ?? '')
   const [selectedCourseId, setSelectedCourseId] = useState<string>('')
-  const [teacherCourseId, setTeacherCourseId] = useState<string>('')
-  const [teacherUnitFilter, setTeacherUnitFilter] = useState<string>('all')
 
   const [installPromptMsg, setInstallPromptMsg] = useState('')
   const [pinInput, setPinInput] = useState('')
@@ -57,71 +54,6 @@ export const SettingsPage: React.FC = () => {
     if (!targetStudent) return []
     return getCoursesForGrade(targetStudent.grade, settings.includeOhioAdjustments ?? true)
   }, [targetStudent, settings.includeOhioAdjustments])
-
-  // Active course for teacher resources
-  const activeTeacherCourseId = teacherCourseId || targetCourses[0]?.id || ''
-  const activeTeacherCourse = useMemo(() => {
-    return targetCourses.find((c) => c.id === activeTeacherCourseId) ?? targetCourses[0] ?? null
-  }, [targetCourses, activeTeacherCourseId])
-
-  const teacherCoreUnits = useMemo(() => {
-    if (!activeTeacherCourse) return []
-    return activeTeacherCourse.units.filter((u) => u.kind !== 'explore' && u.kind !== 'teacher_resources')
-  }, [activeTeacherCourse])
-
-  const teacherResourceUnit = useMemo(() => {
-    if (!activeTeacherCourse) return null
-    return activeTeacherCourse.units.find((u) => u.kind === 'teacher_resources') ?? null
-  }, [activeTeacherCourse])
-
-  const totalCoreLessonsInTeacherCourse = useMemo(() => {
-    return teacherCoreUnits.reduce((acc, u) => acc + u.lessons.length, 0)
-  }, [teacherCoreUnits])
-
-  // Teacher worksheet & test generator studio state
-  const [worksheetUnitId, setWorksheetUnitId] = useState<string>('all')
-  const [worksheetPrincipleId, setWorksheetPrincipleId] = useState<string>('')
-  const [worksheetCount, setWorksheetCount] = useState<number>(5)
-  const [worksheetSeed, setWorksheetSeed] = useState<number>(1001)
-  const [worksheetMode, setWorksheetMode] = useState<'student' | 'teacher'>('student')
-  const [sampleSeeds, setSampleSeeds] = useState<Record<string, number>>({})
-
-  const availableWorksheetPrinciples = useMemo(() => {
-    if (!activeTeacherCourse) return []
-    const units =
-      worksheetUnitId === 'all'
-        ? teacherCoreUnits
-        : teacherCoreUnits.filter((u) => u.id === worksheetUnitId)
-    const list: Principle[] = []
-    for (const u of units) {
-      for (const l of u.lessons) {
-        list.push(...l.principles)
-      }
-    }
-    const map = new Map<string, Principle>()
-    for (const p of list) {
-      if (!map.has(p.id)) map.set(p.id, p)
-    }
-    return Array.from(map.values())
-  }, [activeTeacherCourse, worksheetUnitId, teacherCoreUnits])
-
-  const generatedWorksheetQuestions = useMemo(() => {
-    if (!activeTeacherCourse) return []
-    return generateWorksheet({
-      course: activeTeacherCourse,
-      unitId: worksheetUnitId,
-      principleId: worksheetPrincipleId || undefined,
-      seed: worksheetSeed,
-      questionCount: worksheetCount,
-    })
-  }, [activeTeacherCourse, worksheetUnitId, worksheetPrincipleId, worksheetSeed, worksheetCount])
-
-  const rerollSampleSeed = (principleId: string) => {
-    setSampleSeeds((prev) => ({
-      ...prev,
-      [principleId]: (prev[principleId] || Date.now()) + 13,
-    }))
-  }
 
   // Active course for lesson deletion
   const activeTargetCourseId = selectedCourseId || targetCourses[0]?.id || ''
@@ -241,29 +173,31 @@ export const SettingsPage: React.FC = () => {
         </div>
       )}
 
-      {/* TOP TABS: SETTINGS VS. DAILY INSTRUCTIONS VS. TEACHER RESOURCES */}
-      <div className="mode-tabs" style={{ marginBottom: '1rem' }}>
-        <button
-          type="button"
-          className={`mode-tab ${activeTab === 'settings' ? 'active' : ''}`}
-          onClick={() => setActiveTab('settings')}
+      {/* TOP TABS: SETTINGS VS. DAILY INSTRUCTIONS */}
+      <div className="mode-tabs" style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+          <button
+            type="button"
+            className={`mode-tab ${activeTab === 'settings' ? 'active' : ''}`}
+            onClick={() => setActiveTab('settings')}
+          >
+            ⚙️ Settings &amp; Parental Controls
+          </button>
+          <button
+            type="button"
+            className={`mode-tab ${activeTab === 'instructions' ? 'active' : ''}`}
+            onClick={() => setActiveTab('instructions')}
+          >
+            📖 Daily Learning Guide &amp; Instructions
+          </button>
+        </div>
+        <Link
+          to="/teacher-resources"
+          className="btn btn-secondary btn-sm"
+          style={{ textDecoration: 'none' }}
         >
-          ⚙️ Settings &amp; Parental Controls
-        </button>
-        <button
-          type="button"
-          className={`mode-tab ${activeTab === 'instructions' ? 'active' : ''}`}
-          onClick={() => setActiveTab('instructions')}
-        >
-          📖 Daily Learning Guide &amp; Instructions
-        </button>
-        <button
-          type="button"
-          className={`mode-tab ${activeTab === 'teacher_resources' ? 'active' : ''}`}
-          onClick={() => setActiveTab('teacher_resources')}
-        >
-          📚 Teacher Resources &amp; Pacing
-        </button>
+          📚 Open Teacher Resources Tab →
+        </Link>
       </div>
 
       {activeTab === 'instructions' ? (
@@ -495,538 +429,6 @@ export const SettingsPage: React.FC = () => {
               </button>
             </div>
           </section>
-        </div>
-      ) : activeTab === 'teacher_resources' ? (
-        /* ========================================================================= */
-        /* TEACHER RESOURCES TAB (PARENT PIN PROTECTED)                              */
-        /* ========================================================================= */
-        <div className="page-stack">
-          {!isParentUnlocked ? (
-            <section className="card pin-gate-card">
-              <h2>🔒 Teacher Resources Portal (PIN Protected)</h2>
-              <p className="muted">
-                Pacing guides, answer keys, printable worksheets, and curriculum rubrics are intended for parents and instructors. Enter your Parent PIN to unlock.{' '}
-                <strong>(Default PIN: 1234)</strong>
-              </p>
-              <form onSubmit={handleUnlock} className="pin-form">
-                <input
-                  type="password"
-                  className="input pin-input"
-                  placeholder="Enter PIN (1234)"
-                  value={pinInput}
-                  onChange={(e) => setPinInput(e.target.value)}
-                  aria-label="Parent PIN"
-                />
-                <button type="submit" className="btn btn-primary">
-                  Unlock Teacher Portal
-                </button>
-              </form>
-              {pinError && <p className="text-danger">{pinError}</p>}
-            </section>
-          ) : (
-            <>
-              {/* HEADER & COURSE PICKER */}
-              <section className="card">
-                <div className="section-header">
-                  <div>
-                    <span className="course-subject-tag">PARENT EDUCATOR DASHBOARD</span>
-                    <h2>Teacher Resources, Pacing Guides &amp; Answer Keys</h2>
-                    <p className="muted">
-                      Full curriculum maps, answer keys with step-by-step explanations, printable guides, and Ohio/National standards crosswalks.
-                    </p>
-                  </div>
-                  <button
-                    type="button"
-                    className="btn btn-secondary btn-sm"
-                    onClick={lockParent}
-                  >
-                    🔒 Lock Parent Portal
-                  </button>
-                </div>
-
-                <div style={{ marginTop: '1rem', display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
-                  <label className="field-label" style={{ minWidth: '280px', margin: 0 }}>
-                    Select Subject / Course:
-                    <select
-                      className="input"
-                      value={activeTeacherCourse?.id ?? ''}
-                      onChange={(e) => setTeacherCourseId(e.target.value)}
-                      style={{ marginTop: '0.35rem' }}
-                    >
-                      {targetCourses.map((c) => (
-                        <option key={c.id} value={c.id}>
-                          {c.title} ({c.grade}th Grade)
-                        </option>
-                      ))}
-                    </select>
-                  </label>
-                  {targetStudent && (
-                    <div style={{ fontSize: '0.9rem', color: 'var(--muted)', paddingTop: '1.25rem' }}>
-                      Viewing resources for: <strong>{targetStudent.name}</strong> (Grade {targetStudent.grade})
-                    </div>
-                  )}
-                </div>
-              </section>
-
-              {activeTeacherCourse && (
-                <>
-                  {/* SECTION 1: COURSE PACING & TIMELINE */}
-                  <section className="card">
-                    <div className="section-header">
-                      <div>
-                        <span className="badge badge-primary">PACING CALCULATOR</span>
-                        <h2>36-Week Pacing Guide: {activeTeacherCourse.title}</h2>
-                        <p className="muted-sm">
-                          Total Core Units: <strong>{teacherCoreUnits.length}</strong> • Total Core Lessons &amp; Checks: <strong>{totalCoreLessonsInTeacherCourse}</strong>
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="principles-grid" style={{ marginTop: '0.75rem' }}>
-                      <div className="card" style={{ background: 'var(--surface-alt)', border: '1px solid var(--border)' }}>
-                        <span className="stat-label">Target School Year End</span>
-                        <strong style={{ fontSize: '1.25rem', color: 'var(--primary-bright)' }}>
-                          {targetStudent?.targetEndDate ? new Date(targetStudent.targetEndDate).toLocaleDateString() : 'June 15'}
-                        </strong>
-                        <p className="muted-sm" style={{ marginTop: '0.25rem' }}>
-                          Configured in student settings
-                        </p>
-                      </div>
-                      <div className="card" style={{ background: 'var(--surface-alt)', border: '1px solid var(--border)' }}>
-                        <span className="stat-label">Recommended Pace</span>
-                        <strong style={{ fontSize: '1.25rem', color: 'var(--success)' }}>
-                          ~{Math.max(1, Math.round(totalCoreLessonsInTeacherCourse / 36 * 10) / 10)} Lessons / Week
-                        </strong>
-                        <p className="muted-sm" style={{ marginTop: '0.25rem' }}>
-                          Keeps student on track for complete mastery
-                        </p>
-                      </div>
-                      <div className="card" style={{ background: 'var(--surface-alt)', border: '1px solid var(--border)' }}>
-                        <span className="stat-label">Daily Study Time</span>
-                        <strong style={{ fontSize: '1.25rem', color: 'var(--accent)' }}>
-                          10–15 Minutes / Day
-                        </strong>
-                        <p className="muted-sm" style={{ marginTop: '0.25rem' }}>
-                          Micro-lesson + 5-question mastery check
-                        </p>
-                      </div>
-                    </div>
-
-                    <div style={{ marginTop: '1.25rem', overflowX: 'auto' }}>
-                      <table className="student-list" style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem' }}>
-                        <thead>
-                          <tr style={{ textAlign: 'left', borderBottom: '2px solid var(--border)' }}>
-                            <th style={{ padding: '0.5rem' }}>Unit</th>
-                            <th style={{ padding: '0.5rem' }}>Title</th>
-                            <th style={{ padding: '0.5rem' }}>Lessons</th>
-                            <th style={{ padding: '0.5rem' }}>Standards Covered</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {teacherCoreUnits.map((u, idx) => (
-                            <tr key={u.id} style={{ borderBottom: '1px solid var(--border)' }}>
-                              <td style={{ padding: '0.5rem', fontWeight: 600 }}>Unit {idx + 1}</td>
-                              <td style={{ padding: '0.5rem' }}>{u.title}</td>
-                              <td style={{ padding: '0.5rem' }}>{u.lessons.length} lessons</td>
-                              <td style={{ padding: '0.5rem' }}>
-                                <span className="muted-sm">{u.standards.join(', ')}</span>
-                              </td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  </section>
-
-                  {/* SECTION 2: INTERACTIVE WORKSHEET & QUIZ GENERATOR STUDIO */}
-                  <section className="card">
-                    <div className="section-header">
-                      <div>
-                        <span className="badge badge-accent">ALGORITHMIC TEST STUDIO</span>
-                        <h2>📝 Printable Multiple-Choice Worksheet &amp; Quiz Generator</h2>
-                        <p className="muted-sm">
-                          Generate custom multiple-choice paper practice worksheets and teacher answer keys powered by the algorithmic math &amp; curriculum question generators.
-                        </p>
-                      </div>
-                      <div className="no-print" style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                        <button
-                          type="button"
-                          className="btn btn-primary btn-sm"
-                          onClick={() => window.print()}
-                        >
-                          🖨️ Print / Save PDF
-                        </button>
-                        <button
-                          type="button"
-                          className="btn btn-secondary btn-sm"
-                          onClick={() => setWorksheetSeed((prev) => prev + 1)}
-                        >
-                          🎲 Regenerate Numbers
-                        </button>
-                      </div>
-                    </div>
-
-                    <div className="no-print" style={{ marginTop: '1rem', display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
-                      <label className="field-label" style={{ minWidth: '200px', margin: 0 }}>
-                        Scope / Unit:
-                        <select
-                          className="input"
-                          value={worksheetUnitId}
-                          onChange={(e) => {
-                            setWorksheetUnitId(e.target.value)
-                            setWorksheetPrincipleId('')
-                          }}
-                          style={{ marginTop: '0.35rem' }}
-                        >
-                          <option value="all">All Units (Entire Course)</option>
-                          {teacherCoreUnits.map((u) => (
-                            <option key={u.id} value={u.id}>
-                              {u.title}
-                            </option>
-                          ))}
-                        </select>
-                      </label>
-
-                      <label className="field-label" style={{ minWidth: '220px', margin: 0 }}>
-                        Target Skill / Principle:
-                        <select
-                          className="input"
-                          value={worksheetPrincipleId}
-                          onChange={(e) => setWorksheetPrincipleId(e.target.value)}
-                          style={{ marginTop: '0.35rem' }}
-                        >
-                          <option value="">All Skills in Selected Scope ({availableWorksheetPrinciples.length})</option>
-                          {availableWorksheetPrinciples.map((p) => (
-                            <option key={p.id} value={p.id}>
-                              {p.title} ({p.standard})
-                            </option>
-                          ))}
-                        </select>
-                      </label>
-
-                      <label className="field-label" style={{ minWidth: '130px', margin: 0 }}>
-                        Question Count:
-                        <select
-                          className="input"
-                          value={worksheetCount}
-                          onChange={(e) => setWorksheetCount(Number(e.target.value))}
-                          style={{ marginTop: '0.35rem' }}
-                        >
-                          <option value={5}>5 Questions</option>
-                          <option value={10}>10 Questions</option>
-                          <option value={15}>15 Questions</option>
-                          <option value={20}>20 Questions</option>
-                        </select>
-                      </label>
-
-                      <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', marginTop: '1.25rem' }}>
-                        <button
-                          type="button"
-                          className={`btn btn-sm ${worksheetMode === 'student' ? 'btn-primary' : 'btn-secondary'}`}
-                          onClick={() => setWorksheetMode('student')}
-                        >
-                          📄 Student Test (Answers Hidden)
-                        </button>
-                        <button
-                          type="button"
-                          className={`btn btn-sm ${worksheetMode === 'teacher' ? 'btn-accent' : 'btn-secondary'}`}
-                          onClick={() => setWorksheetMode('teacher')}
-                        >
-                          🔑 Teacher Key (With Solutions)
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* PRINTABLE WORKSHEET VIEW */}
-                    <div className="worksheet-container" style={{ marginTop: '1.5rem', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '8px', padding: '1.25rem' }}>
-                      <div className="worksheet-header-block" style={{ borderBottom: '2px solid var(--border)', paddingBottom: '1rem', marginBottom: '1.25rem' }}>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
-                          <div>
-                            <h2 style={{ margin: 0, fontSize: '1.35rem' }}>{activeTeacherCourse.title} Practice Assessment</h2>
-                            <div className="muted-sm" style={{ marginTop: '0.2rem' }}>
-                              Grade {activeTeacherCourse.grade} • {worksheetUnitId === 'all' ? 'Comprehensive Assessment' : teacherCoreUnits.find((u) => u.id === worksheetUnitId)?.title}
-                              {worksheetPrincipleId && ` • Focus: ${availableWorksheetPrinciples.find((p) => p.id === worksheetPrincipleId)?.title}`}
-                            </div>
-                          </div>
-                          <div style={{ textAlign: 'right' }}>
-                            <span className={`badge ${worksheetMode === 'teacher' ? 'badge-exam' : 'badge-neutral'}`}>
-                              {worksheetMode === 'teacher' ? 'TEACHER ANSWER KEY (DO NOT DISTRIBUTE)' : 'STUDENT PRACTICE TEST'}
-                            </span>
-                            <div className="muted-sm" style={{ marginTop: '0.25rem' }}>
-                              Seed #{worksheetSeed} • {generatedWorksheetQuestions.length} Questions
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="worksheet-meta-lines" style={{ marginTop: '1rem', paddingTop: '0.75rem', borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', fontSize: '0.95rem' }}>
-                          <div>Student Name: __________________________________</div>
-                          <div>Date: ____________________</div>
-                          <div>Score: ________ / {generatedWorksheetQuestions.length}</div>
-                        </div>
-                      </div>
-
-                      {generatedWorksheetQuestions.length === 0 ? (
-                        <div style={{ padding: '2rem', textAlign: 'center' }} className="muted">
-                          No questions generated for this selection. Try selecting "All Skills in Selected Scope" or clicking Regenerate Numbers.
-                        </div>
-                      ) : (
-                        <div className="worksheet-questions-list">
-                          {generatedWorksheetQuestions.map((q, idx) => (
-                            <div key={`${q.fingerprint}-${idx}`} className="worksheet-q-item" style={{ padding: '1.25rem 0', borderBottom: '1px dashed var(--border)' }}>
-                              <div className="worksheet-q-prompt" style={{ fontSize: '1.05rem', fontWeight: 600, marginBottom: '0.5rem' }}>
-                                <span>{idx + 1}. </span>
-                                <span>{q.prompt}</span>
-                              </div>
-
-                              {q.passage && (
-                                <div style={{ background: 'var(--surface-alt)', padding: '0.75rem 1rem', borderRadius: '6px', margin: '0.5rem 0', fontStyle: 'italic', fontSize: '0.9rem' }}>
-                                  {q.passage}
-                                </div>
-                              )}
-
-                              <div className="worksheet-choices-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.6rem', marginTop: '0.75rem' }}>
-                                {(q.choices || [q.answer, 'Option B', 'Option C', 'Option D']).map((choice, cIdx) => {
-                                  const letter = String.fromCharCode(65 + cIdx)
-                                  const isCorrect = choice === q.answer
-                                  const highlight = worksheetMode === 'teacher' && isCorrect
-
-                                  return (
-                                    <div
-                                      key={cIdx}
-                                      className="worksheet-choice"
-                                      style={{
-                                        padding: '0.6rem 0.85rem',
-                                        borderRadius: '6px',
-                                        border: highlight ? '2px solid var(--success)' : '1px solid var(--border)',
-                                        background: highlight ? 'rgba(34, 197, 94, 0.12)' : 'var(--surface-alt)',
-                                        fontWeight: highlight ? 700 : 400,
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        gap: '0.5rem',
-                                        fontSize: '0.95rem',
-                                      }}
-                                    >
-                                      <span style={{ fontWeight: 700, width: '22px' }}>({letter})</span>
-                                      <span>{choice}</span>
-                                      {highlight && <span style={{ marginLeft: 'auto', color: 'var(--success)' }}>✓</span>}
-                                    </div>
-                                  )
-                                })}
-                              </div>
-
-                              {worksheetMode === 'teacher' && (
-                                <div style={{ marginTop: '0.75rem', padding: '0.6rem 0.85rem', borderRadius: '6px', background: 'var(--surface-alt)', borderLeft: '4px solid var(--accent)', fontSize: '0.88rem' }}>
-                                  <div><strong>Standard:</strong> {q.principleTitle} ({q.principleId})</div>
-                                  <div style={{ marginTop: '0.2rem' }}><strong>Step-by-step Solution:</strong> {q.explanation}</div>
-                                </div>
-                              )}
-
-                              {worksheetMode === 'student' && (
-                                <div className="worksheet-workspace" style={{ marginTop: '0.75rem', height: '65px', border: '1px dashed var(--border)', borderRadius: '6px', padding: '0.4rem 0.6rem', fontSize: '0.75rem', color: 'var(--muted)' }}>
-                                  Workspace / Scratch Work:
-                                </div>
-                              )}
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  </section>
-
-                  {/* SECTION 3: PRINTABLES & GUIDES STUDIO GLOW-UP */}
-                  <PrintablesStudio
-                    course={activeTeacherCourse}
-                    student={targetStudent}
-                  />
-
-                  {/* SECTION 3: ANSWER KEYS WITH STEP-BY-STEP RATIONALES */}
-                  <section className="card">
-                    <div className="section-header">
-                      <div>
-                        <span className="badge badge-success">ANSWER KEYS</span>
-                        <h2>Lesson Answer Keys &amp; Worked Solutions</h2>
-                        <p className="muted-sm">
-                          Sample questions, correct solutions, and full pedagogical explanations for every lesson and exam in this course.
-                        </p>
-                      </div>
-
-                      <div>
-                        <select
-                          className="input"
-                          value={teacherUnitFilter}
-                          onChange={(e) => setTeacherUnitFilter(e.target.value)}
-                          style={{ maxWidth: '240px' }}
-                        >
-                          <option value="all">All Units ({teacherCoreUnits.length})</option>
-                          {teacherCoreUnits.map((u) => (
-                            <option key={u.id} value={u.id}>
-                              {u.title}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
-                    </div>
-
-                    <div className="student-list" style={{ marginTop: '1rem' }}>
-                      {teacherCoreUnits
-                        .filter((u) => teacherUnitFilter === 'all' || u.id === teacherUnitFilter)
-                        .map((unit) => (
-                          <div key={unit.id} style={{ marginBottom: '1.5rem' }}>
-                            <h3 style={{ borderBottom: '2px solid var(--border)', paddingBottom: '0.4rem', marginBottom: '0.75rem' }}>
-                              {unit.title}
-                            </h3>
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                              {unit.lessons.map((lesson) => (
-                                <details
-                                  key={lesson.id}
-                                  style={{
-                                    background: 'var(--surface-alt)',
-                                    padding: '0.75rem 1rem',
-                                    borderRadius: '8px',
-                                    border: '1px solid var(--border)',
-                                  }}
-                                >
-                                  <summary style={{ cursor: 'pointer', fontWeight: 600 }}>
-                                    <span>{lesson.title}</span>
-                                    <span className="muted-sm" style={{ marginLeft: '0.5rem' }}>
-                                      ({lesson.principles.map((p) => p.standard).join(', ')})
-                                      {lesson.kind === 'unit_test' && ' • Unit Exam'}
-                                    </span>
-                                  </summary>
-
-                                  <div style={{ marginTop: '0.75rem', paddingTop: '0.5rem', borderTop: '1px solid var(--border)' }}>
-                                    <p className="muted-sm" style={{ marginBottom: '0.5rem' }}>
-                                      <strong>Core Concept:</strong> {lesson.reading}
-                                    </p>
-
-                                    {lesson.principles.map((p) => (
-                                      <div key={p.id} style={{ marginTop: '0.6rem' }}>
-                                        <div style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--primary-bright)' }}>
-                                          Principle: {p.title} ({p.standard})
-                                        </div>
-
-                                        {p.generatorId ? (
-                                          <div style={{ marginTop: '0.5rem' }}>
-                                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-                                              <div style={{ fontSize: '0.82rem', color: 'var(--primary-bright)', fontWeight: 600 }}>
-                                                ⚡ Procedural Generator: <code>{p.generatorId}</code>
-                                              </div>
-                                              <button
-                                                type="button"
-                                                className="btn btn-secondary btn-sm"
-                                                style={{ fontSize: '0.78rem', padding: '0.2rem 0.5rem' }}
-                                                onClick={() => rerollSampleSeed(p.id)}
-                                              >
-                                                🎲 Roll Fresh Numbers
-                                              </button>
-                                            </div>
-                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                                              {generatePrincipleSamples(p, sampleSeeds[p.id] || 42, 3).map((item, idx) => (
-                                                <div
-                                                  key={item.id}
-                                                  style={{
-                                                    background: 'var(--surface)',
-                                                    padding: '0.6rem 0.85rem',
-                                                    borderRadius: '6px',
-                                                    fontSize: '0.85rem',
-                                                    border: '1px solid var(--border)',
-                                                  }}
-                                                >
-                                                  <div><strong>Sample Q{idx + 1}:</strong> {item.prompt}</div>
-                                                  {item.choices && item.choices.length > 0 && (
-                                                    <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', margin: '0.35rem 0' }}>
-                                                      {item.choices.map((choice, cIdx) => {
-                                                        const letter = String.fromCharCode(65 + cIdx)
-                                                        const isCorrect = choice === item.answer
-                                                        return (
-                                                          <span
-                                                            key={cIdx}
-                                                            style={{
-                                                              padding: '0.2rem 0.5rem',
-                                                              borderRadius: '4px',
-                                                              fontSize: '0.8rem',
-                                                              border: isCorrect ? '1px solid var(--success)' : '1px solid var(--border)',
-                                                              background: isCorrect ? 'rgba(34, 197, 94, 0.12)' : 'var(--surface-alt)',
-                                                              fontWeight: isCorrect ? 600 : 400,
-                                                            }}
-                                                          >
-                                                            ({letter}) {choice} {isCorrect && '✓'}
-                                                          </span>
-                                                        )
-                                                      })}
-                                                    </div>
-                                                  )}
-                                                  <div style={{ color: 'var(--success)', marginTop: '0.2rem' }}>
-                                                    <strong>Correct Answer:</strong> {item.answer}
-                                                  </div>
-                                                  <div className="muted-sm" style={{ marginTop: '0.2rem' }}>
-                                                    <strong>Step-by-step Solution:</strong> {item.explanation}
-                                                  </div>
-                                                </div>
-                                              ))}
-                                            </div>
-                                          </div>
-                                        ) : p.bank && p.bank.length > 0 ? (
-                                          <div style={{ marginTop: '0.4rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                                            {p.bank.slice(0, 3).map((item, idx) => (
-                                              <div
-                                                key={item.id}
-                                                style={{
-                                                  background: 'var(--surface)',
-                                                  padding: '0.6rem 0.85rem',
-                                                  borderRadius: '6px',
-                                                  fontSize: '0.85rem',
-                                                  border: '1px solid var(--border)',
-                                                }}
-                                              >
-                                                <div><strong>Q{idx + 1}:</strong> {item.prompt}</div>
-                                                {item.choices && item.choices.length > 0 && (
-                                                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', margin: '0.35rem 0' }}>
-                                                    {item.choices.map((choice, cIdx) => {
-                                                      const letter = String.fromCharCode(65 + cIdx)
-                                                      const isCorrect = choice === item.answer
-                                                      return (
-                                                        <span
-                                                          key={cIdx}
-                                                          style={{
-                                                            padding: '0.2rem 0.5rem',
-                                                            borderRadius: '4px',
-                                                            fontSize: '0.8rem',
-                                                            border: isCorrect ? '1px solid var(--success)' : '1px solid var(--border)',
-                                                            background: isCorrect ? 'rgba(34, 197, 94, 0.12)' : 'var(--surface-alt)',
-                                                            fontWeight: isCorrect ? 600 : 400,
-                                                          }}
-                                                        >
-                                                          ({letter}) {choice} {isCorrect && '✓'}
-                                                        </span>
-                                                      )
-                                                    })}
-                                                  </div>
-                                                )}
-                                                <div style={{ color: 'var(--success)', marginTop: '0.2rem' }}>
-                                                  <strong>Correct Answer:</strong> {item.answer}
-                                                </div>
-                                                <div className="muted-sm" style={{ marginTop: '0.2rem' }}>
-                                                  <strong>Step-by-step Solution:</strong> {item.explanation}
-                                                </div>
-                                              </div>
-                                            ))}
-                                          </div>
-                                        ) : null}
-                                      </div>
-                                    ))}
-                                  </div>
-                                </details>
-                              ))}
-                            </div>
-                          </div>
-                        ))}
-                    </div>
-                  </section>
-                </>
-              )}
-            </>
-          )}
         </div>
       ) : (
         /* ========================================================================= */

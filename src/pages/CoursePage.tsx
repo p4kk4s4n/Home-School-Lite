@@ -183,7 +183,7 @@ export const CoursePage: React.FC = () => {
                     Pacing guides, answer keys with step-by-step solutions, printable worksheets, and Ohio/National standards crosswalks for this course are located in the Parent Portal.
                   </p>
                 </div>
-                <Link to="/settings" className="btn btn-secondary btn-sm">
+                <Link to="/teacher-resources" className="btn btn-secondary btn-sm">
                   Open Teacher Resources →
                 </Link>
               </div>
