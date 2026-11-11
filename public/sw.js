@@ -2,7 +2,7 @@
 // Strictly scoped to /Home-School-Lite/ and only touches caches prefixed with "hsl-"
 const APP_SCOPE = '/Home-School-Lite/';
 const CACHE_PREFIX = 'hsl-';
-const CACHE_VERSION = 'hsl-v1.11.0-runtime';
+const CACHE_VERSION = 'hsl-v1.12.0-runtime';
 
 const PRECACHE_URLS = [
   '/Home-School-Lite/',
@@ -87,6 +87,22 @@ self.addEventListener('fetch', (event) => {
         })
         .catch(() => cached);
       return cached || networkFetch;
+    })
+  );
+});
+
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
+      for (const client of clientList) {
+        if (client.url.includes(APP_SCOPE) && 'focus' in client) {
+          return client.focus();
+        }
+      }
+      if (clients.openWindow) {
+        return clients.openWindow(APP_SCOPE);
+      }
     })
   );
 });

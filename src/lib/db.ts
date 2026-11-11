@@ -63,6 +63,12 @@ export const DEFAULT_SETTINGS: AppSettings = {
   autoCheckUpdates: true,
   updateCheckIntervalMin: 15,
   autoApplyUpdates: false,
+  colorScheme: 'daylight',
+  uiScale: 100,
+  viewportAspectMode: 'auto',
+  workspaceMaxWidth: 1280,
+  dailyReminderEnabled: false,
+  dailyReminderTime: '09:00',
   updatedAt: '2026-01-01T00:00:00.000Z',
   deletedStudentIds: [],
   familySync: {

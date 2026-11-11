@@ -9,6 +9,8 @@ export const STORAGE_KEYS = {
   DISMISSED_VERSION: 'hsl:dismissedVersion',
   CHECKLIST_PREFIX: 'hsl:checklist:',
   EXPLORE_PREFIX: 'hsl:explore:',
+  DISPLAY_PREFS: 'hsl:displayPrefs',
+  REMINDER_CONFIG: 'hsl:reminderConfig',
 } as const
 
 export function assertNamespacedKey(key: string): void {

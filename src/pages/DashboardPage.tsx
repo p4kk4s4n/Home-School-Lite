@@ -29,6 +29,18 @@ export const DashboardPage: React.FC = () => {
     )
   }, [progressSummaries, activeStudent])
 
+  const nextOverallLesson = useMemo(() => {
+    for (const summary of progressSummaries) {
+      if (summary.nextLesson) {
+        return {
+          course: summary.course,
+          lesson: summary.nextLesson.lesson,
+        }
+      }
+    }
+    return null
+  }, [progressSummaries])
+
   if (!activeStudent) {
     return null
   }
@@ -52,6 +64,17 @@ export const DashboardPage: React.FC = () => {
             <p className="hero-sub">
               Complete video lessons and randomized mastery checks in Math, Science, Language Arts, and Social Studies.
             </p>
+            {nextOverallLesson && (
+              <div className="hero-resume-row" style={{ marginTop: '0.85rem' }}>
+                <Link
+                  to={`/course/${nextOverallLesson.course.id}/lesson/${nextOverallLesson.lesson.id}`}
+                  className="btn btn-accent hero-resume-btn"
+                  style={{ textDecoration: 'none', fontWeight: 800 }}
+                >
+                  ▶️ Resume Next Lesson: {nextOverallLesson.lesson.title} ({nextOverallLesson.course.subject.toUpperCase()})
+                </Link>
+              </div>
+            )}
           </div>
         </div>
 

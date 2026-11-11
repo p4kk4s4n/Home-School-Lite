@@ -1,10 +1,17 @@
 import React, { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { COLOR_SCHEMES } from '../components/DisplayTunerModal'
 import { useApp } from '../context/AppContext'
 import { findLessonInCourse, getCoursesForGrade } from '../lib/curriculum'
 import { exportBackupData, importBackupData } from '../lib/db'
+import {
+  getNotificationPermission,
+  isNotificationSupported,
+  requestNotificationPermission,
+  sendLearningReminderNotification,
+} from '../lib/notifications'
 import { APP_ID, APP_SCOPE, CACHE_PREFIX, STORAGE_PREFIX } from '../lib/storage'
-import { GradeLevel, SUPPORTED_GRADES } from '../types'
+import { ColorSchemeId, GradeLevel, SUPPORTED_GRADES, ViewportAspectMode } from '../types'
 
 export const SettingsPage: React.FC = () => {
   const {
@@ -43,6 +50,50 @@ export const SettingsPage: React.FC = () => {
   const [statusMsg, setStatusMsg] = useState('')
   const [importError, setImportError] = useState('')
   const [newPin, setNewPin] = useState(settings.parentPin)
+  const [notificationPermission, setNotificationPermission] = useState<NotificationPermission>(() =>
+    getNotificationPermission()
+  )
+
+  const handleSendTestNotification = async () => {
+    let perm = getNotificationPermission()
+    if (perm !== 'granted') {
+      perm = await requestNotificationPermission()
+      setNotificationPermission(perm)
+      if (perm !== 'granted') {
+        setStatusMsg('Notification permission was not granted by your browser/device.')
+        return
+      }
+    }
+    const sent = await sendLearningReminderNotification({
+      studentName: activeStudent?.name,
+      streakDays: activeStudent?.streakDays,
+    })
+    setStatusMsg(
+      sent
+        ? '🔔 Test notification dispatched! Check your notification drawer or lock screen.'
+        : 'Could not send test notification. Check your device or browser notification settings.'
+    )
+  }
+
+  const handleToggleNotification = async (enabled: boolean) => {
+    if (enabled) {
+      let perm = getNotificationPermission()
+      if (perm !== 'granted') {
+        perm = await requestNotificationPermission()
+        setNotificationPermission(perm)
+        if (perm !== 'granted') {
+          setStatusMsg('Notification permission was not granted. Cannot enable daily reminders.')
+          return
+        }
+      }
+    }
+    await updateAppSettings({ dailyReminderEnabled: enabled })
+    setStatusMsg(
+      enabled
+        ? `Daily learning reminder set for ${settings.dailyReminderTime || '09:00'}.`
+        : 'Daily learning reminders turned off.'
+    )
+  }
 
   // Current student for progress management
   const targetStudent = useMemo(() => {
@@ -435,6 +486,253 @@ export const SettingsPage: React.FC = () => {
         /* SETTINGS & PARENTAL CONTROLS TAB                                          */
         /* ========================================================================= */
         <>
+          {/* PIN-FREE SECTION A: APPEARANCE, COLOR SCHEMES & DISPLAY SIZING */}
+          <section className="card">
+            <div className="section-header">
+              <div>
+                <span className="course-subject-tag">ACCESSIBILITY &amp; VISUAL COMFORT</span>
+                <h2>🎨 Appearance, Color Schemes &amp; Display Sizing</h2>
+                <p className="muted">
+                  Customize themes, balance typography scale, and tune viewport layouts so tablet landscape and mobile phone portrait are equally legible.
+                </p>
+              </div>
+              <span className="badge badge-primary">PIN-Free Display Settings</span>
+            </div>
+
+            {/* COLOR SCHEMES */}
+            <div style={{ marginBottom: '1.5rem' }}>
+              <span className="field-label" style={{ marginBottom: '0.65rem' }}>
+                Color Palette Theme (6 Academic Schemes)
+              </span>
+              <div className="theme-options-grid">
+                {COLOR_SCHEMES.map((t) => {
+                  const isSelected = (settings.colorScheme || 'daylight') === t.id
+                  return (
+                    <button
+                      key={t.id}
+                      type="button"
+                      className={`theme-card-btn ${isSelected ? 'selected' : ''}`}
+                      onClick={() => void updateAppSettings({ colorScheme: t.id })}
+                    >
+                      <div className="theme-swatch-row">
+                        <span style={{ backgroundColor: t.preview.bg }} title="Background" />
+                        <span style={{ backgroundColor: t.preview.surface }} title="Surface" />
+                        <span style={{ backgroundColor: t.preview.primary }} title="Primary" />
+                        <span style={{ backgroundColor: t.preview.accent }} title="Accent" />
+                      </div>
+                      <strong>{t.name}</strong>
+                      <span className="muted-sm" style={{ fontSize: '0.74rem' }}>
+                        {t.description}
+                      </span>
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
+
+            <div className="settings-grid-2">
+              {/* SIZING SCALE SLIDER */}
+              <div className="settings-panel">
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <span className="field-label">
+                    Text &amp; UI Sizing Scale
+                  </span>
+                  <span className="badge badge-primary">{settings.uiScale ?? 100}%</span>
+                </div>
+                <p className="muted-sm" style={{ marginTop: '0.2rem', marginBottom: '0.75rem' }}>
+                  Scales fonts, buttons, and math equations for young learners or small phone screens.
+                </p>
+
+                <div style={{ display: 'flex', gap: '0.35rem', flexWrap: 'wrap', marginBottom: '0.65rem' }}>
+                  {[85, 95, 100, 110, 120, 125].map((s) => (
+                    <button
+                      key={s}
+                      type="button"
+                      className={`btn btn-sm ${(settings.uiScale ?? 100) === s ? 'btn-primary' : 'btn-secondary'}`}
+                      onClick={() => void updateAppSettings({ uiScale: s })}
+                    >
+                      {s}% {s === 100 ? '(Default)' : ''}
+                    </button>
+                  ))}
+                </div>
+
+                <input
+                  type="range"
+                  min={85}
+                  max={125}
+                  step={5}
+                  value={settings.uiScale ?? 100}
+                  onChange={(e) => void updateAppSettings({ uiScale: Number(e.target.value) })}
+                  aria-label="UI Sizing Slider"
+                />
+
+                <div className="sample-scale-preview" style={{ marginTop: '0.75rem' }}>
+                  <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--muted)', fontWeight: 700 }}>
+                    Live Preview:
+                  </span>
+                  <p style={{ margin: '0.25rem 0 0', fontWeight: 600 }}>
+                    Solve: \( 4x - 7 = 25 \) • High clarity on tablet &amp; phone.
+                  </p>
+                </div>
+              </div>
+
+              {/* ASPECT RATIO & WORKSPACE WIDTH */}
+              <div className="settings-panel">
+                <span className="field-label">Aspect Ratio &amp; Layout Optimization</span>
+                <p className="muted-sm" style={{ marginTop: '0.2rem', marginBottom: '0.75rem' }}>
+                  Choose how Home-School-Lite optimizes screen space for your device.
+                </p>
+
+                <div className="aspect-options-grid" style={{ marginBottom: '1rem' }}>
+                  <button
+                    type="button"
+                    className={`aspect-option-btn ${(settings.viewportAspectMode || 'auto') === 'auto' ? 'selected' : ''}`}
+                    onClick={() => void updateAppSettings({ viewportAspectMode: 'auto' })}
+                  >
+                    <span className="aspect-icon">🔄</span>
+                    <div>
+                      <strong>Auto-Detect</strong>
+                      <p className="muted-sm">Dynamic orientation</p>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    className={`aspect-option-btn ${settings.viewportAspectMode === 'portrait' ? 'selected' : ''}`}
+                    onClick={() => void updateAppSettings({ viewportAspectMode: 'portrait' })}
+                  >
+                    <span className="aspect-icon">📱</span>
+                    <div>
+                      <strong>Phone Portrait (9:16)</strong>
+                      <p className="muted-sm">Compact 1-row header</p>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    className={`aspect-option-btn ${settings.viewportAspectMode === 'landscape' ? 'selected' : ''}`}
+                    onClick={() => void updateAppSettings({ viewportAspectMode: 'landscape' })}
+                  >
+                    <span className="aspect-icon">💻</span>
+                    <div>
+                      <strong>Tablet Landscape (16:10)</strong>
+                      <p className="muted-sm">Side-by-side textbook (&ge;768px)</p>
+                    </div>
+                  </button>
+                </div>
+
+                <label className="field-label">
+                  Desktop &amp; Tablet Workspace Max Width: <strong>{settings.workspaceMaxWidth ?? 1280}px</strong>
+                  <input
+                    type="range"
+                    min={960}
+                    max={1600}
+                    step={40}
+                    value={settings.workspaceMaxWidth ?? 1280}
+                    onChange={(e) =>
+                      void updateAppSettings({ workspaceMaxWidth: Number(e.target.value) })
+                    }
+                  />
+                </label>
+              </div>
+            </div>
+          </section>
+
+          {/* PIN-FREE SECTION B: DAILY LEARNING REMINDERS & NOTIFICATIONS */}
+          <section className="card">
+            <div className="section-header">
+              <div>
+                <span className="course-subject-tag">DAILY HABIT &amp; ENGAGEMENT</span>
+                <h2>🔔 Daily Learning Reminders &amp; Push Notifications</h2>
+                <p className="muted">
+                  Keep {activeStudent?.name ?? 'your student'}’s learning streak alive with a friendly daily nudge when it’s time for bite-sized homeschool mastery.
+                </p>
+              </div>
+              <span className={`badge ${settings.dailyReminderEnabled ? 'badge-success' : 'badge-neutral'}`}>
+                {settings.dailyReminderEnabled ? 'Reminders Active' : 'Off'}
+              </span>
+            </div>
+
+            <div className="settings-grid-2">
+              <div className="settings-panel">
+                <label className="toggle-row">
+                  <input
+                    type="checkbox"
+                    checked={settings.dailyReminderEnabled ?? false}
+                    onChange={(e) => void handleToggleNotification(e.target.checked)}
+                  />
+                  <div>
+                    <strong>Enable Daily Learning Reminder Notification</strong>
+                    <p className="muted-sm">
+                      Fires a gentle reminder once a day on this device to practice today’s lessons.
+                    </p>
+                  </div>
+                </label>
+
+                <div style={{ marginTop: '1rem' }}>
+                  <label className="field-label">
+                    Reminder Time of Day
+                    <input
+                      type="time"
+                      className="input"
+                      value={settings.dailyReminderTime || '09:00'}
+                      onChange={(e) => void updateAppSettings({ dailyReminderTime: e.target.value })}
+                      disabled={!settings.dailyReminderEnabled}
+                      style={{ maxWidth: '180px', marginTop: '0.35rem' }}
+                    />
+                  </label>
+
+                  <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', marginTop: '0.5rem' }}>
+                    {['08:00', '09:00', '10:00', '14:00', '18:00'].map((timeStr) => {
+                      const isSel = (settings.dailyReminderTime || '09:00') === timeStr
+                      const displayStr =
+                        timeStr === '08:00' ? '8:00 AM' :
+                        timeStr === '09:00' ? '9:00 AM' :
+                        timeStr === '10:00' ? '10:00 AM' :
+                        timeStr === '14:00' ? '2:00 PM' : '6:00 PM'
+                      return (
+                        <button
+                          key={timeStr}
+                          type="button"
+                          className={`btn btn-sm ${isSel ? 'btn-primary' : 'btn-secondary'}`}
+                          onClick={() => void updateAppSettings({ dailyReminderTime: timeStr })}
+                          disabled={!settings.dailyReminderEnabled}
+                        >
+                          {displayStr}
+                        </button>
+                      )
+                    })}
+                  </div>
+                </div>
+              </div>
+
+              <div className="settings-panel version-diagnostics">
+                <div className="diag-row">
+                  <span>Browser Notification Support:</span>
+                  <strong>{isNotificationSupported() ? 'Supported ✅' : 'Not Supported ❌'}</strong>
+                </div>
+                <div className="diag-row">
+                  <span>Permission Status:</span>
+                  <code>{notificationPermission}</code>
+                </div>
+                <div className="diag-row">
+                  <span>Target Student Profile:</span>
+                  <span>{activeStudent ? `${activeStudent.avatar} ${activeStudent.name} (${activeStudent.streakDays || 1}d Streak)` : 'None'}</span>
+                </div>
+
+                <div className="version-actions" style={{ marginTop: '1rem' }}>
+                  <button
+                    type="button"
+                    className="btn btn-secondary"
+                    onClick={() => void handleSendTestNotification()}
+                  >
+                    🔔 Send Test Reminder
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* SECTION 1: IN-APP DEPLOYMENT VERSION & AUTO-UPDATE SETTINGS (Always accessible) */}
           <section className="card">
             <div className="section-header">

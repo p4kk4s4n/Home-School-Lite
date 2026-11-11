@@ -688,6 +688,37 @@ export const LessonPage: React.FC = () => {
             </div>
           </div>
 
+          {/* LIVE QUIZ PROGRESS TRACKER */}
+          {(() => {
+            const answeredCount = quizQuestions.filter((q) => (answers[q.fingerprint] ?? '').trim().length > 0).length
+            const answeredPct = Math.round((answeredCount / Math.max(1, quizQuestions.length)) * 100)
+            return (
+              <div className="quiz-progress-tracker" style={{ margin: '1rem 0 0.5rem' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem', fontSize: '0.88rem' }}>
+                  <span>
+                    Quiz Completion: <strong>{answeredCount} of {quizQuestions.length}</strong> questions answered ({answeredPct}%)
+                  </span>
+                  {answeredCount === quizQuestions.length ? (
+                    <span className="badge badge-success">All Questions Answered ✓</span>
+                  ) : (
+                    <span className="badge badge-warning">
+                      {quizQuestions.length - answeredCount} Remaining
+                    </span>
+                  )}
+                </div>
+                <div className="progress-bar-track">
+                  <div
+                    className="progress-bar-fill"
+                    style={{
+                      width: `${answeredPct}%`,
+                      backgroundColor: answeredCount === quizQuestions.length ? 'var(--success)' : 'var(--primary-bright)',
+                    }}
+                  />
+                </div>
+              </div>
+            )
+          })()}
+
           <div className="questions-stack">
             {quizQuestions.map((q, idx) => {
               const selected = answers[q.fingerprint] ?? ''

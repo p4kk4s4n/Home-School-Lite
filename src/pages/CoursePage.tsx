@@ -37,6 +37,8 @@ export const CoursePage: React.FC = () => {
 
   const [pendingPinLink, setPendingPinLink] = useState<RemediationLink | null>(null)
   const [completedExploreIds, setCompletedExploreIds] = useState<string[]>([])
+  const [collapsedUnitIds, setCollapsedUnitIds] = useState<Record<string, boolean>>({})
+  const [unitFilter, setUnitFilter] = useState<'all' | 'in_progress' | 'mastered'>('all')
   const [textbookState, setTextbookState] = useState<{
     isOpen: boolean
     unit: Unit
@@ -114,6 +116,70 @@ export const CoursePage: React.FC = () => {
     window.open(item.url, '_blank', 'noopener,noreferrer')
   }
 
+  const unitStats = useMemo(() => {
+    if (!course || !progress) return { totalUnits: 0, inProgressUnits: 0, masteredUnits: 0 }
+    let inProgressUnits = 0
+    let masteredUnits = 0
+    const coreUnits = course.units.filter((u) => u.kind === 'core')
+    for (const u of coreUnits) {
+      const items = progress.items.filter((i) => i.unit.id === u.id)
+      const allMastered = items.length > 0 && items.every((i) => i.status === 'mastered')
+      const isInProg = items.some((i) => i.status === 'available' || i.status === 'in_progress')
+      if (allMastered) masteredUnits++
+      if (isInProg) inProgressUnits++
+    }
+    return {
+      totalUnits: course.units.length,
+      inProgressUnits,
+      masteredUnits,
+    }
+  }, [course, progress])
+
+  const toggleUnitCollapse = (unitId: string) => {
+    setCollapsedUnitIds((prev) => ({
+      ...prev,
+      [unitId]: !prev[unitId],
+    }))
+  }
+
+  const handleJumpToCurrentLesson = () => {
+    if (progress?.nextLesson) {
+      const nextUnit = course?.units.find((u) =>
+        u.lessons.some((l) => l.id === progress.nextLesson?.lesson.id)
+      )
+      if (nextUnit && collapsedUnitIds[nextUnit.id]) {
+        setCollapsedUnitIds((prev) => ({ ...prev, [nextUnit.id]: false }))
+      }
+    }
+    setTimeout(() => {
+      const el = document.getElementById('current-lesson-target')
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        el.classList.add('row-highlighted')
+        setTimeout(() => el.classList.remove('row-highlighted'), 2000)
+      }
+    }, 60)
+  }
+
+  const collapseMasteredUnits = () => {
+    if (!progress || !course) return
+    const nextCollapsed: Record<string, boolean> = { ...collapsedUnitIds }
+    for (const u of course.units) {
+      if (u.kind === 'core') {
+        const items = progress.items.filter((i) => i.unit.id === u.id)
+        const allMastered = items.length > 0 && items.every((i) => i.status === 'mastered')
+        if (allMastered) {
+          nextCollapsed[u.id] = true
+        }
+      }
+    }
+    setCollapsedUnitIds(nextCollapsed)
+  }
+
+  const expandAllUnits = () => {
+    setCollapsedUnitIds({})
+  }
+
   if (!course || !progress || !gradeSummary) {
     return (
       <div className="card" style={{ maxWidth: '640px', margin: '2rem auto', textAlign: 'center' }}>
@@ -189,6 +255,65 @@ export const CoursePage: React.FC = () => {
               Lessons: {gradeSummary.lessonAverage !== null ? `${gradeSummary.lessonAverage}%` : '—'} • Exams:{' '}
               {gradeSummary.unitTestAverage !== null ? `${gradeSummary.unitTestAverage}%` : '—'}
             </span>
+          </div>
+        </div>
+      </section>
+
+      {/* COURSE MAP STREAMLINED NAVIGATION & UNIT FILTER BAR */}
+      <section className="card" style={{ padding: '0.85rem 1.15rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.75rem' }}>
+          <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', alignItems: 'center' }}>
+            <span className="muted-sm" style={{ fontWeight: 700, marginRight: '0.2rem' }}>Filter Units:</span>
+            <button
+              type="button"
+              className={`btn btn-sm ${unitFilter === 'all' ? 'btn-primary' : 'btn-secondary'}`}
+              onClick={() => setUnitFilter('all')}
+            >
+              All Units ({unitStats.totalUnits})
+            </button>
+            <button
+              type="button"
+              className={`btn btn-sm ${unitFilter === 'in_progress' ? 'btn-primary' : 'btn-secondary'}`}
+              onClick={() => setUnitFilter('in_progress')}
+            >
+              In Progress ({unitStats.inProgressUnits})
+            </button>
+            <button
+              type="button"
+              className={`btn btn-sm ${unitFilter === 'mastered' ? 'btn-primary' : 'btn-secondary'}`}
+              onClick={() => setUnitFilter('mastered')}
+            >
+              Mastered ({unitStats.masteredUnits})
+            </button>
+          </div>
+
+          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+            {progress.nextLesson && (
+              <button
+                type="button"
+                className="btn btn-accent btn-sm"
+                onClick={handleJumpToCurrentLesson}
+                title="Scroll smoothly to current next unmastered lesson"
+              >
+                🎯 Jump to Current Lesson
+              </button>
+            )}
+            <button
+              type="button"
+              className="btn btn-secondary btn-sm"
+              onClick={collapseMasteredUnits}
+              title="Collapse all 100% mastered units"
+            >
+              Collapse Mastered
+            </button>
+            <button
+              type="button"
+              className="btn btn-secondary btn-sm"
+              onClick={expandAllUnits}
+              title="Expand all units"
+            >
+              Expand All
+            </button>
           </div>
         </div>
       </section>
@@ -374,11 +499,40 @@ export const CoursePage: React.FC = () => {
 
         // Core unit with sequential Acellus-style unlocking
         const unitItems = progress.items.filter((i) => i.unit.id === unit.id)
+        const unitMasteredCount = unitItems.filter((i) => i.status === 'mastered').length
+        const isUnitMastered = unitItems.length > 0 && unitMasteredCount === unitItems.length
+        const isUnitInProgress = unitItems.some((i) => i.status === 'available' || i.status === 'in_progress')
+        const isCollapsed = !!collapsedUnitIds[unit.id]
+
+        if (unitFilter === 'mastered' && !isUnitMastered) return null
+        if (unitFilter === 'in_progress' && !isUnitInProgress) return null
+
         return (
           <section key={unit.id} className="card unit-card">
             <div className="unit-header">
-              <div>
-                <h2>{unit.title}</h2>
+              <div
+                className="unit-header-clickable"
+                onClick={() => toggleUnitCollapse(unit.id)}
+                style={{ cursor: 'pointer', flex: 1, minWidth: '240px' }}
+                title={isCollapsed ? 'Expand unit lessons' : 'Collapse unit lessons'}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  <span className="unit-collapse-caret" style={{ fontSize: '1.2rem', userSelect: 'none' }}>
+                    {isCollapsed ? '▸' : '▾'}
+                  </span>
+                  <h2 style={{ margin: 0 }}>{unit.title}</h2>
+                  <span
+                    className={`badge ${
+                      isUnitMastered
+                        ? 'badge-success'
+                        : isUnitInProgress
+                        ? 'badge-primary'
+                        : 'badge-neutral'
+                    }`}
+                  >
+                    {unitMasteredCount} / {unitItems.length} Mastered
+                  </span>
+                </div>
                 <div className="standards-tags">
                   {(unit.standards || []).map((std) => (
                     <span key={std} className="std-tag">
@@ -397,17 +551,20 @@ export const CoursePage: React.FC = () => {
               </button>
             </div>
 
-            <div className="lesson-list">
-              {unitItems.map((item) => {
-                const { lesson, status, attempts: lessonAttempts } = item
-                const effectiveScore = computeLessonEffectiveScore(lessonAttempts, settings)
-                const isLocked = status === 'locked'
+            {!isCollapsed && (
+              <div className="lesson-list">
+                {unitItems.map((item) => {
+                  const { lesson, status, attempts: lessonAttempts } = item
+                  const effectiveScore = computeLessonEffectiveScore(lessonAttempts, settings)
+                  const isLocked = status === 'locked'
+                  const isNextLessonTarget = lesson.id === progress.nextLesson?.lesson.id
 
-                return (
-                  <div
-                    key={lesson.id}
-                    className={`lesson-row status-${status}`}
-                  >
+                  return (
+                    <div
+                      key={lesson.id}
+                      id={isNextLessonTarget ? 'current-lesson-target' : undefined}
+                      className={`lesson-row status-${status}`}
+                    >
                     <div className="lesson-status-icon">
                       {status === 'mastered' && <span title="Mastered">✅</span>}
                       {status === 'available' && <span title="Ready">▶️</span>}
@@ -490,7 +647,8 @@ export const CoursePage: React.FC = () => {
                 )
               })}
             </div>
-          </section>
+          )}
+        </section>
         )
       })}
       </div>

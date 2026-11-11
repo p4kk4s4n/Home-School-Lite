@@ -1,11 +1,78 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { useApp } from '../context/AppContext'
+import { checkAndTriggerDailyReminder } from '../lib/notifications'
+import { DisplayTunerModal } from './DisplayTunerModal'
 import { StudentPickerModal } from './StudentPickerModal'
 
 export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { activeStudent, updateStatus, applyUpdateNow } = useApp()
+  const { activeStudent, updateStatus, applyUpdateNow, settings, updateAppSettings } = useApp()
   const [pickerOpen, setPickerOpen] = useState(false)
+  const [tunerOpen, setTunerOpen] = useState(false)
+
+  // Apply visual theme, typography scale, workspace max-width, and aspect ratio classes to root html element
+  useEffect(() => {
+    if (typeof document === 'undefined') return
+    const root = document.documentElement
+
+    // 1. Theme
+    const theme = settings.colorScheme || 'daylight'
+    root.setAttribute('data-theme', theme)
+
+    // 2. Sizing Scale
+    const scale = (settings.uiScale ?? 100) / 100
+    root.style.setProperty('--ui-scale', String(scale))
+
+    // 3. Workspace Max Width
+    const maxWidth = settings.workspaceMaxWidth ?? 1280
+    root.style.setProperty('--workspace-max-width', `${maxWidth}px`)
+
+    // 4. Aspect Ratio & Orientation Mode
+    const updateAspect = () => {
+      const mode = settings.viewportAspectMode || 'auto'
+      if (mode === 'auto') {
+        const isPortrait =
+          window.innerWidth <= 640 || window.innerHeight > window.innerWidth
+        root.setAttribute('data-aspect', isPortrait ? 'portrait' : 'landscape')
+      } else {
+        root.setAttribute('data-aspect', mode)
+      }
+    }
+
+    updateAspect()
+    window.addEventListener('resize', updateAspect)
+    window.addEventListener('orientationchange', updateAspect)
+    return () => {
+      window.removeEventListener('resize', updateAspect)
+      window.removeEventListener('orientationchange', updateAspect)
+    }
+  }, [
+    settings.colorScheme,
+    settings.uiScale,
+    settings.viewportAspectMode,
+    settings.workspaceMaxWidth,
+  ])
+
+  // Daily learning reminder check
+  useEffect(() => {
+    if (settings.dailyReminderEnabled) {
+      void checkAndTriggerDailyReminder(
+        settings.dailyReminderEnabled,
+        settings.dailyReminderTime,
+        settings.lastDailyReminderDate,
+        activeStudent,
+        async (todayStr) => {
+          await updateAppSettings({ lastDailyReminderDate: todayStr })
+        }
+      )
+    }
+  }, [
+    settings.dailyReminderEnabled,
+    settings.dailyReminderTime,
+    settings.lastDailyReminderDate,
+    activeStudent,
+    updateAppSettings,
+  ])
 
   return (
     <div className="app-shell">
@@ -73,21 +140,34 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
             </NavLink>
           </nav>
 
-          {activeStudent && (
+          <div className="topbar-actions">
             <button
               type="button"
-              className="student-pill"
-              onClick={() => setPickerOpen(true)}
-              title="Switch Student Profile"
+              className="btn-icon-pill"
+              onClick={() => setTunerOpen(true)}
+              title="Display, Colors &amp; Sizing Tuner"
+              aria-label="Display, Colors &amp; Sizing Tuner"
             >
-              <span className="student-avatar">{activeStudent.avatar}</span>
-              <div className="student-pill-text">
-                <span className="student-name">{activeStudent.name}</span>
-                <span className="student-grade-badge">Grade {activeStudent.grade}</span>
-              </div>
-              <span className="caret">▾</span>
+              <span className="tuner-icon">🎨</span>
+              <span className="tuner-text">Aa</span>
             </button>
-          )}
+
+            {activeStudent && (
+              <button
+                type="button"
+                className="student-pill"
+                onClick={() => setPickerOpen(true)}
+                title="Switch Student Profile"
+              >
+                <span className="student-avatar">{activeStudent.avatar}</span>
+                <div className="student-pill-text">
+                  <span className="student-name">{activeStudent.name}</span>
+                  <span className="student-grade-badge">Grade {activeStudent.grade}</span>
+                </div>
+                <span className="caret">▾</span>
+              </button>
+            )}
+          </div>
         </div>
       </header>
 
@@ -106,6 +186,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
       </footer>
 
       <StudentPickerModal open={pickerOpen} onClose={() => setPickerOpen(false)} />
+      <DisplayTunerModal open={tunerOpen} onClose={() => setTunerOpen(false)} />
     </div>
   )
 }

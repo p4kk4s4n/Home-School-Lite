@@ -214,6 +214,16 @@ export interface FamilySyncConfig {
   lastSyncedAt?: string
 }
 
+export type ColorSchemeId =
+  | 'daylight'
+  | 'midnight'
+  | 'sepia'
+  | 'forest'
+  | 'ocean'
+  | 'high-contrast'
+
+export type ViewportAspectMode = 'auto' | 'portrait' | 'landscape'
+
 export interface AppSettings {
   id: 'global'
   appId: 'home-school-lite'
@@ -229,6 +239,13 @@ export interface AppSettings {
   updateCheckIntervalMin: 0 | 15 | 60
   autoApplyUpdates: boolean
   lastUpdateCheck?: string
+  colorScheme?: ColorSchemeId
+  uiScale?: number // 85 to 125, default 100
+  viewportAspectMode?: ViewportAspectMode // 'auto' | 'portrait' | 'landscape'
+  workspaceMaxWidth?: number // 960 to 1600, default 1280
+  dailyReminderEnabled?: boolean
+  dailyReminderTime?: string // "09:00"
+  lastDailyReminderDate?: string
   updatedAt?: string
   deletedStudentIds?: string[]
   deletedAttemptIds?: string[]
