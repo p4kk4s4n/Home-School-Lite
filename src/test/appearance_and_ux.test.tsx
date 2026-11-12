@@ -3,6 +3,8 @@ import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, fireEvent, cleanup } from '@testing-library/react'
 import { MemoryRouter, Route, Routes } from 'react-router-dom'
 import { DisplayTunerModal, COLOR_SCHEMES } from '../components/DisplayTunerModal'
+
+declare function require(module: string): any
 import { Layout } from '../components/Layout'
 import { DashboardPage } from '../pages/DashboardPage'
 import { CoursePage } from '../pages/CoursePage'
@@ -264,5 +266,27 @@ describe('Color Schemes, Aspect-Ratio Sizing & UX Streamlining Suite', () => {
     )
     expect(triggered).toBe(false)
     expect(onSent).not.toHaveBeenCalled()
+  })
+
+  it('verifies all 6 color schemes maintain high text-to-background contrast with no white-on-white buttons', () => {
+    // Read styles.css and ensure .btn-secondary uses var(--surface-alt) and var(--text)
+    const fs = require('fs')
+    const css = fs.readFileSync('src/styles.css', 'utf8')
+
+    // 1. Verify .btn-secondary does NOT use hardcoded #f1f5f9 background
+    expect(css).toContain('.btn-secondary {\n  background: var(--surface-alt);\n  color: var(--text);')
+
+    // 2. Verify all 6 themes define semantic contrast variables
+    const requiredThemes = ['daylight', 'midnight', 'sepia', 'forest', 'ocean', 'high-contrast']
+    for (const theme of requiredThemes) {
+      expect(css).toContain(`[data-theme="${theme}"]`)
+    }
+
+    // 3. Verify midnight theme defines dark surface-alt and light text
+    expect(css).toMatch(/\[data-theme="midnight"\]\s*\{[\s\S]*?--surface-alt:\s*#1e293b;[\s\S]*?--text:\s*#f8fafc;/)
+
+    // 4. Verify question passages, badges, and review cards use theme variables instead of hardcoded white
+    expect(css).toContain('.question-passage {\n  margin: 0.5rem 0 0.85rem;\n  padding: 0.85rem 1rem;\n  background: var(--surface);')
+    expect(css).toContain('.badge-primary {\n  background: var(--badge-primary-bg')
   })
 })

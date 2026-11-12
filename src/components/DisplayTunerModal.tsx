@@ -13,37 +13,37 @@ export const COLOR_SCHEMES: {
     id: 'daylight',
     name: 'Academy Daylight',
     description: 'Crisp, clean daylight academic theme (Default)',
-    preview: { bg: '#f1f5f9', surface: '#ffffff', primary: '#1e3a8a', accent: '#f59e0b' },
+    preview: { bg: '#f8fafc', surface: '#ffffff', primary: '#1e3a8a', accent: '#d97706' },
   },
   {
     id: 'midnight',
     name: 'Midnight Scholar',
     description: 'Deep dark theme for night study & low-light focus',
-    preview: { bg: '#090d16', surface: '#111827', primary: '#3b82f6', accent: '#fbbf24' },
+    preview: { bg: '#090d16', surface: '#111827', primary: '#3b82f6', accent: '#f59e0b' },
   },
   {
     id: 'sepia',
     name: 'Warm Sepia',
     description: 'Gentle book paper palette to eliminate screen glare',
-    preview: { bg: '#f6ecdb', surface: '#fdf8f0', primary: '#854d0e', accent: '#d97706' },
+    preview: { bg: '#f6ecdb', surface: '#fdf8f0', primary: '#78350f', accent: '#b45309' },
   },
   {
     id: 'forest',
     name: 'Forest Focus',
     description: 'Calm sage and earthy greens for ADHD tranquility',
-    preview: { bg: '#eff5f1', surface: '#ffffff', primary: '#1e4d2b', accent: '#d97706' },
+    preview: { bg: '#eff5f1', surface: '#ffffff', primary: '#1e4d2b', accent: '#b45309' },
   },
   {
     id: 'ocean',
     name: 'Ocean Breeze',
     description: 'Vibrant coastal blues for invigorating study',
-    preview: { bg: '#eef6fb', surface: '#ffffff', primary: '#0369a1', accent: '#f97316' },
+    preview: { bg: '#edf6fc', surface: '#ffffff', primary: '#0369a1', accent: '#ea580c' },
   },
   {
     id: 'high-contrast',
     name: 'High Contrast',
     description: 'Maximum black-and-white contrast for accessibility',
-    preview: { bg: '#000000', surface: '#0a0a0a', primary: '#00e5ff', accent: '#facc15' },
+    preview: { bg: '#000000', surface: '#000000', primary: '#00e5ff', accent: '#ffff00' },
   },
 ]
 
