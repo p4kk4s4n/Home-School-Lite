@@ -15,7 +15,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u1',
         title: 'Computing Unit Rates with Fractions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion/cc-7th-rates-with-fractions/v/determining-rates-with-fractions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion',
         videoTitle: 'Unit Rates with Fractions',
         reading: 'Compute unit rates associated with ratios of fractions, including quantities measured in like or different units. Example: 1/2 mile in 1/4 hour = 2 mph.',
         principles: [
@@ -33,7 +33,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u1',
         title: 'Identifying Proportional Relationships in Tables & Graphs',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion/cc-7th-proportional-relationships/v/identifying-proportional-relationships-table',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion',
         videoTitle: 'Proportional Relationships in Tables',
         reading: 'Test for equivalent ratios in a table by checking whether y/x is constant. On a graph, verify the points lie on a straight line passing through (0, 0).',
         principles: [
@@ -51,7 +51,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u1',
         title: 'Constant of Proportionality (Unit Rate) k = y/x',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion/cc-7th-proportional-relationships/v/constant-of-proportionality-from-table',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion',
         videoTitle: 'Constant of Proportionality',
         reading: 'The constant ratio k = y/x is called the constant of proportionality. It represents the unit rate in any proportional relationship.',
         principles: [
@@ -69,7 +69,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u1',
         title: 'Writing Proportional Equations y = kx',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion/cc-7th-proportional-relationships/v/writing-proportional-equations',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-ratio-proportion/cc-7th-equations-of-proportional-relationships/v/constructing-an-equation-for-a-proportional-relationship',
         videoTitle: 'Writing Proportional Equations',
         reading: 'Represent proportional relationships with equations in the form y = kx, where k is the unit rate.',
         principles: [
@@ -136,7 +136,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u2',
         title: 'Percent Change: Increase and Decrease',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals/cc-7th-percent-word-problems/v/percent-change',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Percent%20Change%207th%20grade%20math',
         videoTitle: 'Percent Change',
         reading: 'Calculate percent change using (amount of change / original amount) x 100%. Distinguish between increases and decreases.',
         principles: [
@@ -154,7 +154,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u2',
         title: 'Tax, Tip, and Gratuity Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals/cc-7th-percent-word-problems/v/tax-and-tip-word-problems',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Tax%20and%20Tip%20Calculations%207th%20grade%20math',
         videoTitle: 'Tax and Tip Calculations',
         reading: 'Sales tax and restaurant tips add to the base bill. Multiply the bill by the decimal percentage or multiply by (1 + rate) for total cost.',
         principles: [
@@ -172,7 +172,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u2',
         title: 'Markups, Discounts, and Markdown Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals/cc-7th-percent-word-problems/v/discount-tax-and-tip-word-problems',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Markups%20and%20Discounts%207th%20grade%20math',
         videoTitle: 'Markups and Discounts',
         reading: 'A discount subtracts from the original price (Sale Price = Original x (1 - discount rate)). A markup adds wholesale profit margin.',
         principles: [
@@ -190,7 +190,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u2',
         title: 'Simple Interest: I = Prt Formula',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals/cc-7th-percent-word-problems/v/simple-interest',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Simple%20Interest%20Formula%207th%20grade%20math',
         videoTitle: 'Simple Interest Formula',
         reading: 'Calculate simple interest with I = Prt, where P is principal, r is the annual interest rate as a decimal, and t is time in years.',
         principles: [
@@ -209,7 +209,7 @@ export const G7_MATH_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Percent Applications',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math',
         videoTitle: 'Percent Applications Review',
         reading: 'Review session on multi-step percent change, discounts, taxes, and simple interest.',
         principles: [
@@ -228,7 +228,7 @@ export const G7_MATH_UNITS: Unit[] = [
         title: 'Unit 2 Test: Rates & Percentages Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math',
         videoTitle: 'Unit 2 Test Review',
         reading: 'Comprehensive assessment of percent increases, retail markdowns, and simple interest algorithms.',
         principles: [
@@ -257,7 +257,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u3',
         title: 'Opposites, Absolute Value, and Zero Pairs',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract/cc-7th-add-negatives-intro/v/adding-negative-numbers',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract',
         videoTitle: 'Opposites and Adding Negatives',
         reading: 'Every number p has an opposite -p such that p + (-p) = 0. Absolute value |x| represents distance from zero on the number line.',
         principles: [
@@ -275,7 +275,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u3',
         title: 'Adding Integers with Same and Different Signs',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract/cc-7th-add-negatives/v/adding-integers-with-different-signs',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract',
         videoTitle: 'Adding Integers Rules',
         reading: 'Same signs: add absolute values and keep the common sign. Different signs: subtract the smaller absolute value from the larger, and keep the sign of the larger.',
         principles: [
@@ -293,7 +293,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u3',
         title: 'Subtracting Integers as Adding the Opposite',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract/cc-7th-sub-negatives/v/subtracting-negative-numbers',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract',
         videoTitle: 'Subtracting Negative Numbers',
         reading: 'Subtracting a signed number is equivalent to adding its opposite: p - q = p + (-q). Example: 5 - (-3) = 5 + 3 = 8.',
         principles: [
@@ -311,7 +311,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u3',
         title: 'Distance Between Numbers on a Number Line',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract/cc-7th-sub-negatives/v/distance-between-numbers',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-and-subtract',
         videoTitle: 'Distance on a Number Line',
         reading: 'The distance between two rational numbers p and q on a number line is given by the absolute difference |p - q|.',
         principles: [
@@ -378,7 +378,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u4',
         title: 'Rules for Multiplying Signed Rational Numbers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide/cc-7th-mult-div-negatives/v/multiplying-negative-numbers',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide/cc-7th-mult-div-negatives/e/multiplying_and_dividing_negative_numbers',
         videoTitle: 'Multiplying Negative Numbers',
         reading: 'Positive x Positive = Positive. Negative x Negative = Positive. Positive x Negative = Negative. Odd number of negative factors yields a negative product.',
         principles: [
@@ -396,7 +396,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u4',
         title: 'Dividing Signed Integers and Fractions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide/cc-7th-mult-div-negatives/v/dividing-negative-numbers',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide/cc-7th-mult-div-negatives/e/multiplying_and_dividing_negative_numbers',
         videoTitle: 'Dividing Negative Numbers',
         reading: 'Dividing signed numbers follows identical sign rules as multiplication: (-p)/q = p/(-q) = -(p/q). Division by zero is undefined.',
         principles: [
@@ -414,7 +414,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u4',
         title: 'Converting Fractions to Terminating & Repeating Decimals',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide/cc-7th-fractions-to-decimals/v/converting-fractions-to-decimals-example',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-fractions-decimals/cc-7th-fracs-to-decimals/e/converting_fractions_to_decimals',
         videoTitle: 'Fractions to Decimals Long Division',
         reading: 'Use long division to convert a fraction p/q to decimal form. If the remainder terminates in zeros, it is terminating. Otherwise, digits repeat indefinitely.',
         principles: [
@@ -432,7 +432,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u4',
         title: 'Complex Multi-Step Rational Number Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide/cc-7th-order-of-operations/v/order-of-operations-with-negative-numbers',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-and-divide',
         videoTitle: 'Rational Word Problems & PEMDAS',
         reading: 'Apply all four operations with positive and negative fractions, decimals, and mixed numbers to solve contextual financial and scientific problems.',
         principles: [
@@ -499,7 +499,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u5',
         title: 'Combining Like Terms with Rational Coefficients',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions/cc-7th-combining-like-terms/v/combining-like-terms-with-rational-coefficients',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions',
         videoTitle: 'Combining Like Terms',
         reading: 'Combine terms with identical variable parts by adding or subtracting their coefficients: (3/4)x + (1/2)x = (5/4)x.',
         principles: [
@@ -517,7 +517,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u5',
         title: 'Distributive Property & Factoring Algebraic Expressions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions/cc-7th-factoring-expanding/v/expanding-expressions-with-distributive-property',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions',
         videoTitle: 'Expanding and Factoring Expressions',
         reading: 'Expand expressions using a(b + c) = ab + ac. Factor expressions by extracting the greatest common factor: 6x + 18 = 6(x + 3).',
         principles: [
@@ -535,7 +535,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u5',
         title: 'Solving Two-Step Equations px + q = r and p(x + q) = r',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions/cc-7th-2-step-equations/v/two-step-equations',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions',
         videoTitle: 'Solving Two-Step Equations',
         reading: 'Isolate the variable term first by adding or subtracting inverse constants, then multiply or divide by the variable coefficient.',
         principles: [
@@ -553,7 +553,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u5',
         title: 'Solving & Graphing Inequalities px + q > r on a Number Line',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions/cc-7th-inequalities/v/solving-two-step-inequalities',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-variables-expressions',
         videoTitle: 'Solving Two-Step Inequalities',
         reading: 'Solve inequalities using inverse operations. Remember to reverse the inequality symbol whenever multiplying or dividing by a negative number. Graph on a number line.',
         principles: [
@@ -620,7 +620,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u6',
         title: 'Solving Scale Drawing Problems with Scale Factors',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-scale-drawings/v/scale-drawings-example',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/x6b17ba59:scale-drawings/cc-7th-scale-drawings/v/scale-factors-and-area',
         videoTitle: 'Scale Drawings and Proportions',
         reading: 'Solve problems involving scale drawings of geometric figures, including computing actual lengths and areas from a scale drawing and reproducing at a different scale.',
         principles: [
@@ -638,7 +638,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u6',
         title: 'Constructing Triangles & Triangle Inequality Theorem',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-constructing-triangles/v/constructing-triangles',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry',
         videoTitle: 'Triangle Inequality and Construction',
         reading: 'Draw geometric shapes with given conditions. By the triangle inequality theorem, the sum of any two side lengths must be greater than the third side length.',
         principles: [
@@ -656,7 +656,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u6',
         title: 'Cross Sections of Three-Dimensional Figures',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-cross-sections/v/cross-sections-of-3d-shapes',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry',
         videoTitle: 'Cross Sections of 3D Figures',
         reading: 'Describe the two-dimensional figures that result from slicing three-dimensional figures, such as slicing right rectangular prisms, cones, and cylinders horizontally or vertically.',
         principles: [
@@ -723,7 +723,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u7',
         title: 'Radius, Diameter, and the Constant Pi (π)',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-area-circ-circles/v/radius-diameter-circumference',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry',
         videoTitle: 'Radius, Diameter, and Pi',
         reading: 'Diameter d = 2r. Pi is the constant ratio of circumference to diameter (π = C/d ≈ 3.14159...).',
         principles: [
@@ -741,7 +741,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u7',
         title: 'Calculating Circumference C = 2πr = πd',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-area-circ-circles/v/circumference-of-a-circle',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-area-circumference/v/parts-of-a-circle',
         videoTitle: 'Circumference Formula',
         reading: 'Calculate the perimeter (circumference) of a circle using C = 2πr or C = πd. In word problems, calculate wheel rotations and circular track distances.',
         principles: [
@@ -759,7 +759,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u7',
         title: 'Calculating Circle Area A = πr²',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-area-circ-circles/v/area-of-a-circle',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-area-circumference/a/area-of-circles-review',
         videoTitle: 'Area of a Circle Formula',
         reading: 'Calculate the two-dimensional area of a circle with A = πr². If given diameter, divide by 2 to find radius before squaring.',
         principles: [
@@ -826,7 +826,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u8',
         title: 'Complementary and Supplementary Angles',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-angles/v/complementary-and-supplementary-angles',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry',
         videoTitle: 'Complementary & Supplementary Angles',
         reading: 'Complementary angles add to 90 degrees. Supplementary angles add to 180 degrees. Write and solve equations to find unknown angle measures.',
         principles: [
@@ -844,7 +844,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u8',
         title: 'Vertical and Adjacent Angles in Intersecting Lines',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-angles/v/vertical-angles',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry',
         videoTitle: 'Vertical Angles Across Intersecting Lines',
         reading: 'Vertical angles sit opposite each other across intersecting lines and are always equal in measure. Adjacent angles on a straight line form supplementary linear pairs.',
         principles: [
@@ -862,7 +862,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u8',
         title: 'Multi-Step Algebraic Angle Equations',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry/cc-7th-angles/v/unknown-angle-problems-algebra',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-geometry',
         videoTitle: 'Solving Algebraic Angle Equations',
         reading: 'Set up expressions like (2x + 15) + (3x - 10) = 180 and solve for variable x and angle measures.',
         principles: [
@@ -929,7 +929,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u9',
         title: 'Random Sampling and Representative Samples',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics/cc-7th-population-sampling/v/reasonable-samples',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics',
         videoTitle: 'Random Sampling and Populations',
         reading: 'Understand that statistics can be used to gain information about a population by examining a sample. Random sampling tends to produce representative samples and valid inferences.',
         principles: [
@@ -947,7 +947,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u9',
         title: 'Making Inferences about Populations from Sample Data',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics/cc-7th-population-sampling/v/inferences-from-samples',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics',
         videoTitle: 'Inferences from Samples',
         reading: 'Use data from a random sample to draw inferences about a population with an unknown characteristic of interest. Multiply sample proportions by total population.',
         principles: [
@@ -965,7 +965,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u9',
         title: 'Comparing Two Populations with Measures of Center and Variability',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics/cc-7th-comparing-populations/v/comparing-distributions-with-dot-plots',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics',
         videoTitle: 'Comparing Distributions and Centers',
         reading: 'Informally assess the degree of visual overlap of two numerical data distributions with similar variabilities, measuring difference between centers as a multiple of a measure of variability.',
         principles: [
@@ -1032,7 +1032,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u10',
         title: 'Likelihood of Events: 0 to 1 Scale',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics/cc-7th-basic-prob/v/probability-line',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics/cc-7th-compound-events/v/probability-from-compound-sample-space',
         videoTitle: 'Probability on 0 to 1 Scale',
         reading: 'Understand that probability is a number between 0 and 1 that expresses the likelihood of the event occurring. 0 is impossible, 1/2 is equally likely as unlikely, and 1 is certain.',
         principles: [
@@ -1050,7 +1050,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u10',
         title: 'Theoretical vs. Experimental Probability & Law of Large Numbers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics/cc-7th-theoretical-and-experimental-probability/v/experimental-probability',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics/cc-7th-theoretical-and-experimental-probability/v/comparing-theoretical-to-experimental-probabilites',
         videoTitle: 'Theoretical vs Experimental Probability',
         reading: 'Approximate the probability of a chance event by collecting data on the chance process that produces it and observing its long-run relative frequency.',
         principles: [
@@ -1068,7 +1068,7 @@ export const G7_MATH_UNITS: Unit[] = [
         unitId: 'g7-math-u10',
         title: 'Compound Events, Tree Diagrams & Sample Spaces',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics/cc-7th-compound-events/v/compound-events-sample-spaces',
+        videoUrl: 'https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-probability-statistics/cc-7th-compound-events/v/probability-from-compound-sample-space',
         videoTitle: 'Compound Events and Sample Spaces',
         reading: 'Find probabilities of compound events using organized lists, tables, tree diagrams, and simulation. Understand that the probability of a compound event is the fraction of outcomes in the sample space.',
         principles: [

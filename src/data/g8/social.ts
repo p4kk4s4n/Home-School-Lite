@@ -560,7 +560,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Road to Revolution',
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/road-to-revolution/the-american-revolution/v/the-stamp-act-and-sons-of-liberty',
+            'https://www.khanacademy.org/humanities/us-history/road-to-revolution',
           videoTitle: 'Khan Academy: The Stamp Act & Road to Revolution',
           reading:
             'Following the French and Indian War, Britain taxed colonies through the Stamp and Townshend acts. Colonists boycotted imports, asserting that taxation without parliament representation was tyranny.',
@@ -574,7 +574,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Declaration of 1776',
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/road-to-revolution/the-american-revolution/v/the-declaration-of-independence',
+            'https://www.khanacademy.org/humanities/us-history/road-to-revolution/the-american-revolution/a/the-american-revolution',
           videoTitle: 'Khan Academy: The Declaration of Independence',
           reading:
             'Adopted July 4, 1776, Thomas Jefferson’s text articulated Enlightenment ideals: that all people hold unalienable rights to life, liberty, and happiness, and governments derive just power from the consent of the governed.',
@@ -588,7 +588,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Revolutionary War Battles',
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/road-to-revolution/the-american-revolution/v/the-revolutionary-war-saratoga-and-yorktown',
+            'https://www.khanacademy.org/humanities/us-history/road-to-revolution',
           videoTitle: 'Khan Academy: Major Battles of the Revolutionary War',
           reading:
             'American victory at Saratoga (1777) secured a French alliance. Washington trapped Cornwallis at Yorktown (1781), leading to the 1783 Treaty of Paris recognizing American sovereignty.',
@@ -602,7 +602,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Revolution Review',
           estimatedMinutes: 12,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/road-to-revolution/v/american-revolution-review',
+            'https://www.khanacademy.org/humanities/us-history/road-to-revolution',
           videoTitle: 'Khan Academy: American Revolution Review',
           reading:
             'Review colonial grievances, Thomas Paine’s Common Sense, foundational principles of popular sovereignty, and military alliances winning independence.',
@@ -642,7 +642,7 @@ export const G8_SOCIAL_COURSE: Course = {
           isOhioExtension: true,
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/road-to-revolution/creating-a-nation/v/the-bill-of-rights',
+            'https://www.khanacademy.org/humanities/us-history/road-to-revolution',
           videoTitle: 'Khan Academy: The Bill of Rights',
           reading:
             'The Constitution divides governance across legislative, executive, and judicial branches. To protect against tyranny, the 1791 Bill of Rights guaranteed free speech, religion, and trial protections.',
@@ -657,7 +657,7 @@ export const G8_SOCIAL_COURSE: Course = {
           isOhioExtension: true,
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/road-to-revolution/creating-a-nation/v/the-northwest-ordinance',
+            'https://www.khanacademy.org/humanities/us-history/road-to-revolution',
           videoTitle: 'Khan Academy: The Northwest Ordinance of 1787',
           reading:
             'The Northwest Ordinance governed the territory north of the Ohio River, creating orderly statehood mechanisms, mandating public education, and historically outlawing slavery, leading to Ohio’s 1803 statehood.',
@@ -672,7 +672,7 @@ export const G8_SOCIAL_COURSE: Course = {
           isOhioExtension: true,
           estimatedMinutes: 12,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/road-to-revolution/v/creating-a-constitution-review',
+            'https://www.khanacademy.org/humanities/us-history/road-to-revolution/x71a94f19:unit-overview/a/unit-3-overview',
           videoTitle: 'Khan Academy: Constitution and Northwest Ordinance Review',
           reading:
             'Review the Great Compromise, bicameral congress, federalism checks and balances, the First Amendment, and Ohio’s constitutional foundations.',
@@ -695,7 +695,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Louisiana Territory',
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/the-early-republic/era-of-good-feelings-and-expansion/v/louisiana-purchase',
+            'https://www.khanacademy.org/humanities/us-history/the-early-republic/politics-society-early-19th-c/a/the-louisiana-purchase',
           videoTitle: 'Khan Academy: The Louisiana Purchase and Lewis & Clark',
           reading:
             'Purchased from Napoleon in 1803 for $15 million, the Louisiana territory doubled the nation. Meriwether Lewis, William Clark, and Sacagawea documented western geography, waterways, and Indigenous nations.',
@@ -709,7 +709,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Indian Removal',
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/the-early-republic/age-of-jackson/v/indian-removal-act',
+            'https://www.khanacademy.org/search?page_search_query=The%20Indian%20Removal%20Act%20and%20the%20Trail%20of%20Tears%208th%20grade%20history',
           videoTitle: 'Khan Academy: The Indian Removal Act and the Trail of Tears',
           reading:
             'Belief in Manifest Destiny rationalized aggressive territorial expansion. President Jackson signed the 1830 Indian Removal Act, forcibly marching over 16,000 Cherokee along the deadly Trail of Tears.',
@@ -723,7 +723,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Trails & California Gold',
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/the-early-republic/era-of-good-feelings-and-expansion/v/california-gold-rush',
+            'https://www.khanacademy.org/search?page_search_query=The%20California%20Gold%20Rush%20and%20Western%20Trails%208th%20grade%20history',
           videoTitle: 'Khan Academy: The California Gold Rush and Western Trails',
           reading:
             'Pioneers traversed the Oregon and Mormon trails in wagon trains. The 1849 Gold Rush accelerated California settlement, culminating in the 1869 completion of the Transcontinental Railroad.',
@@ -737,7 +737,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Expansion Review',
           estimatedMinutes: 12,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/the-early-republic/v/westward-expansion-review',
+            'https://www.khanacademy.org/humanities/us-history/the-early-republic/x71a94f19:unit-overview-unit-4/a/unit-4-overview',
           videoTitle: 'Khan Academy: Westward Expansion Review',
           reading:
             'Synthesize expansion drivers: the Erie Canal, agrarian land hunger, gold discoveries, and the severe cultural impact on sovereign Native American nations.',
@@ -760,7 +760,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Sectionalism',
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/civil-war-era/sectional-tension-1850s/v/sectional-identities',
+            'https://www.khanacademy.org/humanities/us-history/civil-war-era/sectional-tension-1850s/v/sectional-conflict-regional-differences',
           videoTitle: 'Khan Academy: Sectional Conflict and Regional Economies',
           reading:
             'The industrial North developed urban manufacturing networks and paid wage labor, while the agrarian South relied on chattel slavery to fuel the global cotton export economy.',
@@ -774,7 +774,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Slavery Compromises',
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/civil-war-era/sectional-tension-1850s/v/compromise-of-1850',
+            'https://www.khanacademy.org/humanities/ap-us-history/period-5/apush-compromise-of-1850-lesson/a/compromise-of-1850',
           videoTitle: 'Khan Academy: Compromise of 1850 and Fugitive Slave Act',
           reading:
             'Congressional compromises attempted to balance slave and free states. The 1850 Fugitive Slave Act and 1854 Kansas-Nebraska Act ignited violent skirmishes across western territories.',
@@ -788,7 +788,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Dred Scott & Secession',
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/civil-war-era/sectional-tension-1850s/v/dred-scott-decision',
+            'https://www.khanacademy.org/humanities/us-history/civil-war-era/sectional-tension-1850s/v/dred-scott-v-sandford',
           videoTitle: 'Khan Academy: Dred Scott Decision & the Election of 1860',
           reading:
             'In 1857, the Supreme Court ruled that Black Americans could not be citizens. Abraham Lincoln’s 1860 election triggered South Carolina’s secession, fracturing the Union.',
@@ -802,7 +802,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Sectionalism Review',
           estimatedMinutes: 12,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/civil-war-era/v/sectional-tensions-review',
+            'https://www.khanacademy.org/humanities/us-history/civil-war-era',
           videoTitle: 'Khan Academy: Road to the Civil War Review',
           reading:
             'Review moral debates over abolition, popular sovereignty failures, John Brown’s raid, and the constitutional crisis leading to Confederate bombardment of Fort Sumter.',
@@ -826,7 +826,7 @@ export const G8_SOCIAL_COURSE: Course = {
           isOhioExtension: true,
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/civil-war-era/sectional-tension-1850s/v/the-underground-railroad',
+            'https://www.khanacademy.org/humanities/us-history/civil-war-era',
           videoTitle: 'Khan Academy: The Underground Railroad',
           reading:
             'Ohio served as a primary corridor for the Underground Railroad. Conductor networks along the Ohio River, Cincinnati, and Oberlin assisted thousands of freedom seekers journeying north to Canada.',
@@ -840,7 +840,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Emancipation & Gettysburg',
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/civil-war-era/the-civil-war/v/emancipation-proclamation',
+            'https://www.khanacademy.org/humanities/ap-us-history/period-5/apush-government-policies-during-the-civil-war-lesson/v/emancipation-proclamation',
           videoTitle: 'Khan Academy: The Emancipation Proclamation and Turning Points',
           reading:
             'Lincoln’s 1863 Proclamation redefined the Civil War as a struggle for human liberation, enabling African American soldiers to enlist. The Union victory at Gettysburg turned the tide against the Confederacy.',
@@ -854,7 +854,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Reconstruction Amendments',
           estimatedMinutes: 10,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/civil-war-era/reconstruction/v/reconstruction-amendments',
+            'https://www.khanacademy.org/humanities/constitution-101/x7a03a96a83aa80ff:slavery-the-emancipation-and-the-civil-war-and-reconstruction/x7a03a96a83aa80ff:reconstruction-an-overview/v/what-powers-did-the-reconstruction-amendments-grant-to-the-national-government',
           videoTitle: 'Khan Academy: The 13th, 14th, and 15th Amendments',
           reading:
             'Reconstruction reshaped the Constitution: the 13th Amendment banned slavery, the 14th guaranteed equal protection and birthright citizenship, and the 15th protected voting rights regardless of race.',
@@ -868,7 +868,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Civil War Review',
           estimatedMinutes: 12,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/civil-war-era/v/civil-war-and-reconstruction-review',
+            'https://www.khanacademy.org/humanities/us-history/civil-war-era/x71a94f19:unit-overview-unit-5/a/unit-5-overview',
           videoTitle: 'Khan Academy: Civil War and Reconstruction Review',
           reading:
             'Synthesize Union victory, the abolition of slavery, wartime leadership, Frederick Douglass’s advocacy, and ongoing struggles for civil rights in the post-war South.',
@@ -891,7 +891,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Course Challenge Part 1',
           estimatedMinutes: 15,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/road-to-revolution/v/early-republic-synthesis',
+            'https://www.khanacademy.org/humanities/us-history/road-to-revolution',
           videoTitle: 'Khan Academy: American Revolution & Constitution Synthesis',
           reading:
             'Synthesize colonial resistance, Enlightenment natural rights in the Declaration of Independence, federalism checks and balances, and Northwest Ordinance liberties.',
@@ -905,7 +905,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Course Challenge Part 2',
           estimatedMinutes: 15,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/civil-war-era/v/expansion-and-sectionalism-synthesis',
+            'https://www.khanacademy.org/humanities/us-history/civil-war-era',
           videoTitle: 'Khan Academy: Westward Expansion & Sectionalism Synthesis',
           reading:
             'Trace territorial growth from the Louisiana Purchase to California, analyzing how disputes over slavery’s expansion fractured political parties and fueled regional crises.',
@@ -919,7 +919,7 @@ export const G8_SOCIAL_COURSE: Course = {
           partOf: 'Course Challenge Part 3',
           estimatedMinutes: 15,
           videoUrl:
-            'https://www.khanacademy.org/humanities/us-history/civil-war-era/v/civil-war-capstone',
+            'https://www.khanacademy.org/humanities/us-history/civil-war-era',
           videoTitle: 'Khan Academy: Civil War and Reconstruction Capstone',
           reading:
             'Evaluate wartime strategies, Ohio’s Underground Railroad network, the Emancipation Proclamation, and the transformative constitutional impact of the 13th, 14th, and 15th Amendments.',

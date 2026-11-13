@@ -9,6 +9,7 @@ import {
   getLessonAssignment,
 } from '../lib/curriculum'
 import { computeCourseProgress } from '../lib/progress'
+import { buildKhanSearchUrl } from '../lib/khanUrlValidator'
 import { buildQuizAttempt } from '../lib/quizBuilder'
 import { hashString } from '../lib/random'
 import { getLessonRemediation, getRemediationTier } from '../lib/remediation'
@@ -92,16 +93,25 @@ export const LessonPage: React.FC = () => {
   )
   const [isTextbookOpen, setIsTextbookOpen] = useState(false)
   const [highlightedPrincipleId, setHighlightedPrincipleId] = useState<string | null>(null)
+  const [showKhanHelp, setShowKhanHelp] = useState(false)
 
   const handleReviewPrinciple = (principleId: string) => {
     setHighlightedPrincipleId(principleId)
     setIsTextbookOpen(true)
   }
 
+  const markFirstActivityStepComplete = () => {
+    const firstStep = assignment?.steps[0]
+    if (firstStep && !completedStepIds.includes(firstStep.id)) {
+      toggleChecklistStep(firstStep.id)
+    }
+  }
+
   // Load checklist state & reset view when navigating to a different lesson or student
   useEffect(() => {
     setMode('study')
     setHighlightedPrincipleId(null)
+    setShowKhanHelp(false)
     setFocusPrincipleIds(
       lastAttempt && !lastAttempt.passed ? lastAttempt.missedPrincipleIds : []
     )
@@ -575,20 +585,66 @@ export const LessonPage: React.FC = () => {
                   (do not complete the entire external unit), then return here
                   for your graded Mastery Check.
                 </p>
-                <a
-                  href={lesson.videoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-accent"
-                  onClick={() => {
-                    const firstStep = assignment.steps[0]
-                    if (firstStep && !completedStepIds.includes(firstStep.id)) {
-                      toggleChecklistStep(firstStep.id)
-                    }
-                  }}
-                >
-                  Open Video Lesson in New Tab ↗
-                </a>
+                <div className="video-stage-actions">
+                  <a
+                    href={lesson.videoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-accent"
+                    onClick={markFirstActivityStepComplete}
+                  >
+                    Open Video Lesson in New Tab ↗
+                  </a>
+                  <a
+                    href={buildKhanSearchUrl(
+                      lesson.title,
+                      lesson.videoTitle,
+                      course?.title
+                    )}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-khan-search"
+                    onClick={markFirstActivityStepComplete}
+                  >
+                    🔍 Search on Khan ↗
+                  </a>
+                  <button
+                    type="button"
+                    className="btn btn-khan-help"
+                    aria-label="How to use Khan Search fallback"
+                    aria-expanded={showKhanHelp}
+                    aria-controls={`khan-help-popover-${lesson.id}`}
+                    title="How to use Khan Search if a video moved"
+                    onClick={() => setShowKhanHelp((prev) => !prev)}
+                  >
+                    ?
+                  </button>
+                </div>
+                {showKhanHelp && (
+                  <div
+                    id={`khan-help-popover-${lesson.id}`}
+                    className="khan-help-popover"
+                    role="region"
+                    aria-label="Khan Academy Search fallback guide"
+                  >
+                    <strong>
+                      Quick 3-Step Tip if Khan Academy Shows an &ldquo;Oops&rdquo; Screen:
+                    </strong>
+                    <ol>
+                      <li>
+                        Click <strong>Open Video Lesson in New Tab ↗</strong> first to jump straight to the mapped Khan Academy lesson or topic page.
+                      </li>
+                      <li>
+                        If Khan moved or renamed that page, click{' '}
+                        <strong>🔍 Search on Khan ↗</strong> to search directly for{' '}
+                        <strong>&ldquo;{lesson.videoTitle || lesson.title}&rdquo;</strong>.
+                      </li>
+                      <li>
+                        Open the matching video (▶) or practice exercise, complete only this single micro-topic, and return here for your Mastery Check.
+                      </li>
+                    </ol>
+                  </div>
+                )}
               </div>
             </div>
           </div>

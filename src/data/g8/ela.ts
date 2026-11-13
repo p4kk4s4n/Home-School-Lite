@@ -515,7 +515,7 @@ export const G8_ELA_COURSE: Course = {
   externalCourseLinks: [
     {
       label: 'Khan: 8th grade reading, grammar, and vocab',
-      url: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab',
+      url: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary',
     },
     {
       label: 'Khan: Grammar',
@@ -536,7 +536,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Theme Analysis',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:key-ideas-and-details-8',
           videoTitle: 'Khan Academy: Analyzing Theme in Literature',
           reading:
             'A theme is a universal message about human nature or life that an author develops through how characters respond to challenges and moral dilemmas.',
@@ -549,7 +549,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Dialogue & Action',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:key-ideas-and-details-8',
           videoTitle: 'Khan Academy: How Dialogue Propels Action',
           reading:
             'Spoken dialogue is not mere conversation; skilled authors use dialogue to force character decisions, provoke conflict, reveal internal motives, and drive the plot forward.',
@@ -562,7 +562,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Objective Summaries',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:key-ideas-and-details-8',
           videoTitle: 'Khan Academy: Writing Objective Summaries',
           reading:
             'An objective summary condenses the central conflict, major plot milestones, and resolution of a text without injecting personal critique, bias, or peripheral details.',
@@ -575,7 +575,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Literature Review',
           estimatedMinutes: 12,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:key-ideas-and-details-8',
           videoTitle: 'Khan Academy: Literature Analysis Review',
           reading:
             'Review textual evidence citation, distinguishing thematic messages from one-word topics, and evaluating how dialogue choices shape narrative direction.',
@@ -597,7 +597,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Dramatic Irony',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/reading-craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:craft-and-structure-8',
           videoTitle: 'Khan Academy: Types of Irony in Literature',
           reading:
             'Dramatic irony arises when readers know critical narrative truths that characters do not know. This information gap creates sharp anticipation, suspense, or dark humor.',
@@ -610,7 +610,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Situational & Verbal Irony',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/reading-craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:craft-and-structure-8',
           videoTitle: 'Khan Academy: Situational and Verbal Irony',
           reading:
             'Situational irony occurs when the outcome reverses reasonable expectations. Verbal irony occurs when a speaker says the opposite of literal meaning, often through sarcasm.',
@@ -623,7 +623,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Suspense Point of View',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/reading-craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:craft-and-structure-8',
           videoTitle: 'Khan Academy: Point of View and Suspense',
           reading:
             'Authors control perspective to manipulate tension, either by revealing character thoughts through third-person omniscience or limiting knowledge to a single narrator.',
@@ -636,7 +636,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Irony Review',
           estimatedMinutes: 12,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/reading-craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:craft-and-structure-8',
           videoTitle: 'Khan Academy: Irony and Perspective Review',
           reading:
             'Distinguish among dramatic, situational, and verbal irony, and evaluate how narrative point of view manipulates reader emotion and suspense.',
@@ -658,7 +658,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Claims & Evidence',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/reading-integration-of-knowledge-and-ideas',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:integration-of-knowledge-and-ideas-8',
           videoTitle: 'Khan Academy: Evaluating Arguments and Evidence',
           reading:
             'A sound argument establishes a central claim supported by verifiable, relevant evidence—such as empirical studies, statistics, and expert testimony—rather than anecdotal bias.',
@@ -671,7 +671,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Counterclaims & Reasoning',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/reading-integration-of-knowledge-and-ideas',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:integration-of-knowledge-and-ideas-8',
           videoTitle: 'Khan Academy: Identifying Counterclaims and Rebuttals',
           reading:
             'Fair arguments anticipate counterclaims, respectfully acknowledging opposing perspectives before presenting refuting evidence to solidify the author’s stance.',
@@ -684,7 +684,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Conflicting Texts',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/reading-integration-of-knowledge-and-ideas',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:integration-of-knowledge-and-ideas-8',
           videoTitle: 'Khan Academy: Comparing Conflicting Information Texts',
           reading:
             'Two authors examining the same historical or scientific event may arrive at opposing conclusions by prioritizing different datasets, timelines, or ethical frameworks.',
@@ -697,7 +697,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Argument Review',
           estimatedMinutes: 12,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/reading-integration-of-knowledge-and-ideas',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:integration-of-knowledge-and-ideas-8',
           videoTitle: 'Khan Academy: Informational Arguments Review',
           reading:
             'Evaluate evidence sufficiency, spot logical fallacies (like ad hominem attacks and hasty generalizations), and compare conflicting evidentiary positions.',
@@ -719,7 +719,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Gerunds',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/grammar-verbs',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:verbs-8-grammar',
           videoTitle: 'Khan Academy: Gerunds as Nouns',
           reading:
             'A gerund is a verb ending in -ing that functions as a noun in a sentence, acting as a subject (Swimming is fun), direct object (I like baking), or object of a preposition.',
@@ -732,7 +732,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Participles',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/grammar-verbs',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:verbs-8-grammar',
           videoTitle: 'Khan Academy: Participles as Adjectives',
           reading:
             'A participle is a verb form acting as an adjective to modify a noun. Present participles end in -ing (the howling wind); past participles often end in -ed or -en (the frozen lake).',
@@ -745,7 +745,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Infinitives',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/grammar-verbs',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:verbs-8-grammar',
           videoTitle: 'Khan Academy: Infinitives',
           reading:
             'An infinitive is "to" followed by a base verb (to read, to build). Unlike prepositional phrases (to the library), infinitives function flexibly as nouns, adjectives, or adverbs.',
@@ -758,7 +758,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Verbals Review',
           estimatedMinutes: 12,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/grammar-verbs',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:verbs-8-grammar',
           videoTitle: 'Khan Academy: Verbals Mastery Review',
           reading:
             'Distinguish between gerunds, present/past participles, and infinitives, determining their exact grammatical role in complex compound sentences.',
@@ -782,7 +782,7 @@ export const G8_ELA_COURSE: Course = {
           partOf: 'Active & Passive Voice',
           isOhioExtension: true,
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/grammar-style-and-tone',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:style-and-tone-8-grammar',
           videoTitle: 'Khan Academy: Active and Passive Voice',
           reading:
             'In active voice, the subject performs the verb action (The architect designed the bridge). In passive voice, the subject receives the action (The bridge was designed by the architect). Active voice provides greater clarity.',
@@ -796,7 +796,7 @@ export const G8_ELA_COURSE: Course = {
           partOf: 'Verb Moods Basics',
           isOhioExtension: true,
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/grammar-style-and-tone',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:style-and-tone-8-grammar',
           videoTitle: 'Khan Academy: Indicative, Imperative & Interrogative Moods',
           reading:
             'Indicative mood states a fact or opinion (Summer in Ohio is humid). Imperative mood delivers a direct command (Submit your work now). Interrogative mood asks a question (Did you study?).',
@@ -810,7 +810,7 @@ export const G8_ELA_COURSE: Course = {
           partOf: 'Conditional & Subjunctive Moods',
           isOhioExtension: true,
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/grammar-style-and-tone',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:style-and-tone-8-grammar',
           videoTitle: 'Khan Academy: Subjunctive and Conditional Moods',
           reading:
             'Conditional mood expresses an outcome that hinges on a condition (If you arrive early, we will prepare the lab). Subjunctive mood expresses a wish or condition contrary to fact (If I were you).',
@@ -824,7 +824,7 @@ export const G8_ELA_COURSE: Course = {
           partOf: 'Voice & Mood Review',
           isOhioExtension: true,
           estimatedMinutes: 12,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab/grammar-style-and-tone',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary/x435b1de09a877dd7:style-and-tone-8-grammar',
           videoTitle: 'Khan Academy: Verb Voice and Mood Review',
           reading:
             'Correct inappropriate shifts in verb voice across clauses and identify indicative, imperative, interrogative, conditional, and subjunctive sentences.',
@@ -846,7 +846,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Narrative Writing',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Narrative%20Writing%20Craft%208th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Narrative Writing Craft',
           reading:
             'Open stories in the middle of action (in media res), punctuate dialogue accurately with speaker tags, and use vivid sensory details to immerse readers.',
@@ -859,7 +859,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Argumentative Thesis',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Argumentative%20Essay%20Structure%208th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Argumentative Essay Structure',
           reading:
             'Structure argumentative essays with a clear thesis claim, body paragraphs with topic sentences and cited evidence, and logical paragraph transitions.',
@@ -872,7 +872,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Counterclaim & Rebuttal',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Handling%20Counterclaims%20and%20Rebuttals%208th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Handling Counterclaims and Rebuttals',
           reading:
             'Strengthen argumentative persuasion by objectively representing the strongest counter-argument, followed by a factual rebuttal exposing flaws in opposing premises.',
@@ -885,7 +885,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Writing Review',
           estimatedMinutes: 12,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Middle%20School%20Writing%20Workshop%20Review%208th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Middle School Writing Workshop Review',
           reading:
             'Review transition words, paragraph cohesion, revising passive voice into punchy active verbs, and eliminating informal bias in academic writing.',
@@ -907,7 +907,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Course Challenge Part 1',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary',
           videoTitle: 'Khan Academy: Grade 8 Literature & Irony Synthesis',
           reading:
             'Synthesize theme development, dialogue propelling dramatic action, and dramatic/situational/verbal irony in complex fiction.',
@@ -920,7 +920,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Course Challenge Part 2',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary',
           videoTitle: 'Khan Academy: Grade 8 Argument Analysis Synthesis',
           reading:
             'Demonstrate mastery in evaluating evidentiary relevance, assessing source credibility, spotting fallacies, and resolving conflicting texts.',
@@ -933,7 +933,7 @@ export const G8_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Course Challenge Part 3',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocab',
+          videoUrl: 'https://www.khanacademy.org/ela/8th-grade-reading-and-vocabulary',
           videoTitle: 'Khan Academy: Grade 8 Language & Verbals Capstone',
           reading:
             'Apply advanced knowledge of gerunds, participles, infinitives, active/passive voice shifts, and conditional/subjunctive verb moods.',

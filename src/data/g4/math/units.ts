@@ -15,7 +15,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u1',
         title: 'Intro to Place Value Relationships',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2/imp-place-value/v/place-value-relationships',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Place%20Value%20Relationships%204th%20grade%20math',
         videoTitle: 'Place Value Relationships',
         reading: 'In a multi-digit whole number, a digit in one place represents ten times what it represents in the place to its right. For example, 700 is ten times 70.',
         principles: [
@@ -33,7 +33,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u1',
         title: 'Numbers in Written and Expanded Form',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2/imp-place-value/v/writing-numbers-in-expanded-form',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Writing%20Numbers%20in%20Expanded%20Form%204th%20grade%20math',
         videoTitle: 'Writing Numbers in Expanded Form',
         reading: 'Expanded form writes a number showing the value of each digit added together. For example, 53,402 is written as 50,000 + 3,000 + 400 + 2.',
         principles: [
@@ -51,7 +51,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u1',
         title: 'Comparing Multi-Digit Whole Numbers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2/imp-place-value/v/comparing-multi-digit-numbers',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Comparing%20Multi-Digit%20Numbers%204th%20grade%20math',
         videoTitle: 'Comparing Multi-Digit Numbers',
         reading: 'Compare two multi-digit numbers based on meanings of the digits in each place, using symbols >, =, and < to record the results of comparisons.',
         principles: [
@@ -69,7 +69,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u1',
         title: 'Rounding to the Nearest Hundred',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2/imp-rounding/v/rounding-to-nearest-hundred',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Rounding%20to%20Nearest%20Hundred%204th%20grade%20math',
         videoTitle: 'Rounding to Nearest Hundred',
         reading: 'To round to the nearest hundred, examine the tens digit. If it is 5 or greater, round up. If it is 4 or less, round down.',
         principles: [
@@ -87,7 +87,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u1',
         title: 'Rounding to the Nearest Thousand',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2/imp-rounding/v/rounding-to-nearest-thousand',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Rounding%20to%20Nearest%20Thousand%204th%20grade%20math',
         videoTitle: 'Rounding to Nearest Thousand',
         reading: 'To round to the nearest thousand, look at the hundreds digit. If it is 5, 6, 7, 8, or 9, round up to the next thousand.',
         principles: [
@@ -105,7 +105,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u1',
         title: 'Rounding Whole Numbers to Any Place',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2/imp-rounding/v/rounding-whole-numbers',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Rounding%20to%20Any%20Place%20Value%204th%20grade%20math',
         videoTitle: 'Rounding to Any Place Value',
         reading: 'Use place value understanding to round multi-digit whole numbers to any place: tens, hundreds, thousands, or ten thousands.',
         principles: [
@@ -124,7 +124,7 @@ export const G4_MATH_UNITS: Unit[] = [
         title: 'Quiz 1: Place Value & Rounding Check',
         kind: 'lesson_review',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math',
         videoTitle: 'Place Value & Rounding Review',
         reading: 'Review check on 10x place relationships, standard and expanded notation, number comparisons, and rounding rules.',
         principles: [
@@ -150,7 +150,7 @@ export const G4_MATH_UNITS: Unit[] = [
         title: 'Unit 1 Test: Place Value & Rounding Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math',
         videoTitle: 'Unit 1 Test Review',
         reading: 'Comprehensive assessment of place value concepts, comparisons, and multi-digit rounding.',
         principles: [
@@ -186,7 +186,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u2',
         title: 'Multi-Digit Addition Without Regrouping',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction/imp-multi-digit-addition/v/addition-without-regrouping',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2',
         videoTitle: 'Multi-Digit Addition Without Regrouping',
         reading: 'Align numbers vertically by place value and add each column starting from the ones column on the right.',
         principles: [
@@ -204,7 +204,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u2',
         title: 'Multi-Digit Addition With Regrouping',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction/imp-multi-digit-addition/v/carrying-when-adding-three-digit-numbers',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2',
         videoTitle: 'Multi-Digit Addition with Regrouping',
         reading: 'When a column sums to 10 or more, write the ones digit in that column and carry the tens to the next column to the left.',
         principles: [
@@ -222,7 +222,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u2',
         title: 'Multi-Digit Subtraction Without Regrouping',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction/imp-multi-digit-subtraction/v/subtraction-without-regrouping',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2',
         videoTitle: 'Multi-Digit Subtraction Without Regrouping',
         reading: 'Subtract column by column starting from the ones place when the top digit is greater than or equal to the bottom digit.',
         principles: [
@@ -240,7 +240,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u2',
         title: 'Multi-Digit Subtraction With Regrouping',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction/imp-multi-digit-subtraction/v/borrowing-twice-in-three-digit-subtraction',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2',
         videoTitle: 'Multi-Digit Subtraction with Regrouping',
         reading: 'When the top digit is smaller than the bottom digit, borrow 1 ten from the column to the left to add 10 to the current digit.',
         principles: [
@@ -258,7 +258,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u2',
         title: 'Subtraction Across Zeros',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction/imp-multi-digit-subtraction/v/subtracting-across-zeros',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2',
         videoTitle: 'Subtracting Across Zeros',
         reading: 'When borrowing from zero, borrow first from the next non-zero digit to the left, turning intermediate zeros into 9s.',
         principles: [
@@ -276,7 +276,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u2',
         title: 'Estimation in Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction/imp-estimating-addition-and-subtraction/v/estimating-multi-digit-addition-and-subtraction',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2',
         videoTitle: 'Estimating Multi-Digit Operations',
         reading: 'Estimate sums and differences by rounding numbers to the highest place value before calculating to check if an answer is reasonable.',
         principles: [
@@ -294,7 +294,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u2',
         title: 'Multi-Step Word Problems With Addition & Subtraction',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction/imp-addition-and-subtraction-word-problems/v/multi-step-word-problems-with-addition-and-subtraction',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2',
         videoTitle: 'Multi-Step Addition & Subtraction Problems',
         reading: 'Solve multi-step word problems posed with whole numbers using the four operations, assessing reasonableness with mental computation.',
         principles: [
@@ -313,7 +313,7 @@ export const G4_MATH_UNITS: Unit[] = [
         title: 'Unit 2 Test: Addition, Subtraction & Estimation Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-addition-and-subtraction-2',
         videoTitle: 'Unit 2 Test Review',
         reading: 'Comprehensive assessment of multi-digit addition, subtraction with regrouping, and estimation strategies.',
         principles: [
@@ -342,7 +342,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u3',
         title: 'Multiplication as a Comparison',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-multiplicative-comparison/v/multiplication-as-comparison',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2',
         videoTitle: 'Multiplication as Comparison',
         reading: 'Interpret a multiplication equation as a comparison (e.g. 35 = 5 x 7 means 35 is 5 times as many as 7 and 7 times as many as 5).',
         principles: [
@@ -360,7 +360,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u3',
         title: 'Multiply Multiples of 10, 100, and 1,000',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-multiplying-by-multiples-of-10/v/multiplying-by-multiples-of-10',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/multiply-with-partial-products/v/multiplying-2-digits-by-1-digit-with-partial-products',
         videoTitle: 'Multiplying by Multiples of 10',
         reading: 'Multiply the basic fact and annex the corresponding number of zeros. For example, 4 x 300 = 4 x 3 hundreds = 1,200.',
         principles: [
@@ -378,7 +378,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u3',
         title: 'Area Models for 1-Digit Multiplication',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-multiplication-with-area-models/v/area-model-for-multiplication',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2',
         videoTitle: 'Area Models for Multiplication',
         reading: 'Break a multi-digit number into expanded form (e.g. 40 + 8) and multiply each part by the 1-digit width, then add the partial areas.',
         principles: [
@@ -396,7 +396,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u3',
         title: 'Partial Products for 1-Digit by 3-Digit Numbers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-multi-digit-multiplication/v/multiplying-3-digit-by-1-digit',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/multiply-with-partial-products/v/multiplying-2-digits-by-1-digit-with-partial-products',
         videoTitle: 'Multiplying 3-Digit by 1-Digit',
         reading: 'Multiply each place value: hundreds, tens, and ones separately by the 1-digit multiplier, then add the partial products together.',
         principles: [
@@ -414,7 +414,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u3',
         title: 'Standard Algorithm for 1-Digit Multiplication',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-multi-digit-multiplication/v/multiplying-2-digit-by-1-digit-with-regrouping',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2',
         videoTitle: 'Standard Multiplication Algorithm',
         reading: 'Multiply starting at the ones place and carry regrouped tens into the next place value column.',
         principles: [
@@ -432,7 +432,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u3',
         title: 'Multi-Step Comparison Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-multiplicative-comparison-word-problems/v/multiplicative-comparison-word-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2',
         videoTitle: 'Comparison Word Problems',
         reading: 'Multiply or divide to solve word problems involving multiplicative comparison by distinguishing comparison from additive comparison.',
         principles: [
@@ -480,7 +480,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u4',
         title: 'Multiply 2-Digit Multiples of 10',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-multiplying-by-2-digit-numbers/v/multiplying-2-digit-multiples-of-10',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/multiply-with-partial-products/v/multiplying-2-digits-by-1-digit-with-partial-products',
         videoTitle: 'Multiply Multiples of 10',
         reading: 'When multiplying two numbers ending in zero (e.g. 40 x 50), compute 4 x 5 = 20, then append two zeros for 2,000.',
         principles: [
@@ -498,7 +498,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u4',
         title: '2-Digit by 2-Digit Area Models',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-multiplying-by-2-digit-numbers/v/area-model-for-multiplication-2-digit-by-2-digit',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2',
         videoTitle: '2-Digit Area Models',
         reading: 'Partition a rectangle into 4 boxes: (tens + ones) x (tens + ones). Calculate the 4 sub-areas and sum them.',
         principles: [
@@ -516,7 +516,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u4',
         title: 'Partial Products for 2-Digit Multiplication',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-multiplying-by-2-digit-numbers/v/partial-products-multiplication-2-digit-by-2-digit',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/multiply-with-partial-products/v/multiplying-2-digits-by-1-digit-with-partial-products',
         videoTitle: 'Partial Products 2-Digit',
         reading: 'Compute the 4 partial products vertically: ones x ones, ones x tens, tens x ones, tens x tens, then sum them.',
         principles: [
@@ -534,7 +534,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u4',
         title: 'Standard Algorithm for 2-Digit Multiplication',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-multiplying-by-2-digit-numbers/v/multiplying-2-digit-numbers',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2',
         videoTitle: 'Standard 2-Digit Algorithm',
         reading: 'Multiply by the ones digit first, then place a 0 in the ones spot before multiplying by the tens digit, and sum the two rows.',
         principles: [
@@ -552,7 +552,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u4',
         title: 'Multi-Step 2-Digit Multiplication Word Problems',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-multiplying-by-2-digit-numbers/v/multi-step-word-problems-with-multiplication',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2',
         videoTitle: '2-Digit Multiplication Word Problems',
         reading: 'Solve complex multi-step word problems involving real-world production rates, ticket sales, and distance.',
         principles: [
@@ -600,7 +600,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u5',
         title: 'Visual Models for Division & Remainders',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-division-with-remainders/v/division-with-remainders-intro',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2',
         videoTitle: 'Intro to Division with Remainders',
         reading: 'When sharing items equally, any items left over that cannot form another equal group make up the remainder (R).',
         principles: [
@@ -618,7 +618,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u5',
         title: 'Dividing Multiples of 10, 100, and 1,000',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-dividing-by-1-digit-numbers/v/dividing-by-multiples-of-10',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2',
         videoTitle: 'Dividing Multiples of 10',
         reading: 'Use fact families and place value: 2,400 ÷ 6 = 24 hundreds ÷ 6 = 4 hundreds = 400.',
         principles: [
@@ -636,7 +636,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u5',
         title: '2-Digit by 1-Digit Division with Remainders',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-dividing-by-1-digit-numbers/v/dividing-2-digits-by-1-digit-with-remainder',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/division/multi-digit-division/v/long-division-without-remainder',
         videoTitle: 'Dividing 2-Digits with Remainder',
         reading: 'Divide, multiply, subtract, and compare to find the quotient and remainder accurately.',
         principles: [
@@ -654,7 +654,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u5',
         title: '3-Digit and 4-Digit Division by 1-Digit Numbers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-dividing-by-1-digit-numbers/v/dividing-3-digit-by-1-digit',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2',
         videoTitle: 'Dividing 3-Digits by 1-Digit',
         reading: 'Bring down digits step by step from the hundreds to the tens to the ones place, recording each quotient digit.',
         principles: [
@@ -672,7 +672,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u5',
         title: 'Interpreting Remainders in Real-World Contexts',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/imp-interpreting-remainders/v/interpreting-remainders',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2',
         videoTitle: 'Interpreting Remainders',
         reading: 'Depending on the question, a remainder can be dropped, rounded up (e.g. buses needed), or stated as the leftover amount.',
         principles: [
@@ -720,7 +720,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u6',
         title: 'Finding Factor Pairs of Whole Numbers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns/imp-factors-and-multiples/v/finding-factors-of-a-number',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Finding%20Factors%20of%20a%20Number%204th%20grade%20math',
         videoTitle: 'Finding Factors of a Number',
         reading: 'A factor pair is two whole numbers that multiply together to yield a product. Example factor pairs of 20: 1x20, 2x10, and 4x5.',
         principles: [
@@ -738,7 +738,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u6',
         title: 'Prime and Composite Numbers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns/imp-prime-and-composite-numbers/v/prime-numbers',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Prime%20and%20Composite%20Numbers%204th%20grade%20math',
         videoTitle: 'Prime and Composite Numbers',
         reading: 'A prime number has exactly two factors: 1 and itself (e.g. 2, 3, 5, 7, 11). A composite number has more than two factors.',
         principles: [
@@ -756,7 +756,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u6',
         title: 'Identifying Multiples of Whole Numbers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns/imp-factors-and-multiples/v/identifying-multiples',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Identifying%20Multiples%204th%20grade%20math',
         videoTitle: 'Identifying Multiples',
         reading: 'A multiple of a number is the product of that number and any whole number. Multiples of 6 include 6, 12, 18, 24, 30, and 36.',
         principles: [
@@ -774,7 +774,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u6',
         title: 'Generating Number Patterns with Rules',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns/imp-patterns/v/math-patterns-example-2',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Generating%20Number%20Patterns%204th%20grade%20math',
         videoTitle: 'Generating Number Patterns',
         reading: 'Generate a number pattern that follows a given rule (such as "Add 4" or "Multiply by 2"). Identify features not explicit in the rule itself.',
         principles: [
@@ -792,7 +792,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u6',
         title: 'Shape and Geometric Patterns',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns/imp-patterns/v/shape-patterns',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Shape%20Patterns%204th%20grade%20math',
         videoTitle: 'Shape Patterns',
         reading: 'Analyze repeating and growing geometric shape sequences and predict future terms using repeating cycles.',
         principles: [
@@ -811,7 +811,7 @@ export const G4_MATH_UNITS: Unit[] = [
         title: 'Unit 6 Test: Factors, Multiples & Patterns Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math',
         videoTitle: 'Unit 6 Test Review',
         reading: 'Comprehensive assessment on finding factor pairs, identifying primes and composites, and analyzing mathematical patterns.',
         principles: [
@@ -840,7 +840,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u7',
         title: 'Visual Models for Equivalent Fractions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-equivalent-fractions/v/visual-equivalent-fractions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions/imp-equivalent-fractions-2/v/equivalent-fractions-on-number-lines',
         videoTitle: 'Visual Equivalent Fractions',
         reading: 'Two fractions are equivalent if they represent the same amount of a whole. Cutting fraction pieces in half doubles both numerator and denominator.',
         principles: [
@@ -858,7 +858,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u7',
         title: 'Multiplying to Generate Equivalent Fractions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-equivalent-fractions/v/equivalent-fractions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/comparing-fractions-and-equivalent-fractions/imp-equivalent-fractions-2/v/equivalent-fractions-on-number-lines',
         videoTitle: 'Generating Equivalent Fractions',
         reading: 'Multiply both numerator and denominator by the same nonzero number to generate equivalent fractions without changing value.',
         principles: [
@@ -876,7 +876,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u7',
         title: 'Simplifying Fractions with Common Factors',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-equivalent-fractions/v/simplifying-fractions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2',
         videoTitle: 'Simplifying Fractions',
         reading: 'Divide both numerator and denominator by their greatest common factor to reduce the fraction to simplest form.',
         principles: [
@@ -894,7 +894,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u7',
         title: 'Common Denominators for Comparison',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-comparing-fractions/v/comparing-fractions-with-different-denominators',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2',
         videoTitle: 'Common Denominators for Comparison',
         reading: 'To compare fractions with different denominators, rewrite them with a common denominator (e.g. compare 2/3 and 3/4 as 8/12 and 9/12).',
         principles: [
@@ -912,7 +912,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u7',
         title: 'Comparing Fractions with Like Numerators or Denominators',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-comparing-fractions/v/comparing-fractions-like-numerators',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2',
         videoTitle: 'Comparing with Like Numerators',
         reading: 'With identical denominators, the larger numerator is bigger. With identical numerators, smaller denominators mean larger pieces.',
         principles: [
@@ -930,7 +930,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u7',
         title: 'Comparing Fractions Using Benchmark Fractions (1/2)',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-comparing-fractions/v/comparing-fractions-to-benchmarks',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2',
         videoTitle: 'Benchmark Fractions (1/2)',
         reading: 'Compare fractions against 1/2. For example, 3/8 is less than 1/2, while 5/8 is greater than 1/2, so 5/8 > 3/8.',
         principles: [
@@ -997,7 +997,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u8',
         title: 'Adding Fractions with Like Denominators',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-adding-and-subtracting-fractions-with-like-denominators/v/adding-fractions-with-like-denominators',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-adding-and-subtracting-mixed-numbers/v/adding-mixed-numbers-with-like-denominators',
         videoTitle: 'Adding Fractions with Like Denominators',
         reading: 'Understand addition of fractions as joining parts referring to the same whole: a/d + b/d = (a+b)/d.',
         principles: [
@@ -1015,7 +1015,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u8',
         title: 'Subtracting Fractions with Like Denominators',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-adding-and-subtracting-fractions-with-like-denominators/v/subtracting-fractions-with-like-denominators',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-adding-and-subtracting-fractions-word-problems/v/subtracting-fractions-word-problem-1',
         videoTitle: 'Subtracting Fractions with Like Denominators',
         reading: 'Understand subtraction of fractions as separating parts referring to the same whole: a/d - b/d = (a-b)/d.',
         principles: [
@@ -1033,7 +1033,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u8',
         title: 'Decomposing Fractions into Sum of Unit Fractions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-decomposing-fractions/v/decomposing-fractions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-decomposing-fractions/a/add-and-subtract-fractions-faq',
         videoTitle: 'Decomposing Fractions',
         reading: 'Decompose a fraction into a sum of fractions with the same denominator in more than one way (e.g. 3/8 = 1/8 + 1/8 + 1/8 or 2/8 + 1/8).',
         principles: [
@@ -1069,7 +1069,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u8',
         title: 'Subtracting Mixed Numbers with Regrouping',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-adding-and-subtracting-mixed-numbers/v/subtracting-mixed-numbers-with-regrouping',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-adding-and-subtracting-mixed-numbers/v/subtract-mixed-numbers-with-regrouping',
         videoTitle: 'Subtracting Mixed Numbers with Regrouping',
         reading: 'When subtracting fractions and the top fraction is smaller, borrow 1 from the whole number and convert it into d/d before subtracting.',
         principles: [
@@ -1087,7 +1087,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u8',
         title: 'Fraction Addition & Subtraction Word Problems',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-adding-and-subtracting-fractions-word-problems/v/adding-and-subtracting-fractions-word-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-adding-and-subtracting-fractions-word-problems/v/subtracting-fractions-word-problem-1',
         videoTitle: 'Fraction Word Problems',
         reading: 'Solve word problems involving addition and subtraction of fractions referring to the same whole and having like denominators.',
         principles: [
@@ -1135,7 +1135,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u9',
         title: 'Fractions as Multiples of Unit Fractions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-multiplying-fractions-and-whole-numbers/v/fractions-as-multiples-of-unit-fractions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2',
         videoTitle: 'Fractions as Multiples of Unit Fractions',
         reading: 'Understand a fraction a/b as a multiple of 1/b. For example, 5/4 is the product 5 x (1/4).',
         principles: [
@@ -1153,7 +1153,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u9',
         title: 'Multiply Whole Numbers by Unit Fractions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-multiplying-fractions-and-whole-numbers/v/multiplying-fractions-and-whole-numbers',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/multiply-with-partial-products/v/multiplying-2-digits-by-1-digit-with-partial-products',
         videoTitle: 'Multiplying Whole Numbers and Unit Fractions',
         reading: 'Multiplying n x (1/b) yields n/b. For example, 4 x (1/5) = 4/5.',
         principles: [
@@ -1171,7 +1171,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u9',
         title: 'Multiply Whole Numbers by Non-Unit Fractions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-multiplying-fractions-and-whole-numbers/v/multiplying-whole-numbers-and-fractions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-multiplication-and-division-2/multiply-with-partial-products/v/multiplying-2-digits-by-1-digit-with-partial-products',
         videoTitle: 'Multiplying Non-Unit Fractions',
         reading: 'Multiply the whole number by the numerator and keep the denominator: 3 x (2/5) = (3 x 2)/5 = 6/5 = 1 1/5.',
         principles: [
@@ -1189,7 +1189,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u9',
         title: 'Fraction Multiplication Word Problems',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-multiplying-fractions-and-whole-numbers-word-problems/v/multiplying-fractions-and-whole-numbers-word-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2',
         videoTitle: 'Fraction Multiplication Word Problems',
         reading: 'Solve real-world problems involving scaling recipes, measuring lumber, and running laps using fraction multiplication.',
         principles: [
@@ -1237,7 +1237,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u10',
         title: 'Tenths as Decimals and Fractions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-decimals-2/imp-decimals-in-words/v/decimals-in-words',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-decimals',
         videoTitle: 'Tenths as Fractions and Decimals',
         reading: 'The first digit to the right of the decimal point represents tenths. 3/10 is written as 0.3.',
         principles: [
@@ -1255,7 +1255,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u10',
         title: 'Hundredths as Decimals and Fractions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-decimals-2/imp-decimals-in-words/v/hundredths-as-decimals',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-decimals/imp-comparing-decimals/v/comparing-decimals-with-hundredths',
         videoTitle: 'Hundredths as Fractions and Decimals',
         reading: 'The second digit to the right of the decimal point represents hundredths. 47/100 is written as 0.47.',
         principles: [
@@ -1273,7 +1273,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u10',
         title: 'Converting Tenths to Hundredths',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-decimals-2/imp-converting-fractions-to-decimals/v/converting-fractions-to-decimals',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/imp-mixed-numbers/e/converting_mixed_numbers_and_improper_fractions',
         videoTitle: 'Converting Tenths to Hundredths',
         reading: 'Express a fraction with denominator 10 as an equivalent fraction with denominator 100: 3/10 = 30/100, and 0.3 = 0.30.',
         principles: [
@@ -1291,7 +1291,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u10',
         title: 'Adding Fractions with Denominators 10 and 100',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-decimals-2/imp-adding-fractions-with-denominators-10-and-100/v/adding-fractions-with-denominators-10-and-100',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-fractions-2/adding-and-subtracting-mixed-numbers-word-problems/v/adding-fractions-word-problem-2',
         videoTitle: 'Adding Tenths and Hundredths',
         reading: 'Convert tenths to hundredths before adding: 3/10 + 4/100 = 30/100 + 4/100 = 34/100.',
         principles: [
@@ -1309,7 +1309,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u10',
         title: 'Comparing Decimals to Hundredths',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-decimals-2/imp-comparing-decimals/v/comparing-decimals-with-tenths-and-hundredths',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-decimals/imp-comparing-decimals/v/comparing-decimals-with-hundredths',
         videoTitle: 'Comparing Decimals',
         reading: 'Compare two decimals to hundredths by reasoning about their size and comparing digits in the tenths then hundredths place.',
         principles: [
@@ -1328,7 +1328,7 @@ export const G4_MATH_UNITS: Unit[] = [
         title: 'Unit 10 Test: Decimals & Decimal Notation Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-decimals-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-decimals',
         videoTitle: 'Unit 10 Test Review',
         reading: 'Comprehensive assessment testing decimal and fraction notation, equivalent tenths and hundredths, and decimal comparisons.',
         principles: [
@@ -1357,7 +1357,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u11',
         title: 'Points, Lines, Line Segments, and Rays',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-lines-and-angles/v/points-lines-segments-rays',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Points%2C%20Lines%2C%20Line%20Segments%2C%20and%20Rays%204th%20grade%20math',
         videoTitle: 'Points, Lines, Line Segments, and Rays',
         reading: 'A point is an exact location. A line extends infinitely in both directions. A line segment has two endpoints. A ray has one endpoint and extends infinitely.',
         principles: [
@@ -1375,7 +1375,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u11',
         title: 'Parallel and Perpendicular Lines',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-lines-and-angles/v/parallel-and-perpendicular-lines',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Parallel%20and%20Perpendicular%20Lines%204th%20grade%20math',
         videoTitle: 'Parallel and Perpendicular Lines',
         reading: 'Parallel lines never intersect and remain equidistant. Perpendicular lines intersect at right (90 degree) angles.',
         principles: [
@@ -1393,7 +1393,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u11',
         title: 'Classifying Triangles by Angles (Acute, Right, Obtuse)',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-classifying-shapes/v/classifying-triangles-by-angles',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Classifying%20Triangles%20by%20Angles%204th%20grade%20math',
         videoTitle: 'Classifying Triangles by Angles',
         reading: 'An acute triangle has 3 acute angles (< 90°). A right triangle has 1 right angle (= 90°). An obtuse triangle has 1 obtuse angle (> 90°).',
         principles: [
@@ -1411,7 +1411,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u11',
         title: 'Classifying Triangles by Sides (Equilateral, Isosceles, Scalene)',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-classifying-shapes/v/classifying-triangles-by-sides',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Classifying%20Triangles%20by%20Sides%204th%20grade%20math',
         videoTitle: 'Classifying Triangles by Sides',
         reading: 'Equilateral triangles have 3 equal side lengths. Isosceles triangles have 2 equal side lengths. Scalene triangles have no equal side lengths.',
         principles: [
@@ -1429,7 +1429,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u11',
         title: 'Classifying Quadrilaterals (Parallelograms, Rectangles, Rhombuses, Trapezoids)',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-classifying-shapes/v/classifying-quadrilaterals',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Classifying%20Quadrilaterals%204th%20grade%20math',
         videoTitle: 'Classifying Quadrilaterals',
         reading: 'A parallelogram has 2 pairs of parallel sides. A rectangle has 4 right angles. A rhombus has 4 equal sides. A square is both a rectangle and a rhombus.',
         principles: [
@@ -1447,7 +1447,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u11',
         title: 'Line Symmetry in 2D Figures',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-symmetry/v/line-of-symmetry-intro',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Line%20Symmetry%204th%20grade%20math',
         videoTitle: 'Line Symmetry',
         reading: 'A line of symmetry divides a figure into two identical mirror-image halves that match when folded along the line.',
         principles: [
@@ -1466,7 +1466,7 @@ export const G4_MATH_UNITS: Unit[] = [
         title: 'Quiz 3: Lines, Shapes & Symmetry',
         kind: 'lesson_review',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math',
         videoTitle: 'Geometry Quiz Review',
         reading: 'Review quiz testing line properties, triangle categories, quadrilateral classifications, and lines of symmetry.',
         principles: [
@@ -1485,7 +1485,7 @@ export const G4_MATH_UNITS: Unit[] = [
         title: 'Unit 11 Test: Plane Figures & Symmetry Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math',
         videoTitle: 'Unit 11 Test Review',
         reading: 'Comprehensive assessment of geometric definitions, parallel/perpendicular lines, polygon classifications, and symmetry lines.',
         principles: [
@@ -1514,7 +1514,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u12',
         title: 'Understanding Angles as Rotations',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-angles/v/angle-basics',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Angle%20Concepts%20and%20Rotations%204th%20grade%20math',
         videoTitle: 'Angle Concepts and Rotations',
         reading: 'An angle is formed when two rays share a common endpoint called the vertex. An angle that turns through 1/360 of a circle measures 1 degree.',
         principles: [
@@ -1532,7 +1532,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u12',
         title: 'Measuring Angles with a Protractor',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-measuring-angles/v/measuring-angles-in-degrees',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-measuring-angles/e/drawing-angles',
         videoTitle: 'Measuring Angles with Protractors',
         reading: 'Align the protractor center on the vertex and baseline along one ray. Read the degree mark where the second ray intersects the arc.',
         principles: [
@@ -1550,7 +1550,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u12',
         title: 'Constructing and Drawing Angles',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-measuring-angles/v/drawing-angles',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-measuring-angles/e/drawing-angles',
         videoTitle: 'Drawing Angles with Protractors',
         reading: 'To draw an angle, sketch a baseline ray, place the protractor center at the endpoint, mark the degree angle, and connect.',
         principles: [
@@ -1568,7 +1568,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u12',
         title: 'Additive Angles and Angle Decomposition',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-measuring-angles/v/decomposing-angles',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Decomposing%20Angles%204th%20grade%20math',
         videoTitle: 'Decomposing Angles',
         reading: 'When an angle is decomposed into non-overlapping parts, the angle measure of the whole is the sum of the angle measures of the parts.',
         principles: [
@@ -1586,7 +1586,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u12',
         title: 'Finding Unknown Angle Measures',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-measuring-angles/v/unknown-angle-problems',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Finding%20Unknown%20Angles%204th%20grade%20math',
         videoTitle: 'Finding Unknown Angles',
         reading: 'Use complementary angles (sum to 90 degrees) and supplementary straight line angles (sum to 180 degrees) to solve for missing angles.',
         principles: [
@@ -1605,7 +1605,7 @@ export const G4_MATH_UNITS: Unit[] = [
         title: 'Unit 12 Test: Measuring Angles Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math',
         videoTitle: 'Unit 12 Test Review',
         reading: 'Comprehensive assessment on angle rotations, measuring with protractors, complementary/supplementary angles, and unknown angle calculations.',
         principles: [
@@ -1634,7 +1634,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u13',
         title: 'Perimeter of Rectangles and Squares',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-area-and-perimeter/v/perimeter-of-a-rectangle',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Perimeter%20of%20Rectangles%204th%20grade%20math',
         videoTitle: 'Perimeter of Rectangles',
         reading: 'Perimeter is the total distance around the outside edge of a 2D figure. For a rectangle: P = 2l + 2w, or 2(l + w).',
         principles: [
@@ -1652,7 +1652,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u13',
         title: 'Area of Rectangles and Squares',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-area-and-perimeter/v/area-of-a-rectangle',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Area%20of%20Rectangles%204th%20grade%20math',
         videoTitle: 'Area of Rectangles',
         reading: 'Area is the number of square units needed to cover the interior surface of a flat shape. For a rectangle: Area = length x width.',
         principles: [
@@ -1670,7 +1670,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u13',
         title: 'Finding Missing Side Lengths Given Area or Perimeter',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-area-and-perimeter/v/find-a-missing-side-length-when-given-area',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Finding%20Missing%20Side%20Lengths%204th%20grade%20math',
         videoTitle: 'Finding Missing Side Lengths',
         reading: 'If given area A and width w, find length by dividing: l = A ÷ w. If given perimeter P and length l, width = (P - 2l) ÷ 2.',
         principles: [
@@ -1688,7 +1688,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u13',
         title: 'Area and Perimeter of Complex Rectilinear Figures',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-area-and-perimeter/v/area-of-shapes-on-grids',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Complex%20Rectilinear%20Shapes%204th%20grade%20math',
         videoTitle: 'Complex Rectilinear Shapes',
         reading: 'Decompose L-shaped or stepped rectilinear shapes into smaller rectangles, compute each sub-area, and sum them together.',
         principles: [
@@ -1706,7 +1706,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u13',
         title: 'Real-World Area and Perimeter Word Problems',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2/imp-area-and-perimeter/v/area-and-perimeter-word-problems',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Area%20and%20Perimeter%20Word%20Problems%204th%20grade%20math',
         videoTitle: 'Area and Perimeter Word Problems',
         reading: 'Apply area and perimeter formulas to solve practical problems involving bedroom tiling, garden fencing, and classroom rugs.',
         principles: [
@@ -1725,7 +1725,7 @@ export const G4_MATH_UNITS: Unit[] = [
         title: 'Unit 13 Test: Area & Perimeter Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-geometry-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math',
         videoTitle: 'Unit 13 Test Review',
         reading: 'Assessment testing calculation of rectangle perimeters, areas, missing side dimensions, and rectilinear composite shapes.',
         principles: [
@@ -1754,7 +1754,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u14',
         title: 'Customary Units of Length, Weight, and Capacity',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2/imp-unit-conversion/v/converting-us-customary-units-of-length',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2',
         videoTitle: 'Customary Measurement Units',
         reading: 'Know relative sizes of measurement units: 1 foot = 12 inches, 1 yard = 3 feet, 1 pound = 16 ounces, 1 gallon = 4 quarts.',
         principles: [
@@ -1772,7 +1772,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u14',
         title: 'Metric Units of Length, Mass, and Volume',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2/imp-unit-conversion/v/converting-metric-units-of-length',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2/imp-converting-units-of-length/v/converting-metric-distance',
         videoTitle: 'Metric Units and Conversions',
         reading: 'Metric units scale by powers of 10: 1 meter = 100 centimeters = 1,000 millimeters; 1 kilometer = 1,000 meters; 1 kilogram = 1,000 grams; 1 liter = 1,000 milliliters.',
         principles: [
@@ -1790,7 +1790,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u14',
         title: 'Measurement Conversion Tables',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2/imp-unit-conversion/v/measurement-conversion-tables',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2',
         videoTitle: 'Measurement Conversion Tables',
         reading: 'Record measurement equivalents in a two-column table. Example: 1 ft = 12 in, 2 ft = 24 in, 3 ft = 36 in.',
         principles: [
@@ -1808,7 +1808,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u14',
         title: 'Elapsed Time on Number Lines',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2/imp-time/v/elapsed-time-on-a-number-line',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2',
         videoTitle: 'Elapsed Time on Number Lines',
         reading: 'Calculate elapsed time intervals by making jumps on an open number line: jump hours first, then jump ten-minute chunks, then individual minutes.',
         principles: [
@@ -1826,7 +1826,7 @@ export const G4_MATH_UNITS: Unit[] = [
         unitId: 'g4-math-u14',
         title: 'Line Plots with Fractional Data',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2/imp-line-plots/v/line-plots-with-fractions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fourth-grade-math/imp-measurement-and-data-2',
         videoTitle: 'Line Plots with Fractions',
         reading: 'Make a line plot to display a data set of measurements in fractions of a unit (1/2, 1/4, 1/8). Solve problems involving addition and subtraction of fractions using line plots.',
         principles: [

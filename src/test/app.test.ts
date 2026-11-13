@@ -68,6 +68,13 @@ import {
   cleanAppCachesOnly,
   isNewerRemoteVersion,
 } from '../lib/update'
+import {
+  buildKhanSearchUrl,
+  getCanonicalKhanUnitUrl,
+  validateCurriculumUrl,
+  VERIFIED_KHAN_URLS,
+  VERIFIED_OHIO_URLS,
+} from '../lib/khanUrlValidator'
 
 // Ensure public/content/*.json files are emitted and stay synchronized with ALL_COURSES
 describe('Content Catalog, Plain-Language Standard, Ohio Opt-Out & Remediation', () => {
@@ -1460,9 +1467,9 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
         expect(lesson.videoUrl).not.toContain('describing-motion')
       }
     }
-    // Verify Unit 1 Lesson 1 specifically has the verified speed-and-velocity canonical endpoint
+    // Verify Unit 1 Lesson 1 specifically resolves to the verified US MS Physics Motion and Forces endpoint
     expect(g8Sci.units[0].lessons[0].videoUrl).toBe(
-      'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:motion/v/speed-and-velocity'
+      'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces'
     )
 
     // Verify Grade 7 lessons strictly link to middle-school-earth-and-space-science and ms-chemistry
@@ -1482,9 +1489,9 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
     const elaCourses = [
       { id: 'g4-ela', expectedTitle: '4th grade reading and vocab', slug: '4th-grade-reading-and-vocab' },
       { id: 'g5-ela', expectedTitle: '5th grade reading, grammar, and vocab', slug: '5th-grade-reading-and-vocab' },
-      { id: 'g6-ela', expectedTitle: '6th grade reading, grammar, and vocab', slug: '6th-grade-reading-and-vocab' },
-      { id: 'g7-ela', expectedTitle: '7th grade reading, grammar, and vocab', slug: '7th-grade-reading-and-vocab' },
-      { id: 'g8-ela', expectedTitle: '8th grade reading, grammar, and vocab', slug: '8th-grade-reading-and-vocab' },
+      { id: 'g6-ela', expectedTitle: '6th grade reading, grammar, and vocab', slug: 'new-6th-grade-reading-and-vocabulary' },
+      { id: 'g7-ela', expectedTitle: '7th grade reading, grammar, and vocab', slug: '7th-grade-reading-and-vocabulary' },
+      { id: 'g8-ela', expectedTitle: '8th grade reading, grammar, and vocab', slug: '8th-grade-reading-and-vocabulary' },
     ]
 
     for (const conf of elaCourses) {
@@ -1520,5 +1527,89 @@ describe('Quiz Review Snapshot, Lesson Scope Checklist & Multi-Device Family Syn
         }
       }
     }
+  })
+
+  it('enforces verified Khan/Ohio URL allowlist and canonical search/unit helpers across all 20 courses', () => {
+    const violations: string[] = []
+    let checkedUrlCount = 0
+
+    for (const course of ALL_COURSES) {
+      for (const ext of course.externalCourseLinks ?? []) {
+        checkedUrlCount++
+        const res = validateCurriculumUrl(ext.url, `${course.id} > externalCourseLinks (${ext.label})`)
+        if (!res.valid) violations.push(res.reason ?? `Invalid URL ${ext.url}`)
+      }
+
+      for (const unit of course.units) {
+        for (const ex of unit.exploreItems ?? []) {
+          if (ex.url) {
+            checkedUrlCount++
+            const res = validateCurriculumUrl(ex.url, `${course.id}/${unit.id} exploreItems (${ex.title})`)
+            if (!res.valid) violations.push(res.reason ?? `Invalid URL ${ex.url}`)
+          }
+        }
+        for (const r of unit.resources ?? []) {
+          if (r.url) {
+            checkedUrlCount++
+            const res = validateCurriculumUrl(r.url, `${course.id}/${unit.id} resources (${r.title})`)
+            if (!res.valid) violations.push(res.reason ?? `Invalid URL ${r.url}`)
+          }
+        }
+        for (const lesson of unit.lessons) {
+          if (!lesson.videoUrl) {
+            violations.push(`${course.id}/${lesson.id}: missing lesson.videoUrl`)
+          } else {
+            checkedUrlCount++
+            const res = validateCurriculumUrl(lesson.videoUrl, `${course.id}/${lesson.id}`)
+            if (!res.valid) violations.push(res.reason ?? `Invalid URL ${lesson.videoUrl}`)
+          }
+          if (lesson.activity?.url) {
+            checkedUrlCount++
+            const res = validateCurriculumUrl(lesson.activity.url, `${course.id}/${lesson.id} activity`)
+            if (!res.valid) violations.push(res.reason ?? `Invalid URL ${lesson.activity.url}`)
+          }
+          for (const step of getLessonAssignment(lesson).steps) {
+            if (step.url) {
+              checkedUrlCount++
+              const res = validateCurriculumUrl(step.url, `${course.id}/${lesson.id} step ${step.id}`)
+              if (!res.valid) violations.push(res.reason ?? `Invalid URL ${step.url}`)
+            }
+          }
+        }
+      }
+    }
+
+    expect(checkedUrlCount).toBeGreaterThan(1500)
+    expect(violations).toEqual([])
+
+    // Verify user-reported Grade 6 Math Unit 1 Lessons 1 & 2 resolve to live verified Khan videos
+    const g6Math = getCourseById('g6-math')!
+    const u1 = g6Math.units[0]
+    expect(u1.lessons[0].id).toBe('g6-math-u1-l1')
+    expect(u1.lessons[0].videoUrl).toBe(
+      'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/intro-to-ratios/v/ratios-intro'
+    )
+    expect(VERIFIED_KHAN_URLS.has(u1.lessons[0].videoUrl!)).toBe(true)
+
+    expect(u1.lessons[1].id).toBe('g6-math-u1-l2')
+    expect(u1.lessons[1].videoUrl).toBe(
+      'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/intro-to-ratios/v/ratio-example-problems'
+    )
+    expect(VERIFIED_KHAN_URLS.has(u1.lessons[1].videoUrl!)).toBe(true)
+
+    // Verify canonical unit URL normalization & 1-tap Khan search fallback builder
+    expect(getCanonicalKhanUnitUrl(u1, g6Math)).toBe(
+      'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic'
+    )
+    expect(VERIFIED_KHAN_URLS.size).toBeGreaterThan(300)
+    expect(VERIFIED_OHIO_URLS.size).toBeGreaterThanOrEqual(10)
+
+    const fallbackSearch = buildKhanSearchUrl(
+      'Lesson 2: Basic Ratios',
+      'Representing Ratios with Models',
+      'Grade 6 Mathematics'
+    )
+    expect(fallbackSearch).toMatch(/^https:\/\/www\.khanacademy\.org\/search\?page_search_query=/)
+    expect(decodeURIComponent(fallbackSearch)).toContain('Representing Ratios with Models')
   })
 })

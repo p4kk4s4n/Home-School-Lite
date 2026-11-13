@@ -15,7 +15,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u1',
         title: 'Particles of Matter Too Small to Be Seen',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:properties-of-matter/x2e35759163e5e4fa:matter-is-made-of-particles/v/matter-and-particles',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Particles%20of%20Matter%205th%20grade%20science',
         videoTitle: 'Particles of Matter',
         reading: 'All matter is composed of particles too microscopic to be seen. Examples include air filling a basketball or sugar dissolving invisibly into water.',
         principles: [
@@ -33,7 +33,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u1',
         title: 'Conservation of Matter During State Changes',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:properties-of-matter/x2e35759163e5e4fa:conservation-of-matter/v/conservation-of-mass-during-physical-changes',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Conservation%20of%20Mass%20in%20Physical%20Changes%205th%20grade%20science',
         videoTitle: 'Conservation of Mass in Physical Changes',
         reading: 'When water freezes into ice or evaporates into vapor, total weight does not change. Mass is conserved across all heating, cooling, and phase shifts.',
         principles: [
@@ -51,7 +51,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u1',
         title: 'Identifying Materials by Characteristic Properties',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:properties-of-matter/x2e35759163e5e4fa:identifying-substances/v/identifying-materials',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Identifying%20Materials%20by%20Properties%205th%20grade%20science',
         videoTitle: 'Identifying Materials by Properties',
         reading: 'Substances have unique properties like color, hardness, reflectivity, electrical and thermal conductivity, response to magnetic forces, and solubility.',
         principles: [
@@ -70,7 +70,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 1 Test: Properties of Matter Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:properties-of-matter',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Unit%201%20Test%20Review%205th%20grade%20science',
         videoTitle: 'Unit 1 Test Review',
         reading: 'Assessment testing particle models, conservation of weight, and identifying unknown materials.',
         principles: [
@@ -99,7 +99,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u2',
         title: 'Mixtures vs. Solutions and Separation Techniques',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:properties-of-matter/x2e35759163e5e4fa:mixtures-and-solutions/v/mixtures-and-solutions',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Mixtures%20and%20Solutions%205th%20grade%20science',
         videoTitle: 'Mixtures and Solutions',
         reading: 'In a mixture, individual substances retain their chemical identities. Separation techniques include filtering, magnetism, sifting, and evaporation.',
         principles: [
@@ -117,7 +117,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u2',
         title: 'Evidence of Chemical Reactions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:properties-of-matter/x2e35759163e5e4fa:chemical-reactions/v/evidence-of-chemical-change',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Evidence%20of%20Chemical%20Reactions%205th%20grade%20science',
         videoTitle: 'Evidence of Chemical Reactions',
         reading: 'A chemical reaction occurs when bonds break and atoms rearrange. Evidence includes unexpected gas formation, heat emission, or color change.',
         principles: [
@@ -135,7 +135,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u2',
         title: 'Conservation of Mass in Chemical Reactions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:properties-of-matter/x2e35759163e5e4fa:conservation-of-matter/v/conservation-of-mass-in-chemical-reactions',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Conservation%20in%20Chemical%20Reactions%205th%20grade%20science',
         videoTitle: 'Conservation in Chemical Reactions',
         reading: 'When vinegar and baking soda react inside a sealed container, total mass before and after remains identical because all gas is trapped.',
         principles: [
@@ -154,7 +154,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 2 Test: Chemical Reactions Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:properties-of-matter',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Unit%202%20Test%20Review%205th%20grade%20science',
         videoTitle: 'Unit 2 Test Review',
         reading: 'Comprehensive assessment of mixtures, solutions, chemical reactions, and mass conservation.',
         principles: [
@@ -183,7 +183,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u3',
         title: 'Photosynthesis: Where Plant Mass Comes From',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:energy-and-matter-in-ecosystems/x2e35759163e5e4fa:photosynthesis/v/intro-to-photosynthesis',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Intro%20to%20Photosynthesis%205th%20grade%20science',
         videoTitle: 'Intro to Photosynthesis',
         reading: 'Contrary to common belief, plants do not get their mass from soil. Jan Baptist van Helmont proved trees gain mass almost entirely from air and water.',
         principles: [
@@ -201,7 +201,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u3',
         title: 'Sunlight as the Primary Energy Driver',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:energy-and-matter-in-ecosystems/x2e35759163e5e4fa:photosynthesis/v/sunlight-and-energy-flow',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Sunlight%20Energy%20Flow%205th%20grade%20science',
         videoTitle: 'Sunlight Energy Flow',
         reading: 'Energy in all animal food was once energy from the Sun that was captured by plants through photosynthesis.',
         principles: [
@@ -219,7 +219,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u3',
         title: 'Gas Exchange in Plants: Stomata & Respiration',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:energy-and-matter-in-ecosystems/x2e35759163e5e4fa:photosynthesis/v/plant-gas-exchange',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Plant%20Gas%20Exchange%205th%20grade%20science',
         videoTitle: 'Plant Gas Exchange',
         reading: 'Stomata allow carbon dioxide into leaves and release oxygen gas. Plants also break down sugars at night during cellular respiration.',
         principles: [
@@ -238,7 +238,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 3 Test: Photosynthesis & Plant Growth Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:energy-and-matter-in-ecosystems',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Unit%203%20Test%20Review%205th%20grade%20science',
         videoTitle: 'Unit 3 Test Review',
         reading: 'Assessment testing understanding of photosynthesis chemistry, plant mass origins, and solar energy capture.',
         principles: [
@@ -267,7 +267,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u4',
         title: 'Producers, Consumers, and Apex Predators',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:energy-and-matter-in-ecosystems/x2e35759163e5e4fa:food-chains-and-webs/v/food-chains-and-food-webs',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Food%20Chains%20and%20Webs%205th%20grade%20science',
         videoTitle: 'Food Chains and Webs',
         reading: 'Producers make their own food. Primary consumers eat producers, secondary consumers eat herbivores, and apex predators sit at the top.',
         principles: [
@@ -285,7 +285,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u4',
         title: 'Decomposers and Soil Nutrient Cycling',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:energy-and-matter-in-ecosystems/x2e35759163e5e4fa:decomposers/v/decomposers-and-recycling',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Decomposers%20in%20Ecosystems%205th%20grade%20science',
         videoTitle: 'Decomposers in Ecosystems',
         reading: 'Fungi, earthworms, and bacteria break down dead organisms and waste, recycling nitrogen and minerals back into the soil for plants.',
         principles: [
@@ -303,7 +303,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u4',
         title: 'Ecosystem Disruptions and Food Web Collapse',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:energy-and-matter-in-ecosystems/x2e35759163e5e4fa:ecosystem-disruptions/v/disruptions-in-food-webs',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Food%20Web%20Disruptions%205th%20grade%20science',
         videoTitle: 'Food Web Disruptions',
         reading: 'Removing a keystone species or introducing an invasive species creates cascading effects that destabilize the entire web.',
         principles: [
@@ -322,7 +322,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 4 Test: Food Webs & Matter Cycling Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:energy-and-matter-in-ecosystems',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Unit%204%20Test%20Review%205th%20grade%20science',
         videoTitle: 'Unit 4 Test Review',
         reading: 'Comprehensive assessment of food chains, food webs, decomposers, and ecosystem matter cycling.',
         principles: [
@@ -351,7 +351,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u5',
         title: 'Geosphere, Biosphere, Hydrosphere, and Atmosphere',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:earth-systems/x2e35759163e5e4fa:earths-spheres/v/the-four-spheres-of-earth',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=The%20Four%20Spheres%20of%20Earth%205th%20grade%20science',
         videoTitle: 'The Four Spheres of Earth',
         reading: 'Earth consists of four interconnected systems: geosphere (rock and soil), hydrosphere (all water), atmosphere (air gases), and biosphere (living things).',
         principles: [
@@ -369,7 +369,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u5',
         title: 'Water Distribution: Oceans, Ice Caps, and Groundwater',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:earth-systems/x2e35759163e5e4fa:water-on-earth/v/water-distribution-on-earth',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Water%20Distribution%20on%20Earth%205th%20grade%20science',
         videoTitle: 'Water Distribution on Earth',
         reading: 'Nearly 97% of Earth’s water is salty ocean water. Of the 3% freshwater, roughly two-thirds is frozen in glaciers, leaving less than 1% as accessible liquid freshwater.',
         principles: [
@@ -387,7 +387,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u5',
         title: 'Sphere Interactions: Weathering, Clouds, and Transpiration',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:earth-systems/x2e35759163e5e4fa:earths-spheres/v/sphere-interactions',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Sphere%20Interactions%205th%20grade%20science',
         videoTitle: 'Sphere Interactions',
         reading: 'Plants (biosphere) pull water from soil (geosphere) and transpire vapor into clouds (atmosphere), which rain back down into lakes (hydrosphere).',
         principles: [
@@ -406,7 +406,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 5 Test: Earth Systems Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:earth-systems',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Unit%205%20Test%20Review%205th%20grade%20science',
         videoTitle: 'Unit 5 Test Review',
         reading: 'Assessment testing understanding of Earth’s four major spheres and freshwater reservoir distribution.',
         principles: [
@@ -437,7 +437,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Net Force, Mass, and Changes in Speed',
         isOhioExtension: true,
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/physics/forces-newtons-laws/newtons-laws-of-motion/v/newton-s-second-law-of-motion',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Forces%20and%20Changes%20in%20Motion%205th%20grade%20science',
         videoTitle: 'Forces and Changes in Motion',
         reading: 'The amount of change in motion depends on the strength of the force and the mass of the object. A larger force or smaller mass produces faster acceleration.',
         principles: [
@@ -456,7 +456,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Light Rays: Straight Paths, Reflection, and Refraction',
         isOhioExtension: true,
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/physics/geometric-optics/reflection-refraction/v/reflection-and-refraction',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Reflection%20and%20Refraction%20of%20Light%205th%20grade%20science',
         videoTitle: 'Reflection and Refraction of Light',
         reading: 'Light travels in straight lines until it interacts with matter. Reflection is light bouncing off smooth surfaces. Refraction is light bending as it changes speed in water or glass.',
         principles: [
@@ -475,7 +475,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Sound Waves: Vibrations, Pitch, and Mediums',
         isOhioExtension: true,
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/physics/mechanical-waves-and-sound/sound-topic/v/production-of-sound',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Production%20and%20Pitch%20of%20Sound%20Waves%205th%20grade%20science',
         videoTitle: 'Production and Pitch of Sound Waves',
         reading: 'All sound is produced by vibrating objects. Sound travels through solids, liquids, and gases, but cannot travel through the vacuum of empty space.',
         principles: [
@@ -524,7 +524,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u7',
         title: 'Earth’s Daily Rotation, Day/Night & Shadow Tracking',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:earth-and-the-universe/x2e35759163e5e4fa:earths-rotation-and-orbit/v/earth-rotation-and-shadows',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Earth%20Rotation%20and%20Shadows%205th%20grade%20science',
         videoTitle: 'Earth Rotation and Shadows',
         reading: 'Earth rotates counterclockwise on its axis once every 24 hours. Morning shadows are long, noon shadows are shortest, and evening shadows point east.',
         principles: [
@@ -542,7 +542,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u7',
         title: 'Yearly Revolution, Seasonal Constellations & Gravity',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:earth-and-the-universe/x2e35759163e5e4fa:earths-rotation-and-orbit/v/seasonal-constellations',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Seasonal%20Constellations%20and%20Revolution%205th%20grade%20science',
         videoTitle: 'Seasonal Constellations and Revolution',
         reading: 'Earth orbits the Sun in 365.25 days. Constellations shift seasonally because Earth faces different sectors of space at night.',
         principles: [
@@ -560,7 +560,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u7',
         title: 'Star Brightness, Distance & Gravitational Center',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:earth-and-the-universe/x2e35759163e5e4fa:stars-and-the-solar-system/v/sun-and-star-brightness',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Star%20Brightness%20and%20Distance%205th%20grade%20science',
         videoTitle: 'Star Brightness and Distance',
         reading: 'The Sun is an average yellow dwarf star. It appears far brighter than giant stars like Betelgeuse simply because it is 93 million miles away, while other stars are light-years away.',
         principles: [
@@ -579,7 +579,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 7 Test: Space Systems Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:earth-and-the-universe',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Unit%207%20Test%20Review%205th%20grade%20science',
         videoTitle: 'Unit 7 Test Review',
         reading: 'Assessment testing understanding of rotation, shadow tracking, orbits, star distances, and gravitational force.',
         principles: [
@@ -608,7 +608,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u8',
         title: 'Renewable vs. Nonrenewable Energy Resources',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:earth-and-human-activity/x2e35759163e5e4fa:protecting-earths-resources/v/renewable-and-nonrenewable-resources',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Renewable%20and%20Nonrenewable%20Energy%205th%20grade%20science',
         videoTitle: 'Renewable and Nonrenewable Energy',
         reading: 'Fossil fuels (coal, oil, gas) take millions of years to form. Renewable energy (wind, solar, geothermal) replenishes naturally and reduces pollution.',
         principles: [
@@ -626,7 +626,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u8',
         title: 'Agricultural Runoff, Water Pollution & Watershed Protection',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:earth-and-human-activity/x2e35759163e5e4fa:protecting-earths-resources/v/human-impact-on-water-supplies',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Protecting%20Water%20Supplies%205th%20grade%20science',
         videoTitle: 'Protecting Water Supplies',
         reading: 'Runoff carrying fertilizer leads to toxic algae blooms in lakes and rivers. Planting buffer vegetation and wetland conservation filters groundwater.',
         principles: [
@@ -644,7 +644,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u8',
         title: 'Conservation, Recycling & Waste Reduction Strategies',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:earth-and-human-activity/x2e35759163e5e4fa:protecting-earths-resources/v/recycling-and-conservation',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Recycling%20and%20Resource%20Conservation%205th%20grade%20science',
         videoTitle: 'Recycling and Resource Conservation',
         reading: 'The 3 Rs: Reduce waste consumption, Reuse materials, and Recycle metals, glass, and plastics to decrease landfill waste and save energy.',
         principles: [
@@ -663,7 +663,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 8 Test: Human Impact & Conservation Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science/x2e35759163e5e4fa:earth-and-human-activity',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Unit%208%20Test%20Review%205th%20grade%20science',
         videoTitle: 'Unit 8 Test Review',
         reading: 'Assessment testing knowledge of renewable energy, pollution reduction, and community environmental solutions.',
         principles: [
@@ -692,7 +692,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u9',
         title: 'Defining Problems: Criteria and Constraints',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x2e35759163e5e4fa:engineering-design/v/criteria-and-constraints',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Engineering%20Criteria%20and%20Constraints%205th%20grade%20science',
         videoTitle: 'Engineering Criteria and Constraints',
         reading: 'Engineering starts with a clearly defined problem. Criteria specify what the solution must achieve. Constraints limit the budget, materials, or time.',
         principles: [
@@ -710,7 +710,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u9',
         title: 'Building Prototypes and Fair Testing',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x2e35759163e5e4fa:engineering-design/v/prototypes-and-testing',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Prototypes%20and%20Fair%20Testing%205th%20grade%20science',
         videoTitle: 'Prototypes and Fair Testing',
         reading: 'A prototype is an initial test model. Engineers run fair tests where variables are controlled to isolate what causes a prototype to succeed or fail.',
         principles: [
@@ -728,7 +728,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         unitId: 'g5-sci-u9',
         title: 'Iterative Design & Data-Driven Optimization',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x2e35759163e5e4fa:engineering-design/v/iterative-design',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Iterative%20Engineering%20Design%205th%20grade%20science',
         videoTitle: 'Iterative Engineering Design',
         reading: 'Engineering is cyclical: test, collect data, redesign, and test again. Iterative optimization improves durability and performance.',
         principles: [
@@ -747,7 +747,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 9 Test: Engineering Design Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics',
         videoTitle: 'Unit 9 Test Review',
         reading: 'Assessment testing criteria, constraints, prototype evaluation, and iterative redesign principles.',
         principles: [
@@ -777,7 +777,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Course Challenge Part 1: Physical Science & Matter Properties',
         kind: 'lesson_review',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Science%20Course%20Challenge%20Part%201',
         videoTitle: 'Science Course Challenge Part 1',
         reading: 'Comprehensive review covering particle models of matter, physical/chemical changes, and force/motion waves.',
         principles: [
@@ -796,7 +796,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Course Challenge Part 2: Life Science & Ecosystem Energy Flow',
         kind: 'lesson_review',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Science%20Course%20Challenge%20Part%202',
         videoTitle: 'Science Course Challenge Part 2',
         reading: 'Comprehensive review testing photosynthesis principles, food chains, decomposers, and matter cycling.',
         principles: [
@@ -815,7 +815,7 @@ export const G5_SCIENCE_UNITS: Unit[] = [
         title: 'Course Challenge Part 3: Earth Spheres, Space & Environmental Conservation',
         kind: 'lesson_review',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/grade-5-science',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Science%20Course%20Challenge%20Part%203',
         videoTitle: 'Science Course Challenge Part 3',
         reading: 'Final capstone assessment covering Earth’s spheres, water distribution, solar system orbits, and engineering design solutions.',
         principles: [

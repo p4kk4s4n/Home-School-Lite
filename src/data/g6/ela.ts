@@ -283,7 +283,7 @@ export const G6_ELA_COURSE: Course = {
   externalCourseLinks: [
     {
       label: 'Khan: 6th grade reading, grammar, and vocab',
-      url: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab',
+      url: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary',
     },
     {
       label: 'Khan: Grammar',
@@ -302,7 +302,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u1',
           title: 'Citing Textual Evidence',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:key-ideas-and-details-6/x8ddea1200317e822:making-inferences/v/making-inferences-in-informational-texts-reading-khan-academy',
           videoTitle: 'Citing Evidence in Informational Texts',
           reading: 'Good readers cite explicit text evidence—exact quotes, statistics, or facts from the text—to support their conclusions and inferences.',
           principles: [
@@ -320,7 +320,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u1',
           title: 'Central Ideas & Objective Summaries',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:key-ideas-and-details-6/x8ddea1200317e822:making-inferences/v/making-inferences-in-informational-texts-reading-khan-academy',
           videoTitle: 'Finding Central Idea in Informational Texts',
           reading: 'The central idea is the main overarching message of an article. An objective summary states central facts without personal feelings or opinions.',
           principles: [
@@ -338,7 +338,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u1',
           title: 'Analyzing Text Structures',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/reading-craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:craft-and-structure-6',
           videoTitle: 'Informational Text Structures',
           reading: 'Authors organize informational texts using structures like cause/effect, compare/contrast, chronological timeline, and problem/solution.',
           principles: [
@@ -356,7 +356,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u1',
           title: 'Author’s Point of View and Rhetorical Purpose',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:key-ideas-and-details-6',
           videoTitle: 'Author Point of View',
           reading: 'An author’s point of view or purpose shapes how information is framed, which facts are emphasized, and the tone of the article.',
           principles: [
@@ -375,7 +375,7 @@ export const G6_ELA_COURSE: Course = {
           title: 'Mid-Unit Quiz: Informational Reading Skills',
           kind: 'lesson_review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:key-ideas-and-details-6',
           videoTitle: 'Informational Reading Review',
           reading: 'Review check on citing evidence, writing objective summaries, identifying text structures, and determining author purpose.',
           principles: [
@@ -394,7 +394,7 @@ export const G6_ELA_COURSE: Course = {
           title: 'Unit 1 Test: Informational Texts',
           kind: 'unit_test',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:key-ideas-and-details-6',
           videoTitle: 'Informational Text Test Practice',
           reading: 'Unit exam testing central ideas, evidence citation, text structures (cause/effect, compare/contrast), and objective summaries.',
           principles: [
@@ -421,7 +421,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u2',
           title: 'Theme & Moral Insights in Literature',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:key-ideas-and-details-6',
           videoTitle: 'Theme and Character in Literature',
           reading: 'Themes are universal life insights explored through character choices and conflicts. A theme is a complete statement about life, not just one word.',
           principles: [
@@ -439,7 +439,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u2',
           title: 'Plot Development and Narrative Climax',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:key-ideas-and-details-6',
           videoTitle: 'Plot Elements and Narrative Arc',
           reading: 'Follow the narrative arc: exposition establishes setting, rising action builds conflict, climax reaches highest tension, and resolution concludes the journey.',
           principles: [
@@ -457,7 +457,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u2',
           title: 'Figurative Language: Metaphor, Simile & Personification',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/reading-craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:craft-and-structure-6',
           videoTitle: 'Figurative Language in Literature',
           reading: 'Authors use similes (comparisons with like/as), metaphors (direct comparisons), and personification (giving human traits to objects) to create vivid imagery.',
           principles: [
@@ -475,7 +475,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u2',
           title: 'Narrative Point of View: 1st vs. 3rd Person',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/reading-craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:craft-and-structure-6',
           videoTitle: 'Narrative Point of View',
           reading: 'In first-person ("I"), the narrator is an active character with personal bias. In third-person ("he/she"), an outside narrator observes the events.',
           principles: [
@@ -494,7 +494,7 @@ export const G6_ELA_COURSE: Course = {
           title: 'Mid-Unit Quiz: Literature Craft',
           kind: 'lesson_review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:key-ideas-and-details-6',
           videoTitle: 'Literature Review Check',
           reading: 'Review check on theme statements, narrative plot arcs, figurative language, and point of view.',
           principles: [
@@ -513,7 +513,7 @@ export const G6_ELA_COURSE: Course = {
           title: 'Unit 2 Test: Reading Literature',
           kind: 'unit_test',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:key-ideas-and-details-6',
           videoTitle: 'Literature Test Practice',
           reading: 'Unit exam testing theme identification, figurative language (metaphors, similes, personification), character development, and narrative point of view.',
           principles: [
@@ -540,7 +540,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u3',
           title: 'Claims, Evidence & Counterclaims',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Argumentative%20Claims%20and%20Evidence%206th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Argumentative Claims and Evidence',
           reading: 'An argument introduces a clear claim, supports it with logical reasons and verified textual evidence, acknowledges opposing viewpoints (counterclaims), and concludes with impact.',
           principles: [
@@ -558,7 +558,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u3',
           title: 'Transitions & Formal Academic Tone',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Transitions%20and%20Academic%20Tone%206th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Transitions and Academic Tone',
           reading: 'Use linking words (furthermore, consequently, on the other hand) to clarify relationships between reasons and maintain an objective, academic style.',
           principles: [
@@ -576,7 +576,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u3',
           title: 'Evaluating Credible Sources',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Evaluating%20Sources%20and%20Bias%206th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Evaluating Sources and Bias',
           reading: 'Assess source credibility by checking the author’s expertise, publication date, domain (.edu, .gov, .org), and potential commercial bias.',
           principles: [
@@ -595,7 +595,7 @@ export const G6_ELA_COURSE: Course = {
           title: 'Mid-Unit Quiz: Argumentative Design',
           kind: 'lesson_review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Argumentation%20Review%206th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Argumentation Review',
           reading: 'Review check on claims, factual evidence, counterarguments, transitional phrases, and source credibility.',
           principles: [
@@ -614,7 +614,7 @@ export const G6_ELA_COURSE: Course = {
           title: 'Unit 3 Test: Argumentative Writing',
           kind: 'unit_test',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Argumentative%20Writing%20Review%206th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Argumentative Writing Review',
           reading: 'Unit exam testing claims, credible evidence verification, and distinguishing fact from opinion.',
           principles: [
@@ -641,7 +641,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u4',
           title: 'Pronoun Cases: Subjective, Objective & Possessive',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/grammar-pronouns',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:pronouns-6-grammar',
           videoTitle: 'Pronoun Cases and Syntax',
           reading: 'Use subjective pronouns (I, he, she, they) as sentence subjects, objective pronouns (me, him, her, them) as verb/preposition objects, and possessive (my, his, their).',
           principles: [
@@ -659,7 +659,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u4',
           title: 'Intensive Pronouns & Antecedent Clarity',
           estimatedMinutes: 9,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/grammar-pronouns',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:pronouns-6-grammar',
           videoTitle: 'Intensive Pronouns and Antecedents',
           reading: 'Use intensive pronouns (myself, himself, ourselves) to add emphasis. Avoid vague pronoun references where it is unclear which noun is the antecedent.',
           principles: [
@@ -677,7 +677,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u4',
           title: 'Parenthetical Commas, Dashes & Parentheses',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/grammar-punctuation-and-capitalization',
+          videoUrl: 'https://www.khanacademy.org/humanities/grammar/punctuation-the-comma-and-the-apostrophe/commas-in-space-and-time/v/commas-and-introductory-elements-the-comma-punctuation-khan-academy',
           videoTitle: 'Parenthetical Elements with Commas',
           reading: 'Set off nonrestrictive parenthetical elements (extra information not essential to core sentence meaning) using commas, dashes, or parentheses.',
           principles: [
@@ -695,7 +695,7 @@ export const G6_ELA_COURSE: Course = {
           unitId: 'g6-ela-u4',
           title: 'Greek and Latin Word Roots',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/6th-grade-reading-and-vocab/grammar-word-study',
+          videoUrl: 'https://www.khanacademy.org/ela/new-6th-grade-reading-and-vocabulary/x8ddea1200317e822:word-study-6-grammar',
           videoTitle: 'Greek and Latin Roots',
           reading: 'Identify common Greek and Latin roots (phon = sound, bio = life, scrib/script = write, geo = earth) to deduce meanings of unfamiliar words.',
           principles: [

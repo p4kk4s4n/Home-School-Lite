@@ -24,7 +24,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u1',
         title: 'Intro to Cells & Cell Theory',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:cells-and-organisms/x24c4e73582d09141:intro-to-cells/v/introduction-to-the-cell',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms',
         videoTitle: 'Introduction to the Cell',
         reading: 'All living organisms consist of one or more microscopic cells. Cells are the basic structural and functional units of life, and all new cells arise from existing cells dividing.',
         principles: [
@@ -42,7 +42,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u1',
         title: 'Plant vs. Animal Cell Structures',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:cells-and-organisms/x24c4e73582d09141:cell-parts-and-their-functions/v/plant-cells-vs-animal-cells',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms/x0c5bb03129646fd6:cell-parts-and-functions/v/comparing-animal-and-plant-cells',
         videoTitle: 'Plant Cells vs Animal Cells',
         reading: 'Plant cells have rigid cellulose walls, large central vacuoles, and chloroplasts for photosynthesis. Animal cells have flexible membranes and lack chloroplasts and cell walls.',
         activity: {
@@ -76,7 +76,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u1',
         title: 'Cell Membrane & Cellular Transport',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:cells-and-organisms/x24c4e73582d09141:cell-parts-and-their-functions/v/cell-membrane-overview',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms',
         videoTitle: 'Cell Membrane Overview',
         reading: 'The cell membrane is selectively permeable. It allows essential water, oxygen, and nutrients into the cytoplasm while keeping waste products out and maintaining cellular balance.',
         principles: [
@@ -95,7 +95,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz 1: Cell Organelles',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:cells-and-organisms',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms',
         videoTitle: 'Cell Organelle Check',
         reading: 'Review check evaluating knowledge of mitochondria, chloroplasts, nucleus, cell walls, and selective permeability.',
         principles: [
@@ -113,7 +113,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u1',
         title: 'Unicellular vs. Multicellular Organisms',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:cells-and-organisms/x24c4e73582d09141:multicellular-organisms/v/unicellular-vs-multicellular',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms',
         videoTitle: 'Unicellular vs Multicellular Organisms',
         reading: 'Unicellular organisms like bacteria and amoebas perform all life processes within a single cell. Multicellular organisms consist of specialized cells that cooperate.',
         principles: [
@@ -131,7 +131,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u1',
         title: 'Levels of Cellular Organization',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:cells-and-organisms/x24c4e73582d09141:multicellular-organisms/v/levels-of-organization',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms',
         videoTitle: 'Levels of Organization',
         reading: 'Multicellular bodies are arranged hierarchically: specialized cells form tissues, different tissues form organs, organs form organ systems, and organ systems form the complete organism.',
         principles: [
@@ -149,7 +149,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u1',
         title: 'Interacting Body Systems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:cells-and-organisms/x24c4e73582d09141:multicellular-organisms/v/human-body-systems',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms/x0c5bb03129646fd6:organization-in-the-human-body/v/ms-organization-in-the-human-body',
         videoTitle: 'Human Body Systems Working Together',
         reading: 'Organ systems never work alone. For example, the digestive system breaks down nutrients, the respiratory system absorbs oxygen, and the circulatory system transports both to working muscle cells.',
         principles: [
@@ -168,7 +168,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz 2: Organization & Systems',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:cells-and-organisms',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms',
         videoTitle: 'Body Systems Review',
         reading: 'Review check covering tissues, organs, organ systems, and how systems cooperate to sustain life.',
         principles: [
@@ -187,7 +187,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 1 Exam: Cells and Organisms',
         kind: 'unit_test',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:cells-and-organisms',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:cells-and-organisms',
         videoTitle: 'Cells and Organisms Exam',
         reading: 'Comprehensive unit exam testing cell theory, organelles, cell transport, and levels of multicellular organization.',
         principles: [
@@ -216,7 +216,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u2',
         title: 'Plant Reproduction & Seed Dispersal',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:organism-growth-and-reproduction/x24c4e73582d09141:plant-reproduction/v/plant-reproduction-and-seed-dispersal',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:organism-growth-and-reproduction',
         videoTitle: 'Plant Reproduction and Seed Dispersal',
         reading: 'Flowering plants rely on specialized structures like flowers to attract pollinators, and fruits, burs, or wind-borne wings to disperse seeds away from the parent plant.',
         principles: [
@@ -234,7 +234,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u2',
         title: 'Animal Behaviors for Reproduction',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:organism-growth-and-reproduction/x24c4e73582d09141:animal-reproduction/v/animal-behaviors-for-reproduction',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:organism-growth-and-reproduction',
         videoTitle: 'Animal Behaviors for Reproduction',
         reading: 'Animals engage in courtship behaviors (vocal calls, colorful displays, dancing) to attract mates, and parental care behaviors (nest building, guarding, feeding) to ensure offspring survive.',
         principles: [
@@ -252,7 +252,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u2',
         title: 'Environmental Factors on Growth',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:organism-growth-and-reproduction/x24c4e73582d09141:factors-influencing-growth/v/environmental-factors-plant-growth',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:organism-growth-and-reproduction',
         videoTitle: 'Environmental Factors on Growth',
         reading: 'Environmental conditions such as sunlight availability, temperature, soil moisture, and nutrient levels strongly dictate whether organisms reach their full potential size.',
         principles: [
@@ -270,7 +270,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u2',
         title: 'Genetic Factors on Organism Growth',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:organism-growth-and-reproduction/x24c4e73582d09141:factors-influencing-growth/v/genetic-factors-organism-growth',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:organism-growth-and-reproduction/x0c5bb03129646fd6:organism-growth-and-the-environment/a/organism-growth-and-the-environment',
         videoTitle: 'Genetic Factors on Growth',
         reading: 'An organism’s inherited DNA sets the upper boundaries and structural patterns for growth, such as adult height potential, leaf shape, and fur thickness.',
         principles: [
@@ -289,7 +289,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Growth & Reproduction',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:organism-growth-and-reproduction',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:organism-growth-and-reproduction',
         videoTitle: 'Reproduction Check',
         reading: 'Review check testing flower anatomy, seed dispersal, animal courtship, and environmental vs. genetic growth influences.',
         principles: [
@@ -308,7 +308,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 2 Exam: Organism Growth & Reproduction',
         kind: 'unit_test',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:organism-growth-and-reproduction',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:organism-growth-and-reproduction',
         videoTitle: 'Growth and Reproduction Exam',
         reading: 'Comprehensive unit exam assessing reproductive adaptations, parental care, and environmental/genetic growth factors.',
         principles: [
@@ -337,7 +337,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u3',
         title: 'Photosynthesis: Harnessing Sunlight',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:matter-and-energy-in-organisms/x24c4e73582d09141:photosynthesis/v/intro-to-photosynthesis',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-organisms',
         videoTitle: 'Introduction to Photosynthesis',
         reading: 'Photosynthesis takes place inside chloroplasts. Plants take in carbon dioxide and water, absorb sunlight using green chlorophyll, and produce glucose and oxygen.',
         principles: [
@@ -355,7 +355,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u3',
         title: 'Cellular Respiration: Releasing Energy',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:matter-and-energy-in-organisms/x24c4e73582d09141:cellular-respiration/v/cellular-respiration-overview',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-organisms/x0c5bb03129646fd6:food-and-energy-in-organisms/v/cellular-respiration-ms',
         videoTitle: 'Cellular Respiration Overview',
         reading: 'Inside mitochondria, oxygen combines with glucose to release energy stored in chemical bonds. This reaction produces ATP energy along with carbon dioxide and water.',
         activity: {
@@ -389,7 +389,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u3',
         title: 'Cycling of Oxygen and Carbon Dioxide',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:matter-and-energy-in-organisms/x24c4e73582d09141:cellular-respiration/v/carbon-and-oxygen-cycles',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-organisms',
         videoTitle: 'Carbon and Oxygen Cycling',
         reading: 'Photosynthesis and cellular respiration form a linked atmospheric cycle. The oxygen produced by plants is used by animals, while the carbon dioxide exhaled by animals is taken in by plants.',
         principles: [
@@ -407,7 +407,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u3',
         title: 'Food Molecules & Cellular Growth',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:matter-and-energy-in-organisms/x24c4e73582d09141:how-organisms-use-matter-and-energy/v/rearranging-food-molecules',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-organisms',
         videoTitle: 'Rearranging Food Molecules',
         reading: 'Organisms do not just burn food for energy; they break down amino acids, fatty acids, and simple sugars to assemble new cell walls, proteins, and tissues for bodily growth.',
         principles: [
@@ -426,7 +426,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Cellular Energy Cycles',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:matter-and-energy-in-organisms',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-organisms',
         videoTitle: 'Energy Review',
         reading: 'Review check comparing the reactants and products of photosynthesis and aerobic cellular respiration.',
         principles: [
@@ -445,7 +445,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 3 Exam: Matter & Energy in Organisms',
         kind: 'unit_test',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:matter-and-energy-in-organisms',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-organisms',
         videoTitle: 'Matter and Energy Exam',
         reading: 'Comprehensive unit exam assessing understanding of photosynthesis, cellular respiration, ATP release, and biochemical cycling.',
         principles: [
@@ -474,7 +474,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u4',
         title: 'Biotic and Abiotic Factors',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:interactions-in-ecosystems/x24c4e73582d09141:biotic-and-abiotic-factors/v/biotic-and-abiotic-factors',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:interactions-in-ecosystems/x0c5bb03129646fd6:populations-communities-and-ecosystems/v/biotic-and-abiotic-factors',
         videoTitle: 'Biotic and Abiotic Factors',
         reading: 'An ecosystem combines all living organisms (biotic factors like trees, insects, and bacteria) with all nonliving parts of the physical environment (abiotic factors like sunlight, temperature, rocks, and water).',
         activity: {
@@ -508,7 +508,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u4',
         title: 'Resource Availability & Populations',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:interactions-in-ecosystems/x24c4e73582d09141:population-growth-and-carrying-capacity/v/carrying-capacity-and-limiting-factors',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:interactions-in-ecosystems/x0c5bb03129646fd6:populations-communities-and-ecosystems/v/biotic-and-abiotic-factors',
         videoTitle: 'Carrying Capacity and Limiting Factors',
         reading: 'Limiting factors such as food, shelter, and water set an ecosystem’s carrying capacity. When resources decline, population birth rates drop and mortality rises.',
         activity: {
@@ -541,7 +541,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u4',
         title: 'Predation and Herbivory Dynamics',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:interactions-in-ecosystems/x24c4e73582d09141:predator-prey-relationships/v/predator-prey-dynamics',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:interactions-in-ecosystems',
         videoTitle: 'Predator-Prey Dynamics',
         reading: 'Predation and herbivory describe feeding relationships where one organism consumes another. Predator and prey population levels fluctuate in linked cycles.',
         principles: [
@@ -559,7 +559,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u4',
         title: 'Symbiosis: Mutualism, Commensalism, Parasitism',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:interactions-in-ecosystems/x24c4e73582d09141:symbiotic-relationships/v/symbiosis-mutualism-commensalism-parasitism',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:interactions-in-ecosystems',
         videoTitle: 'Symbiotic Relationships',
         reading: 'Symbiosis involves close, long-term species interactions: mutualism (+/+), commensalism (+/0), and parasitism (+/-).',
         principles: [
@@ -577,7 +577,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u4',
         title: 'Intraspecific & Interspecific Competition',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:interactions-in-ecosystems/x24c4e73582d09141:competition/v/competition-in-ecosystems',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:interactions-in-ecosystems',
         videoTitle: 'Competition in Ecosystems',
         reading: 'Competition occurs when organisms attempt to use the same limited resource, such as sunlight in forest canopies or nesting territory on rocky cliffs.',
         principles: [
@@ -596,7 +596,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Ecological Interactions',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:interactions-in-ecosystems',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:interactions-in-ecosystems',
         videoTitle: 'Interactions Review',
         reading: 'Review check evaluating abiotic vs. biotic factors, carrying capacity, predation, and the three forms of symbiosis.',
         principles: [
@@ -615,7 +615,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 4 Exam: Interactions in Ecosystems',
         kind: 'unit_test',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:interactions-in-ecosystems',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:interactions-in-ecosystems',
         videoTitle: 'Interactions Exam',
         reading: 'Comprehensive unit exam assessing ecological limiting factors, population curves, symbiotic partnerships, and niche competition.',
         principles: [
@@ -644,7 +644,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u5',
         title: 'Energy Pyramids & The 10% Rule',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:matter-and-energy-in-ecosystems/x24c4e73582d09141:energy-flow-in-ecosystems/v/energy-pyramids-and-trophic-levels',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-ecosystems/x0c5bb03129646fd6:matter-and-energy-in-foodwebs/v/matter-and-energy-in-food-webs-ms',
         videoTitle: 'Energy Pyramids and Trophic Levels',
         reading: 'Energy flows one-way through ecosystems: from the sun to producers, then primary, secondary, and apex consumers. Only about 10% of energy transfers up each trophic level.',
         activity: {
@@ -678,7 +678,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u5',
         title: 'The Carbon Cycle & Decomposers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:matter-and-energy-in-ecosystems/x24c4e73582d09141:cycling-of-matter/v/biogeochemical-cycles-carbon-nitrogen',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-ecosystems/x0c5bb03129646fd6:matter-and-energy-in-foodwebs/v/matter-and-energy-in-food-webs-ms',
         videoTitle: 'Biogeochemical Cycles',
         reading: 'Unlike energy which dissipates as heat, chemical matter is recycled continuously. Decomposers break down dead tissues, releasing carbon, nitrogen, and phosphorus back into the soil and air.',
         principles: [
@@ -697,7 +697,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Flow of Energy & Matter',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:matter-and-energy-in-ecosystems',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-ecosystems/x0c5bb03129646fd6:matter-and-energy-in-foodwebs/v/matter-and-energy-in-food-webs-ms',
         videoTitle: 'Energy Flow Review',
         reading: 'Review check contrasting open energy flow with closed chemical matter cycling and trophic pyramid efficiency.',
         principles: [
@@ -716,7 +716,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 5 Exam: Matter & Energy in Ecosystems',
         kind: 'unit_test',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:matter-and-energy-in-ecosystems',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:matter-and-energy-in-ecosystems/x0c5bb03129646fd6:matter-and-energy-in-foodwebs/v/matter-and-energy-in-food-webs-ms',
         videoTitle: 'Matter and Energy Exam',
         reading: 'Comprehensive unit exam assessing food webs, ecological pyramids, heat dissipation, and decomposer nutrient recycling.',
         principles: [
@@ -745,7 +745,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u6',
         title: 'Components of Biodiversity',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:ecosystems-and-biodiversity/x24c4e73582d09141:biodiversity/v/what-is-biodiversity',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:ecosystems-and-biodiversity/x0c5bb03129646fd6:biodiversity-and-ecosystem-health/v/biodiversity-and-ecosystem-health-a-hawaiian-islands-case-study',
         videoTitle: 'What is Biodiversity?',
         reading: 'Biodiversity measures variety across three levels: genetic diversity within a population, species diversity within an ecosystem, and ecosystem diversity across landscapes.',
         principles: [
@@ -763,7 +763,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u6',
         title: 'Essential Ecosystem Services',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:ecosystems-and-biodiversity/x24c4e73582d09141:ecosystem-services/v/ecosystem-services-to-humans',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:ecosystems-and-biodiversity/x0c5bb03129646fd6:biodiversity-and-ecosystem-health/v/biodiversity-and-ecosystem-health-a-hawaiian-islands-case-study',
         videoTitle: 'Ecosystem Services to Humans',
         reading: 'Healthy ecosystems provide services humans depend on: clean drinking water from wetlands, insect crop pollination, coastal storm surge protection, and climate regulation.',
         principles: [
@@ -781,7 +781,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u6',
         title: 'Natural Ecosystem Disruptions',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:ecosystems-and-biodiversity/x24c4e73582d09141:ecological-disruptions/v/ecological-disruptions-and-succession',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:ecosystems-and-biodiversity/x0c5bb03129646fd6:biodiversity-and-ecosystem-health/v/biodiversity-and-ecosystem-health-a-hawaiian-islands-case-study',
         videoTitle: 'Ecological Disruptions and Succession',
         reading: 'Ecosystems face natural disturbances such as wildfires, floods, volcanic eruptions, and droughts. Diverse ecosystems show greater resilience and recover more quickly.',
         principles: [
@@ -800,7 +800,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz 1: Diversity & Disturbances',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:ecosystems-and-biodiversity',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:ecosystems-and-biodiversity/x0c5bb03129646fd6:biodiversity-and-ecosystem-health/v/biodiversity-and-ecosystem-health-a-hawaiian-islands-case-study',
         videoTitle: 'Biodiversity Check 1',
         reading: 'Review check on species diversity, ecosystem services, and natural disturbance recovery.',
         principles: [
@@ -818,7 +818,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u6',
         title: 'Human Impacts: Habitat Loss & Invasives',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:ecosystems-and-biodiversity/x24c4e73582d09141:human-impacts/v/habitat-fragmentation-and-invasive-species',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:ecosystems-and-biodiversity/x0c5bb03129646fd6:biodiversity-and-ecosystem-health/v/biodiversity-and-ecosystem-health-a-hawaiian-islands-case-study',
         videoTitle: 'Habitat Loss and Invasive Species',
         reading: 'Human activities, including deforestation, road building, pollution, and the accidental introduction of aggressive non-native species, threaten native biodiversity.',
         principles: [
@@ -836,7 +836,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u6',
         title: 'Engineering Conservation Solutions',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:ecosystems-and-biodiversity/x24c4e73582d09141:protecting-biodiversity/v/wildlife-corridors-and-conservation-design',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:ecosystems-and-biodiversity/x0c5bb03129646fd6:biodiversity-and-ecosystem-health/v/biodiversity-and-ecosystem-health-a-hawaiian-islands-case-study',
         videoTitle: 'Wildlife Corridors and Conservation Design',
         reading: 'Conservation engineers design solutions like wildlife overpass bridges, protected marine reserves, and wetland restoration projects to preserve biodiversity.',
         principles: [
@@ -854,7 +854,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u6',
         title: 'Evaluating Conservation Tradeoffs',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:ecosystems-and-biodiversity/x24c4e73582d09141:protecting-biodiversity/v/evaluating-conservation-projects',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:ecosystems-and-biodiversity/x0c5bb03129646fd6:biodiversity-and-ecosystem-health/v/biodiversity-and-ecosystem-health-a-hawaiian-islands-case-study',
         videoTitle: 'Evaluating Conservation Tradeoffs',
         reading: 'Every conservation project balances ecological benefits against economic costs, land use, and local community needs to achieve long-term sustainability.',
         principles: [
@@ -873,7 +873,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz 2: Conservation & Solutions',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:ecosystems-and-biodiversity',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:ecosystems-and-biodiversity/x0c5bb03129646fd6:biodiversity-and-ecosystem-health/v/biodiversity-and-ecosystem-health-a-hawaiian-islands-case-study',
         videoTitle: 'Conservation Check 2',
         reading: 'Review check on invasive species, wildlife corridors, and conservation design constraints.',
         principles: [
@@ -892,7 +892,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 6 Exam: Ecosystems & Biodiversity',
         kind: 'unit_test',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:ecosystems-and-biodiversity',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:ecosystems-and-biodiversity/x0c5bb03129646fd6:biodiversity-and-ecosystem-health/v/biodiversity-and-ecosystem-health-a-hawaiian-islands-case-study',
         videoTitle: 'Biodiversity Exam',
         reading: 'Comprehensive unit exam assessing species richness, ecosystem services, disturbance resilience, invasive species, and conservation design.',
         principles: [
@@ -921,7 +921,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u7',
         title: 'DNA, Chromosomes & Genes',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:inheritance-and-variation/x24c4e73582d09141:dna-and-genes/v/dna-chromosomes-genes',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation/x0c5bb03129646fd6:chromosomes/v/chromosomes-and-genes',
         videoTitle: 'DNA, Chromosomes, and Genes',
         reading: 'Genes are specific sections of long DNA chromosomes that carry the biochemical instructions for manufacturing proteins and shaping an organism’s physical traits.',
         principles: [
@@ -939,7 +939,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u7',
         title: 'Asexual vs. Sexual Reproduction & Variation',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:inheritance-and-variation/x24c4e73582d09141:reproduction-and-variation/v/asexual-and-sexual-reproduction-variation',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation/x0c5bb03129646fd6:reproduction-and-genetic-variation/v/sexual-reproduction-and-genetic-variation',
         videoTitle: 'Asexual vs Sexual Reproduction',
         reading: 'Asexual reproduction copies DNA from one parent producing genetically identical offspring. Sexual reproduction combines two sets of chromosomes, creating genetic variation.',
         principles: [
@@ -957,7 +957,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u7',
         title: 'Dominant and Recessive Alleles',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:inheritance-and-variation/x24c4e73582d09141:alleles-and-inheritance/v/dominant-and-recessive-alleles',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation',
         videoTitle: 'Dominant and Recessive Alleles',
         reading: 'Alleles are different versions of a gene. A dominant allele expresses its phenotype even with one copy (Bb), while a recessive allele requires two copies (bb) to be seen.',
         principles: [
@@ -976,7 +976,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz 1: DNA & Alleles',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:inheritance-and-variation',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation',
         videoTitle: 'Genetics Check 1',
         reading: 'Review check on chromosomes, asexual vs. sexual reproduction, and dominant vs. recessive alleles.',
         principles: [
@@ -994,7 +994,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u7',
         title: 'Punnett Squares & Probability',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:inheritance-and-variation/x24c4e73582d09141:punnett-squares/v/monohybrid-punnett-squares',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation',
         videoTitle: 'Monohybrid Punnett Squares',
         reading: 'Punnett squares cross parental alleles to model the mathematical probability of offspring inheriting homozygous dominant (BB), heterozygous (Bb), or homozygous recessive (bb) genotypes.',
         principles: [
@@ -1012,7 +1012,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u7',
         title: 'Gene Mutations: Beneficial, Neutral, Harmful',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:inheritance-and-variation/x24c4e73582d09141:mutations/v/dna-mutations-overview',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation',
         videoTitle: 'DNA Mutations Overview',
         reading: 'Mutations are random changes in the DNA sequence. Some are harmful diseases, many are neutral with no noticeable change, and some are beneficial adaptations that aid survival.',
         principles: [
@@ -1030,7 +1030,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u7',
         title: 'Environmental Influence on Gene Expression',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:inheritance-and-variation/x24c4e73582d09141:genes-and-environment/v/nature-vs-nurture-gene-expression',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation',
         videoTitle: 'Environment and Gene Expression',
         reading: 'An organism’s final phenotype is shaped by the interplay between its genetic code and its physical environment (such as nutrition altering height, or temperature changing reptile egg sex).',
         principles: [
@@ -1049,7 +1049,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz 2: Punnett Squares & Mutations',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:inheritance-and-variation',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation',
         videoTitle: 'Genetics Check 2',
         reading: 'Review check on monohybrid Punnett square probabilities, mutation types, and environmental gene expression.',
         principles: [
@@ -1068,7 +1068,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 7 Exam: Inheritance and Variation',
         kind: 'unit_test',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:inheritance-and-variation',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation',
         videoTitle: 'Genetics Exam',
         reading: 'Comprehensive unit exam assessing DNA structure, alleles, Punnett square probability ratios, mutations, and environmental interactions.',
         principles: [
@@ -1097,7 +1097,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u8',
         title: 'Fossil Formation & Sedimentary Strata',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:evolution/x24c4e73582d09141:the-fossil-record/v/the-fossil-record',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:evolution',
         videoTitle: 'The Fossil Record',
         reading: 'Fossils form when dead organisms are buried under sediments like mud and sand. Over millions of years, pressure turns sediment into rock, preserving mineralized skeletons.',
         principles: [
@@ -1115,7 +1115,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u8',
         title: 'Chronology & Mass Extinctions',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:evolution/x24c4e73582d09141:the-fossil-record/v/extinction-and-transitional-fossils',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:evolution',
         videoTitle: 'Extinction in the Fossil Record',
         reading: 'The fossil record documents chronological changes in life over deep geologic time, including transitional forms that bridge major groups and catastrophic mass extinction boundaries.',
         principles: [
@@ -1133,7 +1133,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u8',
         title: 'Homologous Structures & Common Ancestry',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:evolution/x24c4e73582d09141:comparative-anatomy/v/homologous-structures',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:evolution/x0c5bb03129646fd6:evolution-and-common-ancestry/e/understand-evolution-and-common-ancestry',
         videoTitle: 'Homologous Structures',
         reading: 'Vertebrates like humans, cats, whales, and bats share identical skeletal layouts in their forelimbs (one upper bone, two lower bones, wrist, and digits), indicating common descent.',
         principles: [
@@ -1152,7 +1152,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz 1: Fossils & Anatomy',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:evolution',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:evolution',
         videoTitle: 'Evolution Check 1',
         reading: 'Review check on fossil rock layers, the law of superposition, and homologous vertebrate limb bones.',
         principles: [
@@ -1170,7 +1170,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u8',
         title: 'Vestigial Structures: Anatomical Remnants',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:evolution/x24c4e73582d09141:comparative-anatomy/v/vestigial-structures',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:evolution',
         videoTitle: 'Vestigial Structures',
         reading: 'Vestigial structures are anatomical remnants that had crucial functions in ancestral species but are reduced or nonfunctional today, such as pelvis bones inside whales or wings on flightless birds.',
         principles: [
@@ -1188,7 +1188,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u8',
         title: 'Comparative Embryology',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:evolution/x24c4e73582d09141:comparative-embryology/v/embryological-evidence-for-evolution',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:evolution',
         videoTitle: 'Embryological Evidence for Evolution',
         reading: 'During early developmental stages, embryos of fish, birds, reptiles, and mammals exhibit strikingly similar features (like pharyngeal slits and tail structures) that diverge as they mature.',
         principles: [
@@ -1206,7 +1206,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u8',
         title: 'Evolutionary Trees & Shared Characteristics',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:evolution/x24c4e73582d09141:evolutionary-trees/v/reading-evolutionary-trees',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:evolution',
         videoTitle: 'Reading Evolutionary Trees',
         reading: 'Cladograms and phylogenetic trees visually organize shared derived characteristics. Branch points represent common ancestors where lineages diverged over evolutionary time.',
         principles: [
@@ -1225,7 +1225,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz 2: Embryology & Trees',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:evolution',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:evolution',
         videoTitle: 'Evolution Check 2',
         reading: 'Review check covering vestigial organs, embryological similarities, and cladogram interpretation.',
         principles: [
@@ -1244,7 +1244,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 8 Exam: Evolution',
         kind: 'unit_test',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:evolution',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:evolution',
         videoTitle: 'Evolution Exam',
         reading: 'Comprehensive unit exam testing fossil layer chronology, homologous limbs, vestigial traits, comparative embryology, and evolutionary trees.',
         principles: [
@@ -1273,7 +1273,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u9',
         title: 'Variation & Overproduction in Populations',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:natural-and-artificial-selection/x24c4e73582d09141:natural-selection/v/variation-in-populations',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:natural-and-artificial-selection',
         videoTitle: 'Variation in Populations',
         reading: 'Natural populations produce more offspring than the environment can support. Because individuals inherit different genetic variations, some have traits that make finding food or avoiding predators easier.',
         principles: [
@@ -1291,7 +1291,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u9',
         title: 'Natural Selection & Differential Survival',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:natural-and-artificial-selection/x24c4e73582d09141:natural-selection/v/darwin-and-natural-selection',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:natural-and-artificial-selection',
         videoTitle: 'Darwin and Natural Selection',
         reading: 'Natural selection is the mechanism driving evolution: organisms best adapted to their local environment survive longer and produce more offspring, passing their beneficial alleles to future generations.',
         principles: [
@@ -1309,7 +1309,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u9',
         title: 'Adaptations to Changing Environments',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:natural-and-artificial-selection/x24c4e73582d09141:adaptations/v/adaptation-examples',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:natural-and-artificial-selection',
         videoTitle: 'Adaptation Examples',
         reading: 'When environmental conditions change (such as climate shifts or new diseases), traits that were once neutral can become vital adaptations, shifting the entire population’s phenotypic distribution.',
         principles: [
@@ -1327,7 +1327,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         unitId: 'g6-sci-u9',
         title: 'Artificial Selection: Selective Breeding',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:natural-and-artificial-selection/x24c4e73582d09141:artificial-selection/v/selective-breeding-artificial-selection',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:natural-and-artificial-selection',
         videoTitle: 'Selective Breeding',
         reading: 'In artificial selection, humans intentionally choose which animals or plants reproduce based on desired traits, creating dog breeds, sweet modern corn, and high-yield dairy cows.',
         principles: [
@@ -1346,7 +1346,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Selection Pressures',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:natural-and-artificial-selection',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:natural-and-artificial-selection',
         videoTitle: 'Selection Review',
         reading: 'Review check contrasting natural selection in wild populations with artificial selection driven by human agricultural goals.',
         principles: [
@@ -1365,7 +1365,7 @@ export const G6_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 9 Exam: Natural & Artificial Selection',
         kind: 'unit_test',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x24c4e73582d09141:natural-and-artificial-selection',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:natural-and-artificial-selection',
         videoTitle: 'Selection Exam',
         reading: 'Comprehensive unit exam assessing genetic overproduction, differential reproductive success, adaptation graphs, and selective breeding.',
         principles: [

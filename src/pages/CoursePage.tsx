@@ -5,6 +5,7 @@ import { TextbookPanel } from '../components/TextbookPanel'
 import { useApp } from '../context/AppContext'
 import { getCourseById } from '../lib/curriculum'
 import { computeCourseGrade, computeLessonEffectiveScore } from '../lib/grading'
+import { getCanonicalKhanUnitUrl } from '../lib/khanUrlValidator'
 import { computeCourseProgress } from '../lib/progress'
 import { getLessonRemediation } from '../lib/remediation'
 import { getExploreCompletedProgress, saveExploreCompletedProgress } from '../lib/storage'
@@ -705,7 +706,7 @@ export const CoursePage: React.FC = () => {
                 📖 Unit Textbook &amp; Search
               </button>
               {(() => {
-                const khanUrl = unit.lessons?.find((l) => l.videoUrl?.includes('khanacademy.org'))?.videoUrl
+                const khanUrl = getCanonicalKhanUnitUrl(unit, course)
                 if (!khanUrl) return null
                 return (
                   <a

@@ -391,7 +391,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u1',
           title: 'Latitude, Longitude & Coordinate Grids',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings/intro-to-world-history/v/human-geography',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Latitude%20and%20Longitude%206th%20grade%20history',
           videoTitle: 'Latitude and Longitude',
           reading: 'Geographers use coordinate grids of latitude (parallels measured north/south of Equator) and longitude (meridians east/west of Prime Meridian) to fix absolute location on Earth.',
           principles: [
@@ -409,7 +409,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u1',
           title: 'Physical vs. Political Thematic Maps',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings/intro-to-world-history/v/reading-maps',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Physical%20and%20Thematic%20Maps%206th%20grade%20history',
           videoTitle: 'Physical and Thematic Maps',
           reading: 'Physical maps illustrate elevation, mountain ranges, and rivers. Political maps show government borders and cities. Thematic maps illustrate population density or climate.',
           principles: [
@@ -427,7 +427,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u1',
           title: 'Map Projections & Spatial Distortion',
           estimatedMinutes: 9,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings/intro-to-world-history/v/map-projections',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Map%20Projections%20and%20Distortion%206th%20grade%20history',
           videoTitle: 'Map Projections and Distortion',
           reading: 'Flattening a 3D spherical Earth onto a 2D sheet creates unavoidable distortions of shape, area, distance, or direction (such as in Mercator vs. Robinson projections).',
           principles: [
@@ -445,7 +445,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u1',
           title: 'Human-Environment Interaction',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings/intro-to-world-history/v/human-environment-interaction',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Human-Environment%20Interaction%206th%20grade%20history',
           videoTitle: 'Human-Environment Interaction',
           reading: 'Humans adapt to their natural environment (clothing, housing styles) and modify it (dams, irrigation canals, terraced farming on hillsides).',
           principles: [
@@ -510,7 +510,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u2',
           title: 'Mesopotamia & The Fertile Crescent',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings/ancient-mesopotamia/v/ancient-mesopotamia',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Ancient%20Mesopotamia%20and%20Agriculture%206th%20grade%20history',
           videoTitle: 'Ancient Mesopotamia and Agriculture',
           reading: 'Between the Tigris and Euphrates rivers, the Sumerians constructed irrigation canals, mud-brick ziggurats, and cuneiform writing, founding the world’s first cities.',
           principles: [
@@ -528,7 +528,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u2',
           title: 'Hammurabi’s Code & Legal Institutions',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings/ancient-mesopotamia/v/hammurabis-code',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Hammurabi%E2%80%99s%20Code%206th%20grade%20history',
           videoTitle: 'Hammurabi’s Code',
           reading: 'King Hammurabi of Babylon carved 282 legal rulings onto stone steles, establishing the rule of written public law ("eye for an eye") across the empire.',
           principles: [
@@ -546,7 +546,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u2',
           title: 'Ancient Egypt & The Nile Valley',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings/ancient-egypt/v/ancient-egypt-overview',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Ancient%20Egypt%20and%20the%20Nile%206th%20grade%20history',
           videoTitle: 'Ancient Egypt and the Nile',
           reading: 'The predictable annual inundation of the Nile River left rich black silt, enabling surplus grain, the reign of divine pharaohs, and monument construction.',
           principles: [
@@ -564,7 +564,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u2',
           title: 'Indus Valley Urban Planning & Trade',
           estimatedMinutes: 9,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings/ancient-india/v/indus-valley-civilization',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Indus%20Valley%20Cities%206th%20grade%20history',
           videoTitle: 'Indus Valley Cities',
           reading: 'Harappa and Mohenjo-Daro featured advanced grid street planning, brick drainage systems, standardized weights, and extensive sea trade across the Arabian Sea.',
           principles: [
@@ -583,7 +583,7 @@ export const G6_SOCIAL_COURSE: Course = {
           title: 'Mid-Unit Quiz: River Valley Civilizations',
           kind: 'lesson_review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=River%20Civilizations%20Check%206th%20grade%20history',
           videoTitle: 'River Civilizations Check',
           reading: 'Review check covering Mesopotamian cuneiform, Hammurabi’s code, Egyptian Nile flooding, and Indus city grids.',
           principles: [
@@ -602,7 +602,7 @@ export const G6_SOCIAL_COURSE: Course = {
           title: 'Unit 2 Test: River Valley Civilizations',
           kind: 'unit_test',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=River%20Civilizations%20Review%206th%20grade%20history',
           videoTitle: 'River Civilizations Review',
           reading: 'Unit exam testing Mesopotamia, the Tigris and Euphrates, Hammurabi’s Code, cuneiform, Egyptian Nile agriculture, and the Indus Valley.',
           principles: [
@@ -629,7 +629,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u3',
           title: 'Athenian Direct Democracy & Sparta',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/ancient-greece/v/ancient-greece-overview',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Ancient%20Greece%3A%20Athens%20and%20Sparta%206th%20grade%20history',
           videoTitle: 'Ancient Greece: Athens and Sparta',
           reading: 'Athens pioneered direct democracy where citizens voted directly on legislation, contrasting with Sparta’s militaristic oligarchic government.',
           principles: [
@@ -647,7 +647,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u3',
           title: 'Greek Philosophy, Arts & The Golden Age',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/ancient-greece/v/greek-philosophy',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Greek%20Philosophy%20and%20Culture%206th%20grade%20history',
           videoTitle: 'Greek Philosophy and Culture',
           reading: 'Thinkers like Socrates, Plato, and Aristotle emphasized inquiry, logic, and scientific observation, laying foundational concepts for Western thought.',
           principles: [
@@ -665,7 +665,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u3',
           title: 'The Roman Republic: Senate & Separation of Powers',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/ancient-rome/v/roman-republic-overview',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Roman%20Republic%20Overview%206th%20grade%20history',
           videoTitle: 'Roman Republic Overview',
           reading: 'Rome replaced monarchy with a republic governed by elected consuls, a patrician Senate, plebeian tribunes, and checks and balances.',
           principles: [
@@ -683,7 +683,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u3',
           title: 'Roman Engineering: Roads, Arches & Aqueducts',
           estimatedMinutes: 9,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/ancient-rome/v/roman-engineering-and-architecture',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Roman%20Engineering%206th%20grade%20history',
           videoTitle: 'Roman Engineering',
           reading: 'Roman engineers built stone roads connecting provinces, concrete arches, and multi-tier aqueducts carrying fresh water across vast distances.',
           principles: [
@@ -702,7 +702,7 @@ export const G6_SOCIAL_COURSE: Course = {
           title: 'Mid-Unit Quiz: Classical Mediterranean',
           kind: 'lesson_review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Mediterranean%20Civics%20Review%206th%20grade%20history',
           videoTitle: 'Mediterranean Civics Review',
           reading: 'Review check on direct democracy vs. republican representation, Greek philosophy, and Roman infrastructure.',
           principles: [
@@ -721,7 +721,7 @@ export const G6_SOCIAL_COURSE: Course = {
           title: 'Unit 3 Test: Classical Mediterranean',
           kind: 'unit_test',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Classical%20World%20Test%20Practice%206th%20grade%20history',
           videoTitle: 'Classical World Test Practice',
           reading: 'Unit exam testing Athens vs. Sparta, Socratic philosophy, Roman Republic checks and balances, aqueducts, and the Twelve Tables.',
           principles: [
@@ -748,7 +748,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u4',
           title: 'Scarcity & Opportunity Cost in Decision Making',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/ap-macroeconomics/basic-economics-concepts-macro/scarcity-and-opportunity-cost/v/scarcity',
+          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/ap-macroeconomics/basic-economics-concepts-macro',
           videoTitle: 'Scarcity and Opportunity Cost',
           reading: 'Scarcity means human wants exceed limited resources. Every choice involves an opportunity cost—the value of the next best alternative given up.',
           principles: [
@@ -766,7 +766,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u4',
           title: 'Law of Supply & Demand in Markets',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/ap-microeconomics/basic-economic-concepts-micro/supply-demand-market-equilibrium/v/law-of-demand',
+          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/ap-macroeconomics/basic-economics-concepts-macro/market-equilibrium-disequilibrium-and-changes-in-equilibrium/v/changes-in-equilibrium-price-and-quantity-when-supply-and-demand-change-khan-academy',
           videoTitle: 'Supply and Demand Basics',
           reading: 'Prices in market economies are driven by supply (how much is available) and demand (how much buyers want). High demand and low supply raise prices.',
           principles: [
@@ -784,7 +784,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u4',
           title: 'Specialization & Interregional Trade',
           estimatedMinutes: 9,
-          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/ap-macroeconomics/basic-economics-concepts-macro/scarcity-and-opportunity-cost/v/specialization-and-trade',
+          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/ap-macroeconomics/basic-economics-concepts-macro',
           videoTitle: 'Specialization and Trade',
           reading: 'Regions specialize in producing goods where they have geographical advantages (like Silk Road silk in China or olive oil in Greece) and trade for other needs.',
           principles: [
@@ -802,7 +802,7 @@ export const G6_SOCIAL_COURSE: Course = {
           unitId: 'g6-soc-u4',
           title: 'Global Trade Networks: The Silk Road',
           estimatedMinutes: 9,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/silk-road/v/the-silk-road',
+          videoUrl: 'https://www.khanacademy.org/humanities/world-history-project-ap-preview/x7515b0ca3395d084:review-introduction-to-world-history/x7515b0ca3395d084:0-4collapse-and-restructuring/v/watch-rebuilding-the-silk-road-world-history-project-beta',
           videoTitle: 'The Silk Road and Global Exchange',
           reading: 'The Silk Road connected Asia, the Middle East, and Europe, transmitting not just silk and spices, but also ideas, religions, and papermaking technologies.',
           principles: [
@@ -1037,7 +1037,7 @@ export const G6_SOCIAL_COURSE: Course = {
           title: 'Ohio History Connection Digital Collections',
           type: 'reading',
           description: 'Inspect authentic photographs, maps, and primary source documents from Ohio’s canal era and the Underground Railroad.',
-          url: 'https://www.ohiohistory.org/research/digital-collections/',
+          url: 'https://ohiomemory.org/',
           estimatedMinutes: 15,
           requiresParentPin: false,
         },

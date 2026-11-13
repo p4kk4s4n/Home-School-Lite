@@ -467,7 +467,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Main Idea',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:key-ideas-and-details-4/xe0e52cf20ce2546d:identifying-main-ideas-and-summarizing-4/a/identifying-the-main-idea-of-a-text-4th',
           videoTitle: 'Khan Academy: Finding the Main Idea',
           reading:
             'The main idea is the key point of an informational text. Authors support this central point with facts, statistics, examples, and quotes.',
@@ -480,7 +480,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Inferences',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:key-ideas-and-details-4',
           videoTitle: 'Khan Academy: Inferences in Informational Text',
           reading:
             'When an author does not say something directly, use your background knowledge and clues in the text to make a logical inference.',
@@ -493,7 +493,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Quoting Evidence',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:key-ideas-and-details-4',
           videoTitle: 'Khan Academy: Citing Text Evidence',
           reading:
             'When referring to a text, quote directly or cite specific facts and paragraphs to support your analysis and inferences.',
@@ -506,7 +506,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Unit Review',
           estimatedMinutes: 12,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:key-ideas-and-details-4',
           videoTitle: 'Informational Text Review',
           reading:
             'Review assessment on identifying central main ideas, citing strong supporting details, and drawing logical inferences.',
@@ -528,7 +528,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Cause & Chronology',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:craft-and-structure-4',
           videoTitle: 'Khan Academy: Text Structures',
           reading:
             'Chronological order lists events by time. Cause and effect explains why things occur, using signal words like because, so, and consequently.',
@@ -541,7 +541,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Compare & Problem/Solution',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:craft-and-structure-4',
           videoTitle: 'Khan Academy: Compare and Contrast Structures',
           reading:
             'Compare and contrast highlights similarities and differences. Problem and solution introduces a challenge and details how it is solved.',
@@ -554,7 +554,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Text Features',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:craft-and-structure-4',
           videoTitle: 'Khan Academy: Informational Text Features',
           reading:
             'Headings, bold words, sidebars, charts, and timelines guide readers to find key information efficiently in non-fiction texts.',
@@ -567,7 +567,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Unit Review',
           estimatedMinutes: 12,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:craft-and-structure-4',
           videoTitle: 'Text Structures Review',
           reading:
             'Review assessment on identifying chronological order, cause and effect, comparison, problem/solution, and text features.',
@@ -589,7 +589,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Character Traits',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:key-ideas-and-details-4',
           videoTitle: 'Khan Academy: Character Traits and Motivations',
           reading:
             'Characters drive stories through their thoughts, speech, and actions. Pay attention to how characters react when facing difficult obstacles.',
@@ -602,7 +602,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Themes',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:key-ideas-and-details-4',
           videoTitle: 'Khan Academy: Finding the Theme',
           reading:
             'A theme is the universal message or life lesson taught by the narrative, such as kindness, honesty, or perseverance.',
@@ -615,7 +615,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Point of View',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:craft-and-structure-4',
           videoTitle: 'Khan Academy: Points of View in Stories',
           reading:
             'Compare and contrast first-person narration (I, me, my) with third-person narration (he, she, they) to evaluate character perspective.',
@@ -628,7 +628,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Unit Review',
           estimatedMinutes: 12,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:key-ideas-and-details-4',
           videoTitle: 'Literature Review',
           reading:
             'Review assessment on character motivations, identifying underlying themes in fables and stories, and narrator point of view.',
@@ -650,7 +650,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Objective Summarizing',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:key-ideas-and-details-4',
           videoTitle: 'Khan Academy: How to Write a Summary',
           reading:
             'An objective summary retells the main events and key facts in logical order without adding personal opinions or emotional commentary.',
@@ -663,7 +663,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Regional Lore',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.ohiohistory.org/learn/education-and-outreach/student-resources',
+          videoUrl: 'https://www.ohiohistory.org',
           videoTitle: 'Ohio History Connection: Ohio Legends and Biographies',
           reading:
             'Ohio folklore and history, such as stories of Johnny Appleseed and the Wright brothers, illustrate enduring themes of innovation, service, and resilience.',
@@ -676,7 +676,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Historical Sources',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/integration-of-knowledge-and-ideas',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:integration-of-knowledge-and-ideas-4',
           videoTitle: 'Khan Academy: Primary and Secondary Sources',
           reading:
             'Compare a firsthand account (such as a pioneer journal) and a secondhand account (such as a modern history textbook) of the same historical event.',
@@ -711,7 +711,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Figurative Language',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/vocabulary',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:vocabulary-4th',
           videoTitle: 'Khan Academy: Similes and Metaphors',
           reading:
             'Similes compare using like or as ("as bright as the sun"). Metaphors compare directly ("she is a star"). Idioms have figurative meanings.',
@@ -724,7 +724,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Context Clues',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/vocabulary',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:vocabulary-4th',
           videoTitle: 'Khan Academy: Using Context Clues',
           reading:
             'Context clues are words and phrases near an unfamiliar vocabulary word that provide synonyms, antonyms, or definitions to help you determine meaning.',
@@ -737,7 +737,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Adages & Personification',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/vocabulary',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:vocabulary-4th',
           videoTitle: 'Khan Academy: Idioms and Proverbs',
           reading:
             'Proverbs and adages express traditional wisdom (e.g. A stitch in time saves nine). Personification gives human qualities to non-human objects.',
@@ -750,7 +750,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Unit Review',
           estimatedMinutes: 12,
-          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/vocabulary',
+          videoUrl: 'https://www.khanacademy.org/ela/4th-grade-reading-and-vocab/xe0e52cf20ce2546d:vocabulary-4th',
           videoTitle: 'Figurative Language Quiz Review',
           reading:
             'Review assessment on identifying similes, metaphors, idioms, proverbs, and determining vocabulary meaning using sentence context.',
@@ -798,7 +798,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Pronouns & Prepositions',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/grammar/parts-of-speech-the-pronoun',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Relative%20Pronouns%204th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Relative Pronouns',
           reading:
             'Use relative pronouns (who, whose, whom, which, that) and relative adverbs (where, when, why) to connect descriptive clauses smoothly.',
@@ -833,7 +833,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Opinion Writing',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Opinion%20Writing%204th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Opinion Writing',
           reading:
             'An opinion essay starts with a clear claim statement, followed by distinct paragraphs with logical reasons, factual evidence, and linking transitional words.',
@@ -846,7 +846,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Narrative Writing',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Writing%20Dialogue%20in%20Narratives%204th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Writing Dialogue in Narratives',
           reading:
             'Use dialogue to show character voice. Place quotation marks around spoken words with punctuation inside, and use sensory details to bring settings to life.',
@@ -859,7 +859,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Informational Writing',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Informative%20Report%20Writing%204th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Informative Report Writing',
           reading:
             'Write informative and explanatory texts to examine a topic and convey ideas clearly, grouping related information into paragraphs with headings.',
@@ -872,7 +872,7 @@ export const G4_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Unit Review',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Writing%20Craft%20Exam%20Review%204th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Writing Craft Exam Review',
           reading:
             'Comprehensive assessment on opinion thesis statements, informational paragraph transitions, and punctuated narrative dialogue.',

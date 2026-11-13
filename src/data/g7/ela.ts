@@ -316,7 +316,7 @@ export const G7_ELA_COURSE: Course = {
   externalCourseLinks: [
     {
       label: 'Khan: 7th grade reading, grammar, and vocab',
-      url: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab',
+      url: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary',
     },
     {
       label: 'Khan: Grammar',
@@ -337,7 +337,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Setting & Plot',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary/x7538838f96af3430:key-ideas-and-details-7',
           videoTitle: 'Khan Academy: Setting and Plot Dynamics',
           reading:
             'Setting is the historical era, geographic environment, and social world of a narrative. Setting forces characters to confront conflicts that reveal authorial theme.',
@@ -350,7 +350,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Theme Development',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary/x7538838f96af3430:key-ideas-and-details-7',
           videoTitle: 'Khan Academy: Tracing Themes in Literature',
           reading:
             'A theme is a universal observation about human nature or life. Track how characters grow from beginning to climax, and summarize the plot without subjective commentary.',
@@ -363,7 +363,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Character Conflict',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary/x7538838f96af3430:key-ideas-and-details-7',
           videoTitle: 'Khan Academy: Conflict and Character Choices',
           reading:
             'Internal and external conflicts force characters into moral decisions. Analyze how choices under pressure reveal core virtues, flaws, and the underlying theme.',
@@ -376,7 +376,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Unit Review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-key-ideas-and-details',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary/x7538838f96af3430:key-ideas-and-details-7',
           videoTitle: 'Khan Academy: Reading Literature Review',
           reading:
             'Review key standards: identifying universal themes, distinguishing theme from topic, analyzing setting impacts on plot, and writing concise objective summaries.',
@@ -400,7 +400,7 @@ export const G7_ELA_COURSE: Course = {
           isOhioExtension: true,
           partOf: 'Point of View',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary/x7538838f96af3430:craft-and-structure-7',
           videoTitle: 'Khan Academy: Analyzing Contrasting Points of View',
           reading:
             'Authors develop contrasting points of view by juxtaposing how different characters interpret the same event based on their individual background and motivations.',
@@ -414,7 +414,7 @@ export const G7_ELA_COURSE: Course = {
           isOhioExtension: true,
           partOf: 'Historical Fiction',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary/x7538838f96af3430:craft-and-structure-7',
           videoTitle: 'Khan Academy: Comparing Fiction and Historical Accounts',
           reading:
             'Compare a fictional portrayal of a time, place, or character to historical accounts of the same period to understand how authors adapt history for emotional resonance.',
@@ -428,7 +428,7 @@ export const G7_ELA_COURSE: Course = {
           isOhioExtension: true,
           partOf: 'Narrative Perspective',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary/x7538838f96af3430:craft-and-structure-7',
           videoTitle: 'Khan Academy: First Person and Omniscient Narrators',
           reading:
             'Examine how first-person intimacy or third-person omniscient objectivity alters how readers experience historical events and evaluate narrator reliability.',
@@ -442,7 +442,7 @@ export const G7_ELA_COURSE: Course = {
           isOhioExtension: true,
           partOf: 'Unit Review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-craft-and-structure',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary/x7538838f96af3430:craft-and-structure-7',
           videoTitle: 'Khan Academy: Perspective and Historical Fiction Review',
           reading:
             'Synthesize how historical novelists craft realistic dialogue and emotional subtext while remaining anchored to documented historical turning points.',
@@ -464,7 +464,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Central Ideas',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-integration-of-knowledge-and-ideas',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Central%20Ideas%20in%20Complex%20Nonfiction%207th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Central Ideas in Complex Nonfiction',
           reading:
             'Complex nonfiction builds multiple central ideas across sections. Analyze how paragraphs, subheadings, and transitional phrases connect supporting evidence to overarching claims.',
@@ -477,7 +477,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Author Purpose',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-integration-of-knowledge-and-ideas',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Text%20Structure%20and%20Rhetorical%20Purpose%207th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Text Structure and Rhetorical Purpose',
           reading:
             'Examine whether an author organizes information chronologically, comparatively, or argumentatively to advance a specific point of view or persuade the audience.',
@@ -490,7 +490,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Nonfiction Summaries',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-integration-of-knowledge-and-ideas',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Objective%20Summaries%20of%20Nonfiction%207th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Objective Summaries of Nonfiction',
           reading:
             'Distinguish major supporting facts from incidental trivia. Write an objective nonfiction summary that conveys central claims without editorial personal reaction.',
@@ -503,7 +503,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Unit Review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-integration-of-knowledge-and-ideas',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary',
           videoTitle: 'Khan Academy: Informational Text Review',
           reading:
             'Review key informational text standards: locating dual central ideas, analyzing structural frameworks, and producing concise objective summaries.',
@@ -525,7 +525,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Argument Analysis',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-integration-of-knowledge-and-ideas',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Tracing%20Claims%20and%20Counter-Claims%207th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Tracing Claims and Counter-Claims',
           reading:
             'Trace and evaluate the argument and specific claims in a text, assessing whether the reasoning is sound and whether the evidence is sufficient to support the claim.',
@@ -538,7 +538,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Source Evaluation',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-integration-of-knowledge-and-ideas',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Assessing%20Source%20Credibility%207th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Assessing Source Credibility',
           reading:
             'Examine author qualifications, publication intent, date of research, and independent corroboration to separate reliable academic evidence from biased hearsay.',
@@ -551,7 +551,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Logical Fallacies',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-integration-of-knowledge-and-ideas',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Identifying%20Logical%20Fallacies%207th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Identifying Logical Fallacies',
           reading:
             'Identify faulty reasoning such as ad hominem attacks, hasty generalizations, and false dilemmas that weaken an author’s persuasive credibility.',
@@ -564,7 +564,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Unit Review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/reading-integration-of-knowledge-and-ideas',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary',
           videoTitle: 'Khan Academy: Evaluating Arguments Review',
           reading:
             'Review criteria for sound arguments: relevant empirical data, anticipation of opposing views, logical reasoning free of fallacies, and verified expert citations.',
@@ -586,7 +586,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Clauses & Complex Sentences',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/grammar-sentences-clauses-and-phrases',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-and-8th-grade-grammar/x9e6f4267f632f2c6:sentences-clauses-and-phrases-7',
           videoTitle: 'Khan Academy: Dependent and Independent Clauses',
           reading:
             'An independent clause expresses a complete thought. A dependent clause begins with a subordinating conjunction (because, although, if) and must attach to an independent clause.',
@@ -599,7 +599,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Modifiers',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/grammar-sentences-clauses-and-phrases',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-and-8th-grade-grammar/x9e6f4267f632f2c6:sentences-clauses-and-phrases-7',
           videoTitle: 'Khan Academy: Avoiding Misplaced and Dangling Modifiers',
           reading:
             'Place modifying phrases directly adjacent to the target noun they describe to prevent unintentional, humorous, or confusing syntax ambiguities.',
@@ -612,7 +612,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Complex Sentences',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/grammar-sentences-clauses-and-phrases',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-and-8th-grade-grammar/x9e6f4267f632f2c6:sentences-clauses-and-phrases-7',
           videoTitle: 'Khan Academy: Building Complex Sentences',
           reading:
             'Master subordinating conjunctions (since, while, whereas, unless) to weave independent and dependent clauses into varied, expressive complex sentences.',
@@ -625,7 +625,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Unit Review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/grammar/syntax-sentences-and-clauses/v/syntax-review',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Syntax%20and%20Sentence%20Structure%20Review%207th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Syntax and Sentence Structure Review',
           reading:
             'Review sentence mechanics: distinguishing clauses from phrases, repairing dangling participles, and using punctuation to separate introductory dependent clauses.',
@@ -647,7 +647,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Root Words',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/grammar-word-study',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary/x7538838f96af3430:word-study-7-grammar',
           videoTitle: 'Khan Academy: Greek and Latin Roots (dict, chron, spect)',
           reading:
             'Use common Greek and Latin affixes and roots (dict = speak; chron = time; auto = self; tele = far) as clues to decipher multi-syllable domain-specific vocabulary.',
@@ -660,7 +660,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Connotations',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/grammar-word-study',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary/x7538838f96af3430:word-study-7-grammar',
           videoTitle: 'Khan Academy: Connotation and Denotation',
           reading:
             'Denotation is the exact dictionary definition; connotation is the emotional feeling or social association attached to a word (e.g. thrifty vs. cheap).',
@@ -673,7 +673,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Figurative Language',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/vocabulary',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary/x7538838f96af3430:vocabulary-7th',
           videoTitle: 'Khan Academy: Interpreting Figures of Speech',
           reading:
             'Analyze how extended metaphors, vivid analogies, and dramatic irony enrich literary narrative texture and underscore an author’s nuanced messaging.',
@@ -686,7 +686,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Unit Review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab/vocabulary',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary/x7538838f96af3430:vocabulary-7th',
           videoTitle: 'Khan Academy: Vocabulary and Roots Review',
           reading:
             'Review classical root families, deciphering unfamiliar terminology from context clues, and selecting words with precise positive or negative connotations.',
@@ -708,7 +708,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Thesis Development',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Developing%20a%20Precise%20Thesis%207th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Developing a Precise Thesis',
           reading:
             'A compelling argumentative thesis takes a clear, defensible position on an issue and previews the major logical grounds supporting the claim.',
@@ -721,7 +721,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Evidence Integration',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Integrating%20Quotes%20and%20Evidence%207th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Integrating Quotes and Evidence',
           reading:
             'Smoothly embed direct quotations and data using signal phrases, formal attribution, and parenthetical citations to maintain narrative flow and academic integrity.',
@@ -734,7 +734,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Counterclaim & Rebuttal',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Addressing%20Opposing%20Counterclaims%207th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Addressing Opposing Counterclaims',
           reading:
             'Strengthen your thesis by fairly presenting the strongest alternative perspective, followed by a factual rebuttal that exposes flaws in the opposing premise.',
@@ -747,7 +747,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Unit Review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/writing-composition',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Argumentative%20Writing%20Synthesis%20Review%207th%20grade%20ELA%20reading%20grammar',
           videoTitle: 'Khan Academy: Argumentative Writing Synthesis Review',
           reading:
             'Review essay organization: introduction with thesis, body paragraphs with evidence and commentary, balanced counterclaim rebuttal, and impactful conclusion.',
@@ -769,7 +769,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Course Challenge Part 1',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary',
           videoTitle: 'Khan Academy: Grade 7 Literature Synthesis',
           reading:
             'Synthesize literary themes, setting influences, narrator perspective, and figurative language across complex passages.',
@@ -782,7 +782,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Course Challenge Part 2',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary',
           videoTitle: 'Khan Academy: Grade 7 Nonfiction Synthesis',
           reading:
             'Demonstrate mastery in determining dual central ideas, analyzing rhetorical text structure, and evaluating source credibility.',
@@ -795,7 +795,7 @@ export const G7_ELA_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Course Challenge Part 3',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocab',
+          videoUrl: 'https://www.khanacademy.org/ela/7th-grade-reading-and-vocabulary',
           videoTitle: 'Khan Academy: Grade 7 Language and Writing Capstone',
           reading:
             'Apply advanced knowledge of independent and dependent clauses, misplaced modifier correction, classical root etymology, and argumentative thesis development.',

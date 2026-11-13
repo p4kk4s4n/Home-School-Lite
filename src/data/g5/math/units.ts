@@ -15,7 +15,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u1',
         title: 'Decimal Place Value Patterns & Thousandths',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals/imp-decimal-place-value-intro/v/decimal-place-value-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals/imp-rounding-decimals/a/decimal-place-value-faq',
         videoTitle: 'Decimal Place Value Intro',
         reading: 'Digits to the right of the decimal point represent tenths, hundredths, and thousandths. Each step right is 1/10 of the previous value.',
         principles: [
@@ -33,7 +33,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u1',
         title: 'Reading and Writing Decimals in Expanded Form',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals/imp-expanded-form-with-decimals/v/expanded-form-with-decimals',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals',
         videoTitle: 'Expanded Form with Decimals',
         reading: 'Expanded form shows the sum of each digit multiplied by its place value. Example: 3.48 = (3 x 1) + (4 x 0.1) + (8 x 0.01).',
         principles: [
@@ -51,7 +51,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u1',
         title: 'Comparing Decimals to Thousandths',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals/imp-comparing-decimals/v/comparing-decimals-example',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals',
         videoTitle: 'Comparing Decimals',
         reading: 'Compare decimals place by place from left to right. Annex zeros to give decimals the same number of places if needed.',
         principles: [
@@ -69,7 +69,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u1',
         title: 'Rounding Decimals to Nearest Tenth and Hundredth',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals/imp-rounding-decimals/v/rounding-decimals-example',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-place-value-and-decimals/imp-rounding-decimals/v/rounding-decimals',
         videoTitle: 'Rounding Decimals',
         reading: 'To round a decimal, look at the digit to the right of the target place. If it is 5 or greater, round up. Otherwise, stay the same.',
         principles: [
@@ -136,7 +136,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u2',
         title: 'Adding Decimals with Base-Ten Blocks & Models',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction/imp-adding-decimals/v/adding-decimals-with-grids',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3',
         videoTitle: 'Adding Decimals with Grids',
         reading: 'Model decimal addition using tenths and hundredths grids. Combining shaded sections shows the sum.',
         principles: [
@@ -154,7 +154,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u2',
         title: 'Adding Decimals by Aligning Place Values',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction/imp-adding-decimals/v/adding-decimals-example-1',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3',
         videoTitle: 'Adding Decimals Vertically',
         reading: 'Line up decimal points vertically so identical place values match. Add columns from right to left, regrouping as needed.',
         principles: [
@@ -172,7 +172,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u2',
         title: 'Decimal Addition Word Problems & Money',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction/imp-adding-decimals/v/adding-decimals-word-problem',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3',
         videoTitle: 'Decimal Addition Word Problems',
         reading: 'Apply decimal addition to real-world financial costs, distances, and weights by extracting values and computing total sums.',
         principles: [
@@ -191,7 +191,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Adding Decimals',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3',
         videoTitle: 'Decimal Addition Review',
         reading: 'Checkpoint testing vertical decimal addition alignment and regrouping accuracy.',
         principles: [
@@ -210,7 +210,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Unit 2 Test: Decimal Addition Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3',
         videoTitle: 'Unit 2 Test Review',
         reading: 'Comprehensive assessment of adding decimals up to hundredths.',
         principles: [
@@ -239,7 +239,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u3',
         title: 'Subtracting Decimals with Models & Number Lines',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction/imp-subtracting-decimals/v/subtracting-decimals-up-to-hundredths',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3',
         videoTitle: 'Subtracting Decimals Models',
         reading: 'Use visual grid models to subtract decimals. Cross out tenths and hundredths to find the difference remaining.',
         principles: [
@@ -257,7 +257,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u3',
         title: 'Subtracting Decimals with Regrouping Across Zeros',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction/imp-subtracting-decimals/v/subtracting-decimals-with-regrouping',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3',
         videoTitle: 'Subtracting Decimals Regrouping',
         reading: 'When subtracting decimals with unequal lengths, write trailing zeros (e.g. 5.00 - 2.37) and regroup from left to right.',
         principles: [
@@ -275,7 +275,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u3',
         title: 'Multi-Step Decimal Subtraction Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction/imp-subtracting-decimals/v/decimal-subtraction-word-problem',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3',
         videoTitle: 'Decimal Subtraction Word Problems',
         reading: 'Solve word problems involving change from a dollar, remaining travel distances, and measurement differences.',
         principles: [
@@ -294,7 +294,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Subtracting Decimals',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3',
         videoTitle: 'Decimal Subtraction Review',
         reading: 'Review check evaluating precision in subtracting decimals with regrouping and trailing zeros.',
         principles: [
@@ -313,7 +313,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Unit 3 Test: Decimal Subtraction Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-addition-and-subtraction-3',
         videoTitle: 'Unit 3 Test Review',
         reading: 'Comprehensive assessment of decimal subtraction concepts and computational speed.',
         principles: [
@@ -342,7 +342,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u4',
         title: 'Finding Common Denominators with Visual Models',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2/imp-adding-and-subtracting-fractions-with-unlike-denominators/v/adding-fractions-with-unlike-denominators',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3/imp-visually-adding-and-subtracting-fractions-with-unlike-denominators/v/visually-adding-fractions-with-unlike-denominators',
         videoTitle: 'Common Denominators Intro',
         reading: 'Fractions cannot be added directly unless they share identical unit slices. Find the least common multiple to generate equivalent fractions.',
         principles: [
@@ -360,7 +360,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u4',
         title: 'Adding Unlike Fractions and Mixed Numbers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2/imp-adding-and-subtracting-fractions-with-unlike-denominators/v/adding-mixed-numbers-with-unlike-denominators',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3/imp-visually-adding-and-subtracting-fractions-with-unlike-denominators/v/visually-adding-fractions-with-unlike-denominators',
         videoTitle: 'Adding Unlike Fractions',
         reading: 'Convert fractions to like denominators, add numerators, keep denominators identical, and simplify or convert improper fractions.',
         principles: [
@@ -378,7 +378,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u4',
         title: 'Subtracting Unlike Fractions and Mixed Numbers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2/imp-adding-and-subtracting-fractions-with-unlike-denominators/v/subtracting-mixed-numbers-with-unlike-denominators',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions',
         videoTitle: 'Subtracting Unlike Fractions',
         reading: 'Find common denominators. When subtracting mixed numbers, regroup one whole into fractional units if the top numerator is smaller.',
         principles: [
@@ -396,7 +396,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u4',
         title: 'Fraction Word Problems & Benchmark Estimation',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2/imp-adding-and-subtracting-fractions-with-unlike-denominators/v/estimating-fraction-sums-and-differences',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions',
         videoTitle: 'Estimating Fraction Sums',
         reading: 'Estimate fraction sums using benchmarks 0, 1/2, and 1 to assess whether exact answers are reasonable.',
         principles: [
@@ -415,7 +415,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Adding and Subtracting Fractions',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions',
         videoTitle: 'Fraction Addition & Subtraction Quiz',
         reading: 'Review testing common denominator creation, computation, and simplifying fraction answers.',
         principles: [
@@ -434,7 +434,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Unit 4 Test: Fraction Operations Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions',
         videoTitle: 'Unit 4 Test Review',
         reading: 'Comprehensive assessment of adding and subtracting unlike fractions and mixed numbers.',
         principles: [
@@ -463,7 +463,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u5',
         title: 'Multi-Digit Multiplication Algorithm (3-digit by 2-digit)',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3/imp-multi-digit-multiplication/v/multiplying-2-digit-numbers',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Multi-Digit Multiplication',
         reading: 'Multiply by the ones digit first, place a zero holder, multiply by the tens digit, and add partial products.',
         principles: [
@@ -481,7 +481,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u5',
         title: 'Estimating Multi-Digit Products and Magnitude Checks',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3/imp-multi-digit-multiplication/v/estimating-multiplication-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Estimating Products',
         reading: 'Round numbers to their highest place value to estimate products and catch calculation errors quickly.',
         principles: [
@@ -499,7 +499,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u5',
         title: 'Dividing 3- and 4-Digit Numbers by 2-Digit Divisors',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3/imp-dividing-by-2-digits/v/dividing-by-a-two-digit-number',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division/imp-multi-digit-division-2/v/introduction-to-dividing-by-2-digits',
         videoTitle: 'Dividing by 2-Digits',
         reading: 'Estimate quotient digits, multiply divisor by candidate digit, subtract, check that remainder is smaller than divisor, and bring down.',
         principles: [
@@ -517,7 +517,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u5',
         title: 'Interpreting Division Remainders in Context',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3/imp-dividing-by-2-digits/v/interpreting-remainders',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Interpreting Division Remainders',
         reading: 'In word problems, decide if the remainder means you need one more container/bus, or if the remainder is the leftover fraction.',
         principles: [
@@ -536,7 +536,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Multiplication & Division',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Multiplication & Division Quiz',
         reading: 'Review evaluating fluency with multi-digit products and 2-digit division quotients.',
         principles: [
@@ -555,7 +555,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Unit 5 Test: Multi-Digit Computation Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Unit 5 Test Review',
         reading: 'Comprehensive test of multi-digit multiplication and 2-digit division.',
         principles: [
@@ -584,7 +584,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u6',
         title: 'Multiplying Fractions with Area Models',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2/imp-multiplying-fractions/v/multiplying-fractions-with-visual-models',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions/imp-multiplying-fractions/v/visualizing-fraction-products',
         videoTitle: 'Multiplying Fractions with Models',
         reading: 'A unit square partitioned horizontally and vertically shows that (a/b) x (c/d) equals the overlapping shaded region ac/bd.',
         principles: [
@@ -602,7 +602,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u6',
         title: 'Multiplying Fractions and Mixed Numbers Algorithm',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2/imp-multiplying-fractions/v/multiplying-fractions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions/imp-multiplying-fractions/v/multiplying-fractions',
         videoTitle: 'Multiplying Fractions Algorithm',
         reading: 'Multiply numerators straight across and multiply denominators straight across. Convert mixed numbers to improper fractions first.',
         principles: [
@@ -620,7 +620,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u6',
         title: 'Multiplication as Scaling & Resizing',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2/imp-multiplying-fractions/v/fraction-multiplication-as-scaling',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions',
         videoTitle: 'Fraction Multiplication as Scaling',
         reading: 'Multiplying a number by a fraction greater than 1 results in a larger number. Multiplying by a fraction less than 1 produces a smaller number.',
         principles: [
@@ -638,7 +638,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u6',
         title: 'Real-World Fraction Multiplication Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2/imp-multiplying-fractions/v/multiplying-fractions-word-problem',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions/imp-multiplying-fractions-word-problems/v/multiplying-fractions-word-problem',
         videoTitle: 'Fraction Multiplication Word Problems',
         reading: 'Solve word problems involving fractional parts of a whole, recipe measurements, and rectangular area calculation.',
         principles: [
@@ -657,7 +657,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Multiplying Fractions',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions',
         videoTitle: 'Multiplying Fractions Quiz',
         reading: 'Review session on multiplying fractions, simplifying products, and interpreting scaling.',
         principles: [
@@ -676,7 +676,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Unit 6 Test: Fraction Multiplication Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions',
         videoTitle: 'Unit 6 Test Review',
         reading: 'Comprehensive assessment of fraction multiplication and scaling principles.',
         principles: [
@@ -705,7 +705,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u7',
         title: 'Dividing Unit Fractions by Whole Numbers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2/imp-dividing-fractions/v/dividing-a-unit-fraction-by-a-whole-number',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions/imp-multiplying-fractions/v/visualizing-fraction-products',
         videoTitle: 'Dividing Unit Fraction by Whole Number',
         reading: 'When sharing 1/3 of a pizza among 4 friends, each receives (1/3) / 4 = 1/12 of the whole pizza.',
         principles: [
@@ -723,7 +723,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u7',
         title: 'Dividing Whole Numbers by Unit Fractions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2/imp-dividing-fractions/v/dividing-a-whole-number-by-a-unit-fraction',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions/imp-multiplying-fractions/v/visualizing-fraction-products',
         videoTitle: 'Dividing Whole Number by Unit Fraction',
         reading: 'Dividing 3 wholes by 1/4 asks: how many fourths fit inside 3? 3 x 4 = 12 fourths.',
         principles: [
@@ -741,7 +741,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u7',
         title: 'Fraction Division Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2/imp-dividing-fractions/v/dividing-fractions-word-problem',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten/imp-multiplying-and-dividing-with-powers-of-10/v/fractions-as-division-by-powers-of-10',
         videoTitle: 'Dividing Fractions Word Problems',
         reading: 'Solve real-world sharing problems. Determine whether the problem asks for the fraction of each share or the number of servings.',
         principles: [
@@ -760,7 +760,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Fraction Division',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions',
         videoTitle: 'Fraction Division Review',
         reading: 'Review session testing division of unit fractions and whole numbers.',
         principles: [
@@ -779,7 +779,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Unit 7 Test: Fraction Division Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions',
         videoTitle: 'Unit 7 Test Review',
         reading: 'Comprehensive assessment of fraction division concepts and word problem analysis.',
         principles: [
@@ -808,7 +808,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u8',
         title: 'Multiplying Decimals with Visual Grids and Arrays',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3/imp-multiplying-decimals/v/multiplying-decimals-with-grids',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Multiplying Decimals with Grids',
         reading: 'In a 10x10 hundredths grid, shading a 0.3 row by a 0.4 column covers 12 hundredths (0.12).',
         principles: [
@@ -826,7 +826,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u8',
         title: 'Standard Algorithm for Decimal Multiplication',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3/imp-multiplying-decimals/v/multiplying-decimals',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Decimal Multiplication Algorithm',
         reading: 'Multiply as if whole numbers. Count total decimal places across factors, then place the decimal point that many spots from the right.',
         principles: [
@@ -844,7 +844,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u8',
         title: 'Decimal Multiplication Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3/imp-multiplying-decimals/v/multiplying-decimals-word-problem',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Decimal Multiplication Word Problems',
         reading: 'Calculate costs per pound, fuel economy totals, and dimensions with decimal measurements accurately.',
         principles: [
@@ -863,7 +863,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Multiplying Decimals',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Decimal Multiplication Quiz',
         reading: 'Review session on decimal multiplication and decimal point placement.',
         principles: [
@@ -882,7 +882,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Unit 8 Test: Decimal Multiplication Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Unit 8 Test Review',
         reading: 'Comprehensive assessment of multiplying decimals up to hundredths.',
         principles: [
@@ -911,7 +911,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u9',
         title: 'Dividing Decimals by Whole Numbers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3/imp-dividing-decimals/v/dividing-decimals-by-a-whole-number',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Dividing Decimals by Whole Numbers',
         reading: 'Bring the decimal point straight up into the quotient above the dividend. Divide as with whole numbers.',
         principles: [
@@ -929,7 +929,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u9',
         title: 'Dividing Decimals by Decimals',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3/imp-dividing-decimals/v/dividing-decimals-completely-example',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Dividing Decimals by Decimals',
         reading: 'Shift the decimal point in the divisor right until it is a whole number. Shift the dividend decimal point the same number of places.',
         principles: [
@@ -947,7 +947,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u9',
         title: 'Decimal Division Applied Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3/imp-dividing-decimals/v/dividing-decimals-word-problem',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division/imp-multi-digit-division-2/v/introduction-to-dividing-by-2-digits',
         videoTitle: 'Decimal Division Word Problems',
         reading: 'Find unit rates, cost per item, and average split costs involving decimals.',
         principles: [
@@ -966,7 +966,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Dividing Decimals',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Decimal Division Review',
         reading: 'Review session on decimal division strategies and quotient decimal placement.',
         principles: [
@@ -985,7 +985,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Unit 9 Test: Decimal Division Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-multiplication-and-division-3',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/multi-digit-multiplication-and-division',
         videoTitle: 'Unit 9 Test Review',
         reading: 'Comprehensive assessment of decimal division operations and word problem solving.',
         principles: [
@@ -1014,7 +1014,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u10',
         title: 'Powers of 10 and Exponents Meaning',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten/imp-multiplying-and-dividing-powers-of-10/v/multiplying-by-powers-of-10',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten/imp-multiplying-and-dividing-with-powers-of-10/v/multiplying-and-dividing-by-powers-of-10',
         videoTitle: 'Powers of 10 and Exponents',
         reading: 'An exponent on 10 indicates the number of times 10 is multiplied by itself and matches the number of zeros in the standard numeral.',
         principles: [
@@ -1032,7 +1032,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u10',
         title: 'Multiplying Decimals by Powers of Ten',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten/imp-multiplying-and-dividing-powers-of-10/v/multiplying-decimals-by-powers-of-10',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten/imp-multiplying-and-dividing-with-powers-of-10/v/multiplying-and-dividing-by-powers-of-10',
         videoTitle: 'Multiplying by Powers of Ten',
         reading: 'Multiplying by 10ⁿ shifts the decimal point n places to the right because each digit becomes 10ⁿ times larger.',
         principles: [
@@ -1050,7 +1050,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u10',
         title: 'Dividing Decimals by Powers of Ten',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten/imp-multiplying-and-dividing-powers-of-10/v/dividing-decimals-by-powers-of-10',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten/imp-multiplying-and-dividing-with-powers-of-10/v/multiplying-and-dividing-by-powers-of-10',
         videoTitle: 'Dividing by Powers of Ten',
         reading: 'Dividing by 10ⁿ shifts the decimal point n places to the left, making each digit smaller by powers of 10.',
         principles: [
@@ -1069,7 +1069,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Powers of Ten',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math',
         videoTitle: 'Powers of Ten Review',
         reading: 'Review session on exponent notation and decimal shift directions.',
         principles: [
@@ -1088,7 +1088,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Unit 10 Test: Powers of Ten Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/powers-of-ten',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math',
         videoTitle: 'Unit 10 Test Review',
         reading: 'Comprehensive assessment of multiplying and dividing whole numbers and decimals by powers of 10.',
         principles: [
@@ -1117,7 +1117,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u11',
         title: 'Understanding Volume by Packing Unit Cubes',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3/imp-volume/v/measuring-volume-with-unit-cubes',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume/volume-with-unit-cubes/v/measuring-volume-with-unit-cubes',
         videoTitle: 'Unit Cubes and Volume',
         reading: 'Volume is the amount of three-dimensional space inside a solid figure, measured by packing it with 1-unit cubes without gaps or overlaps.',
         principles: [
@@ -1135,7 +1135,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u11',
         title: 'Volume Formulas V = l x w x h and V = B x h',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3/imp-volume/v/volume-of-a-rectangular-prism-or-box-examples',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume/volume-word-problems/a/volume-of-rectangular-prisms-review',
         videoTitle: 'Volume Formula V = lwh',
         reading: 'Calculate rectangular prism volume by multiplying length × width × height, or base area B × height.',
         principles: [
@@ -1153,7 +1153,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u11',
         title: 'Volume of Additive Composite Solids',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3/imp-volume/v/volume-of-composite-figures',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-volume/decompose-figures-to-find-volume/v/volume-in-unit-cubes-by-decomposing-shape',
         videoTitle: 'Volume of Composite Figures',
         reading: 'To find the volume of an L-shaped solid, split it into two non-overlapping rectangular prisms, calculate each volume, and add them.',
         principles: [
@@ -1172,7 +1172,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Volume',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math',
         videoTitle: 'Volume Review',
         reading: 'Review session on calculating prism volumes, finding missing dimensions, and composite figures.',
         principles: [
@@ -1191,7 +1191,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Unit 11 Test: Volume Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math',
         videoTitle: 'Unit 11 Test Review',
         reading: 'Comprehensive assessment of rectangular prism volume and 3D geometric measurement.',
         principles: [
@@ -1220,7 +1220,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u12',
         title: 'Coordinate Grid Axes, Origin, and Ordered Pairs',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3/imp-coordinate-plane/v/coordinate-plane-quadrant-1',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3',
         videoTitle: 'Coordinate Plane Intro',
         reading: 'The coordinate plane is formed by two intersecting perpendicular number lines: horizontal x-axis and vertical y-axis meeting at (0, 0).',
         principles: [
@@ -1238,7 +1238,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u12',
         title: 'Plotting Points in Quadrant 1',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3/imp-coordinate-plane/v/plotting-points-on-a-coordinate-plane',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3/imp-intro-to-the-coordinate-plane/a/graph-points-review',
         videoTitle: 'Plotting Points on a Grid',
         reading: 'For any ordered pair (x, y), start at origin (0, 0), move x units right along the x-axis, then move y units straight up.',
         principles: [
@@ -1256,7 +1256,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u12',
         title: 'Graphing Real-World Data and Interpreting Trends',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3/imp-coordinate-plane/v/coordinate-plane-word-problems-in-quadrant-1',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking/imp-number-patterns/v/interpreting-and-graphing-relationships-between-patterns',
         videoTitle: 'Coordinate Plane Word Problems',
         reading: 'Graph distance over time, growth trends, and prices. The slope of connected points reveals the rate of change.',
         principles: [
@@ -1323,7 +1323,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u13',
         title: 'Order of Operations with Parentheses, Brackets, and Braces',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking/imp-order-of-operations/v/introduction-to-order-of-operations',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Order%20of%20Operations%20Intro%205th%20grade%20math',
         videoTitle: 'Order of Operations Intro',
         reading: 'Follow PEMDAS: evaluate inside grouping symbols first, then multiply and divide from left to right, then add and subtract from left to right.',
         principles: [
@@ -1341,7 +1341,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u13',
         title: 'Writing Numerical Expressions from Verbal Phrases',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking/imp-writing-expressions/v/writing-expressions-with-variables-examples',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Writing%20Numerical%20Expressions%205th%20grade%20math',
         videoTitle: 'Writing Numerical Expressions',
         reading: 'Translate verbal phrases into mathematical expressions without evaluating them. "Add 8 and 7, then multiply by 2" becomes (8 + 7) x 2.',
         principles: [
@@ -1359,7 +1359,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u13',
         title: 'Generating Number Patterns & Comparing Sequences',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking/imp-number-patterns/v/math-patterns-example-2',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Number%20Patterns%20and%20Sequences%205th%20grade%20math',
         videoTitle: 'Number Patterns and Sequences',
         reading: 'Generate two numerical patterns using two given rules (e.g. Add 3, Add 6). Form ordered pairs from corresponding terms and graph them.',
         principles: [
@@ -1378,7 +1378,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Algebraic Thinking',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math',
         videoTitle: 'Algebraic Thinking Review',
         reading: 'Review session on evaluating complex expressions with grouping symbols and writing algebraic statements.',
         principles: [
@@ -1397,7 +1397,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Unit 13 Test: Algebraic Thinking Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-algebraic-thinking',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math',
         videoTitle: 'Unit 13 Test Review',
         reading: 'Comprehensive assessment of order of operations, numerical expressions, and sequence comparison.',
         principles: [
@@ -1426,7 +1426,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u14',
         title: 'Converting Customary Units of Length, Weight, and Capacity',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3/imp-unit-measurement-conversion/v/converting-us-customary-units',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Customary%20Measurement%20Conversions%205th%20grade%20math',
         videoTitle: 'Customary Measurement Conversions',
         reading: 'To convert larger units to smaller units, multiply (e.g. 3 ft x 12 = 36 in). To convert smaller to larger, divide (e.g. 48 oz / 16 = 3 lb).',
         principles: [
@@ -1444,7 +1444,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u14',
         title: 'Converting Metric Units of Length, Mass, and Volume',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3/imp-unit-measurement-conversion/v/converting-metric-units',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Metric%20Unit%20Conversions%205th%20grade%20math',
         videoTitle: 'Metric Unit Conversions',
         reading: 'The metric system is base 10: kilo (1,000), base unit (1), centi (1/100), milli (1/1,000). Shift decimals to convert units.',
         principles: [
@@ -1462,7 +1462,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u14',
         title: 'Multi-Step Measurement Conversion Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3/imp-unit-measurement-conversion/v/unit-conversion-word-problem',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Measurement%20Conversion%20Word%20Problems%205th%20grade%20math',
         videoTitle: 'Measurement Conversion Word Problems',
         reading: 'Convert measurements to a common unit before comparing, adding, or finding remaining amounts in word problems.',
         principles: [
@@ -1481,7 +1481,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Mid-Unit Quiz: Unit Conversions',
         kind: 'lesson_review',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math',
         videoTitle: 'Unit Conversion Review',
         reading: 'Review session on converting customary and metric measurements.',
         principles: [
@@ -1500,7 +1500,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Unit 14 Test: Unit Conversions Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math',
         videoTitle: 'Unit 14 Test Review',
         reading: 'Comprehensive assessment of measurement conversion systems.',
         principles: [
@@ -1529,7 +1529,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u15',
         title: 'Making Line Plots with Fractional Measurements',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3/imp-fraction-line-plots/v/making-a-line-plot-with-fractions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/5th-multiply-fractions/imp-multiplying-fractions/v/visualizing-fraction-products',
         videoTitle: 'Fraction Line Plots Intro',
         reading: 'Create a line plot by marking number line intervals in fractions of a unit (1/2, 1/4, 1/8) and placing an X for each data point.',
         principles: [
@@ -1547,7 +1547,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u15',
         title: 'Solving Problems by Adding and Subtracting Line Plot Data',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3/imp-fraction-line-plots/v/interpreting-a-line-plot-with-fractions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-fractions-3/imp-visually-adding-and-subtracting-fractions-with-unlike-denominators/v/visually-adding-fractions-with-unlike-denominators',
         videoTitle: 'Interpreting Fraction Line Plots',
         reading: 'Use fraction addition and subtraction to find total combined weight, difference between extremes, and fair share averages.',
         principles: [
@@ -1565,7 +1565,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u15',
         title: 'Redistribution and Fair Share Analysis',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3/imp-fraction-line-plots/v/fair-share-on-line-plots',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Fair%20Share%20on%20Line%20Plots%205th%20grade%20math',
         videoTitle: 'Fair Share on Line Plots',
         reading: 'To find fair share, sum all fractional quantities on the line plot and divide the total by the number of data observations.',
         principles: [
@@ -1584,7 +1584,7 @@ export const G5_MATH_UNITS: Unit[] = [
         title: 'Unit 15 Test: Line Plots Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-measurement-and-data-3',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math',
         videoTitle: 'Unit 15 Test Review',
         reading: 'Assessment testing line plot creation, fractional calculations, and fair share analysis.',
         principles: [
@@ -1613,7 +1613,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u16',
         title: 'Classifying Two-Dimensional Figures in a Hierarchy',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3/imp-properties-of-shapes/v/classifying-shapes-by-properties',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3',
         videoTitle: 'Classifying Shapes Hierarchy',
         reading: 'Shapes can be grouped in a hierarchy: all squares are rectangles, all rectangles are parallelograms, and all parallelograms are quadrilaterals.',
         principles: [
@@ -1631,7 +1631,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u16',
         title: 'Classifying Triangles and Quadrilaterals by Properties',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3/imp-properties-of-shapes/v/classifying-triangles-example',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3',
         videoTitle: 'Classifying Triangles',
         reading: 'Classify triangles by angles (acute, right, obtuse) and by sides (equilateral, isosceles, scalene). Classify quadrilaterals by parallel pairs and side lengths.',
         principles: [
@@ -1649,7 +1649,7 @@ export const G5_MATH_UNITS: Unit[] = [
         unitId: 'g5-math-u16',
         title: 'Euler Diagrams and Venn Diagrams for Shapes',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3/imp-properties-of-shapes/v/quadrilateral-properties',
+        videoUrl: 'https://www.khanacademy.org/math/cc-fifth-grade-math/imp-geometry-3',
         videoTitle: 'Quadrilateral Properties & Diagrams',
         reading: 'Use Venn diagrams to show overlapping shape properties, such as figures with right angles and equal side lengths.',
         principles: [

@@ -309,7 +309,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Map Coordinates',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings/intro-to-history/v/latitude-and-longitude',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Latitude%20and%20Longitude%204th%20grade%20history',
           videoTitle: 'Khan Academy: Latitude and Longitude',
           reading:
             'Latitude lines circle Earth east to west, measuring distance from the Equator (0°). Longitude lines run pole to pole, measuring distance from the Prime Meridian (0°).',
@@ -322,7 +322,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Map Reading Tools',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings/intro-to-history/v/map-keys-and-symbols',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Reading%20Map%20Scales%20and%20Legends%204th%20grade%20history',
           videoTitle: 'Khan Academy: Reading Map Scales and Legends',
           reading:
             'A map legend explains colors and symbols. The map scale converts map inches into real miles, and the compass rose points to cardinal and intermediate directions.',
@@ -335,7 +335,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Thematic Maps',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings/intro-to-history/v/thematic-maps',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Thematic%20Maps%204th%20grade%20history',
           videoTitle: 'Khan Academy: Thematic Maps',
           reading:
             'Thematic maps display specific geographic themes such as climate, population density, or natural resource distribution across regions.',
@@ -348,7 +348,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Unit Review',
           estimatedMinutes: 12,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/world-history-beginnings/intro-to-history',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Map%20Skills%20Review%204th%20grade%20history',
           videoTitle: 'Map Skills Review',
           reading:
             'Review assessment on locating coordinates with latitude and longitude, interpreting scale rulers, and understanding map symbols.',
@@ -370,7 +370,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Midwest Region',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-history/colonial-north-america/early-colonies/v/the-american-midwest',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Regions%20of%20North%20America%204th%20grade%20history',
           videoTitle: 'Khan Academy: Regions of North America',
           reading:
             'Ohio is located in the fertile Midwest region. It is bordered by Lake Erie to the north and the Ohio River to the south, serving as a historic gateway for migration.',
@@ -383,7 +383,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'US Landforms',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-history/colonial-north-america/early-colonies/v/us-geography-and-landforms',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Major%20U.S.%20Mountains%20and%20Rivers%204th%20grade%20history',
           videoTitle: 'Khan Academy: Major U.S. Mountains and Rivers',
           reading:
             'The Appalachian Mountains rise in the east, while the Rockies dominate the west. Major rivers like the Mississippi and Ohio enabled commerce and transport.',
@@ -396,7 +396,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Great Lakes Basin',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-history/colonial-north-america/early-colonies/v/great-lakes-geography',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=The%20Great%20Lakes%20System%204th%20grade%20history',
           videoTitle: 'Khan Academy: The Great Lakes System',
           reading:
             'The five Great Lakes hold one-fifth of the world’s fresh surface water. Lake Erie creates a mild shoreline climate ideal for vineyards and orchard farming.',
@@ -431,7 +431,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Mound Builders',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.ohiohistory.org/learn/education-and-outreach/student-resources',
+          videoUrl: 'https://www.ohiohistory.org',
           videoTitle: 'Ohio History Connection: Hopewell Ceremonial Earthworks',
           reading:
             'Between 800 BCE and 500 CE, the Adena and Hopewell cultures built massive earthen geometric enclosures and mounds across southern Ohio for astronomy and ceremonial gatherings.',
@@ -444,7 +444,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Serpent Mound & Trade',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.ohiohistory.org/visit/browse-historical-sites/serpent-mound',
+          videoUrl: 'https://www.khanacademy.org/humanities/seeing-america-sh/x35b7de5e9cd6796d:theme-geography-and-the-environment/x35b7de5e9cd6796d:1000-1875/a/the-great-serpent-mound',
           videoTitle: 'Ohio History Connection: The Great Serpent Mound',
           reading:
             'Serpent Mound in Adams County is the world’s largest effigy mound. Hopewell artifacts included copper from Lake Superior, shells from the Gulf, and obsidian from the Rockies.',
@@ -457,7 +457,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Indigenous Villages',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.ohiohistory.org/learn/education-and-outreach/virtual-learning/early-american-indians',
+          videoUrl: 'https://www.ohiohistory.org',
           videoTitle: 'Ohio History Connection: Fort Ancient Village Life',
           reading:
             'Later prehistoric cultures like the Fort Ancient cultivated maize (corn), beans, and squash, building fortified roundhouse villages along fertile river valleys.',
@@ -492,7 +492,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Fur Trade',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-history/colonial-north-america/early-colonies/v/the-fur-trade',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=The%20North%20American%20Fur%20Trade%204th%20grade%20history',
           videoTitle: 'Khan Academy: The North American Fur Trade',
           reading:
             'Both the French and the British traded metal knives, kettles, and cloth with Indigenous tribes in exchange for beaver furs that were processed into stylish felt hats in Europe.',
@@ -505,7 +505,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'French & Indian War',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution/the-seven-years-war/v/french-and-indian-war',
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution',
           videoTitle: 'Khan Academy: The French and Indian War',
           reading:
             'Rivalry over the Ohio Country sparked the French and Indian War in 1754. Britain’s victory in 1763 forced France to cede its territory east of the Mississippi.',
@@ -518,7 +518,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Frontier Resistance',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution/the-french-and-indian-war/v/proclamation-of-1763',
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution',
           videoTitle: 'Khan Academy: Pontiac’s War and Proclamation Line',
           reading:
             'Ottawa leader Pontiac united Ohio Valley tribes to resist British settler encroachment. King George III issued the Proclamation of 1763 forbidding settlement past the Appalachians.',
@@ -555,7 +555,7 @@ export const G4_SOCIAL_COURSE: Course = {
           isOhioExtension: true,
           partOf: 'Northwest Ordinance',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution/creating-a-nation/v/the-northwest-ordinance',
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution',
           videoTitle: 'Khan Academy: The Northwest Ordinance of 1787',
           reading:
             'Passed in 1787, the Northwest Ordinance established governance for new territories, outlawed slavery in the region, established public education, and guaranteed trial by jury.',
@@ -569,7 +569,7 @@ export const G4_SOCIAL_COURSE: Course = {
           isOhioExtension: true,
           partOf: 'Ohio Statehood',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.ohiohistory.org/learn/education-and-outreach/student-resources',
+          videoUrl: 'https://www.ohiohistory.org',
           videoTitle: 'Ohio History Connection: Ohio Becomes the 17th State',
           reading:
             'Ohio drafted its first constitution in Chillicothe and officially joined the Union as the 17th state in 1803, with Edward Tiffin elected as its first governor.',
@@ -583,7 +583,7 @@ export const G4_SOCIAL_COURSE: Course = {
           isOhioExtension: true,
           partOf: 'Ohio Constitution',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.ohiohistory.org/learn/education-and-outreach/virtual-learning/early-ohio-government',
+          videoUrl: 'https://www.khanacademy.org/humanities/us-government-and-civics/x231f0f4241b58f49:us-gov-democracy-today/x231f0f4241b58f49:how-do-state-and-local-governments-work/v/state-and-local-government-video',
           videoTitle: 'Ohio History Connection: The 1802 Constitution',
           reading:
             'Ohio’s 1802 Constitution established a powerful General Assembly legislature, limited the governor’s veto power, and affirmed basic religious and trial rights.',
@@ -619,7 +619,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Ohio Canals',
           estimatedMinutes: 10,
-          videoUrl: 'https://ohiodnr.gov/discover-and-learn/history-culture/canals-in-ohio',
+          videoUrl: 'https://ohiodnr.gov/discover-and-learn/safety-conservation/about-ODNR/real-estate/canal-lands/recreation-ohio-canals',
           videoTitle: 'Ohio DNR: The Canal Era in Ohio',
           reading:
             'Constructed in the 1820s and 1830s, the Ohio & Erie Canal connected Lake Erie at Cleveland to the Ohio River at Portsmouth, reducing crop shipping costs by 90 percent.',
@@ -632,7 +632,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Pioneer Trade',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.ohiohistory.org/learn/education-and-outreach/student-resources',
+          videoUrl: 'https://www.ohiohistory.org',
           videoTitle: 'Ohio History Connection: The National Road in Ohio',
           reading:
             'The National Road reached Zanesville and Columbus, allowing stagecoaches and Conestoga wagons to transport grain, wool, and timber to bustling eastern cities.',
@@ -645,7 +645,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Railroads',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.ohiohistory.org/learn/education-and-outreach/virtual-learning/ohio-railroads',
+          videoUrl: 'https://www.ohiohistory.org',
           videoTitle: 'Ohio History Connection: Early Railroads in Ohio',
           reading:
             'By the 1850s, steam locomotives rapidly superseded canal boats, operating year-round through winter ice and creating industrial boom cities across Ohio.',
@@ -680,7 +680,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Branches of Government',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution/creating-a-nation/v/three-branches-of-government',
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution',
           videoTitle: 'Khan Academy: The Three Branches of Government',
           reading:
             'The Legislative Branch writes laws in Congress, the Executive Branch carries out laws under the President, and the Judicial Branch interprets laws in the courts.',
@@ -693,7 +693,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Citizen Rights',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution/creating-a-nation/v/the-bill-of-rights',
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution',
           videoTitle: 'Khan Academy: The Bill of Rights',
           reading:
             'The first ten amendments guarantee basic individual freedoms, including free speech and religion. Good citizens participate by voting and obeying laws.',
@@ -706,7 +706,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Local Governance',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution/the-articles-of-confederation/v/state-and-local-governments',
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution',
           videoTitle: 'Khan Academy: State and Local Government',
           reading:
             'While federal laws apply nationwide, Ohio state laws and city councils handle local school districts, fire departments, parks, and road maintenance.',
@@ -741,7 +741,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Opportunity Cost',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/microeconomics/basic-economic-concepts-gen-micro/scarcity-and-choice/v/scarcity',
+          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/microeconomics/basic-economic-concepts-gen-micro',
           videoTitle: 'Khan Academy: Scarcity and Opportunity Cost',
           reading:
             'Scarcity exists because human wants exceed available resources. Opportunity cost represents the value of the next best choice given up when deciding.',
@@ -754,7 +754,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Economic Resources',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/microeconomics/basic-economic-concepts-gen-micro/scarcity-and-choice/v/factors-of-production',
+          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/microeconomics/basic-economic-concepts-gen-micro',
           videoTitle: 'Khan Academy: Factors of Production',
           reading:
             'Businesses combine natural resources (soil, water), human labor (workers), and capital resources (tools, tractors, buildings) to produce goods and services.',
@@ -767,7 +767,7 @@ export const G4_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Market Prices',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium/supply-demand-intro/v/law-of-demand',
+          videoUrl: 'https://www.khanacademy.org/economics-finance-domain/ap-macroeconomics/basic-economics-concepts-macro/market-equilibrium-disequilibrium-and-changes-in-equilibrium/v/changes-in-equilibrium-price-and-quantity-when-supply-and-demand-change-khan-academy',
           videoTitle: 'Khan Academy: Supply, Demand, and Price',
           reading:
             'When consumer demand rises faster than supply, market prices tend to increase. Competition among producers encourages higher quality and lower consumer costs.',

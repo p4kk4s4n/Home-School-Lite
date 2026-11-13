@@ -176,7 +176,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Exponent Rules',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-exponent-properties/v/exponent-rules-part-1',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-exponent-properties/v/exponent-properties-involving-products',
         videoTitle: 'Khan Academy: Exponent Properties (Product & Power Rules)',
         reading:
           'When multiplying powers with matching bases, add the exponents: x^a · x^b = x^(a+b). When raising a power to a power, multiply exponents: (x^a)^b = x^(a·b).',
@@ -190,7 +190,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Power Rules',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-exponent-properties/v/negative-exponents',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations',
         videoTitle: 'Khan Academy: Negative Exponents and Power Rules',
         reading:
           'A base raised to a negative exponent equals its reciprocal with a positive power: x^(-n) = 1 / x^n. Any non-zero base to power zero equals 1.',
@@ -204,7 +204,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Scientific Notation',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-scientific-notation/v/scientific-notation-intro',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-scientific-notation-compu/v/multiplying-and-dividing-in-scientific-notation',
         videoTitle: 'Khan Academy: Intro to Scientific Notation',
         reading:
           'Scientific notation expresses numbers as a × 10^n where 1 ≤ a < 10. Move decimal point so one non-zero digit is left; count shifts for power n.',
@@ -218,7 +218,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Roots Review',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-roots/v/understanding-square-roots',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations',
         videoTitle: 'Khan Academy: Square Roots of Perfect Squares',
         reading:
           'The principal square root √n finds the positive factor that multiplies by itself to equal n. For example, √49 = 7 because 7 × 7 = 49.',
@@ -241,7 +241,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Number Classification',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-irrational-numbers/v/introduction-to-rational-and-irrational-numbers',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations',
         videoTitle: 'Khan Academy: Rational and Irrational Numbers',
         reading:
           'Rational numbers can be written as fractions of integers with terminating or repeating decimals. Irrationals have non-terminating, non-repeating decimals.',
@@ -255,7 +255,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Root Approximations',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-approximating-irrational-numbers/v/approximating-square-roots',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-approximating-irrational-numbers/v/approximating-square-roots-2',
         videoTitle: 'Khan Academy: Approximating Square Roots',
         reading:
           'Locate irrational square roots by bounding them between consecutive perfect squares. For instance, √20 lies between √16 (4) and √25 (5).',
@@ -269,7 +269,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Decimal Conversion',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/cc-8th-repeating-decimals/v/converting-repeating-decimals-to-fractions-1',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations',
         videoTitle: 'Khan Academy: Converting Repeating Decimals to Fractions',
         reading:
           'Set x equal to repeating decimal, multiply by 10^k where k is repeating period length, subtract original x, and solve for fractional ratio.',
@@ -283,7 +283,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Real Numbers Review',
         estimatedMinutes: 12,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations/v/real-number-system-review',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations',
         videoTitle: 'Khan Academy: Real Number System Review',
         reading:
           'Review distinguishing whole, integer, rational, and irrational classifications, ordering roots on number lines, and decimal conversion strategies.',
@@ -306,7 +306,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Distributive Equations',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-solving-equations/cc-8th-linear-equations/v/equations-3',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-solving-equations',
         videoTitle: 'Khan Academy: Multi-Step Linear Equations',
         reading:
           'Clear parentheses with distributive property, combine like terms on each side, and isolate variable using inverse addition/subtraction and multiplication/division.',
@@ -320,7 +320,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Variables on Both Sides',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-solving-equations/cc-8th-linear-equations/v/equations-with-variables-on-both-sides',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-solving-equations/variables-on-both-sides/e/linear_equations_3',
         videoTitle: 'Khan Academy: Variables on Both Sides',
         reading:
           'To solve ax + b = cx + d, subtract variable cx from both sides, subtract constant b, and divide by the remaining coefficient to find x.',
@@ -334,7 +334,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Equation Solutions',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-solving-equations/cc-8th-number-of-solutions-to-linear-equations/v/number-of-solutions-to-linear-equations',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-solving-equations',
         videoTitle: 'Khan Academy: Number of Solutions to Linear Equations',
         reading:
           'An equation with x = c has 1 solution. A contradiction (0 = 5) has no solution. An identity (7 = 7) has infinitely many solutions.',
@@ -348,7 +348,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Equations Review',
         estimatedMinutes: 12,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-solving-equations/v/solving-equations-review',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-solving-equations',
         videoTitle: 'Khan Academy: Solving Linear Equations Review',
         reading:
           'Synthesize multi-step equation procedures, clearing fractions, collecting terms, and classifying solution counts.',
@@ -371,7 +371,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Slope Formula',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/cc-8th-slope/v/slope-of-a-line',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions',
         videoTitle: 'Khan Academy: Finding the Slope of a Line',
         reading:
           'Slope (m) measures vertical change divided by horizontal change: m = (y₂ - y₁) ÷ (x₂ - x₁). A positive slope rises from left to right.',
@@ -385,7 +385,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Slope-Intercept Form',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/cc-8th-slope-intercept-form/v/slope-intercept-form',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions',
         videoTitle: 'Khan Academy: Slope-Intercept Form y = mx + b',
         reading:
           'In y = mx + b, m represents the slope (rate of change) and b represents the y-intercept (the point (0, b) where the line crosses the y-axis).',
@@ -399,7 +399,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Graphing Lines',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/cc-8th-graphing-slope-intercept/v/graphing-a-line-in-slope-intercept-form',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions',
         videoTitle: 'Khan Academy: Graphing Lines in Slope-Intercept Form',
         reading:
           'Plot the y-intercept (0, b) first. Use the slope m = rise/run to plot a second point, and draw a straight line through both coordinates.',
@@ -413,7 +413,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Slope Review',
         estimatedMinutes: 12,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/v/linear-equations-review',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions',
         videoTitle: 'Khan Academy: Linear Equations and Slope Review',
         reading:
           'Review slope calculations between points, table interpretations, and converting verbal scenarios into slope-intercept form equations.',
@@ -436,7 +436,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Graphing Systems',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic/cc-8th-systems-overview/v/solving-linear-systems-by-graphing',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic/cc-8th-systems-graphically/v/graphings-systems-of-equations',
         videoTitle: 'Khan Academy: Systems of Equations by Graphing',
         reading:
           'A system of linear equations consists of two lines. The solution is the single intersection coordinate point (x, y) satisfying both equations.',
@@ -450,7 +450,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Substitution',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic/cc-8th-systems-overview/v/solving-linear-systems-by-substitution',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic',
         videoTitle: 'Khan Academy: Solving Systems by Substitution',
         reading:
           'When one equation expresses y in terms of x, substitute that expression into the second equation to solve for x, then back-substitute to find y.',
@@ -464,7 +464,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'System Solutions',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic/cc-8th-systems-solutions/v/number-of-solutions-to-a-system-of-equations-algebraically',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic/cc-8th-systems-graphically/v/graphings-systems-of-equations',
         videoTitle: 'Khan Academy: Number of Solutions to Linear Systems',
         reading:
           'Intersecting lines have 1 solution. Parallel lines with matching slopes have 0 solutions. Identical coincident lines have infinite solutions.',
@@ -478,7 +478,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Systems Review',
         estimatedMinutes: 12,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic/v/systems-of-equations-review',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic',
         videoTitle: 'Khan Academy: Systems of Equations Review',
         reading:
           'Practice finding simultaneous solution coordinates, setting up systems from real-world contexts, and verifying solutions algebraically.',
@@ -501,7 +501,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Function Basics',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/cc-8th-function-intro/v/what-is-a-function',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions',
         videoTitle: 'Khan Academy: What is a Function?',
         reading:
           'A function is a rule that assigns exactly one output y to each input x. If an input x corresponds to more than one output, the relation is not a function.',
@@ -515,7 +515,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Rate of Change',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/cc-8th-function-intro/v/comparing-features-of-functions-1',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions',
         videoTitle: 'Khan Academy: Comparing Functions in Graphs and Tables',
         reading:
           'Compare two linear functions expressed algebraically, graphically, or numerically in tables by calculating and comparing their respective slopes.',
@@ -529,7 +529,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Linearity',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/cc-8th-linear-functions/v/linear-and-nonlinear-functions-example-3',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions',
         videoTitle: 'Khan Academy: Linear vs Non-Linear Functions',
         reading:
           'Linear functions produce straight lines with constant rates of change (Δy/Δx). Non-linear functions have variable rates of change that curve.',
@@ -543,7 +543,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Functions Review',
         estimatedMinutes: 12,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions/v/linear-functions-review',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions',
         videoTitle: 'Khan Academy: Functions Mastery Checkpoint',
         reading:
           'Review function mapping, input-output evaluation, linear function identification, and interpreting initial values in real-world contexts.',
@@ -566,7 +566,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Translations',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-transformations/v/translations-on-the-coordinate-plane',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry',
         videoTitle: 'Khan Academy: Translations on the Coordinate Plane',
         reading:
           'A translation slides a figure without changing size or shape. To translate (x, y) by (dx, dy), compute (x + dx, y + dy).',
@@ -580,7 +580,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Reflections',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-transformations/v/reflecting-points-exercise',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry',
         videoTitle: 'Khan Academy: Reflections Across Axes',
         reading:
           'Reflecting across x-axis negates y: (x, -y). Reflecting across y-axis negates x: (-x, y). The transformed figure remains strictly congruent.',
@@ -594,7 +594,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Rotations',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-transformations/v/rotating-shapes-about-the-origin',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry',
         videoTitle: 'Khan Academy: Rotations About the Origin',
         reading:
           'A 180° rotation maps (x, y) to (-x, -y). A 90° clockwise rotation maps (x, y) to (y, -x). Rigid rotations preserve segment lengths and angle measures.',
@@ -608,7 +608,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Transformations Review',
         estimatedMinutes: 12,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/v/rigid-transformations-review',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry',
         videoTitle: 'Khan Academy: Transformations & Congruence Review',
         reading:
           'Review coordinates under translations, reflections, rotations, and verify congruency of image figures through sequences of rigid motions.',
@@ -631,7 +631,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Dilations',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-dilations/v/dilations-intro',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry',
         videoTitle: 'Khan Academy: Dilations and Scale Factors',
         reading:
           'A dilation centered at origin multiplies coordinates by scale factor k: (kx, ky). If k > 1 it expands; if 0 < k < 1 it reduces in size.',
@@ -645,7 +645,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Similarity',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-similarity/v/similar-shapes',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry',
         videoTitle: 'Khan Academy: Similar Shapes and Scale Ratios',
         reading:
           'Similar figures have equal corresponding angle measurements and strictly proportional corresponding side lengths.',
@@ -659,7 +659,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Transversals',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-angles-between-lines/v/angles-formed-by-parallel-lines-and-transversals',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry',
         videoTitle: 'Khan Academy: Angles Formed by Transversals',
         reading:
           'Transversals intersecting parallel lines form congruent alternate interior, alternate exterior, and corresponding angle pairs, with supplementary consecutive angles.',
@@ -673,7 +673,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Triangle Angles',
         estimatedMinutes: 12,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-triangle-angles/v/triangle-angle-sum',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry',
         videoTitle: 'Khan Academy: Triangle Angle Sum and Exterior Angles',
         reading:
           'Interior angles in any triangle sum to 180°. An exterior angle equals the sum of the two opposite remote interior angles.',
@@ -696,7 +696,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Pythagorean Hypotenuse',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem/v/the-pythagorean-theorem',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem/a/pythagorean-theorem-intro',
         videoTitle: 'Khan Academy: Intro to the Pythagorean Theorem',
         reading:
           'In any right triangle, the sum of the squares of the legs equals the square of the hypotenuse: a² + b² = c². Solve for hypotenuse c = √(a² + b²).',
@@ -710,7 +710,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Pythagorean Leg',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem/v/pythagorean-theorem-find-leg',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem/a/pythagorean-theorem-intro',
         videoTitle: 'Khan Academy: Finding a Missing Leg in Right Triangles',
         reading:
           'When given the hypotenuse c and one leg a, subtract the square of leg a from c² to find the missing leg: b = √(c² - a²).',
@@ -724,7 +724,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Coordinate Distance',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem/v/distance-formula',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem/a/pythagorean-theorem-intro',
         videoTitle: 'Khan Academy: Coordinate Distance and Pythagoras',
         reading:
           'Find segment distance between (x₁, y₁) and (x₂, y₂) by treating horizontal and vertical differences as legs: d = √((x₂ - x₁)² + (y₂ - y₁)²).',
@@ -738,7 +738,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Pythagorean Review',
         estimatedMinutes: 12,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/v/pythagorean-theorem-review',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry',
         videoTitle: 'Khan Academy: Pythagorean Theorem Applications Review',
         reading:
           'Apply the Pythagorean theorem to calculate hypotenuse lengths, missing leg distances, coordinate diagonals, and 3D diagonal lengths.',
@@ -763,7 +763,7 @@ export const G8_MATH_UNITS: Unit[] = [
         isOhioExtension: true,
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-volume/v/cylinder-volume-formula',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-volume/e/volumes-of-cones--cylinders--and-spheres',
         videoTitle: 'Khan Academy: Cylinder Volume Formula',
         reading:
           'A cylinder has a circular base of area πr² and height h. Multiply base area by height to compute 3D volume: V = πr²h cubic units.',
@@ -778,7 +778,7 @@ export const G8_MATH_UNITS: Unit[] = [
         isOhioExtension: true,
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-volume/v/volume-cone-example',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-volume/e/volume-of-cones',
         videoTitle: 'Khan Academy: Volume of a Cone',
         reading:
           'A cone with matching base radius and height holds exactly one-third the volume of a cylinder: V = 1/3 πr²h cubic units.',
@@ -793,7 +793,7 @@ export const G8_MATH_UNITS: Unit[] = [
         isOhioExtension: true,
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-volume/v/volume-of-a-sphere',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-volume/e/volume-of-spheres',
         videoTitle: 'Khan Academy: Volume of a Sphere',
         reading:
           'The 3D volume of a sphere depends only on its radius r: V = (4/3)πr³ cubic units. Compute volume in terms of π or round using 3.14.',
@@ -808,7 +808,7 @@ export const G8_MATH_UNITS: Unit[] = [
         isOhioExtension: true,
         estimatedMinutes: 12,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/v/volume-review',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry',
         videoTitle: 'Khan Academy: Volume of 3D Figures Review',
         reading:
           'Calculate volume across cylinders, cones, and spheres, and solve real-world composite solids problems using radius and height measurements.',
@@ -831,7 +831,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Scatter Plots',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-data/cc-8th-scatter-plots-topic/v/constructing-scatter-plot',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-data/cc-8th-interpreting-scatter-plots/a/clusters-in-scatter-plots',
         videoTitle: 'Khan Academy: Constructing and Interpreting Scatter Plots',
         reading:
           'Scatter plots display paired quantitative data. Associations may be positive, negative, or non-linear, with clustering or outlier data points.',
@@ -845,7 +845,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Trend Lines',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-data/cc-8th-scatter-plots-topic/v/fitting-line-to-data',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-data/cc-8th-line-of-best-fit/v/estimating-the-line-of-best-fit-exercise',
         videoTitle: 'Khan Academy: Fitting a Line to Data',
         reading:
           'A line of best fit models linear data trends. Use the slope and y-intercept of the trend line to make predictions for unmeasured data values.',
@@ -859,7 +859,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Two-Way Tables',
         estimatedMinutes: 10,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-data/cc-8th-two-way-tables/v/two-way-frequency-tables',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-data/two-way-tables/v/two-way-frequency-tables-and-venn-diagrams',
         videoTitle: 'Khan Academy: Two-Way Tables and Relative Frequencies',
         reading:
           'Two-way tables summarize categorical data from the same subjects. Calculate row and column relative frequencies to evaluate evidence of association.',
@@ -873,7 +873,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Statistics Review',
         estimatedMinutes: 12,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-data/v/scatter-plots-review',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-data',
         videoTitle: 'Khan Academy: Bivariate Data and Statistics Review',
         reading:
           'Examine scatter plot clusters, identify outliers, estimate lines of best fit, and interpret relative frequencies from two-way tables.',
@@ -896,7 +896,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Course Challenge Part 1',
         estimatedMinutes: 15,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-course-challenge/v/pre-algebra-synthesis',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math',
         videoTitle: 'Khan Academy: Grade 8 Pre-Algebra Synthesis',
         reading:
           'Synthesize exponent properties, scientific notation, roots, irrational numbers, multi-step equations, and systems of linear equations.',
@@ -910,7 +910,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Course Challenge Part 2',
         estimatedMinutes: 15,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-course-challenge/v/functions-geometry-synthesis',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math',
         videoTitle: 'Khan Academy: Grade 8 Functions & Geometry Synthesis',
         reading:
           'Synthesize linear function rules, coordinate transformations, similarity dilations, and the Pythagorean theorem.',
@@ -924,7 +924,7 @@ export const G8_MATH_UNITS: Unit[] = [
         partOf: 'Course Challenge Part 3',
         estimatedMinutes: 15,
         videoUrl:
-          'https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-course-challenge/v/volume-data-capstone',
+          'https://www.khanacademy.org/math/cc-eighth-grade-math',
         videoTitle: 'Khan Academy: Grade 8 Volume & Data Capstone',
         reading:
           'Complete capstone review of 3D cylinder, cone, and sphere volume formulas alongside scatter plot trend lines and two-way frequency tables.',

@@ -1099,6 +1099,59 @@ input[type="range"] {
   flex-shrink: 0;
 }
 
+.video-stage-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.btn-khan-search,
+.btn-khan-help {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+.btn-khan-search:hover:not(:disabled),
+.btn-khan-help:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.24);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-khan-help {
+  min-width: 2.4rem;
+  font-weight: 800;
+}
+
+.btn-khan-help[aria-expanded='true'] {
+  background: #fbbf24;
+  color: #0f172a;
+  border-color: #fbbf24;
+}
+
+.khan-help-popover {
+  margin-top: 0.85rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.92);
+  color: #f8fafc;
+  border: 1px solid rgba(251, 191, 36, 0.6);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.khan-help-popover ol {
+  margin: 0.45rem 0 0 1.25rem;
+  padding: 0;
+}
+
+.khan-help-popover li + li {
+  margin-top: 0.3rem;
+}
+
 .reading-body {
   font-size: 1.02rem;
   line-height: 1.7;

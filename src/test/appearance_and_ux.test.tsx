@@ -289,4 +289,35 @@ describe('Color Schemes, Aspect-Ratio Sizing & UX Streamlining Suite', () => {
     expect(css).toContain('.question-passage {\n  margin: 0.5rem 0 0.85rem;\n  padding: 0.85rem 1rem;\n  background: var(--surface);')
     expect(css).toContain('.badge-primary {\n  background: var(--badge-primary-bg')
   })
+
+  it('verifies LessonPage renders 1-tap Search on Khan fallback and expandable ? help popover inside .video-stage', () => {
+    const { container } = render(
+      <MemoryRouter initialEntries={['/course/g6-math/lesson/g6-math-u1-l2']}>
+        <Routes>
+          <Route path="/course/:courseId/lesson/:lessonId" element={<LessonPage />} />
+        </Routes>
+      </MemoryRouter>
+    )
+
+    const videoStage = container.querySelector('.video-stage')
+    expect(videoStage).not.toBeNull()
+
+    const searchLink = screen.getByRole('link', { name: /Search on Khan/i })
+    expect(searchLink).toHaveAttribute(
+      'href',
+      expect.stringContaining('https://www.khanacademy.org/search?page_search_query=')
+    )
+    expect(videoStage).toContainElement(searchLink)
+
+    const helpBtn = screen.getByRole('button', { name: /How to use Khan Search fallback/i })
+    expect(helpBtn).toHaveAttribute('aria-expanded', 'false')
+    expect(container.querySelector('.khan-help-popover')).toBeNull()
+
+    fireEvent.click(helpBtn)
+    expect(helpBtn).toHaveAttribute('aria-expanded', 'true')
+    const popover = container.querySelector('.khan-help-popover')
+    expect(popover).not.toBeNull()
+    expect(popover).toHaveTextContent(/Quick 3-Step Tip/i)
+    expect(videoStage).toContainElement(popover as HTMLElement)
+  })
 })

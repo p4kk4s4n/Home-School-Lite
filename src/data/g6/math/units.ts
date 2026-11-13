@@ -42,7 +42,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u1',
         title: 'Basic Ratios',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/intro-to-ratios/v/representing-ratios-with-models',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/intro-to-ratios/v/ratio-example-problems',
         videoTitle: 'Representing Ratios with Models',
         reading: 'You can visualize ratios using tape diagrams or grid drawings to represent part-to-part relationships clearly.',
         principles: [
@@ -61,7 +61,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u1',
         title: 'Part:Whole Ratios',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/intro-to-ratios/v/part-to-whole-ratios',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-equivalent-ratios/v/equivalent-ratios',
         videoTitle: 'Part to Whole Ratios',
         reading: 'Part-to-whole ratios compare a single category to the combined total sum of all categories.',
         principles: [
@@ -80,7 +80,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u1',
         title: 'Ratio Tables',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-equivalent-ratios/v/ratio-tables',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/visualize-ratios/v/ratios-with-tape-diagrams',
         videoTitle: 'Solving Ratio Problems with Tables',
         reading: 'Ratio tables organize equivalent ratios in rows and columns by multiplying or dividing rows by constant scale factors.',
         principles: [
@@ -137,7 +137,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u1',
         title: 'Equivalent Ratio Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-equivalent-ratios/v/equivalent-ratio-word-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/intro-to-ratios/v/ratios-as-fractions',
         videoTitle: 'Equivalent Ratio Word Problems',
         reading: 'Apply equivalent ratios to real-world scenarios like recipes, paint mixtures, and scale model measurements.',
         principles: [
@@ -176,7 +176,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u1',
         title: 'Comparing Ratios',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-equivalent-ratios/v/comparing-ratios',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic',
         videoTitle: 'Comparing Ratios',
         reading: 'Compare two ratios by finding common denominators or converting both ratios to unit rates per 1.',
         principles: [
@@ -195,7 +195,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u1',
         title: 'Part:Whole Ratio Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/intro-to-ratios/v/part-whole-ratio-word-problem',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic',
         videoTitle: 'Part-Whole Word Problems',
         reading: 'Solve complex word problems where the total quantity is divided in a given ratio between multiple recipients.',
         principles: [
@@ -245,7 +245,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Dividing Whole Numbers by Fractions',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-dividing-fractions/v/dividing-whole-numbers-by-fractions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations',
         videoTitle: 'Dividing Whole Numbers by Fractions',
         reading: 'To divide a whole number by a fraction, multiply the whole number by the reciprocal of the fraction.',
         principles: [
@@ -264,7 +264,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Dividing Fractions by Whole Numbers',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-dividing-fractions/v/dividing-fractions-by-whole-numbers',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations',
         videoTitle: 'Dividing Fractions by Whole Numbers',
         reading: 'Dividing a fraction by a whole number n is the same as multiplying the fraction by 1/n.',
         principles: [
@@ -283,7 +283,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Dividing Fractions by Fractions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-dividing-fractions/v/dividing-fractions-example',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations',
         videoTitle: 'Dividing Fractions by Fractions',
         reading: 'Multiply the first fraction by the reciprocal of the second: (a/b) ÷ (c/d) = (a/b) × (d/c).',
         principles: [
@@ -302,7 +302,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Fraction Division Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-dividing-fractions/v/fraction-division-word-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations',
         videoTitle: 'Fraction Division Word Problems',
         reading: 'Identify situations where a total amount is partitioned into smaller fractional servings or lengths.',
         principles: [
@@ -321,7 +321,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Multi-Digit Whole Number Division',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-dividing-multi-digit-numbers/v/division-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations',
         videoTitle: 'Long Division Algorithm',
         reading: 'Fluently divide multi-digit numbers using the standard long division algorithm with whole remainders.',
         principles: [
@@ -340,7 +340,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Adding Multi-Digit Decimals',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-decimal-ops/v/adding-decimals-example-1',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations',
         videoTitle: 'Adding Decimals',
         reading: 'Align decimal points vertically before adding to ensure tenths line up with tenths and hundredths with hundredths.',
         principles: [
@@ -359,7 +359,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Subtracting Multi-Digit Decimals',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-decimal-ops/v/subtracting-decimals',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-sub-decimals/v/subtracting-decimals',
         videoTitle: 'Subtracting Decimals',
         reading: 'Line up decimal points and regroup across columns where the top digit is smaller than the bottom digit.',
         principles: [
@@ -398,7 +398,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Multiplying Decimals: Standard Algorithm',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-decimal-ops/v/multiplying-decimals',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations',
         videoTitle: 'Multiplying Decimals',
         reading: 'Multiply numbers ignoring decimals, then count the total decimal places in both factors to place the point in the product.',
         principles: [
@@ -417,7 +417,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Multiplying Decimals Word Problems',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-decimal-ops/v/multiplying-decimals-word-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations',
         videoTitle: 'Decimal Multiplication Word Problems',
         reading: 'Calculate monetary costs, areas, and scaled measurements requiring decimal multiplication.',
         principles: [
@@ -436,7 +436,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Dividing Multi-Digit Decimals',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-decimal-ops/v/dividing-decimals',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-dividing-decimals/v/dividing-decimals',
         videoTitle: 'Dividing Decimals',
         reading: 'Shift the decimal point in the divisor to make it a whole number, shift the dividend by the same number of places, then divide.',
         principles: [
@@ -455,7 +455,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Dividing Decimals Word Problems',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-decimal-ops/v/dividing-decimals-word-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-dividing-decimals/v/dividing-decimals',
         videoTitle: 'Decimal Division Word Problems',
         reading: 'Solve unit rate and sharing problems involving decimal division.',
         principles: [
@@ -474,7 +474,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Greatest Common Factor (GCF)',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-factors-and-multiples/v/greatest-common-divisor',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations',
         videoTitle: 'Greatest Common Factor',
         reading: 'Find the largest whole number that divides into two numbers with zero remainder using prime factor trees or list method.',
         principles: [
@@ -493,7 +493,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Least Common Multiple (LCM)',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-factors-and-multiples/v/least-common-multiple-exercise',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations',
         videoTitle: 'Least Common Multiple',
         reading: 'Find the smallest non-zero common multiple shared by two numbers to solve cycle and synchronization problems.',
         principles: [
@@ -512,7 +512,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u2',
         title: 'Factoring Expressions Using GCF',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-factors-and-multiples/v/factor-with-distributive-property',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations',
         videoTitle: 'Factoring Numerical Sums',
         reading: 'Use the distributive property to express a sum of two whole numbers 1–100 with a common factor as a multiple of a sum of two whole numbers with no common factor (e.g., 36 + 8 = 4(9 + 2)).',
         principles: [
@@ -562,7 +562,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u3',
         title: 'Unit Rates with Whole Numbers',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-rates/v/finding-unit-rates',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic',
         videoTitle: 'Finding Unit Rates',
         reading: 'A unit rate compares a quantity to one unit of another quantity (e.g., 60 miles per 1 hour or $3 per pound).',
         principles: [
@@ -581,7 +581,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u3',
         title: 'Unit Rates with Fractions',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-rates/v/unit-rates-with-fractions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic',
         videoTitle: 'Unit Rates with Fractions',
         reading: 'Compute unit rates when quantities involve fractional measurements.',
         principles: [
@@ -600,7 +600,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u3',
         title: 'Rate Problems: Speed & Distance',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-rates/v/rate-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic',
         videoTitle: 'Rate Problems with Speed',
         reading: 'Use d = r × t to solve problems involving constant speed, travel time, and total distance.',
         principles: [
@@ -619,7 +619,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u3',
         title: 'Rate Problems: Unit Pricing',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-rates/v/finding-unit-prices',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic',
         videoTitle: 'Finding Unit Prices',
         reading: 'Find the cost per ounce, pound, or item to determine the best grocery store value.',
         principles: [
@@ -638,7 +638,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u3',
         title: 'Comparing Rates',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-rates/v/comparing-rates-example',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic',
         videoTitle: 'Comparing Rates Example',
         reading: 'Convert different rates to the same unit denominator to determine which runner or vehicle is faster.',
         principles: [
@@ -657,7 +657,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u3',
         title: 'Intro to Percentages',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-percentages/v/describing-the-meaning-of-percent',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages/cc-6th-percent-problems/v/finding-percentages-example',
         videoTitle: 'Meaning of Percent',
         reading: 'A percent means "out of 100". For example, 45% means 45 per 100 or 45/100.',
         principles: [
@@ -676,7 +676,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u3',
         title: 'Relate Fractions, Decimals & Percents',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-percentages/v/converting-decimals-to-percents-ex-1',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic',
         videoTitle: 'Converting Fractions, Decimals, Percents',
         reading: 'Convert between representations: 3/4 = 0.75 = 75%.',
         principles: [
@@ -715,7 +715,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u3',
         title: 'Finding the Percent of a Whole Number',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-percentages/v/taking-percentages-examples',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-rates-and-percentages/cc-6th-percent-problems/v/finding-percentages-example',
         videoTitle: 'Finding a Percent of a Number',
         reading: 'Multiply the decimal or fraction equivalent of the percent by the number (e.g., 30% of 50 = 0.30 × 50 = 15).',
         principles: [
@@ -734,7 +734,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u3',
         title: 'Finding the Whole Given Part & Percent',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-percentages/v/finding-the-whole-from-a-percentage',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic',
         videoTitle: 'Finding the Whole',
         reading: 'If 20 is 25% of a number, divide 20 by 0.25 to find the original whole: 20 ÷ 0.25 = 80.',
         principles: [
@@ -753,7 +753,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u3',
         title: 'Percent Word Problems: Sales & Tips',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic/cc-6th-percentages/v/percent-word-problem-examples',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-ratios-prop-topic',
         videoTitle: 'Percent Word Problems',
         reading: 'Calculate discount amounts, sales tax additions, and restaurant tips using percent multiplication.',
         principles: [
@@ -803,7 +803,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u4',
         title: 'Meaning of Exponents',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-exponents/v/introduction-to-exponents',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations',
         videoTitle: 'Introduction to Exponents',
         reading: 'An exponent shows repeated multiplication of a base: 5^3 means 5 × 5 × 5 = 125.',
         principles: [
@@ -822,7 +822,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u4',
         title: 'Evaluating Powers of Whole Numbers',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-exponents/v/evaluating-exponential-expressions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables/cc-7th-evaluating-expressions-word-problems/v/evaluating-exponential-expressions',
         videoTitle: 'Evaluating Exponents',
         reading: 'Calculate powers like 2^5 = 32 and 10^4 = 10,000 accurately.',
         principles: [
@@ -841,7 +841,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u4',
         title: 'Evaluating Powers of Fractions & Decimals',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-exponents/v/exponents-with-fraction-and-decimal-bases',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations',
         videoTitle: 'Exponents with Fractions and Decimals',
         reading: '(1/2)^3 = 1/2 × 1/2 × 1/2 = 1/8. Similarly, 0.3^2 = 0.09.',
         principles: [
@@ -860,7 +860,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u4',
         title: 'Order of Operations: Parentheses',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-order-of-operations/v/order-of-operations-1',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-exponents-and-order-of-operations/cc-6th-order-of-operations/v/order-operations-intro',
         videoTitle: 'Order of Operations with Parentheses',
         reading: 'Operations inside parentheses take first priority before outer operations.',
         principles: [
@@ -879,7 +879,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u4',
         title: 'Order of Operations with Exponents',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-order-of-operations/v/order-of-operations-with-exponents',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-exponents-and-order-of-operations/cc-6th-order-of-operations/v/order-operations-intro',
         videoTitle: 'Order of Operations with Exponents',
         reading: 'PEMDAS rule: Parentheses, Exponents, Multiplication & Division (left to right), Addition & Subtraction (left to right).',
         principles: [
@@ -898,7 +898,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u4',
         title: 'Multi-Step PEMDAS Expressions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-arithmetic-operations/cc-6th-order-of-operations/v/order-of-operations-examples',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-exponents-and-order-of-operations/cc-6th-order-of-operations/v/order-operations-intro',
         videoTitle: 'Complex Order of Operations',
         reading: 'Evaluate complex expressions with nested grouping brackets and exponents systematically.',
         principles: [
@@ -968,7 +968,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u5',
         title: 'Real-World Negative Numbers',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-negatives/v/negative-numbers-introduction',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Negative Numbers Introduction',
         reading: 'Negative numbers describe quantities below zero, like temperatures below freezing (-5°F), elevations below sea level (-30 ft), and bank debits (-$20).',
         principles: [
@@ -987,7 +987,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u5',
         title: 'Plotting Negatives on a Number Line',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-negatives/v/negative-numbers-on-a-number-line',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Negatives on a Number Line',
         reading: 'On a horizontal number line, negative numbers sit to the left of zero, with values getting smaller the further left you move.',
         principles: [
@@ -1006,7 +1006,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u5',
         title: 'Comparing and Ordering Negatives',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-comparing-negatives/v/comparing-negative-numbers',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Comparing Negative Numbers',
         reading: '-8 is less than -2 because -8 is farther left on the number line: -8 < -2.',
         principles: [
@@ -1025,7 +1025,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u5',
         title: 'Absolute Value: Distance from Zero',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-absolute-value/v/absolute-value-and-number-lines',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Absolute Value and Number Lines',
         reading: 'Absolute value |x| measures distance from zero. Distance is never negative: |-7| = 7 and |7| = 7.',
         principles: [
@@ -1044,7 +1044,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u5',
         title: 'Comparing Absolute Values',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-absolute-value/v/comparing-absolute-values',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Comparing Absolute Values',
         reading: 'While -10 < -2, |-10| > |-2| because 10 is greater than 2.',
         principles: [
@@ -1063,7 +1063,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u5',
         title: 'Real-World Absolute Value Problems',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-absolute-value/v/interpreting-absolute-value-in-context',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Interpreting Absolute Value in Context',
         reading: 'Interpret absolute value in real-world contexts like depth underwater, bank overdraft debt, and temperature differences.',
         principles: [
@@ -1082,7 +1082,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u5',
         title: 'Opposites on the Number Line',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-negatives/v/opposite-of-a-number',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Opposite of a Number',
         reading: 'Opposite numbers lie at identical distances from zero on opposite sides: the opposite of 6 is -6, and the opposite of -6 is 6.',
         principles: [
@@ -1121,7 +1121,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u5',
         title: 'Negative Fractions and Decimals',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-rational-numbers/v/rational-numbers-on-a-number-line',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Rational Numbers on a Number Line',
         reading: 'Rational numbers include negative fractions and decimals like -1/2 and -3.75 located between negative integers.',
         principles: [
@@ -1140,7 +1140,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u5',
         title: 'Comparing Negative Rational Numbers',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-rational-numbers/v/comparing-rational-numbers',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Comparing Rational Numbers',
         reading: '-2.5 is less than -2.1 because -2.5 is further left from zero.',
         principles: [
@@ -1159,7 +1159,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u5',
         title: 'Distance Between Rational Numbers',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-rational-numbers/v/distance-between-numbers-on-number-line',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Distance on Number Lines',
         reading: 'Find distance by taking the absolute value of their difference: distance between -4 and 3 is |3 - (-4)| = 7.',
         principles: [
@@ -1178,7 +1178,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u5',
         title: 'Coordinate Plane: Four Quadrants',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-coordinate-plane/v/quadrants-of-coordinate-plane',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Quadrants of the Coordinate Plane',
         reading: 'The coordinate plane has 4 quadrants: QI (+, +), QII (-, +), QIII (-, -), and QIV (+, -).',
         principles: [
@@ -1197,7 +1197,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u5',
         title: 'Reflections Across Axes',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-coordinate-plane/v/reflecting-points-in-coordinate-plane',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Reflecting Points',
         reading: 'Reflecting across the x-axis changes the sign of y: (x, y) becomes (x, -y). Reflecting across the y-axis gives (-x, y).',
         principles: [
@@ -1247,7 +1247,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u6',
         title: 'Parts of an Algebraic Expression',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables/cc-6th-algebraic-expressions/v/expression-terms-coefficients-variables',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables/cc-6th-evaluating-expressions/a/terms-factors-and-coefficients-review',
         videoTitle: 'Expression Terms and Coefficients',
         reading: 'Identify terms separated by plus or minus, variables representing unknown numbers, coefficients multiplying variables, and constant numbers.',
         principles: [
@@ -1266,7 +1266,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u6',
         title: 'Writing Expressions: Addition & Subtraction',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables/cc-6th-writing-expressions/v/writing-expressions-1',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables',
         videoTitle: 'Writing Expressions: Add & Subtract',
         reading: 'Translate verbal phrases: "5 more than x" is x + 5, and "7 less than y" is y - 7.',
         principles: [
@@ -1285,7 +1285,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u6',
         title: 'Writing Expressions: Multiplication & Division',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables/cc-6th-writing-expressions/v/writing-expressions-2',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables',
         videoTitle: 'Writing Expressions: Multiply & Divide',
         reading: 'Translate "the product of 4 and m" as 4m, and "the quotient of p and 6" as p/6.',
         principles: [
@@ -1304,7 +1304,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u6',
         title: 'Writing Expressions for Word Problems',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables/cc-6th-writing-expressions/v/writing-expressions-word-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables',
         videoTitle: 'Writing Expressions Word Problems',
         reading: 'Set up expressions from real situations: if tickets cost $8 each plus a $3 fee, the total is 8t + 3.',
         principles: [
@@ -1323,7 +1323,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u6',
         title: 'Evaluating Expressions with 1 Variable',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables/cc-6th-evaluating-expressions/v/evaluating-expressions-with-one-variable',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables',
         videoTitle: 'Evaluating One Variable Expressions',
         reading: 'Substitute the given value in place of the variable and simplify using PEMDAS.',
         principles: [
@@ -1342,7 +1342,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u6',
         title: 'Evaluating Expressions with 2 Variables',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables/cc-6th-evaluating-expressions/v/evaluating-expressions-with-two-variables',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-intro-equations/v/variables-expressions-and-equations',
         videoTitle: 'Evaluating Two Variable Expressions',
         reading: 'Substitute both variable values accurately: if a = 3 and b = 5, 2a + 4b = 2(3) + 4(5) = 6 + 20 = 26.',
         principles: [
@@ -1381,7 +1381,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u6',
         title: 'Combining Like Terms',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables/cc-6th-combining-like-terms/v/combining-like-terms',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables/cc-6th-combining-like-terms/v/combining-like-terms-1',
         videoTitle: 'Combining Like Terms',
         reading: 'Add or subtract the coefficients of terms with identical variable parts: 4x + 3x = 7x.',
         principles: [
@@ -1400,7 +1400,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u6',
         title: 'Distributive Property with Variables',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables/cc-6th-combining-like-terms/v/distributive-property-with-variables',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables',
         videoTitle: 'Distributive Property with Variables',
         reading: 'Multiply the outer term by every term inside: 4(2x + 3) = 8x + 12.',
         principles: [
@@ -1419,7 +1419,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u6',
         title: 'Factoring Expressions Using Distributive Property',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables/cc-6th-combining-like-terms/v/factoring-algebraic-expressions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables',
         videoTitle: 'Factoring Expressions',
         reading: 'Pull out the greatest common factor: 6x + 15 = 3(2x + 5).',
         principles: [
@@ -1438,7 +1438,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u6',
         title: 'Identifying Equivalent Expressions',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables/cc-6th-combining-like-terms/v/equivalent-expressions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-expressions-and-variables',
         videoTitle: 'Equivalent Expressions',
         reading: 'Two expressions are equivalent if they produce identical values regardless of which number is substituted for the variable.',
         principles: [
@@ -1488,7 +1488,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u7',
         title: 'Testing Equation Solutions',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-solving-equations/v/testing-solutions-to-equations',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-solving-equations/v/one-step-equation-intuition',
         videoTitle: 'Testing Solutions to Equations',
         reading: 'Test if a number is a solution by substituting it into the equation and checking if both sides balance.',
         principles: [
@@ -1507,7 +1507,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u7',
         title: 'Solving 1-Step Equations: Addition & Subtraction',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-one-step-add-sub-equations/v/one-step-addition-subtraction-equations',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities',
         videoTitle: 'Addition and Subtraction Equations',
         reading: 'Use inverse operations: to undo addition, subtract from both sides; to undo subtraction, add to both sides.',
         principles: [
@@ -1526,7 +1526,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u7',
         title: 'Solving 1-Step Equations: Multiplication & Division',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-one-step-mult-div-equations/v/one-step-multiplication-division-equations',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities',
         videoTitle: 'Multiplication and Division Equations',
         reading: 'To isolate x in 5x = 35, divide both sides by 5. In x/4 = 8, multiply both sides by 4.',
         principles: [
@@ -1545,7 +1545,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u7',
         title: 'Writing 1-Step Equations from Word Problems',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-one-step-equation-word-problems/v/writing-one-step-equations-word-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities',
         videoTitle: 'Writing 1-Step Equations Word Problems',
         reading: 'Define the unknown with a variable letter, set up an algebraic balance, and solve.',
         principles: [
@@ -1564,7 +1564,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u7',
         title: 'Solving 1-Step Word Problems',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-one-step-equation-word-problems/v/one-step-equation-word-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities',
         videoTitle: 'One-Step Equation Word Problems',
         reading: 'Solve practical problems involving money budgets, distance travel, and measurement partitioning.',
         principles: [
@@ -1603,7 +1603,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u7',
         title: 'Testing Inequality Solutions',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-inequalities/v/testing-solutions-to-inequalities',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities',
         videoTitle: 'Testing Solutions to Inequalities',
         reading: 'An inequality has infinitely many solutions. Test values to check if they make the statement true.',
         principles: [
@@ -1622,7 +1622,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u7',
         title: 'Graphing Inequalities on a Number Line',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-inequalities/v/graphing-inequalities-on-a-number-line',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-inequalities/v/inequalities-on-a-number-line',
         videoTitle: 'Graphing Inequalities on Number Lines',
         reading: 'Use an open circle for < or > (not included). Use a solid closed dot for <= or >= (included), and shade in the direction of the arrow.',
         principles: [
@@ -1641,7 +1641,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u7',
         title: 'Writing Inequalities from Word Scenarios',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-inequalities/v/writing-inequalities-from-word-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities',
         videoTitle: 'Writing Inequalities from Word Problems',
         reading: '"At least 48 inches tall" means h >= 48. "Maximum speed 65 mph" means s <= 65.',
         principles: [
@@ -1660,7 +1660,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u7',
         title: 'Independent vs. Dependent Variables',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-dependent-independent/v/dependent-and-independent-variables',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities',
         videoTitle: 'Independent and Dependent Variables',
         reading: 'The independent variable (x) changes freely; the dependent variable (y) changes in response to x.',
         principles: [
@@ -1679,7 +1679,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u7',
         title: 'Tables of Two Variables',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-dependent-independent/v/tables-relating-two-variables',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities',
         videoTitle: 'Tables Relating Two Variables',
         reading: 'Organize independent x values and corresponding dependent y values in two-column tables.',
         principles: [
@@ -1698,7 +1698,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u7',
         title: 'Graphing Two-Variable Equations',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-dependent-independent/v/graphing-relationships-between-two-variables',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-intro-equations/v/variables-expressions-and-equations',
         videoTitle: 'Graphing Relationships',
         reading: 'Plot ordered pairs (x, y) on a coordinate plane to visualize linear relationships between two variables.',
         principles: [
@@ -1717,7 +1717,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u7',
         title: 'Writing Equations Relating Variables',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-dependent-independent/v/writing-equations-with-two-variables',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equations-and-inequalities/cc-6th-intro-equations/v/variables-expressions-and-equations',
         videoTitle: 'Writing Two-Variable Equations',
         reading: 'Formulate equations like y = 3x or y = x + 10 matching tables and graphs.',
         principles: [
@@ -1787,7 +1787,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u8',
         title: 'Area of Parallelograms',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-area/v/area-of-a-parallelogram',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic',
         videoTitle: 'Area of a Parallelogram',
         reading: 'A parallelogram can be decomposed into a rectangle: Area = base × perpendicular height.',
         principles: [
@@ -1806,7 +1806,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u8',
         title: 'Area of Triangles',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-area/v/triangle-area-formula',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-plane-figures/cc-6th-area-triangle/v/intuition-for-area-of-a-triangle',
         videoTitle: 'Area of a Triangle',
         reading: 'Every triangle is exactly half of a parallelogram with the same base and height: Area = 1/2 × base × height.',
         principles: [
@@ -1825,7 +1825,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u8',
         title: 'Area of Right vs. Obtuse Triangles',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-area/v/area-of-obtuse-triangles',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic',
         videoTitle: 'Area of Obtuse Triangles',
         reading: 'In obtuse triangles, the perpendicular height drops to an extension of the base outside the triangle.',
         principles: [
@@ -1844,7 +1844,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u8',
         title: 'Area of Trapezoids',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-area/v/area-of-a-trapezoid',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic',
         videoTitle: 'Area of a Trapezoid',
         reading: 'Average the two parallel bases and multiply by height: Area = 1/2 × (b1 + b2) × h.',
         principles: [
@@ -1863,7 +1863,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u8',
         title: 'Area of Composite Polygons',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-area/v/area-of-composite-figures',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/x0267d782:cc-6th-plane-figures/cc-6th-area/v/area-breaking-up-shape',
         videoTitle: 'Area of Composite Figures',
         reading: 'Decompose irregular polygons into familiar rectangles and triangles, find each area, and add them together.',
         principles: [
@@ -1882,7 +1882,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u8',
         title: 'Polygons on the Coordinate Plane',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-coordinate-plane/v/area-of-shapes-on-coordinate-grid',
+        videoUrl: 'https://www.khanacademy.org/math/6th-grade-illustrative-math/unit-1-area-and-surface-area/lesson-11-polygons/v/area-breaking-up-shape',
         videoTitle: 'Shapes on Coordinate Grid',
         reading: 'Plot vertices on a grid, calculate vertical and horizontal side lengths using coordinates, and compute area.',
         principles: [
@@ -1952,7 +1952,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u9',
         title: 'Points in All 4 Quadrants',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-coordinate-plane/v/points-on-the-coordinate-plane',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Points on the Coordinate Plane',
         reading: 'Plot and identify ordered pairs (x, y) with positive and negative rational coordinates across all 4 quadrants.',
         principles: [
@@ -1971,7 +1971,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u9',
         title: 'Distance Between Points with Same Coordinate',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic/cc-6th-coordinate-plane/v/distance-between-points-on-coordinate-plane',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic',
         videoTitle: 'Distance on Coordinate Plane',
         reading: 'When points share x or y, subtract coordinates: distance between (2, 5) and (2, -3) is |5 - (-3)| = 8.',
         principles: [
@@ -1990,7 +1990,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u9',
         title: 'Drawing Polygons from Vertices',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-coordinate-plane/v/drawing-polygons-in-the-coordinate-plane',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic',
         videoTitle: 'Drawing Polygons in Coordinate Plane',
         reading: 'Connect ordered pairs to form rectangles, triangles, and parallelograms, then calculate perimeter using coordinates.',
         principles: [
@@ -2009,7 +2009,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u9',
         title: 'Finding Perimeter on Coordinate Grids',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-coordinate-plane/v/perimeter-of-shapes-on-coordinate-grid',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic',
         videoTitle: 'Perimeter on Coordinate Grid',
         reading: 'Sum horizontal and vertical side lengths of grid polygons to find complete perimeter.',
         principles: [
@@ -2079,7 +2079,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u10',
         title: 'Nets of 3D Prisms & Pyramids',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-geometric-solids/v/nets-of-polyhedra',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic',
         videoTitle: 'Nets of Polyhedra',
         reading: 'A net is a 2D pattern that folds into a 3D solid. Rectangular prisms have 6 rectangular faces; triangular prisms have 2 triangles and 3 rectangles.',
         principles: [
@@ -2098,7 +2098,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u10',
         title: 'Surface Area of Rectangular Prisms',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-surface-area/v/surface-area-of-a-box-using-nets',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/x0267d782:cc-6th-nets-of-3d-figures/v/surface-area-of-a-box',
         videoTitle: 'Surface Area Using Nets',
         reading: 'Add the areas of all 6 faces: SA = 2(lw + lh + wh).',
         principles: [
@@ -2117,7 +2117,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u10',
         title: 'Surface Area of Triangular Prisms',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-surface-area/v/surface-area-of-a-triangular-prism',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/x0267d782:cc-6th-nets-of-3d-figures/v/surface-area-of-a-box',
         videoTitle: 'Triangular Prism Surface Area',
         reading: 'Sum the areas of the 2 triangular bases plus the 3 rectangular side faces.',
         principles: [
@@ -2136,7 +2136,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u10',
         title: 'Surface Area of Pyramids',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-surface-area/v/surface-area-of-a-pyramid',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/x0267d782:cc-6th-nets-of-3d-figures/v/surface-area-of-a-box',
         videoTitle: 'Surface Area of Pyramids',
         reading: 'Square pyramids have 1 square base and 4 identical triangular faces: SA = base area + 4 × (triangle area).',
         principles: [
@@ -2155,7 +2155,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u10',
         title: 'Volume with Fractional Edge Lengths',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-volume/v/volume-of-a-rectangular-prism-with-fractional-dimensions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/x0267d782:cc-6th-volume-with-mini-cubes/v/volume-of-a-rectangular-prism-with-fractional-cubes',
         videoTitle: 'Volume with Fractional Dimensions',
         reading: 'Multiply length × width × height when side lengths are fractions: V = l × w × h.',
         principles: [
@@ -2174,7 +2174,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u10',
         title: 'Volume Word Problems with Unit Cubes',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-volume/v/volume-word-problems',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/x0267d782:cc-6th-volume-with-mini-cubes/a/volume-with-cubes-of-fractional-side-lengths',
         videoTitle: 'Volume Word Problems',
         reading: 'Solve practical problems involving storage containers, aquariums, and unit cube packing.',
         principles: [
@@ -2244,7 +2244,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u11',
         title: 'Statistical Questions',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/cc-6th-statistical-questions/v/statistical-questions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics',
         videoTitle: 'Statistical Questions',
         reading: 'A statistical question anticipates variability in the data (e.g., "How tall are 6th grade students?"), unlike non-statistical single-answer questions ("How tall is Mr. Smith?").',
         principles: [
@@ -2263,7 +2263,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u11',
         title: 'Calculating the Mean',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/cc-6th-mean-and-median/v/mean-median-and-mode',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/mean-and-median/v/statistics-intro-mean-median-and-mode',
         videoTitle: 'Calculating the Mean',
         reading: 'The mean is the numerical balance point (average): sum all values and divide by the total count.',
         principles: [
@@ -2282,7 +2282,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u11',
         title: 'Calculating the Median',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/cc-6th-mean-and-median/v/calculating-the-median',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics',
         videoTitle: 'Calculating the Median',
         reading: 'Sort values from least to greatest and select the middle number. If there is an even count, average the two middle numbers.',
         principles: [
@@ -2301,7 +2301,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u11',
         title: 'Mode and Range',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/cc-6th-mean-and-median/v/mode-and-range-of-a-data-set',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics',
         videoTitle: 'Mode and Range',
         reading: 'The mode is the most frequently occurring value. The range is the difference between maximum and minimum values.',
         principles: [
@@ -2320,7 +2320,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u11',
         title: 'Impact of Outliers on Mean vs. Median',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/cc-6th-mean-and-median/v/impact-of-outliers-on-mean-and-median',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/mean-and-median/v/statistics-intro-mean-median-and-mode',
         videoTitle: 'Impact of Outliers',
         reading: 'Extreme outlier numbers pull the mean toward them, but leave the median stable. Median is better for skewed data.',
         principles: [
@@ -2339,7 +2339,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u11',
         title: 'Interquartile Range (IQR)',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/cc-6th-interquartile-range/v/calculating-interquartile-range-iqr',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics',
         videoTitle: 'Calculating the IQR',
         reading: 'Divide ordered data into quartiles. IQR = Q3 - Q1, measuring the spread of the middle 50% of the data.',
         principles: [
@@ -2378,7 +2378,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u11',
         title: 'Interpreting Dot Plots',
         estimatedMinutes: 8,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/cc-6th-displaying-data/v/dot-plots',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics',
         videoTitle: 'Dot Plots',
         reading: 'Dot plots display each data point as a dot above a number line, making clusters, peaks, and gaps easily visible.',
         principles: [
@@ -2397,7 +2397,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u11',
         title: 'Histograms & Frequency Bins',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/cc-6th-displaying-data/v/histograms-intro',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics',
         videoTitle: 'Histograms Intro',
         reading: 'Histograms group continuous data into equal intervals (bins) with touching bars showing frequency counts.',
         principles: [
@@ -2416,7 +2416,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u11',
         title: 'Interpreting Box Plots',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/cc-6th-box-plots/v/reading-box-plots',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics',
         videoTitle: 'Reading Box Plots',
         reading: 'Box plots summarize data using 5 key numbers: Minimum, Q1 (lower quartile), Median, Q3 (upper quartile), and Maximum.',
         principles: [
@@ -2435,7 +2435,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u11',
         title: 'Constructing Box Plots',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/cc-6th-box-plots/v/constructing-a-box-plot',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics',
         videoTitle: 'Constructing a Box Plot',
         reading: 'Find median and quartiles, draw a box from Q1 to Q3 with a median bar, and draw whiskers to min and max.',
         principles: [
@@ -2454,7 +2454,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u11',
         title: 'Shapes of Distributions: Symmetric vs. Skewed',
         estimatedMinutes: 9,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/cc-6th-shape-of-data/v/shapes-of-distributions',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics',
         videoTitle: 'Shapes of Distributions',
         reading: 'Classify data distributions as bell-shaped symmetric, skewed right (tail to right), or skewed left (tail to left).',
         principles: [
@@ -2473,7 +2473,7 @@ export const G6_MATH_UNITS: Unit[] = [
         unitId: 'g6-math-u11',
         title: 'Mean Absolute Deviation (MAD)',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/cc-6th-mean-absolute-deviation/v/mean-absolute-deviation',
+        videoUrl: 'https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-data-statistics/cc-6-mad/v/mean-absolute-deviation',
         videoTitle: 'Mean Absolute Deviation',
         reading: 'Find distance of each value from the mean, then average those distances to compute the Mean Absolute Deviation.',
         principles: [

@@ -15,7 +15,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u1',
         title: 'Speed and Kinetic Energy',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:energy/x45a95ef365d91e36:kinetic-and-potential-energy/v/kinetic-energy',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy',
         videoTitle: 'Kinetic Energy and Speed',
         reading: 'Kinetic energy is the energy of motion. The faster a given object moves, the more kinetic energy it possesses.',
         principles: [
@@ -33,7 +33,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u1',
         title: 'Gravitational and Elastic Potential Energy',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:energy/x45a95ef365d91e36:kinetic-and-potential-energy/v/potential-energy',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy',
         videoTitle: 'Gravitational and Elastic Potential Energy',
         reading: 'Potential energy is stored energy. Objects held high store gravitational potential energy; stretched springs store elastic potential energy.',
         principles: [
@@ -51,7 +51,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u1',
         title: 'Energy Transfer in Collisions',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:energy/x45a95ef365d91e36:transfer-of-energy/v/energy-transfer-in-collisions',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy',
         videoTitle: 'Collisions and Energy Transfer',
         reading: 'When moving objects collide, contact forces transfer energy from one object to another and transform motion energy into sound and heat.',
         principles: [
@@ -69,7 +69,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u1',
         title: 'Thermal and Electrical Energy Transformations',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:energy/x45a95ef365d91e36:transfer-of-energy/v/energy-transformations',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy',
         videoTitle: 'Energy Transformations',
         reading: 'Energy cannot be created or destroyed, only changed in form. Appliances convert electrical energy into thermal heat, light, and mechanical work.',
         principles: [
@@ -88,7 +88,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Quiz 1: Energy & Motion Review',
         kind: 'lesson_review',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:energy',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy',
         videoTitle: 'Energy and Motion Quiz Review',
         reading: 'Review quiz checking kinetic energy, potential height energy, collision outcomes, and heat conversions.',
         principles: [
@@ -107,7 +107,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 1 Test: Energy, Speed & Collisions Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:energy',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:energy',
         videoTitle: 'Unit 1 Test Review',
         reading: 'Comprehensive assessment of kinetic vs potential energy, collision dynamics, and thermal transformations.',
         principles: [
@@ -136,7 +136,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u2',
         title: 'Electric Circuits and Complete Paths',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:electricity-and-magnetism/x45a95ef365d91e36:electric-circuits/v/circuits-intro',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions',
         videoTitle: 'Introduction to Electric Circuits',
         reading: 'An electric circuit is an unbroken path through which electric current can flow from a power source to an output device and back.',
         principles: [
@@ -154,7 +154,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u2',
         title: 'Conductors and Insulators',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:electricity-and-magnetism/x45a95ef365d91e36:electric-circuits/v/conductors-and-insulators',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions',
         videoTitle: 'Conductors and Insulators',
         reading: 'Electrical conductors (like copper and aluminum) permit electrons to flow freely. Insulators (like rubber, plastic, and glass) resist electric flow.',
         principles: [
@@ -172,7 +172,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u2',
         title: 'Switches and Controlling Electrical Current',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:electricity-and-magnetism/x45a95ef365d91e36:electric-circuits/v/switches-in-circuits',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions',
         videoTitle: 'Switches in Circuits',
         reading: 'A switch allows users to safely open and close an electric circuit without disconnecting wires, stopping or allowing electric flow.',
         principles: [
@@ -190,7 +190,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u2',
         title: 'Chemical Energy in Batteries',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:electricity-and-magnetism/x45a95ef365d91e36:electric-circuits/v/how-batteries-work',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions',
         videoTitle: 'How Batteries Work',
         reading: 'Batteries convert stored chemical potential energy into electrical energy when connected to a complete circuit.',
         principles: [
@@ -209,7 +209,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Quiz 2: Circuits & Electrical Safety',
         kind: 'lesson_review',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:electricity-and-magnetism',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions',
         videoTitle: 'Electricity Quiz Review',
         reading: 'Review quiz on complete loops, conductive metals, insulating coatings, and switch control.',
         principles: [
@@ -228,7 +228,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 2 Test: Energy Transfer & Electricity Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:electricity-and-magnetism',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:non-contact-interactions',
         videoTitle: 'Unit 2 Test Review',
         reading: 'Comprehensive assessment of electric circuits, conductors, insulators, switches, and battery energy.',
         principles: [
@@ -257,7 +257,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u3',
         title: 'Wave Amplitude and Wavelength',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:waves-and-sound/x45a95ef365d91e36:wave-properties/v/amplitude-and-wavelength',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves',
         videoTitle: 'Amplitude and Wavelength',
         reading: 'Waves are regular repeating patterns of motion. Amplitude is the crest height; wavelength is the distance between peaks.',
         principles: [
@@ -275,7 +275,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u3',
         title: 'Sound Vibrations and Pitch',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:waves-and-sound/x45a95ef365d91e36:sound-waves/v/sound-properties',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves',
         videoTitle: 'Sound Waves and Pitch',
         reading: 'Sound energy is produced by vibrating objects and travels through air, liquid, or solids as longitudinal compression waves.',
         principles: [
@@ -293,7 +293,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u3',
         title: 'Light Reflection and Vision',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:waves-and-sound/x45a95ef365d91e36:light-waves/v/reflection-and-refraction',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves',
         videoTitle: 'Light Reflection',
         reading: 'An object can be seen only when light reflected from its surface enters our eyes. Shiny surfaces reflect light at matching angles.',
         principles: [
@@ -311,7 +311,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u3',
         title: 'Digitized Information and Communication',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:waves-and-sound/x45a95ef365d91e36:information-transfer/v/digital-signals',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves',
         videoTitle: 'Digital Information and Waves',
         reading: 'Digitized information (encoded into binary 0s and 1s) can be transmitted over light or radio waves more reliably than analog signals.',
         principles: [
@@ -330,7 +330,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Quiz 3: Waves & Light Reflection',
         kind: 'lesson_review',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:waves-and-sound',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves',
         videoTitle: 'Waves Quiz Review',
         reading: 'Review quiz on wave amplitude, wavelength, reflection into eyes, and digital coding.',
         principles: [
@@ -349,7 +349,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 3 Test: Waves & Information Transfer Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics/x45a95ef365d91e36:waves-and-sound',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:waves',
         videoTitle: 'Unit 3 Test Review',
         reading: 'Comprehensive assessment of wave anatomy, sound vibrations, light reflection, and digitized communication.',
         principles: [
@@ -378,7 +378,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u4',
         title: 'Physical and Freeze-Thaw Weathering',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-systems/x871d81186fec401a:weathering-and-erosion/v/physical-weathering',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Physical%20Weathering%204th%20grade%20science',
         videoTitle: 'Physical Weathering',
         reading: 'Weathering breaks rocks down in place without moving them. Ice wedging occurs when water seeps into cracks, freezes, expands, and fractures rock.',
         principles: [
@@ -396,7 +396,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u4',
         title: 'Erosion by Water, Wind, and Ice',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-systems/x871d81186fec401a:weathering-and-erosion/v/erosion-by-water-and-wind',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Water%20and%20Wind%20Erosion%204th%20grade%20science',
         videoTitle: 'Water and Wind Erosion',
         reading: 'Erosion is the transport of weathered sediments by flowing rivers, gusting wind, or creeping glaciers to new locations.',
         principles: [
@@ -414,7 +414,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u4',
         title: 'Deposition and River Deltas',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-systems/x871d81186fec401a:weathering-and-erosion/v/deposition-and-deltas',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Deposition%20and%20Deltas%204th%20grade%20science',
         videoTitle: 'Deposition and Deltas',
         reading: 'Deposition occurs when flowing water slows down, dropping its sediment load to build sand bars, beaches, and fan-shaped river deltas.',
         principles: [
@@ -432,7 +432,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u4',
         title: 'Vegetation and Soil Conservation',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-systems/x871d81186fec401a:weathering-and-erosion/v/soil-conservation',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Soil%20Conservation%20%26%20Roots%204th%20grade%20science',
         videoTitle: 'Soil Conservation & Roots',
         reading: 'Plant roots bind soil particles together, while plant leaves cushion falling raindrops, drastically reducing topsoil runoff on hills.',
         principles: [
@@ -450,7 +450,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u4',
         title: 'Topographic Maps and Mountain Landforms',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-systems/x871d81186fec401a:earth-features/v/topographic-maps',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Topographic%20Maps%204th%20grade%20science',
         videoTitle: 'Topographic Maps',
         reading: 'Topographic maps use contour lines to represent 3D elevation on a flat sheet: closely spaced lines indicate steep cliffs.',
         principles: [
@@ -469,7 +469,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 4 Test: Earth Landscapes & Weathering Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-systems',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science',
         videoTitle: 'Unit 4 Test Review',
         reading: 'Comprehensive assessment on mechanical weathering, erosion agents, river deltas, vegetation anchors, and topographical maps.',
         principles: [
@@ -498,7 +498,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u5',
         title: 'Sedimentary Rock Formation and Superposition',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-history/x871d81186fec401a:rock-layers-and-fossils/v/law-of-superposition',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:the-geosphere',
         videoTitle: 'Rock Layers and Superposition',
         reading: 'Sediments settle in horizontal strata. Under the Law of Superposition, younger rock forms above older rock in undisturbed sequences.',
         principles: [
@@ -516,7 +516,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u5',
         title: 'Fossil Formation: Casts, Molds, and Petrification',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-history/x871d81186fec401a:rock-layers-and-fossils/v/how-fossils-form',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:the-geosphere',
         videoTitle: 'How Fossils Form',
         reading: 'When organisms die and get rapidly buried by silt or mud, minerals slowly replace biological tissue over millions of years.',
         principles: [
@@ -534,7 +534,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u5',
         title: 'Ancient Marine Environments and Mountaintop Shells',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-history/x871d81186fec401a:rock-layers-and-fossils/v/marine-fossils-on-mountains',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:the-geosphere',
         videoTitle: 'Marine Fossils in Mountain Rock',
         reading: 'Finding seashells and ocean fish fossils high on modern mountains proves those rock strata were originally deposited beneath ancient seas.',
         principles: [
@@ -552,7 +552,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u5',
         title: 'Trace Fossils: Footprints, Tracks, and Burrows',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-history/x871d81186fec401a:rock-layers-and-fossils/v/trace-fossils',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:the-geosphere',
         videoTitle: 'Trace Fossils',
         reading: 'Trace fossils preserve proof of animal behavior (walking speed, herd motion, resting spots) without containing actual bones.',
         principles: [
@@ -571,7 +571,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Quiz 4: Rock Layers & Fossil Evidence',
         kind: 'lesson_review',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-history',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:the-geosphere',
         videoTitle: 'Fossils Quiz Review',
         reading: 'Review quiz on superposition order, sedimentary rock formation, mountaintop marine fossils, and prehistoric climates.',
         principles: [
@@ -590,7 +590,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 5 Test: Rock Layers & Fossils Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-history',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:the-geosphere',
         videoTitle: 'Unit 5 Test Review',
         reading: 'Comprehensive assessment on rock layering, fossil classification, trace fossils, and geological time clues.',
         principles: [
@@ -619,7 +619,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u6',
         title: 'Roots and Water Absorption',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c27387d81a952d7:plant-biology/x0c27387d81a952d7:plant-structures/v/plant-roots',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:organism-growth-and-reproduction/x0c5bb03129646fd6:plant-reproductive-success/v/ms-plant-reproductive-success',
         videoTitle: 'Plant Roots and Absorption',
         reading: 'Roots anchor plants into soil and absorb water and dissolved mineral nutrients through millions of microscopic root hairs.',
         principles: [
@@ -637,7 +637,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u6',
         title: 'Stems and Xylem Vascular Transport',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c27387d81a952d7:plant-biology/x0c27387d81a952d7:plant-structures/v/xylem-and-phloem',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:organism-growth-and-reproduction/x0c5bb03129646fd6:plant-reproductive-success/v/ms-plant-reproductive-success',
         videoTitle: 'Xylem and Phloem Transport',
         reading: 'Xylem vessels act like continuous pipelines pulling water upward from roots to leaves through capillary action and transpiration.',
         principles: [
@@ -655,7 +655,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u6',
         title: 'Leaves, Chlorophyll and Photosynthesis',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c27387d81a952d7:plant-biology/x0c27387d81a952d7:photosynthesis/v/intro-to-photosynthesis',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:organism-growth-and-reproduction/x0c5bb03129646fd6:plant-reproductive-success/v/ms-plant-reproductive-success',
         videoTitle: 'Photosynthesis in Leaves',
         reading: 'Chlorophyll in leaf chloroplasts harnesses sunlight energy to convert water and carbon dioxide into sugar food and oxygen gas.',
         principles: [
@@ -673,7 +673,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u6',
         title: 'Stomata and Transpiration Gas Exchange',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c27387d81a952d7:plant-biology/x0c27387d81a952d7:plant-structures/v/stomata-and-guard-cells',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:organism-growth-and-reproduction/x0c5bb03129646fd6:plant-reproductive-success/v/ms-plant-reproductive-success',
         videoTitle: 'Stomata and Gas Exchange',
         reading: 'Stomata pores on leaf undersides open to absorb carbon dioxide and close during dry weather to prevent excessive water loss.',
         principles: [
@@ -691,7 +691,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u6',
         title: 'Flowers, Pollinators, and Seed Dispersal',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c27387d81a952d7:plant-biology/x0c27387d81a952d7:plant-reproduction/v/plant-reproduction-flowers',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:organism-growth-and-reproduction/x0c5bb03129646fd6:plant-reproductive-success/v/ms-plant-reproductive-success',
         videoTitle: 'Flower Reproduction and Pollination',
         reading: 'Flowers contain reproductive organs. Petals attract pollinators like bees that move pollen so plants can produce protected seeds.',
         principles: [
@@ -710,7 +710,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 6 Test: Plant Structures & Functions Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c27387d81a952d7:plant-biology',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:organism-growth-and-reproduction/x0c5bb03129646fd6:plant-reproductive-success/v/ms-plant-reproductive-success',
         videoTitle: 'Unit 6 Test Review',
         reading: 'Comprehensive assessment of root systems, xylem pipelines, leaf chlorophyll, stomata pores, and flower pollination.',
         principles: [
@@ -739,7 +739,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u7',
         title: 'Sensory Receptors and Environmental Clues',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c27387d81a952d7:animal-biology/x0c27387d81a952d7:senses-and-nervous-system/v/animal-senses-intro',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Animal%20Sensory%20Receptors%204th%20grade%20science',
         videoTitle: 'Animal Sensory Receptors',
         reading: 'Animals have specialized sense organs (eyes, ears, noses, skin) containing receptors that detect light, sound, smell, and pressure.',
         principles: [
@@ -757,7 +757,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u7',
         title: 'Nocturnal Senses and Echolocation',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c27387d81a952d7:animal-biology/x0c27387d81a952d7:senses-and-nervous-system/v/echolocation-in-bats',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Echolocation%20in%20Bats%204th%20grade%20science',
         videoTitle: 'Echolocation in Bats',
         reading: 'Bats emit ultrasonic chirps and interpret returning sound echoes to navigate and pinpoint tiny flying moths in the dark.',
         principles: [
@@ -775,7 +775,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u7',
         title: 'Nerve Pathways and the Brain',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c27387d81a952d7:animal-biology/x0c27387d81a952d7:senses-and-nervous-system/v/how-the-brain-processes-information',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Brain%20Processing%20and%20Nerves%204th%20grade%20science',
         videoTitle: 'Brain Processing and Nerves',
         reading: 'Sense receptors send rapid electrical signals through nerves to the brain. The brain processes information and directs muscles to respond.',
         principles: [
@@ -793,7 +793,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u7',
         title: 'Protective Reflexes and External Armor',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c27387d81a952d7:animal-biology/x0c27387d81a952d7:senses-and-nervous-system/v/reflexes-and-protective-structures',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Reflexes%20and%20Protective%20Structures%204th%20grade%20science',
         videoTitle: 'Reflexes and Protective Structures',
         reading: 'Reflexes pull hands away from extreme heat before the brain consciously feels pain. Arthropod exoskeletons provide physical armor.',
         principles: [
@@ -812,7 +812,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Quiz 5: Senses & Brain Reactions',
         kind: 'lesson_review',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c27387d81a952d7:animal-biology',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology',
         videoTitle: 'Animal Senses Quiz Review',
         reading: 'Review quiz covering sensory receptors, bat echolocation, brain signal processing, and rapid pain reflexes.',
         principles: [
@@ -831,7 +831,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 7 Test: Animal Senses & Information Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c27387d81a952d7:animal-biology',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology',
         videoTitle: 'Unit 7 Test Review',
         reading: 'Comprehensive assessment of sensory organs, nerve signal pathways, brain control, and animal survival adaptations.',
         principles: [
@@ -860,7 +860,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u8',
         title: 'Earthquakes, Fault Lines, and Seismographs',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-systems/x871d81186fec401a:natural-hazards/v/earthquakes-intro',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Earthquakes%20and%20Fault%20Lines%204th%20grade%20science',
         videoTitle: 'Earthquakes and Fault Lines',
         reading: 'Earthquakes occur when stress built along tectonic fault lines releases suddenly. Seismographs detect and measure these ground vibrations.',
         principles: [
@@ -878,7 +878,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u8',
         title: 'Earthquake-Resistant Building Design',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-systems/x871d81186fec401a:natural-hazards/v/earthquake-engineering',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Earthquake%20Engineering%20Solutions%204th%20grade%20science',
         videoTitle: 'Earthquake Engineering Solutions',
         reading: 'Structural engineers design buildings with flexible cross-bracing steel frames and rubber base isolators that sway without crumbling.',
         principles: [
@@ -896,7 +896,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u8',
         title: 'Tsunamis, Floods, and Coastal Sea Walls',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-systems/x871d81186fec401a:natural-hazards/v/tsunamis-and-sea-walls',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Tsunamis%20and%20Coastal%20Protections%204th%20grade%20science',
         videoTitle: 'Tsunamis and Coastal Protections',
         reading: 'Underwater earthquakes trigger giant tsunami waves. Engineers construct reinforced concrete sea walls and flood gates to shield cities.',
         principles: [
@@ -915,7 +915,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Quiz 6: Hazards & Engineering Design',
         kind: 'lesson_review',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-systems',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science',
         videoTitle: 'Natural Hazards Quiz Review',
         reading: 'Review quiz on fault slip earthquakes, seismographs, cross-braced steel buildings, and tsunami defense walls.',
         principles: [
@@ -934,7 +934,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 8 Test: Natural Hazards & Engineering Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x871d81186fec401a:earth-systems',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science',
         videoTitle: 'Unit 8 Test Review',
         reading: 'Comprehensive assessment on identifying natural hazards and evaluating engineering solutions that protect human lives.',
         principles: [
@@ -964,7 +964,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u9',
         title: 'Ohio Ancient Seas and Isotelus Trilobite',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.ohiodnr.gov/discover-and-learn/rock-minerals-fossils/fossils/isotelus',
+        videoUrl: 'https://ohiodnr.gov/discover-and-learn/safety-conservation/about-odnr/geologic-survey/educational-resources/isotelus-fossil',
         videoTitle: 'Ohio State Fossil Isotelus',
         reading: 'Hundreds of millions of years ago, warm shallow seas covered Ohio. Isotelus maximus, a marine trilobite, is Ohio official state fossil.',
         principles: [
@@ -982,7 +982,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u9',
         title: 'Glacial Till Plains of Western Ohio',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.ohiodnr.gov/discover-and-learn/land-water/geology/glacial-geology-ohio',
+        videoUrl: 'https://ohiodnr.gov/discover-and-learn/safety-conservation/about-ODNR/geologic-survey/glacial-geology/evidence-of-glaciers',
         videoTitle: 'Glaciers in Ohio',
         reading: 'Massive continental glaciers flattened hills in western and northern Ohio, leaving behind rich glacial till that created great farmland.',
         principles: [
@@ -1000,7 +1000,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u9',
         title: 'The Unglaciated Allegheny Plateau',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.ohiodnr.gov/discover-and-learn/land-water/geology/geology-of-ohio',
+        videoUrl: 'https://ohiodnr.gov/glacialgeology',
         videoTitle: 'Unglaciated Plateau in Southeastern Ohio',
         reading: 'Glaciers stopped before reaching southeastern Ohio, preserving rugged hills, deep sandstone gorges, and Hocking Hills waterfalls.',
         principles: [
@@ -1018,7 +1018,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         unitId: 'g4-sci-u9',
         title: 'Lake Erie Basin and Kelleys Island Grooves',
         estimatedMinutes: 10,
-        videoUrl: 'https://www.ohiodnr.gov/discover-and-learn/land-water/state-parks/kelleys-island',
+        videoUrl: 'https://ohiodnr.gov/discover-and-learn/safety-conservation/about-ODNR/geologic-survey/publications-maps/geologic-hiking-guides/geology-of-kelleys-island',
         videoTitle: 'Kelleys Island Glacial Grooves',
         reading: 'Moving glaciers carved Lake Erie basin and scored deep 400-foot grooves into limestone bedrock on Kelleys Island.',
         principles: [
@@ -1037,7 +1037,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Quiz 7: Ohio Geological Features',
         kind: 'lesson_review',
         estimatedMinutes: 12,
-        videoUrl: 'https://www.ohiodnr.gov/discover-and-learn/land-water/geology',
+        videoUrl: 'https://ohiodnr.gov/',
         videoTitle: 'Ohio Geology Quiz Review',
         reading: 'Review quiz on Isotelus trilobites, glacial till plains, unglaciated Appalachian hills, and Kelleys Island grooves.',
         principles: [
@@ -1056,7 +1056,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Unit 9 Test: Ohio Geology & Landforms Mastery',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.ohiodnr.gov/discover-and-learn/land-water/geology',
+        videoUrl: 'https://ohiodnr.gov/',
         videoTitle: 'Unit 9 Test Review',
         reading: 'Comprehensive assessment of Ohio marine fossils, glacial landforms, Lake Erie formation, and regional topography.',
         principles: [
@@ -1086,7 +1086,7 @@ export const G4_SCIENCE_UNITS: Unit[] = [
         title: 'Physical Science Cumulative Review',
         kind: 'lesson_review',
         estimatedMinutes: 15,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-physics',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics',
         videoTitle: 'Physical Science Review',
         reading: 'Spiral review of kinetic energy, complete electrical circuits, conductors vs insulators, and wave amplitude.',
         principles: [

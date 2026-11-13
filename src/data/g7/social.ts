@@ -681,7 +681,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Greek Geography',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/classical-greece/v/ancient-greece-intro',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Ancient%20Greece%20Overview%207th%20grade%20history',
           videoTitle: 'Khan Academy: Ancient Greece Overview',
           reading:
             'Rugged mountains and fragmented islands separated ancient Greek communities into independent city-states (poleis) that relied heavily on maritime trade across the Mediterranean.',
@@ -694,7 +694,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Athenian Democracy',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/classical-greece/v/athenian-democracy-overview',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Athenian%20Democracy%207th%20grade%20history',
           videoTitle: 'Khan Academy: Athenian Democracy',
           reading:
             'Athens established a direct democracy where free adult male citizens debated and voted directly on public policies and military decisions in citizen assemblies.',
@@ -707,7 +707,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Greek Philosophy',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/classical-greece/v/greek-philosophy-socrates-plato-aristotle',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Greek%20Philosophy%207th%20grade%20history',
           videoTitle: 'Khan Academy: Greek Philosophy',
           reading:
             'Classical Greek thinkers developed logic, dialectical questioning (the Socratic method), and scientific categorization, laying intellectual foundations for Western inquiry.',
@@ -720,7 +720,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Hellenistic Era',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/classical-greece/v/alexander-the-great',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Alexander%20the%20Great%20and%20Hellenistic%20Culture%207th%20grade%20history',
           videoTitle: 'Khan Academy: Alexander the Great and Hellenistic Culture',
           reading:
             'Alexander the Great’s conquests spread Greek ideas, science, and architectural styles across Egypt and Southwest Asia, blending cultures into the cosmopolitan Hellenistic world.',
@@ -733,7 +733,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Greece Review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/classical-greece/v/classical-greece-review',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Classical%20Greece%20Review%207th%20grade%20history',
           videoTitle: 'Khan Academy: Classical Greece Review',
           reading:
             'Review key concepts: direct citizen participation in Athens, geographical isolation shaping city-states, rational philosophical thought, and Hellenistic cultural diffusion.',
@@ -753,7 +753,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Roman Republic',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/roman-republic/v/roman-republic-introduction',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=The%20Roman%20Republic%207th%20grade%20history',
           videoTitle: 'Khan Academy: The Roman Republic',
           reading:
             'Romans established a republic where citizens elected representatives to govern and serve in assemblies and the Senate, creating a constitutional balance of executive, legislative, and judicial powers.',
@@ -766,7 +766,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Roman Law',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/roman-republic/v/twelve-tables-and-roman-law',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Twelve%20Tables%20and%20Roman%20Law%207th%20grade%20history',
           videoTitle: 'Khan Academy: Twelve Tables and Roman Law',
           reading:
             'Written on bronze tablets in the Forum, the Twelve Tables established equal statutory standards, rights of trial before a judge, and protections against arbitrary noble rulings.',
@@ -779,7 +779,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Roman Engineering',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/roman-empire/v/roman-engineering-aqueducts-and-roads',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Roman%20Engineering%20and%20Architecture%207th%20grade%20history',
           videoTitle: 'Khan Academy: Roman Engineering and Architecture',
           reading:
             'Engineers combined volcanic ash concrete with rounded stone arches to build long-distance aqueducts delivering clean water, paved military highways, and large domed monuments.',
@@ -792,7 +792,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Pax Romana',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/roman-empire/v/pax-romana-and-expansion',
+          videoUrl: 'https://www.khanacademy.org/humanities/world-history/x66f79d8a:empires-and-belief-systems/x66f79d8a:rome-and-han-china-4-5/v/emperors-of-pax-romana',
           videoTitle: 'Khan Academy: Pax Romana and the Roman Empire',
           reading:
             'Under the Pax Romana, maritime commerce flourished across safe trade routes, and codified legal standards spread throughout Europe, North Africa, and the Near East.',
@@ -805,7 +805,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Rome Review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/roman-empire/v/roman-civilization-review',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Roman%20Civilizations%20Review%207th%20grade%20history',
           videoTitle: 'Khan Academy: Roman Civilizations Review',
           reading:
             'Review key achievements: representative senate governance, written statutory rights, civic infrastructural engineering, and enduring legal institutions.',
@@ -825,7 +825,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Feudalism',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/european-middle-ages-and-byzantine-empire/v/feudalism-in-medieval-europe',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Feudalism%20in%20Medieval%20Europe%207th%20grade%20history',
           videoTitle: 'Khan Academy: Feudalism in Medieval Europe',
           reading:
             'Following the collapse of central Roman authority, feudalism structured society through reciprocal oaths: kings granted land (fiefs) to noble vassals in exchange for military service by armored knights.',
@@ -838,7 +838,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Manorialism',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/european-middle-ages-and-byzantine-empire/v/manorialism-medieval-economy',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=The%20Manorial%20Economy%207th%20grade%20history',
           videoTitle: 'Khan Academy: The Manorial Economy',
           reading:
             'Manorialism was an agricultural economic system where bound peasant serfs farmed estate strip fields and ground grain in exchange for residential safety and physical protection by the manor lord.',
@@ -851,7 +851,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Magna Carta',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/european-middle-ages-and-byzantine-empire/v/magna-carta-and-rule-of-law',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Magna%20Carta%20and%20the%20Rule%20of%20Law%207th%20grade%20history',
           videoTitle: 'Khan Academy: Magna Carta and the Rule of Law',
           reading:
             'In 1215, English barons compelled King John to sign the Magna Carta, establishing foundational principles that monarchs are not above the law and cannot seize property or imprison without trial by peers.',
@@ -864,7 +864,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Monastic Learning',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/european-middle-ages-and-byzantine-empire/v/monasteries-in-medieval-europe',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Medieval%20Monasteries%207th%20grade%20history',
           videoTitle: 'Khan Academy: Medieval Monasteries',
           reading:
             'Monasteries served as centers of literacy and manuscript production where educated monks and nuns hand-copied ancient Greek, Roman, and biblical manuscripts, preserving classical scholarship.',
@@ -877,7 +877,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Black Death',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/european-middle-ages-and-byzantine-empire/v/the-black-death',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=The%20Black%20Death%20in%20Europe%207th%20grade%20history',
           videoTitle: 'Khan Academy: The Black Death in Europe',
           reading:
             'The bubonic plague wiped out one-third of Europe’s population between 1347 and 1351. Severe agricultural labor shortages allowed surviving peasants to demand cash wages, hastening feudal breakdown.',
@@ -890,7 +890,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Medieval Review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/european-middle-ages-and-byzantine-empire/v/medieval-europe-review',
+          videoUrl: 'https://www.khanacademy.org/humanities/medieval-world',
           videoTitle: 'Khan Academy: Medieval Europe Review',
           reading:
             'Review key topics: mutual feudal obligations, manorial agricultural independence, constitutional limits in the Magna Carta, monastic scriptoriums, and economic shifts after the plague.',
@@ -910,7 +910,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Italian Renaissance',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/renaissance-reformation/renaissance-italy/v/italian-renaissance-origins',
+          videoUrl: 'https://www.khanacademy.org/humanities/renaissance-reformation/early-renaissance1/beginners-renaissance-florence/a/humanism-in-renaissance-italy',
           videoTitle: 'Khan Academy: The Italian Renaissance Origins',
           reading:
             'Wealthy merchant republics like Florence accumulated capital through Mediterranean trade and banking, financing painters, sculptors, and scholars as competitive civic patrons.',
@@ -923,7 +923,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Humanism',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/renaissance-reformation/renaissance-italy/v/renaissance-humanism-and-art',
+          videoUrl: 'https://www.khanacademy.org/humanities/renaissance-reformation/early-renaissance1/beginners-renaissance-florence/a/humanism-in-renaissance-italy',
           videoTitle: 'Khan Academy: Renaissance Humanism and Art',
           reading:
             'Humanism shifted intellectual focus toward individual potential, classical history, and observation of the natural world, fostering anatomical accuracy and linear perspective in Renaissance art.',
@@ -936,7 +936,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Printing Press',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/renaissance-reformation/northern-renaissance1/v/johannes-gutenberg-and-the-printing-press',
+          videoUrl: 'https://www.khanacademy.org/humanities/renaissance-reformation/northern-renaissance1',
           videoTitle: 'Khan Academy: Johannes Gutenberg and the Printing Press',
           reading:
             'Invented around 1440, movable metal type revolutionized book reproduction, drastically reducing printing costs and accelerating the rapid spread of scientific treatises and civic pamphlets.',
@@ -949,7 +949,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Protestant Reformation',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/renaissance-reformation/protestant-reformation1/v/martin-luther-and-the-95-theses',
+          videoUrl: 'https://www.khanacademy.org/humanities/renaissance-reformation/protestant-reformation1/a/the-protestant-reformation',
           videoTitle: 'Khan Academy: Martin Luther and the 95 Theses',
           reading:
             'In 1517, German monk Martin Luther protested corrupt church practices like monetary indulgences, arguing that personal faith and biblical scripture are superior to ecclesiastical sales.',
@@ -962,7 +962,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Vernacular Translation',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/renaissance-reformation/protestant-reformation1/v/the-spread-of-the-reformation',
+          videoUrl: 'https://www.khanacademy.org/humanities/renaissance-reformation/protestant-reformation1/a/the-protestant-reformation',
           videoTitle: 'Khan Academy: The Spread of the Reformation',
           reading:
             'Translating texts into vernacular languages like German and English empowered common citizens to interpret literature independently, fostering broader literacy and intellectual debate.',
@@ -975,7 +975,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Early Modern Review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/renaissance-reformation/v/renaissance-and-reformation-review',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Renaissance%20and%20Reformation%20Review%207th%20grade%20history',
           videoTitle: 'Khan Academy: Renaissance and Reformation Review',
           reading:
             'Review key developments: Florentine patron networks, humanist focus on reason and realism, printing press mass communication, and the transformation of European religious authority.',
@@ -995,7 +995,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'West African Empires',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/africa-before-1500/v/trans-saharan-trade',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Trans-Saharan%20Trade%20Networks%207th%20grade%20history',
           videoTitle: 'Khan Academy: Trans-Saharan Trade Networks',
           reading:
             'West African kingdoms controlled the exchange between southern forest gold deposits and northern Saharan rock salt deposits, collecting taxes that built wealthy, fortified trading cities.',
@@ -1008,7 +1008,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Mansa Musa & Timbuktu',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/africa-before-1500/v/mansa-musa-and-islam-in-africa',
+          videoUrl: 'https://www.khanacademy.org/humanities/world-history-project-ap/xb41992e0ff5e0f09:unit-2-networks-of-exchange/xb41992e0ff5e0f09:2-3consequences-of-connectivity/a/video-mansa-musa-and-islam-in-africa-crash-course-world-history-16',
           videoTitle: 'Khan Academy: Mansa Musa and Timbuktu',
           reading:
             'Mansa Musa’s 1324 pilgrimage across North Africa showcased Mali’s vast wealth. He developed the Sankore University and libraries in Timbuktu into international centers of Islamic scholarship.',
@@ -1021,7 +1021,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Islamic Golden Age',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/islamic-world-before-1500/v/islamic-golden-age',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=The%20Islamic%20Golden%20Age%207th%20grade%20history',
           videoTitle: 'Khan Academy: The Islamic Golden Age',
           reading:
             'Scholars in Baghdad’s House of Wisdom preserved and translated classical Greek and Hindu texts while inventing algebra, developing optics theories, and writing groundbreaking medical encyclopedias.',
@@ -1034,7 +1034,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Silk Road',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/silk-road/v/the-silk-road',
+          videoUrl: 'https://www.khanacademy.org/humanities/world-history-project-ap-preview/x7515b0ca3395d084:review-introduction-to-world-history/x7515b0ca3395d084:0-4collapse-and-restructuring/v/watch-rebuilding-the-silk-road-world-history-project-beta',
           videoTitle: 'Khan Academy: The Silk Road',
           reading:
             'Caravan routes connected China, Central Asia, and the Mediterranean, exchanging silk, spices, porcelain, and papermaking techniques alongside ideas, philosophies, and religions.',
@@ -1047,7 +1047,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson',
           partOf: 'Columbian Exchange',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-history/colonial-north-america/early-colonies/v/the-columbian-exchange',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=The%20Columbian%20Exchange%207th%20grade%20history',
           videoTitle: 'Khan Academy: The Columbian Exchange',
           reading:
             'Post-1492 oceanic contact triggered transatlantic transfers: American corn and potatoes fueled Eurasian population growth, while introduced Old World pathogens devastated Indigenous American populations.',
@@ -1060,7 +1060,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Global Trade Review',
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/v/global-networks-review',
+          videoUrl: 'https://www.khanacademy.org/humanities/medieval-world',
           videoTitle: 'Khan Academy: Global Trade Networks Review',
           reading:
             'Review key connections: trans-Saharan gold-salt commerce, Mali’s intellectual prominence, Islamic scientific preservation and innovation, Eurasian Silk Road caravans, and the Columbian Exchange.',
@@ -1082,7 +1082,7 @@ export const G7_SOCIAL_COURSE: Course = {
           partOf: 'Athenian Roots of Ohio Civics',
           isOhioExtension: true,
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-government-and-civics/foundations-of-american-democracy/ideals-of-democracy/v/democratic-ideals-in-america',
+          videoUrl: 'https://www.khanacademy.org/humanities/us-government-and-civics/us-gov-foundations',
           videoTitle: 'Khan Academy: Democratic Ideals in America',
           reading:
             'Ancient Greek concepts of civic duty directly inform modern Ohio governance, where citizen voting, public debate, and community participation protect democratic self-determination.',
@@ -1096,7 +1096,7 @@ export const G7_SOCIAL_COURSE: Course = {
           partOf: 'Roman Roots of Ohio Government',
           isOhioExtension: true,
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-government-and-civics/foundations-of-american-democracy/republicanism/v/republican-government',
+          videoUrl: 'https://www.khanacademy.org/humanities/us-government-and-civics/us-gov-foundations',
           videoTitle: 'Khan Academy: Republican Government and Representation',
           reading:
             'Modeled after the Roman Republic’s assemblies and Senate, Ohio’s General Assembly consists of elected State Representatives and State Senators creating statutory laws.',
@@ -1110,7 +1110,7 @@ export const G7_SOCIAL_COURSE: Course = {
           partOf: 'Northwest Ordinance Civil Liberties',
           isOhioExtension: true,
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution/creating-a-nation/v/the-northwest-ordinance',
+          videoUrl: 'https://www.khanacademy.org/humanities/us-history/road-to-revolution',
           videoTitle: 'Khan Academy: The Northwest Ordinance of 1787',
           reading:
             'The 1787 Northwest Ordinance established civil liberties for Ohio pioneers, guaranteeing jury trials, religious freedom, habeas corpus due process, and the historic prohibition of slavery.',
@@ -1124,7 +1124,7 @@ export const G7_SOCIAL_COURSE: Course = {
           partOf: 'Ohio Civics Review',
           isOhioExtension: true,
           estimatedMinutes: 10,
-          videoUrl: 'https://www.khanacademy.org/humanities/us-government-and-civics/foundations-of-american-democracy/v/constitutional-foundations-review',
+          videoUrl: 'https://www.khanacademy.org/humanities/us-government-and-civics/us-gov-foundations',
           videoTitle: 'Khan Academy: Constitutional Foundations Review',
           reading:
             'Review key connections: citizen civic responsibility, representative legislative bicameralism, written rule of law, and historical rights guaranteed by the Northwest Ordinance and Ohio’s 1851 Constitution.',
@@ -1144,7 +1144,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Course Challenge Part 1',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/ancient-medieval/v/classical-world-synthesis',
+          videoUrl: 'https://www.khanacademy.org/search?page_search_query=Classical%20Greece%20and%20Rome%20Synthesis%207th%20grade%20history',
           videoTitle: 'Khan Academy: Classical Greece and Rome Synthesis',
           reading:
             'Synthesize classical political systems, comparing Athenian direct citizen democracy with Roman republican representation, written Twelve Tables law, and lasting architectural innovations.',
@@ -1157,7 +1157,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Course Challenge Part 2',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/v/medieval-and-renaissance-synthesis',
+          videoUrl: 'https://www.khanacademy.org/humanities/medieval-world',
           videoTitle: 'Khan Academy: Medieval and Renaissance Synthesis',
           reading:
             'Connect feudal lord-vassal loyalty oaths, manorial agriculture, Magna Carta legal limits, Renaissance humanism, and Gutenberg’s movable-type communications revolution.',
@@ -1170,7 +1170,7 @@ export const G7_SOCIAL_COURSE: Course = {
           kind: 'lesson_review',
           partOf: 'Course Challenge Part 3',
           estimatedMinutes: 15,
-          videoUrl: 'https://www.khanacademy.org/humanities/world-history/medieval-times/v/global-networks-and-civics-synthesis',
+          videoUrl: 'https://www.khanacademy.org/humanities/medieval-world',
           videoTitle: 'Khan Academy: Global Trade and Democratic Roots Synthesis',
           reading:
             'Review trans-Saharan gold-salt commerce, Islamic scholarly contributions, the Columbian Exchange, and classical democratic foundations embodied in Ohio’s constitution and civics.',
@@ -1225,7 +1225,7 @@ export const G7_SOCIAL_COURSE: Course = {
           type: 'simulation',
           description:
             'Trace caravan routes crossing the Sahara and examine preserved illuminated manuscripts from medieval Mali.',
-          url: 'https://www.khanacademy.org/humanities/world-history/medieval-times',
+          url: 'https://www.khanacademy.org/humanities/medieval-world',
           estimatedMinutes: 20,
           requiresParentPin: true,
           reflectionPrompt: 'Why was rock salt just as valuable as gold to traders in the West African savanna?',

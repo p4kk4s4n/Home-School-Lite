@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
+import { getCanonicalKhanUnitUrl } from '../lib/khanUrlValidator'
 import { getLessonRemediation } from '../lib/remediation'
 import { generatePrincipleSamples } from '../lib/worksheetGenerator'
 import { Course, GeneratedQuestion, Lesson, Principle, Remediation, Unit } from '../types'
@@ -477,7 +478,7 @@ export const TextbookPanel: React.FC<TextbookPanelProps> = ({
               ))}
             </select>
             {(() => {
-              const khanUrl = currentUnit.lessons?.find((l) => l.videoUrl?.includes('khanacademy.org'))?.videoUrl
+              const khanUrl = getCanonicalKhanUnitUrl(currentUnit, course)
               if (!khanUrl) return null
               return (
                 <a

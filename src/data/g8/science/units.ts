@@ -32,7 +32,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Motion and forces',
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:motion/v/speed-and-velocity',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces',
         videoTitle: 'Speed and Velocity: Describing Motion',
         reading: 'Motion is always relative to a reference frame. Speed measures distance divided by time, while velocity specifies both speed and direction of motion.',
         principles: [
@@ -72,7 +72,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         kind: 'lesson',
         partOf: 'Motion and forces',
         estimatedMinutes: 25,
-        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:connecting-motion-and-forces/a/forces-and-acceleration',
+        videoUrl: 'https://www.khanacademy.org/science/ms-physics/x1baed5db7c1bb50b:motion-and-forces/x1baed5db7c1bb50b:forces/v/forces',
         videoTitle: 'Net Force & Acceleration: Free-Body Diagrams',
         reading: 'Forces are pushes or pulls measured in Newtons. Balanced forces result in a net force of 0 N, preserving constant motion. Unbalanced forces cause acceleration.',
         activity: {
@@ -638,7 +638,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         partOf: 'Supplemental: Physics Archive',
         isSupplemental: true,
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/physics/one-dimensional-motion/acceleration-tutorial/v/acceleration',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=One-Dimensional%20Kinematics%20%26%20Free%20Fall%208th%20grade%20science',
         videoTitle: 'One-Dimensional Kinematics & Free Fall',
         reading: 'Quantitative kinematics connects displacement, initial velocity, final velocity, constant acceleration, and time ($v = v_0 + at$, $d = v_0t + \\frac{1}{2}at^2$).',
         principles: [
@@ -659,7 +659,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         partOf: 'Supplemental: Physics Archive',
         isSupplemental: true,
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/physics/linear-momentum/momentum-tutorial/v/introduction-to-momentum',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Linear%20Momentum%20and%20Impulse%208th%20grade%20science',
         videoTitle: 'Linear Momentum and Impulse',
         reading: 'Momentum ($p = mv$) measures mass in motion. Impulse ($J = F\\Delta t$) equals change in momentum, explaining why airbags save lives by lengthening impact time.',
         principles: [
@@ -691,7 +691,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         partOf: 'Supplemental: Physics Archive',
         isSupplemental: true,
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/physics/work-and-energy/work-and-energy-tutorial/v/introduction-to-work',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Work%20and%20Power%20in%20Physics%208th%20grade%20science',
         videoTitle: 'Work and Power in Physics',
         reading: 'Work is force applied across a distance ($W = Fd$). Power measures the rate at which work is accomplished in Watts ($P = W/t$). Simple machines multiply force by extending distance.',
         principles: [
@@ -712,7 +712,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         partOf: 'Supplemental: Physics Archive',
         isSupplemental: true,
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/physics/circuits-topic/circuits-library/v/circuits-part-1',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Circuits%2C%20Resistance%2C%20and%20Ohm%E2%80%99s%20Law%208th%20grade%20science',
         videoTitle: 'Circuits, Resistance, and Ohm’s Law',
         reading: 'Ohm’s Law ($V = IR$) relates electrical potential difference (Voltage), charge flow rate (Current), and opposition to current (Resistance). Refraction bends light across media.',
         principles: [
@@ -750,7 +750,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         isSupplemental: true,
         isOhioExtension: true,
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:the-geosphere',
         videoTitle: 'Earth’s Interior and Seismic S-Waves',
         reading: 'Earth has a solid crust, convective rocky mantle, liquid metal outer core, and dense solid inner core. S-waves stop at the outer core because shear waves cannot travel through liquids.',
         principles: [
@@ -772,7 +772,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         isSupplemental: true,
         isOhioExtension: true,
         estimatedMinutes: 25,
-        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea42:the-geosphere',
+        videoUrl: 'https://www.khanacademy.org/science/middle-school-earth-and-space-science/x87d03b443efbea0a:the-geosphere',
         videoTitle: 'Geologic Strata, Radiometric Dating, and Fossils',
         reading: 'Sedimentary layers stack with oldest strata at the bottom. Transitional fossils demonstrate macroevolutionary lineages across deep geologic time.',
         activity: {
@@ -810,7 +810,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         isSupplemental: true,
         isOhioExtension: true,
         estimatedMinutes: 20,
-        videoUrl: 'https://www.khanacademy.org/science/high-school-biology/hs-reproduction-and-cell-division/hs-meiosis/v/comparing-mitosis-and-meiosis',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation/x0c5bb03129646fd6:reproduction-and-genetic-variation/v/sexual-reproduction-and-genetic-variation',
         videoTitle: 'Reproduction and Meiosis',
         reading: 'Asexual reproduction produces genetically identical clones from one parent. Sexual reproduction uses meiosis to produce gametes with half the chromosome number, generating genetic diversity.',
         principles: [
@@ -832,7 +832,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         isSupplemental: true,
         isOhioExtension: true,
         estimatedMinutes: 25,
-        videoUrl: 'https://www.khanacademy.org/science/high-school-biology/hs-classical-genetics/hs-introduction-to-heredity/v/punnett-square-fun',
+        videoUrl: 'https://www.khanacademy.org/search?page_search_query=Mendelian%20Genetics%20and%20Punnett%20Squares%208th%20grade%20science',
         videoTitle: 'Mendelian Genetics and Punnett Squares',
         reading: 'Alleles are dominant or recessive variants of a gene. A Punnett square predicts probability ratios for heterozygous ($Bb$) and homozygous ($BB$ or $bb$) offspring.',
         activity: {
@@ -870,7 +870,7 @@ export const G8_SCIENCE_UNITS: Unit[] = [
         isSupplemental: true,
         isOhioExtension: true,
         estimatedMinutes: 25,
-        videoUrl: 'https://www.khanacademy.org/science/high-school-biology/hs-evolution/hs-evolution-and-natural-selection/v/natural-selection-and-the-owl-butterfly',
+        videoUrl: 'https://www.khanacademy.org/science/ms-biology/x0c5bb03129646fd6:inheritance-and-variation/x0c5bb03129646fd6:mutations/v/mutations',
         videoTitle: 'Mutations and Natural Selection',
         reading: 'Random DNA mutations produce novel traits. In changing environments, individuals with advantageous adaptations survive and reproduce more successfully (natural selection).',
         activity: {
